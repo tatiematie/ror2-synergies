@@ -11,7 +11,7 @@ const updateDisplay = (item) => {
     if (active) {
         let node, name, type, id, rarity
 
-        fetch('../json/items.json')
+        fetch('/json/items.json')
             .then(response => response.json())
             .then(data => {
                 for (const key in data) {
@@ -24,6 +24,8 @@ const updateDisplay = (item) => {
                             rarity = node.rarity
                     }
                 }
+
+                console.log(node.name)
 
                 itemTitle.innerHTML = name
                 itemType.innerHTML = rarity + ' ' + type
