@@ -1,0 +1,1042 @@
+[
+    {
+        "id": "soldiers-syringe",
+        "name": "Soldier's Syringe",
+        "rarity": "Common",
+        "type": "Item",
+        "tags": [
+            "haste"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "tougher-times",
+        "name": "Tougher Times",
+        "rarity": "Common",
+        "type": "Item",
+        "tags": [
+            "defense"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "monster-tooth",
+        "name": "Monster Tooth",
+        "rarity": "Common",
+        "type": "Item",
+        "tags": [
+            "healing",
+            "onkill"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "lens-makers-glasses",
+        "name": "Lens Maker's Glasses",
+        "rarity": "Common",
+        "type": "Item",
+        "tags": [
+            "crit"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "pauls-goat-hoof",
+        "name": "Paul's Goat Hoof",
+        "rarity": "Common",
+        "type": "Item",
+        "tags": [
+            "speed",
+            "mobility"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "bustling-fungus",
+        "name": "Bustling Fungus",
+        "rarity": "Common",
+        "type": "Item",
+        "tags": [
+            "healing",
+            "area"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "crowbar",
+        "name": "Crowbar",
+        "rarity": "Common",
+        "type": "Item",
+        "tags": [
+            "damage"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "tri-tip-dagger",
+        "name": "Tri-Tip Dagger",
+        "rarity": "Common",
+        "type": "Item",
+        "tags": [
+            "effect",
+            "proc"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "warbanner",
+        "name": "Warbanner",
+        "rarity": "Common",
+        "type": "Item",
+        "tags": [
+            "haste",
+            "speed"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "cautious-slug",
+        "name": "Cautious Slug",
+        "rarity": "Common",
+        "type": "Item",
+        "tags": [
+            "healing"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "personal-shield-generator",
+        "name": "Personal Shield Generator",
+        "rarity": "Common",
+        "type": "Item",
+        "tags": [
+            "shield"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "medkit",
+        "name": "Medkit",
+        "rarity": "Common",
+        "type": "Item",
+        "tags": [
+            "healing"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "gasoline",
+        "name": "Gasoline",
+        "rarity": "Common",
+        "type": "Item",
+        "tags": [
+            "effect",
+            "area"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "stun-grenade",
+        "name": "Stun Grenade",
+        "rarity": "Common",
+        "type": "Item",
+        "tags": [
+            "proc"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "bundle-of-fireworks",
+        "name": "Bundle of Fireworks",
+        "rarity": "Common",
+        "type": "Item",
+        "tags": [
+            "interact"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "energy-drink",
+        "name": "Energy Drink",
+        "rarity": "Common",
+        "type": "Item",
+        "tags": [
+            "speed",
+            "mobility",
+            "sprint"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "backup-magazine",
+        "name": "Backup Magazine",
+        "rarity": "Common",
+        "type": "Item",
+        "tags": [
+            "utility"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "sticky-bomb",
+        "name": "Sticky Bomb",
+        "rarity": "Common",
+        "type": "Item",
+        "tags": [
+            "damage",
+            "proc"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "rusted-key",
+        "name": "Rusted Key",
+        "rarity": "Common",
+        "type": "Item",
+        "tags": [
+            "utility"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "armor-piercing-rounds",
+        "name": "Armor-Piercing Rounds",
+        "rarity": "Common",
+        "type": "Item",
+        "tags": [
+            "damage"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "topaz-brooch",
+        "name": "Topaz Brooch",
+        "rarity": "Common",
+        "type": "Item",
+        "tags": [
+            "defense",
+            "onkill"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "focus-crystal",
+        "name": "Focus Crystal",
+        "rarity": "Common",
+        "type": "Item",
+        "tags": [
+            "damage"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "bison-steak",
+        "name": "Bison Steak",
+        "rarity": "Common",
+        "type": "Item",
+        "tags": [
+            "health"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "repulsion-armor-plate",
+        "name": "Repulsion Armor Plate",
+        "rarity": "Common",
+        "type": "Item",
+        "tags": [
+            "defense"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "mocha",
+        "name": "Mocha",
+        "rarity": "Common",
+        "type": "Item",
+        "tags": [
+            "haste",
+            "speed",
+            "mobility"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "power-elixir",
+        "name": "Power Elixir",
+        "rarity": "Common",
+        "type": "Item",
+        "tags": [
+            "healing"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "delicate-watch",
+        "name": "Delicate Watch",
+        "rarity": "Common",
+        "type": "Item",
+        "tags": [
+            "damage"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "oddly-shaped-opal",
+        "name": "Oddly Shaped Opal",
+        "rarity": "Common",
+        "type": "Item",
+        "tags": [
+            "defense"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "roll-of-pennies",
+        "name": "Roll of Pennies",
+        "rarity": "Common",
+        "type": "Item",
+        "tags": [
+            "utility"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "atg-missile-mk-1",
+        "name": "AtG Missile Mk. 1",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "tags": [
+            "damage",
+            "proc"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "will-o-the-wisp",
+        "name": "Will-o'-the-wisp",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "tags": [
+            "damage",
+            "area",
+            "onkill"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "hopoo-feather",
+        "name": "Hopoo Feather",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "tags": [
+            "mobility"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "ukulele",
+        "name": "Ukulele",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "tags": [
+            "proc"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "leeching-seed",
+        "name": "Leeching Seed",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "tags": [
+            "healing"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "predatory-instincts",
+        "name": "Predatory Instincts",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "tags": [
+            "haste",
+            "crit"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "red-whip",
+        "name": "Red Whip",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "tags": [
+            "speed",
+            "mobility"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "old-war-stealthkit",
+        "name": "Old War Stealthkit",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "tags": [
+            "utility"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "harvesters-scythe",
+        "name": "Harvester's Scythe",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "tags": [
+            "healing",
+            "crit"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "fuel-cell",
+        "name": "Fuel Cell",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "tags": [
+            "utility"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "infusion",
+        "name": "Infusion",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "tags": [
+            "health"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "bandolier",
+        "name": "Bandolier",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "tags": [
+            "utility",
+            "onkill"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "berzerkers-pauldron",
+        "name": "Berzerker's Pauldron",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "tags": [
+            "haste",
+            "speed",
+            "onkill"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "rose-buckler",
+        "name": "Rose Buckler",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "tags": [
+            "defense",
+            "sprint"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "runalds-band",
+        "name": "Runald's Band",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "tags": [
+            "damage",
+            "effect"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "kjaros-band",
+        "name": "Kjaro's Band",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "tags": [
+            "damage"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "chronobauble",
+        "name": "Chronobauble",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "tags": [
+            "effect",
+            "proc"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "wax-quail",
+        "name": "Wax Quail",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "tags": [
+            "mobility"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "old-guillotine",
+        "name": "Old Guillotine",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "tags": [
+            "utility"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "war-horn",
+        "name": "War Horn",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "tags": [
+            "haste",
+            "onuse"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "lepton-daisy",
+        "name": "Lepton Daisy",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "tags": [
+            "healing"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "razorwire",
+        "name": "Razorwire",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "tags": [
+            "damage"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "ghors-tome",
+        "name": "Ghor's Tome",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "tags": [
+            "utility",
+            "onkill"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "squid-polyp",
+        "name": "Squid Polyp",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "tags": [
+            "damage",
+            "interact",
+            "summon"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "death-mark",
+        "name": "Death Mark",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "tags": [
+            "effect"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "hunters-harpoon",
+        "name": "Hunter's Harpoon",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "tags": [
+            "haste",
+            "onkill"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "ignition-tank",
+        "name": "Ignition Tank",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "tags": [
+            "effect"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "shuriken",
+        "name": "Shuriken",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "tags": [
+            "damage"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "shipping-request-form",
+        "name": "Shipping Request Form",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "tags": [
+            "utility"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "brilliant-behemoth",
+        "name": "Brilliant Behemoth",
+        "rarity": "Legendary",
+        "type": "Item",
+        "tags": [
+            "damage",
+            "area"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "ceremonial-daggers",
+        "name": "Ceremonial Daggers",
+        "rarity": "Legendary",
+        "type": "Item",
+        "tags": [
+            "damage",
+            "onkill"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "frost-relic",
+        "name": "Frost Relic",
+        "rarity": "Legendary",
+        "type": "Item",
+        "tags": [
+            "damage",
+            "effect",
+            "area"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "happiest-mask",
+        "name": "Happiest Mask",
+        "rarity": "Legendary",
+        "type": "Item",
+        "tags": [
+            "summon",
+            "onkill"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "h3ad-5t-v2",
+        "name": "H3AD-5T v2",
+        "rarity": "Legendary",
+        "type": "Item",
+        "tags": [
+            "mobility",
+            "damage"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "nkuhanas-opinion",
+        "name": "N'Kuahana's Opinion",
+        "rarity": "Legendary",
+        "type": "Item",
+        "tags": [
+            "damage"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "unstable-tesla-coil",
+        "name": "Unstable Tesla Coil",
+        "rarity": "Legendary",
+        "type": "Item",
+        "tags": [
+            "damage",
+            "area"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "57-leaf-clover",
+        "name": "57 Leaf Clover",
+        "rarity": "Legendary",
+        "type": "Item",
+        "tags": [
+            "proc"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "sentient-meat-hook",
+        "name": "Sentient Meat Hook",
+        "rarity": "Legendary",
+        "type": "Item",
+        "tags": [
+            "damage",
+            "area",
+            "proc"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "alien-head",
+        "name": "Alien Head",
+        "rarity": "Legendary",
+        "type": "Item",
+        "tags": [
+            "utility"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "soulbound-catalyst",
+        "name": "Soulbound Catalyst",
+        "rarity": "Legendary",
+        "type": "Item",
+        "tags": [
+            "utility",
+            "onkill"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "dios-best-friend",
+        "name": "Dio's Best Friend",
+        "rarity": "Legendary",
+        "type": "Item",
+        "tags": [
+            "utility"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "hardlight-afterburner",
+        "name": "Hardlight Afterburner",
+        "rarity": "Legendary",
+        "type": "Item",
+        "tags": [
+            "utility"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "wake-of-vultures",
+        "name": "Wake of Vultures",
+        "rarity": "Legendary",
+        "type": "Item",
+        "tags": [
+            "effect",
+            "onkill"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "brainstalks",
+        "name": "Brainstalks",
+        "rarity": "Legendary",
+        "type": "Item",
+        "tags": [
+            "utility"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "rejuvination-rack",
+        "name": "Rejuvination Rack",
+        "rarity": "Legendary",
+        "type": "Item",
+        "tags": [
+            "healing"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "aegis",
+        "name": "Aegis",
+        "rarity": "Legendary",
+        "type": "Item",
+        "tags": [
+            "defense"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "shattering-justice",
+        "name": "Shattering Justice",
+        "rarity": "Legendary",
+        "type": "Item",
+        "tags": [
+            "effect"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "resonance-disc",
+        "name": "Resonance Disc",
+        "rarity": "Legendary",
+        "type": "Item",
+        "tags": [
+            "damage",
+            "onkill"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "interstellar-desk-plant",
+        "name": "Interstellar Desk Plant",
+        "rarity": "Legendary",
+        "type": "Item",
+        "tags": [
+            "healing",
+            "onkill"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "laser-scope",
+        "name": "Laser Scope",
+        "rarity": "Legendary",
+        "type": "Item",
+        "tags": [
+            "crit"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "pocket-icbm",
+        "name": "Pocket I.C.B.M.",
+        "rarity": "Legendary",
+        "type": "Item",
+        "tags": [
+            "utility"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "spare-drone-parts",
+        "name": "Spare Drone Parts",
+        "rarity": "Legendary",
+        "type": "Item",
+        "tags": [
+            "damage",
+            "summon"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "symbiotic-scorpion",
+        "name": "Symbiotic Scorpion",
+        "rarity": "Legendary",
+        "type": "Item",
+        "tags": [
+            "effect"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "bens-rain-coat",
+        "name": "Ben's Rain Coat",
+        "rarity": "Legendary",
+        "type": "Item",
+        "tags": [
+            "utility"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "bottled-chaos",
+        "name": "Bottled Chaos",
+        "rarity": "Legendary",
+        "type": "Item",
+        "tags": [
+            "utility"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "titanic-knurl",
+        "name": "Titanic Knurl",
+        "rarity": "Boss",
+        "type": "Item",
+        "tags": [
+            "healing",
+            "health"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "queens-gland",
+        "name": "Queen's Gland",
+        "rarity": "Boss",
+        "type": "Item",
+        "tags": [
+            "summon"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "halcyon-seed",
+        "name": "Halcyon Seed",
+        "rarity": "Boss",
+        "type": "Item",
+        "tags": [
+            "summon"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "little-disciple",
+        "name": "Little Disciple",
+        "rarity": "Boss",
+        "type": "Item",
+        "tags": [
+            "damage",
+            "sprint"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "pearl",
+        "name": "Pearl",
+        "rarity": "Boss",
+        "type": "Item",
+        "tags": [
+            "health"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "irradiant-pearl",
+        "name": "Irradiant Pearl",
+        "rarity": "Boss",
+        "type": "Item",
+        "tags": [
+            "haste",
+            "defense",
+            "healing",
+            "crit",
+            "damage",
+            "speed",
+            "mobility",
+            "health"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "genesis-loop",
+        "name": "Genesis Loop",
+        "rarity": "Boss",
+        "type": "Item",
+        "tags": [
+            "damage"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "molten-perforator",
+        "name": "Molten Perforator",
+        "rarity": "Boss",
+        "type": "Item",
+        "tags": [
+            "damage",
+            "effect",
+            "proc"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "shatterspleen",
+        "name": "Shatterspleen",
+        "rarity": "Boss",
+        "type": "Item",
+        "tags": [
+            "crit",
+            "effect",
+            "area"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "mired-urn",
+        "name": "Mired Urn",
+        "rarity": "Boss",
+        "type": "Item",
+        "tags": [
+            "healing",
+            "effect",
+            "area"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "charged-perforator",
+        "name": "Charged Perforator",
+        "rarity": "Boss",
+        "type": "Item",
+        "tags": [
+            "damage",
+            "proc"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "empathy-cores",
+        "name": "Empathy Cores",
+        "rarity": "Boss",
+        "type": "Item",
+        "tags": [
+            "summon",
+            "damage"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "planula",
+        "name": "Planula",
+        "rarity": "Boss",
+        "type": "Item",
+        "tags": [
+            "healing"
+        ],
+        "synergies": []
+    },
+    {
+        "id": "defense-nucleus",
+        "name": "Defense Nucleus",
+        "rarity": "Boss",
+        "type": "Item",
+        "tags": [
+            "onkill"
+        ],
+        "synergies": []
+    }
+]

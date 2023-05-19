@@ -1,0 +1,237 @@
+// bombardier font
+@font-face {
+    font-family: 'Bombardier';
+    src: url(../fonts/Bombardier.ttf);
+}
+
+// breakpoint mixin for responsive
+@mixin atBreakpoint($maxWidth) {
+    @media (max-width: $maxWidth) {
+        @content;
+    }
+}
+
+$colors: (
+    light_yellow: #FAFDC3,
+    yellow: #FFFF58,
+    dark_yellow: #EEE287,
+    darker_yellow: #A7954F,
+
+    light_gray_blue: #4D5E6E,
+    gray_blue: #3E4E5B,
+    dark_gray_blue: #252F38,
+    darker_gray_blue: #1E252B,
+
+    bg_body: #000000,
+    
+    border_pane: #868686,
+
+    outline_pane: #25253F,
+
+    text_white: #FFFFFF,
+    text_light_gray: #868686,
+    text_shadow: #00000080,
+);
+
+// reset
+* {
+    box-sizing: border-box;
+    font-family: 'Bombardier';
+    font-size: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    button {
+        background: none;
+        border: none;
+    }
+
+    [rarity="common"] {
+        background: url(../assets/img/items/bg-common.png) center no-repeat;
+        background-size: 100%;
+    }
+    
+    [rarity="uncommon"] {
+        background: url(../assets/img/items/bg-uncommon.png) center no-repeat;
+        background-size: 100%;
+    }
+   
+    [rarity="legendary"] {
+        background: url(../assets/img/items/bg-legendary.png) center no-repeat;
+        background-size: 100%;
+    }
+   
+    [rarity="boss"] {
+        background: url(../assets/img/items/bg-boss.png) center no-repeat;
+        background-size: 100%;
+    }
+    
+    [rarity="void"] {
+        background: url(../assets/img/items/bg-void.png) center no-repeat;
+        background-size: 100%;
+    }
+    
+    [rarity="lunar"] {
+        background: url(../assets/img/items/bg-lunar.png) center no-repeat;
+        background-size: 100%;
+    }
+
+    [rarity="equipment"] {
+        background: url(../assets/img/items/bg-equipment.png) center no-repeat;
+        background-size: 100%;
+    }
+}
+
+// common styles
+.pane {
+    border: 4px solid map-get($colors, border_pane);
+    background-color: map-get($colors, gray_blue);
+    padding: 12px;
+
+    .heading {
+        margin-bottom: 8px;
+        text-shadow: 2px 2px 2px map-get($colors, text_shadow);
+        
+        h2 {
+            color: map-get($colors, text_white);
+            font-size: 2em;
+            margin-bottom: 4px;
+        }
+
+        p {
+            color: map-get($colors, text_light_gray);
+            font-size: 1.125em;
+        }
+    }
+
+    .content {
+        background-color: map-get($colors, dark_gray_blue);
+        border: 4px solid map-get($colors, darker_gray_blue);
+    }
+}
+
+html {
+    background-color: map-get($colors, bg_body);
+
+    body {
+        // overflow-x: hidden;
+    }
+}
+
+#app {
+    height: 100vh;
+    padding: 28px;
+    transition: .125s linear;
+
+    @include atBreakpoint(715px) {
+        padding: 28px 0;
+    }
+}
+
+#container {
+    column-gap: 12px;
+    display: grid;
+    grid-template-columns: auto minmax(0, 364px);
+    margin: 0 auto;
+    max-width: 1080px;
+    outline: 4px solid map-get($colors, outline_pane);
+    outline-offset: 12px;
+    row-gap: 12px;
+
+    @include atBreakpoint(715px) {
+        display: flex;
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+
+    #display-pane {
+        #item-thumbnail {
+            height: 118px;
+            width: 118px;
+            border: 2px solid map-get($colors, border_pane);
+
+            img {
+                height: 90%;
+                left: 5%;
+                top: 5%;
+                position: relative;
+            }
+        }
+    }
+
+    #select-pane {        
+        #item-select {
+            column-gap: 6px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 47px);
+            height: 256px;
+            overflow: hidden scroll;
+            row-gap: 6px;
+            padding: 6px;
+            position: relative;
+            scrollbar-width: none;
+            width: 332px;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            .item {
+                border: 1px solid map-get($colors, border_pane);
+                height: 47px;
+                
+                button {
+                    height: 100%;
+                    position: relative;
+
+                    &[active="true"] {
+                        outline: 2px solid map-get($colors, dark_yellow);
+                        outline-offset: -1px;
+
+                        &:before, &:after {
+                            background-color: map-get($colors, light_yellow);
+                            border: 1px solid map-get($colors, darker_yellow);
+                            content: '';
+                            transform: rotate(45deg);
+                            z-index: 10;
+                        }
+
+                        &::before {
+                            bottom: -6px;
+                            height: 10px;
+                            left: calc((100% - 10px) / 2);
+                            position: absolute;
+                            width: 10px;
+                        }
+                    
+                        &::after {
+                            bottom: -4px;
+                            height: 6px;
+                            left: calc((100% - 6px) / 2);
+                            position: absolute;
+                            width: 6px;
+                        }
+                    }
+
+                    @media (hover :hover) {
+                        &:hover {
+                            &:not([active="true"]) {
+                                cursor: pointer;
+                                outline-offset: 3px;
+                                outline: 2px solid map-get($colors, dark_yellow);
+                            }
+                        }
+                    }
+                        
+                    img {
+                        display: block;
+                        left: 5%;
+                        position: relative;
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
