@@ -11,11 +11,7 @@ const updateDisplay = (item) => {
     if (active) {
         let node, name, type, id, rarity
 
-<<<<<<< HEAD
         fetch('/json/items.json')
-=======
-        fetch('json/items.json')
->>>>>>> 1192a294a2e061447d224cb0aa26ca6ab06abdba
             .then(response => response.json())
             .then(data => {
                 for (const key in data) {
