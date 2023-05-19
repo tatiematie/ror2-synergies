@@ -27,7 +27,7 @@ const updateDisplay = (item) => {
 
                 itemTitle.innerHTML = name
                 itemType.innerHTML = rarity + ' ' + type
-                itemThumb.setAttribute('src', '../assets/img/items/' + id + '.png')
+                itemThumb.setAttribute('src', 'assets/img/items/' + id + '.png')
                 itemThumb.parentNode.setAttribute('rarity', rarity.toLowerCase())
             })
     }
