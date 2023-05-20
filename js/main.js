@@ -3,41 +3,58 @@ const itemList = document.querySelectorAll('#item-select button'),
     itemTitle = document.querySelector('#item-title'),
     itemType = document.querySelector('#item-type'),
     itemThumb = document.querySelector('#item-thumbnail img'),
-    itemDesc = document.querySelector('#item-desc')
+    itemDesc = document.querySelector('#item-desc'),
+    itemSelect = document.querySelector('#item-select')
 
-// update display panel on selection
-const updateDisplay = (item) => {
-    let active = item.getAttribute('active')
+const readFile = async (filepath) => {
+    const response = await fetch(filepath)
+    return await response.json()
+};
 
-    if (active) {
-        let node, name, rarity, type, id, desc
+let itemData = readFile('json/items.json')
 
-        fetch('json/items.json')
-            .then(response => response.json())
-            .then(data => {
-                for (const key in data) {
-                    node = data[key]
+// const loadButtons = window.onload = () => {
+//     itemData.then(itemData => {
+//         itemData.forEach(item => {
+//             let li = document.createElement('li'),
+//                 button = document.createElement('button'),
+//                 img = document.createElement('img')
 
-                    if (node.name == item.getAttribute('title')) {
-                        name = node.name,
-                            rarity = node.rarity,
-                            type = node.type,
-                            id = node.id,
-                            desc = node.description
-                    }
-                }
+//             li.classList.add('item')
 
-                itemTitle.innerHTML = name
-                itemType.innerHTML = rarity + ' ' + type
-                itemThumb.parentNode.setAttribute('rarity', rarity.toLowerCase())
-                itemThumb.setAttribute('src', 'assets/img/items/' + id + '.png')
-                itemThumb.setAttribute('title', name)
-                itemDesc.children[1].innerHTML = desc
-            })
-    }
+//             button.setAttribute('type', 'button')
+//             button.setAttribute('title', item.name)
+//             button.setAttribute('rarity', item.rarity.toLowerCase())
+
+//             img.setAttribute('src', 'assets/img/items/' + item.id + '.png')
+//             img.setAttribute('alt', item.name)
+//             img.setAttribute('loading', 'lazy')
+
+//             button.append(img)
+//             li.append(button)
+//             itemSelect.append(li)
+//         })
+
+//         itemList = document.querySelectorAll('#item-select button')
+//     })
+// }
+
+const updateDisplay = (toShow) => {
+    itemData.then(itemData => {
+        itemData.forEach(item => {
+            let active = toShow.getAttribute('active')
+
+            if (active && toShow.getAttribute('title') == item.name) {
+                itemTitle.innerHTML = item.name
+                itemType.innerHTML = item.rarity + ' ' + item.type
+                itemThumb.parentNode.setAttribute('rarity', item.rarity.toLowerCase())
+                itemThumb.setAttribute('src', 'assets/img/items/' + item.id + '.png')
+                itemDesc.children[1].innerHTML = item.description
+            }
+        })
+    })
 }
 
-// item selection listener
 for (const i of itemList) {
     i.addEventListener('mouseup', (event) => {
         if (!i.getAttribute('active') === true) {
