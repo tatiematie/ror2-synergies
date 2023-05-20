@@ -4,1312 +4,645 @@
         "rarity": "Common",
         "type": "Item",
         "id": "soldiers-syringe",
-        "description": [
-            "Description:",
-            "<span yellow>+15%</span> attack speed <span gray>(+15% per stack)</span>."
-        ],
-        "tags": [
-            "haste"
-        ],
-        "synergies": []
+        "description": "<span yellow>+15%</span> attack speed <span gray>(+15% per stack)</span>."
     },
     {
         "name": "Tougher Times",
         "rarity": "Common",
         "type": "Item",
         "id": "tougher-times",
-        "description": [
-            "Description:",
-            "<span green>15%</span> chance <span gray>(+15% per stack)</span> to block damage."
-        ],
-        "tags": [
-            "defense"
-        ],
-        "synergies": []
+        "description": "<span green>15%</span> chance <span gray>(+15% per stack)</span> to block damage."
     },
     {
         "name": "Monster Tooth",
         "rarity": "Common",
         "type": "Item",
         "id": "monster-tooth",
-        "description": [
-            "Description:",
-            "Enemies drop healing orbs that heal <span green>8 + 2%</span> of max health <span gray>(+2% per stack)</span>."
-        ],
-        "tags": [
-            "healing",
-            "onkill"
-        ],
-        "synergies": []
+        "description": "Enemies drop healing orbs that heal <span green>8 + 2%</span> of max health <span gray>(+2% per stack)</span>."
     },
     {
         "name": "Lens Maker's Glasses",
         "rarity": "Common",
         "type": "Item",
         "id": "lens-makers-glasses",
-        "description": [
-            "Description:",
-            "<span yellow>+10%</span> chance <span gray>(+10% per stack)</span> to critically strike <span gray>(x2 damage)</span>."
-        ],
-        "tags": [
-            "crit"
-        ],
-        "synergies": []
+        "description": "<span yellow>+10%</span> chance <span gray>(+10% per stack)</span> to critically strike <span gray>(x2 damage)</span>."
     },
     {
         "name": "Paul's Goat Hoof",
         "rarity": "Common",
         "type": "Item",
         "id": "pauls-goat-hoof",
-        "description": [
-            "Description:",
-            "<span blue>+14%</span> movement speed <span gray>(+14% per stack)</span>."
-        ],
-        "tags": [
-            "speed",
-            "mobility"
-        ],
-        "synergies": []
+        "description": "<span blue>+14%</span> movement speed <span gray>(+14% per stack)</span>."
     },
     {
         "name": "Bustling Fungus",
         "rarity": "Common",
         "type": "Item",
         "id": "bustling-fungus",
-        "description": [
-            "Description:",
-            "Standing still heals allies within <span green>3m</span> <span gray>(+1.5m per stack)</span> for <span green>4.5%</span> of max health <span gray>(+2.25% per stack)</span>."
-        ],
-        "tags": [
-            "healing",
-            "area"
-        ],
-        "synergies": []
+        "description": "Standing still heals allies within <span green>3m</span> <span gray>(+1.5m per stack)</span> for <span green>4.5%</span> of max health <span gray>(+2.25% per stack)</span>."
     },
     {
         "name": "Crowbar",
         "rarity": "Common",
         "type": "Item",
         "id": "crowbar",
-        "description": [
-            "Description:",
-            "Enemies above 90% health take <span yellow>+75%</span> more damage <span gray>(+75% per stack)</span>."
-        ],
-        "tags": [
-            "damage"
-        ],
-        "synergies": []
+        "description": "Enemies above 90% health take <span yellow>+75%</span> more damage <span gray>(+75% per stack)</span>."
     },
     {
         "name": "Tri-Tip Dagger",
         "rarity": "Common",
         "type": "Item",
         "id": "tri-tip-dagger",
-        "description": [
-            "Description:",
-            "<span yellow>10%</span> chance <span gray>(+10% per stack)</span> to bleed enemies for <span yellow>240%</span> base damage."
-        ],
-        "tags": [
-            "effect",
-            "proc"
-        ],
-        "synergies": []
+        "description": "<span yellow>10%</span> chance <span gray>(+10% per stack)</span> to bleed enemies for <span yellow>240%</span> base damage."
     },
     {
         "name": "Warbanner",
         "rarity": "Common",
         "type": "Item",
         "id": "warbanner",
-        "description": [
-            "Description:",
-            "Drop banners when leveling up and starting teleporters, grants <span yellow>+30%</span> attack and movement speed to allies within <span blue>16m</span> <span gray>(+8m per stack)</span>."
-        ],
-        "tags": [
-            "haste",
-            "speed"
-        ],
-        "synergies": []
+        "description": "Drop banners when leveling up and starting teleporters, grants <span yellow>+30%</span> attack and movement speed to allies within <span blue>16m</span> <span gray>(+8m per stack)</span>."
     },
     {
         "name": "Cautious Slug",
         "rarity": "Common",
         "type": "Item",
         "id": "cautious-slug",
-        "description": [
-            "Description:",
-            "Heal <span green>+3hp/s</span> <span gray>(+3hp per stack)</span> while outside of combat."
-        ],
-        "tags": [
-            "healing"
-        ],
-        "synergies": []
+        "description": "Heal <span green>+3hp/s</span> <span gray>(+3hp per stack)</span> while outside of combat."
     },
     {
         "name": "Personal Shield Generator",
         "rarity": "Common",
         "type": "Item",
         "id": "personal-shield-generator",
-        "description": [
-            "Description:",
-            "Gain a shield equal to <span green>8%</span> of max health <span gray>(+8% per stack)</span>. Recharges after 9s outside of danger."
-        ],
-        "tags": [
-            "shield"
-        ],
-        "synergies": []
+        "description": "Gain a shield equal to <span green>8%</span> of max health <span gray>(+8% per stack)</span>. Recharges after 9s outside of danger."
     },
     {
         "name": "Medkit",
         "rarity": "Common",
         "type": "Item",
         "id": "medkit",
-        "description": [
-            "Description:",
-            "Heal <span green>20 + 5%</span> of max health <span gray>(+5% per stack)</span> 2s after taking damage."
-        ],
-        "tags": [
-            "healing"
-        ],
-        "synergies": []
+        "description": "Heal <span green>20 + 5%</span> of max health <span gray>(+5% per stack)</span> 2s after taking damage."
     },
     {
         "name": "Gasoline",
         "rarity": "Common",
         "type": "Item",
         "id": "gasoline",
-        "description": [
-            "Description:",
-            "Killing an enemy ignites enemies within <span yellow>12m</span>, <span gray>(+4m per stack)</span> dealing <span yellow>150%</span> base damage. Burning enemies take <span yellow>150%</span> base damage <span gray>(+75% per stack)</span> per tick."
-        ],
-        "tags": [
-            "effect",
-            "area"
-        ],
-        "synergies": []
+        "description": "Killing an enemy ignites enemies within <span yellow>12m</span>, <span gray>(+4m per stack)</span> dealing <span yellow>150%</span> base damage. Burning enemies take <span yellow>150%</span> base damage <span gray>(+75% per stack)</span> per tick."
     },
     {
         "name": "Stun Grenade",
         "rarity": "Common",
         "type": "Item",
         "id": "stun-grenade",
-        "description": [
-            "Description:",
-            "<span blue>5%</span> chance <span gray>(+5% per stack)</span> to stun enemies on hit for 2s."
-        ],
-        "tags": [
-            "proc"
-        ],
-        "synergies": []
+        "description": "<span blue>5%</span> chance <span gray>(+5% per stack)</span> to stun enemies on hit for 2s."
     },
     {
         "name": "Bundle of Fireworks",
         "rarity": "Common",
         "type": "Item",
         "id": "bundle-of-fireworks",
-        "description": [
-            "Description:",
-            "Activating an interactable launches <span yellow>8 fireworks</span> <span gray>(+4 per stack)</span> that deal <span yellow>300%</span> base damage."
-        ],
-        "tags": [
-            "interact"
-        ],
-        "synergies": []
+        "description": "Activating an interactable launches <span yellow>8 fireworks</span> <span gray>(+4 per stack)</span> that deal <span yellow>300%</span> base damage."
     },
     {
         "name": "Energy Drink",
         "rarity": "Common",
         "type": "Item",
         "id": "energy-drink",
-        "description": [
-            "Description:",
-            "<span blue>+25%</span> movement speed <span gray>(+25% per stack)</span> while sprinting."
-        ],
-        "tags": [
-            "speed",
-            "mobility",
-            "sprint"
-        ],
-        "synergies": []
+        "description": "<span blue>+25%</span> movement speed <span gray>(+25% per stack)</span> while sprinting."
     },
     {
         "name": "Backup Magazine",
         "rarity": "Common",
         "type": "Item",
         "id": "backup-magazine",
-        "description": [
-            "Description:",
-            "<span blue>+1</span> charge <span gray>(+1 per stack)</span> to your Secondary skill."
-        ],
-        "tags": [
-            "utility"
-        ],
-        "synergies": []
+        "description": "<span blue>+1</span> charge <span gray>(+1 per stack)</span> to your Secondary skill."
     },
     {
         "name": "Sticky Bomb",
         "rarity": "Common",
         "type": "Item",
         "id": "sticky-bomb",
-        "description": [
-            "Description:",
-            "<span yellow>5%</span> chance <span gray>(+5% per stack)</span> to attach a bomb to enemies that detonates for <span yellow>180%</span> total damage."
-        ],
-        "tags": [
-            "damage",
-            "proc"
-        ],
-        "synergies": []
+        "description": "<span yellow>5%</span> chance <span gray>(+5% per stack)</span> to attach a bomb to enemies that detonates for <span yellow>180%</span> total damage."
     },
     {
         "name": "Rusted Key",
         "rarity": "Common",
         "type": "Item",
         "id": "rusted-key",
-        "description": [
-            "Description:",
-            "A hidden lockbox will appear somewhere on the next stage with an <span blue>80%</span> chance to drop an <span green>Uncommon</span> item and a <span blue>20%</span> chance to drop a <span red>Legendary</span> item <span gray>(Consumed on use)</span>."
-        ],
-        "tags": [
-            "utility"
-        ],
-        "synergies": []
+        "description": "A hidden lockbox will appear somewhere on the next stage with an <span blue>80%</span> chance to drop an <span green>Uncommon</span> item and a <span blue>20%</span> chance to drop a <span red>Legendary</span> item <span gray>(Consumed on use)</span>."
     },
     {
         "name": "Armor-Piercing Rounds",
         "rarity": "Common",
         "type": "Item",
         "id": "armor-piercing-rounds",
-        "description": [
-            "Description:",
-            "<span yellow>+20%</span> damage <span gray>(+20% per stack)</span> dealt to stage bosses."
-        ],
-        "tags": [
-            "damage"
-        ],
-        "synergies": []
+        "description": "<span yellow>+20%</span> damage <span gray>(+20% per stack)</span> dealt to stage bosses."
     },
     {
         "name": "Topaz Brooch",
         "rarity": "Common",
         "type": "Item",
         "id": "topaz-brooch",
-        "description": [
-            "Description:",
-            "<span green>+15</span> temporary barrier <span gray>(+15 per stack)</span> per kill."
-        ],
-        "tags": [
-            "defense",
-            "onkill"
-        ],
-        "synergies": []
+        "description": "<span green>+15</span> temporary barrier <span gray>(+15 per stack)</span> per kill."
     },
     {
         "name": "Focus Crystal",
         "rarity": "Common",
         "type": "Item",
         "id": "focus-crystal",
-        "description": [
-            "Description:",
-            "<span yellow>+20%</span> damage <span gray>(+20% per stack)</span> dealt to enemies within 13m."
-        ],
-        "tags": [
-            "damage"
-        ],
-        "synergies": []
+        "description": "<span yellow>+20%</span> damage <span gray>(+20% per stack)</span> dealt to enemies within 13m."
     },
     {
         "name": "Bison Steak",
         "rarity": "Common",
         "type": "Item",
         "id": "bison-steak",
-        "description": [
-            "Description:",
-            "<span green>+25</span> max health <span gray>(+25hp per stack)</span>."
-        ],
-        "tags": [
-            "health"
-        ],
-        "synergies": []
+        "description": "<span green>+25</span> max health <span gray>(+25hp per stack)</span>."
     },
     {
         "name": "Repulsion Armor Plate",
         "rarity": "Common",
         "type": "Item",
         "id": "repulsion-armor-plate",
-        "description": [
-            "Description:",
-            "Reduce damage taken by <span yellow>5</span> <span gray>(+5 per stack)</span>."
-        ],
-        "tags": [
-            "defense"
-        ],
-        "synergies": []
+        "description": "Reduce damage taken by <span yellow>5</span> <span gray>(+5 per stack)</span>."
     },
     {
         "name": "Mocha",
         "rarity": "Common",
         "type": "Item",
         "id": "mocha",
-        "description": [
-            "Description:",
-            "<span yellow>+7.5%</span> attack speed <span gray>(+7.5% per stack)</span>, <span blue>+7%</span> movement speed <span gray>(+7% per stack)</span>."
-        ],
-        "tags": [
-            "haste",
-            "speed",
-            "mobility"
-        ],
-        "synergies": []
+        "description": "<span yellow>+7.5%</span> attack speed <span gray>(+7.5% per stack)</span>, <span blue>+7%</span> movement speed <span gray>(+7% per stack)</span>."
     },
     {
         "name": "Power Elixir",
         "rarity": "Common",
         "type": "Item",
         "id": "power-elixir",
-        "description": [
-            "Description:",
-            "Heal for <span green>75%</span> of max health when below <span red>25%</span> of max health <span gray>(Consumed on use)</span>."
-        ],
-        "tags": [
-            "healing"
-        ],
-        "synergies": []
+        "description": "Heal for <span green>75%</span> of max health when below <span red>25%</span> of max health <span gray>(Consumed on use)</span>."
     },
     {
         "name": "Delicate Watch",
         "rarity": "Common",
         "type": "Item",
         "id": "delicate-watch",
-        "description": [
-            "Description:",
-            "<span yellow>+20%</span> damage <span gray>(+20% per stack)</span>, breaks when below <span red>25%</span> of max health."
-        ],
-        "tags": [
-            "damage"
-        ],
-        "synergies": []
+        "description": "<span yellow>+20%</span> damage <span gray>(+20% per stack)</span>, breaks when below <span red>25%</span> of max health."
     },
     {
         "name": "Oddly Shaped Opal",
         "rarity": "Common",
         "type": "Item",
         "id": "oddly-shaped-opal",
-        "description": [
-            "Description:",
-            "<span green>+100</span> armor <span gray>(+100 per stack)</span> outside of danger."
-        ],
-        "tags": [
-            "defense"
-        ],
-        "synergies": []
+        "description": "<span green>+100</span> armor <span gray>(+100 per stack)</span> outside of danger."
     },
     {
         "name": "Roll of Pennies",
         "rarity": "Common",
         "type": "Item",
         "id": "roll-of-pennies",
-        "description": [
-            "Description:",
-            "Grants <span blue>3</span> gold <span gray>(+3 per stack)</span> after taking damage from an enemy, scales with time."
-        ],
-        "tags": [
-            "utility"
-        ],
-        "synergies": []
+        "description": "Grants <span blue>3</span> gold <span gray>(+3 per stack)</span> after taking damage from an enemy, scales with time."
     },
     {
         "name": "AtG Missile Mk. 1",
         "rarity": "Uncommon",
         "type": "Item",
         "id": "atg-missile-mk-1",
-        "description": [
-            "Description:",
-            "<span yellow>10%</span> chance to fire a missile dealing <span yellow>300%</span> total damage <span gray>(+300% per stack)</span>."
-        ],
-        "tags": [
-            "damage",
-            "proc"
-        ],
-        "synergies": []
+        "description": "<span yellow>10%</span> chance to fire a missile dealing <span yellow>300%</span> total damage <span gray>(+300% per stack)</span>."
     },
     {
         "name": "Will-o'-the-wisp",
         "rarity": "Uncommon",
         "type": "Item",
         "id": "will-o-the-wisp",
-        "description": [
-            "Description:",
-            "Killing an enemy creates a lava pillar with a <span yellow>12m</span> <span gray>(+2.4m per stack)</span> radius, dealing <span yellow>350%</span> base damage <span gray>(+280% per stack)</span>."
-        ],
-        "tags": [
-            "damage",
-            "area",
-            "onkill"
-        ],
-        "synergies": []
+        "description": "Killing an enemy creates a lava pillar with a <span yellow>12m</span> <span gray>(+2.4m per stack)</span> radius, dealing <span yellow>350%</span> base damage <span gray>(+280% per stack)</span>."
     },
     {
         "name": "Hopoo Feather",
         "rarity": "Uncommon",
         "type": "Item",
         "id": "hopoo-feather",
-        "description": [
-            "Description:",
-            "<span blue>+1</span> jump <span gray>(+1 per stack)</span>."
-        ],
-        "tags": [
-            "mobility"
-        ],
-        "synergies": []
+        "description": "<span blue>+1</span> jump <span gray>(+1 per stack)</span>."
     },
     {
         "name": "Ukulele",
         "rarity": "Uncommon",
         "type": "Item",
         "id": "ukulele",
-        "description": [
-            "Description:",
-            "<span yellow>25%</span> chance to arc lightning between <span yellow>3</span> enemies <span gray>(+2 per stack)</span> within <span yellow>20m</span> <span gray>(+2m per stack)</span> of each other, dealing <span yellow>80%</span> total damage."
-        ],
-        "tags": [
-            "proc"
-        ],
-        "synergies": []
+        "description": "<span yellow>25%</span> chance to arc lightning between <span yellow>3</span> enemies <span gray>(+2 per stack)</span> within <span yellow>20m</span> <span gray>(+2m per stack)</span> of each other, dealing <span yellow>80%</span> total damage."
     },
     {
         "name": "Leeching Seed",
         "rarity": "Uncommon",
         "type": "Item",
         "id": "leeching-seed",
-        "description": [
-            "Description:",
-            "Heal <span green>1hp</span> <span gray>(+1hp per stack)</span> per hit."
-        ],
-        "tags": [
-            "healing"
-        ],
-        "synergies": []
+        "description": "Heal <span green>1hp</span> <span gray>(+1hp per stack)</span> per hit."
     },
     {
         "name": "Predatory Instincts",
         "rarity": "Uncommon",
         "type": "Item",
         "id": "predatory-instincts",
-        "description": [
-            "Description:",
-            "Critical strikes boost attack speed by <span yellow>12%</span> <span gray>(+24% per stack)</span>, capped at <span yellow>36%</span>."
-        ],
-        "tags": [
-            "haste",
-            "crit"
-        ],
-        "synergies": []
+        "description": "Critical strikes boost attack speed by <span yellow>12%</span> <span gray>(+24% per stack)</span>, capped at <span yellow>36%</span>."
     },
     {
         "name": "Red Whip",
         "rarity": "Uncommon",
         "type": "Item",
         "id": "red-whip",
-        "description": [
-            "Description:",
-            "<span blue>+30%</span> movement speed <span gray>(+30% per stack)</span> outside of combat."
-        ],
-        "tags": [
-            "speed",
-            "mobility"
-        ],
-        "synergies": []
+        "description": "<span blue>+30%</span> movement speed <span gray>(+30% per stack)</span> outside of combat."
     },
     {
         "name": "Old War Stealthkit",
         "rarity": "Uncommon",
         "type": "Item",
         "id": "old-war-stealthkit",
-        "description": [
-            "Description:",
-            "Become invisible and gain <span blue>40%</span> movement speed for 5s when below <span red>25%</span> max health, 30s <span gray>(-50% per stack)</span> cooldown."
-        ],
-        "tags": [
-            "utility"
-        ],
-        "synergies": []
+        "description": "Become invisible and gain <span blue>40%</span> movement speed for 5s when below <span red>25%</span> max health, 30s <span gray>(-50% per stack)</span> cooldown."
     },
     {
         "name": "Harvester's Scythe",
         "rarity": "Uncommon",
         "type": "Item",
         "id": "harvesters-scythe",
-        "description": [
-            "Description:",
-            "<span yellow>+5%</span> critical strike chance, critical strikes heal for <span green>8hp</span> <span gray>(+4hp per stack)</span>."
-        ],
-        "tags": [
-            "healing",
-            "crit"
-        ],
-        "synergies": []
+        "description": "<span yellow>+5%</span> critical strike chance, critical strikes heal for <span green>8hp</span> <span gray>(+4hp per stack)</span>."
     },
     {
         "name": "Fuel Cell",
         "rarity": "Uncommon",
         "type": "Item",
         "id": "fuel-cell",
-        "description": [
-            "Description:",
-            "<span blue>+1</span> equipment charge <span gray>(+1 per stack)</span>, reduced equipment cooldown by <span blue>15%.</span> <span gray>(+15% per stack)</span>"
-        ],
-        "tags": [
-            "utility"
-        ],
-        "synergies": []
+        "description": "<span blue>+1</span> equipment charge <span gray>(+1 per stack)</span>, reduced equipment cooldown by <span blue>15%.</span> <span gray>(+15% per stack)</span>"
     },
     {
         "name": "Infusion",
         "rarity": "Uncommon",
         "type": "Item",
         "id": "infusion",
-        "description": [
-            "Description:",
-            "Killing enemies increases max health by <span green>1hp</span>, <span gray>(+1hp per stack)</span> capped at <span green>100</span> <span gray>(+100 per stack)</span>."
-        ],
-        "tags": [
-            "health",
-            "onkill"
-        ],
-        "synergies": []
+        "description": "Killing enemies increases max health by <span green>1hp</span>, <span gray>(+1hp per stack)</span> capped at <span green>100</span> <span gray>(+100 per stack)</span>."
     },
     {
         "name": "Bandolier",
         "rarity": "Uncommon",
         "type": "Item",
         "id": "bandolier",
-        "description": [
-            "Description:",
-            "<span blue>18%</span> chance <span gray>(+10% per stack)</span> for enemies to drop ammo packs, ammo packs reset skill cooldowns."
-        ],
-        "tags": [
-            "utility",
-            "onkill"
-        ],
-        "synergies": []
+        "description": "<span blue>18%</span> chance <span gray>(+10% per stack)</span> for enemies to drop ammo packs, ammo packs reset skill cooldowns."
     },
     {
         "name": "Berzerker's Pauldron",
         "rarity": "Uncommon",
         "type": "Item",
         "id": "berzerkers-pauldron",
-        "description": [
-            "Description:",
-            "Killing <span yellow>4</span> enemies <span gray>(3 pre-DLC)</span> within 1s boosts movement speed by <span blue>50%</span> and attack speed by <span yellow>100%</span> for 6s <span gray>(+4s per stack)</span>."
-        ],
-        "tags": [
-            "haste",
-            "speed",
-            "onkill"
-        ],
-        "synergies": []
+        "description": "Killing <span yellow>4</span> enemies <span gray>(3 pre-DLC)</span> within 1s boosts movement speed by <span blue>50%</span> and attack speed by <span yellow>100%</span> for 6s <span gray>(+4s per stack)</span>."
     },
     {
         "name": "Rose Buckler",
         "rarity": "Uncommon",
         "type": "Item",
         "id": "rose-buckler",
-        "description": [
-            "Description:",
-            "<span green>+30</span> armor <span gray>(+30 per stack)</span> while sprinting."
-        ],
-        "tags": [
-            "defense",
-            "sprint"
-        ],
-        "synergies": []
+        "description": "<span green>+30</span> armor <span gray>(+30 per stack)</span> while sprinting."
     },
     {
         "name": "Runald's Band",
         "rarity": "Uncommon",
         "type": "Item",
         "id": "runalds-band",
-        "description": [
-            "Description:",
-            "Hits dealing more than <span yellow>400%</span> damage slow the target by <span blue>80%</span> for 3s <span gray>(+3s per stack)</span> and deal an aditional <span yellow>250%</span> total damage <span gray>(+250% per stack)</span>, 10s cooldown."
-        ],
-        "tags": [
-            "damage",
-            "effect"
-        ],
-        "synergies": []
+        "description": "Hits dealing more than <span yellow>400%</span> damage slow the target by <span blue>80%</span> for 3s <span gray>(+3s per stack)</span> and deal an aditional <span yellow>250%</span> total damage <span gray>(+250% per stack)</span>, 10s cooldown."
     },
     {
         "name": "Kjaro's Band",
         "rarity": "Uncommon",
         "type": "Item",
         "id": "kjaros-band",
-        "description": [
-            "Description:",
-            "Hits dealing more than <span yellow>400%</span> damage deal an aditional <span yellow>300%</span> total damage over time, 10s cooldown"
-        ],
-        "tags": [
-            "damage"
-        ],
-        "synergies": []
+        "description": "Hits dealing more than <span yellow>400%</span> damage deal an aditional <span yellow>300%</span> total damage over time, 10s cooldown"
     },
     {
         "name": "Chronobauble",
         "rarity": "Uncommon",
         "type": "Item",
         "id": "chronobauble",
-        "description": [
-            "Description:",
-            "Slow enemies by <span blue>60%</span> for 2s <span gray>(+2s per stack)</span> on hit."
-        ],
-        "tags": [
-            "effect",
-            "proc"
-        ],
-        "synergies": []
+        "description": "Slow enemies by <span blue>60%</span> for 2s <span gray>(+2s per stack)</span> on hit."
     },
     {
         "name": "Wax Quail",
         "rarity": "Uncommon",
         "type": "Item",
         "id": "wax-quail",
-        "description": [
-            "Description:",
-            "Jumping while sprinting boosts you forward by <span blue>10m</span> <span gray>(+10m per stack)</span>."
-        ],
-        "tags": [
-            "mobility"
-        ],
-        "synergies": []
+        "description": "Jumping while sprinting boosts you forward by <span blue>10m</span> <span gray>(+10m per stack)</span>."
     },
     {
         "name": "Old Guillotine",
         "rarity": "Uncommon",
         "type": "Item",
         "id": "old-guillotine",
-        "description": [
-            "Description:",
-            "Elite enemies below <span yellow>13%</span> health <span gray>(+13% per stack)</span> die instantly."
-        ],
-        "tags": [
-            "utility"
-        ],
-        "synergies": []
+        "description": "Elite enemies below <span yellow>13%</span> health <span gray>(+13% per stack)</span> die instantly."
     },
     {
         "name": "War Horn",
         "rarity": "Uncommon",
         "type": "Item",
         "id": "war-horn",
-        "description": [
-            "Description:",
-            "Activating an equipment boosts attack speed by <span yellow>70%</span> for 8s <span gray>(+4s per stack)</span>."
-        ],
-        "tags": [
-            "haste",
-            "onuse"
-        ],
-        "synergies": []
+        "description": "Activating an equipment boosts attack speed by <span yellow>70%</span> for 8s <span gray>(+4s per stack)</span>."
     },
     {
         "name": "Lepton Daisy",
         "rarity": "Uncommon",
         "type": "Item",
         "id": "lepton-daisy",
-        "description": [
-            "Description:",
-            "Heals allies within the teleporter for <span green>50%</span> of max health <span green>1</span> time <span gray>(+1 per stack)</span> per teleporter."
-        ],
-        "tags": [
-            "healing"
-        ],
-        "synergies": []
+        "description": "Heals allies within the teleporter for <span green>50%</span> of max health <span green>1</span> time <span gray>(+1 per stack)</span> per teleporter."
     },
     {
         "name": "Razorwire",
         "rarity": "Uncommon",
         "type": "Item",
         "id": "razorwire",
-        "description": [
-            "Description:",
-            "Taking damage hits up to <span yellow>5</span> enemies <span gray>(+2 per stack)</span> within <span yellow>25m</span> <span gray>(+10m per stack)</span> for <span yellow>160%</span> damage."
-        ],
-        "tags": [
-            "damage"
-        ],
-        "synergies": []
+        "description": "Taking damage hits up to <span yellow>5</span> enemies <span gray>(+2 per stack)</span> within <span yellow>25m</span> <span gray>(+10m per stack)</span> for <span yellow>160%</span> damage."
     },
     {
         "name": "Ghor's Tome",
         "rarity": "Uncommon",
         "type": "Item",
         "id": "ghors-tome",
-        "description": [
-            "Description:",
-            "<span blue>4%</span> chance <span gray>(+4% per stack)</span> for enemies to drop treasure worth <span blue>25</span> gold, scales with time."
-        ],
-        "tags": [
-            "utility",
-            "onkill"
-        ],
-        "synergies": []
+        "description": "<span blue>4%</span> chance <span gray>(+4% per stack)</span> for enemies to drop treasure worth <span blue>25</span> gold, scales with time."
     },
     {
         "name": "Squid Polyp",
         "rarity": "Uncommon",
         "type": "Item",
         "id": "squid-polyp",
-        "description": [
-            "Description:",
-            "Activating an interactable summons a Squid Turret which shoots at <span yellow>100%</span> attack speed <span gray>(+100% per stack)</span>, lasts 30s."
-        ],
-        "tags": [
-            "damage",
-            "interact",
-            "summon"
-        ],
-        "synergies": []
+        "description": "Activating an interactable summons a Squid Turret which shoots at <span yellow>100%</span> attack speed <span gray>(+100% per stack)</span>, lasts 30s."
     },
     {
         "name": "Death Mark",
         "rarity": "Uncommon",
         "type": "Item",
         "id": "death-mark",
-        "description": [
-            "Description:",
-            "Enemies inflicted with at least <span yellow>4</span> debuffs take <span yellow>50%</span> more damage for 7s <span gray>(+7s per stack)</span>."
-        ],
-        "tags": [
-            "effect"
-        ],
-        "synergies": []
+        "description": "Enemies inflicted with at least <span yellow>4</span> debuffs take <span yellow>50%</span> more damage for 7s <span gray>(+7s per stack)</span>."
     },
     {
         "name": "Hunter's Harpoon",
         "rarity": "Uncommon",
         "type": "Item",
         "id": "hunters-harpoon",
-        "description": [
-            "Description:",
-            "Killing an enemy increases movement speed by <span yellow>125%</span> for 1s <span gray>(+0.5s per stack)</span>."
-        ],
-        "tags": [
-            "haste",
-            "onkill"
-        ],
-        "synergies": []
+        "description": "Killing an enemy increases movement speed by <span yellow>125%</span> for 1s <span gray>(+0.5s per stack)</span>."
     },
     {
         "name": "Ignition Tank",
         "rarity": "Uncommon",
         "type": "Item",
         "id": "ignition-tank",
-        "description": [
-            "Description:",
-            "Fire deals <span yellow>300%</span> more damage <span gray>(+300% per stack)</span>."
-        ],
-        "tags": [
-            "effect"
-        ],
-        "synergies": []
+        "description": "Fire deals <span yellow>300%</span> more damage <span gray>(+300% per stack)</span>."
     },
     {
         "name": "Shuriken",
         "rarity": "Uncommon",
         "type": "Item",
         "id": "shuriken",
-        "description": [
-            "Description:",
-            "Using a Primary skill throws a shuriken dealing <span yellow>400%</span> base damage <span gray>(+400% per stack)</span>, capped at 3 shurikens. 10s reload."
-        ],
-        "tags": [
-            "damage"
-        ],
-        "synergies": []
+        "description": "Using a Primary skill throws a shuriken dealing <span yellow>400%</span> base damage <span gray>(+400% per stack)</span>, capped at 3 shurikens. 10s reload."
     },
     {
         "name": "Shipping Request Form",
         "rarity": "Uncommon",
         "type": "Item",
         "id": "shipping-request-form",
-        "description": [
-            "Description:",
-            "A delivery will be on the next stage containing two items, each item has a <span blue>79%</span> chance to be <span gray>Common</span>, <span blue>20%</span> chance to be <span green>Uncommon</span>, and <span blue>1%</span> chance to be <span red>Legendary</span>."
-        ],
-        "tags": [
-            "utility"
-        ],
-        "synergies": []
+        "description": "A delivery will be on the next stage containing two items, each item has a <span blue>79%</span> chance to be <span gray>Common</span>, <span blue>20%</span> chance to be <span green>Uncommon</span>, and <span blue>1%</span> chance to be <span red>Legendary</span>."
     },
     {
         "name": "Brilliant Behemoth",
         "rarity": "Legendary",
         "type": "Item",
-        "id": "brilliant-behemoth",
-        "description": [],
-        "tags": [
-            "damage",
-            "area"
-        ],
-        "synergies": []
+        "id": "brilliant-behemoth"
     },
     {
         "name": "Ceremonial Daggers",
         "rarity": "Legendary",
         "type": "Item",
-        "id": "ceremonial-daggers",
-        "description": [],
-        "tags": [
-            "damage",
-            "onkill"
-        ],
-        "synergies": []
+        "id": "ceremonial-daggers"
     },
     {
         "name": "Frost Relic",
         "rarity": "Legendary",
         "type": "Item",
-        "id": "frost-relic",
-        "description": [],
-        "tags": [
-            "damage",
-            "effect",
-            "area"
-        ],
-        "synergies": []
+        "id": "frost-relic"
     },
     {
         "name": "Happiest Mask",
         "rarity": "Legendary",
         "type": "Item",
-        "id": "happiest-mask",
-        "description": [],
-        "tags": [
-            "summon",
-            "onkill"
-        ],
-        "synergies": []
+        "id": "happiest-mask"
     },
     {
         "name": "H3AD-5T v2",
         "rarity": "Legendary",
         "type": "Item",
-        "id": "h3ad-5t-v2",
-        "description": [],
-        "tags": [
-            "mobility",
-            "damage"
-        ],
-        "synergies": []
+        "id": "h3ad-5t-v2"
     },
     {
         "name": "N'Kuahana's Opinion",
         "rarity": "Legendary",
         "type": "Item",
-        "id": "nkuhanas-opinion",
-        "description": [],
-        "tags": [
-            "damage"
-        ],
-        "synergies": []
+        "id": "nkuhanas-opinion"
     },
     {
         "name": "Unstable Tesla Coil",
         "rarity": "Legendary",
         "type": "Item",
-        "id": "unstable-tesla-coil",
-        "description": [],
-        "tags": [
-            "damage",
-            "area"
-        ],
-        "synergies": []
+        "id": "unstable-tesla-coil"
     },
     {
         "name": "57 Leaf Clover",
         "rarity": "Legendary",
         "type": "Item",
-        "id": "57-leaf-clover",
-        "description": [],
-        "tags": [
-            "proc"
-        ],
-        "synergies": []
+        "id": "57-leaf-clover"
     },
     {
         "name": "Sentient Meat Hook",
         "rarity": "Legendary",
         "type": "Item",
-        "id": "sentient-meat-hook",
-        "description": [],
-        "tags": [
-            "damage",
-            "area",
-            "proc"
-        ],
-        "synergies": []
+        "id": "sentient-meat-hook"
     },
     {
         "name": "Alien Head",
         "rarity": "Legendary",
         "type": "Item",
-        "id": "alien-head",
-        "description": [],
-        "tags": [
-            "utility"
-        ],
-        "synergies": []
+        "id": "alien-head"
     },
     {
         "name": "Soulbound Catalyst",
         "rarity": "Legendary",
         "type": "Item",
-        "id": "soulbound-catalyst",
-        "description": [],
-        "tags": [
-            "utility",
-            "onkill"
-        ],
-        "synergies": []
+        "id": "soulbound-catalyst"
     },
     {
         "name": "Dio's Best Friend",
         "rarity": "Legendary",
         "type": "Item",
-        "id": "dios-best-friend",
-        "description": [],
-        "tags": [
-            "utility"
-        ],
-        "synergies": []
+        "id": "dios-best-friend"
     },
     {
         "name": "Hardlight Afterburner",
         "rarity": "Legendary",
         "type": "Item",
-        "id": "hardlight-afterburner",
-        "description": [],
-        "tags": [
-            "utility"
-        ],
-        "synergies": []
+        "id": "hardlight-afterburner"
     },
     {
         "name": "Wake of Vultures",
         "rarity": "Legendary",
         "type": "Item",
-        "id": "wake-of-vultures",
-        "description": [],
-        "tags": [
-            "effect",
-            "onkill"
-        ],
-        "synergies": []
+        "id": "wake-of-vultures"
     },
     {
         "name": "Brainstalks",
         "rarity": "Legendary",
         "type": "Item",
-        "id": "brainstalks",
-        "description": [],
-        "tags": [
-            "utility"
-        ],
-        "synergies": []
+        "id": "brainstalks"
     },
     {
         "name": "Rejuvination Rack",
         "rarity": "Legendary",
         "type": "Item",
-        "id": "rejuvination-rack",
-        "description": [],
-        "tags": [
-            "healing"
-        ],
-        "synergies": []
+        "id": "rejuvination-rack"
     },
     {
         "name": "Aegis",
         "rarity": "Legendary",
         "type": "Item",
-        "id": "aegis",
-        "description": [],
-        "tags": [
-            "defense"
-        ],
-        "synergies": []
+        "id": "aegis"
     },
     {
         "name": "Shattering Justice",
         "rarity": "Legendary",
         "type": "Item",
-        "id": "shattering-justice",
-        "description": [],
-        "tags": [
-            "effect"
-        ],
-        "synergies": []
+        "id": "shattering-justice"
     },
     {
         "name": "Resonance Disc",
         "rarity": "Legendary",
         "type": "Item",
-        "id": "resonance-disc",
-        "description": [],
-        "tags": [
-            "damage",
-            "onkill"
-        ],
-        "synergies": []
+        "id": "resonance-disc"
     },
     {
         "name": "Interstellar Desk Plant",
         "rarity": "Legendary",
         "type": "Item",
-        "id": "interstellar-desk-plant",
-        "description": [],
-        "tags": [
-            "healing",
-            "onkill"
-        ],
-        "synergies": []
+        "id": "interstellar-desk-plant"
     },
     {
         "name": "Laser Scope",
         "rarity": "Legendary",
         "type": "Item",
-        "id": "laser-scope",
-        "description": [],
-        "tags": [
-            "crit"
-        ],
-        "synergies": []
+        "id": "laser-scope"
     },
     {
         "name": "Pocket I.C.B.M.",
         "rarity": "Legendary",
         "type": "Item",
-        "id": "pocket-icbm",
-        "description": [],
-        "tags": [
-            "utility"
-        ],
-        "synergies": []
+        "id": "pocket-icbm"
     },
     {
         "name": "Spare Drone Parts",
         "rarity": "Legendary",
         "type": "Item",
-        "id": "spare-drone-parts",
-        "description": [],
-        "tags": [
-            "damage",
-            "summon"
-        ],
-        "synergies": []
+        "id": "spare-drone-parts"
     },
     {
         "name": "Symbiotic Scorpion",
         "rarity": "Legendary",
         "type": "Item",
-        "id": "symbiotic-scorpion",
-        "description": [],
-        "tags": [
-            "effect"
-        ],
-        "synergies": []
+        "id": "symbiotic-scorpion"
     },
     {
         "name": "Ben's Rain Coat",
         "rarity": "Legendary",
         "type": "Item",
-        "id": "bens-rain-coat",
-        "description": [],
-        "tags": [
-            "utility"
-        ],
-        "synergies": []
+        "id": "bens-rain-coat"
     },
     {
         "name": "Bottled Chaos",
         "rarity": "Legendary",
         "type": "Item",
-        "id": "bottled-chaos",
-        "description": [],
-        "tags": [
-            "utility"
-        ],
-        "synergies": []
+        "id": "bottled-chaos"
     },
     {
         "name": "Titanic Knurl",
         "rarity": "Boss",
         "type": "Item",
-        "id": "titanic-knurl",
-        "description": [],
-        "tags": [
-            "healing",
-            "health"
-        ],
-        "synergies": []
+        "id": "titanic-knurl"
     },
     {
         "name": "Queen's Gland",
         "rarity": "Boss",
         "type": "Item",
-        "id": "queens-gland",
-        "description": [],
-        "tags": [
-            "summon"
-        ],
-        "synergies": []
+        "id": "queens-gland"
     },
     {
         "name": "Halcyon Seed",
         "rarity": "Boss",
         "type": "Item",
-        "id": "halcyon-seed",
-        "description": [],
-        "tags": [
-            "summon"
-        ],
-        "synergies": []
+        "id": "halcyon-seed"
     },
     {
         "name": "Little Disciple",
         "rarity": "Boss",
         "type": "Item",
-        "id": "little-disciple",
-        "description": [],
-        "tags": [
-            "damage",
-            "sprint"
-        ],
-        "synergies": []
+        "id": "little-disciple"
     },
     {
         "name": "Pearl",
         "rarity": "Boss",
         "type": "Item",
-        "id": "pearl",
-        "description": [],
-        "tags": [
-            "health"
-        ],
-        "synergies": []
+        "id": "pearl"
     },
     {
         "name": "Irradiant Pearl",
         "rarity": "Boss",
         "type": "Item",
-        "id": "irradiant-pearl",
-        "description": [],
-        "tags": [
-            "haste",
-            "defense",
-            "healing",
-            "crit",
-            "damage",
-            "speed",
-            "mobility",
-            "health"
-        ],
-        "synergies": []
+        "id": "irradiant-pearl"
     },
     {
         "name": "Genesis Loop",
         "rarity": "Boss",
         "type": "Item",
-        "id": "genesis-loop",
-        "description": [],
-        "tags": [
-            "damage"
-        ],
-        "synergies": []
+        "id": "genesis-loop"
     },
     {
         "name": "Molten Perforator",
         "rarity": "Boss",
         "type": "Item",
-        "id": "molten-perforator",
-        "description": [],
-        "tags": [
-            "damage",
-            "effect",
-            "proc"
-        ],
-        "synergies": []
+        "id": "molten-perforator"
     },
     {
         "name": "Shatterspleen",
         "rarity": "Boss",
         "type": "Item",
-        "id": "shatterspleen",
-        "description": [],
-        "tags": [
-            "crit",
-            "effect",
-            "area"
-        ],
-        "synergies": []
+        "id": "shatterspleen"
     },
     {
         "name": "Mired Urn",
         "rarity": "Boss",
         "type": "Item",
-        "id": "mired-urn",
-        "description": [],
-        "tags": [
-            "healing",
-            "effect",
-            "area"
-        ],
-        "synergies": []
+        "id": "mired-urn"
     },
     {
         "name": "Charged Perforator",
         "rarity": "Boss",
         "type": "Item",
-        "id": "charged-perforator",
-        "description": [],
-        "tags": [
-            "damage",
-            "proc"
-        ],
-        "synergies": []
+        "id": "charged-perforator"
     },
     {
         "name": "Empathy Cores",
         "rarity": "Boss",
         "type": "Item",
-        "id": "empathy-cores",
-        "description": [],
-        "tags": [
-            "summon",
-            "damage"
-        ],
-        "synergies": []
+        "id": "empathy-cores"
     },
     {
         "name": "Planula",
         "rarity": "Boss",
         "type": "Item",
-        "id": "planula",
-        "description": [],
-        "tags": [
-            "healing"
-        ],
-        "synergies": []
+        "id": "planula"
     },
     {
         "name": "Defense Nucleus",
         "rarity": "Boss",
         "type": "Item",
-        "id": "defense-nucleus",
-        "description": [],
-        "tags": [
-            "onkill"
-        ],
-        "synergies": []
+        "id": "defense-nucleus"
     }
 ]
