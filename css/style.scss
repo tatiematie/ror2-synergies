@@ -29,15 +29,20 @@ $colors: (
     outline_pane: #25253F,
 
     text_white: #FFFFFF,
+    text_gray: #8D94AC,
+    text_red: #E58161,
+    text_yellow: #FBDA67,
+    text_green: #9CE461,
+    text_blue: #90C8DF,
     text_light_gray: #868686,
-    text_shadow: #00000080,
+    text_shadow: #00000055,
 );
 
 // reset
 * {
     box-sizing: border-box;
     font-family: 'Bombardier';
-    font-size: 16px;
+    font-size: 1em;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -88,10 +93,10 @@ $colors: (
     border: 4px solid map-get($colors, border_pane);
     background-color: map-get($colors, gray_blue);
     padding: 12px;
+    text-shadow: 2px 2px 2px map-get($colors, text_shadow);
 
     .heading {
-        margin-bottom: 8px;
-        text-shadow: 2px 2px 2px map-get($colors, text_shadow);
+        margin-bottom: 12px;
         
         h2 {
             color: map-get($colors, text_white);
@@ -109,14 +114,62 @@ $colors: (
         background-color: map-get($colors, dark_gray_blue);
         border: 4px solid map-get($colors, darker_gray_blue);
     }
+
+    .info {
+        color: map-get($colors, text_white);
+
+        .content {
+            padding: 12px;
+        }
+    }
+
+    .block {
+        background-color: map-get($colors, gray_blue);
+        border: 4px solid map-get($colors, light_gray_blue);
+        padding: 12px;
+
+        > *:not(:last-child) {
+            margin-bottom: 6px;
+        }
+        
+        p {
+            font-size: 1.125em;
+
+            span {
+                &[red] {
+                    color: map-get($colors, text_red);
+                }
+                
+                &[yellow] {
+                    color: map-get($colors, text_yellow);
+                }
+                
+                &[green] {
+                    color: map-get($colors, text_green);
+                }
+                
+                &[blue] {
+                    color: map-get($colors, text_blue);
+                }
+                
+                &[gray] {
+                    color: map-get($colors, text_gray);
+                }
+            }
+
+            &:not(:first-of-type) {
+                line-height: 1.4em;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
 }
 
 html {
     background-color: map-get($colors, bg_body);
-
-    body {
-        // overflow-x: hidden;
-    }
 }
 
 #app {
@@ -125,7 +178,7 @@ html {
     transition: .125s linear;
 
     @include atBreakpoint(715px) {
-        padding: 28px 0;
+        padding: 28px 12px;
     }
 }
 
@@ -147,9 +200,10 @@ html {
 
     #display-pane {
         #item-thumbnail {
+            border: 4px solid map-get($colors, border_pane);
             height: 118px;
+            margin-bottom: 16px;
             width: 118px;
-            border: 2px solid map-get($colors, border_pane);
 
             img {
                 height: 90%;
@@ -171,7 +225,6 @@ html {
             padding: 6px;
             position: relative;
             scrollbar-width: none;
-            width: 332px;
 
             &::-webkit-scrollbar {
                 display: none;
@@ -198,7 +251,7 @@ html {
                         }
 
                         &::before {
-                            bottom: -6px;
+                            bottom: -5px;
                             height: 10px;
                             left: calc((100% - 10px) / 2);
                             position: absolute;
@@ -206,7 +259,7 @@ html {
                         }
                     
                         &::after {
-                            bottom: -4px;
+                            bottom: -3px;
                             height: 6px;
                             left: calc((100% - 6px) / 2);
                             position: absolute;

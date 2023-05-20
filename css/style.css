@@ -5,7 +5,7 @@
 * {
   box-sizing: border-box;
   font-family: "Bombardier";
-  font-size: 16px;
+  font-size: 1em;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -47,10 +47,10 @@
   border: 4px solid #868686;
   background-color: #3E4E5B;
   padding: 12px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3333333333);
 }
 .pane .heading {
-  margin-bottom: 8px;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5019607843);
+  margin-bottom: 12px;
 }
 .pane .heading h2 {
   color: #FFFFFF;
@@ -65,10 +65,49 @@
   background-color: #252F38;
   border: 4px solid #1E252B;
 }
+.pane .info {
+  color: #FFFFFF;
+}
+.pane .info .content {
+  padding: 12px;
+}
+.pane .block {
+  background-color: #3E4E5B;
+  border: 4px solid #4D5E6E;
+  padding: 12px;
+}
+.pane .block > *:not(:last-child) {
+  margin-bottom: 6px;
+}
+.pane .block p {
+  font-size: 1.125em;
+}
+.pane .block p span[red] {
+  color: #E58161;
+}
+.pane .block p span[yellow] {
+  color: #FBDA67;
+}
+.pane .block p span[green] {
+  color: #9CE461;
+}
+.pane .block p span[blue] {
+  color: #90C8DF;
+}
+.pane .block p span[gray] {
+  color: #8D94AC;
+}
+.pane .block p:not(:first-of-type) {
+  line-height: 1.4em;
+}
+.pane .block:not(:last-child) {
+  margin-bottom: 8px;
+}
 
 html {
   background-color: #000000;
 }
+
 #app {
   height: 100vh;
   padding: 28px;
@@ -76,7 +115,7 @@ html {
 }
 @media (max-width: 715px) {
   #app {
-    padding: 28px 0;
+    padding: 28px 12px;
   }
 }
 
@@ -99,9 +138,10 @@ html {
   }
 }
 #container #display-pane #item-thumbnail {
+  border: 4px solid #868686;
   height: 118px;
+  margin-bottom: 16px;
   width: 118px;
-  border: 2px solid #868686;
 }
 #container #display-pane #item-thumbnail img {
   height: 90%;
@@ -120,7 +160,6 @@ html {
   padding: 6px;
   position: relative;
   scrollbar-width: none;
-  width: 332px;
 }
 #container #select-pane #item-select::-webkit-scrollbar {
   display: none;
@@ -145,14 +184,14 @@ html {
   z-index: 10;
 }
 #container #select-pane #item-select .item button[active=true]::before {
-  bottom: -6px;
+  bottom: -5px;
   height: 10px;
   left: calc((100% - 10px) / 2);
   position: absolute;
   width: 10px;
 }
 #container #select-pane #item-select .item button[active=true]::after {
-  bottom: -4px;
+  bottom: -3px;
   height: 6px;
   left: calc((100% - 6px) / 2);
   position: absolute;
