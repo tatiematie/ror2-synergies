@@ -149,6 +149,9 @@ html {
   top: 5%;
   position: relative;
 }
+#container #select-pane {
+  height: 359px;
+}
 #container #select-pane #item-select {
   -moz-column-gap: 6px;
        column-gap: 6px;

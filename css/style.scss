@@ -214,7 +214,9 @@ html {
         }
     }
 
-    #select-pane {        
+    #select-pane {    
+        height: 359px;    
+
         #item-select {
             column-gap: 6px;
             display: grid;
