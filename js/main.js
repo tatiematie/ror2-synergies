@@ -3,7 +3,6 @@ const itemList = document.querySelectorAll('#item-select button'),
     itemTitle = document.querySelector('#item-title'),
     itemType = document.querySelector('#item-type'),
     itemThumb = document.querySelector('#item-thumbnail img'),
-    // itemDesc = document.querySelector('#item-desc'),
     itemDesc = document.querySelector('#item-desc')
 
 // update display panel on selection
@@ -21,25 +20,19 @@ const updateDisplay = (item) => {
 
                     if (node.name == item.getAttribute('title')) {
                         name = node.name,
+                            rarity = node.rarity,
                             type = node.type,
                             id = node.id,
-                            rarity = node.rarity,
                             desc = node.description
                     }
                 }
 
                 itemTitle.innerHTML = name
                 itemType.innerHTML = rarity + ' ' + type
-                itemThumb.setAttribute('src', 'assets/img/items/' + id + '.png')
                 itemThumb.parentNode.setAttribute('rarity', rarity.toLowerCase())
+                itemThumb.setAttribute('src', 'assets/img/items/' + id + '.png')
                 itemThumb.setAttribute('title', name)
-                itemDesc.innerHTML = ''
-
-                for (const d in desc) {
-                    let p = document.createElement('p')
-                    p.innerHTML = desc[d]
-                    itemDesc.append(p)
-                }
+                itemDesc.children[1].innerHTML = desc
             })
     }
 }
