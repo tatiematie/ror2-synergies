@@ -1,15 +1,17 @@
 // global variables
 const itemList = document.querySelectorAll('#item-select button'),
     itemTitle = document.querySelector('#item-title'),
-    itemType = document.querySelector('#item-description'),
-    itemThumb = document.querySelector('#item-thumbnail img')
+    itemType = document.querySelector('#item-type'),
+    itemThumb = document.querySelector('#item-thumbnail img'),
+    // itemDesc = document.querySelector('#item-desc'),
+    itemDesc = document.querySelector('#item-desc')
 
 // update display panel on selection
 const updateDisplay = (item) => {
     let active = item.getAttribute('active')
 
     if (active) {
-        let node, name, type, id, rarity
+        let node, name, rarity, type, id, desc
 
         fetch('json/items.json')
             .then(response => response.json())
@@ -21,7 +23,8 @@ const updateDisplay = (item) => {
                         name = node.name,
                             type = node.type,
                             id = node.id,
-                            rarity = node.rarity
+                            rarity = node.rarity,
+                            desc = node.description
                     }
                 }
 
@@ -29,6 +32,14 @@ const updateDisplay = (item) => {
                 itemType.innerHTML = rarity + ' ' + type
                 itemThumb.setAttribute('src', 'assets/img/items/' + id + '.png')
                 itemThumb.parentNode.setAttribute('rarity', rarity.toLowerCase())
+                itemThumb.setAttribute('title', name)
+                itemDesc.innerHTML = ''
+
+                for (const d in desc) {
+                    let p = document.createElement('p')
+                    p.innerHTML = desc[d]
+                    itemDesc.append(p)
+                }
             })
     }
 }
