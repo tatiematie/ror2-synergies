@@ -6,7 +6,7 @@
         "id": "soldiers-syringe",
         "description": [
             "Description:",
-            "<span yellow>+15%</span> attack speed. <span gray>(+15% per stack)</span>"
+            "<span yellow>+15%</span> attack speed <span gray>(+15% per stack)</span>."
         ],
         "tags": [
             "haste"
@@ -34,7 +34,7 @@
         "id": "monster-tooth",
         "description": [
             "Description:",
-            "Enemies drop healing orbs that heal <span green>8 + 2%</span> of max health. <span gray>(+2% per stack)</span>"
+            "Enemies drop healing orbs that heal <span green>8 + 2%</span> of max health <span gray>(+2% per stack)</span>."
         ],
         "tags": [
             "healing",
@@ -49,7 +49,7 @@
         "id": "lens-makers-glasses",
         "description": [
             "Description:",
-            "<span yellow>+10%</span> chance <span gray>(+10% per stack)</span> to critically strike. <span gray>(x2 damage)</span>"
+            "<span yellow>+10%</span> chance <span gray>(+10% per stack)</span> to critically strike <span gray>(x2 damage)</span>."
         ],
         "tags": [
             "crit"
@@ -63,7 +63,7 @@
         "id": "pauls-goat-hoof",
         "description": [
             "Description:",
-            "<span blue>+14%</span> movement speed. <span gray>(+14% per stack)</span>"
+            "<span blue>+14%</span> movement speed <span gray>(+14% per stack)</span>."
         ],
         "tags": [
             "speed",
@@ -78,7 +78,7 @@
         "id": "bustling-fungus",
         "description": [
             "Description:",
-            "Standing still heals allies within <span green>3m</span> <span gray>(+1.5m per stack)</span> for <span green>4.5%</span> of max health. <span gray>(+2.25% per stack)</span>"
+            "Standing still heals allies within <span green>3m</span> <span gray>(+1.5m per stack)</span> for <span green>4.5%</span> of max health <span gray>(+2.25% per stack)</span>."
         ],
         "tags": [
             "healing",
@@ -93,7 +93,7 @@
         "id": "crowbar",
         "description": [
             "Description:",
-            "Enemies above 90% health take <span yellow>+75%</span> more damage. <span gray>(+75% per stack)</span>"
+            "Enemies above 90% health take <span yellow>+75%</span> more damage <span gray>(+75% per stack)</span>."
         ],
         "tags": [
             "damage"
@@ -122,7 +122,7 @@
         "id": "warbanner",
         "description": [
             "Description:",
-            "Drop banners when leveling up and starting teleporters, grants <span yellow>+30%</span> attack and movement speed to allies within <span blue>16m</span>. <span gray>(+8m per stack)</span>"
+            "Drop banners when leveling up and starting teleporters, grants <span yellow>+30%</span> attack and movement speed to allies within <span blue>16m</span> <span gray>(+8m per stack)</span>."
         ],
         "tags": [
             "haste",
@@ -151,7 +151,7 @@
         "id": "personal-shield-generator",
         "description": [
             "Description:",
-            "Gain a shield equal to <span green>8%</span> of max health. <span gray>(+8% per stack)</span> Recharges after 9s outside of danger."
+            "Gain a shield equal to <span green>8%</span> of max health <span gray>(+8% per stack)</span>. Recharges after 9s outside of danger."
         ],
         "tags": [
             "shield"
@@ -179,7 +179,7 @@
         "id": "gasoline",
         "description": [
             "Description:",
-            "Killing an enemy ignites enemies within <span yellow>12m</span> <span gray>(+4m per stack)</span> dealing <span yellow>150%</span> base damage. Burning enemies take <span yellow>150%</span> base damage <span gray>(+75% per stack)</span> per tick."
+            "Killing an enemy ignites enemies within <span yellow>12m</span>, <span gray>(+4m per stack)</span> dealing <span yellow>150%</span> base damage. Burning enemies take <span yellow>150%</span> base damage <span gray>(+75% per stack)</span> per tick."
         ],
         "tags": [
             "effect",
@@ -267,7 +267,7 @@
         "id": "rusted-key",
         "description": [
             "Description:",
-            "A hidden lockbox will appear somewhere on the next stage with an <span blue>80%</span> chance to drop an <span green>Uncommon</span> item and a <span blue>20%</span> chance to drop a <span red>Legendary</span> item. <span gray>(Consumed on use)</span>"
+            "A hidden lockbox will appear somewhere on the next stage with an <span blue>80%</span> chance to drop an <span green>Uncommon</span> item and a <span blue>20%</span> chance to drop a <span red>Legendary</span> item <span gray>(Consumed on use)</span>."
         ],
         "tags": [
             "utility"
@@ -324,7 +324,7 @@
         "id": "bison-steak",
         "description": [
             "Description:",
-            "<span green>+25</span> max health. <span gray>(+25 per stack)</span>"
+            "<span green>+25</span> max health <span gray>(+25hp per stack)</span>."
         ],
         "tags": [
             "health"
@@ -338,7 +338,7 @@
         "id": "repulsion-armor-plate",
         "description": [
             "Description:",
-            "Reduce damage taken by <span yellow>5</span>. <span gray>(+5 per stack)</span>"
+            "Reduce damage taken by <span yellow>5</span> <span gray>(+5 per stack)</span>."
         ],
         "tags": [
             "defense"
@@ -352,7 +352,7 @@
         "id": "mocha",
         "description": [
             "Description:",
-            "<span yellow>+7.5%</span> attack speed <span gray>(+7.5% per stack)</span>, <span blue>+7%</span> movement speed. <span gray>(+7% per stack)</span>"
+            "<span yellow>+7.5%</span> attack speed <span gray>(+7.5% per stack)</span>, <span blue>+7%</span> movement speed <span gray>(+7% per stack)</span>."
         ],
         "tags": [
             "haste",
@@ -368,7 +368,7 @@
         "id": "power-elixir",
         "description": [
             "Description:",
-            "Heal for <span green>75%</span> of max health when below <span red>25%</span> of max health. <span gray>(Consumed on use)</span>"
+            "Heal for <span green>75%</span> of max health when below <span red>25%</span> of max health <span gray>(Consumed on use)</span>."
         ],
         "tags": [
             "healing"
@@ -410,7 +410,7 @@
         "id": "roll-of-pennies",
         "description": [
             "Description:",
-            "Grants <span blue>3</span> gold after taking damage from an enemy. <span blue>Scales with time.</span>"
+            "Grants <span blue>3</span> gold <span gray>(+3 per stack)</span> after taking damage from an enemy, scales with time."
         ],
         "tags": [
             "utility"
@@ -422,7 +422,10 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "atg-missile-mk-1",
-        "description": [],
+        "description": [
+            "Description:",
+            "<span yellow>10%</span> chance to fire a missile dealing <span yellow>300%</span> total damage <span gray>(+300% per stack)</span>."
+        ],
         "tags": [
             "damage",
             "proc"
@@ -434,7 +437,10 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "will-o-the-wisp",
-        "description": [],
+        "description": [
+            "Description:",
+            "Killing an enemy creates a lava pillar with a <span yellow>12m</span> <span gray>(+2.4m per stack)</span> radius, dealing <span yellow>350%</span> base damage <span gray>(+280% per stack)</span>."
+        ],
         "tags": [
             "damage",
             "area",
@@ -447,7 +453,10 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "hopoo-feather",
-        "description": [],
+        "description": [
+            "Description:",
+            "<span blue>+1</span> jump <span gray>(+1 per stack)</span>."
+        ],
         "tags": [
             "mobility"
         ],
@@ -458,7 +467,10 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "ukulele",
-        "description": [],
+        "description": [
+            "Description:",
+            "<span yellow>25%</span> chance to arc lightning between <span yellow>3</span> enemies <span gray>(+2 per stack)</span> within <span yellow>20m</span> <span gray>(+2m per stack)</span> of each other, dealing <span yellow>80%</span> total damage."
+        ],
         "tags": [
             "proc"
         ],
@@ -469,7 +481,10 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "leeching-seed",
-        "description": [],
+        "description": [
+            "Description:",
+            "Heal <span green>1hp</span> <span gray>(+1hp per stack)</span> per hit."
+        ],
         "tags": [
             "healing"
         ],
@@ -480,7 +495,10 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "predatory-instincts",
-        "description": [],
+        "description": [
+            "Description:",
+            "Critical strikes boost attack speed by <span yellow>12%</span> <span gray>(+24% per stack)</span>, capped at <span yellow>36%</span>."
+        ],
         "tags": [
             "haste",
             "crit"
@@ -492,7 +510,10 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "red-whip",
-        "description": [],
+        "description": [
+            "Description:",
+            "<span blue>+30%</span> movement speed <span gray>(+30% per stack)</span> outside of combat."
+        ],
         "tags": [
             "speed",
             "mobility"
@@ -504,7 +525,10 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "old-war-stealthkit",
-        "description": [],
+        "description": [
+            "Description:",
+            "Become invisible and gain <span blue>40%</span> movement speed for 5s when below <span red>25%</span> max health, 30s <span gray>(-50% per stack)</span> cooldown."
+        ],
         "tags": [
             "utility"
         ],
@@ -515,7 +539,10 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "harvesters-scythe",
-        "description": [],
+        "description": [
+            "Description:",
+            "<span yellow>+5%</span> critical strike chance, critical strikes heal for <span green>8hp</span> <span gray>(+4hp per stack)</span>."
+        ],
         "tags": [
             "healing",
             "crit"
@@ -527,7 +554,10 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "fuel-cell",
-        "description": [],
+        "description": [
+            "Description:",
+            "<span blue>+1</span> equipment charge <span gray>(+1 per stack)</span>, reduced equipment cooldown by <span blue>15%.</span> <span gray>(+15% per stack)</span>"
+        ],
         "tags": [
             "utility"
         ],
@@ -538,9 +568,13 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "infusion",
-        "description": [],
+        "description": [
+            "Description:",
+            "Killing enemies increases max health by <span green>1hp</span>, <span gray>(+1hp per stack)</span> capped at <span green>100</span> <span gray>(+100 per stack)</span>."
+        ],
         "tags": [
-            "health"
+            "health",
+            "onkill"
         ],
         "synergies": []
     },
@@ -549,7 +583,10 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "bandolier",
-        "description": [],
+        "description": [
+            "Description:",
+            "<span blue>18%</span> chance <span gray>(+10% per stack)</span> for enemies to drop ammo packs, ammo packs reset skill cooldowns."
+        ],
         "tags": [
             "utility",
             "onkill"
@@ -561,7 +598,10 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "berzerkers-pauldron",
-        "description": [],
+        "description": [
+            "Description:",
+            "Killing <span yellow>4</span> enemies <span gray>(3 pre-DLC)</span> within 1s boosts movement speed by <span blue>50%</span> and attack speed by <span yellow>100%</span> for 6s <span gray>(+4s per stack)</span>."
+        ],
         "tags": [
             "haste",
             "speed",
@@ -574,7 +614,10 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "rose-buckler",
-        "description": [],
+        "description": [
+            "Description:",
+            "<span green>+30</span> armor <span gray>(+30 per stack)</span> while sprinting."
+        ],
         "tags": [
             "defense",
             "sprint"
@@ -586,7 +629,10 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "runalds-band",
-        "description": [],
+        "description": [
+            "Description:",
+            "Hits dealing more than <span yellow>400%</span> damage slow the target by <span blue>80%</span> for 3s <span gray>(+3s per stack)</span> and deal an aditional <span yellow>250%</span> total damage <span gray>(+250% per stack)</span>, 10s cooldown."
+        ],
         "tags": [
             "damage",
             "effect"
@@ -598,7 +644,10 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "kjaros-band",
-        "description": [],
+        "description": [
+            "Description:",
+            "Hits dealing more than <span yellow>400%</span> damage deal an aditional <span yellow>300%</span> total damage over time, 10s cooldown"
+        ],
         "tags": [
             "damage"
         ],
@@ -609,7 +658,10 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "chronobauble",
-        "description": [],
+        "description": [
+            "Description:",
+            "Slow enemies by <span blue>60%</span> for 2s <span gray>(+2s per stack)</span> on hit."
+        ],
         "tags": [
             "effect",
             "proc"
@@ -621,7 +673,10 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "wax-quail",
-        "description": [],
+        "description": [
+            "Description:",
+            "Jumping while sprinting boosts you forward by <span blue>10m</span> <span gray>(+10m per stack)</span>."
+        ],
         "tags": [
             "mobility"
         ],
@@ -632,7 +687,10 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "old-guillotine",
-        "description": [],
+        "description": [
+            "Description:",
+            "Elite enemies below <span yellow>13%</span> health <span gray>(+13% per stack)</span> die instantly."
+        ],
         "tags": [
             "utility"
         ],
@@ -643,7 +701,10 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "war-horn",
-        "description": [],
+        "description": [
+            "Description:",
+            "Activating an equipment boosts attack speed by <span yellow>70%</span> for 8s <span gray>(+4s per stack)</span>."
+        ],
         "tags": [
             "haste",
             "onuse"
@@ -655,7 +716,10 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "lepton-daisy",
-        "description": [],
+        "description": [
+            "Description:",
+            "Heals allies within the teleporter for <span green>50%</span> of max health <span green>1</span> time <span gray>(+1 per stack)</span> per teleporter."
+        ],
         "tags": [
             "healing"
         ],
@@ -666,7 +730,10 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "razorwire",
-        "description": [],
+        "description": [
+            "Description:",
+            "Taking damage hits up to <span yellow>5</span> enemies <span gray>(+2 per stack)</span> within <span yellow>25m</span> <span gray>(+10m per stack)</span> for <span yellow>160%</span> damage."
+        ],
         "tags": [
             "damage"
         ],
@@ -677,7 +744,10 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "ghors-tome",
-        "description": [],
+        "description": [
+            "Description:",
+            "<span blue>4%</span> chance <span gray>(+4% per stack)</span> for enemies to drop treasure worth <span blue>25</span> gold, scales with time."
+        ],
         "tags": [
             "utility",
             "onkill"
@@ -689,7 +759,10 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "squid-polyp",
-        "description": [],
+        "description": [
+            "Description:",
+            "Activating an interactable summons a Squid Turret which shoots at <span yellow>100%</span> attack speed <span gray>(+100% per stack)</span>, lasts 30s."
+        ],
         "tags": [
             "damage",
             "interact",
@@ -702,7 +775,10 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "death-mark",
-        "description": [],
+        "description": [
+            "Description:",
+            "Enemies inflicted with at least <span yellow>4</span> debuffs take <span yellow>50%</span> more damage for 7s <span gray>(+7s per stack)</span>."
+        ],
         "tags": [
             "effect"
         ],
@@ -713,7 +789,10 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "hunters-harpoon",
-        "description": [],
+        "description": [
+            "Description:",
+            "Killing an enemy increases movement speed by <span yellow>125%</span> for 1s <span gray>(+0.5s per stack)</span>."
+        ],
         "tags": [
             "haste",
             "onkill"
@@ -725,7 +804,10 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "ignition-tank",
-        "description": [],
+        "description": [
+            "Description:",
+            "Fire deals <span yellow>300%</span> more damage <span gray>(+300% per stack)</span>."
+        ],
         "tags": [
             "effect"
         ],
@@ -736,7 +818,10 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "shuriken",
-        "description": [],
+        "description": [
+            "Description:",
+            "Using a Primary skill throws a shuriken dealing <span yellow>400%</span> base damage <span gray>(+400% per stack)</span>, capped at 3 shurikens. 10s reload."
+        ],
         "tags": [
             "damage"
         ],
@@ -747,7 +832,10 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "shipping-request-form",
-        "description": [],
+        "description": [
+            "Description:",
+            "A delivery will be on the next stage containing two items, each item has a <span blue>79%</span> chance to be <span gray>Common</span>, <span blue>20%</span> chance to be <span green>Uncommon</span>, and <span blue>1%</span> chance to be <span red>Legendary</span>."
+        ],
         "tags": [
             "utility"
         ],
