@@ -13,6 +13,9 @@ const readFile = async (filepath) => {
 
 let itemData = readFile('json/items.json')
 
+// TODO: exploring button loading vs. written markdown
+// issues accessing itemList before it's assigned
+
 // const loadButtons = window.onload = () => {
 //     itemData.then(itemData => {
 //         itemData.forEach(item => {
