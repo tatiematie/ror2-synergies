@@ -25,7 +25,7 @@
         "rarity": "Common",
         "type": "Item",
         "id": "lens-makers-glasses",
-        "description": "<span yellow>+10%</span> chance <span gray>(+10% per stack)</span> to critically strike <span gray>(x2 damage)</span>."
+        "description": "<span yellow>+10%</span> chance <span gray>(+10% per stack)</span> to critically strike."
     },
     {
         "name": "Paul's Goat Hoof",
