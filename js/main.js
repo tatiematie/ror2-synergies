@@ -1,75 +1,78 @@
-// global variables
-const itemList = document.querySelectorAll('#item-select button'),
-    itemTitle = document.querySelector('#item-title'),
+const itemTitle = document.querySelector('#item-title'),
     itemType = document.querySelector('#item-type'),
     itemThumb = document.querySelector('#item-thumbnail img'),
-    itemDesc = document.querySelector('#item-desc'),
+    itemDesc = document.querySelector('#item-description'),
     itemSelect = document.querySelector('#item-select')
 
 const readFile = async (filepath) => {
     const response = await fetch(filepath)
-    return await response.json()
-};
-
-let itemData = readFile('json/items.json')
-
-// TODO: exploring button loading vs. written markdown
-// issues accessing itemList before it's assigned
-
-// const loadButtons = window.onload = () => {
-//     itemData.then(itemData => {
-//         itemData.forEach(item => {
-//             let li = document.createElement('li'),
-//                 button = document.createElement('button'),
-//                 img = document.createElement('img')
-
-//             li.classList.add('item')
-
-//             button.setAttribute('type', 'button')
-//             button.setAttribute('title', item.name)
-//             button.setAttribute('rarity', item.rarity.toLowerCase())
-
-//             img.setAttribute('src', 'assets/img/items/' + item.id + '.png')
-//             img.setAttribute('alt', item.name)
-//             img.setAttribute('loading', 'lazy')
-
-//             button.append(img)
-//             li.append(button)
-//             itemSelect.append(li)
-//         })
-
-//         itemList = document.querySelectorAll('#item-select button')
-//     })
-// }
-
-const updateDisplay = (toShow) => {
-    itemData.then(itemData => {
-        itemData.forEach(item => {
-            let active = toShow.getAttribute('active')
-
-            if (active && toShow.getAttribute('title') == item.name) {
-                itemTitle.innerHTML = item.name
-                itemType.innerHTML = item.rarity + ' ' + item.type
-                itemThumb.parentNode.setAttribute('rarity', item.rarity.toLowerCase())
-                itemThumb.setAttribute('src', 'assets/img/items/' + item.id + '.png')
-                itemDesc.children[1].innerHTML = item.description
-            }
-        })
-    })
+    return response.json()
 }
 
-for (const i of itemList) {
-    i.addEventListener('mouseup', (event) => {
-        if (!i.getAttribute('active') === true) {
-            for (const ix of itemList) {
-                ix.setAttribute('active', '')
+const createButton = (item) => {
+    const { name, rarity, type, id, description } = item
+    const rarityLowerCase = rarity.toLowerCase()
+    const src = `assets/img/items/${id}.png`
+
+    const li = document.createElement('li'),
+        button = document.createElement('button'),
+        img = document.createElement('img')
+
+    li.className = 'item'
+
+    button.type = 'button'
+    button.title = name
+    button.setAttribute('rarity', rarityLowerCase)
+
+    img.src = src
+    img.alt = name
+    img.loading = 'lazy'
+
+    button.appendChild(img)
+    li.appendChild(button)
+    itemSelect.appendChild(li)
+
+    button.addEventListener('click', () => {
+        const isActive = button.getAttribute('active') === 'true'
+
+        if (!isActive) {
+            const activeButton = document.querySelector('#item-select button[active=true]')
+
+            if (activeButton) {
+                activeButton.removeAttribute('active')
             }
 
-            i.setAttribute('active', true)
-
-            updateDisplay(i)
+            button.setAttribute('active', 'true')
+            updateDisplay(item)
         }
     })
 
-    updateDisplay(i)
+    return button
 }
+
+const loadButtons = async () => {
+    const itemData = await readFile('json/items.json')
+
+    itemData.forEach((item, index) => {
+        const button = createButton(item)
+
+        if (index === 0) {
+            button.setAttribute('active', 'true')
+            updateDisplay(item)
+        }
+    })
+}
+
+const updateDisplay = (item) => {
+    const { name, rarity, type, description, id } = item
+    const rarityLowerCase = rarity.toLowerCase()
+    const src = `assets/img/items/${id}.png`
+
+    itemTitle.innerHTML = name
+    itemType.innerHTML = `${rarity} ${type}`
+    itemThumb.parentNode.setAttribute('rarity', rarityLowerCase)
+    itemThumb.src = src
+    itemDesc.children[1].innerHTML = description
+}
+
+loadButtons()
