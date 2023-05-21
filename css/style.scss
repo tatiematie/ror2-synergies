@@ -189,7 +189,7 @@ html {
 #container {
     column-gap: 12px;
     display: grid;
-    grid-template-columns: auto minmax(0, 364px);
+    grid-template-columns: minmax(0, 100%) minmax(0, 364px);
     margin: 0 auto;
     max-width: 1080px;
     outline: 4px solid map-get($colors, outline_pane);
@@ -226,6 +226,7 @@ html {
             display: grid;
             grid-template-columns: repeat(auto-fit, 47px);
             height: 256px;
+            justify-content: space-around;
             overflow: hidden scroll;
             row-gap: 6px;
             padding: 6px;
