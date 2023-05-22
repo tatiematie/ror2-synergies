@@ -152,6 +152,29 @@ html {
   top: 5%;
   position: relative;
 }
+#container #display-pane #item-synergies .content {
+  padding: 6px;
+}
+#container #display-pane #item-synergies #synergy-list {
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 47px);
+  justify-content: space-around;
+  row-gap: 6px;
+  position: relative;
+}
+#container #display-pane #item-synergies #synergy-list .item {
+  border: 1px solid #868686;
+  height: 47px;
+  width: 47px;
+}
+#container #display-pane #item-synergies #synergy-list .item img {
+  height: 90%;
+  left: 5%;
+  position: relative;
+  top: 5%;
+}
 #container #select-pane {
   height: -moz-min-content;
   height: min-content;

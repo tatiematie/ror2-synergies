@@ -216,6 +216,34 @@ html {
                 position: relative;
             }
         }
+
+        #item-synergies {
+            .content {
+                padding: 6px;
+            }
+
+            #synergy-list {
+                column-gap: 6px;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, 47px);
+                justify-content: space-around;
+                row-gap: 6px;
+                position: relative;
+
+                 .item {
+                    border: 1px solid map-get($colors, border_pane);
+                    height: 47px;
+                    width: 47px;
+
+                img {
+                    height: 90%;
+                    left: 5%;
+                    position: relative;
+                    top: 5%;
+                }
+            }
+            }
+        }
     }
 
     #select-pane {    
@@ -244,11 +272,11 @@ html {
                 button {
                     height: 100%;
                     position: relative;
-
+            
                     &[active="true"] {
                         outline: 2px solid map-get($colors, dark_yellow);
                         outline-offset: -1px;
-
+            
                         &:before, &:after {
                             background-color: map-get($colors, light_yellow);
                             border: 1px solid map-get($colors, darker_yellow);
@@ -256,7 +284,7 @@ html {
                             transform: rotate(45deg);
                             z-index: 10;
                         }
-
+            
                         &::before {
                             bottom: -5px;
                             height: 10px;
@@ -273,14 +301,14 @@ html {
                             width: 6px;
                         }
                     }
-
+            
                     img {
                         display: block;
                         left: 5%;
                         position: relative;
                         width: 90%;
                     }
-
+            
                     @media (hover :hover) {
                         &:hover {
                             &:not([active="true"]) {
@@ -290,7 +318,7 @@ html {
                             }
                         }
                     }
-
+            
                     &:focus:not([active="true"]) {
                         outline-offset: 3px;
                         outline: 2px solid map-get($colors, dark_yellow);
