@@ -18,7 +18,7 @@
         "rarity": "Common",
         "type": "Item",
         "id": "monster-tooth",
-        "description": "Enemies drop healing orbs that heal <span green>8 + 2%</span> of max health <span gray>(+2% per stack)</span>."
+        "description": "Enemies drop healing orbs that heal <span green>8</span> + <span green>2%</span> of max health <span gray>(+2% per stack)</span>."
     },
     {
         "name": "Lens Maker's Glasses",
@@ -592,97 +592,97 @@
         "rarity": "Boss",
         "type": "Item",
         "id": "titanic-knurl",
-        "description": ""
+        "description": "<span green>+40%</span> max health <span gray>(+40 per stack)</span>, <span green>+1.6hp</span> per second base health regeneration <span gray>(+1.6 per stack)</span>."
     },
     {
         "name": "Queen's Gland",
         "rarity": "Boss",
         "type": "Item",
         "id": "queens-gland",
-        "description": ""
+        "description": "Summon <span yellow>1</span> Beetle Guard <span gray>(+1 per stack)</span> every <span yellow>30s</span>, deals <span yellow>300%</span> damage and has <span green>100%</span> health."
     },
     {
         "name": "Halcyon Seed",
         "rarity": "Boss",
         "type": "Item",
         "id": "halcyon-seed",
-        "description": ""
+        "description": "Summons Aurelionite before a boss fight, deals <span yellow>100%</span> damage <span gray>(+50% per stack)</span> and has <span yellow>100%</span> health <span gray>(+100% per stack)</span>."
     },
     {
         "name": "Little Disciple",
         "rarity": "Boss",
         "type": "Item",
         "id": "little-disciple",
-        "description": ""
+        "description": "Fire a homing wisp dealing <span yellow>300%</span> damage <span gray>(+300% per stack)</span> every <span yellow>1.6s</span> while sprinting. Fire rate increases with movement speed."
     },
     {
         "name": "Pearl",
         "rarity": "Boss",
         "type": "Item",
         "id": "pearl",
-        "description": ""
+        "description": "<span green>+10%</span> max health <span gray>(+10% per stack)</span>."
     },
     {
         "name": "Irradiant Pearl",
         "rarity": "Boss",
         "type": "Item",
         "id": "irradiant-pearl",
-        "description": ""
+        "description": "<span yellow>+10%</span> health, regeneration, movement speed, damage, attack speed, critical strike chance, and armor."
     },
     {
         "name": "Genesis Loop",
         "rarity": "Boss",
         "type": "Item",
         "id": "genesis-loop",
-        "description": ""
+        "description": "Explode when below <span red>25%</span> max health dealing <span yellow>6,000%</span> base damage. <span yellow>30</span> / <span yellow>2s</span> <span gray>(+1 per stack)</span> cooldown."
     },
     {
         "name": "Molten Perforator",
         "rarity": "Boss",
         "type": "Item",
         "id": "molten-perforator",
-        "description": ""
+        "description": "<span yellow>10%</span> chance on hit to fire <span yellow>3</span> magma balls from the target dealing <span yellow>300%</span> damage <span gray>(+300% per stack)</span> each."
     },
     {
         "name": "Shatterspleen",
         "rarity": "Boss",
         "type": "Item",
         "id": "shatterspleen",
-        "description": ""
+        "description": "<span yellow>+5%</span> critical strike chance. Critical strikes bleed enemies for <span yellow>240%</span> base damage, bleeding enemies explode dealing <span yellow>400%</span> damage <span gray>(+400% per stack)</span> + <span yellow>15%</span> of their max health <span gray>(+15% per stack)</span>."
     },
     {
         "name": "Mired Urn",
         "rarity": "Boss",
         "type": "Item",
         "id": "mired-urn",
-        "description": ""
+        "description": "While in combat, deal <span yellow>100%</span> damage to <span yellow>1</span> nearby enemy <span gray>(+1 per stack)</span>, inflict them with tar, and heal <span green>100%</span> of the damage dealt."
     },
     {
         "name": "Charged Perforator",
         "rarity": "Boss",
         "type": "Item",
         "id": "charged-perforator",
-        "description": ""
+        "description": "<span yellow>10%</span> chance to strike lightning on hit dealing <span yellow>500%</span> damage <span gray>(+500% per stack)</span>."
     },
     {
         "name": "Empathy Cores",
         "rarity": "Boss",
         "type": "Item",
         "id": "empathy-cores",
-        "description": ""
+        "description": "Summon <span yellow>2</span> Solus Probes every <span yellow>30s</span>, Probes gain <span yellow>+100%</span> damage <span gray>(+100% per stack)</span> per ally."
     },
     {
         "name": "Planula",
         "rarity": "Boss",
         "type": "Item",
         "id": "planula",
-        "description": ""
+        "description": "Heal <span green>15hp</span> <span gray>(+15 per stack)</span> after taking damage."
     },
     {
         "name": "Defense Nucleus",
         "rarity": "Boss",
         "type": "Item",
         "id": "defense-nucleus",
-        "description": ""
+        "description": "Killing an elite monster summons an Alpha Construct that deals <span yellow>300%</span> damage and has <span green>300%</span> health. Capped at <span yellow>4</span>. <span gray>(+4 per stack)</span>"
     }
 ]
