@@ -54,16 +54,42 @@ const loadButtons = async () => {
 }
 
 const updateDisplay = (item) => {
-    const { name, rarity, type, description, id } = item
-    const rarityLowerCase = rarity.toLowerCase()
-    const src = `assets/img/items/${id}.png`
+    const { name, rarity, type, description, id, procCoefficient } = item;
+    const rarityLowerCase = rarity.toLowerCase();
+    const src = `assets/img/items/${id}.png`;
 
-    itemTitle.innerHTML = name
-    itemType.innerHTML = `${rarity} ${type}`
-    itemThumb.parentNode.setAttribute('rarity', rarityLowerCase)
-    itemThumb.src = src
-    itemDesc.children[1].innerHTML = description
-}
+    itemTitle.innerHTML = name;
+    itemType.innerHTML = `${rarity} ${type}`;
+    itemThumb.parentNode.setAttribute('rarity', rarityLowerCase);
+    itemThumb.src = src;
+    itemDesc.children[1].innerHTML = description;
+
+    const existingProcCoefficientTable = itemDesc.querySelector('.proc-coefficient-table');
+    if (existingProcCoefficientTable) {
+        existingProcCoefficientTable.remove();
+    }
+
+    if (procCoefficient !== undefined) {
+        const procCoefficientTable = document.createElement('table');
+        procCoefficientTable.className = 'proc-coefficient-table';
+
+        const procCoefficientRow = document.createElement('tr');
+        const procCoefficientLabelCell = document.createElement('td');
+        const procCoefficientValueCell = document.createElement('td');
+
+        procCoefficientLabelCell.innerHTML = 'Proc Coefficient:';
+        procCoefficientValueCell.innerHTML = procCoefficient;
+
+        procCoefficientRow.appendChild(procCoefficientLabelCell);
+        procCoefficientRow.appendChild(procCoefficientValueCell);
+        procCoefficientTable.appendChild(procCoefficientRow);
+
+        itemDesc.appendChild(procCoefficientTable);
+    }
+};
+
+
+
 
 const updateSynergyList = (item) => {
     synergyList.innerHTML = ''
