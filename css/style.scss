@@ -33,6 +33,7 @@ $colors: (
     text_red: #E58161,
     text_yellow: #FBDA67,
     text_green: #9CE461,
+    text_gold: rgb(236, 206, 120),
     text_blue: #90C8DF,
     text_light_gray: #868686,
     text_shadow: #00000055,
@@ -214,6 +215,26 @@ html {
                 left: 5%;
                 top: 5%;
                 position: relative;
+            }
+        }
+
+        table {
+            td {
+                background-color: map-get($colors, light_gray_blue);
+                font-size: 1.125em;
+                outline: 2px solid map-get($colors, border_pane);
+                padding: 6px;
+
+                &:first-child {
+                    text-align: start;
+                    width: 143px;
+                }
+                
+                &:last-child {
+                    color: map-get($colors, text_gold);
+                    text-align: end;
+                    width: 43px;
+                }
             }
         }
 

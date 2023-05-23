@@ -152,6 +152,21 @@ html {
   top: 5%;
   position: relative;
 }
+#container #display-pane table td {
+  background-color: #4D5E6E;
+  font-size: 1.125em;
+  outline: 2px solid #868686;
+  padding: 6px;
+}
+#container #display-pane table td:first-child {
+  text-align: start;
+  width: 143px;
+}
+#container #display-pane table td:last-child {
+  color: rgb(236, 206, 120);
+  text-align: end;
+  width: 43px;
+}
 #container #display-pane #item-synergies .content {
   padding: 6px;
 }
