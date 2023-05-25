@@ -88,9 +88,6 @@ const updateDisplay = (item) => {
     }
 }
 
-
-
-
 const updateSynergyList = (item) => {
     synergyList.innerHTML = ''
 
@@ -107,6 +104,8 @@ const updateSynergyList = (item) => {
 
             const img = document.createElement('img')
             img.src = `assets/img/items/${dataItem.id}.png`
+            img.alt = `${dataItem.name}`
+            img.title = `${dataItem.name}`
             listItem.appendChild(img)
 
             synergyList.appendChild(listItem)
