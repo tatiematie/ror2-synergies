@@ -29,8 +29,7 @@
         "id": "monster-tooth",
         "description": "Enemies drop healing orbs that heal <span green>8</span> + <span green>2%</span> of max health <span gray>(+2% per stack)</span>.",
         "tags": [
-            "healing",
-            "on-kill"
+            "healing"
         ],
         "synergies": []
     },
@@ -41,10 +40,11 @@
         "id": "lens-makers-glasses",
         "description": "<span yellow>+10%</span> chance <span gray>(+10% per stack)</span> to critically strike.",
         "tags": [
-            "proc",
-            "crit"
+            "crit",
+            "proc"
         ],
-        "synergies": []
+        "synergies": [],
+        "exclude": []
     },
     {
         "name": "Paul's Goat Hoof",
@@ -52,9 +52,7 @@
         "type": "Item",
         "id": "pauls-goat-hoof",
         "description": "<span blue>+14%</span> movement speed <span gray>(+14% per stack)</span>.",
-        "tags": [
-            "speed"
-        ],
+        "tags": [],
         "synergies": []
     },
     {
@@ -63,9 +61,7 @@
         "type": "Item",
         "id": "bustling-fungus",
         "description": "Standing still heals allies within <span yellow>3m</span> <span gray>(+1.5m per stack)</span> for <span green>4.5%</span> of max health <span gray>(+2.25% per stack)</span>.",
-        "tags": [
-            "healing"
-        ],
+        "tags": [],
         "synergies": []
     },
     {
@@ -74,9 +70,7 @@
         "type": "Item",
         "id": "crowbar",
         "description": "Enemies above <span yellow>90%</span> health take <span yellow>+75%</span> more damage <span gray>(+75% per stack)</span>.",
-        "tags": [
-            "damage"
-        ],
+        "tags": [],
         "synergies": []
     },
     {
@@ -86,8 +80,8 @@
         "id": "tri-tip-dagger",
         "description": "<span yellow>10%</span> chance <span gray>(+10% per stack)</span> to bleed enemies for <span yellow>240%</span> base damage.",
         "tags": [
-            "proc",
-            "effect"
+            "effect",
+            "proc"
         ],
         "synergies": []
     },
@@ -106,9 +100,7 @@
         "type": "Item",
         "id": "cautious-slug",
         "description": "Heal <span green>+3hp/s</span> <span gray>(+3hp per stack)</span> while outside of combat.",
-        "tags": [
-            "healing"
-        ],
+        "tags": [],
         "synergies": []
     },
     {
@@ -117,9 +109,7 @@
         "type": "Item",
         "id": "personal-shield-generator",
         "description": "Gain a shield equal to <span green>8%</span> of max health <span gray>(+8% per stack)</span>. Recharges after <span blue>9s</span> outside of danger.",
-        "tags": [
-            "shield"
-        ],
+        "tags": [],
         "synergies": []
     },
     {
@@ -128,9 +118,7 @@
         "type": "Item",
         "id": "medkit",
         "description": "Heal <span green>20 + 5%</span> of max health <span gray>(+5% per stack)</span> <span blue>2s</span> after taking damage.",
-        "tags": [
-            "healing"
-        ],
+        "tags": [],
         "synergies": []
     },
     {
@@ -139,11 +127,7 @@
         "type": "Item",
         "id": "gasoline",
         "description": "Killing an enemy ignites enemies within <span yellow>12m</span>, <span gray>(+4m per stack)</span> dealing <span yellow>150%</span> base damage. Burning enemies take <span yellow>150%</span> base damage <span gray>(+75% per stack)</span> per tick.",
-        "tags": [
-            "effect",
-            "on-kill",
-            "area"
-        ],
+        "tags": [],
         "synergies": []
     },
     {
@@ -152,7 +136,9 @@
         "type": "Item",
         "id": "stun-grenade",
         "description": "<span yellow>5%</span> chance <span gray>(+5% per stack)</span> to stun enemies on hit for <span blue>2s</span>.",
-        "tags": [],
+        "tags": [
+            "proc"
+        ],
         "synergies": []
     },
     {
@@ -162,13 +148,8 @@
         "id": "bundle-of-fireworks",
         "description": "Activating an interactable launches <span yellow>8</span> fireworks <span gray>(+4 per stack)</span> that deal <span yellow>300%</span> base damage.",
         "procCoefficient": "0.2",
-        "tags": [
-            "interact"
-        ],
-        "synergies": [
-            "interact",
-            "pocket-icbm"
-        ]
+        "tags": [],
+        "synergies": []
     },
     {
         "name": "Energy Drink",
@@ -194,7 +175,10 @@
         "type": "Item",
         "id": "sticky-bomb",
         "description": "<span yellow>5%</span> chance <span gray>(+5% per stack)</span> to attach a bomb to enemies that detonates for <span yellow>180%</span> total damage.",
-        "tags": [],
+        "tags": [
+            "damage",
+            "proc"
+        ],
         "synergies": []
     },
     {
@@ -212,7 +196,9 @@
         "type": "Item",
         "id": "armor-piercing-rounds",
         "description": "<span yellow>+20%</span> damage <span gray>(+20% per stack)</span> dealt to stage bosses.",
-        "tags": [],
+        "tags": [
+            "damage"
+        ],
         "synergies": []
     },
     {
@@ -221,7 +207,9 @@
         "type": "Item",
         "id": "topaz-brooch",
         "description": "<span green>+15</span> temporary barrier <span gray>(+15 per stack)</span> per kill.",
-        "tags": [],
+        "tags": [
+            "defense"
+        ],
         "synergies": []
     },
     {
@@ -230,7 +218,9 @@
         "type": "Item",
         "id": "focus-crystal",
         "description": "<span yellow>+20%</span> damage <span gray>(+20% per stack)</span> dealt to enemies within <span yellow>13m</span>.",
-        "tags": [],
+        "tags": [
+            "damage"
+        ],
         "synergies": []
     },
     {
@@ -248,7 +238,9 @@
         "type": "Item",
         "id": "repulsion-armor-plate",
         "description": "Reduce damage taken by <span green>5</span> <span gray>(+5 per stack)</span>.",
-        "tags": [],
+        "tags": [
+            "defense"
+        ],
         "synergies": []
     },
     {
@@ -257,7 +249,10 @@
         "type": "Item",
         "id": "mocha",
         "description": "<span yellow>+7.5%</span> attack speed <span gray>(+7.5% per stack)</span>, <span blue>+7%</span> movement speed <span gray>(+7% per stack)</span>.",
-        "tags": [],
+        "tags": [
+            "haste",
+            "speed"
+        ],
         "synergies": []
     },
     {
@@ -275,7 +270,9 @@
         "type": "Item",
         "id": "delicate-watch",
         "description": "<span yellow>+20%</span> damage <span gray>(+20% per stack)</span>, consumed when below <span red>25%</span> of max health.",
-        "tags": [],
+        "tags": [
+            "damage"
+        ],
         "synergies": []
     },
     {
@@ -284,7 +281,9 @@
         "type": "Item",
         "id": "oddly-shaped-opal",
         "description": "<span green>+100</span> armor <span gray>(+100 per stack)</span> outside of danger.",
-        "tags": [],
+        "tags": [
+            "defense"
+        ],
         "synergies": []
     },
     {
@@ -303,7 +302,10 @@
         "id": "atg-missile-mk-1",
         "description": "<span yellow>10%</span> chance to fire a missile dealing <span yellow>300%</span> total damage <span gray>(+300% per stack)</span>.",
         "procCoefficient": "1.0",
-        "tags": [],
+        "tags": [
+            "damage",
+            "proc"
+        ],
         "synergies": []
     },
     {
@@ -332,7 +334,10 @@
         "id": "ukulele",
         "description": "<span yellow>25%</span> chance to arc lightning between <span yellow>3</span> enemies <span gray>(+2 per stack)</span> within <span yellow>20m</span> <span gray>(+2m per stack)</span> of each other, dealing <span yellow>80%</span> total damage.",
         "procCoefficient": "0.2",
-        "tags": [],
+        "tags": [
+            "damage",
+            "proc"
+        ],
         "synergies": []
     },
     {
@@ -350,7 +355,10 @@
         "type": "Item",
         "id": "predatory-instincts",
         "description": "Critical strikes boost attack speed by <span yellow>12%</span> <span gray>(+24% per stack)</span> for <span blue>3s</span>. Capped at <span yellow>36%</span>.",
-        "tags": [],
+        "tags": [
+            "haste",
+            "crit"
+        ],
         "synergies": []
     },
     {
@@ -377,7 +385,10 @@
         "type": "Item",
         "id": "harvesters-scythe",
         "description": "<span yellow>+5%</span> critical strike chance, critical strikes heal for <span green>8hp</span> <span gray>(+4hp per stack)</span>.",
-        "tags": [],
+        "tags": [
+            "healing",
+            "crit"
+        ],
         "synergies": []
     },
     {
@@ -413,7 +424,11 @@
         "type": "Item",
         "id": "berzerkers-pauldron",
         "description": "Killing <span yellow>4</span> enemies <span gray>(3 pre-DLC)</span> within <span blue>1s</span> boosts movement speed by <span blue>50%</span> and attack speed by <span yellow>100%</span> for <span blue>6s</span> <span gray>(+4s per stack)</span>.",
-        "tags": [],
+        "tags": [
+            "haste",
+            "speed",
+            "onKill"
+        ],
         "synergies": []
     },
     {
@@ -422,7 +437,9 @@
         "type": "Item",
         "id": "rose-buckler",
         "description": "<span green>+30</span> armor <span gray>(+30 per stack)</span> while sprinting.",
-        "tags": [],
+        "tags": [
+            "defense"
+        ],
         "synergies": []
     },
     {
@@ -449,7 +466,10 @@
         "type": "Item",
         "id": "chronobauble",
         "description": "Slow enemies by <span blue>60%</span> for <span blue>2s</span> <span gray>(+2s per stack)</span> on hit.",
-        "tags": [],
+        "tags": [
+            "effect",
+            "proc"
+        ],
         "synergies": []
     },
     {
@@ -476,7 +496,10 @@
         "type": "Item",
         "id": "war-horn",
         "description": "Activating an equipment boosts attack speed by <span yellow>70%</span> for <span blue>8s</span> <span gray>(+4s per stack)</span>.",
-        "tags": [],
+        "tags": [
+            "haste",
+            "onUse"
+        ],
         "synergies": []
     },
     {
@@ -513,9 +536,7 @@
         "type": "Item",
         "id": "squid-polyp",
         "description": "Activating an interactable summons a Squid Turret which shoots at <span yellow>100%</span> attack speed <span gray>(+100% per stack)</span>, lasts <span blue>30s</span>.",
-        "tags": [
-            "interact"
-        ],
+        "tags": [],
         "synergies": []
     },
     {
@@ -570,7 +591,9 @@
         "type": "Item",
         "id": "brilliant-behemoth",
         "description": "All attacks explode with a <span yellow>4m</span> <span gray>(+2.5m per stack)</span> radius and deal <span yellow>60%</span> more damage.",
-        "tags": [],
+        "tags": [
+            "damage"
+        ],
         "synergies": []
     },
     {
@@ -636,7 +659,9 @@
         "type": "Item",
         "id": "57-leaf-clover",
         "description": "All random effects are rolled <span yellow>+1</span> time <span gray>(+1 per stack)</span> for a favorable outcome.",
-        "tags": [],
+        "tags": [
+            "proc"
+        ],
         "synergies": []
     },
     {
@@ -646,7 +671,11 @@
         "id": "sentient-meat-hook",
         "description": "<span yellow>20%</span> chance <span gray>(+20% per stack)</span> on hit to fire homing hooks that pull up to <span yellow>10</span> enemies <span gray>(+5 per stack)</span> together, dealing <span yellow>100%</span> total damage. Hooks are fired from the target enemy.",
         "procCoefficient": ".33",
-        "tags": [],
+        "tags": [
+            "damage",
+            "aoe",
+            "proc"
+        ],
         "synergies": []
     },
     {
@@ -709,7 +738,9 @@
         "type": "Item",
         "id": "rejuvination-rack",
         "description": "Heal <span green>100%</span> <span gray>(+100% per stack)</span> more.",
-        "tags": [],
+        "tags": [
+            "healAmp"
+        ],
         "synergies": []
     },
     {
@@ -727,7 +758,10 @@
         "type": "Item",
         "id": "shattering-justice",
         "description": "Reduce enemy armor by <span yellow>60</span> for <span blue>8s</span> <span gray>(+8s per stack)</span> after hitting them <span yellow>5</span> times.",
-        "tags": [],
+        "tags": [
+            "effect",
+            "proc"
+        ],
         "synergies": []
     },
     {
@@ -755,7 +789,9 @@
         "type": "Item",
         "id": "laser-scope",
         "description": "Critical strikes deal <span yellow>+100%</span> damage <span gray>(+100% per stack)</span>.",
-        "tags": [],
+        "tags": [
+            "crit"
+        ],
         "synergies": []
     },
     {
@@ -782,7 +818,10 @@
         "type": "Item",
         "id": "symbiotic-scorpion",
         "description": "<span yellow>100%</span> chance to permanently reduce armor by <span yellow>2</span> <span gray>(+2 per stack)</span> on hit.",
-        "tags": [],
+        "tags": [
+            "effect",
+            "proc"
+        ],
         "synergies": []
     },
     {
@@ -809,7 +848,9 @@
         "type": "Item",
         "id": "titanic-knurl",
         "description": "<span green>+40%</span> max health <span gray>(+40 per stack)</span>, <span green>+1.6hp</span> per second base health regeneration <span gray>(+1.6 per stack)</span>.",
-        "tags": [],
+        "tags": [
+            "healAmp"
+        ],
         "synergies": []
     },
     {
@@ -855,7 +896,15 @@
         "type": "Item",
         "id": "irradiant-pearl",
         "description": "<span yellow>+10%</span> health, regeneration, movement speed, damage, attack speed, critical strike chance, and armor.",
-        "tags": [],
+        "tags": [
+            "haste",
+            "healing",
+            "crit",
+            "speed",
+            "damage",
+            "health",
+            "defense"
+        ],
         "synergies": []
     },
     {
@@ -874,7 +923,10 @@
         "id": "molten-perforator",
         "description": "<span yellow>10%</span> chance on hit to fire <span yellow>3</span> magma balls from the target dealing <span yellow>300%</span> damage <span gray>(+300% per stack)</span> each.",
         "procCoefficient": "0.7",
-        "tags": [],
+        "tags": [
+            "effect",
+            "proc"
+        ],
         "synergies": []
     },
     {
@@ -883,7 +935,11 @@
         "type": "Item",
         "id": "shatterspleen",
         "description": "<span yellow>+5%</span> critical strike chance. Critical strikes bleed enemies for <span yellow>240%</span> base damage, bleeding enemies explode dealing <span yellow>400%</span> damage <span gray>(+400% per stack)</span> + <span yellow>15%</span> of their max health <span gray>(+15% per stack)</span>.",
-        "tags": [],
+        "tags": [
+            "crit",
+            "effect",
+            "aoe"
+        ],
         "synergies": []
     },
     {
@@ -902,7 +958,10 @@
         "id": "charged-perforator",
         "description": "<span yellow>10%</span> chance to strike lightning on hit dealing <span yellow>500%</span> damage <span gray>(+500% per stack)</span>.",
         "procCoefficient": "1.0",
-        "tags": [],
+        "tags": [
+            "damage",
+            "proc"
+        ],
         "synergies": []
     },
     {
@@ -975,7 +1034,9 @@
         "type": "Item",
         "id": "ocular-hud",
         "description": "<span yellow>+100%</span> critical strike chance for <span yellow>8s</span>. <span yellow>60s</span> cooldown.",
-        "tags": [],
+        "tags": [
+            "crit"
+        ],
         "synergies": []
     },
     {
@@ -1143,7 +1204,10 @@
         "type": "Item",
         "id": "gorags-opus",
         "description": "<span blue>+50%</span> movement speed and <span yellow>+100%</span> attack speed for all allies for <span yellow>7s</span>. <span yellow>45s</span> cooldown.",
-        "tags": [],
+        "tags": [
+            "haste",
+            "speed"
+        ],
         "synergies": []
     },
     {
@@ -1161,10 +1225,7 @@
         "type": "Item",
         "id": "remote-caffeinator",
         "description": "Call in a vending machine that lands after <span yellow>5s</span> dealing <span yellow>2,000%</span> damage to nearby targets. Interact to purchase <span yellow>3</span> soda cans which heal allies within <span yellow>25m</span> for <span green>25%</span> of max health, can be used <span yellow>12</span> times. Each purchase costs <span yellow>5</span> gold, cost scales with time. <span yellow>60s</span> cooldown.",
-        "tags": [
-            "on-use",
-            "interact"
-        ],
+        "tags": [],
         "synergies": []
     },
     {
@@ -1173,7 +1234,9 @@
         "type": "Item",
         "id": "ifrits-distinction",
         "description": "All attacks ignite enemies dealing <span yellow>50%</span> total damage, the holder leaves a trail of fire.",
-        "tags": [],
+        "tags": [
+            "aspect"
+        ],
         "synergies": []
     },
     {
@@ -1182,7 +1245,9 @@
         "type": "Item",
         "id": "his-reassurance",
         "description": "Heal allies within <span yellow>30m</span> for <span green>40%</span> of the holder's base damage <span yellow>4</span> times per second, drop a healing orb on death.",
-        "tags": [],
+        "tags": [
+            "aspect"
+        ],
         "synergies": []
     },
     {
@@ -1191,7 +1256,9 @@
         "type": "Item",
         "id": "silence-between-two-strikes",
         "description": "<span green>50%</span> of the holder's health is converted to shield, all attacks attach lightning bombs to the target which deal <span yellow>50%</span> total damage after exploding.",
-        "tags": [],
+        "tags": [
+            "aspect"
+        ],
         "synergies": []
     },
     {
@@ -1200,7 +1267,9 @@
         "type": "Item",
         "id": "her-biting-embrace",
         "description": "All attacks greatly slow enemies for <span blue>1.5s</span> multiplied by the attack's proc coefficient, explode on death and freeze nearby enemies.",
-        "tags": [],
+        "tags": [
+            "aspect"
+        ],
         "synergies": []
     },
     {
@@ -1209,7 +1278,9 @@
         "type": "Item",
         "id": "nkuhanas-retort",
         "description": "All attacks inflict the Healing Disabled debuff for <span yellow>8s</span>. The holder periodically releases <span yellow>3</span>-<span yellow>4</span> malachite spikes which explode on impact and deal <span yellow>100%</span> damage, explosions leave lingering malachite spikes. Summon a Malachite Urchin on death which will shoot at nearby monsters.",
-        "tags": [],
+        "tags": [
+            "aspect"
+        ],
         "synergies": []
     },
     {
@@ -1218,7 +1289,9 @@
         "type": "Item",
         "id": "spectral-circlet",
         "description": "Attacks greatly slow enemies, nearby allies are made invisible.",
-        "tags": [],
+        "tags": [
+            "aspect"
+        ],
         "synergies": []
     },
     {
@@ -1227,7 +1300,9 @@
         "type": "Item",
         "id": "shared-design",
         "description": "Attacks inflict the Cripple debuff. <span yellow>+30%</span> movement speed, <span green>+25%</span> max health, health is converted to shield. Fire <span yellow>4</span> bombs every <span yellow>10s</span> dealing <span yellow>30%</span> damage.",
-        "tags": [],
+        "tags": [
+            "aspect"
+        ],
         "synergies": []
     }
 ]
