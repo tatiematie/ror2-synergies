@@ -218,6 +218,10 @@ html {
             }
         }
 
+        .proc.title {
+            margin-top: 12px;
+        }
+
         table {
             td {
                 background-color: map-get($colors, light_gray_blue);
@@ -227,13 +231,13 @@ html {
 
                 &:first-child {
                     text-align: start;
-                    width: 143px;
+                    width: 128px;
                 }
                 
                 &:last-child {
                     color: map-get($colors, text_gold);
                     text-align: end;
-                    width: 43px;
+                    width: 128px;
                 }
             }
         }
