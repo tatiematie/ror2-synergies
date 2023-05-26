@@ -40,7 +40,7 @@ const createButton = (item) => {
 }
 
 const loadButtons = async () => {
-    itemData = await readFile('json/items.json') // Assign value to itemData
+    itemData = await readFile('json/items.json')
 
     itemData.forEach((item, index) => {
         const button = createButton(item)
@@ -54,54 +54,53 @@ const loadButtons = async () => {
 }
 
 const updateDisplay = (item) => {
-    const { name, rarity, type, description, id, procCoefficient } = item;
-    const rarityLowerCase = rarity.toLowerCase();
-    const src = `assets/img/items/${id}.png`;
+    const { name, rarity, type, description, id, procCoefficient } = item
+    const rarityLowerCase = rarity.toLowerCase()
+    const src = `assets/img/items/${id}.png`
 
-    itemTitle.innerHTML = name;
-    itemType.innerHTML = `${rarity} ${type}`;
-    itemThumb.parentNode.setAttribute('rarity', rarityLowerCase);
-    itemThumb.src = src;
-    itemDesc.children[1].innerHTML = description;
+    itemTitle.innerHTML = name
+    itemType.innerHTML = `${rarity} ${type}`
+    itemThumb.parentNode.setAttribute('rarity', rarityLowerCase)
+    itemThumb.src = src
+    itemDesc.children[1].innerHTML = description
 
-    const existingProcCoefficientTable = itemDesc.querySelector('.proc-coefficient-table');
-    const procTableTitle = itemDesc.querySelector('.proc.title');
+    const existingProcCoefficientTable = itemDesc.querySelector('.proc-coefficient-table')
+    const procTableTitle = itemDesc.querySelector('.proc.title')
     if (existingProcCoefficientTable && procTableTitle) {
         procTableTitle.remove()
-        existingProcCoefficientTable.remove();
+        existingProcCoefficientTable.remove()
     }
 
     if (procCoefficient !== undefined) {
-        const procCoefficientTableTitle = document.createElement('p');
-        procCoefficientTableTitle.innerHTML = 'Proc Coefficients:';
+        const procCoefficientTableTitle = document.createElement('p')
+        procCoefficientTableTitle.innerHTML = 'Proc Coefficients:'
         procCoefficientTableTitle.classList.add('proc', 'title')
-        itemDesc.appendChild(procCoefficientTableTitle);
+        itemDesc.appendChild(procCoefficientTableTitle)
 
-        const procCoefficientTable = document.createElement('table');
-        procCoefficientTable.className = 'proc-coefficient-table';
+        const procCoefficientTable = document.createElement('table')
+        procCoefficientTable.className = 'proc-coefficient-table'
 
-        const procCoefficientHeaderRow = document.createElement('tr');
-        procCoefficientTable.appendChild(procCoefficientHeaderRow);
+        const procCoefficientHeaderRow = document.createElement('tr')
+        procCoefficientTable.appendChild(procCoefficientHeaderRow)
 
         for (const [entryName, entryValue] of Object.entries(procCoefficient)) {
-            const procCoefficientRow = document.createElement('tr');
+            const procCoefficientRow = document.createElement('tr')
 
-            const procCoefficientLabelCell = document.createElement('td');
-            procCoefficientLabelCell.innerHTML = entryName;
+            const procCoefficientLabelCell = document.createElement('td')
+            procCoefficientLabelCell.innerHTML = entryName
 
-            const procCoefficientValueCell = document.createElement('td');
-            procCoefficientValueCell.innerHTML = entryValue;
+            const procCoefficientValueCell = document.createElement('td')
+            procCoefficientValueCell.innerHTML = entryValue
 
-            procCoefficientRow.appendChild(procCoefficientLabelCell);
-            procCoefficientRow.appendChild(procCoefficientValueCell);
+            procCoefficientRow.appendChild(procCoefficientLabelCell)
+            procCoefficientRow.appendChild(procCoefficientValueCell)
 
-            procCoefficientTable.appendChild(procCoefficientRow);
+            procCoefficientTable.appendChild(procCoefficientRow)
         }
 
-        itemDesc.appendChild(procCoefficientTable);
+        itemDesc.appendChild(procCoefficientTable)
     }
-};
-
+}
 
 const updateSynergyList = (item) => {
     synergyList.innerHTML = ''
@@ -141,6 +140,13 @@ const handleButtonClick = (item, button) => {
         button.setAttribute('active', 'true')
         updateDisplay(item)
         updateSynergyList(item)
+    }
+
+    const changeFavicon = (item) => {
+        const favicon = document.querySelector('link[rel="icon"]')
+        const src = `assets/img/items/${item.id}.png`
+
+        favicon.href = src
     }
 }
 
