@@ -4,7 +4,7 @@
         "rarity": "Common",
         "type": "Item",
         "id": "soldiers-syringe",
-        "description": "<span yellow>+15%</span> attack speed <span gray>(+15% per stack)</span>.",
+        "description": "Gain <span yellow>+15%</span> attack speed <span gray>(+15% per stack)</span>.",
         "tags": [
             "haste"
         ],
@@ -16,7 +16,7 @@
         "rarity": "Common",
         "type": "Item",
         "id": "tougher-times",
-        "description": "<span green>15%</span> chance <span gray>(+15% per stack)</span> to block damage.",
+        "description": "Gain a <span green>15%</span> chance <span gray>(+15% per stack)</span> to block damage.",
         "tags": [
             "defense"
         ],
@@ -27,7 +27,7 @@
         "rarity": "Common",
         "type": "Item",
         "id": "monster-tooth",
-        "description": "Enemies drop healing orbs that heal <span green>8</span> + <span green>2%</span> of max health <span gray>(+2% per stack)</span>.",
+        "description": "Enemies drop healing orbs that heal <span green>8hp</span> + <span green>2%</span> of max health <span gray>(+2% per stack)</span>.",
         "tags": [
             "healing"
         ],
@@ -38,7 +38,7 @@
         "rarity": "Common",
         "type": "Item",
         "id": "lens-makers-glasses",
-        "description": "<span yellow>+10%</span> chance <span gray>(+10% per stack)</span> to critically strike.",
+        "description": "Gain <span yellow>+10%</span> chance <span gray>(+10% per stack)</span> to critically strike.",
         "tags": [
             "crit",
             "proc"
@@ -51,7 +51,7 @@
         "rarity": "Common",
         "type": "Item",
         "id": "pauls-goat-hoof",
-        "description": "<span blue>+14%</span> movement speed <span gray>(+14% per stack)</span>.",
+        "description": "Gain <span blue>+14%</span> movement speed <span gray>(+14% per stack)</span>.",
         "tags": [],
         "synergies": []
     },
@@ -69,7 +69,7 @@
         "rarity": "Common",
         "type": "Item",
         "id": "crowbar",
-        "description": "Enemies above <span yellow>90%</span> health take <span yellow>+75%</span> more damage <span gray>(+75% per stack)</span>.",
+        "description": "Enemies above <span yellow>90%</span> health take <span yellow>75%</span> more damage <span gray>(+75% per stack)</span>.",
         "tags": [],
         "synergies": []
     },
@@ -78,7 +78,7 @@
         "rarity": "Common",
         "type": "Item",
         "id": "tri-tip-dagger",
-        "description": "<span yellow>10%</span> chance <span gray>(+10% per stack)</span> to bleed enemies for <span yellow>240%</span> base damage.",
+        "description": "Gain a <span yellow>10%</span> chance <span gray>(+10% per stack)</span> to bleed enemies for <span yellow>240%</span> base damage.",
         "tags": [
             "effect",
             "proc"
@@ -90,7 +90,7 @@
         "rarity": "Common",
         "type": "Item",
         "id": "warbanner",
-        "description": "Drop banners when leveling up and starting teleporters, grants <span yellow>+30%</span> attack and movement speed to allies within <span yellow>16m</span> <span gray>(+8m per stack)</span>.",
+        "description": "Drop banners when leveling up and starting teleporters, grants <span yellow>+30%</span> attack and <span blue>+30%</span> movement speed to allies within <span yellow>16m</span> <span gray>(+8m per stack)</span>.",
         "tags": [],
         "synergies": []
     },
@@ -99,7 +99,7 @@
         "rarity": "Common",
         "type": "Item",
         "id": "cautious-slug",
-        "description": "Heal <span green>+3hp/s</span> <span gray>(+3hp per stack)</span> while outside of combat.",
+        "description": "Heal <span green>3hp</span> <span gray>(+3hp per stack)</span> per second while outside of combat.",
         "tags": [],
         "synergies": []
     },
@@ -117,7 +117,7 @@
         "rarity": "Common",
         "type": "Item",
         "id": "medkit",
-        "description": "Heal <span green>20 + 5%</span> of max health <span gray>(+5% per stack)</span> <span blue>2s</span> after taking damage.",
+        "description": "Heal <span green>20hp</span> + <span green>5%</span> of max health <span gray>(+5% per stack)</span> <span blue>2s</span> after taking damage.",
         "tags": [],
         "synergies": []
     },
@@ -126,7 +126,7 @@
         "rarity": "Common",
         "type": "Item",
         "id": "gasoline",
-        "description": "Killing an enemy ignites enemies within <span yellow>12m</span>, <span gray>(+4m per stack)</span> dealing <span yellow>150%</span> base damage. Burning enemies take <span yellow>150%</span> base damage <span gray>(+75% per stack)</span> per tick.",
+        "description": "Killing an enemy ignites enemies within <span yellow>12m</span> <span gray>(+4m per stack)</span> for <span blue>3s</span>, dealing <span yellow>150%</span> base damage. Burning enemies take <span yellow>150%</span> base damage <span gray>(+75% per stack)</span> per tick.",
         "tags": [],
         "synergies": []
     },
@@ -135,7 +135,7 @@
         "rarity": "Common",
         "type": "Item",
         "id": "stun-grenade",
-        "description": "<span yellow>5%</span> chance <span gray>(+5% per stack)</span> to stun enemies on hit for <span blue>2s</span>.",
+        "description": "Gain a <span yellow>5%</span> chance <span gray>(+5% per stack)</span> to stun enemies on hit for <span blue>2s</span>.",
         "tags": [
             "proc"
         ],
@@ -158,7 +158,7 @@
         "rarity": "Common",
         "type": "Item",
         "id": "energy-drink",
-        "description": "<span blue>+25%</span> movement speed <span gray>(+25% per stack)</span> while sprinting.",
+        "description": "Gain <span blue>+25%</span> movement speed <span gray>(+25% per stack)</span> while sprinting.",
         "tags": [],
         "synergies": []
     },
@@ -167,7 +167,7 @@
         "rarity": "Common",
         "type": "Item",
         "id": "backup-magazine",
-        "description": "<span yellow>+1</span> charge <span gray>(+1 per stack)</span> to your Secondary skill.",
+        "description": "Adds <span yellow>1</span> charge <span gray>(+1 per stack)</span> to your Secondary skill.",
         "tags": [],
         "synergies": []
     },
@@ -176,7 +176,7 @@
         "rarity": "Common",
         "type": "Item",
         "id": "sticky-bomb",
-        "description": "<span yellow>5%</span> chance <span gray>(+5% per stack)</span> to attach a bomb to enemies that detonates for <span yellow>180%</span> total damage.",
+        "description": "Gain a <span yellow>5%</span> chance <span gray>(+5% per stack)</span> to attach a bomb to enemies that detonates for <span yellow>180%</span> total damage.",
         "tags": [
             "damage",
             "proc"
@@ -197,7 +197,7 @@
         "rarity": "Common",
         "type": "Item",
         "id": "armor-piercing-rounds",
-        "description": "<span yellow>+20%</span> damage <span gray>(+20% per stack)</span> dealt to stage bosses.",
+        "description": "Deal <span yellow>+20%</span> damage <span gray>(+20% per stack)</span> to stage bosses.",
         "tags": [
             "damage"
         ],
@@ -208,7 +208,7 @@
         "rarity": "Common",
         "type": "Item",
         "id": "topaz-brooch",
-        "description": "<span green>+15</span> temporary barrier <span gray>(+15 per stack)</span> per kill.",
+        "description": "Gain <span green>+15</span> temporary barrier <span gray>(+15 per stack)</span> per kill.",
         "tags": [
             "defense"
         ],
@@ -219,7 +219,7 @@
         "rarity": "Common",
         "type": "Item",
         "id": "focus-crystal",
-        "description": "<span yellow>+20%</span> damage <span gray>(+20% per stack)</span> dealt to enemies within <span yellow>13m</span>.",
+        "description": "Deal <span yellow>+20%</span> damage <span gray>(+20% per stack)</span> to enemies within <span yellow>13m</span>.",
         "tags": [
             "damage"
         ],
@@ -230,7 +230,7 @@
         "rarity": "Common",
         "type": "Item",
         "id": "bison-steak",
-        "description": "<span green>+25</span> max health <span gray>(+25hp per stack)</span>.",
+        "description": "Gain <span green>+25</span> max health <span gray>(+25hp per stack)</span>.",
         "tags": [],
         "synergies": []
     },
@@ -250,7 +250,7 @@
         "rarity": "Common",
         "type": "Item",
         "id": "mocha",
-        "description": "<span yellow>+7.5%</span> attack speed <span gray>(+7.5% per stack)</span>, <span blue>+7%</span> movement speed <span gray>(+7% per stack)</span>.",
+        "description": "Gain <span yellow>+7.5%</span> attack speed <span gray>(+7.5% per stack)</span> and <span blue>+7%</span> movement speed <span gray>(+7% per stack)</span>.",
         "tags": [
             "haste",
             "speed"
@@ -271,7 +271,7 @@
         "rarity": "Common",
         "type": "Item",
         "id": "delicate-watch",
-        "description": "<span yellow>+20%</span> damage <span gray>(+20% per stack)</span>, consumed when below <span red>25%</span> of max health.",
+        "description": "Deal <span yellow>+20%</span> damage <span gray>(+20% per stack)</span>, consumed when below <span red>25%</span> of max health.",
         "tags": [
             "damage"
         ],
@@ -282,7 +282,7 @@
         "rarity": "Common",
         "type": "Item",
         "id": "oddly-shaped-opal",
-        "description": "<span green>+100</span> armor <span gray>(+100 per stack)</span> outside of danger.",
+        "description": "Gain <span green>+100</span> armor <span gray>(+100 per stack)</span> outside of danger.",
         "tags": [
             "defense"
         ],
@@ -302,7 +302,7 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "atg-missile-mk-1",
-        "description": "<span yellow>10%</span> chance to fire a missile dealing <span yellow>300%</span> total damage <span gray>(+300% per stack)</span>.",
+        "description": "Gain a <span yellow>10%</span> chance to fire a missile dealing <span yellow>300%</span> total damage <span gray>(+300% per stack)</span>.",
         "procCoefficient": {
             "On Hit": "1.0"
         },
@@ -329,7 +329,7 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "hopoo-feather",
-        "description": "<span yellow>+1</span> jump <span gray>(+1 per stack)</span>.",
+        "description": "Gain <span yellow>+1</span> extra jump <span gray>(+1 per stack)</span>.",
         "tags": [],
         "synergies": []
     },
@@ -338,7 +338,7 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "ukulele",
-        "description": "<span yellow>25%</span> chance to arc lightning between <span yellow>3</span> enemies <span gray>(+2 per stack)</span> within <span yellow>20m</span> <span gray>(+2m per stack)</span> of each other, dealing <span yellow>80%</span> total damage.",
+        "description": "Gain a <span yellow>25%</span> chance to arc lightning between <span yellow>3</span> enemies <span gray>(+2 per stack)</span> within <span yellow>20m</span> <span gray>(+2m per stack)</span> of each other, dealing <span yellow>80%</span> total damage.",
         "procCoefficient": {
             "On Hit": "0.2"
         },
@@ -374,7 +374,7 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "red-whip",
-        "description": "<span blue>+30%</span> movement speed <span gray>(+30% per stack)</span> outside of combat.",
+        "description": "Gain <span blue>+30%</span> movement speed <span gray>(+30% per stack)</span> outside of combat.",
         "tags": [],
         "synergies": []
     },
@@ -392,7 +392,7 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "harvesters-scythe",
-        "description": "<span yellow>+5%</span> critical strike chance, critical strikes heal for <span green>8hp</span> <span gray>(+4hp per stack)</span>.",
+        "description": "Gain <span yellow>+5%</span> critical strike chance, critical strikes heal for <span green>8hp</span> <span gray>(+4hp per stack)</span>.",
         "tags": [
             "healing",
             "crit"
@@ -404,7 +404,7 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "fuel-cell",
-        "description": "<span yellow>+1</span> equipment charge <span gray>(+1 per stack)</span>, reduced equipment cooldown by <span yellow>15%.</span> <span gray>(+15% per stack)</span>",
+        "description": "Adds <span yellow>+1</span> equipment charge <span gray>(+1 per stack)</span>, reduces equipment cooldown by <span blue>15%.</span> <span gray>(+15% per stack)</span>",
         "tags": [],
         "synergies": []
     },
@@ -422,7 +422,7 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "bandolier",
-        "description": "<span yellow>18%</span> chance <span gray>(+10% per stack)</span> for enemies to drop ammo packs, ammo packs reset skill cooldowns.",
+        "description": "Enemies have an <span yellow>18%</span> chance <span gray>(+10% per stack)</span> to drop ammo packs, ammo packs reset skill cooldowns.",
         "tags": [],
         "synergies": []
     },
@@ -444,7 +444,7 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "rose-buckler",
-        "description": "<span green>+30</span> armor <span gray>(+30 per stack)</span> while sprinting.",
+        "description": "Gain <span green>+30</span> armor <span gray>(+30 per stack)</span> while sprinting.",
         "tags": [
             "defense"
         ],
@@ -494,7 +494,7 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "old-guillotine",
-        "description": "Elite enemies below <span red>13%</span> health <span gray>(+13% per stack)</span> die instantly.",
+        "description": "Elite enemies below <span yellow>13%</span> health <span gray>(+13% per stack)</span> die instantly.",
         "tags": [],
         "synergies": []
     },
@@ -536,7 +536,7 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "ghors-tome",
-        "description": "<span yellow>4%</span> chance <span gray>(+4% per stack)</span> for enemies to drop treasure worth <span yellow>25</span> gold. Scales with time.",
+        "description": "Enemies have a <span yellow>4%</span> <span gray>(+4% per stack)</span> to drop treasure worth <span yellow>25</span> gold. Scales with time.",
         "tags": [],
         "synergies": []
     },
@@ -545,7 +545,7 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "squid-polyp",
-        "description": "Activating an interactable summons a Squid Turret which shoots at <span yellow>100%</span> attack speed <span gray>(+100% per stack)</span>, lasts <span blue>30s</span>.",
+        "description": "Activating an interactable summons a Squid Turret which shoots at <span yellow>100%</span> attack speed <span gray>(+100% per stack)</span>. Lasts <span blue>30s</span>.",
         "tags": [],
         "synergies": []
     },
@@ -572,7 +572,7 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "ignition-tank",
-        "description": "Fire deals <span yellow>300%</span> more damage <span gray>(+300% per stack)</span>.",
+        "description": "Burning enemies take <span yellow>+300%</span> fire damage <span gray>(+300% per stack)</span>.",
         "tags": [],
         "synergies": []
     },
@@ -581,7 +581,7 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "shuriken",
-        "description": "Using a Primary skill throws a shuriken dealing <span yellow>400%</span> base damage <span gray>(+400% per stack)</span>. Capped at <span yellow>3</span> shurikens, <span blue>10s</span> reload.",
+        "description": "Using a Primary skill throws a shuriken dealing <span yellow>400%</span> base damage <span gray>(+400% per stack)</span>, capped at <span yellow>3</span> shurikens. <span blue>10s</span> reload.",
         "procCoefficient": {
             "On Hit": "1.0"
         },
@@ -1085,7 +1085,7 @@
         "id": "visions-of-heresy",
         "description": "Replaces Primary skill with Hungering Gaze. Fires homing shards that detonate dealing <span yellow>120%</span> base damage, holds up to <span yellow>12</span> charges <span gray>(+12 per stack)</span>. <span blue>2s</span> reload <span gray>(+2s per stack)</span>.",
         "procCoefficient": {
-            "Hit": "1.0",
+            "On Hit": "0.1",
             "Explosion": "1.0"
         },
         "tags": [],
