@@ -7,40 +7,45 @@
     <title>Risk of Rain 2 Synergies</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" type="module" async></script>
+    <link rel="icon" type="image/png" href=""/>
 </head>
 <body>
-    <div id="app" content="builder">
+    <div id="app">
         <div id="container">
             <div id="display-pane" class="pane">
-                <div class="heading">
-                    <h2 id="item-title"></h2>
-                    <p id="item-type"></p>
-                </div>
-                <div id="item-thumbnail" class="content">
-                    <img src alt>
-                </div>
-                <div class="info">
-                    <div class="content">
-                        <div id="item-description" class="block">
-                            <p>Description:</p>
-                            <p></p>
-                        </div>
-                        <div id="item-synergies" class="block">
-                            <p>Potential Synergies:</p>
-                            <div class="content">
-                                <ul id="synergy-list"></ul>
+                <div class="wrapper corners">
+                    <div class="heading">
+                        <h2 id="item-title"></h2>
+                        <p id="item-type"></p>
+                    </div>
+                    <div id="item-thumbnail" class="content">
+                        <img src alt>
+                    </div>
+                    <div class="info">
+                        <div class="content">
+                            <div id="item-description" class="block">
+                                <p>Description:</p>
+                                <p></p>
+                            </div>
+                            <div id="item-synergies" class="block">
+                                <p>Potential Synergies:</p>
+                                <div class="content">
+                                    <ul id="synergy-list"></ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="select-pane" class="pane">
-                <div class="heading">
-                    <h2>Select an Item</h2>
-                    <p>Pick an item to learn more about it and its synergies</p>
-                </div>
-                <div class="content">
-                    <ul id="item-select"></ul>
+                <div class="wrapper corners">
+                    <div class="heading">
+                        <h2>Select an Item</h2>
+                        <p>Pick an item to learn about its synergies</p>
+                    </div>
+                    <div class="content">
+                        <ul id="item-select"></ul>
+                    </div>
                 </div>
             </div>
         </div>
