@@ -60,7 +60,7 @@ const updateDisplay = (item) => {
 
     itemTitle.innerHTML = name
     itemType.innerHTML = `${rarity} ${type}`
-    itemThumb.parentNode.setAttribute('rarity', rarityLowerCase)
+    itemThumb.parentNode.parentNode.setAttribute('rarity', rarityLowerCase)
     itemThumb.src = src
     itemDesc.children[1].innerHTML = description
 

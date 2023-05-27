@@ -1229,7 +1229,7 @@
         "rarity": "Lunar",
         "type": "Equipment",
         "id": "spinel-tonic",
-        "description": "<span yellow>+100%</span> damage, <span yellow>+70%</span> attack speed, <span green>+20</span> armor, <span green>+50%</span> max health, <span green>+300%</span> regeneration, and <span blue>+30%</span> movement speed for <span blue>20s</span>. When Tonic wears off the user has a <span yellow>20%</span> chance to gain a stack of Tonic Affliction, which reduces all stats by <span red>5%</span> <span gray>(+5% per stack)</span> while not using by Spinel Tonic.",
+        "description": "<span yellow>+100%</span> damage, <span yellow>+70%</span> attack speed, <span green>+20</span> armor, <span green>+50%</span> max health, <span green>+300%</span> regeneration, and <span blue>+30%</span> movement speed for <span blue>20s</span>. When Tonic wears off the user has a <span yellow>20%</span> chance to gain a stack of Tonic Affliction, which reduces all stats by <span red>5%</span> <span gray>(+5% per stack)</span> while not using by Spinel Tonic. <span blue>60s</span> cooldown.",
         "tags": [],
         "synergies": []
     },
