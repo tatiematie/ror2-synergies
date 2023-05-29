@@ -38,7 +38,7 @@
   background: url(../assets/img/items/bg-lunar.png) center no-repeat;
   background-size: 100%;
 }
-* [rarity=equipment] {
+* [rarity=equipment], * [rarity=elite] {
   background: url(../assets/img/items/bg-equipment.png) center no-repeat;
   background-size: 100%;
 }
@@ -133,6 +133,9 @@
 .pane .block p span[blue] {
   color: #90C8DF;
 }
+.pane .block p span[purple] {
+  color: #F87CC2;
+}
 .pane .block p span[gray] {
   color: #8D94AC;
 }
@@ -165,6 +168,7 @@ html {
   grid-template-columns: minmax(0, 100%) minmax(0, 364px);
   margin: 0 auto;
   max-width: 1080px;
+  padding-bottom: 24px;
   row-gap: 12px;
 }
 @media (max-width: 715px) {
@@ -205,7 +209,7 @@ html {
   width: 128px;
 }
 #container #display-pane table td:last-child {
-  color: rgb(236, 206, 120);
+  color: #ECCE78;
   text-align: end;
   width: 128px;
 }

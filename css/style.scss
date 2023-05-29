@@ -33,8 +33,9 @@ $colors: (
     text_red: #E58161,
     text_yellow: #FBDA67,
     text_green: #9CE461,
-    text_gold: rgb(236, 206, 120),
+    text_gold: #ECCE78,
     text_blue: #90C8DF,
+    text_purple: #F87CC2,
     text_light_gray: #868686,
     text_shadow: #00000055,
 );
@@ -83,7 +84,7 @@ $colors: (
         background-size: 100%;
     }
 
-    [rarity="equipment"] {
+    [rarity="equipment"], [rarity="elite"] {
         background: url(../assets/img/items/bg-equipment.png) center no-repeat;
         background-size: 100%;
     }
@@ -204,6 +205,10 @@ $colors: (
                     color: map-get($colors, text_blue);
                 }
                 
+                &[purple] {
+                    color: map-get($colors, text_purple);
+                }
+                
                 &[gray] {
                     color: map-get($colors, text_gray);
                 }
@@ -240,6 +245,7 @@ html {
     grid-template-columns: minmax(0, 100%) minmax(0, 364px);
     margin: 0 auto;
     max-width: 1080px;
+    padding-bottom: 24px;
     row-gap: 12px;
 
     @include atBreakpoint(715px) {
