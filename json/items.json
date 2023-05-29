@@ -1080,7 +1080,7 @@
         "rarity": "Void",
         "type": "Item",
         "id": "plasma-shrimp",
-        "description": "Gain +10% of max health as shield. Fire missiles on hit that deal <span yellow>40%</span> total damage <span gray>(+40% per stack)</span> while you have shield. <span purple>Corrupts all AtG Missile Mk. 1s</span>.",
+        "description": "Gain <span green>+10%</span> of max health as shield. Fire missiles on hit that deal <span yellow>40%</span> total damage <span gray>(+40% per stack)</span> while you have shield. <span purple>Corrupts all AtG Missile Mk. 1s</span>.",
         "procCoefficient": {
             "On Hit": "0.2"
         },
