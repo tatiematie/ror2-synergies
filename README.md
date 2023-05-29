@@ -2,8 +2,8 @@
 Tool for understanding items and their synergies in Risk of Rain 2, find it here: https://tatiematie.github.io/ror2-synergies/
 
 ## Roadmap
-v1: Item descriptions, synergies, and explanations
+Version 1: Item descriptions, synergies, and explanations
 
-v2: Survivor synergies
+Version 2: Survivor synergies
 
-v3: Prefab build library
+Version 3: Prefab build library
