@@ -591,7 +591,7 @@
         "rarity": "Uncommon",
         "type": "Item",
         "id": "shipping-request-form",
-        "description": "A delivery will spawn on the next stage containing two items, each item has a <span yellow>79%</span> chance to be <span gray>Common</span>, <span yellow>20%</span> chance to be <span green>Uncommon</span>, and <span yellow>1%</span> chance to be <span red>Legendary</span>. Pick one.",
+        "description": "A delivery will arrive somewhere on the next stage containing two items, each item has a <span yellow>79%</span> chance to be Common, <span yellow>20%</span> chance to be <span green>Uncommon</span>, and <span yellow>1%</span> chance to be <span red>Legendary</span>.",
         "tags": [],
         "synergies": []
     },
@@ -722,7 +722,7 @@
         "rarity": "Legendary",
         "type": "Item",
         "id": "dios-best-friend",
-        "description": "Grants <span green>+1</span> extra life <span gray>(+1 per stack)</span>, gain <span blue>3s</span> of invulnerability after ressurection. Consumed on use.",
+        "description": "Grants <span green>+1</span> extra life <span gray>(+1 per stack)</span>, gain <span blue>3s</span> of invulnerability after resurrection. Consumed on use.",
         "tags": [],
         "synergies": []
     },
@@ -731,7 +731,7 @@
         "rarity": "Legendary",
         "type": "Item",
         "id": "hardlight-afterburner",
-        "description": "Gain <span yellow>+2</span> Utility skill charges <span gray>(+2 per stack)</span>, reduces Utility skill cooldowns by <span blue>33%</span>.",
+        "description": "Adds <span yellow>2</span> charges <span gray>(+2 per stack)</span> to you Utility skill, reduces Utility skill cooldowns by <span blue>33%</span>.",
         "tags": [],
         "synergies": []
     },
@@ -1018,6 +1018,132 @@
         "type": "Item",
         "id": "defense-nucleus",
         "description": "Killing an elite monster summons an Alpha Construct that deals <span yellow>300%</span> damage and has <span green>300%</span> health. Capped at <span yellow>4</span>. <span gray>(+4 per stack)</span>",
+        "tags": [],
+        "synergies": []
+    },
+    {
+        "name": "Benthic Bloom",
+        "rarity": "Void",
+        "type": "Item",
+        "id": "benthic-bloom",
+        "description": "Upgrades <span yellow>3</span> random Common or <span green>Uncommon</span> item stacks <span gray>(+3 per stack)</span> to the next rarity at the beginning of each stage. <span purple>Corrupts all 57 Leaf Clovers</span>.",
+        "tags": [],
+        "synergies": []
+    },
+    {
+        "name": "Encrusted Key",
+        "rarity": "Void",
+        "type": "Item",
+        "id": "encrusted-key",
+        "description": "A hidden cache will appear somewhere on the next stage allowing the player to select from <span yellow>3</span> items, cache contents have a <span yellow>41.66%</span> chance to be Common, <span yellow>41.66%</span> to be <span green>Uncommon</span>, and a <span yellow>16.66%</span> chance to be <span red>Legendary</span>. Consumed on use, <span purple>corrupts all Rusted Keys</span>.",
+        "tags": [],
+        "synergies": []
+    },
+    {
+        "name": "Lost Seer's Glasses",
+        "rarity": "Void",
+        "type": "Item",
+        "id": "lost-seers-glasses",
+        "description": "Attacks have a <span yellow>0.05%</span> chance <span gray>(+0.05% per stack)</span> to instantly kill non-boss enemies. <span purple>Corrupts all Lens Maker's Glasses</span>.",
+        "tags": [],
+        "synergies": []
+    },
+    {
+        "name": "Lysate Cell",
+        "rarity": "Void",
+        "type": "Item",
+        "id": "lysate-cell",
+        "description": "Adds <span yellow>1</span> charge <span gray>(+1 per stack)</span> to your Special skill, reduces Special skill cooldown by <span blue>33%</span>. <span purple>Corrupts all Fuel Cells</span>.",
+        "tags": [],
+        "synergies": []
+    },
+    {
+        "name": "Needletick",
+        "rarity": "Void",
+        "type": "Item",
+        "id": "needletick",
+        "description": "Gain <span yellow>+10%</span> chance <span gray>(+10% per stack)</span> to inflict an enemy with Collapse, dealing <span yellow400%</span> damage. <span purple>Corrupts all Tri-Tip Daggers</span>.",
+        "tags": [],
+        "synergies": []
+    },
+    {
+        "name": "Newly Hatched Zoea",
+        "rarity": "Void",
+        "type": "Item",
+        "id": "newly-hatched-zoea",
+        "description": "Summon a random void monster as an ally every <span blue>60s</span>, up to <span yellow>1</span> ally <span gray>(+1 per stack)</span> at a time. <span purple>Corrupts all yellow items</span>.",
+        "tags": [],
+        "synergies": []
+    },
+    {
+        "name": "Plasma Shrimp",
+        "rarity": "Void",
+        "type": "Item",
+        "id": "plasma-shrimp",
+        "description": "Gain +10% of max health as shield. Fire missiles on hit that deal <span yellow>40%</span> total damage <span gray>(+40% per stack)</span> while you have shield. <span purple>Corrupts all AtG Missile Mk. 1s</span>.",
+        "tags": [],
+        "synergies": []
+    },
+    {
+        "name": "Pluripotent Larva",
+        "rarity": "Void",
+        "type": "Item",
+        "id": "pluripotent-larva",
+        "description": "Grants <span green>+1</span> extra life <span gray>(+1 per stack)</span>, gain <span blue>3s</span> of invulnerability after resurrection. <span purple>Corrupts all held items that have Void counterparts on death</span>. Consumed on use.",
+        "tags": [],
+        "synergies": []
+    },
+    {
+        "name": "Polylute",
+        "rarity": "Void",
+        "type": "Item",
+        "id": "polylute",
+        "description": "Gain a <span yellow>25%</span> chance to fire lightning at the targeted enemy on hit dealing <span yellow>60%</span> total damage, lightning hits up to <span yellow>3</span> times <span gray>(+3 per stack)</span>. <span purple>Corrupts all Ukuleles</span>.",
+        "tags": [],
+        "synergies": []
+    },
+    {
+        "name": "Safer Spaces",
+        "rarity": "Void",
+        "type": "Item",
+        "id": "safer-spaces",
+        "description": "Blocks the next source of incoming damage. <span blue>15s</span> cooldown <span gray>(-10% per stack)</span>. <span purple>Corrupts all Tougher Times</span>.",
+        "tags": [],
+        "synergies": []
+    },
+    {
+        "name": "Singularity Band",
+        "rarity": "Void",
+        "type": "Item",
+        "id": "singularity-band",
+        "description": "Hits dealing at least <span yellow>400%</span> damage creates a black hole that draws in enemies within <span blue>15m</span>. Black holes last <span blue>5s</span> before collapsing, dealing <span yellow>100%</span> total damage. <span blue>20s</span> cooldown. <span purple>Corrupts all Kjaro's Bands and Runald's Bands</span>.",
+        "tags": [],
+        "synergies": []
+    },
+    {
+        "name": "Tentabauble",
+        "rarity": "Void",
+        "type": "Item",
+        "id": "tentabauble",
+        "description": "Gain a <span yellow>5%</span> chance <span gray> (+5% per stack)</span> to root enemies on hit for <span blue>1s</span>. <span purple>Corrupts all Chronobaubles</span>.",
+        "tags": [],
+        "synergies": []
+    },
+    {
+        "name": "Voidsent Flame",
+        "rarity": "Void",
+        "type": "Item",
+        "id": "voidsent-flame",
+        "description": "Hitting an enemy at full health creates a lava pillar with a <span blue>12m</span> radius <span gray>(+2.4m per stack)</span> that deals <span yellow>260%</span> base damage. <span purple>Corrupts all Will-o'-the-Wisps</span>.",
+        "tags": [],
+        "synergies": []
+    },
+    {
+        "name": "Weeping Fungus",
+        "rarity": "Void",
+        "type": "Item",
+        "id": "weeping-fungus",
+        "description": "Heal <span green>2%</span> of max health per second while sprinting. <span purple>Corrupts all Bustling Fungi</span>.",
         "tags": [],
         "synergies": []
     },
@@ -1492,8 +1618,8 @@
     },
     {
         "name": "Ifrit's Distinction",
-        "rarity": "Equipment",
-        "type": "Item",
+        "rarity": "Elite",
+        "type": "Aspect",
         "id": "ifrits-distinction",
         "description": "All attacks ignite enemies dealing <span yellow>50%</span> total damage, the holder leaves a trail of fire.",
         "tags": [
@@ -1503,8 +1629,8 @@
     },
     {
         "name": "His Reassurance",
-        "rarity": "Equipment",
-        "type": "Item",
+        "rarity": "Elite",
+        "type": "Aspect",
         "id": "his-reassurance",
         "description": "Heal allies within <span yellow>30m</span> for <span green>40%</span> of the holder's base damage <span yellow>4</span> times per second, drop a healing orb on death.",
         "tags": [
@@ -1514,8 +1640,8 @@
     },
     {
         "name": "Silence Between Two Strikes",
-        "rarity": "Equipment",
-        "type": "Item",
+        "rarity": "Elite",
+        "type": "Aspect",
         "id": "silence-between-two-strikes",
         "description": "<span green>50%</span> of the holder's health is converted to shield, all attacks attach lightning bombs to the target which deal <span yellow>50%</span> total damage after exploding.",
         "tags": [
@@ -1525,8 +1651,8 @@
     },
     {
         "name": "Her Biting Embrace",
-        "rarity": "Equipment",
-        "type": "Item",
+        "rarity": "Elite",
+        "type": "Aspect",
         "id": "her-biting-embrace",
         "description": "All attacks greatly slow enemies for <span blue>1.5s</span> multiplied by the attack's proc coefficient, explode on death and freeze nearby enemies.",
         "tags": [
@@ -1536,8 +1662,8 @@
     },
     {
         "name": "N'Kuahana's Retort",
-        "rarity": "Equipment",
-        "type": "Item",
+        "rarity": "Elite",
+        "type": "Aspect",
         "id": "nkuhanas-retort",
         "description": "All attacks inflict the Healing Disabled debuff for <span blue>8s</span>. The holder periodically releases <span yellow>3</span>-<span yellow>4</span> malachite spikes which explode on impact and deal <span yellow>100%</span> damage, explosions leave lingering malachite spikes. Summon a Malachite Urchin on death which will shoot at nearby monsters.",
         "tags": [
@@ -1547,8 +1673,8 @@
     },
     {
         "name": "Spectral Circlet",
-        "rarity": "Equipment",
-        "type": "Item",
+        "rarity": "Elite",
+        "type": "Aspect",
         "id": "spectral-circlet",
         "description": "Attacks greatly slow enemies, nearby allies are made invisible.",
         "tags": [
@@ -1558,8 +1684,8 @@
     },
     {
         "name": "Shared Design",
-        "rarity": "Equipment",
-        "type": "Item",
+        "rarity": "Elite",
+        "type": "Aspect",
         "id": "shared-design",
         "description": "Gain <span yellow>+30%</span> movement speed and <span green>+25%</span> max health, all health is converted to shield. Attacks inflict the Cripple debuff. Fire <span yellow>4</span> bombs every <span blue>10s</span> dealing <span yellow>30%</span> damage.",
         "tags": [
