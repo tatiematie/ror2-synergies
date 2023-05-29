@@ -107,12 +107,20 @@ const updateSynergyList = (item) => {
     synergyList.innerHTML = ''
 
     itemData.forEach((dataItem) => {
-        const excludeTag = Array.isArray(item.exclude) ? item.exclude : []
-        if (
-            (item.synergies && item.synergies.includes(dataItem.id)) ||
-            (Array.isArray(dataItem.tags) && dataItem.tags.some((tag) => item.synergies && item.synergies.includes(tag))) &&
-            !excludeTag.includes(dataItem.id)
-        ) {
+        const excludeTags = Array.isArray(item.synergies.exclude) ? item.synergies.exclude : []
+        const includeTags = Array.isArray(item.synergies.include) ? item.synergies.include : []
+
+        const isIncluded =
+            (item.synergies && item.synergies.include && item.synergies.include.includes(dataItem.id)) ||
+            (Array.isArray(dataItem.tags) &&
+                (dataItem.tags.includes(item.id) ||
+                    dataItem.tags.some((tag) => includeTags.includes(tag))))
+
+        const isExcluded =
+            excludeTags.includes(dataItem.id) ||
+            (Array.isArray(dataItem.tags) && dataItem.tags.some((tag) => excludeTags.includes(tag)))
+
+        if (isIncluded && !isExcluded) {
             const listItem = document.createElement('li')
             listItem.className = 'item'
             listItem.setAttribute('rarity', dataItem.rarity.toLowerCase())
