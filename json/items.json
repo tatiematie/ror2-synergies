@@ -1081,6 +1081,9 @@
         "type": "Item",
         "id": "plasma-shrimp",
         "description": "Gain +10% of max health as shield. Fire missiles on hit that deal <span yellow>40%</span> total damage <span gray>(+40% per stack)</span> while you have shield. <span purple>Corrupts all AtG Missile Mk. 1s</span>.",
+        "procCoefficient": {
+            "On Hit": "0.2"
+        },
         "tags": [],
         "synergies": []
     },
@@ -1099,6 +1102,9 @@
         "type": "Item",
         "id": "polylute",
         "description": "Gain a <span yellow>25%</span> chance to fire lightning at the targeted enemy on hit dealing <span yellow>60%</span> total damage, lightning hits up to <span yellow>3</span> times <span gray>(+3 per stack)</span>. <span purple>Corrupts all Ukuleles</span>.",
+        "procCoefficient": {
+            "On Hit": "0.2"
+        },
         "tags": [],
         "synergies": []
     },
@@ -1117,6 +1123,9 @@
         "type": "Item",
         "id": "singularity-band",
         "description": "Hits dealing at least <span yellow>400%</span> damage creates a black hole that draws in enemies within <span blue>15m</span>. Black holes last <span blue>5s</span> before collapsing, dealing <span yellow>100%</span> total damage. <span blue>20s</span> cooldown. <span purple>Corrupts all Kjaro's Bands and Runald's Bands</span>.",
+        "procCoefficient": {
+            "On Hit": "1.0"
+        },
         "tags": [],
         "synergies": []
     },
@@ -1135,6 +1144,9 @@
         "type": "Item",
         "id": "voidsent-flame",
         "description": "Hitting an enemy at full health creates a lava pillar with a <span blue>12m</span> radius <span gray>(+2.4m per stack)</span> that deals <span yellow>260%</span> base damage. <span purple>Corrupts all Will-o'-the-Wisps</span>.",
+        "procCoefficient": {
+            "On Hit": "1.0"
+        },
         "tags": [],
         "synergies": []
     },
