@@ -62,6 +62,7 @@ const updateDisplay = (item) => {
     itemType.innerHTML = `${rarity} ${type}`
     itemThumb.parentNode.parentNode.setAttribute('rarity', rarityLowerCase)
     itemThumb.src = src
+    itemThumb.title = name
     itemDesc.children[1].innerHTML = description
 
     const existingProcCoefficientTable = itemDesc.querySelector('.proc-coefficient-table')
