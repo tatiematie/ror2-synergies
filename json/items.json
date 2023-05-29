@@ -8,7 +8,16 @@
         "tags": [
             "haste"
         ],
-        "synergies": []
+        "synergies": {
+            "include": [
+                "haste",
+                "proc",
+                "damage"
+            ],
+            "exclude": [
+                "war-horn"
+            ]
+        }
     },
     {
         "name": "Tougher Times",
@@ -16,9 +25,7 @@
         "type": "Item",
         "id": "tougher-times",
         "description": "Gain a <span green>15%</span> chance <span gray>(+15% per stack)</span> to block damage.",
-        "tags": [
-            "defense"
-        ],
+        "tags": [],
         "synergies": []
     },
     {
@@ -27,9 +34,7 @@
         "type": "Item",
         "id": "monster-tooth",
         "description": "Enemies drop healing orbs that heal <span green>8hp</span> + <span green>2%</span> of max health <span gray>(+2% per stack)</span>.",
-        "tags": [
-            "healing"
-        ],
+        "tags": [],
         "synergies": []
     },
     {
@@ -39,7 +44,6 @@
         "id": "lens-makers-glasses",
         "description": "Gain <span yellow>+10%</span> chance <span gray>(+10% per stack)</span> to critically strike.",
         "tags": [
-            "crit",
             "proc"
         ],
         "synergies": []
@@ -78,7 +82,6 @@
         "id": "tri-tip-dagger",
         "description": "Gain a <span yellow>10%</span> chance <span gray>(+10% per stack)</span> to bleed enemies for <span yellow>240%</span> base damage.",
         "tags": [
-            "effect",
             "proc"
         ],
         "synergies": []
@@ -89,7 +92,9 @@
         "type": "Item",
         "id": "warbanner",
         "description": "Drop banners when leveling up and starting teleporters, grants <span yellow>+30%</span> attack and <span blue>+30%</span> movement speed to allies within <span yellow>16m</span> <span gray>(+8m per stack)</span>.",
-        "tags": [],
+        "tags": [
+            "haste"
+        ],
         "synergies": []
     },
     {
@@ -176,7 +181,6 @@
         "id": "sticky-bomb",
         "description": "Gain a <span yellow>5%</span> chance <span gray>(+5% per stack)</span> to attach a bomb to enemies that detonates for <span yellow>180%</span> total damage.",
         "tags": [
-            "damage",
             "proc"
         ],
         "synergies": []
@@ -207,9 +211,7 @@
         "type": "Item",
         "id": "topaz-brooch",
         "description": "Gain <span green>+15</span> temporary barrier <span gray>(+15 per stack)</span> per kill.",
-        "tags": [
-            "defense"
-        ],
+        "tags": [],
         "synergies": []
     },
     {
@@ -238,9 +240,7 @@
         "type": "Item",
         "id": "repulsion-armor-plate",
         "description": "Reduce damage taken by <span green>5</span> <span gray>(+5 per stack)</span>.",
-        "tags": [
-            "defense"
-        ],
+        "tags": [],
         "synergies": []
     },
     {
@@ -250,8 +250,7 @@
         "id": "mocha",
         "description": "Gain <span yellow>+7.5%</span> attack speed <span gray>(+7.5% per stack)</span> and <span blue>+7%</span> movement speed <span gray>(+7% per stack)</span>.",
         "tags": [
-            "haste",
-            "speed"
+            "haste"
         ],
         "synergies": []
     },
@@ -281,9 +280,7 @@
         "type": "Item",
         "id": "oddly-shaped-opal",
         "description": "Gain <span green>+100</span> armor <span gray>(+100 per stack)</span> outside of danger.",
-        "tags": [
-            "defense"
-        ],
+        "tags": [],
         "synergies": []
     },
     {
@@ -305,7 +302,6 @@
             "On Hit": "1.0"
         },
         "tags": [
-            "damage",
             "proc"
         ],
         "synergies": []
@@ -341,7 +337,6 @@
             "On Hit": "0.2"
         },
         "tags": [
-            "damage",
             "proc"
         ],
         "synergies": []
@@ -361,10 +356,7 @@
         "type": "Item",
         "id": "predatory-instincts",
         "description": "Critical strikes boost attack speed by <span yellow>12%</span> <span gray>(+24% per stack)</span> for <span blue>3s</span>. Capped at <span yellow>36%</span>.",
-        "tags": [
-            "haste",
-            "crit"
-        ],
+        "tags": [],
         "synergies": []
     },
     {
@@ -392,8 +384,7 @@
         "id": "harvesters-scythe",
         "description": "Gain <span yellow>+5%</span> critical strike chance, critical strikes heal for <span green>8hp</span> <span gray>(+4hp per stack)</span>.",
         "tags": [
-            "healing",
-            "crit"
+            "proc"
         ],
         "synergies": []
     },
@@ -430,11 +421,7 @@
         "type": "Item",
         "id": "berzerkers-pauldron",
         "description": "Killing <span yellow>4</span> enemies <span gray>(3 pre-DLC)</span> within <span blue>1s</span> boosts movement speed by <span blue>50%</span> and attack speed by <span yellow>100%</span> for <span blue>6s</span> <span gray>(+4s per stack)</span>.",
-        "tags": [
-            "haste",
-            "speed",
-            "onKill"
-        ],
+        "tags": [],
         "synergies": []
     },
     {
@@ -443,9 +430,7 @@
         "type": "Item",
         "id": "rose-buckler",
         "description": "Gain <span green>+30</span> armor <span gray>(+30 per stack)</span> while sprinting.",
-        "tags": [
-            "defense"
-        ],
+        "tags": [],
         "synergies": []
     },
     {
@@ -473,7 +458,6 @@
         "id": "chronobauble",
         "description": "Slow enemies by <span blue>60%</span> for <span blue>2s</span> <span gray>(+2s per stack)</span> on hit.",
         "tags": [
-            "effect",
             "proc"
         ],
         "synergies": []
@@ -503,8 +487,7 @@
         "id": "war-horn",
         "description": "Activating an equipment boosts attack speed by <span yellow>70%</span> for <span blue>8s</span> <span gray>(+4s per stack)</span>.",
         "tags": [
-            "haste",
-            "onUse"
+            "haste"
         ],
         "synergies": []
     },
@@ -602,7 +585,7 @@
         "id": "brilliant-behemoth",
         "description": "All attacks explode with a <span yellow>4m</span> <span gray>(+2.5m per stack)</span> radius and deal <span yellow>60%</span> more damage.",
         "tags": [
-            "damage"
+            "proc"
         ],
         "synergies": []
     },
@@ -678,9 +661,7 @@
         "type": "Item",
         "id": "57-leaf-clover",
         "description": "All random effects are rolled <span yellow>+1</span> time <span gray>(+1 per stack)</span> for a favorable outcome.",
-        "tags": [
-            "proc"
-        ],
+        "tags": [],
         "synergies": []
     },
     {
@@ -693,8 +674,6 @@
             "On Hit": ".33"
         },
         "tags": [
-            "damage",
-            "aoe",
             "proc"
         ],
         "synergies": []
@@ -759,9 +738,7 @@
         "type": "Item",
         "id": "rejuvination-rack",
         "description": "Gain <span green>+100%</span> healing power <span gray>(+100% per stack)</span>.",
-        "tags": [
-            "healAmp"
-        ],
+        "tags": [],
         "synergies": []
     },
     {
@@ -780,7 +757,6 @@
         "id": "shattering-justice",
         "description": "Reduce enemy armor by <span yellow>60</span> for <span blue>8s</span> <span gray>(+8s per stack)</span> after hitting them <span yellow>5</span> times.",
         "tags": [
-            "effect",
             "proc"
         ],
         "synergies": []
@@ -813,9 +789,7 @@
         "type": "Item",
         "id": "laser-scope",
         "description": "Critical strikes deal <span yellow>+100%</span> damage <span gray>(+100% per stack)</span>.",
-        "tags": [
-            "crit"
-        ],
+        "tags": [],
         "synergies": []
     },
     {
@@ -843,7 +817,6 @@
         "id": "symbiotic-scorpion",
         "description": "Gain a <span yellow>100%</span> chance to permanently reduce armor by <span yellow>2</span> <span gray>(+2 per stack)</span> per hit.",
         "tags": [
-            "effect",
             "proc"
         ],
         "synergies": []
@@ -872,9 +845,7 @@
         "type": "Item",
         "id": "titanic-knurl",
         "description": "Gain <span green>+40%</span> max health <span gray>(+40 per stack)</span> and <span green>+1.6hp</span> per second base health regeneration <span gray>(+1.6 per stack)</span>.",
-        "tags": [
-            "healAmp"
-        ],
+        "tags": [],
         "synergies": []
     },
     {
@@ -922,15 +893,7 @@
         "type": "Item",
         "id": "irradiant-pearl",
         "description": "Gain <span green>+10%</span> health, <span green>+10%</span> regeneration, <span blue>+10%</span> movement speed, <span yellow>+10%</span> damage, <span yellow>+10%</span> attack speed, <span yellow>+10%</span> critical strike chance, and <span green>+10%</span> armor.",
-        "tags": [
-            "haste",
-            "healing",
-            "crit",
-            "speed",
-            "damage",
-            "health",
-            "defense"
-        ],
+        "tags": [],
         "synergies": []
     },
     {
@@ -952,7 +915,6 @@
             "On Hit": "0.7"
         },
         "tags": [
-            "effect",
             "proc"
         ],
         "synergies": []
@@ -964,9 +926,7 @@
         "id": "shatterspleen",
         "description": "Gain <span yellow>+5%</span> critical strike chance. Critical strikes bleed enemies for <span yellow>240%</span> base damage, bleeding enemies explode dealing <span yellow>400%</span> damage <span gray>(+400% per stack)</span> + <span yellow>15%</span> of their max health <span gray>(+15% per stack)</span>.",
         "tags": [
-            "crit",
-            "effect",
-            "aoe"
+            "proc"
         ],
         "synergies": []
     },
@@ -989,7 +949,6 @@
             "On Hit": "1.0"
         },
         "tags": [
-            "damage",
             "proc"
         ],
         "synergies": []
@@ -1045,7 +1004,9 @@
         "type": "Item",
         "id": "lost-seers-glasses",
         "description": "Attacks have a <span yellow>0.05%</span> chance <span gray>(+0.05% per stack)</span> to instantly kill non-boss enemies. <span purple>Corrupts all Lens Maker's Glasses</span>.",
-        "tags": [],
+        "tags": [
+            "proc"
+        ],
         "synergies": []
     },
     {
@@ -1063,7 +1024,9 @@
         "type": "Item",
         "id": "needletick",
         "description": "Gain <span yellow>+10%</span> chance <span gray>(+10% per stack)</span> to inflict an enemy with Collapse, dealing <span yellow400%</span> damage. <span purple>Corrupts all Tri-Tip Daggers</span>.",
-        "tags": [],
+        "tags": [
+            "proc"
+        ],
         "synergies": []
     },
     {
@@ -1084,7 +1047,9 @@
         "procCoefficient": {
             "On Hit": "0.2"
         },
-        "tags": [],
+        "tags": [
+            "proc"
+        ],
         "synergies": []
     },
     {
@@ -1105,7 +1070,9 @@
         "procCoefficient": {
             "On Hit": "0.2"
         },
-        "tags": [],
+        "tags": [
+            "proc"
+        ],
         "synergies": []
     },
     {
@@ -1135,7 +1102,9 @@
         "type": "Item",
         "id": "tentabauble",
         "description": "Gain a <span yellow>5%</span> chance <span gray> (+5% per stack)</span> to root enemies on hit for <span blue>1s</span>. <span purple>Corrupts all Chronobaubles</span>.",
-        "tags": [],
+        "tags": [
+            "proc"
+        ],
         "synergies": []
     },
     {
@@ -1174,7 +1143,9 @@
         "type": "Item",
         "id": "brittle-crown",
         "description": "Gain a <span yellow>30%</span> change to gain <span yellow>2</span> gold <span gray>(+2 per stack)</span> on hit. Scales with time. Lose gold when taking damage, gold loss equals <span red>100%</span> of the health lost <span gray>(+100% per stack)</span>.",
-        "tags": [],
+        "tags": [
+            "proc"
+        ],
         "synergies": []
     },
     {
@@ -1416,9 +1387,7 @@
         "type": "Item",
         "id": "ocular-hud",
         "description": "Gain <span yellow>+100%</span> critical strike chance for <span blue>8s</span>. <span blue>60s</span> cooldown.",
-        "tags": [
-            "crit"
-        ],
+        "tags": [],
         "synergies": []
     },
     {
@@ -1556,7 +1525,7 @@
         "synergies": []
     },
     {
-        "name": "jade-elephant",
+        "name": "Jade Elephant",
         "rarity": "Equipment",
         "type": "Item",
         "id": "jade-elephant",
@@ -1602,8 +1571,7 @@
         "id": "gorags-opus",
         "description": "Gain <span blue>+50%</span> movement speed and <span yellow>+100%</span> attack speed for all allies for <span blue>7s</span>. <span blue>45s</span> cooldown.",
         "tags": [
-            "haste",
-            "speed"
+            "haste"
         ],
         "synergies": []
     },
@@ -1635,7 +1603,7 @@
         "id": "ifrits-distinction",
         "description": "All attacks ignite enemies dealing <span yellow>50%</span> total damage, the holder leaves a trail of fire.",
         "tags": [
-            "aspect"
+            "proc"
         ],
         "synergies": []
     },
@@ -1645,9 +1613,7 @@
         "type": "Aspect",
         "id": "his-reassurance",
         "description": "Heal allies within <span yellow>30m</span> for <span green>40%</span> of the holder's base damage <span yellow>4</span> times per second, drop a healing orb on death.",
-        "tags": [
-            "aspect"
-        ],
+        "tags": [],
         "synergies": []
     },
     {
@@ -1657,7 +1623,7 @@
         "id": "silence-between-two-strikes",
         "description": "<span green>50%</span> of the holder's health is converted to shield, all attacks attach lightning bombs to the target which deal <span yellow>50%</span> total damage after exploding.",
         "tags": [
-            "aspect"
+            "proc"
         ],
         "synergies": []
     },
@@ -1668,7 +1634,7 @@
         "id": "her-biting-embrace",
         "description": "All attacks greatly slow enemies for <span blue>1.5s</span> multiplied by the attack's proc coefficient, explode on death and freeze nearby enemies.",
         "tags": [
-            "aspect"
+            "proc"
         ],
         "synergies": []
     },
@@ -1679,7 +1645,7 @@
         "id": "nkuhanas-retort",
         "description": "All attacks inflict the Healing Disabled debuff for <span blue>8s</span>. The holder periodically releases <span yellow>3</span>-<span yellow>4</span> malachite spikes which explode on impact and deal <span yellow>100%</span> damage, explosions leave lingering malachite spikes. Summon a Malachite Urchin on death which will shoot at nearby monsters.",
         "tags": [
-            "aspect"
+            "proc"
         ],
         "synergies": []
     },
@@ -1690,7 +1656,7 @@
         "id": "spectral-circlet",
         "description": "Attacks greatly slow enemies, nearby allies are made invisible.",
         "tags": [
-            "aspect"
+            "proc"
         ],
         "synergies": []
     },
@@ -1701,7 +1667,7 @@
         "id": "shared-design",
         "description": "Gain <span yellow>+30%</span> movement speed and <span green>+25%</span> max health, all health is converted to shield. Attacks inflict the Cripple debuff. Fire <span yellow>4</span> bombs every <span blue>10s</span> dealing <span yellow>30%</span> damage.",
         "tags": [
-            "aspect"
+            "proc"
         ],
         "synergies": []
     }
