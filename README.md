@@ -3,5 +3,7 @@ Tool for understanding items and their synergies in Risk of Rain 2, find it here
 
 ## Roadmap
 v1: Item descriptions, synergies, and explanations
+
 v2: Survivor synergies
+
 v3: Prefab build library
