@@ -63,7 +63,18 @@ const updateDisplay = (item) => {
     itemThumb.parentNode.parentNode.setAttribute('rarity', rarityLowerCase)
     itemThumb.src = src
     itemThumb.title = name
-    itemDesc.children[1].innerHTML = description
+
+    itemDesc.innerHTML = ''
+
+    const descriptionTitle = document.createElement('p')
+    descriptionTitle.innerHTML = `Description:`
+    itemDesc.appendChild(descriptionTitle)
+
+    for (const entry of description) {
+        const entryElement = document.createElement('p')
+        entryElement.innerHTML = entry
+        itemDesc.appendChild(entryElement)
+    }
 
     const existingProcCoefficientTable = itemDesc.querySelector('.proc-coefficient-table')
     const procTableTitle = itemDesc.querySelector('.proc.title')
@@ -134,6 +145,17 @@ const updateSynergyList = (item) => {
             synergyList.appendChild(listItem)
         }
     })
+
+    const justifySynergies = () => {
+        if (synergyList.clientHeight === 47) {
+            synergyList.style.justifyContent = 'start'
+        } else {
+            synergyList.style.justifyContent = 'space-around'
+        }
+    }
+
+    justifySynergies()
+    window.addEventListener('resize', justifySynergies)
 }
 
 const handleButtonClick = (item, button) => {
@@ -149,13 +171,6 @@ const handleButtonClick = (item, button) => {
         button.setAttribute('active', 'true')
         updateDisplay(item)
         updateSynergyList(item)
-    }
-
-    const changeFavicon = (item) => {
-        const favicon = document.querySelector('link[rel="icon"]')
-        const src = `assets/img/items/${item.id}.png`
-
-        favicon.href = src
     }
 }
 
