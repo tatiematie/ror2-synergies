@@ -115,11 +115,9 @@
   border: 4px solid #4D5E6E;
   padding: 12px;
 }
-.pane .block > *:not(:last-child) {
-  margin-bottom: 6px;
-}
 .pane .block p {
   font-size: 1.125em;
+  margin-bottom: 6px;
 }
 .pane .block p span[red] {
   color: #E58161;
@@ -221,7 +219,7 @@ html {
        column-gap: 6px;
   display: grid;
   grid-template-columns: repeat(auto-fit, 47px);
-  justify-content: space-around;
+  justify-content: start;
   row-gap: 6px;
   position: relative;
 }
