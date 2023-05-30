@@ -16,7 +16,7 @@ Item synergies
 
 ### Version 3: Survivors **(Planned)**
 Survivor synergies 
-- Selecting an item will show its usefulness on each survivor in the display panel
+- Selecting an item will show its usefulness to each survivor in the display panel
 
 ### Version 4: Synergy Demos **(Planned)**
 Prefab build selection area
