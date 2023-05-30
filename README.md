@@ -5,8 +5,8 @@ The goal of this tool is to help new players understand the intricate details un
 
 ## Roadmap
 ### Version 1: Introduction **(~~Complete~~)**
-Introduces item list, display panel
-- Clicking an item shows its description in the display panel, descriptions include:
+Introduces the item list and display panel
+- Selecting an item shows its description in the display panel, descriptions include:
     - Item info
     - Proc coefficients
 
