@@ -1,3 +1,6 @@
+const appName = 'ROR2 Synergizer'
+const appVersion = '1.0'
+
 const itemTitle = document.querySelector('#item-title'),
     itemType = document.querySelector('#item-type'),
     itemThumb = document.querySelector('#item-thumbnail img'),
@@ -188,3 +191,5 @@ const initializePage = async () => {
 }
 
 initializePage()
+
+console.log(appName, 'Version:', appVersion)
