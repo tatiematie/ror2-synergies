@@ -2,7 +2,13 @@
 You can find it here: https://tatiematie.github.io/ror2-synergies/
 
 The goal of this tool is to help new players understand the intricate details under the hood of **Risk of Rain 2**. 
-**Phase 1** of this project allows the player to learn about each item, granting them a better understanding of what can be achieved in an average run. **Phase 2** will introduce functionality that teaches players about item synergies and how items can come together to form a well rounded build. **Phase 3** will combine the existing functionality with a tool that explains how effectively the selected item can be used by each survivor. The **final phase** will be oriented around teaching the player how to manage their inventory and visualise builds as they pick up items in the early stages of the game, this will focus on an in-depth understanding of synergies and the use of scrappers/printers to achieve a build concentrated on a core game mechanic.
+**Phase 1** of this project allows the player to learn about each item, granting them a better understanding of what can be achieved in an average run. 
+
+**Phase 2** will introduce functionality that teaches players about item synergies and how items can come together to form a well rounded build. 
+
+**Phase 3** will combine the existing functionality with a tool that explains how effectively the selected item can be used by each survivor. 
+
+The **final phase** will be oriented around teaching the player how to manage their inventory and visualise builds as they pick up items in the early stages of the game, this will focus on an in-depth understanding of synergies and the use of scrappers/printers to achieve a build concentrated on a core game mechanic.
 
 ## Roadmap
 ### Version 1: Introduction **(~~Complete~~)**
