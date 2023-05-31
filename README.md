@@ -1,7 +1,6 @@
 # ror2-synergies
-You can find it here: https://tatiematie.github.io/ror2-synergies/
+The goal of this tool is to help new players understand the intricate details under the hood of **Risk of Rain 2**. You can find it here: https://tatiematie.github.io/ror2-synergies/
 
-The goal of this tool is to help new players understand the intricate details under the hood of **Risk of Rain 2**. 
 **Phase 1** of this project allows the player to learn about each item, granting them a better understanding of what can be achieved in an average run. 
 
 **Phase 2** will introduce functionality that teaches players about item synergies and how items can come together to form a well rounded build. 
