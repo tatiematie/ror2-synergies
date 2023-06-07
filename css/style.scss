@@ -89,6 +89,32 @@ $colors: (
         background-size: 100%;
     }
 
+    span {
+        &[red] {
+            color: map-get($colors, text_red);
+        }
+        
+        &[yellow] {
+            color: map-get($colors, text_yellow);
+        }
+        
+        &[green] {
+            color: map-get($colors, text_green);
+        }
+        
+        &[blue] {
+            color: map-get($colors, text_blue);
+        }
+        
+        &[purple] {
+            color: map-get($colors, text_purple);
+        }
+        
+        &[gray] {
+            color: map-get($colors, text_gray);
+        }
+    }
+
     &:focus {
         outline: none;
     }
@@ -181,36 +207,7 @@ $colors: (
         
         p {
             font-size: 1.125em;
-
-            span {
-                &[red] {
-                    color: map-get($colors, text_red);
-                }
-                
-                &[yellow] {
-                    color: map-get($colors, text_yellow);
-                }
-                
-                &[green] {
-                    color: map-get($colors, text_green);
-                }
-                
-                &[blue] {
-                    color: map-get($colors, text_blue);
-                }
-                
-                &[purple] {
-                    color: map-get($colors, text_purple);
-                }
-                
-                &[gray] {
-                    color: map-get($colors, text_gray);
-                }
-            }
-
-            &:not(:first-of-type) {
-                line-height: 1.4em;
-            }
+            line-height: 1.4em;
 
             &:not(:last-child) {
                 margin-bottom: 6px;
@@ -230,11 +227,6 @@ html {
 #app {
     height: 100vh;
     transition: .125s linear;
-    padding: 24px;
-
-    @include atBreakpoint(715px) {
-        padding: 24px 12px;
-    }
 }
 
 #container {
@@ -243,13 +235,26 @@ html {
     grid-template-columns: minmax(0, 100%) minmax(0, 364px);
     margin: 0 auto;
     max-width: 1080px;
-    padding-bottom: 24px;
+    padding: 24px;
+    position: relative;
     row-gap: 12px;
+
+    #app-version {
+        bottom: 12px;
+        color: map-get($colors, text_white);
+        position: absolute;
+        right: 24px;
+
+        @include atBreakpoint(715px) {
+            right: 12px;
+        }
+    }
 
     @include atBreakpoint(715px) {
         display: flex;
         flex-direction: column;
         flex-flow: column-reverse;
+        padding: 24px 12px 48px;
     }
 
     #display-pane {
@@ -273,9 +278,27 @@ html {
             }
         }
 
-        .proc.title {
-            margin-top: 12px;
+        .title {
+            margin-bottom: 4px;
+            position: relative;
+            width: fit-content;
+
+            &:not(:first-child) {
+                margin-top: 12px;
+            }
+
+            &::after {
+                background-color: map-get($colors, text_white);
+                bottom: 0;
+                box-shadow: 2px 2px 2px map-get($colors, text_shadow);
+                content: '';
+                height: 2px;
+                left: -2px;
+                position: absolute;
+                width: calc(100% + 4px);
+            }
         }
+        
 
         table {
             td {
@@ -300,6 +323,7 @@ html {
         #item-synergies {
             .content {
                 padding: 6px;
+                margin-top: 6px;
             }
 
             #synergy-list {
@@ -308,7 +332,6 @@ html {
                 grid-template-columns: repeat(auto-fit, 47px);
                 justify-content: start;
                 row-gap: 6px;
-                position: relative;
 
                 .item {
                     border: 1px solid map-get($colors, border_pane);
@@ -333,7 +356,7 @@ html {
             column-gap: 6px;
             display: grid;
             grid-template-columns: repeat(auto-fit, 47px);
-            height: 256px;
+            max-height: 256px;
             justify-content: space-around;
             overflow: hidden scroll;
             row-gap: 6px;
