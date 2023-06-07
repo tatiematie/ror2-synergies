@@ -1,6 +1,5 @@
 const appName = 'ROR2 Synergizer',
-    appVersion = '1.1.0',
-    latestAddition = 'Common Item synergies introduced'
+    appVersion = '1.1.0'
 
 const itemTitle = document.querySelector('#item-title'),
     itemType = document.querySelector('#item-type'),
@@ -72,6 +71,7 @@ const updateDisplay = (item) => {
 
     const descriptionTitle = document.createElement('p')
     descriptionTitle.innerHTML = `Description:`
+    descriptionTitle.classList.add('title')
     itemDesc.appendChild(descriptionTitle)
 
     for (const entry of description) {
@@ -125,7 +125,7 @@ const updateSynergyList = (item) => {
         const excludeTags = Array.isArray(item.synergies.exclude) ? item.synergies.exclude : []
         const includeTags = Array.isArray(item.synergies.include) ? item.synergies.include : []
 
-        const hasNoneTag = includeTags.includes('none') // Check if "none" tag is present in includes list
+        const hasNoneTag = includeTags.includes('none')
 
         const isIncluded =
             (item.synergies &&
@@ -200,8 +200,12 @@ const attachButtonEventListeners = () => {
 const initializePage = async () => {
     await loadButtons()
     attachButtonEventListeners()
+
+    // let versionTag = document.createElement('p')
+    // versionTag.id = 'app-version'
+    // versionTag.innerHTML = `<span gray>${appName} v${appVersion}</span>`
+
+    // document.querySelector('#container').appendChild(versionTag)
 }
 
 initializePage()
-
-console.log(`${appName} Version ${appVersion}, ${latestAddition}`)
