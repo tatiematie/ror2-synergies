@@ -1,5 +1,6 @@
-const appName = 'ROR2 Synergizer'
-const appVersion = '1.0'
+const appName = 'ROR2 Synergizer',
+    appVersion = '1.1.0',
+    latestAddition = 'Common Item synergies introduced'
 
 const itemTitle = document.querySelector('#item-title'),
     itemType = document.querySelector('#item-type'),
@@ -124,28 +125,39 @@ const updateSynergyList = (item) => {
         const excludeTags = Array.isArray(item.synergies.exclude) ? item.synergies.exclude : []
         const includeTags = Array.isArray(item.synergies.include) ? item.synergies.include : []
 
+        const hasNoneTag = includeTags.includes('none') // Check if "none" tag is present in includes list
+
         const isIncluded =
-            (item.synergies && item.synergies.include && item.synergies.include.includes(dataItem.id)) ||
+            (item.synergies &&
+                item.synergies.include &&
+                item.synergies.include.includes(dataItem.id)) ||
             (Array.isArray(dataItem.tags) &&
                 (dataItem.tags.includes(item.id) ||
                     dataItem.tags.some((tag) => includeTags.includes(tag))))
+            || dataItem.id === item.id
 
         const isExcluded =
             excludeTags.includes(dataItem.id) ||
             (Array.isArray(dataItem.tags) && dataItem.tags.some((tag) => excludeTags.includes(tag)))
 
-        if (isIncluded && !isExcluded) {
-            const listItem = document.createElement('li')
-            listItem.className = 'item'
-            listItem.setAttribute('rarity', dataItem.rarity.toLowerCase())
+        const isSameItem = dataItem.id === item.id
+        const isEquipment = dataItem.rarity.toLowerCase() === 'equipment'
+        const isAspect = dataItem.type.toLowerCase() === 'aspect'
 
-            const img = document.createElement('img')
-            img.src = `assets/img/items/${dataItem.id}.png`
-            img.alt = `${dataItem.name}`
-            img.title = `${dataItem.name}`
-            listItem.appendChild(img)
+        if (isIncluded && !isExcluded && !(isSameItem && (isEquipment || isAspect))) {
+            if (!(hasNoneTag && isSameItem)) {
+                const listItem = document.createElement('li')
+                listItem.className = 'item'
+                listItem.setAttribute('rarity', dataItem.rarity.toLowerCase())
 
-            synergyList.appendChild(listItem)
+                const img = document.createElement('img')
+                img.src = `assets/img/items/${dataItem.id}.png`
+                img.alt = `${dataItem.name}`
+                img.title = `${dataItem.name}`
+                listItem.appendChild(img)
+
+                synergyList.appendChild(listItem)
+            }
         }
     })
 
@@ -192,4 +204,4 @@ const initializePage = async () => {
 
 initializePage()
 
-console.log(appName, 'Version:', appVersion)
+console.log(`${appName} Version ${appVersion}, ${latestAddition}`)
