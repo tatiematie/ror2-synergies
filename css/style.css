@@ -117,7 +117,6 @@
 }
 .pane .block p {
   font-size: 1.125em;
-  margin-bottom: 6px;
 }
 .pane .block p span[red] {
   color: #E58161;
@@ -139,6 +138,9 @@
 }
 .pane .block p:not(:first-of-type) {
   line-height: 1.4em;
+}
+.pane .block p:not(:last-child) {
+  margin-bottom: 6px;
 }
 .pane .block:not(:last-child) {
   margin-bottom: 8px;
