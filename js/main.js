@@ -1,5 +1,5 @@
 const appName = 'ROR2 Synergizer',
-    appVersion = '1.1.0'
+    appVersion = '1.1.1'
 
 const itemTitle = document.querySelector('#item-title'),
     itemType = document.querySelector('#item-type'),
