@@ -5,7 +5,8 @@
         "type": "Item",
         "id": "soldiers-syringe",
         "description": [
-            "Gain <span yellow>+15%</span> attack speed <span gray>(+15% per stack)</span>."
+            "Gain <span yellow>+15%</span> attack speed <span gray>(+15% per stack)</span>.",
+            "Pairs well with attack speed, increased damage, and items that have a chance to proc."
         ],
         "tags": [
             "haste"
@@ -31,7 +32,8 @@
         "type": "Item",
         "id": "tougher-times",
         "description": [
-            "Gain a <span green>15%</span> chance <span gray>(+15% per stack)</span> to block damage."
+            "Gain a <span green>15%</span> chance <span gray>(+15% per stack)</span> to block damage.",
+            "Pairs well with damage prevention and damage reduction items."
         ],
         "tags": [
             "defense"
@@ -40,8 +42,7 @@
             "include": [
                 "defense",
                 "armor"
-            ],
-            "exclude": []
+            ]
         }
     },
     {
@@ -50,14 +51,17 @@
         "type": "Item",
         "id": "monster-tooth",
         "description": [
-            "Enemies drop healing orbs that heal <span green>8hp</span> + <span green>2%</span> of max health <span gray>(+2% per stack)</span>."
+            "Enemies drop healing orbs that heal <span green>8hp</span> + <span green>2%</span> of max health <span gray>(+2% per stack)</span>.",
+            "Pairs well with amplified healing and on-kill items."
         ],
         "tags": [
-            "healing"
+            "healing",
+            "onKill"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "onKill"
+            ]
         }
     },
     {
@@ -66,7 +70,8 @@
         "type": "Item",
         "id": "lens-makers-glasses",
         "description": [
-            "Gain <span yellow>+10%</span> chance <span gray>(+10% per stack)</span> to critically strike."
+            "Gain <span yellow>+10%</span> chance <span gray>(+10% per stack)</span> to critically strike.",
+            "Pairs well with critical strike chance, attack speed, increased damage, and items that have a chance to proc."
         ],
         "tags": [
             "crit",
@@ -76,8 +81,7 @@
             "include": [
                 "haste",
                 "damage"
-            ],
-            "exclude": []
+            ]
         }
     },
     {
@@ -86,7 +90,8 @@
         "type": "Item",
         "id": "pauls-goat-hoof",
         "description": [
-            "Gain <span blue>+14%</span> movement speed <span gray>(+14% per stack)</span>."
+            "Gain <span blue>+14%</span> movement speed <span gray>(+14% per stack)</span>.",
+            "Pairs well with movement speed and mobility items."
         ],
         "tags": [
             "speed"
@@ -94,8 +99,7 @@
         "synergies": {
             "include": [
                 "speed"
-            ],
-            "exclude": []
+            ]
         }
     },
     {
@@ -104,14 +108,17 @@
         "type": "Item",
         "id": "bustling-fungus",
         "description": [
-            "Standing still heals allies within <span yellow>3m</span> <span gray>(+1.5m per stack)</span> for <span green>4.5%</span> of max health <span gray>(+2.25% per stack)</span>."
+            "Standing still heals allies within <span yellow>3m</span> <span gray>(+1.5m per stack)</span> for <span green>4.5%</span> of max health <span gray>(+2.25% per stack)</span>.",
+            "Pairs well with amplified healing and items that activate outside of danger."
         ],
         "tags": [
             "healing"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "cautious-slug",
+                "shield"
+            ]
         }
     },
     {
@@ -120,7 +127,8 @@
         "type": "Item",
         "id": "crowbar",
         "description": [
-            "Enemies above <span yellow>90%</span> health take <span yellow>75%</span> more damage <span gray>(+75% per stack)</span>."
+            "Enemies above <span yellow>90%</span> health take <span yellow>75%</span> more damage <span gray>(+75% per stack)</span>.",
+            "Pairs well with critical strike chance, high damage, and items that have a chance to proc."
         ],
         "tags": [
             "damage"
@@ -141,7 +149,8 @@
         "type": "Item",
         "id": "tri-tip-dagger",
         "description": [
-            "Gain a <span yellow>10%</span> chance <span gray>(+10% per stack)</span> to bleed enemies for <span yellow>240%</span> base damage."
+            "Gain a <span yellow>10%</span> chance <span gray>(+10% per stack)</span> to bleed enemies for <span yellow>240%</span> base damage.",
+            "Pairs well with attack speed and items that can proc other items."
         ],
         "tags": [
             "effect",
@@ -150,9 +159,8 @@
         "synergies": {
             "include": [
                 "haste",
-                "proc"
-            ],
-            "exclude": []
+                "canProc"
+            ]
         }
     },
     {
@@ -161,7 +169,8 @@
         "type": "Item",
         "id": "warbanner",
         "description": [
-            "Drop banners when leveling up and starting teleporters, grants <span yellow>+30%</span> attack and <span blue>+30%</span> movement speed to allies within <span yellow>16m</span> <span gray>(+8m per stack)</span>."
+            "Drop banners when leveling up and starting teleporters, grants <span yellow>+30%</span> attack and <span blue>+30%</span> movement speed to allies within <span yellow>16m</span> <span gray>(+8m per stack)</span>.",
+            "Pairs well with attack speed and movement speed items."
         ],
         "tags": [
             "haste",
@@ -171,8 +180,7 @@
             "include": [
                 "haste",
                 "speed"
-            ],
-            "exclude": []
+            ]
         }
     },
     {
@@ -181,7 +189,8 @@
         "type": "Item",
         "id": "cautious-slug",
         "description": [
-            "Heal <span green>3hp</span> <span gray>(+3hp per stack)</span> per second while outside of danger."
+            "Heal <span green>3hp</span> <span gray>(+3hp per stack)</span> per second while outside of danger.",
+            "Pairs well with amplified healing and items that activate outside of danger."
         ],
         "tags": [
             "healing"
@@ -189,8 +198,7 @@
         "synergies": {
             "include": [
                 "shield"
-            ],
-            "exclude": []
+            ]
         }
     },
     {
@@ -199,7 +207,8 @@
         "type": "Item",
         "id": "personal-shield-generator",
         "description": [
-            "Gain a shield equal to <span green>8%</span> of max health <span gray>(+8% per stack)</span>. All shield recharges in <span blue>2s</span> after <span blue>9s</span> outside of danger."
+            "Gain a shield equal to <span green>8%</span> of max health <span gray>(+8% per stack)</span>. All shield recharges in <span blue>2s</span> after <span blue>9s</span> outside of danger.",
+            "Pairs well with shield items and items than activate outside of danger."
         ],
         "tags": [
             "shield"
@@ -208,8 +217,7 @@
             "include": [
                 "shield",
                 "cautious-slug"
-            ],
-            "exclude": []
+            ]
         }
     },
     {
@@ -218,15 +226,17 @@
         "type": "Item",
         "id": "medkit",
         "description": [
-            "Heal <span green>20hp</span> + <span green>5%</span> of max health <span gray>(+5% per stack)</span> <span blue>2s</span> after taking damage."
+            "Heal <span green>20hp</span> + <span green>5%</span> of max health <span gray>(+5% per stack)</span> <span blue>2s</span> after taking damage.",
+            "Pairs well with amplified healing and items that trigger when the player takes damage."
         ],
         "tags": [
             "healing",
             "onHit"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "onHit"
+            ]
         }
     },
     {
@@ -235,15 +245,17 @@
         "type": "Item",
         "id": "gasoline",
         "description": [
-            "Killing an enemy ignites enemies within <span yellow>12m</span> <span gray>(+4m per stack)</span> for <span blue>3s</span>, dealing <span yellow>150%</span> base damage. Burning enemies take <span yellow>150%</span> base damage <span gray>(+75% per stack)</span> per tick."
+            "Killing an enemy ignites enemies within <span yellow>12m</span> <span gray>(+4m per stack)</span> for <span blue>3s</span>, dealing <span yellow>150%</span> base damage. Burning enemies take <span yellow>150%</span> base damage <span gray>(+75% per stack)</span> per tick.",
+            "Pairs well with fire damage, debuff inflictions, and on-kill items."
         ],
         "tags": [
             "effect",
             "onKill"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "onKill"
+            ]
         }
     },
     {
@@ -252,7 +264,8 @@
         "type": "Item",
         "id": "stun-grenade",
         "description": [
-            "Gain a <span yellow>5%</span> chance <span gray>(+5% per stack)</span> to stun enemies on hit for <span blue>2s</span>."
+            "Gain a <span yellow>5%</span> chance <span gray>(+5% per stack)</span> to stun enemies on hit for <span blue>2s</span>.",
+            "Pairs well with attack speed and items that can proc other items."
         ],
         "tags": [
             "proc"
@@ -261,8 +274,7 @@
             "include": [
                 "haste",
                 "canProc"
-            ],
-            "exclude": []
+            ]
         }
     },
     {
@@ -271,7 +283,8 @@
         "type": "Item",
         "id": "bundle-of-fireworks",
         "description": [
-            "Activating an interactable launches <span yellow>8</span> fireworks <span gray>(+4 per stack)</span> that deal <span yellow>300%</span> base damage."
+            "Activating an interactable launches <span yellow>8</span> fireworks <span gray>(+4 per stack)</span> that deal <span yellow>300%</span> base damage.",
+            "Pairs well with increased damage and items that have a chance to proc."
         ],
         "procCoefficient": {
             "On Hit": "0.2"
@@ -298,7 +311,8 @@
         "type": "Item",
         "id": "energy-drink",
         "description": [
-            "Gain <span blue>+25%</span> movement speed <span gray>(+25% per stack)</span> while sprinting."
+            "Gain <span blue>+25%</span> movement speed <span gray>(+25% per stack)</span> while sprinting.",
+            "Pairs well with movement speed and mobility items."
         ],
         "tags": [
             "speed"
@@ -306,8 +320,7 @@
         "synergies": {
             "include": [
                 "speed"
-            ],
-            "exclude": []
+            ]
         }
     },
     {
@@ -316,13 +329,11 @@
         "type": "Item",
         "id": "backup-magazine",
         "description": [
-            "Adds <span yellow>1</span> charge <span gray>(+1 per stack)</span> to your Secondary skill."
+            "Adds <span yellow>1</span> charge <span gray>(+1 per stack)</span> to your Secondary skill.",
+            "Useful for survivors that have Secondary skills with high damage output and proc chance."
         ],
         "tags": [],
-        "synergies": {
-            "include": [],
-            "exclude": []
-        }
+        "synergies": {}
     },
     {
         "name": "Sticky Bomb",
@@ -330,7 +341,8 @@
         "type": "Item",
         "id": "sticky-bomb",
         "description": [
-            "Gain a <span yellow>5%</span> chance <span gray>(+5% per stack)</span> to attach a bomb to enemies that detonates for <span yellow>180%</span> total damage."
+            "Gain a <span yellow>5%</span> chance <span gray>(+5% per stack)</span> to attach a bomb to enemies that detonates for <span yellow>180%</span> total damage.",
+            "Pairs well with attack speed, increased damage, and items that have a chance to proc."
         ],
         "tags": [
             "damage",
@@ -342,8 +354,7 @@
                 "crit",
                 "damage",
                 "canProc"
-            ],
-            "exclude": []
+            ]
         }
     },
     {
@@ -352,14 +363,14 @@
         "type": "Item",
         "id": "rusted-key",
         "description": [
-            "A hidden lockbox will appear somewhere on the next stage with an <span yellow>80%</span> chance to drop an <span green>Uncommon</span> item and a <span yellow>20%</span> chance to drop a <span red>Legendary</span> item. Consumed on use."
+            "A hidden lockbox will appear somewhere on the next stage with an <span yellow>80%</span> chance to drop an Uncommon item and a <span yellow>20%</span> chance to drop a Legendary item. Consumed on use.",
+            "No currently known item synergies."
         ],
         "tags": [],
         "synergies": {
             "include": [
                 "none"
-            ],
-            "exclude": []
+            ]
         }
     },
     {
@@ -368,7 +379,8 @@
         "type": "Item",
         "id": "armor-piercing-rounds",
         "description": [
-            "Deal <span yellow>+20%</span> damage <span gray>(+20% per stack)</span> to stage bosses."
+            "Deal <span yellow>+20%</span> damage <span gray>(+20% per stack)</span> to stage bosses.",
+            "Pairs well with attack speed, increased damage, and items that have a chance to proc."
         ],
         "tags": [
             "damage"
@@ -378,8 +390,7 @@
                 "haste",
                 "crit",
                 "damage"
-            ],
-            "exclude": []
+            ]
         }
     },
     {
@@ -388,15 +399,18 @@
         "type": "Item",
         "id": "topaz-brooch",
         "description": [
-            "Gain <span green>+15</span> temporary barrier <span gray>(+15 per stack)</span> per kill."
+            "Gain <span green>+15</span> temporary barrier <span gray>(+15 per stack)</span> per kill.",
+            "Pairs well with barrier, shield, and on-kill items."
         ],
         "tags": [
             "barrier",
             "onKill"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "shield",
+                "onKill"
+            ]
         }
     },
     {
@@ -405,7 +419,8 @@
         "type": "Item",
         "id": "focus-crystal",
         "description": [
-            "Deal <span yellow>+20%</span> damage <span gray>(+20% per stack)</span> to enemies within <span yellow>13m</span>."
+            "Deal <span yellow>+20%</span> damage <span gray>(+20% per stack)</span> to enemies within <span yellow>13m</span>.",
+            "Pairs well with attack speed, increased damage, and items that have a chance to proc."
         ],
         "tags": [
             "damage"
@@ -427,15 +442,13 @@
         "type": "Item",
         "id": "bison-steak",
         "description": [
-            "Gain <span green>+25</span> max health <span gray>(+25hp per stack)</span>."
+            "Gain <span green>+25</span> max health <span gray>(+25hp per stack)</span>.",
+            "Pairs well with the Scrapper lol."
         ],
         "tags": [
             "health"
         ],
-        "synergies": {
-            "include": [],
-            "exclude": []
-        }
+        "synergies": {}
     },
     {
         "name": "Repulsion Armor Plate",
@@ -443,7 +456,8 @@
         "type": "Item",
         "id": "repulsion-armor-plate",
         "description": [
-            "Reduce damage taken by <span green>5</span> <span gray>(+5 per stack)</span>."
+            "Reduce damage taken by <span green>5</span> <span gray>(+5 per stack)</span>.",
+            "Pairs well with damage prevention and damage reduction items."
         ],
         "tags": [
             "defense"
@@ -452,8 +466,7 @@
             "include": [
                 "defense",
                 "armor"
-            ],
-            "exclude": []
+            ]
         }
     },
     {
@@ -462,7 +475,8 @@
         "type": "Item",
         "id": "mocha",
         "description": [
-            "Gain <span yellow>+7.5%</span> attack speed <span gray>(+7.5% per stack)</span> and <span blue>+7%</span> movement speed <span gray>(+7% per stack)</span>."
+            "Gain <span yellow>+7.5%</span> attack speed <span gray>(+7.5% per stack)</span> and <span blue>+7%</span> movement speed <span gray>(+7% per stack)</span>.",
+            "Pairs well with attack speed, increased damage, mobility, and items that have a chance to proc."
         ],
         "tags": [
             "speed",
@@ -487,7 +501,8 @@
         "type": "Item",
         "id": "power-elixir",
         "description": [
-            "Heal for <span green>75%</span> of max health when below <span red>25%</span> of max health. Consumed on use."
+            "Heal for <span green>75%</span> of max health when below <span red>25%</span> of max health, protects Delicate Watch from breaking. Consumed on use.",
+            "Pairs well with amplified healing and items that activate at low health."
         ],
         "tags": [
             "healing"
@@ -495,8 +510,7 @@
         "synergies": {
             "include": [
                 "delicate-watch"
-            ],
-            "exclude": []
+            ]
         }
     },
     {
@@ -505,16 +519,19 @@
         "type": "Item",
         "id": "delicate-watch",
         "description": [
-            "Deal <span yellow>+20%</span> damage <span gray>(+20% per stack)</span>, consumed when below <span red>25%</span> of max health."
+            "Deal <span yellow>+20%</span> damage <span gray>(+20% per stack)</span>, consumed when below <span red>25%</span> of max health.",
+            "Pairs well with attack speed, increased damage, and items that have a chance to proc."
         ],
         "tags": [
             "damage"
         ],
         "synergies": {
             "include": [
+                "haste",
+                "crit",
+                "damage",
                 "power-elixir"
-            ],
-            "exclude": []
+            ]
         }
     },
     {
@@ -523,7 +540,8 @@
         "type": "Item",
         "id": "oddly-shaped-opal",
         "description": [
-            "Gain <span green>+100</span> armor <span gray>(+100 per stack)</span> outside of danger."
+            "Gain <span green>+100</span> armor <span gray>(+100 per stack)</span> outside of danger.",
+            "Pairs well with damage prevention and damage reduction items."
         ],
         "tags": [
             "armor"
@@ -532,8 +550,7 @@
             "include": [
                 "defense",
                 "armor"
-            ],
-            "exclude": []
+            ]
         }
     },
     {
@@ -542,17 +559,18 @@
         "type": "Item",
         "id": "roll-of-pennies",
         "description": [
-            "Grants <span yellow>3</span> gold <span gray>(+3 per stack)</span> after taking damage from an enemy. Scales with time."
+            "Grants <span yellow>3</span> gold <span gray>(+3 per stack)</span> after taking damage from an enemy. Scales with time.",
+            "Pairs well with items that activate after taking damage."
         ],
         "tags": [
-            "money"
+            "money",
+            "onHit"
         ],
         "synergies": {
             "include": [
                 "onHit",
                 "money"
-            ],
-            "exclude": []
+            ]
         }
     }
 ]
