@@ -1070,7 +1070,8 @@
             "exclude": [
                 "old-guillotine",
                 "interact",
-                "bands"
+                "bands",
+                "onKill"
             ]
         }
     },

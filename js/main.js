@@ -1,4 +1,4 @@
-const appVersion = '1.1.2'
+const appVersion = '1.1.2.1'
 
 const itemTitle = document.querySelector('#item-title'),
     itemType = document.querySelector('#item-type'),
