@@ -18,9 +18,10 @@
                 "effect",
                 "damage",
                 "proc",
-                "perHit"
+                "proc"
             ],
             "exclude": [
+                "crowbar",
                 "bands",
                 "onKill",
                 "interact"
@@ -114,11 +115,12 @@
             "Pairs well with amplified healing and items that activate outside of danger."
         ],
         "tags": [
-            "healing"
+            "healing",
+            "safety"
         ],
         "synergies": {
             "include": [
-                "cautious-slug",
+                "safety",
                 "shield"
             ]
         }
@@ -196,11 +198,13 @@
             "Pairs well with amplified healing and items that activate outside of danger."
         ],
         "tags": [
-            "healing"
+            "healing",
+            "safety"
         ],
         "synergies": {
             "include": [
-                "shield"
+                "shield",
+                "safety"
             ]
         }
     },
@@ -214,12 +218,13 @@
             "Pairs well with shield items and items than activate outside of danger."
         ],
         "tags": [
-            "shield"
+            "shield",
+            "safety"
         ],
         "synergies": {
             "include": [
-                "shield",
-                "cautious-slug"
+                "safety",
+                "shield"
             ]
         }
     },
@@ -248,7 +253,7 @@
         "type": "Item",
         "id": "gasoline",
         "description": [
-            "Killing an enemy ignites enemies within <span yellow>12m</span> <span gray>(+4m per stack)</span> for <span blue>3s</span>, dealing <span yellow>150%</span> base damage. Burning enemies take <span yellow>150%</span> base damage <span gray>(+75% per stack)</span> per tick.",
+            "Killing an enemy ignites nearby enemies within <span yellow>12m</span> <span gray>(+4m per stack)</span> for <span blue>3s</span>, dealing <span yellow>150%</span> base damage. Burning enemies take <span yellow>150%</span> base damage <span gray>(+75% per stack)</span> per tick.",
             "Pairs well with fire damage, debuff inflictions, and on-kill items."
         ],
         "tags": [
@@ -335,8 +340,8 @@
         "type": "Item",
         "id": "backup-magazine",
         "description": [
-            "Adds <span yellow>1</span> charge <span gray>(+1 per stack)</span> to your Secondary skill.",
-            "Useful for survivors that have Secondary skills with high damage output and proc chance."
+            "Adds <span yellow>+1</span> charge <span gray>(+1 per stack)</span> to your Secondary skill.",
+            "Pairs well with items that reduce skill cooldowns. Useful for survivors that have Secondary skills with high damage output and proc chance."
         ],
         "tags": [
             "skills"
@@ -563,12 +568,14 @@
             "Pairs well with damage prevention and damage reduction items."
         ],
         "tags": [
-            "armor"
+            "armor",
+            "safety"
         ],
         "synergies": {
             "include": [
                 "defense",
-                "armor"
+                "armor",
+                "safety"
             ]
         }
     },
@@ -699,15 +706,16 @@
         "id": "leeching-seed",
         "description": [
             "Heal <span green>1hp</span> <span gray>(+1hp per stack)</span> per hit.",
-            "Pairs well with attack speed and amplified healing."
+            "Pairs well with attack speed, amplified healing, and items that can proc other items."
         ],
         "tags": [
             "healing",
-            "perHit"
+            "proc"
         ],
         "synergies": {
             "include": [
-                "haste"
+                "haste",
+                "canProc"
             ]
         }
     },
@@ -732,7 +740,8 @@
             "exclude": [
                 "crowbar",
                 "interact",
-                "onKill"
+                "onKill",
+                "bands"
             ]
         }
     },
@@ -796,7 +805,7 @@
             "include": [
                 "haste",
                 "crit",
-                "perHit"
+                "proc"
             ]
         }
     },
@@ -862,17 +871,22 @@
         "id": "berzerkers-pauldron",
         "description": [
             "Killing <span yellow>4</span> enemies within <span blue>1s</span> boosts movement speed by <span blue>50%</span> and attack speed by <span yellow>100%</span> for <span blue>6s</span> <span gray>(+4s per stack)</span>.",
-            "Pairs well with on-kill effects, attack speed, increased damage, and movement speed items."
+            "Pairs well with attack speed, increased damage, and movement speed items."
         ],
         "tags": [
             "onKill"
         ],
         "synergies": {
             "include": [
-                "onKill",
                 "haste",
                 "speed",
-                "damage"
+                "damage",
+                "proc"
+            ],
+            "exclude": [
+                "crowbar",
+                "interact",
+                "bands"
             ]
         }
     },
@@ -908,7 +922,8 @@
         ],
         "tags": [
             "damage",
-            "bands"
+            "bands",
+            "effect"
         ],
         "synergies": {
             "include": [
@@ -956,7 +971,7 @@
         ],
         "tags": [
             "effect",
-            "perHit"
+            "proc"
         ],
         "synergies": {
             "include": [
@@ -1058,14 +1073,14 @@
             "On Hit": "0.5"
         },
         "tags": [
-            "onHit"
+            "onHit",
+            "canProc"
         ],
         "synergies": {
             "include": [
                 "damage",
                 "proc",
-                "onHit",
-                "perHit"
+                "onHit"
             ],
             "exclude": [
                 "old-guillotine",
@@ -1188,7 +1203,9 @@
                 "crit"
             ],
             "exclude": [
-                "interact"
+                "razorwire",
+                "interact",
+                "onKill"
             ]
         }
     },
