@@ -625,7 +625,7 @@
         "id": "will-o-the-wisp",
         "description": [
             "Killing an enemy creates a lava pillar with a <span yellow>12m</span> <span gray>(+2.4m per stack)</span> radius, dealing <span yellow>350%</span> base damage <span gray>(+280% per stack)</span>.",
-            "Pairs well with increased damage, on-kill effects, and items that have a chance to proc."
+            "Pairs well with increased damage, proc chance, and on-kill items."
         ],
         "procCoefficient": {
             "On Hit": "1.0"
