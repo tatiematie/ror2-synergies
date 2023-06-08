@@ -1,5 +1,4 @@
-const appName = 'ROR2 Synergizer',
-    appVersion = '1.1.1'
+const appVersion = '1.1.2'
 
 const itemTitle = document.querySelector('#item-title'),
     itemType = document.querySelector('#item-type'),
@@ -96,9 +95,6 @@ const updateDisplay = (item) => {
         const procCoefficientTable = document.createElement('table')
         procCoefficientTable.className = 'proc-coefficient-table'
 
-        const procCoefficientHeaderRow = document.createElement('tr')
-        procCoefficientTable.appendChild(procCoefficientHeaderRow)
-
         for (const [entryName, entryValue] of Object.entries(procCoefficient)) {
             const procCoefficientRow = document.createElement('tr')
 
@@ -133,12 +129,13 @@ const updateSynergyList = (item) => {
                 item.synergies.include.includes(dataItem.id)) ||
             (Array.isArray(dataItem.tags) &&
                 (dataItem.tags.includes(item.id) ||
-                    dataItem.tags.some((tag) => includeTags.includes(tag))))
-            || dataItem.id === item.id
+                    dataItem.tags.some((tag) => includeTags.includes(tag)))) ||
+            dataItem.id === item.id
 
         const isExcluded =
             excludeTags.includes(dataItem.id) ||
-            (Array.isArray(dataItem.tags) && dataItem.tags.some((tag) => excludeTags.includes(tag)))
+            (Array.isArray(dataItem.tags) &&
+                dataItem.tags.some((tag) => excludeTags.includes(tag)))
 
         const isSameItem = dataItem.id === item.id
         const isEquipment = dataItem.rarity.toLowerCase() === 'equipment'
@@ -160,6 +157,15 @@ const updateSynergyList = (item) => {
             }
         }
     })
+
+    const hasSynergies = synergyList.children.length > 0
+    const itemSynergies = document.querySelector('#item-synergies')
+
+    if (hasSynergies) {
+        itemSynergies.style.display = 'block'
+    } else {
+        itemSynergies.style.display = 'none'
+    }
 
     const justifySynergies = () => {
         if (synergyList.clientHeight === 47) {
@@ -201,11 +207,11 @@ const initializePage = async () => {
     await loadButtons()
     attachButtonEventListeners()
 
-    // let versionTag = document.createElement('p')
-    // versionTag.id = 'app-version'
-    // versionTag.innerHTML = `<span gray>${appName} v${appVersion}</span>`
+    let versionTag = document.createElement('p')
+    versionTag.id = 'app-version'
+    versionTag.innerHTML = `<span gray>v${appVersion}</span>`
 
-    // document.querySelector('#container').appendChild(versionTag)
+    document.querySelector('#app    ').appendChild(versionTag)
 }
 
 initializePage()
