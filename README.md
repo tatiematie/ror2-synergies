@@ -12,4 +12,4 @@ The goal of this tool is to help new players understand the intricate details un
 **Phase 3** will implement survivor-item synergies into the display panel. Selecting an item will show survivors and skills that make good use of it.
 
 ## Contact
-Questions, comments, and suggestions are all welcome. You can reach me via email at [iamtatiematie@gmail.com](mailto:iamtatiematie@gmail.com) or on Discord, my username is **tatiematie#1523**.
+Questions, comments, and suggestions are always welcome. You can reach me via email at [iamtatiematie@gmail.com](mailto:iamtatiematie@gmail.com) or on Discord, my username is **tatiematie#1523**.
