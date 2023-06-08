@@ -17,10 +17,11 @@
                 "crit",
                 "effect",
                 "damage",
-                "proc"
+                "proc",
+                "perHit"
             ],
             "exclude": [
-                "crowbar",
+                "bands",
                 "onKill",
                 "interact"
             ]
@@ -80,7 +81,8 @@
         "synergies": {
             "include": [
                 "haste",
-                "damage"
+                "damage",
+                "crit"
             ]
         }
     },
@@ -159,7 +161,8 @@
         "synergies": {
             "include": [
                 "haste",
-                "canProc"
+                "canProc",
+                "death-mark"
             ]
         }
     },
@@ -250,11 +253,14 @@
         ],
         "tags": [
             "effect",
-            "onKill"
+            "onKill",
+            "fire"
         ],
         "synergies": {
             "include": [
-                "onKill"
+                "fire",
+                "onKill",
+                "death-mark"
             ]
         }
     },
@@ -284,7 +290,7 @@
         "id": "bundle-of-fireworks",
         "description": [
             "Activating an interactable launches <span yellow>8</span> fireworks <span gray>(+4 per stack)</span> that deal <span yellow>300%</span> base damage.",
-            "Pairs well with increased damage and items that have a chance to proc."
+            "Pairs well with attack speed, increased damage, and items that have a chance to proc."
         ],
         "procCoefficient": {
             "On Hit": "0.2"
@@ -301,7 +307,7 @@
                 "damage"
             ],
             "exclude": [
-                "crowbar"
+                "bands"
             ]
         }
     },
@@ -332,8 +338,14 @@
             "Adds <span yellow>1</span> charge <span gray>(+1 per stack)</span> to your Secondary skill.",
             "Useful for survivors that have Secondary skills with high damage output and proc chance."
         ],
-        "tags": [],
-        "synergies": {}
+        "tags": [
+            "skills"
+        ],
+        "synergies": {
+            "include": [
+                "skills"
+            ]
+        }
     },
     {
         "name": "Sticky Bomb",
@@ -366,7 +378,6 @@
             "A hidden lockbox will appear somewhere on the next stage with an <span yellow>80%</span> chance to drop an Uncommon item and a <span yellow>20%</span> chance to drop a Legendary item. Consumed on use.",
             "No currently known item synergies."
         ],
-        "tags": [],
         "synergies": {
             "include": [
                 "none"
@@ -448,7 +459,11 @@
         "tags": [
             "health"
         ],
-        "synergies": {}
+        "synergies": {
+            "include": [
+                "health"
+            ]
+        }
     },
     {
         "name": "Repulsion Armor Plate",
@@ -491,7 +506,8 @@
                 "proc"
             ],
             "exclude": [
-                "crowbar"
+                "crowbar",
+                "bands"
             ]
         }
     },
@@ -505,7 +521,8 @@
             "Pairs well with amplified healing and items that activate at low health."
         ],
         "tags": [
-            "healing"
+            "healing",
+            "lowHealth"
         ],
         "synergies": {
             "include": [
@@ -572,6 +589,620 @@
             "include": [
                 "onHit",
                 "money"
+            ]
+        }
+    },
+    {
+        "name": "AtG Missile Mk. 1",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "id": "atg-missile-mk-1",
+        "description": [
+            "Gain a <span yellow>10%</span> chance to fire a missile dealing <span yellow>300%</span> total damage <span gray>(+300% per stack)</span>.",
+            "Pairs well with increased damage and items that have a chance to proc."
+        ],
+        "procCoefficient": {
+            "On Hit": "1.0"
+        },
+        "tags": [
+            "damage",
+            "proc",
+            "canProc"
+        ],
+        "synergies": {
+            "include": [
+                "haste",
+                "damage",
+                "proc",
+                "canProc"
+            ]
+        }
+    },
+    {
+        "name": "Will-o'-the-wisp",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "id": "will-o-the-wisp",
+        "description": [
+            "Killing an enemy creates a lava pillar with a <span yellow>12m</span> <span gray>(+2.4m per stack)</span> radius, dealing <span yellow>350%</span> base damage <span gray>(+280% per stack)</span>.",
+            "Pairs well with increased damage, on-kill effects, and items that have a chance to proc."
+        ],
+        "procCoefficient": {
+            "On Hit": "1.0"
+        },
+        "tags": [
+            "onKill",
+            "canProc",
+            "damage"
+        ],
+        "synergies": {
+            "include": [
+                "damage",
+                "proc",
+                "onKill"
+            ],
+            "exclude": [
+                "interact",
+                "bands"
+            ]
+        }
+    },
+    {
+        "name": "Hopoo Feather",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "id": "hopoo-feather",
+        "description": [
+            "Gain <span yellow>+1</span> extra jump <span gray>(+1 per stack)</span>.",
+            "Pairs well with movement speed and mobility items."
+        ],
+        "tags": [
+            "mobility"
+        ],
+        "synergies": {
+            "include": [
+                "speed",
+                "mobility"
+            ]
+        }
+    },
+    {
+        "name": "Ukulele",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "id": "ukulele",
+        "description": [
+            "Gain a <span yellow>25%</span> chance to arc lightning between <span yellow>3</span> enemies <span gray>(+2 per stack)</span> within <span yellow>20m</span> <span gray>(+2m per stack)</span> of each other, dealing <span yellow>80%</span> total damage.",
+            "Pairs well with attack speed, increased damage, area of effect, and items that have a chance to proc."
+        ],
+        "procCoefficient": {
+            "On Hit": "0.2"
+        },
+        "tags": [
+            "damage",
+            "proc",
+            "canProc"
+        ],
+        "synergies": {
+            "include": [
+                "haste",
+                "damage",
+                "proc",
+                "canProc"
+            ]
+        }
+    },
+    {
+        "name": "Leeching Seed",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "id": "leeching-seed",
+        "description": [
+            "Heal <span green>1hp</span> <span gray>(+1hp per stack)</span> per hit.",
+            "Pairs well with attack speed and amplified healing."
+        ],
+        "tags": [
+            "healing",
+            "perHit"
+        ],
+        "synergies": {
+            "include": [
+                "haste"
+            ]
+        }
+    },
+    {
+        "name": "Predatory Instincts",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "id": "predatory-instincts",
+        "description": [
+            "Gain <span yellow>5%</span> critical strike chance from the first Predatory Instincts <span gray>(does not stack)</span>. Critical strikes boost attack speed by <span yellow>12%</span> <span gray>(+24% per stack)</span> for <span blue>3s</span>. Capped at <span yellow>36%</span>.",
+            "Pairs well with critical strike chance, attack speed, and damage items."
+        ],
+        "tags": [
+            "crit"
+        ],
+        "synergies": {
+            "include": [
+                "haste",
+                "crit",
+                "damage"
+            ],
+            "exclude": [
+                "crowbar",
+                "interact",
+                "onKill"
+            ]
+        }
+    },
+    {
+        "name": "Red Whip",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "id": "red-whip",
+        "description": [
+            "Gain <span blue>+30%</span> movement speed <span gray>(+30% per stack)</span> outside of combat.",
+            "Pairs well with movement speed and mobility items."
+        ],
+        "tags": [
+            "speed"
+        ],
+        "synergies": {
+            "include": [
+                "speed",
+                "mobility"
+            ]
+        }
+    },
+    {
+        "name": "Old War Stealthkit",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "id": "old-war-stealthkit",
+        "description": [
+            "Become invisible and gain <span blue>40%</span> movement speed for <span blue>5s</span> when below <span red>25%</span> max health, <span blue>30s</span> <span gray>(-50% per stack)</span> cooldown.",
+            "Pairs well with movement speed, mobility, and healing items that trigger after taking damage."
+        ],
+        "tags": [
+            "lowHealth"
+        ],
+        "synergies": {
+            "include": [
+                "speed",
+                "mobility",
+                "lowHealth",
+                "onHit"
+            ],
+            "exclude": [
+                "money"
+            ]
+        }
+    },
+    {
+        "name": "Harvester's Scythe",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "id": "harvesters-scythe",
+        "description": [
+            "Gain <span yellow>+5%</span> critical strike chance, critical strikes heal for <span green>8hp</span> <span gray>(+4hp per stack)</span>.",
+            "Pairs well with critical strike chance, attack speed, and amplified healing."
+        ],
+        "tags": [
+            "crit",
+            "healing"
+        ],
+        "synergies": {
+            "include": [
+                "haste",
+                "crit",
+                "perHit"
+            ]
+        }
+    },
+    {
+        "name": "Fuel Cell",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "id": "fuel-cell",
+        "description": [
+            "Adds <span yellow>+1</span> equipment charge <span gray>(+1 per stack)</span>, reduces equipment cooldown by <span blue>15%</span> <span gray>(+15% per stack)</span>.",
+            "Pairs well with Equipment items."
+        ],
+        "synergies": {
+            "include": [
+                "equipment"
+            ]
+        }
+    },
+    {
+        "name": "Infusion",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "id": "infusion",
+        "description": [
+            "Killing enemies increases max health by <span green>1hp</span>, <span gray>(+1hp per stack)</span> capped at <span green>100</span> <span gray>(+100 per stack)</span>.",
+            "Pairs well with increased health and on-kill items."
+        ],
+        "tags": [
+            "health",
+            "onKill"
+        ],
+        "synergies": {
+            "include": [
+                "health",
+                "onKill"
+            ]
+        }
+    },
+    {
+        "name": "Bandolier",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "id": "bandolier",
+        "description": [
+            "Enemies have an <span yellow>18%</span> chance <span gray>(+10% per stack)</span> to drop ammo packs, ammo packs reset skill cooldowns.",
+            "Pairs well with on-kill effects and items that impact skill cooldowns."
+        ],
+        "tags": [
+            "skills",
+            "onKill"
+        ],
+        "synergies": {
+            "include": [
+                "skills",
+                "onKill"
+            ]
+        }
+    },
+    {
+        "name": "Berzerker's Pauldron",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "id": "berzerkers-pauldron",
+        "description": [
+            "Killing <span yellow>4</span> enemies within <span blue>1s</span> boosts movement speed by <span blue>50%</span> and attack speed by <span yellow>100%</span> for <span blue>6s</span> <span gray>(+4s per stack)</span>.",
+            "Pairs well with on-kill effects, attack speed, increased damage, and movement speed items."
+        ],
+        "tags": [
+            "onKill"
+        ],
+        "synergies": {
+            "include": [
+                "onKill",
+                "haste",
+                "speed",
+                "damage"
+            ]
+        }
+    },
+    {
+        "name": "Rose Buckler",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "id": "rose-buckler",
+        "description": [
+            "Gain <span green>+30</span> armor <span gray>(+30 per stack)</span> while sprinting.",
+            "Pairs well with damage prevention, damage reduction, and movement speed items."
+        ],
+        "tags": [
+            "speed",
+            "armor"
+        ],
+        "synergies": {
+            "include": [
+                "defense",
+                "armor",
+                "speed"
+            ]
+        }
+    },
+    {
+        "name": "Runald's Band",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "id": "runalds-band",
+        "description": [
+            "Hits dealing more than <span yellow>400%</span> damage slow the target by <span blue>80%</span> for <span blue>3s</span> <span gray>(+3s per stack)</span> and deal an aditional <span yellow>250%</span> total damage <span gray>(+250% per stack)</span>. <span blue>10s</span> cooldown.",
+            "Pairs well with critical strike chance and damage items."
+        ],
+        "tags": [
+            "damage",
+            "bands"
+        ],
+        "synergies": {
+            "include": [
+                "damage",
+                "crit"
+            ],
+            "exclude": [
+                "interact",
+                "onKill"
+            ]
+        }
+    },
+    {
+        "name": "Kjaro's Band",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "id": "kjaros-band",
+        "description": [
+            "Hits dealing more than <span yellow>400%</span> damage deal an aditional <span yellow>300%</span> total damage over time. <span blue>10s</span> cooldown.",
+            "Pairs well with critical strike chance and damage items."
+        ],
+        "tags": [
+            "damage",
+            "bands"
+        ],
+        "synergies": {
+            "include": [
+                "damage",
+                "crit"
+            ],
+            "exclude": [
+                "interact",
+                "onKill"
+            ]
+        }
+    },
+    {
+        "name": "Chronobauble",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "id": "chronobauble",
+        "description": [
+            "Slow enemies by <span blue>60%</span> for <span blue>2s</span> <span gray>(+2s per stack)</span> on hit.",
+            "Pairs well with attack speed, debuff inflictions, and items that can proc other items."
+        ],
+        "tags": [
+            "effect",
+            "perHit"
+        ],
+        "synergies": {
+            "include": [
+                "haste",
+                "canProc",
+                "death-mark"
+            ]
+        }
+    },
+    {
+        "name": "Wax Quail",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "id": "wax-quail",
+        "description": [
+            "Jumping while sprinting boosts you forward by <span yellow>10m</span> <span gray>(+10m per stack)</span>.",
+            "Pairs well with movement speed and mobility items."
+        ],
+        "tags": [
+            "mobility"
+        ],
+        "synergies": {
+            "include": [
+                "speed",
+                "mobility"
+            ],
+            "exclude": [
+                "armor"
+            ]
+        }
+    },
+    {
+        "name": "Old Guillotine",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "id": "old-guillotine",
+        "description": [
+            "Elite enemies below <span yellow>13%</span> health <span gray>(+13% per stack)</span> die instantly.",
+            "Pairs well with damage items, on-kill effects, and items that activate after killing elite enemies."
+        ],
+        "tags": [
+            "elite"
+        ],
+        "synergies": {
+            "include": [
+                "onKill",
+                "damage",
+                "elite"
+            ],
+            "exclude": [
+                "ukulele",
+                "interact"
+            ]
+        }
+    },
+    {
+        "name": "War Horn",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "id": "war-horn",
+        "description": [
+            "Activating an equipment boosts attack speed by <span yellow>70%</span> for <span blue>8s</span> <span gray>(+4s per stack)</span>.",
+            "Pairs well with attack speed, proc chance, and equipment items."
+        ],
+        "synergies": {
+            "include": [
+                "equipment",
+                "haste",
+                "damage",
+                "crit"
+            ],
+            "exclude": [
+                "crowbar",
+                "interact"
+            ]
+        }
+    },
+    {
+        "name": "Lepton Daisy",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "id": "lepton-daisy",
+        "description": [
+            "Heals allies within the teleporter for <span green>50%</span> of max health <span yellow>1</span> time <span gray>(+1 per stack)</span> per teleporter.",
+            "Pairs well with amplified healing items."
+        ],
+        "synergies": {}
+    },
+    {
+        "name": "Razorwire",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "id": "razorwire",
+        "description": [
+            "Taking damage hits up to <span yellow>5</span> enemies <span gray>(+2 per stack)</span> within <span yellow>25m</span> <span gray>(+10m per stack)</span> for <span yellow>160%</span> damage.",
+            "Pairs well with increased damage, proc chance, and items that activate after taking damage."
+        ],
+        "procCoefficient": {
+            "On Hit": "0.5"
+        },
+        "tags": [
+            "onHit"
+        ],
+        "synergies": {
+            "include": [
+                "damage",
+                "proc",
+                "onHit",
+                "perHit"
+            ],
+            "exclude": [
+                "old-guillotine",
+                "interact",
+                "bands"
+            ]
+        }
+    },
+    {
+        "name": "Ghor's Tome",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "id": "ghors-tome",
+        "description": [
+            "Enemies have a <span yellow>4%</span> <span gray>(+4% per stack)</span> to drop treasure worth <span yellow>25</span> gold. Scales with time.",
+            "Pairs well with on-kill items."
+        ],
+        "tags": [
+            "onKill"
+        ],
+        "synergies": {
+            "include": [
+                "onKill"
+            ]
+        }
+    },
+    {
+        "name": "Squid Polyp",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "id": "squid-polyp",
+        "description": [
+            "Activating an interactable summons a Squid Turret which shoots at <span yellow>100%</span> attack speed <span gray>(+100% per stack)</span>. Lasts <span blue>30s</span>.",
+            "Pairs well with items that activate after interacting with an object."
+        ],
+        "tags": [
+            "interact"
+        ],
+        "synergies": {
+            "include": [
+                "interact"
+            ]
+        }
+    },
+    {
+        "name": "Death Mark",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "id": "death-mark",
+        "description": [
+            "Enemies inflicted with at least <span yellow>4</span> debuffs take <span yellow>50%</span> more damage for <span blue>7s</span> <span gray>(+7s per stack)</span>.",
+            "Pairs well with debuff infliction items."
+        ],
+        "synergies": {
+            "include": [
+                "effect"
+            ]
+        }
+    },
+    {
+        "name": "Hunter's Harpoon",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "id": "hunters-harpoon",
+        "description": [
+            "Killing an enemy increases movement speed by <span blue>125%</span> for <span blue>1s</span> <span gray>(+0.5s per stack)</span>.",
+            "Pairs well with movement speed, mobility, and on-kill items."
+        ],
+        "tags": [
+            "onKill"
+        ],
+        "synergies": {
+            "include": [
+                "speed",
+                "mobility",
+                "onKill"
+            ]
+        }
+    },
+    {
+        "name": "Ignition Tank",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "id": "ignition-tank",
+        "description": [
+            "Burning enemies take <span yellow>+300%</span> fire damage <span gray>(+300% per stack)</span>.",
+            "Pairs well with fire damage items."
+        ],
+        "tags": [
+            "fire"
+        ],
+        "synergies": {
+            "include": [
+                "fire",
+                "death-mark"
+            ]
+        }
+    },
+    {
+        "name": "Shuriken",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "id": "shuriken",
+        "description": [
+            "Using a Primary skill throws a shuriken dealing <span yellow>400%</span> base damage <span gray>(+400% per stack)</span>, capped at <span yellow>3</span> shurikens. <span blue>10s</span> reload.",
+            "Pairs well with proc chance and increased damage items."
+        ],
+        "procCoefficient": {
+            "On Hit": "1.0"
+        },
+        "tags": [
+            "canProc"
+        ],
+        "synergies": {
+            "include": [
+                "damage",
+                "canProc",
+                "proc",
+                "crit"
+            ],
+            "exclude": [
+                "interact"
+            ]
+        }
+    },
+    {
+        "name": "Shipping Request Form",
+        "rarity": "Uncommon",
+        "type": "Item",
+        "id": "shipping-request-form",
+        "description": [
+            "A delivery will arrive somewhere on the next stage containing two items, each item has a <span yellow>79%</span> chance to be Common, <span yellow>20%</span> chance to be Uncommon, and <span yellow>1%</span> chance to be Legendary.",
+            "No currently known item synergies."
+        ],
+        "synergies": {
+            "include": [
+                "none"
             ]
         }
     }
