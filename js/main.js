@@ -7,7 +7,7 @@ const itemTitle = document.querySelector('#item-title'),
     itemSelect = document.querySelector('#item-select'),
     synergyList = document.querySelector('#synergy-list')
 
-const readFile = async (filepath) => {
+const readJSON = async (filepath) => {
     const response = await fetch(filepath)
     return response.json()
 }
@@ -42,7 +42,7 @@ const createButton = (item) => {
 }
 
 const loadButtons = async () => {
-    itemData = await readFile('json/items.json')
+    itemData = await readJSON('json/items.json')
 
     itemData.forEach((item, index) => {
         const button = createButton(item)
@@ -51,6 +51,8 @@ const loadButtons = async () => {
             button.setAttribute('active', 'true')
             updateDisplay(item)
             updateSynergyList(item)
+
+            button.focus()
         }
     })
 }
