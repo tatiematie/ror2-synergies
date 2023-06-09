@@ -21,6 +21,7 @@
             "exclude": [
                 "voidsent-flame",
                 "egocentricism",
+                "remote-caffeinator",
                 "high",
                 "onKill",
                 "onHit",
