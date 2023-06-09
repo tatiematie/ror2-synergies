@@ -15,16 +15,17 @@
             "include": [
                 "haste",
                 "crit",
-                "effect",
                 "damage",
-                "proc",
                 "proc"
             ],
             "exclude": [
-                "crowbar",
-                "bands",
+                "voidsent-flame",
+                "egocentricism",
+                "high",
                 "onKill",
-                "interact"
+                "onHit",
+                "mobility",
+                "cooldown"
             ]
         }
     },
@@ -43,7 +44,12 @@
         "synergies": {
             "include": [
                 "defense",
+                "barrier",
                 "armor"
+            ],
+            "exclude": [
+                "aegis",
+                "void"
             ]
         }
     },
@@ -62,8 +68,10 @@
         ],
         "synergies": {
             "include": [
-                "onKill"
-            ]
+                "onKill",
+                "healAmp"
+            ],
+            "exclude": []
         }
     },
     {
@@ -77,14 +85,16 @@
         ],
         "tags": [
             "crit",
-            "proc"
+            "damage"
         ],
         "synergies": {
             "include": [
+                "laser-scope",
                 "haste",
-                "damage",
-                "crit"
-            ]
+                "crit",
+                "damage"
+            ],
+            "exclude": []
         }
     },
     {
@@ -101,8 +111,10 @@
         ],
         "synergies": {
             "include": [
-                "speed"
-            ]
+                "speed",
+                "mobility"
+            ],
+            "exclude": []
         }
     },
     {
@@ -120,9 +132,11 @@
         ],
         "synergies": {
             "include": [
+                "nkuhanas-opinion",
                 "safety",
-                "shield"
-            ]
+                "healAmp"
+            ],
+            "exclude": []
         }
     },
     {
@@ -135,15 +149,28 @@
             "Pairs well with critical strike chance, high damage, and items that have a chance to proc."
         ],
         "tags": [
-            "damage"
+            "damage",
+            "high"
         ],
         "synergies": {
             "include": [
+                "damage",
                 "crit",
-                "damage"
+                "proc",
+                "canProc"
             ],
             "exclude": [
-                "interact"
+                "tri-tip-dagger",
+                "unstable-tesla-coil",
+                "57-leaf-clover",
+                "plasma-shrimp",
+                "polylute",
+                "tentabauble",
+                "egocentricism",
+                "the-crowdfunder",
+                "skill",
+                "interact",
+                "noDamage"
             ]
         }
     },
@@ -157,14 +184,19 @@
             "Pairs well with attack speed and items that can proc other items."
         ],
         "tags": [
-            "effect",
-            "proc"
+            "proc",
+            "effect"
         ],
         "synergies": {
             "include": [
                 "haste",
+                "effect",
                 "canProc",
-                "death-mark"
+                "aspect"
+            ],
+            "exclude": [
+                "onKill",
+                "healing"
             ]
         }
     },
@@ -184,7 +216,11 @@
         "synergies": {
             "include": [
                 "haste",
-                "speed"
+                "speed",
+                "mobility"
+            ],
+            "exclude": [
+                "high"
             ]
         }
     },
@@ -203,9 +239,10 @@
         ],
         "synergies": {
             "include": [
-                "shield",
-                "safety"
-            ]
+                "safety",
+                "healAmp"
+            ],
+            "exclude": []
         }
     },
     {
@@ -215,7 +252,7 @@
         "id": "personal-shield-generator",
         "description": [
             "Gain a shield equal to <span green>8%</span> of max health <span gray>(+8% per stack)</span>. All shield recharges in <span blue>2s</span> after <span blue>9s</span> outside of danger.",
-            "Pairs well with shield items and items than activate outside of danger."
+            "Pairs well with increased health, shield items and items than activate outside of danger."
         ],
         "tags": [
             "shield",
@@ -223,9 +260,11 @@
         ],
         "synergies": {
             "include": [
-                "safety",
-                "shield"
-            ]
+                "health",
+                "shield",
+                "safety"
+            ],
+            "exclude": []
         }
     },
     {
@@ -243,8 +282,10 @@
         ],
         "synergies": {
             "include": [
-                "onHit"
-            ]
+                "onHit",
+                "healAmp"
+            ],
+            "exclude": []
         }
     },
     {
@@ -257,16 +298,17 @@
             "Pairs well with fire damage, debuff inflictions, and on-kill items."
         ],
         "tags": [
-            "effect",
+            "fire",
             "onKill",
-            "fire"
+            "effect"
         ],
         "synergies": {
             "include": [
-                "fire",
                 "onKill",
-                "death-mark"
-            ]
+                "effect",
+                "fire"
+            ],
+            "exclude": []
         }
     },
     {
@@ -279,12 +321,16 @@
             "Pairs well with attack speed and items that can proc other items."
         ],
         "tags": [
-            "proc"
+            "proc",
+            "noDamage"
         ],
         "synergies": {
             "include": [
                 "haste",
                 "canProc"
+            ],
+            "exclude": [
+                "spinel-tonic"
             ]
         }
     },
@@ -301,18 +347,32 @@
             "On Hit": "0.2"
         },
         "tags": [
-            "damage",
-            "missile",
             "interact",
+            "missile",
             "canProc"
         ],
         "synergies": {
             "include": [
+                "damage",
+                "crit",
                 "proc",
-                "damage"
+                "canProc",
+                "interact",
+                "missile",
+                "aspect"
             ],
             "exclude": [
-                "bands"
+                "visions-of-heresy",
+                "egocentricism",
+                "disposable-missile-launcher",
+                "molotov-6-pack",
+                "the-crowdfunder",
+                "ocular-hud",
+                "sawmerang",
+                "high",
+                "mobility",
+                "onKill",
+                "onHit"
             ]
         }
     },
@@ -330,8 +390,10 @@
         ],
         "synergies": {
             "include": [
-                "speed"
-            ]
+                "speed",
+                "mobility"
+            ],
+            "exclude": []
         }
     },
     {
@@ -344,12 +406,15 @@
             "Pairs well with items that reduce skill cooldowns. Useful for survivors that have Secondary skills with high damage output and proc chance."
         ],
         "tags": [
-            "skills"
+            "secondary"
         ],
         "synergies": {
             "include": [
-                "skills"
-            ]
+                "bandolier",
+                "alien-head",
+                "secondary"
+            ],
+            "exclude": []
         }
     },
     {
@@ -362,7 +427,6 @@
             "Pairs well with attack speed, increased damage, and items that have a chance to proc."
         ],
         "tags": [
-            "damage",
             "proc"
         ],
         "synergies": {
@@ -371,6 +435,11 @@
                 "crit",
                 "damage",
                 "canProc"
+            ],
+            "exclude": [
+                "genesis-loop",
+                "needletick",
+                "essence-of-heresy"
             ]
         }
     },
@@ -383,9 +452,15 @@
             "A hidden lockbox will appear somewhere on the next stage with an <span yellow>80%</span> chance to drop an Uncommon item and a <span yellow>20%</span> chance to drop a Legendary item. Consumed on use.",
             "No currently known item synergies."
         ],
+        "tags": [
+            "stage"
+        ],
         "synergies": {
             "include": [
-                "none"
+                "stage"
+            ],
+            "exclude": [
+                "void"
             ]
         }
     },
@@ -405,7 +480,13 @@
             "include": [
                 "haste",
                 "crit",
-                "damage"
+                "damage",
+                "proc",
+                "canProc"
+            ],
+            "exclude": [
+                "tentabauble",
+                "perHit"
             ]
         }
     },
@@ -424,9 +505,12 @@
         ],
         "synergies": {
             "include": [
+                "defense",
                 "shield",
+                "armor",
                 "onKill"
-            ]
+            ],
+            "exclude": []
         }
     },
     {
@@ -445,10 +529,12 @@
             "include": [
                 "haste",
                 "crit",
-                "damage"
+                "damage",
+                "proc",
+                "canProc"
             ],
             "exclude": [
-                "interact"
+                "perHit"
             ]
         }
     },
@@ -467,7 +553,8 @@
         "synergies": {
             "include": [
                 "health"
-            ]
+            ],
+            "exclude": []
         }
     },
     {
@@ -485,8 +572,10 @@
         "synergies": {
             "include": [
                 "defense",
+                "barrier",
                 "armor"
-            ]
+            ],
+            "exclude": []
         }
     },
     {
@@ -499,8 +588,8 @@
             "Pairs well with attack speed, increased damage, mobility, and items that have a chance to proc."
         ],
         "tags": [
-            "speed",
-            "haste"
+            "haste",
+            "speed"
         ],
         "synergies": {
             "include": [
@@ -508,11 +597,24 @@
                 "crit",
                 "speed",
                 "damage",
-                "proc"
+                "proc",
+                "canProc",
+                "effect",
+                "aspect"
             ],
             "exclude": [
-                "crowbar",
-                "bands"
+                "57-leaf-clover",
+                "sentient-meat-hook",
+                "disposable-missile-launcher",
+                "molotov-6-pack",
+                "the-crowdfunder",
+                "volcanic-egg",
+                "sawmerang",
+                "high",
+                "interact",
+                "onKill",
+                "onHit",
+                "cooldown"
             ]
         }
     },
@@ -531,10 +633,12 @@
         ],
         "synergies": {
             "include": [
-                "delicate-watch",
                 "medkit",
-                "lowHealth"
-            ]
+                "delicate-watch",
+                "lowHealth",
+                "healAmp"
+            ],
+            "exclude": []
         }
     },
     {
@@ -551,10 +655,15 @@
         ],
         "synergies": {
             "include": [
+                "power-elixir",
                 "haste",
                 "crit",
                 "damage",
-                "power-elixir"
+                "proc",
+                "canProc"
+            ],
+            "exclude": [
+                "perHit"
             ]
         }
     },
@@ -574,9 +683,10 @@
         "synergies": {
             "include": [
                 "defense",
-                "armor",
-                "safety"
-            ]
+                "barrier",
+                "armor"
+            ],
+            "exclude": []
         }
     },
     {
@@ -594,9 +704,9 @@
         ],
         "synergies": {
             "include": [
-                "onHit",
-                "money"
-            ]
+                "onHit"
+            ],
+            "exclude": []
         }
     },
     {
@@ -614,15 +724,12 @@
         "tags": [
             "damage",
             "proc",
-            "canProc"
+            "canProc",
+            "missile"
         ],
         "synergies": {
-            "include": [
-                "haste",
-                "damage",
-                "proc",
-                "canProc"
-            ]
+            "include": [],
+            "exclude": []
         }
     },
     {
@@ -632,26 +739,19 @@
         "id": "will-o-the-wisp",
         "description": [
             "Killing an enemy creates a lava pillar with a <span yellow>12m</span> <span gray>(+2.4m per stack)</span> radius, dealing <span yellow>350%</span> base damage <span gray>(+280% per stack)</span>.",
-            "Pairs well with increased damage, proc chance, and on-kill items."
+            "Pairs well with increased damage, on-kill effects, and items that have a chance to proc."
         ],
         "procCoefficient": {
             "On Hit": "1.0"
         },
         "tags": [
+            "damage",
             "onKill",
-            "canProc",
-            "damage"
+            "canProc"
         ],
         "synergies": {
-            "include": [
-                "damage",
-                "proc",
-                "onKill"
-            ],
-            "exclude": [
-                "interact",
-                "bands"
-            ]
+            "include": [],
+            "exclude": []
         }
     },
     {
@@ -667,10 +767,8 @@
             "mobility"
         ],
         "synergies": {
-            "include": [
-                "speed",
-                "mobility"
-            ]
+            "include": [],
+            "exclude": []
         }
     },
     {
@@ -691,12 +789,8 @@
             "canProc"
         ],
         "synergies": {
-            "include": [
-                "haste",
-                "damage",
-                "proc",
-                "canProc"
-            ]
+            "include": [],
+            "exclude": []
         }
     },
     {
@@ -710,13 +804,13 @@
         ],
         "tags": [
             "healing",
-            "proc"
+            "proc",
+            "perHit",
+            "noDamage"
         ],
         "synergies": {
-            "include": [
-                "haste",
-                "canProc"
-            ]
+            "include": [],
+            "exclude": []
         }
     },
     {
@@ -729,20 +823,12 @@
             "Pairs well with critical strike chance, attack speed, and damage items."
         ],
         "tags": [
+            "laser-scope",
             "crit"
         ],
         "synergies": {
-            "include": [
-                "haste",
-                "crit",
-                "damage"
-            ],
-            "exclude": [
-                "crowbar",
-                "interact",
-                "onKill",
-                "bands"
-            ]
+            "include": [],
+            "exclude": []
         }
     },
     {
@@ -758,10 +844,8 @@
             "speed"
         ],
         "synergies": {
-            "include": [
-                "speed",
-                "mobility"
-            ]
+            "include": [],
+            "exclude": []
         }
     },
     {
@@ -777,15 +861,8 @@
             "lowHealth"
         ],
         "synergies": {
-            "include": [
-                "speed",
-                "mobility",
-                "lowHealth",
-                "onHit"
-            ],
-            "exclude": [
-                "money"
-            ]
+            "include": [],
+            "exclude": []
         }
     },
     {
@@ -798,15 +875,13 @@
             "Pairs well with critical strike chance, attack speed, and amplified healing."
         ],
         "tags": [
+            "laser-scope",
             "crit",
             "healing"
         ],
         "synergies": {
-            "include": [
-                "haste",
-                "crit",
-                "proc"
-            ]
+            "include": [],
+            "exclude": []
         }
     },
     {
@@ -818,10 +893,12 @@
             "Adds <span yellow>+1</span> equipment charge <span gray>(+1 per stack)</span>, reduces equipment cooldown by <span blue>15%</span> <span gray>(+15% per stack)</span>.",
             "Pairs well with Equipment items."
         ],
+        "tags": [
+            "equipmentCooldown"
+        ],
         "synergies": {
-            "include": [
-                "equipment"
-            ]
+            "include": [],
+            "exclude": []
         }
     },
     {
@@ -838,10 +915,8 @@
             "onKill"
         ],
         "synergies": {
-            "include": [
-                "health",
-                "onKill"
-            ]
+            "include": [],
+            "exclude": []
         }
     },
     {
@@ -854,14 +929,12 @@
             "Pairs well with on-kill effects and items that impact skill cooldowns."
         ],
         "tags": [
-            "skills",
+            "skill",
             "onKill"
         ],
         "synergies": {
-            "include": [
-                "skills",
-                "onKill"
-            ]
+            "include": [],
+            "exclude": []
         }
     },
     {
@@ -877,17 +950,8 @@
             "onKill"
         ],
         "synergies": {
-            "include": [
-                "haste",
-                "speed",
-                "damage",
-                "proc"
-            ],
-            "exclude": [
-                "crowbar",
-                "interact",
-                "bands"
-            ]
+            "include": [],
+            "exclude": []
         }
     },
     {
@@ -900,15 +964,11 @@
             "Pairs well with damage prevention, damage reduction, and movement speed items."
         ],
         "tags": [
-            "speed",
             "armor"
         ],
         "synergies": {
-            "include": [
-                "defense",
-                "armor",
-                "speed"
-            ]
+            "include": [],
+            "exclude": []
         }
     },
     {
@@ -922,18 +982,12 @@
         ],
         "tags": [
             "damage",
-            "bands",
-            "effect"
+            "high",
+            "bands"
         ],
         "synergies": {
-            "include": [
-                "damage",
-                "crit"
-            ],
-            "exclude": [
-                "interact",
-                "onKill"
-            ]
+            "include": [],
+            "exclude": []
         }
     },
     {
@@ -947,17 +1001,12 @@
         ],
         "tags": [
             "damage",
+            "high",
             "bands"
         ],
         "synergies": {
-            "include": [
-                "damage",
-                "crit"
-            ],
-            "exclude": [
-                "interact",
-                "onKill"
-            ]
+            "include": [],
+            "exclude": []
         }
     },
     {
@@ -971,14 +1020,13 @@
         ],
         "tags": [
             "effect",
-            "proc"
+            "proc",
+            "perHit",
+            "noDamage"
         ],
         "synergies": {
-            "include": [
-                "haste",
-                "canProc",
-                "death-mark"
-            ]
+            "include": [],
+            "exclude": []
         }
     },
     {
@@ -994,13 +1042,8 @@
             "mobility"
         ],
         "synergies": {
-            "include": [
-                "speed",
-                "mobility"
-            ],
-            "exclude": [
-                "armor"
-            ]
+            "include": [],
+            "exclude": []
         }
     },
     {
@@ -1016,15 +1059,8 @@
             "elite"
         ],
         "synergies": {
-            "include": [
-                "onKill",
-                "damage",
-                "elite"
-            ],
-            "exclude": [
-                "ukulele",
-                "interact"
-            ]
+            "include": [],
+            "exclude": []
         }
     },
     {
@@ -1034,19 +1070,12 @@
         "id": "war-horn",
         "description": [
             "Activating an equipment boosts attack speed by <span yellow>70%</span> for <span blue>8s</span> <span gray>(+4s per stack)</span>.",
-            "Pairs well with attack speed, proc chance, and equipment items."
+            "Pairs well with attack speed, equipment, and items that have a chance to proc."
         ],
+        "tags": [],
         "synergies": {
-            "include": [
-                "equipment",
-                "haste",
-                "damage",
-                "crit"
-            ],
-            "exclude": [
-                "crowbar",
-                "interact"
-            ]
+            "include": [],
+            "exclude": []
         }
     },
     {
@@ -1058,7 +1087,13 @@
             "Heals allies within the teleporter for <span green>50%</span> of max health <span yellow>1</span> time <span gray>(+1 per stack)</span> per teleporter.",
             "Pairs well with amplified healing items."
         ],
-        "synergies": {}
+        "tags": [
+            "healing"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
     },
     {
         "name": "Razorwire",
@@ -1067,27 +1102,19 @@
         "id": "razorwire",
         "description": [
             "Taking damage hits up to <span yellow>5</span> enemies <span gray>(+2 per stack)</span> within <span yellow>25m</span> <span gray>(+10m per stack)</span> for <span yellow>160%</span> damage.",
-            "Pairs well with increased damage, proc chance, and items that activate after taking damage."
+            "Pairs well with increased damage, items that have a chance to proc, and items that activate after taking damage."
         ],
         "procCoefficient": {
             "On Hit": "0.5"
         },
         "tags": [
+            "damage",
             "onHit",
             "canProc"
         ],
         "synergies": {
-            "include": [
-                "damage",
-                "proc",
-                "onHit"
-            ],
-            "exclude": [
-                "old-guillotine",
-                "interact",
-                "bands",
-                "onKill"
-            ]
+            "include": [],
+            "exclude": []
         }
     },
     {
@@ -1100,12 +1127,12 @@
             "Pairs well with on-kill items."
         ],
         "tags": [
+            "money",
             "onKill"
         ],
         "synergies": {
-            "include": [
-                "onKill"
-            ]
+            "include": [],
+            "exclude": []
         }
     },
     {
@@ -1118,12 +1145,12 @@
             "Pairs well with items that activate after interacting with an object."
         ],
         "tags": [
-            "interact"
+            "interact",
+            "ally"
         ],
         "synergies": {
-            "include": [
-                "interact"
-            ]
+            "include": [],
+            "exclude": []
         }
     },
     {
@@ -1135,10 +1162,12 @@
             "Enemies inflicted with at least <span yellow>4</span> debuffs take <span yellow>50%</span> more damage for <span blue>7s</span> <span gray>(+7s per stack)</span>.",
             "Pairs well with debuff infliction items."
         ],
+        "tags": [
+            "effect"
+        ],
         "synergies": {
-            "include": [
-                "effect"
-            ]
+            "include": [],
+            "exclude": []
         }
     },
     {
@@ -1151,14 +1180,12 @@
             "Pairs well with movement speed, mobility, and on-kill items."
         ],
         "tags": [
+            "speed",
             "onKill"
         ],
         "synergies": {
-            "include": [
-                "speed",
-                "mobility",
-                "onKill"
-            ]
+            "include": [],
+            "exclude": []
         }
     },
     {
@@ -1174,10 +1201,8 @@
             "fire"
         ],
         "synergies": {
-            "include": [
-                "fire",
-                "death-mark"
-            ]
+            "include": [],
+            "exclude": []
         }
     },
     {
@@ -1193,20 +1218,13 @@
             "On Hit": "1.0"
         },
         "tags": [
-            "canProc"
+            "damage",
+            "canProc",
+            "high"
         ],
         "synergies": {
-            "include": [
-                "damage",
-                "canProc",
-                "proc",
-                "crit"
-            ],
-            "exclude": [
-                "razorwire",
-                "interact",
-                "onKill"
-            ]
+            "include": [],
+            "exclude": []
         }
     },
     {
@@ -1218,10 +1236,1975 @@
             "A delivery will arrive somewhere on the next stage containing two items, each item has a <span yellow>79%</span> chance to be Common, <span yellow>20%</span> chance to be Uncommon, and <span yellow>1%</span> chance to be Legendary.",
             "No currently known item synergies."
         ],
+        "tags": [
+            "stage"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Brilliant Behemoth",
+        "rarity": "Legendary",
+        "type": "Item",
+        "id": "brilliant-behemoth",
+        "description": [
+            "All attacks explode with a <span yellow>4m</span> <span gray>(+2.5m per stack)</span> radius and deal <span yellow>60%</span> more damage.",
+            "Pairs well with attack speed, increased damage, and items that have a chance to proc."
+        ],
+        "tags": [
+            "damage"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Ceremonial Dagger",
+        "rarity": "Legendary",
+        "type": "Item",
+        "id": "ceremonial-dagger",
+        "description": [
+            "Killing an enemy creates <span yellow>3</span> homing daggers that deal <span yellow>150%</span> base damage <span gray>(+150% per stack)</span>.",
+            "Pairs well with increased damage, on-kill effects, and items that have a chance to proc."
+        ],
+        "procCoefficient": {
+            "On Hit": "1.0"
+        },
+        "tags": [
+            "damage",
+            "canProc",
+            "onKill"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Frost Relic",
+        "rarity": "Legendary",
+        "type": "Item",
+        "id": "frost-relic",
+        "description": [
+            "Killing an enemy creates a ring around the player that deals <span yellow>1,200%</span> damage per second to nearby enemies and slows them by <span blue>80%</span> for <span blue>1.5s</span>. Damage radius grows by <span yellow>2m</span> per kill, capped at <span yellow>18m</span> <span gray>(+12m per stack)</span>.",
+            "Pairs well with increased damage, on-kill effects, and items that have a chance to proc."
+        ],
+        "procCoefficient": {
+            "On Hit": "0.2"
+        },
+        "tags": [
+            "damage",
+            "canProc",
+            "onKill"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Happiest Mask",
+        "rarity": "Legendary",
+        "type": "Item",
+        "id": "happiest-mask",
+        "description": [
+            "Gain a <span yellow>7%</span> chance to spawn a ghost ally that deals <span yellow>1,500%</span> damage after killing an enemy. Lasts <span blue>30s</span> <span gray>(+30s per stack)</span>.",
+            "Pairs well with the Scrapper lol."
+        ],
+        "tags": [
+            "onKill",
+            "ally"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "H3AD-5T v2",
+        "rarity": "Legendary",
+        "type": "Item",
+        "id": "h3ad-5t-v2",
+        "description": [
+            "Increases jump height, hold 'interact' to slam. Slamming creates a <span yellow>5m-100m</span> explosion dealing <span yellow>1,000%-10,000%</span> base damage, damage scales with slam distance. <span blue>10s</span> <span gray>(-50% per stack)</span> cooldown.",
+            "Pairs well with increased damage, movement speed, mobility, and proc chance items."
+        ],
+        "tags": [
+            "damage",
+            "mobility",
+            "canProc"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "N'Kuahana's Opinion",
+        "rarity": "Legendary",
+        "type": "Item",
+        "id": "nkuhanas-opinion",
+        "description": [
+            "Store <span green>100%</span> of healing <span gray>(+100% per stack)</span> as Soul Energy, when Soul Energy hits <span green>10%</span> of max health, fire a homing skull dealing <span yellow>250%</span> of Soul Energy as damage.",
+            "Pairs well with the Scrapper lol."
+        ],
+        "procCoefficient": {
+            "On Hit": "0.2"
+        },
+        "tags": [
+            "damage",
+            "canProc",
+            "cooldown"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Unstable Tesla Coil",
+        "rarity": "Legendary",
+        "type": "Item",
+        "id": "unstable-tesla-coil",
+        "description": [
+            "Fire lightning that hits <span yellow>3</span> enemies <span gray>(+2 per stack)</span> for <span yellow>200%</span> base damage every <span blue>0.5s</span>. <span blue>10s</span> cooldown.",
+            "Pairs well with increased damage, and items that have a chance to proc."
+        ],
+        "procCoefficient": {
+            "On Hit": "0.3"
+        },
+        "tags": [
+            "damage",
+            "canProc",
+            "cooldown"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "57 Leaf Clover",
+        "rarity": "Legendary",
+        "type": "Item",
+        "id": "57-leaf-clover",
+        "description": [
+            "All random effects are rolled <span yellow>+1</span> time <span gray>(+1 per stack)</span> for a favorable outcome.",
+            "Pairs well with items that have a chance to proc."
+        ],
+        "tags": [
+            "proc",
+            "canProc",
+            "perHit"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Sentient Meat Hook",
+        "rarity": "Legendary",
+        "type": "Item",
+        "id": "sentient-meat-hook",
+        "description": [
+            "Gain a <span yellow>20%</span> chance <span gray>(+20% per stack)</span> on hit to fire hooks that pull up to <span yellow>10</span> enemies <span gray>(+5 per stack)</span> together, dealing <span yellow>100%</span> total damage. Hooks are fired from the target enemy."
+        ],
+        "procCoefficient": {
+            "On Hit": ".33"
+        },
+        "tags": [
+            "damage",
+            "proc"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Alien Head",
+        "rarity": "Legendary",
+        "type": "Item",
+        "id": "alien-head",
+        "description": [
+            "All skill cooldowns reduced by <span blue>25%</span> <span gray>(+25% per stack)</span>."
+        ],
+        "tags": [
+            "skill"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Soulbound Catalyst",
+        "rarity": "Legendary",
+        "type": "Item",
+        "id": "soulbound-catalyst",
+        "description": [
+            "Killing an enemy reduces equipment cooldowns by <span blue>4s</span> <span gray>(+2s per stack)</span>."
+        ],
+        "tags": [
+            "onKill"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Dio's Best Friend",
+        "rarity": "Legendary",
+        "type": "Item",
+        "id": "dios-best-friend",
+        "description": [
+            "Grants <span green>+1</span> extra life <span gray>(+1 per stack)</span>, gain <span blue>3s</span> of invulnerability after resurrection. Consumed on use."
+        ],
+        "tags": [],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Hardlight Afterburner",
+        "rarity": "Legendary",
+        "type": "Item",
+        "id": "hardlight-afterburner",
+        "description": [
+            "Adds <span yellow>2</span> charges <span gray>(+2 per stack)</span> to you Utility skill, reduces Utility skill cooldowns by <span blue>33%</span>."
+        ],
+        "tags": [
+            "skill"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Wake of Vultures",
+        "rarity": "Legendary",
+        "type": "Item",
+        "id": "wake-of-vultures",
+        "description": [
+            "Killing an elite enemy grants the player that enemy's elite ability for <span blue>8s</span> <span gray>(+5s per stack)</span>."
+        ],
+        "tags": [
+            "effect",
+            "onKill",
+            "elite"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Brainstalks",
+        "rarity": "Legendary",
+        "type": "Item",
+        "id": "brainstalks",
+        "description": [
+            "Killing an elite enemy reduces all skill cooldowns to <span blue>0.5s</span> for <span blue>4s</span> <span gray>(+4s per stack)</span>."
+        ],
+        "tags": [
+            "skill",
+            "onKill",
+            "elite"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Rejuvination Rack",
+        "rarity": "Legendary",
+        "type": "Item",
+        "id": "rejuvination-rack",
+        "description": [
+            "Gain <span green>+100%</span> healing power <span gray>(+100% per stack)</span>."
+        ],
+        "tags": [
+            "healAmp"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Aegis",
+        "rarity": "Legendary",
+        "type": "Item",
+        "id": "aegis",
+        "description": [
+            "Healing while at <span green>100%</span> of max health grants temporary barrier equal to <span green>50%</span> of the amount healed <span gray>(+50% per stack)</span>."
+        ],
+        "tags": [
+            "barrier"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Shattering Justice",
+        "rarity": "Legendary",
+        "type": "Item",
+        "id": "shattering-justice",
+        "description": [
+            "Reduce enemy armor by <span yellow>60</span> for <span blue>8s</span> <span gray>(+8s per stack)</span> after hitting them <span yellow>5</span> times."
+        ],
+        "tags": [
+            "effect"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Resonance Disc",
+        "rarity": "Legendary",
+        "type": "Item",
+        "id": "resonance-disc",
+        "description": [
+            "Killing <span yellow>4</span> enemies in <span blue>7s</span> charges the Resonance Disc. Deals <span yellow>300%</span> base damage <span gray>(+300% per stack)</span>, pierces enemies it doesn't kill, then explodes for <span yellow>1,000%</span> base damage <span gray>(+1,000% per stack)</span>. Returns to the player and pierces enemies on the way back dealing <span yellow>300%</span> base damage <span gray>(+300% per stack)</span>."
+        ],
+        "procCoefficient": {
+            "On Hit": "1.0",
+            "Explosion": "1.0"
+        },
+        "tags": [
+            "damage",
+            "onKill"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Interstellar Desk Plant",
+        "rarity": "Legendary",
+        "type": "Item",
+        "id": "interstellar-desk-plant",
+        "description": [
+            "Killing an enemy drops a healing plant after <span blue>5s</span>. Plants heal allies within <span yellow>10m</span> <span gray>(+5m per stack)</span> for <span green>5%</span> of max health every <span blue>0.5s</span>. Lasts <span blue>10s</span>."
+        ],
+        "tags": [
+            "healing",
+            "onKill"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Laser Scope",
+        "rarity": "Legendary",
+        "type": "Item",
+        "id": "laser-scope",
+        "description": [
+            "Critical strikes deal <span yellow>+100%</span> damage <span gray>(+100% per stack)</span>."
+        ],
+        "tags": [],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Pocket I.C.B.M.",
+        "rarity": "Legendary",
+        "type": "Item",
+        "id": "pocket-icbm",
+        "description": [
+            "Missile items and equipment fire <span yellow>2</span> additional missiles per round, missiles deal <span yellow>+50%</span> more damage per additional stack."
+        ],
+        "tags": [
+            "missile"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Spare Drone Parts",
+        "rarity": "Legendary",
+        "type": "Item",
+        "id": "spare-drone-parts",
+        "description": [
+            "Summon <span yellow>1</span> Col. Droneman <span gray>(+1 per stack)</span>. Drones gain <span yellow>+50%</span> attack speed <span gray>(+50% per stack)</span>, <span blue>+50%</span> cooldown reduction <span gray>(+50% per stack)</span>, and <span yellow>10%</span> chance to fire a missile dealing <span yellow>300%</span> total damage. Drones gain a chain gun that fires <span yellow>6</span> bullets dealing <span yellow>100%</span> damage, bullets bounce to up to <span yellow>2</span> enemies."
+        ],
+        "tags": [
+            "ally"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Symbiotic Scorpion",
+        "rarity": "Legendary",
+        "type": "Item",
+        "id": "symbiotic-scorpion",
+        "description": [
+            "Reduce armor by <span yellow>2</span> <span gray>(+2 per stack)</span> on hit."
+        ],
+        "tags": [
+            "effect"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Ben's Rain Coat",
+        "rarity": "Legendary",
+        "type": "Item",
+        "id": "bens-rain-coat",
+        "description": [
+            "Prevents <span yellow>1</span> incoming debuff <span gray>(+1 per stack)</span> and grants temporary barrier for <span green>10%</span> of max health. <span blue>5s</span> cooldown."
+        ],
+        "tags": [
+            "defense",
+            "barrier"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Bottled Chaos",
+        "rarity": "Legendary",
+        "type": "Item",
+        "id": "bottled-chaos",
+        "description": [
+            "Trigger <span yellow>1</span> additional random equipment effect <span gray>(+1 per stack)</span> after using an equipment."
+        ],
+        "tags": [],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Titanic Knurl",
+        "rarity": "Boss",
+        "type": "Item",
+        "id": "titanic-knurl",
+        "description": [
+            "Gain <span green>+40%</span> max health <span gray>(+40 per stack)</span> and <span green>+1.6hp</span> per second base health regeneration <span gray>(+1.6 per stack)</span>."
+        ],
+        "tags": [
+            "health",
+            "healAmp"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Queen's Gland",
+        "rarity": "Boss",
+        "type": "Item",
+        "id": "queens-gland",
+        "description": [
+            "Summon <span yellow>1</span> Beetle Guard <span gray>(+1 per stack)</span> every <span blue>30s</span>, deals <span yellow>300%</span> damage and has <span green>100%</span> health."
+        ],
+        "tags": [
+            "ally"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Halcyon Seed",
+        "rarity": "Boss",
+        "type": "Item",
+        "id": "halcyon-seed",
+        "description": [
+            "Summons Aurelionite before a boss fight, deals <span yellow>100%</span> damage <span gray>(+50% per stack)</span> and has <span green>100%</span> health <span gray>(+100% per stack)</span>."
+        ],
+        "tags": [
+            "ally"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Little Disciple",
+        "rarity": "Boss",
+        "type": "Item",
+        "id": "little-disciple",
+        "description": [
+            "Fire a homing wisp dealing <span yellow>300%</span> damage <span gray>(+300% per stack)</span> every <span blue>1.6s</span> while sprinting. Fire rate increases with movement speed."
+        ],
+        "procCoefficient": {
+            "On Hit": "1.0"
+        },
+        "tags": [
+            "damage",
+            "canProc",
+            "mobility"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Pearl",
+        "rarity": "Boss",
+        "type": "Item",
+        "id": "pearl",
+        "description": [
+            "Gain <span green>+10%</span> max health <span gray>(+10% per stack)</span>."
+        ],
+        "tags": [
+            "health"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Irradiant Pearl",
+        "rarity": "Boss",
+        "type": "Item",
+        "id": "irradiant-pearl",
+        "description": [
+            "Gain <span green>+10%</span> health, <span green>+10%</span> regeneration, <span blue>+10%</span> movement speed, <span yellow>+10%</span> damage, <span yellow>+10%</span> attack speed, <span yellow>+10%</span> critical strike chance, and <span green>+10%</span> armor."
+        ],
+        "tags": [
+            "health",
+            "healing",
+            "speed",
+            "damage",
+            "haste",
+            "crit",
+            "armor"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Genesis Loop",
+        "rarity": "Boss",
+        "type": "Item",
+        "id": "genesis-loop",
+        "description": [
+            "Explode when below <span red>25%</span> max health dealing <span yellow>6,000%</span> base damage. <span blue>30</span> / <span blue>2s</span> <span gray>(+1 per stack)</span> cooldown."
+        ],
+        "tags": [
+            "damage",
+            "lowHealth",
+            "high"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Molten Perforator",
+        "rarity": "Boss",
+        "type": "Item",
+        "id": "molten-perforator",
+        "description": [
+            "Gain a <span yellow>10%</span> chance on hit to fire <span yellow>3</span> magma balls from the target that deal <span yellow>300%</span> damage <span gray>(+300% per stack)</span> each and ignite enemies."
+        ],
+        "procCoefficient": {
+            "On Hit": "0.7"
+        },
+        "tags": [
+            "proc",
+            "canProc",
+            "effect"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Shatterspleen",
+        "rarity": "Boss",
+        "type": "Item",
+        "id": "shatterspleen",
+        "description": [
+            "Gain <span yellow>+5%</span> critical strike chance. Critical strikes bleed enemies for <span yellow>240%</span> base damage, bleeding enemies explode dealing <span yellow>400%</span> damage <span gray>(+400% per stack)</span> + <span yellow>15%</span> of their max health <span gray>(+15% per stack)</span>."
+        ],
+        "tags": [
+            "crit",
+            "effect"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Mired Urn",
+        "rarity": "Boss",
+        "type": "Item",
+        "id": "mired-urn",
+        "description": [
+            "Deal <span yellow>100%</span> damage to <span yellow>1</span> nearby enemy <span gray>(+1 per stack)</span> while in combat and inflict them with tar, heal <span green>100%</span> of the damage dealt."
+        ],
+        "tags": [
+            "healing",
+            "effect"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Charged Perforator",
+        "rarity": "Boss",
+        "type": "Item",
+        "id": "charged-perforator",
+        "description": [
+            "Gain a <span yellow>10%</span> chance to strike lightning on hit dealing <span yellow>500%</span> damage <span gray>(+500% per stack)</span>."
+        ],
+        "procCoefficient": {
+            "On Hit": "1.0"
+        },
+        "tags": [
+            "proc",
+            "canProc"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Empathy Cores",
+        "rarity": "Boss",
+        "type": "Item",
+        "id": "empathy-cores",
+        "description": [
+            "Summon <span yellow>2</span> Solus Probes every <span blue>30s</span>, probes gain <span yellow>+100%</span> damage <span gray>(+100% per stack)</span> per ally."
+        ],
+        "tags": [
+            "ally"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Planula",
+        "rarity": "Boss",
+        "type": "Item",
+        "id": "planula",
+        "description": [
+            "Heal <span green>15hp</span> <span gray>(+15 per stack)</span> after taking damage."
+        ],
+        "tags": [
+            "healing",
+            "onHit"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Defense Nucleus",
+        "rarity": "Boss",
+        "type": "Item",
+        "id": "defense-nucleus",
+        "description": [
+            "Killing an elite monster summons an Alpha Construct that deals <span yellow>300%</span> damage and has <span green>300%</span> health. Capped at <span yellow>4</span>. <span gray>(+4 per stack)</span>"
+        ],
+        "tags": [
+            "onKill",
+            "elite"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Benthic Bloom",
+        "rarity": "Void",
+        "type": "Item",
+        "id": "benthic-bloom",
+        "description": [
+            "Upgrades <span yellow>3</span> random Common or <span green>Uncommon</span> item stacks <span gray>(+3 per stack)</span> to the next rarity at the beginning of each stage. <span purple>Corrupts all 57 Leaf Clovers</span>."
+        ],
+        "tags": [
+            "void"
+        ],
         "synergies": {
             "include": [
                 "none"
-            ]
+            ],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Encrusted Key",
+        "rarity": "Void",
+        "type": "Item",
+        "id": "encrusted-key",
+        "description": [
+            "A hidden cache will appear somewhere on the next stage allowing the player to select from <span yellow>3</span> items, cache contents have a <span yellow>41.66%</span> chance to be Common, <span yellow>41.66%</span> to be <span green>Uncommon</span>, and a <span yellow>16.66%</span> chance to be <span red>Legendary</span>. Consumed on use, <span purple>corrupts all Rusted Keys</span>."
+        ],
+        "tags": [
+            "stage",
+            "void"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Lost Seer's Glasses",
+        "rarity": "Void",
+        "type": "Item",
+        "id": "lost-seers-glasses",
+        "description": [
+            "Attacks have a <span yellow>0.05%</span> chance <span gray>(+0.05% per stack)</span> to instantly kill non-boss enemies. <span purple>Corrupts all Lens Maker's Glasses</span>."
+        ],
+        "tags": [
+            "void"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Lysate Cell",
+        "rarity": "Void",
+        "type": "Item",
+        "id": "lysate-cell",
+        "description": [
+            "Adds <span yellow>1</span> charge <span gray>(+1 per stack)</span> to your Special skill, reduces Special skill cooldown by <span blue>33%</span>. <span purple>Corrupts all Fuel Cells</span>."
+        ],
+        "tags": [
+            "skill",
+            "void"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Needletick",
+        "rarity": "Void",
+        "type": "Item",
+        "id": "needletick",
+        "description": [
+            "Gain <span yellow>+10%</span> chance <span gray>(+10% per stack)</span> to inflict an enemy with Collapse, dealing <span yellow400%</span> damage. <span purple>Corrupts all Tri-Tip Daggers</span>."
+        ],
+        "tags": [
+            "damage",
+            "effect",
+            "void"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Newly Hatched Zoea",
+        "rarity": "Void",
+        "type": "Item",
+        "id": "newly-hatched-zoea",
+        "description": [
+            "Summon a random void monster as an ally every <span blue>60s</span>, up to <span yellow>1</span> ally <span gray>(+1 per stack)</span> at a time. <span purple>Corrupts all yellow items</span>."
+        ],
+        "tags": [
+            "ally",
+            "void"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Plasma Shrimp",
+        "rarity": "Void",
+        "type": "Item",
+        "id": "plasma-shrimp",
+        "description": [
+            "Gain <span green>+10%</span> of max health as shield. Fire missiles on hit that deal <span yellow>40%</span> total damage <span gray>(+40% per stack)</span> while you have shield. <span purple>Corrupts all AtG Missile Mk. 1s</span>."
+        ],
+        "procCoefficient": {
+            "On Hit": "0.2"
+        },
+        "tags": [
+            "shield",
+            "missile",
+            "canProc",
+            "damage",
+            "void"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Pluripotent Larva",
+        "rarity": "Void",
+        "type": "Item",
+        "id": "pluripotent-larva",
+        "description": [
+            "Grants <span green>+1</span> extra life <span gray>(+1 per stack)</span>, gain <span blue>3s</span> of invulnerability after resurrection. <span purple>Corrupts all held items that have Void counterparts on death</span>. Consumed on use."
+        ],
+        "tags": [
+            "void"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Polylute",
+        "rarity": "Void",
+        "type": "Item",
+        "id": "polylute",
+        "description": [
+            "Gain a <span yellow>25%</span> chance to fire lightning at the targeted enemy on hit dealing <span yellow>60%</span> total damage, lightning hits up to <span yellow>3</span> times <span gray>(+3 per stack)</span>. <span purple>Corrupts all Ukuleles</span>."
+        ],
+        "procCoefficient": {
+            "On Hit": "0.2"
+        },
+        "tags": [
+            "damage",
+            "proc",
+            "canProc",
+            "void"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Safer Spaces",
+        "rarity": "Void",
+        "type": "Item",
+        "id": "safer-spaces",
+        "description": [
+            "Blocks the next source of incoming damage. <span blue>15s</span> cooldown <span gray>(-10% per stack)</span>. <span purple>Corrupts all Tougher Times</span>."
+        ],
+        "tags": [
+            "defense",
+            "void"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Singularity Band",
+        "rarity": "Void",
+        "type": "Item",
+        "id": "singularity-band",
+        "description": [
+            "Hits dealing at least <span yellow>400%</span> damage creates a black hole that draws in enemies within <span blue>15m</span>. Black holes last <span blue>5s</span> before collapsing, dealing <span yellow>100%</span> total damage. <span blue>20s</span> cooldown. <span purple>Corrupts all Kjaro's Bands and Runald's Bands</span>."
+        ],
+        "procCoefficient": {
+            "On Hit": "1.0"
+        },
+        "tags": [
+            "damage",
+            "high",
+            "bands",
+            "void"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Tentabauble",
+        "rarity": "Void",
+        "type": "Item",
+        "id": "tentabauble",
+        "description": [
+            "Gain a <span yellow>5%</span> chance <span gray> (+5% per stack)</span> to root enemies on hit for <span blue>1s</span>. <span purple>Corrupts all Chronobaubles</span>."
+        ],
+        "tags": [
+            "effect",
+            "proc",
+            "void"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Voidsent Flame",
+        "rarity": "Void",
+        "type": "Item",
+        "id": "voidsent-flame",
+        "description": [
+            "Hitting an enemy at full health creates a lava pillar with a <span blue>12m</span> radius <span gray>(+2.4m per stack)</span> that deals <span yellow>260%</span> base damage. <span purple>Corrupts all Will-o'-the-Wisps</span>."
+        ],
+        "procCoefficient": {
+            "On Hit": "1.0"
+        },
+        "tags": [
+            "damage",
+            "void"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Weeping Fungus",
+        "rarity": "Void",
+        "type": "Item",
+        "id": "weeping-fungus",
+        "description": [
+            "Heal <span green>2%</span> of max health per second while sprinting. <span purple>Corrupts all Bustling Fungi</span>."
+        ],
+        "tags": [
+            "healing",
+            "void"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Shaped Glass",
+        "rarity": "Lunar",
+        "type": "Item",
+        "id": "shaped-glass",
+        "description": [
+            "Gain <span yellow>+100%</span> base damage <span gray>(+100% per stack)</span>, lose <span red>50%</span> max health <span gray>(+50% per stack)</span>."
+        ],
+        "tags": [
+            "damage",
+            "lunar"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Brittle Crown",
+        "rarity": "Lunar",
+        "type": "Item",
+        "id": "brittle-crown",
+        "description": [
+            "Gain a <span yellow>30%</span> change to gain <span yellow>2</span> gold <span gray>(+2 per stack)</span> on hit. Scales with time. Lose gold when taking damage, gold loss equals <span red>100%</span> of the health lost <span gray>(+100% per stack)</span>."
+        ],
+        "tags": [
+            "money",
+            "proc",
+            "lunar"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Transcendence",
+        "rarity": "Lunar",
+        "type": "Item",
+        "id": "transcendence",
+        "description": [
+            "Gain <span green>+50%</span> max health <span gray>(+25% per stack)</span>, converts all health into shield."
+        ],
+        "tags": [
+            "shield",
+            "lunar"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Corpsebloom",
+        "rarity": "Lunar",
+        "type": "Item",
+        "id": "corpsebloom",
+        "description": [
+            "Gain <span green>+100%</span> healing power <span gray>(+100% per stack)</span>, all healing is applied over time. Heal up to <span green>10%</span> of max health <span gray>(-50% per stack)</span> per second."
+        ],
+        "tags": [
+            "healAmp",
+            "lunar"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Gesture of the Drowned",
+        "rarity": "Lunar",
+        "type": "Item",
+        "id": "gesture-of-the-drowned",
+        "description": [
+            "Reduce equipment cooldowns by <span yellow>50%</span> <span gray>(+15% per stack)</span>, equipment activates automatically."
+        ],
+        "tags": [
+            "equipmentCooldown",
+            "lunar"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Strides of Heresy",
+        "rarity": "Lunar",
+        "type": "Item",
+        "id": "strides-of-heresy",
+        "description": [
+            "Replaces Utility skill with Shadowfade. Become intangible for <span blue>3s</span> <span gray>(+3s per stack)</span>, gain <span blue>+30%</span> movement speed, heal <span green>18.2%</span> of max health <span gray>(+18.2% per stack)</span>."
+        ],
+        "tags": [
+            "skill",
+            "speed",
+            "mobility",
+            "healing",
+            "lunar"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Visions of Heresy",
+        "rarity": "Lunar",
+        "type": "Item",
+        "id": "visions-of-heresy",
+        "description": [
+            "Replaces Primary skill with Hungering Gaze. Fires homing shards that detonate dealing <span yellow>120%</span> base damage, holds up to <span yellow>12</span> charges <span gray>(+12 per stack)</span>. <span blue>2s</span> reload <span gray>(+2s per stack)</span>."
+        ],
+        "procCoefficient": {
+            "On Hit": "0.1",
+            "Explosion": "1.0"
+        },
+        "tags": [
+            "skill",
+            "canProc",
+            "damage",
+            "lunar"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Beads of Fealty",
+        "rarity": "Lunar",
+        "type": "Item",
+        "id": "beads-of-fealty",
+        "description": [
+            "Entering a Celestial Portal and obliterating at the Obelisk with Beads of Fealty transports the player to A Moment, Whole before ending the run."
+        ],
+        "tags": [
+            "lunar"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Focused Convergence",
+        "rarity": "Lunar",
+        "type": "Item",
+        "id": "focused-convergence",
+        "description": [
+            "Gain <span yellow>+30%</span> teleporter charging speed <span gray>(+30% per stack)</span>, lose <span red>50%</span> teleporter zone size <span gray>(+50% per stack)</span>. Capped at <span yellow>3</span>."
+        ],
+        "tags": [
+            "lunar"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Defiant Gouge",
+        "rarity": "Lunar",
+        "type": "Item",
+        "id": "defiant-gouge",
+        "description": [
+            "Using a shrine summons enemies <span gray>(stronger per stack)</span> nearby. Scales with time."
+        ],
+        "tags": [
+            "lunar"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Mercurial Rachis",
+        "rarity": "Lunar",
+        "type": "Item",
+        "id": "mercurial-rachis",
+        "description": [
+            "Randomly summons a totem near the player, totems grant allies and enemies within <span yellow>16m</span> <span gray>(+50% per stack)</span> <span yellow>+50%</span> attack damage."
+        ],
+        "tags": [
+            "lunar"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Purity",
+        "rarity": "Lunar",
+        "type": "Item",
+        "id": "purity",
+        "description": [
+            "Reduce all skill cooldowns by <span blue>2s</span>, negative effects are rerolled <span yellow>+1</span> time <span gray>(+1 per stack)</span> for an unfavorable outcome."
+        ],
+        "tags": [
+            "skill",
+            "lunar"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Hooks of Heresy",
+        "rarity": "Lunar",
+        "type": "Item",
+        "id": "hooks-of-heresy",
+        "description": [
+            "Replaces Secondary skill with Slicing Maelstrom. Charge a projectile that deals <span yellow>875%</span> damage per second and explodes after <span blue>3s</span> dealing <span yellow>700%</span> damage, inflicts enemies with the root debuff for <span blue>3s</span> <span gray>(+3s per stack)</span>. <span blue>5s</span> <span gray>(+5 per stack)</span> cooldown."
+        ],
+        "procCoefficient": {
+            "Maelstrom": "0.2",
+            "Explosion": "1.0"
+        },
+        "tags": [
+            "skill",
+            "secondary",
+            "damage",
+            "canProc",
+            "high",
+            "effect",
+            "lunar"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Egocentricism",
+        "rarity": "Lunar",
+        "type": "Item",
+        "id": "egocentricism",
+        "description": [
+            "Gain an orbiting bomb every <span blue>3s</span> <span gray>(-50% per stack)</span>, detonates on impact for <span yellow>360%</span> damage. Capped at <span yellow>3</span> bombs <span gray>(+1 per stack)</span>. A random item is converted into another stack of Egocentricism every <span blue>60s</span>."
+        ],
+        "procCoefficient": {
+            "On Hit": "1.0"
+        },
+        "tags": [
+            "damage",
+            "canProc",
+            "lunar"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Eulogy Zero",
+        "rarity": "Lunar",
+        "type": "Item",
+        "id": "eulogy-zero",
+        "description": [
+            "Gain a <span yellow>5%</span> chance <span gray>(+5% per stack)</span> for any item on the next stage to be a lunar item instead of its previous rarity."
+        ],
+        "tags": [
+            "stage",
+            "lunar"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Stone Flux Pauldron",
+        "rarity": "Lunar",
+        "type": "Item",
+        "id": "stone-flux-pauldron",
+        "description": [
+            "Gain <span green>+100%</span> max health <span gray>(+100% per stack)</span>, lose <span red>50%</span> movement speed <span gray>(+50% per stack)</span>."
+        ],
+        "tags": [
+            "health",
+            "lunar"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Light Flux Pauldron",
+        "rarity": "Lunar",
+        "type": "Item",
+        "id": "light-flux-pauldron",
+        "description": [
+            "Reduce all skill cooldowns by <span yellow>50%</span> <span gray>(+50% per stack)</span>, lose <span red>50%</span> attack speed <span gray>(+50% per stack)</span>."
+        ],
+        "tags": [
+            "skill",
+            "lunar"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Essence of Heresy",
+        "rarity": "Lunar",
+        "type": "Item",
+        "id": "essence-of-heresy",
+        "description": [
+            "Replaces Special skill with Ruin. Dealing damage adds a stack of ruin that lasts for <span blue>10s</span> <span gray>(+10s per stack)</span>, activate the skill to detonate enemies inflicted with ruin dealing <span yellow>300%</span> + <span yellow>120%</span> damage per stack of ruin. <span blue>8s</span> <span gray>(+8s per stack)</span> cooldown."
+        ],
+        "tags": [
+            "skill",
+            "effect",
+            "damage",
+            "high",
+            "lunar"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Glowing Meteorite",
+        "rarity": "Lunar",
+        "type": "Equipment",
+        "id": "glowing-meteorite",
+        "description": [
+            "Call meteors from the sky that deal <span yellow>600%</span> damage to enemies and allies. Lasts <span blue>20s</span>, <span blue>140s</span> cooldown."
+        ],
+        "procCoefficient": {
+            "On Hit": "0.1"
+        },
+        "tags": [
+            "equipment",
+            "lunar"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Helfire Tincture",
+        "rarity": "Lunar",
+        "type": "Equipment",
+        "id": "helfire-tincture",
+        "description": [
+            "Ignite all enemies and allies within <span yellow>15m</span> for <span blue>12s</span> dealing <span yellow>5%</span> of max health per second as burn damage. Burn damage is <span yellow>0.5x</span> stronger toward you, <span yellow>0.25x</span> stronger toward allies, and <span yellow>25x</span> stronger toward enemies. <span blue>45s</span> cooldown."
+        ],
+        "tags": [
+            "equipment",
+            "fire",
+            "lunar"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Effigy of Grief",
+        "rarity": "Lunar",
+        "type": "Equipment",
+        "id": "effigy-of-grief",
+        "description": [
+            "Places a totem at the user's cursor. Enemies and allies within the totem's radius are inflicted with cripple, slowed by <span blue>50%</span>, and have <span yellow>20</span> less armor. <span blue>15s</span> cooldown."
+        ],
+        "tags": [
+            "equipment",
+            "effect",
+            "lunar"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Spinel Tonic",
+        "rarity": "Lunar",
+        "type": "Equipment",
+        "id": "spinel-tonic",
+        "description": [
+            "<span yellow>+100%</span> damage, <span yellow>+70%</span> attack speed, <span green>+20</span> armor, <span green>+50%</span> max health, <span green>+300%</span> regeneration, and <span blue>+30%</span> movement speed for <span blue>20s</span>. When Tonic wears off the user has a <span yellow>20%</span> chance to gain a stack of Tonic Affliction, which reduces all stats by <span red>5%</span> <span gray>(+5% per stack)</span> while not using by Spinel Tonic. <span blue>60s</span> cooldown."
+        ],
+        "tags": [
+            "equipment",
+            "effect",
+            "damage",
+            "haste",
+            "armor",
+            "health",
+            "healing",
+            "speed",
+            "lunar"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Disposable Missile Launcher",
+        "rarity": "Equipment",
+        "type": "Item",
+        "id": "disposable-missile-launcher",
+        "description": [
+            "Fire <span yellow>12</span> missiles dealing <span yellow>300%</span> damage each. <span blue>45s</span> cooldown."
+        ],
+        "procCoefficient": {
+            "On Hit": "1.0"
+        },
+        "tags": [
+            "equipment",
+            "damage",
+            "missile",
+            "canProc"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Foreign Fruit",
+        "rarity": "Equipment",
+        "type": "Item",
+        "id": "foreign-fruit",
+        "description": [
+            "Heal <span green>50%</span> of max health on use. <span blue>45s</span> cooldown."
+        ],
+        "tags": [
+            "equipment",
+            "healing"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Primordial Cube",
+        "rarity": "Equipment",
+        "type": "Item",
+        "id": "primordial-cube",
+        "description": [
+            "Create a blackhole that draws in enemies within <span yellow>30m</span> for <span blue>10s</span>. <span blue>60s</span> cooldown."
+        ],
+        "tags": [
+            "equipment"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Trophy Hunter's Tricorn",
+        "rarity": "Equipment",
+        "type": "Item",
+        "id": "trophy-hunters-tricorn",
+        "description": [
+            "Instantly kill a boss enemy and cause it to drop its repsective Boss Item. Single use, consumed on use."
+        ],
+        "tags": [
+            "equipment"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Ocular HUD",
+        "rarity": "Equipment",
+        "type": "Item",
+        "id": "ocular-hud",
+        "description": [
+            "Gain <span yellow>+100%</span> critical strike chance for <span blue>8s</span>. <span blue>60s</span> cooldown."
+        ],
+        "tags": [
+            "equipment",
+            "crit"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "The Backup",
+        "rarity": "Equipment",
+        "type": "Item",
+        "id": "the-backup",
+        "description": [
+            "Summon <span yellow>4</span> Strike Drones that last <span blue>25s</span>. <span blue>100s</span> cooldown."
+        ],
+        "tags": [
+            "equipment",
+            "ally"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Preon Accumulator",
+        "rarity": "Equipment",
+        "type": "Item",
+        "id": "preon-accumulator",
+        "description": [
+            "Fire an energy ball dealing <span yellow>4,000%</span> damage, enemies within <span yellow>35m</span> are struck by energy tendrils dealing <span yellow>600%</span> damage. <span blue>140s</span> cooldown."
+        ],
+        "procCoefficient": {
+            "Explosion": "1.0",
+            "Tendrils": "0.1"
+        },
+        "tags": [
+            "equipment",
+            "damage",
+            "high",
+            "canProc"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Goobo Jr.",
+        "rarity": "Equipment",
+        "type": "Item",
+        "id": "goobo-jr",
+        "description": [
+            "Summon a gummy clone with <span green>300%</span> health and <span yellow>300%</span> damage. Lasts <span blue>30s</span>, <span blue>100s</span> cooldown."
+        ],
+        "tags": [
+            "equipment",
+            "ally"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Milky Chrysalis",
+        "rarity": "Equipment",
+        "type": "Item",
+        "id": "milky-chrysalis",
+        "description": [
+            "Gain <span blue>+20%</span> movement speed on use, gain the ability to fly for <span blue>15s</span>. <span blue>60s</span> cooldown."
+        ],
+        "tags": [
+            "equipment",
+            "speed",
+            "mobility"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Royal Capacitor",
+        "rarity": "Equipment",
+        "type": "Item",
+        "id": "royal-capacitor",
+        "description": [
+            "Strike the targeted enemy with lightning dealing <span yellow>3,000%</span> damage, stun nearby enemies. <span blue>20s</span> cooldown."
+        ],
+        "procCoefficient": {
+            "On Hit": "1.0"
+        },
+        "tags": [
+            "equipment",
+            "damage",
+            "high",
+            "canProc"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Molotov (6-Pack)",
+        "rarity": "Equipment",
+        "type": "Item",
+        "id": "molotov-6-pack",
+        "description": [
+            "Throw <span yellow>6</span> molotovs that ignite nearby enemies for <span yellow>500%</span> base damage, each molotov leaves a burning area that deals <span yellow>200%</span> damage per second. <span blue>45s</span> cooldown."
+        ],
+        "procCoefficient": {
+            "On Hit": "1.0",
+            "Residual": "0.5"
+        },
+        "tags": [
+            "equipment",
+            "fire",
+            "canProc"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Executive Card",
+        "rarity": "Equipment",
+        "type": "Item",
+        "id": "executive-card",
+        "description": [
+            "Get <span yellow>10%</span> off all purchases made useing gold, all multishop contents become available for purchase. <span blue>0.1s</span> cooldown."
+        ],
+        "tags": [
+            "equipment",
+            "money"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "The Crowdfunder",
+        "rarity": "Equipment",
+        "type": "Item",
+        "id": "the-crowdfunder",
+        "description": [
+            "Fire bullets that deal <span yellow>100%</span> damage per bullet while active, each bullet costs <span yellow>1</span> gold. Cost scales with time."
+        ],
+        "procCoefficient": {
+            "On Hit": "1.0"
+        },
+        "tags": [
+            "equipment",
+            "money",
+            "canProc"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Gnarled Woodsprite",
+        "rarity": "Equipment",
+        "type": "Item",
+        "id": "gnarled-woodsprite",
+        "description": [
+            "Heals you for <span green>1.5%</span> of max health per second, may be sent to an ally to heal them for <span green>10%</span> of max health per second. <span blue>15s</span> cooldown."
+        ],
+        "tags": [
+            "equipment",
+            "healing"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Radar Scanner",
+        "rarity": "Equipment",
+        "type": "Item",
+        "id": "radar-scanner",
+        "description": [
+            "Reveal all interactables within <span yellow>500m</span> for <span blue>10s</span>. <span blue>45s</span> cooldown."
+        ],
+        "tags": [
+            "equipment",
+            "stage"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Eccentric Vase",
+        "rarity": "Equipment",
+        "type": "Item",
+        "id": "eccentric-vase",
+        "description": [
+            "Create a quantum tunnel at your cursor up to <span yellow>1,000m</span> away. Lasts for <span blue>30s</span>, <span blue>45s</span> cooldown."
+        ],
+        "tags": [
+            "equipment"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Blast Shower",
+        "rarity": "Equipment",
+        "type": "Item",
+        "id": "blast-shower",
+        "description": [
+            "Remove all negative effects and destroy projectiles within a very small radius. <span blue>20s</span> cooldown."
+        ],
+        "tags": [
+            "equipment"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Volcanic Egg",
+        "rarity": "Equipment",
+        "type": "Item",
+        "id": "volcanic-egg",
+        "description": [
+            "Turn into a fireball for <span blue>5s</span> dealing <span yellow>500%</span> damage on impact, detonate for <span yellow>800%</span> damage. Hitting an enemy in fireball form resets the <span blue>5s</span> time limit. <span blue>30s</span> cooldown."
+        ],
+        "procCoefficient": {
+            "On Hit": "1.0"
+        },
+        "tags": [
+            "equipment",
+            "damage",
+            "mobility",
+            "canProc"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Jade Elephant",
+        "rarity": "Equipment",
+        "type": "Item",
+        "id": "jade-elephant",
+        "description": [
+            "Gain <span green>+500</span> armor for <span blue>5s</span>. <span blue>45s</span> cooldown."
+        ],
+        "tags": [
+            "equipment",
+            "armor"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Sawmerang",
+        "rarity": "Equipment",
+        "type": "Item",
+        "id": "sawmerang",
+        "description": [
+            "Throw <span yellow>3</span> Sawmerangs that deal <span yellow>400%</span> damage, pierce enemies, and inflict bleed for <span yellow>100%</span> damage per second. <span blue>45s</span> cooldown."
+        ],
+        "procCoefficient": {
+            "On Hit": "1.0",
+            "Continuous": "0.2"
+        },
+        "tags": [
+            "equipment",
+            "effect",
+            "canProc"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Recycler",
+        "rarity": "Equipment",
+        "type": "Item",
+        "id": "recycler",
+        "description": [
+            "Reroll an item into another item of the same rarity, items can only be rerolled once. <span blue>45s</span> cooldown."
+        ],
+        "tags": [
+            "equipment",
+            "stage"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Super Massive Leech",
+        "rarity": "Equipment",
+        "type": "Item",
+        "id": "super-massive-leech",
+        "description": [
+            "Heal <span green>20%</span> of the damage dealt for the next <span blue>8s</span>. <span blue>60s</span> cooldown."
+        ],
+        "tags": [
+            "equipment",
+            "healing"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Gorag's Opus",
+        "rarity": "Equipment",
+        "type": "Item",
+        "id": "gorags-opus",
+        "description": [
+            "Gain <span blue>+50%</span> movement speed and <span yellow>+100%</span> attack speed for all allies for <span blue>7s</span>. <span blue>45s</span> cooldown."
+        ],
+        "tags": [
+            "equipment",
+            "haste",
+            "speed"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Forgive Me Please",
+        "rarity": "Equipment",
+        "type": "Item",
+        "id": "forgive-me-please",
+        "description": [
+            "Throw a doll that triggers all on-kill effects every second for <span blue>8s</span>. <span blue>45s</span> cooldown."
+        ],
+        "tags": [
+            "equipment",
+            "onKill"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Remote Caffeinator",
+        "rarity": "Equipment",
+        "type": "Item",
+        "id": "remote-caffeinator",
+        "description": [
+            "Call in a vending machine that lands after <span blue>5s</span> dealing <span yellow>2,000%</span> damage to nearby enemies. Interact to purchase <span yellow>3</span> soda cans which heal allies within <span yellow>25m</span> for <span green>25%</span> of max health, can be used <span yellow>12</span> times. Each purchase costs <span yellow>5</span> gold, cost scales with time. <span blue>60s</span> cooldown."
+        ],
+        "procCoefficient": {
+            "On Hit": "1.0"
+        },
+        "tags": [
+            "equipment",
+            "damage",
+            "interact",
+            "healing",
+            "canProc"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Ifrit's Distinction",
+        "rarity": "Elite",
+        "type": "Aspect",
+        "id": "ifrits-distinction",
+        "description": [
+            "All attacks ignite enemies dealing <span yellow>50%</span> total damage, the holder leaves a trail of fire."
+        ],
+        "tags": [
+            "aspect",
+            "fire"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "His Reassurance",
+        "rarity": "Elite",
+        "type": "Aspect",
+        "id": "his-reassurance",
+        "description": [
+            "Heal allies within <span yellow>30m</span> for <span green>40%</span> of the holder's base damage <span yellow>4</span> times per second, drop a healing orb on death."
+        ],
+        "tags": [
+            "aspect",
+            "healing"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Silence Between Two Strikes",
+        "rarity": "Elite",
+        "type": "Aspect",
+        "id": "silence-between-two-strikes",
+        "description": [
+            "<span green>50%</span> of the holder's health is converted to shield, all attacks attach lightning bombs to the target which deal <span yellow>50%</span> total damage after exploding."
+        ],
+        "tags": [
+            "aspect",
+            "shield",
+            "damage"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Her Biting Embrace",
+        "rarity": "Elite",
+        "type": "Aspect",
+        "id": "her-biting-embrace",
+        "description": [
+            "All attacks greatly slow enemies for <span blue>1.5s</span> multiplied by the attack's proc coefficient, explode on death and freeze nearby enemies."
+        ],
+        "tags": [
+            "aspect",
+            "effect"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "N'Kuahana's Retort",
+        "rarity": "Elite",
+        "type": "Aspect",
+        "id": "nkuhanas-retort",
+        "description": [
+            "All attacks inflict the Healing Disabled debuff for <span blue>8s</span>. The holder periodically releases <span yellow>3</span>-<span yellow>4</span> malachite spikes which explode on impact and deal <span yellow>100%</span> damage, explosions leave lingering malachite spikes. Summon a Malachite Urchin on death which will shoot at nearby monsters."
+        ],
+        "tags": [
+            "aspect",
+            "effect"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Spectral Circlet",
+        "rarity": "Elite",
+        "type": "Aspect",
+        "id": "spectral-circlet",
+        "description": [
+            "Attacks greatly slow enemies, nearby allies are made invisible."
+        ],
+        "tags": [
+            "aspect",
+            "effect"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
+        }
+    },
+    {
+        "name": "Shared Design",
+        "rarity": "Elite",
+        "type": "Aspect",
+        "id": "shared-design",
+        "description": [
+            "Gain <span yellow>+30%</span> movement speed and <span green>+25%</span> max health, all health is converted to shield. Attacks inflict the Cripple debuff. Fire <span yellow>4</span> bombs every <span blue>10s</span> dealing <span yellow>30%</span> damage."
+        ],
+        "tags": [
+            "aspect",
+            "effect",
+            "shield",
+            "speed",
+            "health",
+            "damage"
+        ],
+        "synergies": {
+            "include": [],
+            "exclude": []
         }
     }
 ]
