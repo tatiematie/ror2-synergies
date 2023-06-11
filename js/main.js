@@ -1,4 +1,4 @@
-const appVersion = '1.1.2.8'
+const appVersion = '1.1.2.9'
 
 const itemDesc = document.querySelector('#item-description'),
     itemSelect = document.querySelector('#item-select'),
@@ -217,7 +217,7 @@ const handleButtonClick = (item, button) => {
 
         const displayPane = document.querySelector('#display-pane')
 
-        if (window.innerWidth <= 768) {
+        if (window.innerWidth <= 715) {
             displayPane.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest', offsetTop: 12 });
         }
 
