@@ -10,6 +10,10 @@
   margin: 0;
   padding: 0;
 }
+* h2, * a, * p, * span {
+  width: -moz-fit-content;
+  width: fit-content;
+}
 * button {
   background: none;
   border: none;
@@ -133,15 +137,29 @@
   border: 4px solid #4D5E6E;
   padding: 12px;
 }
+.pane .block .title {
+  margin-bottom: 6px;
+  position: relative;
+}
+.pane .block .title::after {
+  background-color: #FFFFFF;
+  bottom: 0;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3333333333);
+  content: "";
+  height: 2px;
+  left: -2px;
+  position: absolute;
+  width: calc(100% + 4px);
+}
+.pane .block .title:not(:first-child) {
+  margin-top: 12px;
+}
 .pane .block p {
   font-size: 1.125em;
   line-height: 1.4em;
 }
-.pane .block p:not(:last-child) {
-  margin-bottom: 6px;
-}
-.pane .block:not(:first-child) {
-  margin-top: 8px;
+.pane .block:not(:last-child) {
+  margin-bottom: 12px;
 }
 
 html {
@@ -189,7 +207,7 @@ html {
 #container #display-pane #item-thumbnail {
   border: 4px solid #868686;
   height: 118px;
-  margin-bottom: 16px;
+  margin: 12px 0 24px;
   width: 118px;
   position: relative;
 }
@@ -202,25 +220,6 @@ html {
   position: absolute;
   top: 5%;
   width: 90%;
-}
-#container #display-pane .title {
-  margin-bottom: 4px;
-  position: relative;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-#container #display-pane .title:not(:first-child) {
-  margin-top: 12px;
-}
-#container #display-pane .title::after {
-  background-color: #FFFFFF;
-  bottom: 0;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3333333333);
-  content: "";
-  height: 2px;
-  left: -2px;
-  position: absolute;
-  width: calc(100% + 4px);
 }
 #container #display-pane table {
   margin-top: 6px;
@@ -239,9 +238,8 @@ html {
 }
 #container #display-pane #item-synergies .content {
   padding: 6px;
-  margin-top: 6px;
 }
-#container #display-pane #item-synergies #synergy-list {
+#container #display-pane #item-synergies ul {
   -moz-column-gap: 6px;
        column-gap: 6px;
   display: grid;
@@ -249,16 +247,19 @@ html {
   justify-content: start;
   row-gap: 6px;
 }
-#container #display-pane #item-synergies #synergy-list .item {
+#container #display-pane #item-synergies ul .item {
   border: 1px solid #868686;
   height: 47px;
   width: 47px;
 }
-#container #display-pane #item-synergies #synergy-list .item img {
+#container #display-pane #item-synergies ul .item img {
   height: 90%;
   left: 5%;
   position: relative;
   top: 5%;
+}
+#container #display-pane #item-synergies ul:not(:last-of-type) {
+  margin-bottom: 12px;
 }
 #container #select-pane {
   height: -moz-min-content;
