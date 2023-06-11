@@ -5,7 +5,8 @@
         "type": "Item",
         "id": "soldiers-syringe",
         "description": [
-            "Gain <span yellow>+15%</span> attack speed <span gray>(+15% per stack)</span>."
+            "Gain <span yellow>+15%</span> attack speed <span gray>(+15% per stack)</span>.",
+            "Pairs well with attack speed, proc chance, and increased damage items."
         ],
         "tags": [
             "Attack Speed"
@@ -14,7 +15,7 @@
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Proc Chance",
+                "Chance to Proc",
                 "Damage",
                 "Per Hit"
             ],
@@ -23,9 +24,10 @@
                 "Shuriken",
                 "N'Kuahana's Opinion",
                 "Unstable Tesla Coil",
+                "57 Leaf Clover",
                 "Missiles",
-                "On Kill",
-                "On Hit",
+                "On Kill Effects",
+                "Damage Taken",
                 "Mobility",
                 "Bands",
                 "Preon Accumulator",
@@ -43,16 +45,16 @@
         "type": "Item",
         "id": "tougher-times",
         "description": [
-            "Gain a <span green>15%</span> chance <span gray>(+15% per stack)</span> to block damage."
+            "Gain a <span green>15%</span> chance <span gray>(+15% per stack)</span> to block damage.",
+            "Pairs well with barrier and damage reduction items."
         ],
         "tags": [
-            "Defense"
+            "Damage Prevention"
         ],
         "synergies": {
             "include": [
                 "Barrier",
-                "Defense",
-                "Armor"
+                "Damage Reduction"
             ],
             "exclude": [
                 "Void Items"
@@ -65,16 +67,18 @@
         "type": "Item",
         "id": "monster-tooth",
         "description": [
-            "Enemies drop healing orbs that heal <span green>8hp</span> + <span green>2%</span> of max health <span gray>(+2% per stack)</span>."
+            "Enemies drop healing orbs that heal <span green>8hp</span> + <span green>2%</span> of max health <span gray>(+2% per stack)</span>.",
+            "Pairs well with on kill and amplified healing items."
         ],
         "tags": [
             "Healing",
-            "On Kill"
+            "On Kill Effects"
         ],
         "synergies": {
             "include": [
+                "On Kill Effects",
                 "Amplified Healing",
-                "On Kill"
+                "Forgive Me Please"
             ],
             "exclude": []
         }
@@ -85,7 +89,8 @@
         "type": "Item",
         "id": "lens-makers-glasses",
         "description": [
-            "Gain <span yellow>+10%</span> chance <span gray>(+10% per stack)</span> to critically strike."
+            "Gain <span yellow>+10%</span> chance <span gray>(+10% per stack)</span> to critically strike.",
+            "Pairs well with attack speed, increased damage, and proc chance items."
         ],
         "tags": [
             "Critical Strike Chance"
@@ -96,7 +101,9 @@
                 "Critical Strike Chance",
                 "Damage"
             ],
-            "exclude": []
+            "exclude": [
+                "Ocular HUD"
+            ]
         }
     },
     {
@@ -105,7 +112,8 @@
         "type": "Item",
         "id": "pauls-goat-hoof",
         "description": [
-            "Gain <span blue>+14%</span> movement speed <span gray>(+14% per stack)</span>."
+            "Gain <span blue>+14%</span> movement speed <span gray>(+14% per stack)</span>.",
+            "Pairs well with movement speed and mobility items."
         ],
         "tags": [
             "Movement Speed"
@@ -125,7 +133,8 @@
         "type": "Item",
         "id": "bustling-fungus",
         "description": [
-            "Standing still heals allies within <span yellow>3m</span> <span gray>(+1.5m per stack)</span> for <span green>4.5%</span> of max health <span gray>(+2.25% per stack)</span>."
+            "Standing still heals allies within <span yellow>3m</span> <span gray>(+1.5m per stack)</span> for <span green>4.5%</span> of max health <span gray>(+2.25% per stack)</span>.",
+            "Pairs well with amplified healing items."
         ],
         "tags": [
             "Healing"
@@ -143,13 +152,15 @@
         "type": "Item",
         "id": "crowbar",
         "description": [
-            "Enemies above <span yellow>90%</span> health take <span yellow>75%</span> more damage <span gray>(+75% per stack)</span>."
+            "Enemies above <span yellow>90%</span> health take <span yellow>75%</span> more damage <span gray>(+75% per stack)</span>.",
+            "Pairs well with proc chance and high damage items."
         ],
         "tags": [
             "Damage"
         ],
         "synergies": {
             "include": [
+                "Critical Strike Chance",
                 "Damage"
             ],
             "exclude": []
@@ -161,18 +172,18 @@
         "type": "Item",
         "id": "tri-tip-dagger",
         "description": [
-            "Gain a <span yellow>10%</span> chance <span gray>(+10% per stack)</span> to bleed enemies for <span yellow>240%</span> base damage."
+            "Gain a <span yellow>10%</span> chance <span gray>(+10% per stack)</span> to bleed enemies for <span yellow>240%</span> base damage.",
+            "Pairs well with attack speed, proc chance, and debuff infliction items."
         ],
         "tags": [
-            "Proc Chance",
-            "Effects"
+            "Chance to Proc",
+            "Debuff Inflictions"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Can Proc",
-                "Effects",
-                "Shatterspleen"
+                "Can Proc Items",
+                "Debuff Inflictions"
             ],
             "exclude": []
         }
@@ -183,7 +194,8 @@
         "type": "Item",
         "id": "warbanner",
         "description": [
-            "Drop banners when leveling up and starting teleporters, grants <span yellow>+30%</span> attack and <span blue>+30%</span> movement speed to allies within <span yellow>16m</span> <span gray>(+8m per stack)</span>."
+            "Drop banners when leveling up and starting teleporters, grants <span yellow>+30%</span> attack and <span blue>+30%</span> movement speed to allies within <span yellow>16m</span> <span gray>(+8m per stack)</span>.",
+            "Pairs well with attack speed and movement speed items."
         ],
         "tags": [
             "Attack Speed",
@@ -203,7 +215,8 @@
         "type": "Item",
         "id": "cautious-slug",
         "description": [
-            "Heal <span green>3hp</span> <span gray>(+3hp per stack)</span> per second while outside of danger."
+            "Heal <span green>3hp</span> <span gray>(+3hp per stack)</span> per second while outside of danger.",
+            "Pairs well with amplified healing items."
         ],
         "tags": [
             "Healing"
@@ -221,7 +234,8 @@
         "type": "Item",
         "id": "personal-shield-generator",
         "description": [
-            "Gain a shield equal to <span green>8%</span> of max health <span gray>(+8% per stack)</span>. All shield recharges in <span blue>2s</span> after <span blue>9s</span> outside of danger."
+            "Gain a shield equal to <span green>8%</span> of max health <span gray>(+8% per stack)</span>. All shield recharges in <span blue>2s</span> after <span blue>9s</span> outside of danger.",
+            "Pairs well with shield and increased health items."
         ],
         "tags": [
             "Shield"
@@ -242,16 +256,17 @@
         "type": "Item",
         "id": "medkit",
         "description": [
-            "Heal <span green>20hp</span> + <span green>5%</span> of max health <span gray>(+5% per stack)</span> <span blue>2s</span> after taking damage."
+            "Heal <span green>20hp</span> + <span green>5%</span> of max health <span gray>(+5% per stack)</span> <span blue>2s</span> after taking damage.",
+            "Pairs well with items that activate after taking damage and amplified healing items."
         ],
         "tags": [
             "Healing",
-            "On Hit"
+            "Damage Taken"
         ],
         "synergies": {
             "include": [
-                "Amplified Healing",
-                "On Hit"
+                "Damage Taken",
+                "Amplified Healing"
             ],
             "exclude": []
         }
@@ -262,15 +277,20 @@
         "type": "Item",
         "id": "gasoline",
         "description": [
-            "Killing an enemy ignites nearby enemies within <span yellow>12m</span> <span gray>(+4m per stack)</span> for <span blue>3s</span>, dealing <span yellow>150%</span> base damage. Burning enemies take <span yellow>150%</span> base damage <span gray>(+75% per stack)</span> per tick."
+            "Killing an enemy ignites nearby enemies within <span yellow>12m</span> <span gray>(+4m per stack)</span> for <span blue>3s</span>, dealing <span yellow>150%</span> base damage. Burning enemies take <span yellow>150%</span> base damage <span gray>(+75% per stack)</span> per tick.",
+            "Pairs well with on kill and debuff infliction items."
         ],
         "tags": [
-            "On Kill",
-            "Effects",
+            "On Kill Effects",
+            "Debuff Inflictions",
             "Fire Damage"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "On Kill Effects",
+                "Debuff Inflictions",
+                "Fire Damage"
+            ],
             "exclude": []
         }
     },
@@ -280,13 +300,17 @@
         "type": "Item",
         "id": "stun-grenade",
         "description": [
-            "Gain a <span yellow>5%</span> chance <span gray>(+5% per stack)</span> to stun enemies on hit for <span blue>2s</span>."
+            "Gain a <span yellow>5%</span> chance <span gray>(+5% per stack)</span> to stun enemies on hit for <span blue>2s</span>.",
+            "Pairs well with attack speed and proc chance items."
         ],
         "tags": [
-            "Proc Chance"
+            "Chance to Proc"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "Attack Speed",
+                "Can Proc Items"
+            ],
             "exclude": []
         }
     },
@@ -296,19 +320,43 @@
         "type": "Item",
         "id": "bundle-of-fireworks",
         "description": [
-            "Activating an interactable launches <span yellow>8</span> fireworks <span gray>(+4 per stack)</span> that deal <span yellow>300%</span> base damage."
+            "Activating an interactable launches <span yellow>8</span> fireworks <span gray>(+4 per stack)</span> that deal <span yellow>300%</span> base damage.",
+            "Pairs well with increased damage, chance to proc, and items that activate on interaction."
         ],
         "procCoefficient": {
             "On Hit": "0.2"
         },
         "tags": [
             "Damage",
-            "On Interact",
+            "On Interaction Effects",
             "Missiles"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Critical Strike Chance",
+                "Damage",
+                "Chance to Proc",
+                "Missiles",
+                "On Interaction Effects",
+                "Remote Caffeinator"
+            ],
+            "exclude": [
+                "Shuriken",
+                "N'Kuahana's Opinion",
+                "Unstable Tesla Coil",
+                "Genesis Loop",
+                "Disposable Missile Launcher",
+                "Preon Accumulator",
+                "Royal Capacitor",
+                "Molotov (6-Pack)",
+                "The Crowdfunder",
+                "Volcanic Egg",
+                "Sawmerang",
+                "On Kill Effects",
+                "Damage Taken",
+                "Mobility",
+                "Skill"
+            ]
         }
     },
     {
@@ -317,13 +365,18 @@
         "type": "Item",
         "id": "energy-drink",
         "description": [
-            "Gain <span blue>+25%</span> movement speed <span gray>(+25% per stack)</span> while sprinting."
+            "Gain <span blue>+25%</span> movement speed <span gray>(+25% per stack)</span> while sprinting.",
+            "Pairs well with movement speed and mobility items."
         ],
         "tags": [
             "Movement Speed"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "Movement Speed",
+                "Mobility",
+                "Little Disciple"
+            ],
             "exclude": []
         }
     },
@@ -333,14 +386,21 @@
         "type": "Item",
         "id": "backup-magazine",
         "description": [
-            "Adds <span yellow>+1</span> charge <span gray>(+1 per stack)</span> to your Secondary skill."
+            "Adds <span yellow>+1</span> charge <span gray>(+1 per stack)</span> to your Secondary skill.",
+            "Pairs well with cooldown reduction items."
         ],
         "tags": [
             "Secondary Skill"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Skill Cooldown Reduction",
+                "Hooks of Heresy"
+            ],
+            "exclude": [
+                "Special Cooldown Reduction",
+                "Equipment Cooldown Reduction"
+            ]
         }
     },
     {
@@ -349,15 +409,23 @@
         "type": "Item",
         "id": "sticky-bomb",
         "description": [
-            "Gain a <span yellow>5%</span> chance <span gray>(+5% per stack)</span> to attach a bomb to enemies that detonates for <span yellow>180%</span> total damage."
+            "Gain a <span yellow>5%</span> chance <span gray>(+5% per stack)</span> to attach a bomb to enemies that detonates for <span yellow>180%</span> total damage.",
+            "Pairs well with attack speed, increased damage, and proc chance items."
         ],
         "tags": [
-            "Proc Chance",
+            "Chance to Proc",
             "Damage"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Attack Speed",
+                "Critical Strike Chance",
+                "Damage",
+                "Can Proc Items"
+            ],
+            "exclude": [
+                "Silence Between Two Strikes"
+            ]
         }
     },
     {
@@ -367,13 +435,15 @@
         "id": "rusted-key",
         "description": [
             "A hidden lockbox will appear somewhere on the next stage with an <span yellow>80%</span> chance to drop an Uncommon item and a <span yellow>20%</span> chance to drop a Legendary item. Consumed on use.",
-            "No currently known item synergies."
+            "Pairs well with items that affect stage generation."
         ],
         "tags": [
-            "None"
+            "Stage Generation"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "Stage Generation"
+            ],
             "exclude": []
         }
     },
@@ -383,13 +453,18 @@
         "type": "Item",
         "id": "armor-piercing-rounds",
         "description": [
-            "Deal <span yellow>+20%</span> damage <span gray>(+20% per stack)</span> to stage bosses."
+            "Deal <span yellow>+20%</span> damage <span gray>(+20% per stack)</span> to stage bosses.",
+            "Pairs well with attack speed and increased damage items."
         ],
         "tags": [
             "Damage"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "Attack Speed",
+                "Critical Strike Chance",
+                "Damage"
+            ],
             "exclude": []
         }
     },
@@ -399,14 +474,20 @@
         "type": "Item",
         "id": "topaz-brooch",
         "description": [
-            "Gain <span green>+15</span> temporary barrier <span gray>(+15 per stack)</span> per kill."
+            "Gain <span green>+15</span> temporary barrier <span gray>(+15 per stack)</span> per kill.",
+            "Pairs well with items that activate after taking damage, on kill effects, and damage reduction items."
         ],
         "tags": [
             "Barrier",
-            "On Kill"
+            "On Kill Effects"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "Damage Taken",
+                "On Kill Effects",
+                "Damage Reduction",
+                "Damage Prevention"
+            ],
             "exclude": []
         }
     },
@@ -416,13 +497,18 @@
         "type": "Item",
         "id": "focus-crystal",
         "description": [
-            "Deal <span yellow>+20%</span> damage <span gray>(+20% per stack)</span> to enemies within <span yellow>13m</span>."
+            "Deal <span yellow>+20%</span> damage <span gray>(+20% per stack)</span> to enemies within <span yellow>13m</span>.",
+            "Pairs well with attack speed and increased damage items."
         ],
         "tags": [
             "Damage"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "Attack Speed",
+                "Critical Strike Chance",
+                "Damage"
+            ],
             "exclude": []
         }
     },
@@ -432,13 +518,17 @@
         "type": "Item",
         "id": "bison-steak",
         "description": [
-            "Gain <span green>+25</span> max health <span gray>(+25hp per stack)</span>."
+            "Gain <span green>+25</span> max health <span gray>(+25hp per stack)</span>.",
+            "Pairs well with shield and increased health items."
         ],
         "tags": [
             "Increased Health"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "Shield",
+                "Increased Health"
+            ],
             "exclude": []
         }
     },
@@ -448,13 +538,18 @@
         "type": "Item",
         "id": "repulsion-armor-plate",
         "description": [
-            "Reduce damage taken by <span green>5</span> <span gray>(+5 per stack)</span>."
+            "Reduce damage taken by <span green>5</span> <span gray>(+5 per stack)</span>.",
+            "Pairs well with items that activate after taking damage and damage reduction items."
         ],
         "tags": [
-            "Defense"
+            "Damage Reduction"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "Damage Taken",
+                "Barrier",
+                "Damage Reduction"
+            ],
             "exclude": []
         }
     },
@@ -464,14 +559,21 @@
         "type": "Item",
         "id": "mocha",
         "description": [
-            "Gain <span yellow>+7.5%</span> attack speed <span gray>(+7.5% per stack)</span> and <span blue>+7%</span> movement speed <span gray>(+7% per stack)</span>."
+            "Gain <span yellow>+7.5%</span> attack speed <span gray>(+7.5% per stack)</span> and <span blue>+7%</span> movement speed <span gray>(+7% per stack)</span>.",
+            "Pairs well with attack speed, movement speed, and increased damage items."
         ],
         "tags": [
             "Attack Speed",
             "Movement Speed"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "Attack Speed",
+                "Critical Strike Chance",
+                "Movement Speed",
+                "Damage",
+                "Mobility"
+            ],
             "exclude": []
         }
     },
@@ -481,14 +583,20 @@
         "type": "Item",
         "id": "power-elixir",
         "description": [
-            "Heal for <span green>75%</span> of max health when below <span red>25%</span> of max health, protects Delicate Watch from breaking. Consumed on use."
+            "Heal for <span green>75%</span> of max health when below <span red>25%</span> of max health, protects Delicate Watch from breaking. Consumed on use.",
+            "Pairs well with items that activate after taking damage and amplified healing."
         ],
         "tags": [
             "Healing",
             "Low Health"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "Damage Taken",
+                "Amplified Healing",
+                "Delicate Watch",
+                "At Low Health"
+            ],
             "exclude": []
         }
     },
@@ -498,13 +606,19 @@
         "type": "Item",
         "id": "delicate-watch",
         "description": [
-            "Deal <span yellow>+20%</span> damage <span gray>(+20% per stack)</span>, consumed when below <span red>25%</span> of max health."
+            "Deal <span yellow>+20%</span> damage <span gray>(+20% per stack)</span>, consumed when below <span red>25%</span> of max health.",
+            "Pairs well with attack speed and increased damage items."
         ],
         "tags": [
             "Damage"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "Attack Speed",
+                "Critical Strike Chance",
+                "Damage",
+                "Power Elixir"
+            ],
             "exclude": []
         }
     },
@@ -514,13 +628,18 @@
         "type": "Item",
         "id": "oddly-shaped-opal",
         "description": [
-            "Gain <span green>+100</span> armor <span gray>(+100 per stack)</span> outside of danger."
+            "Gain <span green>+100</span> armor <span gray>(+100 per stack)</span> outside of danger.",
+            "Pairs well with items that activate after taking damage and damage reduction items."
         ],
         "tags": [
-            "Armor"
+            "Damage Reduction"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "Damage Taken",
+                "Barrier",
+                "Damage Reduction"
+            ],
             "exclude": []
         }
     },
@@ -530,14 +649,21 @@
         "type": "Item",
         "id": "roll-of-pennies",
         "description": [
-            "Grants <span yellow>3</span> gold <span gray>(+3 per stack)</span> after taking damage from an enemy. Scales with time."
+            "Grants <span yellow>3</span> gold <span gray>(+3 per stack)</span> after taking damage from an enemy. Scales with time.",
+            "Pairs well with items that activate after taking damage and damage reduction items."
         ],
         "tags": [
             "Money",
-            "On Hit"
+            "Damage Taken"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "Damage Taken",
+                "Barrier",
+                "Damage Reduction",
+                "Money",
+                "The Crowdfunder"
+            ],
             "exclude": []
         }
     },
@@ -553,9 +679,10 @@
             "On Hit": "1.0"
         },
         "tags": [
-            "Proc Chance",
-            "Can Proc",
-            "Damage"
+            "Chance to Proc",
+            "Can Proc Items",
+            "Damage",
+            "Missiles"
         ],
         "synergies": {
             "include": [],
@@ -574,7 +701,7 @@
             "On Hit": "1.0"
         },
         "tags": [
-            "On Kill",
+            "On Kill Effects",
             "Damage"
         ],
         "synergies": {
@@ -610,8 +737,8 @@
             "On Hit": "0.2"
         },
         "tags": [
-            "Proc Chance",
-            "Can Proc",
+            "Chance to Proc",
+            "Can Proc Items",
             "Damage"
         ],
         "synergies": {
@@ -710,7 +837,10 @@
         "description": [
             "Adds <span yellow>+1</span> equipment charge <span gray>(+1 per stack)</span>, reduces equipment cooldown by <span blue>15%</span> <span gray>(+15% per stack)</span>."
         ],
-        "tags": [],
+        "tags": [
+            "Skill Cooldown Reduction",
+            "Equipment Cooldown Reduction"
+        ],
         "synergies": {
             "include": [],
             "exclude": []
@@ -726,7 +856,7 @@
         ],
         "tags": [
             "Increased Health",
-            "On Kill"
+            "On Kill Effects"
         ],
         "synergies": {
             "include": [],
@@ -742,8 +872,8 @@
             "Enemies have an <span yellow>18%</span> chance <span gray>(+10% per stack)</span> to drop ammo packs, ammo packs reset skill cooldowns."
         ],
         "tags": [
-            "Cooldown Reduction",
-            "On Kill"
+            "Skill Cooldown Reduction",
+            "On Kill Effects"
         ],
         "synergies": {
             "include": [],
@@ -759,7 +889,7 @@
             "Killing <span yellow>4</span> enemies within <span blue>1s</span> boosts movement speed by <span blue>50%</span> and attack speed by <span yellow>100%</span> for <span blue>6s</span> <span gray>(+4s per stack)</span>."
         ],
         "tags": [
-            "On Kill",
+            "On Kill Effects",
             "Movement Speed",
             "Attack Speed"
         ],
@@ -777,7 +907,7 @@
             "Gain <span green>+30</span> armor <span gray>(+30 per stack)</span> while sprinting."
         ],
         "tags": [
-            "Armor"
+            "Damage Reduction"
         ],
         "synergies": {
             "include": [],
@@ -828,7 +958,7 @@
         ],
         "tags": [
             "Per Hit",
-            "Effects"
+            "Debuff Inflictions"
         ],
         "synergies": {
             "include": [],
@@ -912,8 +1042,8 @@
             "On Hit": "0.5"
         },
         "tags": [
-            "Can Proc",
-            "On Hit",
+            "Can Proc Items",
+            "Damage Taken",
             "Damage"
         ],
         "synergies": {
@@ -930,7 +1060,7 @@
             "Enemies have a <span yellow>4%</span> <span gray>(+4% per stack)</span> to drop treasure worth <span yellow>25</span> gold. Scales with time."
         ],
         "tags": [
-            "On Kill",
+            "On Kill Effects",
             "Money"
         ],
         "synergies": {
@@ -947,7 +1077,7 @@
             "Activating an interactable summons a Squid Turret which shoots at <span yellow>100%</span> attack speed <span gray>(+100% per stack)</span>. Lasts <span blue>30s</span>."
         ],
         "tags": [
-            "On Interact",
+            "On Interaction Effects",
             "Ally Summon"
         ],
         "synergies": {
@@ -964,7 +1094,7 @@
             "Enemies inflicted with at least <span yellow>4</span> debuffs take <span yellow>50%</span> more damage for <span blue>7s</span> <span gray>(+7s per stack)</span>."
         ],
         "tags": [
-            "Effects"
+            "Debuff Inflictions"
         ],
         "synergies": {
             "include": [],
@@ -981,7 +1111,7 @@
         ],
         "tags": [
             "Movement Speed",
-            "On Kill"
+            "On Kill Effects"
         ],
         "synergies": {
             "include": [],
@@ -998,7 +1128,7 @@
         ],
         "tags": [
             "Fire Damage",
-            "Effects"
+            "Debuff Inflictions"
         ],
         "synergies": {
             "include": [],
@@ -1017,7 +1147,7 @@
             "On Hit": "1.0"
         },
         "tags": [
-            "Can Proc",
+            "Can Proc Items",
             "Damage"
         ],
         "synergies": {
@@ -1035,7 +1165,7 @@
             "No currently known item synergies."
         ],
         "tags": [
-            "None"
+            "Stage Generation"
         ],
         "synergies": {
             "include": [],
@@ -1071,8 +1201,8 @@
             "On Hit": "1.0"
         },
         "tags": [
-            "On Kill",
-            "Can Proc",
+            "On Kill Effects",
+            "Can Proc Items",
             "Damage"
         ],
         "synergies": {
@@ -1092,8 +1222,8 @@
             "On Hit": "0.2"
         },
         "tags": [
-            "Effects",
-            "On Kill",
+            "Debuff Inflictions",
+            "On Kill Effects",
             "Damage"
         ],
         "synergies": {
@@ -1111,7 +1241,7 @@
         ],
         "tags": [
             "Ally Summon",
-            "On Kill"
+            "On Kill Effects"
         ],
         "synergies": {
             "include": [],
@@ -1166,7 +1296,7 @@
             "On Hit": "0.3"
         },
         "tags": [
-            "Can Proc",
+            "Can Proc Items",
             "Damage"
         ],
         "synergies": {
@@ -1183,7 +1313,8 @@
             "All random effects are rolled <span yellow>+1</span> time <span gray>(+1 per stack)</span> for a favorable outcome."
         ],
         "tags": [
-            "Proc Chance"
+            "Chance to Proc",
+            "Can Proc Items"
         ],
         "synergies": {
             "include": [],
@@ -1202,7 +1333,7 @@
             "On Hit": ".33"
         },
         "tags": [
-            "Proc Chance",
+            "Chance to Proc",
             "Damage"
         ],
         "synergies": {
@@ -1219,7 +1350,7 @@
             "All skill cooldowns reduced by <span blue>25%</span> <span gray>(+25% per stack)</span>."
         ],
         "tags": [
-            "Skill Cooldown"
+            "Skill Cooldown Reduction"
         ],
         "synergies": {
             "include": [],
@@ -1235,7 +1366,8 @@
             "Killing an enemy reduces equipment cooldowns by <span blue>4s</span> <span gray>(+2s per stack)</span>."
         ],
         "tags": [
-            "On Kill"
+            "On Kill Effects",
+            "Equipment Cooldown Reduction"
         ],
         "synergies": {
             "include": [],
@@ -1281,7 +1413,7 @@
             "Killing an elite enemy grants the player that enemy's elite ability for <span blue>8s</span> <span gray>(+5s per stack)</span>."
         ],
         "tags": [
-            "On Kill",
+            "On Kill Effects",
             "Elite Kill"
         ],
         "synergies": {
@@ -1298,7 +1430,7 @@
             "Killing an elite enemy reduces all skill cooldowns to <span blue>0.5s</span> for <span blue>4s</span> <span gray>(+4s per stack)</span>."
         ],
         "tags": [
-            "On Kill",
+            "On Kill Effects",
             "Elite Kill"
         ],
         "synergies": {
@@ -1348,7 +1480,7 @@
         ],
         "tags": [
             "Per Hit",
-            "Effects"
+            "Debuff Inflictions"
         ],
         "synergies": {
             "include": [],
@@ -1368,8 +1500,8 @@
             "Explosion": "1.0"
         },
         "tags": [
-            "On Kill",
-            "Can Proc"
+            "On Kill Effects",
+            "Can Proc Items"
         ],
         "synergies": {
             "include": [],
@@ -1386,7 +1518,7 @@
         ],
         "tags": [
             "Healing",
-            "On Kill"
+            "On Kill Effects"
         ],
         "synergies": {
             "include": [],
@@ -1415,7 +1547,9 @@
         "description": [
             "Missile items and equipment fire <span yellow>2</span> additional missiles per round, missiles deal <span yellow>+50%</span> more damage per additional stack."
         ],
-        "tags": [],
+        "tags": [
+            "Missiles"
+        ],
         "synergies": {
             "include": [],
             "exclude": []
@@ -1447,7 +1581,7 @@
         ],
         "tags": [
             "Per Hit",
-            "Effects"
+            "Debuff Inflictions"
         ],
         "synergies": {
             "include": [],
@@ -1546,7 +1680,7 @@
             "On Hit": "1.0"
         },
         "tags": [
-            "Can Proc"
+            "Can Proc Items"
         ],
         "synergies": {
             "include": [],
@@ -1584,7 +1718,7 @@
             "Damage",
             "Attack Speed",
             "Critical Strike Chance",
-            "Armor"
+            "Damage Reduction"
         ],
         "synergies": {
             "include": [],
@@ -1600,7 +1734,8 @@
             "Explode when below <span red>25%</span> max health dealing <span yellow>6,000%</span> base damage. <span blue>30</span> / <span blue>2s</span> <span gray>(+1 per stack)</span> cooldown."
         ],
         "tags": [
-            "Damage"
+            "Damage",
+            "At Low Health"
         ],
         "synergies": {
             "include": [],
@@ -1619,9 +1754,9 @@
             "On Hit": "0.7"
         },
         "tags": [
-            "Effects",
-            "Can Proc",
-            "Proc Chance",
+            "Debuff Inflictions",
+            "Can Proc Items",
+            "Chance to Proc",
             "Damage"
         ],
         "synergies": {
@@ -1639,7 +1774,7 @@
         ],
         "tags": [
             "Critical Strike Chance",
-            "Effects"
+            "Debuff Inflictions"
         ],
         "synergies": {
             "include": [],
@@ -1655,7 +1790,7 @@
             "Deal <span yellow>100%</span> damage to <span yellow>1</span> nearby enemy <span gray>(+1 per stack)</span> while in combat and inflict them with tar, heal <span green>100%</span> of the damage dealt."
         ],
         "tags": [
-            "Effects",
+            "Debuff Inflictions",
             "Healing"
         ],
         "synergies": {
@@ -1675,8 +1810,8 @@
             "On Hit": "1.0"
         },
         "tags": [
-            "Proc Chance",
-            "Can Proc",
+            "Chance to Proc",
+            "Can Proc Items",
             "Damage"
         ],
         "synergies": {
@@ -1709,7 +1844,7 @@
             "Heal <span green>15hp</span> <span gray>(+15 per stack)</span> after taking damage."
         ],
         "tags": [
-            "On Hit",
+            "Damage Taken",
             "Healing"
         ],
         "synergies": {
@@ -1727,7 +1862,8 @@
         ],
         "tags": [
             "Ally Summon",
-            "Elite Kill"
+            "Elite Kill",
+            "On Kill Effects"
         ],
         "synergies": {
             "include": [],
@@ -1775,7 +1911,7 @@
             "Attacks have a <span yellow>0.05%</span> chance <span gray>(+0.05% per stack)</span> to instantly kill non-boss enemies. <span purple>Corrupts all Lens Maker's Glasses</span>."
         ],
         "tags": [
-            "Proc Chance",
+            "Chance to Proc",
             "Void Items"
         ],
         "synergies": {
@@ -1792,8 +1928,9 @@
             "Adds <span yellow>1</span> charge <span gray>(+1 per stack)</span> to your Special skill, reduces Special skill cooldown by <span blue>33%</span>. <span purple>Corrupts all Fuel Cells</span>."
         ],
         "tags": [
-            "Skill Cooldown",
-            "Void Items"
+            "Void Items",
+            "Skill Cooldown Reduction",
+            "Special Cooldown Reduction"
         ],
         "synergies": {
             "include": [],
@@ -1809,8 +1946,8 @@
             "Gain <span yellow>+10%</span> chance <span gray>(+10% per stack)</span> to inflict an enemy with Collapse, dealing <span yellow400%</span> damage. <span purple>Corrupts all Tri-Tip Daggers</span>."
         ],
         "tags": [
-            "Proc Chance",
-            "Effects",
+            "Chance to Proc",
+            "Debuff Inflictions",
             "Void Items"
         ],
         "synergies": {
@@ -1848,9 +1985,10 @@
         "tags": [
             "Shield",
             "Per Hit",
-            "Can Proc",
+            "Can Proc Items",
             "Void Items",
-            "Damage"
+            "Damage",
+            "Missiles"
         ],
         "synergies": {
             "include": [],
@@ -1885,8 +2023,8 @@
             "On Hit": "0.2"
         },
         "tags": [
-            "Proc Chance",
-            "Can Proc",
+            "Chance to Proc",
+            "Can Proc Items",
             "Void Items",
             "Damage"
         ],
@@ -1904,7 +2042,7 @@
             "Blocks the next source of incoming damage. <span blue>15s</span> cooldown <span gray>(-10% per stack)</span>. <span purple>Corrupts all Tougher Times</span>."
         ],
         "tags": [
-            "Defense",
+            "Damage Prevention",
             "Void Items"
         ],
         "synergies": {
@@ -1942,9 +2080,9 @@
             "Gain a <span yellow>5%</span> chance <span gray> (+5% per stack)</span> to root enemies on hit for <span blue>1s</span>. <span purple>Corrupts all Chronobaubles</span>."
         ],
         "tags": [
-            "Proc Chance",
+            "Chance to Proc",
             "Void Items",
-            "Effects"
+            "Debuff Inflictions"
         ],
         "synergies": {
             "include": [],
@@ -2013,8 +2151,9 @@
             "Gain a <span yellow>30%</span> change to gain <span yellow>2</span> gold <span gray>(+2 per stack)</span> on hit. Scales with time. Lose gold when taking damage, gold loss equals <span red>100%</span> of the health lost <span gray>(+100% per stack)</span>."
         ],
         "tags": [
-            "Proc Chance",
-            "Lunar"
+            "Chance to Proc",
+            "Lunar",
+            "Money"
         ],
         "synergies": {
             "include": [],
@@ -2083,7 +2222,9 @@
         "tags": [
             "Mobility",
             "Healing",
-            "Lunar"
+            "Lunar",
+            "Skill",
+            "Utility Skill"
         ],
         "synergies": {
             "include": [],
@@ -2104,8 +2245,10 @@
         },
         "tags": [
             "Damage",
-            "Can Proc",
-            "Lunar"
+            "Can Proc Items",
+            "Lunar",
+            "Skill",
+            "Primary Skill"
         ],
         "synergies": {
             "include": [],
@@ -2154,7 +2297,7 @@
             "Using a shrine summons enemies <span gray>(stronger per stack)</span> nearby. Scales with time."
         ],
         "tags": [
-            "On Interact",
+            "On Interaction Effects",
             "Lunar"
         ],
         "synergies": {
@@ -2188,7 +2331,7 @@
             "Reduce all skill cooldowns by <span blue>2s</span>, negative effects are rerolled <span yellow>+1</span> time <span gray>(+1 per stack)</span> for an unfavorable outcome."
         ],
         "tags": [
-            "Cooldown Reduction",
+            "Skill Cooldown Reduction",
             "Lunar"
         ],
         "synergies": {
@@ -2210,7 +2353,9 @@
         },
         "tags": [
             "Lunar",
-            "Damage"
+            "Damage",
+            "Skill",
+            "Secondary Skill"
         ],
         "synergies": {
             "include": [],
@@ -2246,7 +2391,8 @@
             "Gain a <span yellow>5%</span> chance <span gray>(+5% per stack)</span> for any item on the next stage to be a lunar item instead of its previous rarity."
         ],
         "tags": [
-            "Lunar"
+            "Lunar",
+            "Stage Generation"
         ],
         "synergies": {
             "include": [],
@@ -2294,7 +2440,9 @@
             "Replaces Special skill with Ruin. Dealing damage adds a stack of ruin that lasts for <span blue>10s</span> <span gray>(+10s per stack)</span>, activate the skill to detonate enemies inflicted with ruin dealing <span yellow>300%</span> + <span yellow>120%</span> damage per stack of ruin. <span blue>8s</span> <span gray>(+8s per stack)</span> cooldown."
         ],
         "tags": [
-            "Lunar"
+            "Lunar",
+            "Skill",
+            "Special Skill"
         ],
         "synergies": {
             "include": [],
@@ -2349,7 +2497,7 @@
         "tags": [
             "Lunar",
             "Equipment",
-            "Effects"
+            "Debuff Inflictions"
         ],
         "synergies": {
             "include": [],
@@ -2367,7 +2515,7 @@
         "tags": [
             "Damage",
             "Attack Speed",
-            "Armor",
+            "Damage Reduction",
             "Increased Health",
             "Amplified Healing",
             "Movement Speed",
@@ -2393,7 +2541,7 @@
         "tags": [
             "Equipment",
             "Damage",
-            "Can Proc",
+            "Can Proc Items",
             "Missiles"
         ],
         "synergies": {
@@ -2497,7 +2645,7 @@
         "tags": [
             "Equipment",
             "Damage",
-            "Can Proc"
+            "Can Proc Items"
         ],
         "synergies": {
             "include": [],
@@ -2552,7 +2700,7 @@
         "tags": [
             "Equipment",
             "Damage",
-            "Can Proc"
+            "Can Proc Items"
         ],
         "synergies": {
             "include": [],
@@ -2575,8 +2723,8 @@
             "Equipment",
             "Damage",
             "Fire Damage",
-            "Can Proc",
-            "Effects"
+            "Can Proc Items",
+            "Debuff Inflictions"
         ],
         "synergies": {
             "include": [],
@@ -2613,7 +2761,7 @@
         "tags": [
             "Equipment",
             "Damage",
-            "Can Proc"
+            "Can Proc Items"
         ],
         "synergies": {
             "include": [],
@@ -2698,8 +2846,7 @@
         "tags": [
             "Equipment",
             "Damage",
-            "Fire Damage",
-            "Can Proc"
+            "Can Proc Items"
         ],
         "synergies": {
             "include": [],
@@ -2716,7 +2863,7 @@
         ],
         "tags": [
             "Equipment",
-            "Armor"
+            "Damage Reduction"
         ],
         "synergies": {
             "include": [],
@@ -2738,8 +2885,8 @@
         "tags": [
             "Equipment",
             "Damage",
-            "Can Proc",
-            "Effects"
+            "Can Proc Items",
+            "Debuff Inflictions"
         ],
         "synergies": {
             "include": [],
@@ -2805,8 +2952,7 @@
             "Throw a doll that triggers all on-kill effects every second for <span blue>8s</span>. <span blue>45s</span> cooldown."
         ],
         "tags": [
-            "Equipment",
-            "On Kill"
+            "Equipment"
         ],
         "synergies": {
             "include": [],
@@ -2843,7 +2989,7 @@
         "tags": [
             "Aspect",
             "Per Hit",
-            "Effects",
+            "Debuff Inflictions",
             "Fire Damage"
         ],
         "synergies": {
@@ -2897,7 +3043,7 @@
         "tags": [
             "Aspect",
             "Per Hit",
-            "Effects"
+            "Debuff Inflictions"
         ],
         "synergies": {
             "include": [],
@@ -2915,7 +3061,7 @@
         "tags": [
             "Aspect",
             "Per Hit",
-            "Effects"
+            "Debuff Inflictions"
         ],
         "synergies": {
             "include": [],
@@ -2933,7 +3079,7 @@
         "tags": [
             "Aspect",
             "Per Hit",
-            "Effects"
+            "Debuff Inflictions"
         ],
         "synergies": {
             "include": [],
@@ -2951,7 +3097,7 @@
         "tags": [
             "Aspect",
             "Per Hit",
-            "Effects"
+            "Debuff Inflictions"
         ],
         "synergies": {
             "include": [],
