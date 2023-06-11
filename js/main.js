@@ -1,4 +1,4 @@
-const appVersion = '1.1.2.7'
+const appVersion = '1.1.2.8'
 
 const itemDesc = document.querySelector('#item-description'),
     itemSelect = document.querySelector('#item-select'),
@@ -214,6 +214,13 @@ const handleButtonClick = (item, button) => {
         button.setAttribute('active', 'true')
         updateDisplay(item)
         updateSynergyList(item)
+
+        const displayPane = document.querySelector('#display-pane')
+
+        if (window.innerWidth <= 768) {
+            displayPane.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest', offsetTop: 12 });
+        }
+
     }
 }
 

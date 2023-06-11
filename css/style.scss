@@ -235,7 +235,7 @@ $colors: (
             line-height: 1.4em;
 
             &:not(.title, :last-child) {
-                // margin-bottom: 2px;
+                margin-bottom: 4px;
             }
         }
 
@@ -285,6 +285,8 @@ html {
     }
 
     #display-pane {
+        scroll-margin: 12px;
+
         #item-thumbnail {
             border: 4px solid map-get($colors, border_pane);
             height: 118px;
