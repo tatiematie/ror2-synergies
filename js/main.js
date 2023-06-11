@@ -1,11 +1,8 @@
 const appVersion = '1.1.2.5'
 
-const itemTitle = document.querySelector('#item-title'),
-    itemType = document.querySelector('#item-type'),
-    itemThumb = document.querySelector('#item-thumbnail img'),
-    itemDesc = document.querySelector('#item-description'),
+const itemDesc = document.querySelector('#item-description'),
     itemSelect = document.querySelector('#item-select'),
-    synergyList = document.querySelector('#synergy-list')
+    itemSynergies = document.querySelector('#item-synergies')
 
 const readJSON = async (filepath) => {
     const response = await fetch(filepath)
@@ -16,7 +13,6 @@ let itemData
 
 const createButton = (item) => {
     const { name, rarity, type, id, description } = item
-    const rarityLowerCase = rarity.toLowerCase()
     const src = `assets/img/items/${id}.png`
 
     const li = document.createElement('li'),
@@ -27,8 +23,7 @@ const createButton = (item) => {
 
     button.type = 'button'
     button.title = name
-    button.setAttribute('data-item-id', id)
-    button.setAttribute('rarity', rarityLowerCase)
+    button.setAttribute('rarity', rarity.toLowerCase())
 
     img.src = src
     img.alt = name
@@ -58,15 +53,38 @@ const loadButtons = async () => {
 }
 
 const updateDisplay = (item) => {
+    const displayPane = document.querySelector('#display-pane .heading')
     const { name, rarity, type, description, id, procCoefficient } = item
-    const rarityLowerCase = rarity.toLowerCase()
     const src = `assets/img/items/${id}.png`
 
+    displayPane.innerHTML = ''
+
+    const itemTitle = document.createElement('h2')
     itemTitle.innerHTML = name
+
+    const itemType = document.createElement('p')
     itemType.innerHTML = `${rarity} ${type}`
-    itemThumb.parentNode.parentNode.setAttribute('rarity', rarityLowerCase)
+
+    const itemThumb = document.createElement('img'),
+        thumbWrapper = document.createElement('div'),
+        itemThumbnail = document.createElement('div')
+
     itemThumb.src = src
     itemThumb.title = name
+    itemThumb.alt = name
+
+    thumbWrapper.classList.add('wrapper')
+    thumbWrapper.appendChild(itemThumb)
+
+    itemThumbnail.id = 'item-thumbnail'
+    itemThumbnail.classList.add('content', 'corners')
+    itemThumbnail.setAttribute('rarity', rarity.toLowerCase())
+    itemThumbnail.appendChild(thumbWrapper)
+
+    displayPane.appendChild(itemTitle)
+    displayPane.appendChild(itemType)
+
+    displayPane.appendChild(itemThumbnail)
 
     itemDesc.innerHTML = ''
 
@@ -117,68 +135,55 @@ const updateDisplay = (item) => {
 }
 
 const updateSynergyList = (item) => {
-    synergyList.innerHTML = ''
+    const { name } = item
+    const src = `assets/img/items/${item.id}.png`
 
-    itemData.forEach((dataItem) => {
-        const excludeTags = Array.isArray(item.synergies.exclude) ? item.synergies.exclude : []
-        const includeTags = Array.isArray(item.synergies.include) ? item.synergies.include : []
+    itemSynergies.innerHTML = ''
 
-        const hasNoneTag = includeTags.includes('none')
+    const itemSynergiesTitle = document.createElement('p')
+    itemSynergiesTitle.classList.add('title')
+    itemSynergiesTitle.innerHTML = 'Potential Synergies:'
+    itemSynergies.appendChild(itemSynergiesTitle)
 
-        const isIncluded =
-            (item.synergies &&
-                item.synergies.include &&
-                item.synergies.include.includes(dataItem.id)) ||
-            (Array.isArray(dataItem.tags) &&
-                (dataItem.tags.includes(item.id) ||
-                    dataItem.tags.some((tag) => includeTags.includes(tag)))) ||
-            dataItem.id === item.id
+    const includeTags = Array.isArray(item.synergies.include) ? item.synergies.include : []
+    const excludeTags = Array.isArray(item.synergies.exclude) ? item.synergies.exclude : []
 
-        const isExcluded =
-            excludeTags.includes(dataItem.id) ||
-            (Array.isArray(dataItem.tags) &&
-                dataItem.tags.some((tag) => excludeTags.includes(tag)))
+    includeTags.forEach((include) => {
+        const tagListTitle = document.createElement('p')
+        tagListTitle.innerHTML = include
+        itemSynergies.appendChild(tagListTitle)
 
-        const isSameItem = dataItem.id === item.id
-        const isEquipment = dataItem.rarity.toLowerCase() === 'equipment'
-        const isAspect = dataItem.type.toLowerCase() === 'aspect'
+        const tagList = document.createElement('ul')
+        tagList.classList.add('content')
+        itemSynergies.appendChild(tagList)
 
-        if (isIncluded && !isExcluded && !(isSameItem && (isEquipment || isAspect))) {
-            if (!(hasNoneTag && isSameItem)) {
-                const listItem = document.createElement('li')
-                listItem.className = 'item'
-                listItem.setAttribute('rarity', dataItem.rarity.toLowerCase())
+        itemData.forEach((dataItem) => {
+            const { name: dataItemName, rarity, id: dataItemID, tags } = dataItem
+            const isExcluded =
+                excludeTags.includes(dataItemName) ||
+                (Array.isArray(tags) && tags.some((tag) => excludeTags.includes(tag))) ||
+                dataItemID === item.id
+
+            const isIncluded =
+                (Array.isArray(tags) && tags.includes(include)) ||
+                dataItemName === include
+
+            if (isIncluded && !isExcluded && include !== 'None') {
+                const tagListItem = document.createElement('li')
+                tagListItem.classList.add('item')
+                tagListItem.setAttribute('rarity', rarity.toLowerCase())
 
                 const img = document.createElement('img')
-                img.src = `assets/img/items/${dataItem.id}.png`
-                img.alt = `${dataItem.name}`
-                img.title = `${dataItem.name}`
-                listItem.appendChild(img)
+                img.src = `assets/img/items/${dataItemID}.png`
+                img.alt = dataItemName
+                img.title = dataItemName
+                img.loading = 'lazy'
 
-                synergyList.appendChild(listItem)
+                tagListItem.appendChild(img)
+                tagList.appendChild(tagListItem)
             }
-        }
+        })
     })
-
-    const hasSynergies = synergyList.children.length > 0
-    const itemSynergies = document.querySelector('#item-synergies')
-
-    if (hasSynergies) {
-        itemSynergies.style.display = 'block'
-    } else {
-        itemSynergies.style.display = 'none'
-    }
-
-    const justifySynergies = () => {
-        if (synergyList.clientHeight === 47) {
-            synergyList.style.justifyContent = 'start'
-        } else {
-            synergyList.style.justifyContent = 'space-around'
-        }
-    }
-
-    justifySynergies()
-    window.addEventListener('resize', justifySynergies)
 }
 
 const handleButtonClick = (item, button) => {
@@ -200,7 +205,7 @@ const handleButtonClick = (item, button) => {
 const attachButtonEventListeners = () => {
     const buttons = itemSelect.querySelectorAll('button')
     buttons.forEach((button) => {
-        const item = itemData.find((dataItem) => dataItem.id === button.getAttribute('data-item-id'))
+        const item = itemData.find((dataItem) => dataItem.name === button.title)
         button.addEventListener('click', () => handleButtonClick(item, button))
     })
 }
@@ -213,7 +218,7 @@ const initializePage = async () => {
     versionTag.id = 'app-version'
     versionTag.innerHTML = `<span gray>v${appVersion}</span>`
 
-    document.querySelector('#app    ').appendChild(versionTag)
+    document.querySelector('#app').appendChild(versionTag)
 }
 
 initializePage()
