@@ -209,7 +209,7 @@ html {
   }
 }
 #container #display-pane {
-  scroll-margin: 12px;
+  scroll-margin: 10px;
 }
 #container #display-pane #item-thumbnail {
   border: 4px solid #868686;

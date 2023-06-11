@@ -1,4 +1,4 @@
-const appVersion = '1.1.2.9'
+const appVersion = '1.1.2.10'
 
 const itemDesc = document.querySelector('#item-description'),
     itemSelect = document.querySelector('#item-select'),
@@ -186,7 +186,7 @@ const updateSynergyList = (item) => {
     })
 
     const justifySynergies = () => {
-        const synergyLists = document.querySelectorAll('#item-synergies ul');
+        const synergyLists = document.querySelectorAll('#item-synergies ul')
 
         synergyLists.forEach((list) => {
             if (list.clientHeight === 59) {
@@ -194,8 +194,8 @@ const updateSynergyList = (item) => {
             } else {
                 list.style.justifyContent = 'space-around'
             }
-        });
-    };
+        })
+    }
 
     justifySynergies()
     window.addEventListener('resize', justifySynergies)
@@ -218,9 +218,8 @@ const handleButtonClick = (item, button) => {
         const displayPane = document.querySelector('#display-pane')
 
         if (window.innerWidth <= 715) {
-            displayPane.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest', offsetTop: 12 });
+            displayPane.scrollIntoView({ behavior: 'smooth', block: 'start' })
         }
-
     }
 }
 
