@@ -1,4 +1,4 @@
-const appVersion = '1.1.2.6'
+const appVersion = '1.1.2.7'
 
 const itemDesc = document.querySelector('#item-description'),
     itemSelect = document.querySelector('#item-select'),
@@ -184,6 +184,21 @@ const updateSynergyList = (item) => {
             }
         })
     })
+
+    const justifySynergies = () => {
+        const synergyLists = document.querySelectorAll('#item-synergies ul');
+
+        synergyLists.forEach((list) => {
+            if (list.clientHeight === 59) {
+                list.style.justifyContent = 'start'
+            } else {
+                list.style.justifyContent = 'space-around'
+            }
+        });
+    };
+
+    justifySynergies()
+    window.addEventListener('resize', justifySynergies)
 }
 
 const handleButtonClick = (item, button) => {
