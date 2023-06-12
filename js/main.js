@@ -1,4 +1,4 @@
-const appVersion = '1.1.2.10'
+const appVersion = '1.1.2.11'
 
 const itemDesc = document.querySelector('#item-description'),
     itemSelect = document.querySelector('#item-select'),
