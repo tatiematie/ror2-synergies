@@ -26,7 +26,7 @@
                 "Unstable Tesla Coil",
                 "57 Leaf Clover",
                 "Bundle of Fireworks",
-                "On Kill Effects",
+                "On Kill",
                 "Damage Taken",
                 "Mobility",
                 "Bands",
@@ -73,11 +73,11 @@
         ],
         "tags": [
             "Healing",
-            "On Kill Effects"
+            "On Kill"
         ],
         "synergies": {
             "include": [
-                "On Kill Effects",
+                "On Kill",
                 "Amplified Healing"
             ]
         }
@@ -274,13 +274,13 @@
             "Pairs well with on kill and debuff infliction items."
         ],
         "tags": [
-            "On Kill Effects",
+            "On Kill",
             "Debuff Inflictions",
             "Fire Damage"
         ],
         "synergies": {
             "include": [
-                "On Kill Effects",
+                "On Kill",
                 "Debuff Inflictions",
                 "Fire Damage"
             ]
@@ -344,7 +344,7 @@
                 "The Crowdfunder",
                 "Volcanic Egg",
                 "Sawmerang",
-                "On Kill Effects",
+                "On Kill",
                 "Damage Taken",
                 "Mobility",
                 "Skill"
@@ -467,16 +467,16 @@
         "id": "topaz-brooch",
         "description": [
             "Gain <span green>+15</span> temporary barrier <span gray>(+15 per stack)</span> per kill.",
-            "Pairs well with items that activate after taking damage, on kill effects, and damage reduction items."
+            "Pairs well with items that activate after taking damage, on kill, and damage reduction items."
         ],
         "tags": [
             "Barrier",
-            "On Kill Effects"
+            "On Kill"
         ],
         "synergies": {
             "include": [
                 "Damage Taken",
-                "On Kill Effects",
+                "On Kill",
                 "Damage Reduction",
                 "Damage Prevention"
             ]
@@ -687,13 +687,13 @@
         "id": "will-o-the-wisp",
         "description": [
             "Killing an enemy creates a lava pillar with a <span yellow>12m</span> <span gray>(+2.4m per stack)</span> radius, dealing <span yellow>350%</span> base damage <span gray>(+280% per stack)</span>.",
-            "Pairs well with increased damage, proc chance, and on kill effects."
+            "Pairs well with increased damage, proc chance, and on kill items."
         ],
         "procCoefficient": {
             "On Hit": "1.0"
         },
         "tags": [
-            "On Kill Effects",
+            "On Kill",
             "Damage",
             "High Damage"
         ],
@@ -784,7 +784,8 @@
             "Pairs well with attack speed, proc chance, and amplified healing items."
         ],
         "tags": [
-            "Per Hit"
+            "Per Hit",
+            "Healing"
         ],
         "synergies": {
             "include": [
@@ -915,13 +916,13 @@
         ],
         "tags": [
             "Increased Health",
-            "On Kill Effects"
+            "On Kill"
         ],
         "synergies": {
             "include": [
                 "Shield",
                 "Increased Health",
-                "On Kill Effects"
+                "On Kill"
             ]
         }
     },
@@ -936,12 +937,12 @@
         ],
         "tags": [
             "Skill Cooldown Reduction",
-            "On Kill Effects"
+            "On Kill"
         ],
         "synergies": {
             "include": [
                 "Skill Cooldown Reduction",
-                "On Kill Effects"
+                "On Kill"
             ]
         }
     },
@@ -955,7 +956,7 @@
             "Pairs well with attack speed, movement speed, and on kill effect items."
         ],
         "tags": [
-            "On Kill Effects",
+            "On Kill",
             "Movement Speed",
             "Attack Speed"
         ],
@@ -963,7 +964,7 @@
             "include": [
                 "Attack Speed",
                 "Movement Speed",
-                "On Kill Effects"
+                "On Kill"
             ]
         }
     },
@@ -1082,12 +1083,12 @@
             "Pairs well with increased damage and items that activate after killing an elite enemy."
         ],
         "tags": [
-            "Elite Kill Effects"
+            "Elite Kills"
         ],
         "synergies": {
             "include": [
                 "Damage",
-                "Elite Kill Effects"
+                "Elite Kills"
             ]
         }
     },
@@ -1164,7 +1165,7 @@
                 "Genesis Loop",
                 "Brittle Crown",
                 "Egocentricism",
-                "On Kill Effects",
+                "On Kill",
                 "Mobility",
                 "Bands",
                 "Skill"
@@ -1178,15 +1179,15 @@
         "id": "ghors-tome",
         "description": [
             "Enemies have a <span yellow>4%</span> <span gray>(+4% per stack)</span> to drop treasure worth <span yellow>25</span> gold. Scales with time.",
-            "Pairs well with on kill effects and gold increase items."
+            "Pairs well with on kill and gold increase items."
         ],
         "tags": [
-            "On Kill Effects",
+            "On Kill",
             "Money"
         ],
         "synergies": {
             "include": [
-                "On Kill Effects",
+                "On Kill",
                 "Money"
             ]
         }
@@ -1241,12 +1242,12 @@
         ],
         "tags": [
             "Movement Speed",
-            "On Kill Effects"
+            "On Kill"
         ],
         "synergies": {
             "include": [
                 "Movement Speed",
-                "On Kill Effects"
+                "On Kill"
             ]
         }
     },
@@ -1319,15 +1320,20 @@
         "type": "Item",
         "id": "brilliant-behemoth",
         "description": [
-            "All attacks explode with a <span yellow>4m</span> <span gray>(+2.5m per stack)</span> radius and deal <span yellow>60%</span> more damage."
+            "All attacks explode with a <span yellow>4m</span> <span gray>(+2.5m per stack)</span> radius and deal <span yellow>60%</span> more damage.",
+            "Pairs well with attack speed, increased damage, and proc chance items."
         ],
         "tags": [
             "Damage",
             "Per Hit"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Attack Speed",
+                "Critical Strike Chance",
+                "Damage",
+                "Per Hit"
+            ]
         }
     },
     {
@@ -1336,19 +1342,42 @@
         "type": "Item",
         "id": "ceremonial-dagger",
         "description": [
-            "Killing an enemy creates <span yellow>3</span> homing daggers that deal <span yellow>150%</span> base damage <span gray>(+150% per stack)</span>."
+            "Killing an enemy creates <span yellow>3</span> homing daggers that deal <span yellow>150%</span> base damage <span gray>(+150% per stack)</span>.",
+            "Pairs well with increased damage, proc chance, and on kill items."
         ],
         "procCoefficient": {
             "On Hit": "1.0"
         },
         "tags": [
-            "On Kill Effects",
+            "On Kill",
             "Can Proc",
             "Damage"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Critical Strike Chance",
+                "Damage",
+                "On Kill",
+                "Can Proc",
+                "Per Hit"
+            ],
+            "exclude": [
+                "Razorwire",
+                "Shuriken",
+                "N'Kuahana's Opinion",
+                "Unstable Tesla Coil",
+                "Genesis Loop",
+                "Skill",
+                "Egocentricism",
+                "Disposable Missile Launcher",
+                "Preon Accumulator",
+                "Royal Capacitor",
+                "Molotov (6-Pack)",
+                "The Crowdfunder",
+                "Volcanic Egg",
+                "Sawmerang",
+                "Bands"
+            ]
         }
     },
     {
@@ -1357,19 +1386,41 @@
         "type": "Item",
         "id": "frost-relic",
         "description": [
-            "Killing an enemy creates a ring around the player that deals <span yellow>1,200%</span> damage per second to nearby enemies and slows them by <span blue>80%</span> for <span blue>1.5s</span>. Damage radius grows by <span yellow>2m</span> per kill, capped at <span yellow>18m</span> <span gray>(+12m per stack)</span>."
+            "Killing an enemy creates a ring around the player that deals <span yellow>1,200%</span> damage per second to nearby enemies and slows them by <span blue>80%</span> for <span blue>1.5s</span>. Damage radius grows by <span yellow>2m</span> per kill, capped at <span yellow>18m</span> <span gray>(+12m per stack)</span>.",
+            "Pairs well with incrased damage, proc chance, debuff infliction, and on kill effect items."
         ],
         "procCoefficient": {
             "On Hit": "0.2"
         },
         "tags": [
             "Debuff Inflictions",
-            "On Kill Effects",
+            "On Kill",
             "Damage"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Critical Strike Chance",
+                "Damage",
+                "Chance to Proc",
+                "Debuff Inflictions",
+                "On Kill"
+            ],
+            "exclude": [
+                "Bundle of Fireworks",
+                "Razorwire",
+                "Shuriken",
+                "Mobility",
+                "N'Kuahana's Opinion",
+                "Genesis Loop",
+                "Skill",
+                "Disposable Missile Launcher",
+                "Preon Accumulator",
+                "Royal Capacitor",
+                "Molotov (6-Pack)",
+                "The Crowdfunder",
+                "Volcanic Egg",
+                "Sawmerang"
+            ]
         }
     },
     {
@@ -1378,15 +1429,18 @@
         "type": "Item",
         "id": "happiest-mask",
         "description": [
-            "Gain a <span yellow>7%</span> chance to spawn a ghost ally that deals <span yellow>1,500%</span> damage after killing an enemy. Lasts <span blue>30s</span> <span gray>(+30s per stack)</span>."
+            "Gain a <span yellow>7%</span> chance to spawn a ghost ally that deals <span yellow>1,500%</span> damage after killing an enemy. Lasts <span blue>30s</span> <span gray>(+30s per stack)</span>.",
+            "Pairs well with ally summons and on kill effect items."
         ],
         "tags": [
             "Ally Summons",
-            "On Kill Effects"
+            "On Kill"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Ally Summons",
+                "On Kill"
+            ]
         }
     },
     {
@@ -1395,7 +1449,8 @@
         "type": "Item",
         "id": "h3ad-5t-v2",
         "description": [
-            "Increases jump height, hold 'interact' to slam. Slamming creates a <span yellow>5m-100m</span> explosion dealing <span yellow>1,000%-10,000%</span> base damage, damage scales with slam distance. <span blue>10s</span> <span gray>(-50% per stack)</span> cooldown."
+            "Increases jump height, hold 'interact' to slam. Slamming creates a <span yellow>5m-100m</span> explosion dealing <span yellow>1,000%-10,000%</span> base damage, damage scales with slam distance. <span blue>10s</span> <span gray>(-50% per stack)</span> cooldown.",
+            "Pairs well with movement speed, increased damage, proc chance, and mobility items."
         ],
         "tags": [
             "Mobility",
@@ -1403,8 +1458,28 @@
             "High Damage"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Movement Speed",
+                "Damage",
+                "Chance to Proc",
+                "Mobility"
+            ],
+            "exclude": [
+                "Bundle of Fireworks",
+                "Razorwire",
+                "Shuriken",
+                "N'Kuahana's Opinion",
+                "Genesis Loop",
+                "Skill",
+                "Egocentricism",
+                "Disposable Missile Launcher",
+                "Preon Accumulator",
+                "Royal Capacitor",
+                "Molotov (6-Pack)",
+                "The Crowdfunder",
+                "Volcanic Egg",
+                "Sawmerang"
+            ]
         }
     },
     {
@@ -1413,7 +1488,8 @@
         "type": "Item",
         "id": "nkuhanas-opinion",
         "description": [
-            "Store <span green>100%</span> of healing <span gray>(+100% per stack)</span> as Soul Energy, when Soul Energy hits <span green>10%</span> of max health, fire a homing skull dealing <span yellow>250%</span> of Soul Energy as damage."
+            "Store <span green>100%</span> of healing <span gray>(+100% per stack)</span> as Soul Energy, when Soul Energy hits <span green>10%</span> of max health, fire a homing skull dealing <span yellow>250%</span> of Soul Energy as damage.",
+            "Pairs well with healing, increased damage, and amplified healing items."
         ],
         "procCoefficient": {
             "On Hit": "0.2"
@@ -1422,8 +1498,31 @@
             "Damage"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Healing",
+                "Critical Strike Chance",
+                "Damage",
+                "Amplified Healing",
+                "Per Hit"
+            ],
+            "exclude": [
+                "Bundle of Fireworks",
+                "Razorwire",
+                "Shuriken",
+                "On Kill",
+                "Mobility",
+                "Unstable Tesla Coil",
+                "Genesis Loop",
+                "Skill",
+                "Egocentricism",
+                "Disposable Missile Launcher",
+                "Preon Accumulator",
+                "Royal Capacitor",
+                "Molotov (6-Pack)",
+                "The Crowdfunder",
+                "Volcanic Egg",
+                "Sawmerang"
+            ]
         }
     },
     {
@@ -1432,7 +1531,8 @@
         "type": "Item",
         "id": "unstable-tesla-coil",
         "description": [
-            "Fire lightning that hits <span yellow>3</span> enemies <span gray>(+2 per stack)</span> for <span yellow>200%</span> base damage every <span blue>0.5s</span>. <span blue>10s</span> cooldown."
+            "Fire lightning that hits <span yellow>3</span> enemies <span gray>(+2 per stack)</span> for <span yellow>200%</span> base damage every <span blue>0.5s</span>. <span blue>10s</span> cooldown.",
+            "Pairs well with increased damage, and proc chance items."
         ],
         "procCoefficient": {
             "On Hit": "0.3"
@@ -1442,8 +1542,28 @@
             "Damage"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Damage",
+                "Chance to Proc",
+                "Per Hit"
+            ],
+            "exclude": [
+                "Bundle of Fireworks",
+                "On Kill",
+                "Razorwire",
+                "Shuriken",
+                "Mobility",
+                "N'Kuahana's Opinion",
+                "Genesis Loop",
+                "Skill",
+                "Disposable Missile Launcher",
+                "Preon Accumulator",
+                "Royal Capacitor",
+                "Molotov (6-Pack)",
+                "The Crowdfunder",
+                "Volcanic Egg",
+                "Sawmerang"
+            ]
         }
     },
     {
@@ -1452,15 +1572,22 @@
         "type": "Item",
         "id": "57-leaf-clover",
         "description": [
-            "All random effects are rolled <span yellow>+1</span> time <span gray>(+1 per stack)</span> for a favorable outcome."
+            "All random effects are rolled <span yellow>+1</span> time <span gray>(+1 per stack)</span> for a favorable outcome.",
+            "Pairs well with critical strike chance and proc chance items."
         ],
         "tags": [
             "Chance to Proc",
             "Can Proc"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Critical Strike Chance",
+                "Chance to Proc",
+                "Can Proc"
+            ],
+            "exclude": [
+                "Ocular HUD"
+            ]
         }
     },
     {
@@ -1469,7 +1596,8 @@
         "type": "Item",
         "id": "sentient-meat-hook",
         "description": [
-            "Gain a <span yellow>20%</span> chance <span gray>(+20% per stack)</span> on hit to fire hooks that pull up to <span yellow>10</span> enemies <span gray>(+5 per stack)</span> together, dealing <span yellow>100%</span> total damage. Hooks are fired from the target enemy."
+            "Gain a <span yellow>20%</span> chance <span gray>(+20% per stack)</span> on hit to fire hooks that pull up to <span yellow>10</span> enemies <span gray>(+5 per stack)</span> together, dealing <span yellow>100%</span> total damage. Hooks are fired from the target enemy.",
+            "Pairs well with attack speed, increased damage, and proc chance items."
         ],
         "procCoefficient": {
             "On Hit": ".33"
@@ -1479,8 +1607,15 @@
             "Damage"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Attack Speed",
+                "Damage",
+                "Chance to Proc"
+            ],
+            "exclude": [
+                "On Kill",
+                "Genesis Loop"
+            ]
         }
     },
     {
@@ -1489,14 +1624,16 @@
         "type": "Item",
         "id": "alien-head",
         "description": [
-            "All skill cooldowns reduced by <span blue>25%</span> <span gray>(+25% per stack)</span>."
+            "All skill cooldowns reduced by <span blue>25%</span> <span gray>(+25% per stack)</span>.",
+            "Pairs well with skill cooldown reduction items."
         ],
         "tags": [
             "Skill Cooldown Reduction"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Skill Cooldown Reduction"
+            ]
         }
     },
     {
@@ -1505,15 +1642,19 @@
         "type": "Item",
         "id": "soulbound-catalyst",
         "description": [
-            "Killing an enemy reduces equipment cooldowns by <span blue>4s</span> <span gray>(+2s per stack)</span>."
+            "Killing an enemy reduces equipment cooldowns by <span blue>4s</span> <span gray>(+2s per stack)</span>.",
+            "Pairs well with on kill effects, equipment cooldown reduction, and equipment items."
         ],
         "tags": [
-            "On Kill Effects",
+            "On Kill",
             "Equipment Cooldown Reduction"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "On Kill",
+                "Equipment Cooldown Reduction",
+                "Equipment"
+            ]
         }
     },
     {
@@ -1522,12 +1663,12 @@
         "type": "Item",
         "id": "dios-best-friend",
         "description": [
-            "Grants <span green>+1</span> extra life <span gray>(+1 per stack)</span>, gain <span blue>3s</span> of invulnerability after resurrection. Consumed on use."
+            "Grants <span green>+1</span> extra life <span gray>(+1 per stack)</span>, gain <span blue>3s</span> of invulnerability after resurrection. Consumed on use.",
+            "No currently known item synergies."
         ],
         "tags": [],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": []
         }
     },
     {
@@ -1536,14 +1677,17 @@
         "type": "Item",
         "id": "hardlight-afterburner",
         "description": [
-            "Adds <span yellow>2</span> charges <span gray>(+2 per stack)</span> to you Utility skill, reduces Utility skill cooldowns by <span blue>33%</span>."
+            "Adds <span yellow>2</span> charges <span gray>(+2 per stack)</span> to you Utility skill, reduces Utility skill cooldowns by <span blue>33%</span>.",
+            "Pairs well with skill cooldown reduction items."
         ],
         "tags": [
             "Skill Cooldown"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Skill Cooldown Reduction",
+                "Utility Skill"
+            ]
         }
     },
     {
@@ -1552,15 +1696,21 @@
         "type": "Item",
         "id": "wake-of-vultures",
         "description": [
-            "Killing an elite enemy grants the player that enemy's elite ability for <span blue>8s</span> <span gray>(+5s per stack)</span>."
+            "Killing an elite enemy grants the player that enemy's elite ability for <span blue>8s</span> <span gray>(+5s per stack)</span>.",
+            "Pairs well with attack speed, debuff infliction, on kill effects, and items that activate after killing an elite enemy."
         ],
         "tags": [
-            "On Kill Effects",
-            "Elite Kill Effects"
+            "On Kill",
+            "Elite Kills"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Attack Speed",
+                "Debuff Inflictions",
+                "On Kill",
+                "Elite Kills",
+                "Per Hit"
+            ]
         }
     },
     {
@@ -1569,15 +1719,20 @@
         "type": "Item",
         "id": "brainstalks",
         "description": [
-            "Killing an elite enemy reduces all skill cooldowns to <span blue>0.5s</span> for <span blue>4s</span> <span gray>(+4s per stack)</span>."
+            "Killing an elite enemy reduces all skill cooldowns to <span blue>0.5s</span> for <span blue>4s</span> <span gray>(+4s per stack)</span>.",
+            "Pairs well with on kill effects, items that activate after killing an elite enemy, and skill cooldown reduction items."
         ],
         "tags": [
-            "On Kill Effects",
-            "Elite Kill Effects"
+            "On Kill",
+            "Elite Kills",
+            "Skill Cooldown Reduction"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "On Kill",
+                "Elite Kills",
+                "Skill Cooldown Reduction"
+            ]
         }
     },
     {
@@ -1586,14 +1741,17 @@
         "type": "Item",
         "id": "rejuvination-rack",
         "description": [
-            "Gain <span green>+100%</span> healing power <span gray>(+100% per stack)</span>."
+            "Gain <span green>+100%</span> healing power <span gray>(+100% per stack)</span>.",
+            "Pairs well with healing and amplified healing items."
         ],
         "tags": [
             "Amplified Healing"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Healing",
+                "Amplified Healing"
+            ]
         }
     },
     {
@@ -1602,14 +1760,19 @@
         "type": "Item",
         "id": "aegis",
         "description": [
-            "Healing while at <span green>100%</span> of max health grants temporary barrier equal to <span green>50%</span> of the amount healed <span gray>(+50% per stack)</span>."
+            "Healing while at <span green>100%</span> of max health grants temporary barrier equal to <span green>50%</span> of the amount healed <span gray>(+50% per stack)</span>.",
+            "Pairs well with healing, barrier, damage reduction, and amplified healing items."
         ],
         "tags": [
             "Barrier"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Healing",
+                "Barrier",
+                "Damage Reduction",
+                "Amplified Healing"
+            ]
         }
     },
     {
@@ -1618,15 +1781,20 @@
         "type": "Item",
         "id": "shattering-justice",
         "description": [
-            "Reduce enemy armor by <span yellow>60</span> for <span blue>8s</span> <span gray>(+8s per stack)</span> after hitting them <span yellow>5</span> times."
+            "Reduce enemy armor by <span yellow>60</span> for <span blue>8s</span> <span gray>(+8s per stack)</span> after hitting them <span yellow>5</span> times.",
+            "Pairs well with attack speed, increased damage, and debuff infliction items."
         ],
         "tags": [
             "Per Hit",
             "Debuff Inflictions"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Attack Speed",
+                "Damage",
+                "Debuff Inflictions",
+                "Per Hit"
+            ]
         }
     },
     {
@@ -1642,12 +1810,32 @@
             "Explosion": "1.0"
         },
         "tags": [
-            "On Kill Effects",
+            "On Kill",
             "Can Proc"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Damage",
+                "Chance to Proc",
+                "On Kill"
+            ],
+            "exclude": [
+                "Bundle of Fireworks",
+                "Razorwire",
+                "Shuriken",
+                "Mobility",
+                "N'Kuahana's Opinion",
+                "Genesis Loop",
+                "Skill",
+                "Egocentricism",
+                "Disposable Missile Launcher",
+                "Preon Accumulator",
+                "Royal Capacitor",
+                "Molotov (6-Pack)",
+                "The Crowdfunder",
+                "Volcanic Egg",
+                "Sawmerang"
+            ]
         }
     },
     {
@@ -1656,15 +1844,18 @@
         "type": "Item",
         "id": "interstellar-desk-plant",
         "description": [
-            "Killing an enemy drops a healing plant after <span blue>5s</span>. Plants heal allies within <span yellow>10m</span> <span gray>(+5m per stack)</span> for <span green>5%</span> of max health every <span blue>0.5s</span>. Lasts <span blue>10s</span>."
+            "Killing an enemy drops a healing plant after <span blue>5s</span>. Plants heal allies within <span yellow>10m</span> <span gray>(+5m per stack)</span> for <span green>5%</span> of max health every <span blue>0.5s</span>. Lasts <span blue>10s</span>.",
+            "Pairs well with on kill effects and amplified healing items."
         ],
         "tags": [
             "Healing",
-            "On Kill Effects"
+            "On Kill"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "On Kill",
+                "Amplified Healing"
+            ]
         }
     },
     {
@@ -1673,14 +1864,17 @@
         "type": "Item",
         "id": "laser-scope",
         "description": [
-            "Critical strikes deal <span yellow>+100%</span> damage <span gray>(+100% per stack)</span>."
+            "Critical strikes deal <span yellow>+100%</span> damage <span gray>(+100% per stack)</span>.",
+            "Pairs well with critical strike chance and increased damage items."
         ],
         "tags": [
             "Critical Strike Chance"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Critical Strike Chance",
+                "Damage"
+            ]
         }
     },
     {
@@ -1689,14 +1883,16 @@
         "type": "Item",
         "id": "pocket-icbm",
         "description": [
-            "Missile items and equipment fire <span yellow>2</span> additional missiles per round, missiles deal <span yellow>+50%</span> more damage per additional stack."
+            "Missile items and equipment fire <span yellow>2</span> additional missiles per round, missiles deal <span yellow>+50%</span> more damage per additional stack.",
+            "Pairs well with missile items."
         ],
         "tags": [
             "Missiles"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Missiles"
+            ]
         }
     },
     {
@@ -1705,14 +1901,16 @@
         "type": "Item",
         "id": "spare-drone-parts",
         "description": [
-            "Summon <span yellow>1</span> Col. Droneman <span gray>(+1 per stack)</span>. Drones gain <span yellow>+50%</span> attack speed <span gray>(+50% per stack)</span>, <span blue>+50%</span> cooldown reduction <span gray>(+50% per stack)</span>, and <span yellow>10%</span> chance to fire a missile dealing <span yellow>300%</span> total damage. Drones gain a chain gun that fires <span yellow>6</span> bullets dealing <span yellow>100%</span> damage, bullets bounce to up to <span yellow>2</span> enemies."
+            "Summon <span yellow>1</span> Col. Droneman <span gray>(+1 per stack)</span>. Drones gain <span yellow>+50%</span> attack speed <span gray>(+50% per stack)</span>, <span blue>+50%</span> cooldown reduction <span gray>(+50% per stack)</span>, and <span yellow>10%</span> chance to fire a missile dealing <span yellow>300%</span> total damage. Drones gain a chain gun that fires <span yellow>6</span> bullets dealing <span yellow>100%</span> damage, bullets bounce to up to <span yellow>2</span> enemies.",
+            "Pairs well with ally summons."
         ],
         "tags": [
             "Ally Summons"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Ally Summons"
+            ]
         }
     },
     {
@@ -1721,15 +1919,20 @@
         "type": "Item",
         "id": "symbiotic-scorpion",
         "description": [
-            "Reduce armor by <span yellow>2</span> <span gray>(+2 per stack)</span> on hit."
+            "Reduce armor by <span yellow>2</span> <span gray>(+2 per stack)</span> on hit.",
+            "Pairs well with attack speed, increased damage, and debuff infliction items."
         ],
         "tags": [
             "Per Hit",
             "Debuff Inflictions"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Attack Speed",
+                "Damage",
+                "Debuff Inflictions",
+                "Per Hit"
+            ]
         }
     },
     {
@@ -1738,15 +1941,18 @@
         "type": "Item",
         "id": "bens-rain-coat",
         "description": [
-            "Prevents <span yellow>1</span> incoming debuff <span gray>(+1 per stack)</span> and grants temporary barrier for <span green>10%</span> of max health. <span blue>5s</span> cooldown."
+            "Prevents <span yellow>1</span> incoming debuff <span gray>(+1 per stack)</span> and grants temporary barrier for <span green>10%</span> of max health. <span blue>5s</span> cooldown.",
+            "Pairs well with barrier and damage reduction items."
         ],
         "tags": [
             "Defense",
             "Barrier"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Barrier",
+                "Damage Reduction"
+            ]
         }
     },
     {
@@ -1755,12 +1961,15 @@
         "type": "Item",
         "id": "bottled-chaos",
         "description": [
-            "Trigger <span yellow>1</span> additional random equipment effect <span gray>(+1 per stack)</span> after using an equipment."
+            "Trigger <span yellow>1</span> additional random equipment effect <span gray>(+1 per stack)</span> after using an equipment.",
+            "Pairs well with equipment cooldown reduction and equipment items."
         ],
         "tags": [],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Equipment Cooldown Reduction",
+                "Equipment"
+            ]
         }
     },
     {
@@ -1773,7 +1982,8 @@
         ],
         "tags": [
             "Increased Health",
-            "Amplified Healing"
+            "Amplified Healing",
+            "Healing"
         ],
         "synergies": {
             "include": [],
@@ -1862,7 +2072,8 @@
             "Damage",
             "Attack Speed",
             "Critical Strike Chance",
-            "Damage Reduction"
+            "Damage Reduction",
+            "Healing"
         ],
         "synergies": {
             "include": [],
@@ -2009,8 +2220,8 @@
         ],
         "tags": [
             "Ally Summons",
-            "Elite Kill Effects",
-            "On Kill Effects"
+            "Elite Kills",
+            "On Kill"
         ],
         "synergies": {
             "include": [],
@@ -2112,7 +2323,8 @@
             "Summon a random void monster as an ally every <span blue>60s</span>, up to <span yellow>1</span> ally <span gray>(+1 per stack)</span> at a time. <span purple>Corrupts all yellow items</span>."
         ],
         "tags": [
-            "Void Items"
+            "Void Items",
+            "Ally Summons"
         ],
         "synergies": {
             "include": [],
@@ -2562,7 +2774,8 @@
             "Gain <span green>+100%</span> max health <span gray>(+100% per stack)</span>, lose <span red>50%</span> movement speed <span gray>(+50% per stack)</span>."
         ],
         "tags": [
-            "Lunar"
+            "Lunar",
+            "Increased Health"
         ],
         "synergies": {
             "include": [],
@@ -2578,7 +2791,8 @@
             "Reduce all skill cooldowns by <span yellow>50%</span> <span gray>(+50% per stack)</span>, lose <span red>50%</span> attack speed <span gray>(+50% per stack)</span>."
         ],
         "tags": [
-            "Lunar"
+            "Lunar",
+            "Skill Cooldown Reduction"
         ],
         "synergies": {
             "include": [],
@@ -3113,7 +3327,7 @@
         ],
         "tags": [
             "Equipment",
-            "On Kill Effects"
+            "On Kill"
         ],
         "synergies": {
             "include": [],
