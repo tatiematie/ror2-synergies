@@ -159,7 +159,7 @@
   font-size: 1.125em;
   line-height: 1.4em;
 }
-.pane .block p:not(.title, :last-child) {
+.pane .block p:not(.title, :last-child, #item-synergies p) {
   margin-bottom: 4px;
 }
 .pane .block:not(:last-child) {
