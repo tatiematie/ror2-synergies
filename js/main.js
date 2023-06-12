@@ -148,6 +148,13 @@ const updateSynergyList = (item) => {
     const includeTags = Array.isArray(item.synergies.include) ? item.synergies.include : []
     const excludeTags = Array.isArray(item.synergies.exclude) ? item.synergies.exclude : []
 
+    if (includeTags.length === 0) {
+        itemSynergies.style.display = 'none';
+        return;
+    } else {
+        itemSynergies.style.display = 'block';
+    }
+
     includeTags.forEach((include) => {
         const tagListTitle = document.createElement('p')
         tagListTitle.innerHTML = include
