@@ -162,8 +162,8 @@
 .pane .block p:not(.title, :last-child, #item-synergies p) {
   margin-bottom: 4px;
 }
-.pane .block:not(:last-child) {
-  margin-bottom: 12px;
+.pane .block:not(:first-child) {
+  margin-top: 12px;
 }
 
 html {

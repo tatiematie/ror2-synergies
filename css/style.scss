@@ -239,8 +239,8 @@ $colors: (
             }
         }
 
-        &:not(:last-child) {
-            margin-bottom: 12px;
+        &:not(:first-child) {
+            margin-top: 12px;
         }
     }
 }
