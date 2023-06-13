@@ -182,6 +182,9 @@
                 "Attack Speed",
                 "Can Proc",
                 "Debuff Inflictions"
+            ],
+            "exclude": [
+                "Needletick"
             ]
         }
     },
@@ -1667,10 +1670,7 @@
             "Grants <span green>+1</span> extra life <span gray>(+1 per stack)</span>, gain <span blue>3s</span> of invulnerability after resurrection. Consumed on use.",
             "No currently known item synergies."
         ],
-        "tags": [],
-        "synergies": {
-            "include": []
-        }
+        "synergies": {}
     },
     {
         "name": "Hardlight Afterburner",
@@ -1985,7 +1985,8 @@
         "tags": [
             "Increased Health",
             "Amplified Healing",
-            "Healing"
+            "Healing",
+            "Boss"
         ],
         "synergies": {
             "include": [
@@ -2005,7 +2006,8 @@
             "Pairs well with ally summon items."
         ],
         "tags": [
-            "Ally Summons"
+            "Ally Summons",
+            "Boss"
         ],
         "synergies": {
             "include": [
@@ -2015,7 +2017,7 @@
     },
     {
         "name": "Halcyon Seed",
-        "rarity": "Boss",
+        "rarity": "Stage",
         "type": "Item",
         "id": "halcyon-seed",
         "description": [
@@ -2023,7 +2025,8 @@
             "Pairs well with ally summon items."
         ],
         "tags": [
-            "Ally Summons"
+            "Ally Summons",
+            "Boss"
         ],
         "synergies": {
             "include": [
@@ -2044,7 +2047,8 @@
             "On Hit": "1.0"
         },
         "tags": [
-            "Can Proc"
+            "Can Proc",
+            "Boss"
         ],
         "synergies": {
             "include": [
@@ -2075,7 +2079,7 @@
     },
     {
         "name": "Pearl",
-        "rarity": "Boss",
+        "rarity": "Stage",
         "type": "Item",
         "id": "pearl",
         "description": [
@@ -2083,7 +2087,8 @@
             "Pairs well with sheild and increased health items."
         ],
         "tags": [
-            "Increased Health"
+            "Increased Health",
+            "Boss"
         ],
         "synergies": {
             "include": [
@@ -2094,7 +2099,7 @@
     },
     {
         "name": "Irradiant Pearl",
-        "rarity": "Boss",
+        "rarity": "Stage",
         "type": "Item",
         "id": "irradiant-pearl",
         "description": [
@@ -2109,7 +2114,8 @@
             "Attack Speed",
             "Critical Strike Chance",
             "Damage Reduction",
-            "Healing"
+            "Healing",
+            "Boss"
         ],
         "synergies": {
             "include": [
@@ -2136,7 +2142,8 @@
         "tags": [
             "Damage",
             "At Low Health",
-            "High Damage"
+            "High Damage",
+            "Boss"
         ],
         "synergies": {
             "include": [
@@ -2183,7 +2190,8 @@
             "Chance to Proc",
             "Damage",
             "High Damage",
-            "Fire Damage"
+            "Fire Damage",
+            "Boss"
         ],
         "synergies": {
             "include": [
@@ -2208,7 +2216,8 @@
         "tags": [
             "Critical Strike Chance",
             "Debuff Inflictions",
-            "On Kill"
+            "On Kill",
+            "Boss"
         ],
         "synergies": {
             "include": [
@@ -2229,7 +2238,8 @@
         ],
         "tags": [
             "Debuff Inflictions",
-            "Healing"
+            "Healing",
+            "Boss"
         ],
         "synergies": {
             "include": [
@@ -2254,7 +2264,8 @@
             "Chance to Proc",
             "Can Proc",
             "Damage",
-            "High Damage"
+            "High Damage",
+            "Boss"
         ],
         "synergies": {
             "include": [
@@ -2276,7 +2287,8 @@
             "Pairs well with ally summon items."
         ],
         "tags": [
-            "Ally Summons"
+            "Ally Summons",
+            "Boss"
         ],
         "synergies": {
             "include": [
@@ -2295,7 +2307,8 @@
         ],
         "tags": [
             "Damage Taken",
-            "Healing"
+            "Healing",
+            "Boss"
         ],
         "synergies": {
             "include": [
@@ -2316,7 +2329,8 @@
         "tags": [
             "Ally Summons",
             "Elite Kills",
-            "On Kill"
+            "On Kill",
+            "Boss"
         ],
         "synergies": {
             "include": [
@@ -2335,15 +2349,13 @@
         "type": "Item",
         "id": "benthic-bloom",
         "description": [
-            "Upgrades <span yellow>3</span> random Common or <span green>Uncommon</span> item stacks <span gray>(+3 per stack)</span> to the next rarity at the beginning of each stage. <span purple>Corrupts all 57 Leaf Clovers</span>."
+            "Upgrades <span yellow>3</span> random Common or <span green>Uncommon</span> item stacks <span gray>(+3 per stack)</span> to the next rarity at the beginning of each stage. <span purple>Corrupts all 57 Leaf Clovers</span>.",
+            "No currently known item synergies."
         ],
         "tags": [
             "Void Items"
         ],
-        "synergies": {
-            "include": [],
-            "exclude": []
-        }
+        "synergies": {}
     },
     {
         "name": "Encrusted Key",
@@ -2351,15 +2363,20 @@
         "type": "Item",
         "id": "encrusted-key",
         "description": [
-            "A hidden cache will appear somewhere on the next stage allowing the player to select from <span yellow>3</span> items, cache contents have a <span yellow>41.66%</span> chance to be Common, <span yellow>41.66%</span> to be <span green>Uncommon</span>, and a <span yellow>16.66%</span> chance to be <span red>Legendary</span>. Consumed on use, <span purple>corrupts all Rusted Keys</span>."
+            "A hidden cache will appear somewhere on the next stage allowing the player to select from <span yellow>3</span> items, cache contents have a <span yellow>41.66%</span> chance to be Common, <span yellow>41.66%</span> to be Uncommon, and a <span yellow>16.66%</span> chance to be Legendary. Consumed on use, <span purple>corrupts all Rusted Keys</span>.",
+            "Pairs well with items that affect stage generation."
         ],
         "tags": [
             "Void Items",
             "Stage Generation"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Stage Generation"
+            ],
+            "exclude": [
+                "Rusted Key"
+            ]
         }
     },
     {
@@ -2368,15 +2385,18 @@
         "type": "Item",
         "id": "lost-seers-glasses",
         "description": [
-            "Attacks have a <span yellow>0.05%</span> chance <span gray>(+0.05% per stack)</span> to instantly kill non-boss enemies. <span purple>Corrupts all Lens Maker's Glasses</span>."
+            "Attacks have a <span yellow>0.05%</span> chance <span gray>(+0.05% per stack)</span> to instantly kill non-boss enemies. <span purple>Corrupts all Lens Maker's Glasses</span>.",
+            "Pairs well with attack speed and proc chance items."
         ],
         "tags": [
             "Chance to Proc",
             "Void Items"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Attack Speed",
+                "Can Proc"
+            ]
         }
     },
     {
@@ -2385,7 +2405,8 @@
         "type": "Item",
         "id": "lysate-cell",
         "description": [
-            "Adds <span yellow>1</span> charge <span gray>(+1 per stack)</span> to your Special skill, reduces Special skill cooldown by <span blue>33%</span>. <span purple>Corrupts all Fuel Cells</span>."
+            "Adds <span yellow>1</span> charge <span gray>(+1 per stack)</span> to your Special skill, reduces Special skill cooldown by <span blue>33%</span>. <span purple>Corrupts all Fuel Cells</span>.",
+            "Pairs well with skill cooldown reduction items."
         ],
         "tags": [
             "Void Items",
@@ -2393,8 +2414,13 @@
             "Special Cooldown Reduction"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Skill Cooldown Reduction",
+                "Special Skill"
+            ],
+            "exclude": [
+                "Fuel Cell"
+            ]
         }
     },
     {
@@ -2403,7 +2429,8 @@
         "type": "Item",
         "id": "needletick",
         "description": [
-            "Gain <span yellow>+10%</span> chance <span gray>(+10% per stack)</span> to inflict an enemy with Collapse, dealing <span yellow400%</span> damage. <span purple>Corrupts all Tri-Tip Daggers</span>."
+            "Gain <span yellow>+10%</span> chance <span gray>(+10% per stack)</span> to inflict an enemy with Collapse, dealing <span yellow400%</span> damage. <span purple>Corrupts all Tri-Tip Daggers</span>.",
+            "Pairs well with attack speed, proc chance, and debuff infliction items."
         ],
         "tags": [
             "Chance to Proc",
@@ -2411,8 +2438,14 @@
             "Void Items"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Attack Speed",
+                "Debuff Inflictions",
+                "Can Proc"
+            ],
+            "exclude": [
+                "Tri-Tip Dagger"
+            ]
         }
     },
     {
@@ -2421,15 +2454,20 @@
         "type": "Item",
         "id": "newly-hatched-zoea",
         "description": [
-            "Summon a random void monster as an ally every <span blue>60s</span>, up to <span yellow>1</span> ally <span gray>(+1 per stack)</span> at a time. <span purple>Corrupts all yellow items</span>."
+            "Summon a random void monster as an ally every <span blue>60s</span>, up to <span yellow>1</span> ally <span gray>(+1 per stack)</span> at a time. <span purple>Corrupts all yellow items</span>.",
+            "Pairs well with ally summon items."
         ],
         "tags": [
             "Void Items",
             "Ally Summons"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Ally Summons"
+            ],
+            "exclude": [
+                "Boss"
+            ]
         }
     },
     {
@@ -2438,7 +2476,8 @@
         "type": "Item",
         "id": "plasma-shrimp",
         "description": [
-            "Gain <span green>+10%</span> of max health as shield. Fire missiles on hit that deal <span yellow>40%</span> total damage <span gray>(+40% per stack)</span> on hit while you have shield. <span purple>Corrupts all AtG Missile Mk. 1s</span>."
+            "Gain <span green>+10%</span> of max health as shield. Fire missiles on hit that deal <span yellow>40%</span> total damage <span gray>(+40% per stack)</span> on hit while you have shield. <span purple>Corrupts all AtG Missile Mk. 1s</span>.",
+            "Pairs well with attack speed, increased damage, shield, and proc chance items."
         ],
         "procCoefficient": {
             "On Hit": "0.2"
@@ -2452,8 +2491,15 @@
             "Missiles"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Attack Speed",
+                "Damage",
+                "Shield",
+                "Chance to Proc"
+            ],
+            "exclude": [
+                "AtG Missile Mk. 1"
+            ]
         }
     },
     {
@@ -2462,15 +2508,13 @@
         "type": "Item",
         "id": "pluripotent-larva",
         "description": [
-            "Grants <span green>+1</span> extra life <span gray>(+1 per stack)</span>, gain <span blue>3s</span> of invulnerability after resurrection. <span purple>Corrupts all held items that have Void counterparts on death</span>. Consumed on use."
+            "Grants <span green>+1</span> extra life <span gray>(+1 per stack)</span>, gain <span blue>3s</span> of invulnerability after resurrection. Consumed on use. <span purple>Corrupts all Dio's Best Friends. Corrupts items that have Void counterparts on death</span>.",
+            "No currently known item synergies."
         ],
         "tags": [
             "Void Items"
         ],
-        "synergies": {
-            "include": [],
-            "exclude": []
-        }
+        "synergies": {}
     },
     {
         "name": "Polylute",
@@ -2478,7 +2522,8 @@
         "type": "Item",
         "id": "polylute",
         "description": [
-            "Gain a <span yellow>25%</span> chance to fire lightning at the targeted enemy on hit dealing <span yellow>60%</span> total damage, lightning hits up to <span yellow>3</span> times <span gray>(+3 per stack)</span>. <span purple>Corrupts all Ukuleles</span>."
+            "Gain a <span yellow>25%</span> chance to fire lightning at the targeted enemy on hit dealing <span yellow>60%</span> total damage, lightning hits up to <span yellow>3</span> times <span gray>(+3 per stack)</span>. <span purple>Corrupts all Ukuleles</span>.",
+            "Pairs well with attack speed, increased damage, and proc chance items."
         ],
         "procCoefficient": {
             "On Hit": "0.2"
@@ -2490,8 +2535,15 @@
             "Damage"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Attack Speed",
+                "Damage",
+                "Chance to Proc",
+                "Can Proc"
+            ],
+            "exclude": [
+                "Ukulele"
+            ]
         }
     },
     {
@@ -2500,15 +2552,20 @@
         "type": "Item",
         "id": "safer-spaces",
         "description": [
-            "Blocks the next source of incoming damage. <span blue>15s</span> cooldown <span gray>(-10% per stack)</span>. <span purple>Corrupts all Tougher Times</span>."
+            "Blocks the next source of incoming damage. <span blue>15s</span> cooldown <span gray>(-10% per stack)</span>. <span purple>Corrupts all Tougher Times</span>.",
+            "No currently known item synergies."
         ],
         "tags": [
             "Damage Prevention",
             "Void Items"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Damage Reduction"
+            ],
+            "exclude": [
+                "Tougher Times"
+            ]
         }
     },
     {
@@ -2517,7 +2574,8 @@
         "type": "Item",
         "id": "singularity-band",
         "description": [
-            "Hits dealing at least <span yellow>400%</span> damage creates a black hole that draws in enemies within <span blue>15m</span>. Black holes last <span blue>5s</span> before collapsing, dealing <span yellow>100%</span> total damage. <span blue>20s</span> cooldown. <span purple>Corrupts all Kjaro's Bands and Runald's Bands</span>."
+            "Hits dealing at least <span yellow>400%</span> damage creates a black hole that draws in enemies within <span blue>15m</span>. Black holes last <span blue>5s</span> before collapsing, dealing <span yellow>100%</span> total damage. <span blue>20s</span> cooldown. <span purple>Corrupts all Kjaro's Bands and Runald's Bands</span>.",
+            "Pairs well with high damage items."
         ],
         "procCoefficient": {
             "On Hit": "1.0"
@@ -2529,8 +2587,12 @@
             "High Damage"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "High Damage"
+            ],
+            "exclude": [
+                "Bands"
+            ]
         }
     },
     {
@@ -2547,8 +2609,11 @@
             "Debuff Inflictions"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Attack Speed",
+                "Debuff Inflictions",
+                "Can Proc"
+            ]
         }
     },
     {
@@ -2557,7 +2622,8 @@
         "type": "Item",
         "id": "voidsent-flame",
         "description": [
-            "Hitting an enemy at full health creates a lava pillar with a <span blue>12m</span> radius <span gray>(+2.4m per stack)</span> that deals <span yellow>260%</span> base damage. <span purple>Corrupts all Will-o'-the-Wisps</span>."
+            "Hitting an enemy at full health creates a lava pillar with a <span blue>12m</span> radius <span gray>(+2.4m per stack)</span> that deals <span yellow>260%</span> base damage. <span purple>Corrupts all Will-o'-the-Wisps</span>.",
+            "Pairs well with increased damage and proc chance items."
         ],
         "procCoefficient": {
             "On Hit": "1.0"
@@ -2566,8 +2632,14 @@
             "Void Items"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Damage",
+                "Chance to Proc",
+                "Can Proc"
+            ],
+            "exclude": [
+                "Will-o'-the-Wisp"
+            ]
         }
     },
     {
@@ -2576,14 +2648,18 @@
         "type": "Item",
         "id": "weeping-fungus",
         "description": [
-            "Heal <span green>2%</span> of max health per second while sprinting. <span purple>Corrupts all Bustling Fungi</span>."
+            "Heal <span green>2%</span> of max health <span gray>(+2% per stack)</span> per second while sprinting. <span purple>Corrupts all Bustling Fungi</span>.",
+            "Pairs well with movement speed and amplified healing items."
         ],
         "tags": [
             "Healing",
             "Void Items"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "Movement Speed",
+                "Amplified Healing"
+            ],
             "exclude": []
         }
     },
