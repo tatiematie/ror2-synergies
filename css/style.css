@@ -132,7 +132,7 @@ html [rarity=legendary] {
   background: url(../assets/img/items/bg-legendary.png) center no-repeat;
   background-size: 100%;
 }
-html [rarity=boss] {
+html [rarity=boss], html [rarity=stage] {
   background: url(../assets/img/items/bg-boss.png) center no-repeat;
   background-size: 100%;
 }
