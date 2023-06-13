@@ -27,6 +27,7 @@
                 "57 Leaf Clover",
                 "Bundle of Fireworks",
                 "On Kill",
+                "Egocentricism",
                 "Damage Taken",
                 "Mobility",
                 "Bands",
@@ -1978,7 +1979,8 @@
         "type": "Item",
         "id": "titanic-knurl",
         "description": [
-            "Gain <span green>+40%</span> max health <span gray>(+40 per stack)</span> and <span green>+1.6hp</span> per second base health regeneration <span gray>(+1.6 per stack)</span>."
+            "Gain <span green>+40%</span> max health <span gray>(+40 per stack)</span> and <span green>+1.6hp</span> per second base health regeneration <span gray>(+1.6 per stack)</span>.",
+            "Pairs well with healing, increased health, and amplified healing items."
         ],
         "tags": [
             "Increased Health",
@@ -1986,8 +1988,11 @@
             "Healing"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Healing",
+                "Increased Health",
+                "Amplified Healing"
+            ]
         }
     },
     {
@@ -1996,14 +2001,16 @@
         "type": "Item",
         "id": "queens-gland",
         "description": [
-            "Summon <span yellow>1</span> Beetle Guard <span gray>(+1 per stack)</span> every <span blue>30s</span>, deals <span yellow>300%</span> damage and has <span green>100%</span> health."
+            "Summon <span yellow>1</span> Beetle Guard <span gray>(+1 per stack)</span> every <span blue>30s</span>, deals <span yellow>300%</span> damage and has <span green>100%</span> health.",
+            "Pairs well with ally summon items."
         ],
         "tags": [
             "Ally Summons"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Ally Summons"
+            ]
         }
     },
     {
@@ -2012,14 +2019,16 @@
         "type": "Item",
         "id": "halcyon-seed",
         "description": [
-            "Summons Aurelionite before a boss fight, deals <span yellow>100%</span> damage <span gray>(+50% per stack)</span> and has <span green>100%</span> health <span gray>(+100% per stack)</span>."
+            "Summons Aurelionite before a boss fight, deals <span yellow>100%</span> damage <span gray>(+50% per stack)</span> and has <span green>100%</span> health <span gray>(+100% per stack)</span>.",
+            "Pairs well with ally summon items."
         ],
         "tags": [
             "Ally Summons"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Ally Summons"
+            ]
         }
     },
     {
@@ -2028,7 +2037,8 @@
         "type": "Item",
         "id": "little-disciple",
         "description": [
-            "Fire a homing wisp dealing <span yellow>300%</span> damage <span gray>(+300% per stack)</span> every <span blue>1.6s</span> while sprinting. Fire rate increases with movement speed."
+            "Fire a homing wisp dealing <span yellow>300%</span> damage <span gray>(+300% per stack)</span> every <span blue>1.6s</span> while sprinting. Fire rate increases with movement speed.",
+            "Pairs well with movement speed, increased damage, and proc chance items."
         ],
         "procCoefficient": {
             "On Hit": "1.0"
@@ -2037,8 +2047,30 @@
             "Can Proc"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Movement Speed",
+                "Damage",
+                "Chance to Proc"
+            ],
+            "exclude": [
+                "Bundle of Fireworks",
+                "Razorwire",
+                "On Kill",
+                "Shuriken",
+                "H3AD-5T v2",
+                "N'Kuahana's Opinion",
+                "Unstable Tesla Coil",
+                "Genesis Loop",
+                "Skill",
+                "Egocentricism",
+                "Disposable Missile Launcher",
+                "Preon Accumulator",
+                "Royal Capacitor",
+                "Molotov (6-Pack)",
+                "The Crowdfunder",
+                "Volcanic Egg",
+                "Sawmerang"
+            ]
         }
     },
     {
@@ -2047,14 +2079,17 @@
         "type": "Item",
         "id": "pearl",
         "description": [
-            "Gain <span green>+10%</span> max health <span gray>(+10% per stack)</span>."
+            "Gain <span green>+10%</span> max health <span gray>(+10% per stack)</span>.",
+            "Pairs well with sheild and increased health items."
         ],
         "tags": [
             "Increased Health"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Shield",
+                "Increased Health"
+            ]
         }
     },
     {
@@ -2063,7 +2098,8 @@
         "type": "Item",
         "id": "irradiant-pearl",
         "description": [
-            "Gain <span green>+10%</span> health, <span green>+10%</span> regeneration, <span blue>+10%</span> movement speed, <span yellow>+10%</span> damage, <span yellow>+10%</span> attack speed, <span yellow>+10%</span> critical strike chance, and <span green>+10%</span> armor."
+            "Gain <span green>+10%</span> max health, <span green>+10%</span> regeneration, <span blue>+10%</span> movement speed, <span yellow>+10%</span> damage, <span yellow>+10%</span> attack speed, <span yellow>+10%</span> critical strike chance, and <span green>+10%</span> armor.",
+            "Pairs well with attack speed, critical strike chance, movement speed, healing, increased damage, shield, increased health, and damage reduction items."
         ],
         "tags": [
             "Increased Health",
@@ -2076,8 +2112,16 @@
             "Healing"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Attack Speed",
+                "Critical Strike Chance",
+                "Movement Speed",
+                "Healing",
+                "Damage",
+                "Shield",
+                "Increased Health",
+                "Damage Reduction"
+            ]
         }
     },
     {
@@ -2086,7 +2130,8 @@
         "type": "Item",
         "id": "genesis-loop",
         "description": [
-            "Explode when below <span red>25%</span> max health dealing <span yellow>6,000%</span> base damage. <span blue>30</span> / <span blue>2s</span> <span gray>(+1 per stack)</span> cooldown."
+            "Explode when below <span red>25%</span> max health dealing <span yellow>6,000%</span> base damage. <span blue>30</span> / <span blue>2s</span> <span gray>(+1 per stack)</span> cooldown.",
+            "Pairs well with attack speed, critical strike chance, items that activate after taking damage, increased damage, and items that activate at low health."
         ],
         "tags": [
             "Damage",
@@ -2094,8 +2139,30 @@
             "High Damage"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Attack Speed",
+                "Critical Strike Chance",
+                "Damage Taken",
+                "Damage",
+                "At Low Health"
+            ],
+            "exclude": [
+                "Bundle of Fireworks",
+                "On Kill",
+                "Shuriken",
+                "Mobility",
+                "N'Kuahana's Opinion",
+                "Unstable Tesla Coil",
+                "Skill",
+                "Egocentricism",
+                "Disposable Missile Launcher",
+                "Preon Accumulator",
+                "Royal Capacitor",
+                "Molotov (6-Pack)",
+                "The Crowdfunder",
+                "Volcanic Egg",
+                "Sawmerang"
+            ]
         }
     },
     {
@@ -2104,7 +2171,8 @@
         "type": "Item",
         "id": "molten-perforator",
         "description": [
-            "Gain a <span yellow>10%</span> chance on hit to fire <span yellow>3</span> magma balls from the target that deal <span yellow>300%</span> damage <span gray>(+300% per stack)</span> each and ignite enemies."
+            "Gain a <span yellow>10%</span> chance on hit to fire <span yellow>3</span> magma balls from the target that deal <span yellow>300%</span> damage <span gray>(+300% per stack)</span> each and ignite enemies.",
+            "Pairs well with attack speed, increased damage, proc chance, and debuff inflictions."
         ],
         "procCoefficient": {
             "On Hit": "0.7"
@@ -2114,11 +2182,18 @@
             "Can Proc",
             "Chance to Proc",
             "Damage",
-            "High Damage"
+            "High Damage",
+            "Fire Damage"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Attack Speed",
+                "Critical Strike Chance",
+                "Damage",
+                "Debuff Inflictions",
+                "Chance to Proc",
+                "Can Proc"
+            ]
         }
     },
     {
@@ -2127,15 +2202,20 @@
         "type": "Item",
         "id": "shatterspleen",
         "description": [
-            "Gain <span yellow>+5%</span> critical strike chance. Critical strikes bleed enemies for <span yellow>240%</span> base damage, bleeding enemies explode dealing <span yellow>400%</span> damage <span gray>(+400% per stack)</span> + <span yellow>15%</span> of their max health <span gray>(+15% per stack)</span>."
+            "Gain <span yellow>+5%</span> critical strike chance. Critical strikes bleed enemies for <span yellow>240%</span> base damage, bleeding enemies explode dealing <span yellow>400%</span> damage <span gray>(+400% per stack)</span> + <span yellow>15%</span> of their max health <span gray>(+15% per stack)</span>.",
+            "Pairs well with attack speed, critical strike chance, and on kill effect items."
         ],
         "tags": [
             "Critical Strike Chance",
-            "Debuff Inflictions"
+            "Debuff Inflictions",
+            "On Kill"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Attack Speed",
+                "Critical Strike Chance",
+                "On Kill"
+            ]
         }
     },
     {
@@ -2144,15 +2224,18 @@
         "type": "Item",
         "id": "mired-urn",
         "description": [
-            "Deal <span yellow>100%</span> damage to <span yellow>1</span> nearby enemy <span gray>(+1 per stack)</span> while in combat and inflict them with tar, heal <span green>100%</span> of the damage dealt."
+            "Deal <span yellow>100%</span> damage to <span yellow>1</span> nearby enemy <span gray>(+1 per stack)</span> while in combat and inflict them with tar, heal <span green>100%</span> of the damage dealt.",
+            "Pairs well with debuff inflictions and amplified healing items."
         ],
         "tags": [
             "Debuff Inflictions",
             "Healing"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Debuff Inflictions",
+                "Amplified Healing"
+            ]
         }
     },
     {
@@ -2161,7 +2244,8 @@
         "type": "Item",
         "id": "charged-perforator",
         "description": [
-            "Gain a <span yellow>10%</span> chance to strike lightning on hit dealing <span yellow>500%</span> damage <span gray>(+500% per stack)</span>."
+            "Gain a <span yellow>10%</span> chance to strike lightning on hit dealing <span yellow>500%</span> damage <span gray>(+500% per stack)</span>.",
+            "Pairs well with attack speed, increased damage, and proc chance."
         ],
         "procCoefficient": {
             "On Hit": "1.0"
@@ -2173,8 +2257,13 @@
             "High Damage"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Attack Speed",
+                "Critical Strike Chance",
+                "Damage",
+                "Chance to Proc",
+                "Can Proc"
+            ]
         }
     },
     {
@@ -2183,14 +2272,16 @@
         "type": "Item",
         "id": "empathy-cores",
         "description": [
-            "Summon <span yellow>2</span> Solus Probes every <span blue>30s</span>, probes gain <span yellow>+100%</span> damage <span gray>(+100% per stack)</span> per ally."
+            "Summon <span yellow>2</span> Solus Probes every <span blue>30s</span>, probes gain <span yellow>+100%</span> damage <span gray>(+100% per stack)</span> per ally.",
+            "Pairs well with ally summon items."
         ],
         "tags": [
             "Ally Summons"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Ally Summons"
+            ]
         }
     },
     {
@@ -2199,15 +2290,18 @@
         "type": "Item",
         "id": "planula",
         "description": [
-            "Heal <span green>15hp</span> <span gray>(+15 per stack)</span> after taking damage."
+            "Heal <span green>15hp</span> <span gray>(+15 per stack)</span> after taking damage.",
+            "Pairs well with items that activate after taking damage and amplified healing."
         ],
         "tags": [
             "Damage Taken",
             "Healing"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Damage Taken",
+                "Amplified Healing"
+            ]
         }
     },
     {
@@ -2216,7 +2310,8 @@
         "type": "Item",
         "id": "defense-nucleus",
         "description": [
-            "Killing an elite monster summons an Alpha Construct that deals <span yellow>300%</span> damage and has <span green>300%</span> health. Capped at <span yellow>4</span>. <span gray>(+4 per stack)</span>"
+            "Killing an elite monster summons an Alpha Construct that deals <span yellow>300%</span> damage and has <span green>300%</span> health. Capped at <span yellow>4</span>. <span gray>(+4 per stack)</span>",
+            "Pairs well with on kill effects, items that activate after killing an elite enemy, and ally summons."
         ],
         "tags": [
             "Ally Summons",
@@ -2224,8 +2319,14 @@
             "On Kill"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "On Kill",
+                "Elite Kills",
+                "Ally Summons"
+            ],
+            "exclude": [
+                "Forgive Me Please"
+            ]
         }
     },
     {
