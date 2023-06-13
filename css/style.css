@@ -18,55 +18,6 @@
   background: none;
   border: none;
 }
-* [rarity=common] {
-  background: url(../assets/img/items/bg-common.png) center no-repeat;
-  background-size: 100%;
-}
-* [rarity=uncommon] {
-  background: url(../assets/img/items/bg-uncommon.png) center no-repeat;
-  background-size: 100%;
-}
-* [rarity=legendary] {
-  background: url(../assets/img/items/bg-legendary.png) center no-repeat;
-  background-size: 100%;
-}
-* [rarity=boss] {
-  background: url(../assets/img/items/bg-boss.png) center no-repeat;
-  background-size: 100%;
-}
-* [rarity=void] {
-  background: url(../assets/img/items/bg-void.png) center no-repeat;
-  background-size: 100%;
-}
-* [rarity=lunar] {
-  background: url(../assets/img/items/bg-lunar.png) center no-repeat;
-  background-size: 100%;
-}
-* [rarity=equipment], * [rarity=elite] {
-  background: url(../assets/img/items/bg-equipment.png) center no-repeat;
-  background-size: 100%;
-}
-* span[red] {
-  color: #E58161;
-}
-* span[yellow] {
-  color: #FBDA67;
-}
-* span[green] {
-  color: #9CE461;
-}
-* span[blue] {
-  color: #90C8DF;
-}
-* span[purple] {
-  color: #F87CC2;
-}
-* span[gray] {
-  color: #8D94AC;
-}
-*:focus {
-  outline: none;
-}
 
 .pane {
   border: 4px solid #868686;
@@ -168,6 +119,55 @@
 
 html {
   background-color: #000000;
+}
+html [rarity=common] {
+  background: url(../assets/img/items/bg-common.png) center no-repeat;
+  background-size: 100%;
+}
+html [rarity=uncommon] {
+  background: url(../assets/img/items/bg-uncommon.png) center no-repeat;
+  background-size: 100%;
+}
+html [rarity=legendary] {
+  background: url(../assets/img/items/bg-legendary.png) center no-repeat;
+  background-size: 100%;
+}
+html [rarity=boss] {
+  background: url(../assets/img/items/bg-boss.png) center no-repeat;
+  background-size: 100%;
+}
+html [rarity=void] {
+  background: url(../assets/img/items/bg-void.png) center no-repeat;
+  background-size: 100%;
+}
+html [rarity=lunar] {
+  background: url(../assets/img/items/bg-lunar.png) center no-repeat;
+  background-size: 100%;
+}
+html [rarity=equipment], html [rarity=elite] {
+  background: url(../assets/img/items/bg-equipment.png) center no-repeat;
+  background-size: 100%;
+}
+html span[red] {
+  color: #E58161;
+}
+html span[yellow] {
+  color: #FBDA67;
+}
+html span[green] {
+  color: #9CE461;
+}
+html span[blue] {
+  color: #90C8DF;
+}
+html span[purple] {
+  color: #F87CC2;
+}
+html span[gray] {
+  color: #8D94AC;
+}
+html:focus {
+  outline: none;
 }
 
 #app {

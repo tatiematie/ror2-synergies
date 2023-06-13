@@ -11,6 +11,7 @@
     }
 }
 
+// color palette
 $colors: (
     light_yellow: #FAFDC3,
     yellow: #FFFF58,
@@ -29,6 +30,7 @@ $colors: (
     outline_pane: #25253F,
 
     text_white: #FFFFFF,
+    text_black: #262626,
     text_gray: #8D94AC,
     text_red: #E58161,
     text_yellow: #FBDA67,
@@ -56,71 +58,6 @@ $colors: (
     button {
         background: none;
         border: none;
-    }
-
-    [rarity="common"] {
-        background: url(../assets/img/items/bg-common.png) center no-repeat;
-        background-size: 100%;
-    }
-    
-    [rarity="uncommon"] {
-        background: url(../assets/img/items/bg-uncommon.png) center no-repeat;
-        background-size: 100%;
-    }
-   
-    [rarity="legendary"] {
-        background: url(../assets/img/items/bg-legendary.png) center no-repeat;
-        background-size: 100%;
-    }
-   
-    [rarity="boss"] {
-        background: url(../assets/img/items/bg-boss.png) center no-repeat;
-        background-size: 100%;
-    }
-    
-    [rarity="void"] {
-        background: url(../assets/img/items/bg-void.png) center no-repeat;
-        background-size: 100%;
-    }
-    
-    [rarity="lunar"] {
-        background: url(../assets/img/items/bg-lunar.png) center no-repeat;
-        background-size: 100%;
-    }
-
-    [rarity="equipment"], [rarity="elite"] {
-        background: url(../assets/img/items/bg-equipment.png) center no-repeat;
-        background-size: 100%;
-    }
-
-    span {
-        &[red] {
-            color: map-get($colors, text_red);
-        }
-        
-        &[yellow] {
-            color: map-get($colors, text_yellow);
-        }
-        
-        &[green] {
-            color: map-get($colors, text_green);
-        }
-        
-        &[blue] {
-            color: map-get($colors, text_blue);
-        }
-        
-        &[purple] {
-            color: map-get($colors, text_purple);
-        }
-        
-        &[gray] {
-            color: map-get($colors, text_gray);
-        }
-    }
-
-    &:focus {
-        outline: none;
     }
 }
 
@@ -174,7 +111,6 @@ $colors: (
             }
         }
     }
-
 
     .heading {
         margin-bottom: 12px;
@@ -245,10 +181,77 @@ $colors: (
     }
 }
 
+// custom attributes
 html {
     background-color: map-get($colors, bg_body);
+
+    [rarity="common"] {
+        background: url(../assets/img/items/bg-common.png) center no-repeat;
+        background-size: 100%;
+    }
+    
+    [rarity="uncommon"] {
+        background: url(../assets/img/items/bg-uncommon.png) center no-repeat;
+        background-size: 100%;
+    }
+   
+    [rarity="legendary"] {
+        background: url(../assets/img/items/bg-legendary.png) center no-repeat;
+        background-size: 100%;
+    }
+   
+    [rarity="boss"] {
+        background: url(../assets/img/items/bg-boss.png) center no-repeat;
+        background-size: 100%;
+    }
+    
+    [rarity="void"] {
+        background: url(../assets/img/items/bg-void.png) center no-repeat;
+        background-size: 100%;
+    }
+    
+    [rarity="lunar"] {
+        background: url(../assets/img/items/bg-lunar.png) center no-repeat;
+        background-size: 100%;
+    }
+
+    [rarity="equipment"], [rarity="elite"] {
+        background: url(../assets/img/items/bg-equipment.png) center no-repeat;
+        background-size: 100%;
+    }
+
+    span {
+        &[red] {
+            color: map-get($colors, text_red);
+        }
+        
+        &[yellow] {
+            color: map-get($colors, text_yellow);
+        }
+        
+        &[green] {
+            color: map-get($colors, text_green);
+        }
+        
+        &[blue] {
+            color: map-get($colors, text_blue);
+        }
+        
+        &[purple] {
+            color: map-get($colors, text_purple);
+        }
+        
+        &[gray] {
+            color: map-get($colors, text_gray);
+        }
+    }
+
+    &:focus {
+        outline: none;
+    }
 }
 
+// application styles
 #app {
     height: fit-content;
     min-height: 100vh;
@@ -267,6 +270,7 @@ html {
     }   
 }
 
+// container styles 
 #container {
     column-gap: 12px;
     display: grid;
