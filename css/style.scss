@@ -170,7 +170,7 @@ $colors: (
             }
 
             &:not(open) summary:after {
-                background-image: url(/assets/icon/expand.svg);
+                background-image: url(../assets/icon/expand.svg);
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: 16px;
@@ -183,7 +183,7 @@ $colors: (
             }
 
             &[open] summary::after {
-                background-image: url(/assets/icon/collapse.svg);
+                background-image: url(../assets/icon/collapse.svg);
             }
 
             @include aboveBreakpoint(715px) {

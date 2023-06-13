@@ -106,7 +106,7 @@
   }
 }
 .pane .block details:not(open) summary:after {
-  background-image: url(/assets/icon/expand.svg);
+  background-image: url(../assets/icon/expand.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 16px;
@@ -118,7 +118,7 @@
   width: 22px;
 }
 .pane .block details[open] summary::after {
-  background-image: url(/assets/icon/collapse.svg);
+  background-image: url(../assets/icon/collapse.svg);
 }
 @media (min-width: 715px) {
   .pane .block details {
