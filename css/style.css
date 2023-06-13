@@ -93,7 +93,17 @@
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  z-index: 10;
+}
+.pane .block details:hover {
+  cursor: pointer;
+}
+.pane .block details::-webkit-details-marker {
+  display: none;
+}
+@media (min-width: 715px) {
+  .pane .block details summary::after {
+    display: none;
+  }
 }
 .pane .block details:not(open) summary:after {
   background-image: url(/assets/icon/expand.svg);
@@ -109,6 +119,11 @@
 }
 .pane .block details[open] summary::after {
   background-image: url(/assets/icon/collapse.svg);
+}
+@media (min-width: 715px) {
+  .pane .block details {
+    pointer-events: none;
+  }
 }
 .pane .block .title {
   display: block;

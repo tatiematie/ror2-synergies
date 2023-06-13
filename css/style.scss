@@ -11,6 +11,12 @@
     }
 }
 
+@mixin aboveBreakpoint($minWidth) {
+    @media (min-width: $minWidth) {
+        @content;
+    }
+}
+
 // color palette
 $colors: (
     light_yellow: #FAFDC3,
@@ -148,7 +154,20 @@ $colors: (
         details {
             position: relative;
             user-select: none;
-            z-index: 10;
+
+            &:hover {
+                cursor: pointer;
+            }
+            
+            &::-webkit-details-marker {
+                display: none;
+            }
+
+            summary::after {
+                @include aboveBreakpoint(715px) {
+                    display: none;
+                }
+            }
 
             &:not(open) summary:after {
                 background-image: url(/assets/icon/expand.svg);
@@ -165,6 +184,10 @@ $colors: (
 
             &[open] summary::after {
                 background-image: url(/assets/icon/collapse.svg);
+            }
+
+            @include aboveBreakpoint(715px) {
+                pointer-events: none;
             }
         }
 
