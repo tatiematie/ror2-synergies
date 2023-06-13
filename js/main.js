@@ -14,9 +14,9 @@ let itemData
 
 const initializePage = async () => {
     const appVersion = '1.1.2.13'
-    const itemDesc = document.querySelector('#item-description')
+    const itemDesc = document.querySelector('#item-description details')
     const itemSelect = document.querySelector('#item-select')
-    const itemSynergies = document.querySelector('#item-synergies')
+    const itemSynergies = document.querySelector('#item-synergies details')
 
     const createButton = (item) => {
         const { name, rarity, id } = item
@@ -79,9 +79,13 @@ const initializePage = async () => {
 
         itemDesc.innerHTML = ''
 
-        const descriptionTitle = document.createElement('p')
-        descriptionTitle.innerHTML = `Description:`
-        descriptionTitle.classList.add('title')
+        const descriptionTitle = document.createElement('summary'),
+            descriptionTitleContent = document.createElement('span')
+        descriptionTitleContent.innerHTML = `Description:`
+        descriptionTitleContent.classList.add('title')
+
+        descriptionTitle.appendChild(descriptionTitleContent)
+
         itemDesc.appendChild(descriptionTitle)
 
         for (const entry of description) {
@@ -131,9 +135,12 @@ const initializePage = async () => {
 
         itemSynergies.innerHTML = ''
 
-        const itemSynergiesTitle = document.createElement('p')
-        itemSynergiesTitle.classList.add('title')
-        itemSynergiesTitle.innerHTML = 'Potential Synergies:'
+        const itemSynergiesTitle = document.createElement('summary'),
+            itemSynergiesTitleContent = document.createElement('span')
+        itemSynergiesTitleContent.classList.add('title')
+        itemSynergiesTitleContent.innerHTML = 'Potential Synergies:'
+
+        itemSynergiesTitle.appendChild(itemSynergiesTitleContent)
         itemSynergies.appendChild(itemSynergiesTitle)
 
         const includeTags = Array.isArray(item.synergies.include) ? item.synergies.include : []

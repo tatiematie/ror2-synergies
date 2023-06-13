@@ -88,14 +88,37 @@
   border: 4px solid #4D5E6E;
   padding: 12px;
 }
+.pane .block details {
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  z-index: 10;
+}
+.pane .block details:not(open) summary:after {
+  background-image: url(/assets/icon/expand.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  content: "";
+  height: 22px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 22px;
+}
+.pane .block details[open] summary::after {
+  background-image: url(/assets/icon/collapse.svg);
+}
 .pane .block .title {
+  display: block;
   margin-bottom: 6px;
   position: relative;
   font-size: 1.25em;
 }
 .pane .block .title::after {
   background-color: #FFFFFF;
-  bottom: 0;
+  bottom: -2px;
   box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.3333333333);
   content: "";
   height: 2px;
