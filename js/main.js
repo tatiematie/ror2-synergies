@@ -260,6 +260,7 @@ const initializePage = async () => {
     versionTag.innerHTML = `<span gray>v${appVersion}</span>`
 
     app.appendChild(versionTag)
+    console.log(`Verison ${appVersion}`)
 }
 
 initializePage()
