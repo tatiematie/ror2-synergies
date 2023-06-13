@@ -159,7 +159,7 @@ $colors: (
                 cursor: pointer;
             }
             
-            &::-webkit-details-marker {
+            summary::-webkit-details-marker {
                 display: none;
             }
 
