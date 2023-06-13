@@ -138,7 +138,7 @@ const initializePage = async () => {
         const itemSynergiesTitle = document.createElement('summary'),
             itemSynergiesTitleContent = document.createElement('span')
         itemSynergiesTitleContent.classList.add('title')
-        itemSynergiesTitleContent.innerHTML = 'Potential Synergies:'
+        itemSynergiesTitleContent.innerHTML = 'Synergies:'
 
         itemSynergiesTitle.appendChild(itemSynergiesTitleContent)
         itemSynergies.appendChild(itemSynergiesTitle)
@@ -202,8 +202,20 @@ const initializePage = async () => {
             })
         }
 
+        const openCollapsedDetails = () => {
+            const detailsList = document.querySelectorAll('details')
+
+            detailsList.forEach((details) => {
+                if (window.innerWidth > 750 && !details.hasAttribute('open')) {
+                    details.setAttribute('open', '')
+                }
+            })
+        }
+
         justifySynergies()
+
         window.addEventListener('resize', justifySynergies)
+        window.addEventListener('resize', openCollapsedDetails)
     }
 
     const handleButtonClick = (item, button) => {
@@ -222,7 +234,7 @@ const initializePage = async () => {
 
             const displayPane = document.querySelector('#display-pane')
 
-            if (window.innerWidth <= 715) {
+            if (window.innerWidth <= 750) {
                 displayPane.scrollIntoView({ behavior: 'smooth', block: 'start' })
             }
         }

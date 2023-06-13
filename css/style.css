@@ -100,7 +100,7 @@
 .pane .block details summary::-webkit-details-marker {
   display: none;
 }
-@media (min-width: 715px) {
+@media (min-width: 751px) {
   .pane .block details summary::after {
     display: none;
   }
@@ -120,7 +120,7 @@
 .pane .block details[open] summary::after {
   background-image: url(../assets/icon/collapse.svg);
 }
-@media (min-width: 715px) {
+@media (min-width: 751px) {
   .pane .block details {
     pointer-events: none;
   }
@@ -221,7 +221,7 @@ html:focus {
   left: 24px;
   position: absolute;
 }
-@media (max-width: 715px) {
+@media (max-width: 750px) {
   #app #app-version {
     left: 12px;
   }
@@ -238,7 +238,7 @@ html:focus {
   position: relative;
   row-gap: 12px;
 }
-@media (max-width: 715px) {
+@media (max-width: 750px) {
   #container {
     display: flex;
     flex-direction: column;

@@ -164,7 +164,7 @@ $colors: (
             }
 
             summary::after {
-                @include aboveBreakpoint(715px) {
+                @include aboveBreakpoint(751px) {
                     display: none;
                 }
             }
@@ -186,7 +186,7 @@ $colors: (
                 background-image: url(../assets/icon/collapse.svg);
             }
 
-            @include aboveBreakpoint(715px) {
+            @include aboveBreakpoint(751px) {
                 pointer-events: none;
             }
         }
@@ -311,7 +311,7 @@ html {
         left: 24px;
         position: absolute;
 
-        @include atBreakpoint(715px) {
+        @include atBreakpoint(750px) {
             left: 12px;
         }
     }   
@@ -328,7 +328,7 @@ html {
     position: relative;
     row-gap: 12px;
 
-    @include atBreakpoint(715px) {
+    @include atBreakpoint(750px) {
         display: flex;
         flex-direction: column;
         flex-flow: column-reverse;
