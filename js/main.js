@@ -13,13 +13,13 @@ const loadComponent = async (filepath) => {
 let itemData
 
 const initializePage = async () => {
-    const appVersion = '1.1.2.12'
+    const appVersion = '1.1.2.13'
     const itemDesc = document.querySelector('#item-description')
     const itemSelect = document.querySelector('#item-select')
     const itemSynergies = document.querySelector('#item-synergies')
 
     const createButton = (item) => {
-        const { name, rarity, type, id, description } = item
+        const { name, rarity, id } = item
         const src = `assets/img/items/${id}.png`
 
         const li = document.createElement('li'),
