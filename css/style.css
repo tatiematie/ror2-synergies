@@ -159,11 +159,11 @@
 }
 
 html {
-  background-color: #0A0310;
+  background-color: #10051A;
 }
 html body {
-  background: linear-gradient(135deg, #130818 25%, transparent 25%), linear-gradient(225deg, #130818 25%, transparent 25%), linear-gradient(315deg, #130818 25%, transparent 25%), linear-gradient(45deg, #130818 25%, transparent 25%);
-  background-color: #0A0310;
+  background: linear-gradient(135deg, #1B0B22 25%, transparent 25%), linear-gradient(225deg, #1B0B22 25%, transparent 25%), linear-gradient(315deg, #1B0B22 25%, transparent 25%), linear-gradient(45deg, #1B0B22 25%, transparent 25%);
+  background-color: #10051A;
   background-position: top center;
   background-size: 40px 40px;
 }
@@ -226,7 +226,7 @@ html:focus {
   transition: 0.125s linear;
 }
 #app #body-shadow {
-  background: linear-gradient(rgba(0, 0, 0, 0) 0%, #130818 100%);
+  background: linear-gradient(rgba(0, 0, 0, 0) 0%, #1B0B22 100%);
   height: 100%;
   position: fixed;
   width: 100%;
