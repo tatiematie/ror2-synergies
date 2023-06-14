@@ -14,9 +14,9 @@ let itemData
 
 const initializePage = async () => {
     const appVersion = '1.1.2.16'
-    const itemDesc = document.querySelector('#item-description details')
+    const itemDesc = document.querySelector('#item-description')
     const itemSelect = document.querySelector('#item-select')
-    const itemSynergies = document.querySelector('#item-synergies details')
+    const itemSynergies = document.querySelector('#item-synergies')
 
     const createButton = (item) => {
         const { name, rarity, id } = item
@@ -79,19 +79,23 @@ const initializePage = async () => {
 
         itemDesc.innerHTML = ''
 
-        const descriptionTitle = document.createElement('summary'),
+        const descriptionDetails = document.createElement('details'),
+            descriptionTitle = document.createElement('summary'),
             descriptionTitleContent = document.createElement('span')
         descriptionTitleContent.innerHTML = `Description:`
         descriptionTitleContent.classList.add('title')
 
-        descriptionTitle.appendChild(descriptionTitleContent)
+        descriptionDetails.setAttribute('open', '')
 
-        itemDesc.appendChild(descriptionTitle)
+        descriptionTitle.appendChild(descriptionTitleContent)
+        descriptionDetails.appendChild(descriptionTitle)
+
+        itemDesc.appendChild(descriptionDetails)
 
         for (const entry of description) {
             const entryElement = document.createElement('p')
             entryElement.innerHTML = entry
-            itemDesc.appendChild(entryElement)
+            descriptionDetails.appendChild(entryElement)
         }
 
         const existingProcCoefficientTable = itemDesc.querySelector('.proc-coefficient-table')
@@ -135,13 +139,17 @@ const initializePage = async () => {
 
         itemSynergies.innerHTML = ''
 
-        const itemSynergiesTitle = document.createElement('summary'),
+        const itemSynergiesDetails = document.createElement('details'),
+            itemSynergiesTitle = document.createElement('summary'),
             itemSynergiesTitleContent = document.createElement('span')
         itemSynergiesTitleContent.classList.add('title')
         itemSynergiesTitleContent.innerHTML = 'Synergies:'
 
+        itemSynergiesDetails.setAttribute('open', '')
+
         itemSynergiesTitle.appendChild(itemSynergiesTitleContent)
-        itemSynergies.appendChild(itemSynergiesTitle)
+        itemSynergiesDetails.appendChild(itemSynergiesTitle)
+        itemSynergies.appendChild(itemSynergiesDetails)
 
         const includeTags = Array.isArray(item.synergies.include) ? item.synergies.include : []
         const excludeTags = Array.isArray(item.synergies.exclude) ? item.synergies.exclude : []
@@ -156,11 +164,11 @@ const initializePage = async () => {
         includeTags.forEach((include) => {
             const tagListTitle = document.createElement('p')
             tagListTitle.innerHTML = include
-            itemSynergies.appendChild(tagListTitle)
+            itemSynergiesDetails.appendChild(tagListTitle)
 
             const tagList = document.createElement('ul')
             tagList.classList.add('content')
-            itemSynergies.appendChild(tagList)
+            itemSynergiesDetails.appendChild(tagList)
 
             itemData.forEach((dataItem) => {
                 const { name: dataItemName, rarity, id: dataItemID, tags } = dataItem
@@ -181,7 +189,7 @@ const initializePage = async () => {
                     const img = document.createElement('img')
                     img.src = `assets/img/items/${dataItemID}.png`
                     img.alt = dataItemName
-                    img.title = dataItemName
+                    img.title = name
                     img.loading = 'lazy'
 
                     tagListItem.appendChild(img)
