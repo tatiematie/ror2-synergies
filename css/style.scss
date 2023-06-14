@@ -29,7 +29,8 @@ $colors: (
     dark_gray_blue: #252F38,
     darker_gray_blue: #1E252B,
 
-    bg_body: #000000,
+    bg_body: #0A0310,
+    bg_light_tile: #130818,
     
     border_pane: #868686,
 
@@ -64,6 +65,10 @@ $colors: (
     button {
         background: none;
         border: none;
+    }
+
+    &:not(button):focus {
+        outline: none;
     }
 }
 
@@ -218,7 +223,7 @@ $colors: (
             line-height: 24px;
 
             &:not(.title, :last-child, #item-synergies p) {
-                margin-bottom: 4px;
+                margin-bottom: 6px;
             }
         }
 
@@ -230,15 +235,17 @@ $colors: (
 
 // custom attributes
 html {
-    background: linear-gradient(135deg, #130818 25%, transparent 25%),
-    linear-gradient(225deg, #130818 25%, transparent 25%),
-    linear-gradient(315deg, #130818 25%, transparent 25%),
-    linear-gradient(45deg, #130818 25%, transparent 25%);
-    background-color: #0A0310;
-    background-position: top center;
-    background-size: 40px 40px;
-    height: 100%;
-    margin: 0;
+    background-color: map-get($colors, bg_body);
+
+    body {
+        background: linear-gradient(135deg, map-get($colors, bg_light_tile) 25%, transparent 25%),
+            linear-gradient(225deg, map-get($colors, bg_light_tile) 25%, transparent 25%),
+            linear-gradient(315deg, map-get($colors, bg_light_tile) 25%, transparent 25%),
+            linear-gradient(45deg, map-get($colors, bg_light_tile) 25%, transparent 25%);
+        background-color: map-get($colors, bg_body);
+        background-position: top center;
+        background-size: 40px 40px;
+    }
 
     [rarity="common"] {
         background: url(../assets/img/items/bg-common.png) center no-repeat;
@@ -308,21 +315,41 @@ html {
 
 // application styles
 #app {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 45.31%, rgba(0, 0, 0, 0.5) 100%);
     height: fit-content;
     min-height: 100vh;
     position: relative;
     transition: .125s linear;
 
-    #app-version {
-        bottom: 12px;
-        color: map-get($colors, text_white);
-        left: 24px;
-        position: absolute;
+    #body-shadow {
+        background: linear-gradient(rgba(0, 0, 0, 0) 0%, map-get($colors, bg_light_tile) 100%);
+        height: 100%;
+        position: fixed;
+        width: 100%;
+        z-index: -1;
+    } 
 
-        @include atBreakpoint(750px) {
-            left: 12px;
+    #footer {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1080px;
+        padding: 0 12px 12px;
+    
+        p {
+            color: map-get($colors, text_gray);
+            font-size: 14px;
+
+            &:not(:last-of-type) {
+                margin-bottom: 4px;
+            }
         }
-    }   
+    
+        @include atBreakpoint(750px) {
+            padding: 12px;
+        }
+    }
 }
 
 // container styles 
@@ -332,7 +359,8 @@ html {
     grid-template-columns: minmax(0, 100%) minmax(0, 364px);
     margin: 0 auto;
     max-width: 1080px;
-    padding: 24px 24px 48px;
+    min-height: calc(100vh - 48px);
+    padding: 24px 12px;
     position: relative;
     row-gap: 12px;
 
@@ -340,11 +368,12 @@ html {
         display: flex;
         flex-direction: column;
         flex-flow: column-reverse;
-        padding: 24px 12px 48px;
+        padding: 24px 12px;
     }
 
     #display-pane {
         scroll-margin: 10px;
+        height: min-content;
 
         #item-thumbnail {
             border: 4px solid map-get($colors, border_pane);
@@ -497,10 +526,4 @@ html {
             }
         }
     }
-}
-
-#test {
-    // width: 100%;
-    // height: 100%;
-    // position: fixed;
 }
