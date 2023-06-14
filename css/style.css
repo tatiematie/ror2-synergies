@@ -23,7 +23,7 @@
   border: 4px solid #868686;
   background-color: #3E4E5B;
   padding: 12px;
-  text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.3333333333);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3333333333);
   position: relative;
 }
 .pane .corners::before, .pane .corners::after, .pane.corners::before, .pane.corners::after {
@@ -66,12 +66,12 @@
 }
 .pane .heading h2 {
   color: #FFFFFF;
-  font-size: 2em;
+  font-size: 32px;
   margin-bottom: 4px;
 }
 .pane .heading p {
   color: #868686;
-  font-size: 1.125em;
+  font-size: 18px;
 }
 .pane .content {
   background-color: #252F38;
@@ -94,8 +94,8 @@
      -moz-user-select: none;
           user-select: none;
 }
-.pane .block details:hover {
-  cursor: pointer;
+.pane .block details img {
+  pointer-events: all;
 }
 .pane .block details summary::-webkit-details-marker {
   display: none;
@@ -127,14 +127,14 @@
 }
 .pane .block .title {
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   position: relative;
-  font-size: 1.25em;
+  font-size: 20px;
 }
 .pane .block .title::after {
   background-color: #FFFFFF;
   bottom: -2px;
-  box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.3333333333);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3333333333);
   content: "";
   height: 2px;
   left: -2px;
@@ -145,8 +145,8 @@
   margin-top: 12px;
 }
 .pane .block p {
-  font-size: 1.125em;
-  line-height: 1.4em;
+  font-size: 18px;
+  line-height: 24px;
 }
 .pane .block p:not(.title, :last-child, #item-synergies p) {
   margin-bottom: 4px;
@@ -156,7 +156,12 @@
 }
 
 html {
-  background-color: #000000;
+  background: linear-gradient(135deg, #130818 25%, transparent 25%), linear-gradient(225deg, #130818 25%, transparent 25%), linear-gradient(315deg, #130818 25%, transparent 25%), linear-gradient(45deg, #130818 25%, transparent 25%);
+  background-color: #0A0310;
+  background-position: top center;
+  background-size: 40px 40px;
+  height: 100%;
+  margin: 0;
 }
 html [rarity=common] {
   background: url(../assets/img/items/bg-common.png) center no-repeat;
@@ -268,11 +273,11 @@ html:focus {
 }
 #container #display-pane table {
   margin-top: 6px;
-  box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.3333333333);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3333333333);
 }
 #container #display-pane table td {
   background-color: #4D5E6E;
-  font-size: 1.125em;
+  font-size: 18px;
   outline: 2px solid #868686;
   padding: 6px;
   width: 96px;

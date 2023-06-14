@@ -72,7 +72,7 @@ $colors: (
     border: 4px solid map-get($colors, border_pane);
     background-color: map-get($colors, gray_blue);
     padding: 12px;
-    text-shadow: 2px 1px 2px map-get($colors, text_shadow);
+    text-shadow: 2px 2px 2px map-get($colors, text_shadow);
     position: relative;
 
     .corners, &.corners {
@@ -123,13 +123,13 @@ $colors: (
         
         h2 {
             color: map-get($colors, text_white);
-            font-size: 2em;
+            font-size: 32px;
             margin-bottom: 4px;
         }
 
         p {
             color: map-get($colors, text_light_gray);
-            font-size: 1.125em;
+            font-size: 18px;
         }
     }
 
@@ -155,8 +155,8 @@ $colors: (
             position: relative;
             user-select: none;
 
-            &:hover {
-                cursor: pointer;
+            img {
+                pointer-events: all;
             }
             
             summary::-webkit-details-marker {
@@ -193,14 +193,14 @@ $colors: (
 
         .title {
             display: block;
-            margin-bottom: 6px;
+            margin-bottom: 8px;
             position: relative;
-            font-size: 1.25em;
+            font-size: 20px;
 
             &::after {
                 background-color: map-get($colors, text_white);
                 bottom: -2px;
-                box-shadow: 2px 1px 2px map-get($colors, text_shadow);
+                box-shadow: 2px 2px 2px map-get($colors, text_shadow);
                 content: '';
                 height: 2px;
                 left: -2px;
@@ -214,8 +214,8 @@ $colors: (
         }
         
         p {
-            font-size: 1.125em;
-            line-height: 1.4em;
+            font-size: 18px;
+            line-height: 24px;
 
             &:not(.title, :last-child, #item-synergies p) {
                 margin-bottom: 4px;
@@ -230,7 +230,15 @@ $colors: (
 
 // custom attributes
 html {
-    background-color: map-get($colors, bg_body);
+    background: linear-gradient(135deg, #130818 25%, transparent 25%),
+    linear-gradient(225deg, #130818 25%, transparent 25%),
+    linear-gradient(315deg, #130818 25%, transparent 25%),
+    linear-gradient(45deg, #130818 25%, transparent 25%);
+    background-color: #0A0310;
+    background-position: top center;
+    background-size: 40px 40px;
+    height: 100%;
+    margin: 0;
 
     [rarity="common"] {
         background: url(../assets/img/items/bg-common.png) center no-repeat;
@@ -360,11 +368,11 @@ html {
 
         table {
             margin-top: 6px;
-            box-shadow: 2px 1px 2px map-get($colors, text_shadow);
+            box-shadow: 2px 2px 2px map-get($colors, text_shadow);
 
             td {
                 background-color: map-get($colors, light_gray_blue);
-                font-size: 1.125em;
+                font-size: 18px;
                 outline: 2px solid map-get($colors, border_pane);
                 padding: 6px;
                 width: 96px;
@@ -489,4 +497,10 @@ html {
             }
         }
     }
+}
+
+#test {
+    // width: 100%;
+    // height: 100%;
+    // position: fixed;
 }
