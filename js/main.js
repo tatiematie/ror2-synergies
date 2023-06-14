@@ -13,7 +13,7 @@ const loadComponent = async (filepath) => {
 let itemData
 
 const initializePage = async () => {
-    const appVersion = '1.1.6'
+    const appVersion = '1.1.7'
     const itemDesc = document.querySelector('#item-description')
     const itemSelect = document.querySelector('#item-select')
     const itemSynergies = document.querySelector('#item-synergies')
@@ -275,11 +275,20 @@ const initializePage = async () => {
     await loadButtons()
     attachButtonEventListeners()
 
-    let versionTag = document.createElement('p')
-    versionTag.id = 'app-version'
-    versionTag.innerHTML = `<span gray>v${appVersion}</span>`
+    const footer = document.querySelector('#footer')
 
-    app.appendChild(versionTag)
+    let versionTag = document.createElement('p'),
+        copyrightTag = document.createElement('p')
+    const copyrightYear = new Date().getFullYear()
+
+    versionTag.id = 'app-version'
+    versionTag.innerHTML = `made by tatiematie, v${appVersion}`
+
+    copyrightTag.innerHTML = `not affiliated with Hopoo Games, Risk of Rain 2 &copy; ${copyrightYear} Hopoo Games`
+
+    footer.appendChild(versionTag)
+    footer.appendChild(copyrightTag)
+
     console.log(`Verison ${appVersion}`)
 }
 
