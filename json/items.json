@@ -1006,7 +1006,8 @@
         "tags": [
             "Damage",
             "Bands",
-            "High Damage"
+            "High Damage",
+            "Cooldowns"
         ],
         "synergies": {
             "include": [
@@ -1029,7 +1030,8 @@
         "tags": [
             "Damage",
             "Bands",
-            "High Damage"
+            "High Damage",
+            "Cooldowns"
         ],
         "synergies": {
             "include": [
@@ -1474,7 +1476,8 @@
                 "Movement Speed",
                 "Damage",
                 "Chance to Proc",
-                "Mobility"
+                "Mobility",
+                "Per Hit"
             ],
             "exclude": [
                 "Bundle of Fireworks",
@@ -1489,8 +1492,9 @@
                 "Royal Capacitor",
                 "Molotov (6-Pack)",
                 "The Crowdfunder",
-                "Volcanic Egg",
-                "Sawmerang"
+                "Sawmerang",
+                "Ceremonial Dagger",
+                "Will-o'-the-Wisp"
             ]
         }
     },
@@ -2574,7 +2578,8 @@
         ],
         "tags": [
             "Damage Prevention",
-            "Void Items"
+            "Void Items",
+            "Cooldowns"
         ],
         "synergies": {
             "include": [
@@ -2601,7 +2606,8 @@
             "Damage",
             "Bands",
             "Void Items",
-            "High Damage"
+            "High Damage",
+            "Cooldowns"
         ],
         "synergies": {
             "include": [
@@ -3198,7 +3204,8 @@
                 "Genesis Loop",
                 "Skills",
                 "Egocentricism",
-                "Equipment"
+                "Equipment",
+                "Aspect"
             ]
         }
     },
@@ -3223,7 +3230,8 @@
                 "Fire Damage"
             ],
             "exclude": [
-                "Equipment"
+                "Equipment",
+                "Aspect"
             ]
         }
     },
@@ -3249,7 +3257,8 @@
                 "Equipment Cooldown Reduction"
             ],
             "exclude": [
-                "Equipment"
+                "Equipment",
+                "Aspect"
             ]
         }
     },
@@ -3282,7 +3291,8 @@
                 "Damage Reduction"
             ],
             "exclude": [
-                "Equipment"
+                "Equipment",
+                "Aspect"
             ]
         }
     },
@@ -3292,7 +3302,8 @@
         "type": "Item",
         "id": "disposable-missile-launcher",
         "description": [
-            "Fire <span yellow>12</span> missiles dealing <span yellow>300%</span> damage each. <span blue>45s</span> cooldown."
+            "Fire <span yellow>12</span> missiles dealing <span yellow>300%</span> damage each. <span blue>45s</span> cooldown.",
+            "Pairs well with increased damage, proc chance, and equipment cooldown reduction items."
         ],
         "procCoefficient": {
             "On Hit": "1.0"
@@ -3305,8 +3316,36 @@
             "High Damage"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Critical Strike Chance",
+                "Damage",
+                "Chance to Proc",
+                "Equipment Cooldown Reduction",
+                "Per Hit"
+            ],
+            "exclude": [
+                "Bundle of Fireworks",
+                "Will-o'-the-Wisp",
+                "Razorwire",
+                "Shuriken",
+                "Ceremonial Dagger",
+                "Frost Relic",
+                "Mobility",
+                "N'Kuahana's Opinion",
+                "Unstable Tesla Coil",
+                "Genesis Loop",
+                "Skills",
+                "Egocentricism",
+                "Spinel Tonic",
+                "Preon Accumulator",
+                "Royal Capacitor",
+                "Molotov (6-Pack)",
+                "The Crowdfunder",
+                "Volcanic Egg",
+                "Sawmerang",
+                "Aspect",
+                "Ocular HUD"
+            ]
         }
     },
     {
@@ -3315,14 +3354,19 @@
         "type": "Item",
         "id": "foreign-fruit",
         "description": [
-            "Heal <span green>50%</span> of max health on use. <span blue>45s</span> cooldown."
+            "Heal <span green>50%</span> of max health on use. <span blue>45s</span> cooldown.",
+            "Pairs well with amplified healing items."
         ],
         "tags": [
             "Equipment"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Amplified Healing"
+            ],
+            "exclude": [
+                "Equipment"
+            ]
         }
     },
     {
@@ -3331,14 +3375,20 @@
         "type": "Item",
         "id": "primordial-cube",
         "description": [
-            "Create a blackhole that draws in enemies within <span yellow>30m</span> for <span blue>10s</span>. <span blue>60s</span> cooldown."
+            "Create a blackhole that draws in enemies within <span yellow>30m</span> for <span blue>10s</span>. <span blue>60s</span> cooldown.",
+            "Pairs well with on kill effects and equipment cooldown reduction items."
         ],
         "tags": [
             "Equipment"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "On Kill",
+                "Equipment Cooldown Reduction"
+            ],
+            "exclude": [
+                "Equipment"
+            ]
         }
     },
     {
@@ -3347,7 +3397,8 @@
         "type": "Item",
         "id": "trophy-hunters-tricorn",
         "description": [
-            "Instantly kill a boss enemy and cause it to drop its repsective Boss Item. Single use, consumed on use."
+            "Instantly kill a boss enemy and cause it to drop its repsective Boss Item. Single use, consumed on use.",
+            "No currently known item synergies."
         ],
         "tags": [
             "Equipment"
@@ -3363,15 +3414,25 @@
         "type": "Item",
         "id": "ocular-hud",
         "description": [
-            "Gain <span yellow>+100%</span> critical strike chance for <span blue>8s</span>. <span blue>60s</span> cooldown."
+            "Gain <span yellow>+100%</span> critical strike chance for <span blue>8s</span>. <span blue>60s</span> cooldown.",
+            "Pairs well with attack speed, increased damage, and equipment cooldown reduction items."
         ],
         "tags": [
             "Equipment",
             "Critical Strike Chance"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Attack Speed",
+                "Critical Strike Chance",
+                "Damage",
+                "Equipment Cooldown Reduction",
+                "Per Hit"
+            ],
+            "exclude": [
+                "Equipment",
+                "Aspect"
+            ]
         }
     },
     {
@@ -3380,14 +3441,19 @@
         "type": "Item",
         "id": "the-backup",
         "description": [
-            "Summon <span yellow>4</span> Strike Drones that last <span blue>25s</span>. <span blue>100s</span> cooldown."
+            "Summon <span yellow>4</span> Strike Drones that last <span blue>25s</span>. <span blue>100s</span> cooldown.",
+            "Pairs well with ally summons and equipment cooldown reduction items."
         ],
         "tags": [
             "Equipment"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Ally Summons"
+            ],
+            "exclude": [
+                "Equipment"
+            ]
         }
     },
     {
@@ -3396,7 +3462,8 @@
         "type": "Item",
         "id": "preon-accumulator",
         "description": [
-            "Fire an energy ball dealing <span yellow>4,000%</span> damage, enemies within <span yellow>35m</span> are struck by energy tendrils dealing <span yellow>600%</span> damage. <span blue>140s</span> cooldown."
+            "Fire an energy ball dealing <span yellow>4,000%</span> damage, enemies within <span yellow>35m</span> are struck by energy tendrils dealing <span yellow>600%</span> damage. <span blue>140s</span> cooldown.",
+            "Pairs well with increased damage, proc chance, and equipment cooldown reduction items."
         ],
         "procCoefficient": {
             "Explosion": "1.0",
@@ -3409,8 +3476,37 @@
             "High Damage"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Critical Strike Chance",
+                "Damage",
+                "Chance to Proc",
+                "Equipment Cooldown Reduction",
+                "Per Hit"
+            ],
+            "exclude": [
+                "Bundle of Fireworks",
+                "Will-o'-the-Wisp",
+                "Razorwire",
+                "Shuriken",
+                "Ceremonial Dagger",
+                "Frost Relic",
+                "Mobility",
+                "N'Kuahana's Opinion",
+                "Unstable Tesla Coil",
+                "Genesis Loop",
+                "Skills",
+                "Egocentricism",
+                "Spinel Tonic",
+                "Disposable Missile Launcher",
+                "Preon Accumulator",
+                "Royal Capacitor",
+                "Molotov (6-Pack)",
+                "Ocular HUD",
+                "The Crowdfunder",
+                "Volcanic Egg",
+                "Sawmerang",
+                "Aspect"
+            ]
         }
     },
     {
@@ -3419,13 +3515,17 @@
         "type": "Item",
         "id": "goobo-jr",
         "description": [
-            "Summon a gummy clone with <span green>300%</span> health and <span yellow>300%</span> damage. Lasts <span blue>30s</span>, <span blue>100s</span> cooldown."
+            "Summon a gummy clone with <span green>300%</span> health and <span yellow>300%</span> damage. Lasts <span blue>30s</span>, <span blue>100s</span> cooldown.",
+            "Pairs well with ally summons and equipment cooldown reduction items."
         ],
         "tags": [
             "Equipment"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "Ally Summons",
+                "Equipment Cooldown Reduction"
+            ],
             "exclude": []
         }
     },
@@ -3435,7 +3535,8 @@
         "type": "Item",
         "id": "milky-chrysalis",
         "description": [
-            "Gain <span blue>+20%</span> movement speed on use, gain the ability to fly for <span blue>15s</span>. <span blue>60s</span> cooldown."
+            "Gain <span blue>+20%</span> movement speed on use, gain the ability to fly for <span blue>15s</span>. <span blue>60s</span> cooldown.",
+            "Pairs well with movement speed, mobility, and equipment cooldown reduction items."
         ],
         "tags": [
             "Equipment",
@@ -3443,8 +3544,13 @@
             "Mobility"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Movement Speed",
+                "Mobility"
+            ],
+            "exclude": [
+                "Equipment"
+            ]
         }
     },
     {
@@ -3453,7 +3559,8 @@
         "type": "Item",
         "id": "royal-capacitor",
         "description": [
-            "Strike the targeted enemy with lightning dealing <span yellow>3,000%</span> damage, stun nearby enemies. <span blue>20s</span> cooldown."
+            "Strike the targeted enemy with lightning dealing <span yellow>3,000%</span> damage, stun nearby enemies. <span blue>20s</span> cooldown.",
+            "Pairs well with increased damage, proc chance, and equipment cooldown reduction items."
         ],
         "procCoefficient": {
             "On Hit": "1.0"
@@ -3465,8 +3572,37 @@
             "High Damage"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Critical Strike Chance",
+                "Damage",
+                "Chance to Proc",
+                "Equipment Cooldown Reduction",
+                "Per Hit"
+            ],
+            "exclude": [
+                "Bundle of Fireworks",
+                "Will-o'-the-Wisp",
+                "Razorwire",
+                "Shuriken",
+                "Ceremonial Dagger",
+                "Frost Relic",
+                "Mobility",
+                "N'Kuahana's Opinion",
+                "Unstable Tesla Coil",
+                "Genesis Loop",
+                "Skills",
+                "Egocentricism",
+                "Spinel Tonic",
+                "Preon Accumulator",
+                "Royal Capacitor",
+                "Molotov (6-Pack)",
+                "The Crowdfunder",
+                "Volcanic Egg",
+                "Sawmerang",
+                "Aspect",
+                "Ocular HUD",
+                "Disposable Missile Launcher"
+            ]
         }
     },
     {
@@ -3475,7 +3611,8 @@
         "type": "Item",
         "id": "molotov-6-pack",
         "description": [
-            "Throw <span yellow>6</span> molotovs that ignite nearby enemies for <span yellow>500%</span> base damage, each molotov leaves a burning area that deals <span yellow>200%</span> damage per second. <span blue>45s</span> cooldown."
+            "Throw <span yellow>6</span> molotovs that ignite nearby enemies for <span yellow>500%</span> base damage, each molotov leaves a burning area that deals <span yellow>200%</span> damage per second. <span blue>45s</span> cooldown.",
+            "Pairs well with proc chance, debuff inflictions, and equipment cooldown reduction items"
         ],
         "procCoefficient": {
             "On Hit": "1.0",
@@ -3490,8 +3627,16 @@
             "High Damage"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Chance to Proc",
+                "Debuff Inflictions",
+                "Equipment Cooldown Reduction",
+                "Per Hit"
+            ],
+            "exclude": [
+                "Equipment",
+                "Aspect"
+            ]
         }
     },
     {
@@ -3500,7 +3645,8 @@
         "type": "Item",
         "id": "executive-card",
         "description": [
-            "Get <span yellow>10%</span> off all purchases made useing gold, all multishop contents become available for purchase. <span blue>0.1s</span> cooldown."
+            "Get <span yellow>10%</span> off all purchases made useing gold, all multishop contents become available for purchase. <span blue>0.1s</span> cooldown.",
+            "No currently known item synergies."
         ],
         "tags": [
             "Equipment"
@@ -3516,7 +3662,8 @@
         "type": "Item",
         "id": "the-crowdfunder",
         "description": [
-            "Fire bullets that deal <span yellow>100%</span> damage per bullet while active, each bullet costs <span yellow>1</span> gold. Cost scales with time."
+            "Fire bullets that deal <span yellow>100%</span> damage per bullet while active, each bullet costs <span yellow>1</span> gold. Cost scales with time.",
+            "Pairs well with increased damage and proc chance items."
         ],
         "procCoefficient": {
             "On Hit": "1.0"
@@ -3527,8 +3674,28 @@
             "Can Proc"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Damage",
+                "Chance to Proc",
+                "Per Hit"
+            ],
+            "exclude": [
+                "Bundle of Fireworks",
+                "Razorwire",
+                "Shuriken",
+                "Will-o'-the-Wisp",
+                "Bands",
+                "Ceremonial Dagger",
+                "Frost Relic",
+                "Mobility",
+                "N'Kuahana's Opinion",
+                "Unstable Tesla Coil",
+                "Genesis Loop",
+                "Skills",
+                "Egocentricism",
+                "Equipment",
+                "Aspect"
+            ]
         }
     },
     {
@@ -3537,14 +3704,20 @@
         "type": "Item",
         "id": "gnarled-woodsprite",
         "description": [
-            "Heals you for <span green>1.5%</span> of max health per second, may be sent to an ally to heal them for <span green>10%</span> of max health per second. <span blue>15s</span> cooldown."
+            "Heals you for <span green>1.5%</span> of max health per second, may be sent to an ally to heal them for <span green>10%</span> of max health per second. <span blue>15s</span> cooldown.",
+            "Pairs well with amplified healing and equipment cooldown reduction items."
         ],
         "tags": [
             "Equipment"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Amplified Healing",
+                "Equipment Cooldown Reduction"
+            ],
+            "exclude": [
+                "Equipment"
+            ]
         }
     },
     {
@@ -3553,14 +3726,19 @@
         "type": "Item",
         "id": "radar-scanner",
         "description": [
-            "Reveal all interactables within <span yellow>500m</span> for <span blue>10s</span>. <span blue>45s</span> cooldown."
+            "Reveal all interactables within <span yellow>500m</span> for <span blue>10s</span>. <span blue>45s</span> cooldown.",
+            "Pairs well with items that affect stage generation."
         ],
         "tags": [
             "Equipment"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Stage Generation"
+            ],
+            "exclude": [
+                "Eulogy Zero"
+            ]
         }
     },
     {
@@ -3569,14 +3747,21 @@
         "type": "Item",
         "id": "eccentric-vase",
         "description": [
-            "Create a quantum tunnel at your cursor up to <span yellow>1,000m</span> away. Lasts for <span blue>30s</span>, <span blue>45s</span> cooldown."
+            "Create a quantum tunnel at your cursor up to <span yellow>1,000m</span> away. Lasts for <span blue>30s</span>, <span blue>45s</span> cooldown.",
+            "Pairs well with mobility and eqipment cooldown reduction items."
         ],
         "tags": [
-            "Equipment"
+            "Equipment",
+            "Mobility"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Mobility",
+                "Equipment Cooldown Reduction"
+            ],
+            "exclude": [
+                "Equipment"
+            ]
         }
     },
     {
@@ -3585,13 +3770,17 @@
         "type": "Item",
         "id": "blast-shower",
         "description": [
-            "Remove all negative effects and destroy projectiles within a very small radius. <span blue>20s</span> cooldown."
+            "Remove all negative effects and destroy projectiles within a very small radius. <span blue>20s</span> cooldown.",
+            "Pairs well with items that have cooldown debuffs and equipment cooldown reduction items."
         ],
         "tags": [
             "Equipment"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "Cooldowns",
+                "Equipment Cooldown Reduction"
+            ],
             "exclude": []
         }
     },
@@ -3601,7 +3790,8 @@
         "type": "Item",
         "id": "volcanic-egg",
         "description": [
-            "Turn into a fireball for <span blue>5s</span> dealing <span yellow>500%</span> damage on impact, detonate for <span yellow>800%</span> damage. Hitting an enemy in fireball form resets the <span blue>5s</span> time limit. <span blue>30s</span> cooldown."
+            "Turn into a fireball for <span blue>5s</span> dealing <span yellow>500%</span> damage on impact, detonate for <span yellow>800%</span> damage. Hitting an enemy in fireball form resets the <span blue>5s</span> time limit. <span blue>30s</span> cooldown.",
+            "Pairs well with increased damage, movement speed, proc chance, and equipment cooldown reduction items."
         ],
         "procCoefficient": {
             "On Hit": "1.0"
@@ -3610,11 +3800,33 @@
             "Equipment",
             "Damage",
             "Can Proc",
-            "High Damage"
+            "High Damage",
+            "Mobility"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Critical Strike Chance",
+                "Damage",
+                "Movement Speed",
+                "Chance to Proc",
+                "Equipment Cooldown Reduction",
+                "Per Hit"
+            ],
+            "exclude": [
+                "Bundle of Fireworks",
+                "Will-o'-the-Wisp",
+                "Razorwire",
+                "Shuriken",
+                "Ceremonial Dagger",
+                "Frost Relic",
+                "N'Kuahana's Opinion",
+                "Unstable Tesla Coil",
+                "Genesis Loop",
+                "Skills",
+                "Egocentricism",
+                "Equipment",
+                "Aspect"
+            ]
         }
     },
     {
@@ -3623,15 +3835,22 @@
         "type": "Item",
         "id": "jade-elephant",
         "description": [
-            "Gain <span green>+500</span> armor for <span blue>5s</span>. <span blue>45s</span> cooldown."
+            "Gain <span green>+500</span> armor for <span blue>5s</span>. <span blue>45s</span> cooldown.",
+            "Pairs well with items that activate after taking damage, damage reduction, and equipment cooldown reduction items."
         ],
         "tags": [
             "Equipment",
             "Damage Reduction"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Damage Taken",
+                "Damage Reduction",
+                "Equipment Cooldown Reduction"
+            ],
+            "exclude": [
+                "Equipment"
+            ]
         }
     },
     {
@@ -3654,8 +3873,30 @@
             "High Damage"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Critical Strike Chance",
+                "Damage",
+                "Debuff Inflictions",
+                "Chance to Proc",
+                "Equipment Cooldown Reduction",
+                "Per Hit"
+            ],
+            "exclude": [
+                "Bundle of Fireworks",
+                "Will-o'-the-Wisp",
+                "Razorwire",
+                "Shuriken",
+                "Ceremonial Dagger",
+                "Frost Relic",
+                "Mobility",
+                "N'Kuahana's Opinion",
+                "Unstable Tesla Coil",
+                "Genesis Loop",
+                "Skills",
+                "Egocentricism",
+                "Equipment",
+                "Aspect"
+            ]
         }
     },
     {
@@ -3664,13 +3905,16 @@
         "type": "Item",
         "id": "recycler",
         "description": [
-            "Reroll an item into another item of the same rarity, items can only be rerolled once. <span blue>45s</span> cooldown."
+            "Reroll an item into another item of the same rarity, items can only be rerolled once. <span blue>45s</span> cooldown.",
+            "Pairs well with equipment cooldown reduction items."
         ],
         "tags": [
             "Equipment"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "Equipment Cooldown Reduction"
+            ],
             "exclude": []
         }
     },
@@ -3680,14 +3924,23 @@
         "type": "Item",
         "id": "super-massive-leech",
         "description": [
-            "Heal <span green>20%</span> of the damage dealt for the next <span blue>8s</span>. <span blue>60s</span> cooldown."
+            "Heal <span green>20%</span> of the damage dealt for the next <span blue>8s</span>. <span blue>60s</span> cooldown.",
+            "Pairs well with increased damage, amplified healing, and equipment cooldown reduction items."
         ],
         "tags": [
             "Equipment"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Critical Strike Chance",
+                "Damage",
+                "Amplified Healing",
+                "Equipment Cooldown Reduction"
+            ],
+            "exclude": [
+                "Equipment",
+                "Aspect"
+            ]
         }
     },
     {
@@ -3696,7 +3949,8 @@
         "type": "Item",
         "id": "gorags-opus",
         "description": [
-            "Gain <span blue>+50%</span> movement speed and <span yellow>+100%</span> attack speed for all allies for <span blue>7s</span>. <span blue>45s</span> cooldown."
+            "Gain <span blue>+50%</span> movement speed and <span yellow>+100%</span> attack speed for all allies for <span blue>7s</span>. <span blue>45s</span> cooldown.",
+            "Pairs well with attack speed, increased damage, movement speed, proc chance, and equipment cooldown reduction items."
         ],
         "tags": [
             "Equipment",
@@ -3704,8 +3958,29 @@
             "Movement Speed"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Attack Speed",
+                "Critical Strike Chance",
+                "Damage",
+                "Movement Speed",
+                "Chance to Proc",
+                "Equipment Cooldown Reduction",
+                "Per Hit"
+            ],
+            "exclude": [
+                "Bundle of Fireworks",
+                "Will-o'-the-Wisp",
+                "Razorwire",
+                "Ceremonial Dagger",
+                "Mobility",
+                "Frost Relic",
+                "N'Kuahana's Opinion",
+                "Unstable Tesla Coil",
+                "Genesis Loop",
+                "Egocentricism",
+                "Equipment",
+                "Aspect"
+            ]
         }
     },
     {
@@ -3714,14 +3989,18 @@
         "type": "Item",
         "id": "forgive-me-please",
         "description": [
-            "Throw a doll that triggers all on-kill effects every second for <span blue>8s</span>. <span blue>45s</span> cooldown."
+            "Throw a doll that triggers all on-kill effects every second for <span blue>8s</span>. <span blue>45s</span> cooldown.",
+            "Pairs well with on kill effects and equipment cooldown reduction items."
         ],
         "tags": [
             "Equipment",
             "On Kill"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "On Kill",
+                "Equipment Cooldown Reduction"
+            ],
             "exclude": []
         }
     },
@@ -3731,7 +4010,8 @@
         "type": "Item",
         "id": "remote-caffeinator",
         "description": [
-            "Call in a vending machine that lands after <span blue>5s</span> dealing <span yellow>2,000%</span> damage to nearby enemies. Interact to purchase <span yellow>3</span> soda cans which heal allies within <span yellow>25m</span> for <span green>25%</span> of max health, can be used <span yellow>12</span> times. Each purchase costs <span yellow>5</span> gold, cost scales with time. <span blue>60s</span> cooldown."
+            "Call in a vending machine that lands after <span blue>5s</span> dealing <span yellow>2,000%</span> damage to nearby enemies. Interact to purchase <span yellow>3</span> soda cans which heal allies within <span yellow>25m</span> for <span green>25%</span> of max health, can be used <span yellow>12</span> times. Each purchase costs <span yellow>5</span> gold, cost scales with time. <span blue>60s</span> cooldown.",
+            "Pairs well with increased damage, proc chance, items that activate on interaction, and equipment cooldown reduction."
         ],
         "procCoefficient": {
             "On Hit": "1.0"
@@ -3741,8 +4021,28 @@
             "On Interaction Effects"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Critical Strike Chance",
+                "Damage",
+                "Chance to Proc",
+                "On Interaction Effects",
+                "Equipment Cooldown Reduction"
+            ],
+            "exclude": [
+                "Will-o'-the-Wisp",
+                "Razorwire",
+                "Shuriken",
+                "Ceremonial Dagger",
+                "Frost Relic",
+                "Mobility",
+                "N'Kuahana's Opinion",
+                "Unstable Tesla Coil",
+                "Genesis Loop",
+                "Skills",
+                "Egocentricism",
+                "Equipment",
+                "Aspect"
+            ]
         }
     },
     {
@@ -3751,7 +4051,8 @@
         "type": "Aspect",
         "id": "ifrits-distinction",
         "description": [
-            "All attacks ignite enemies dealing <span yellow>50%</span> total damage, the holder leaves a trail of fire."
+            "All attacks ignite enemies dealing <span yellow>50%</span> total damage, the holder leaves a trail of fire.",
+            "Pairs well with attack speed, debuff infliction, and proc chance items."
         ],
         "tags": [
             "Aspect",
@@ -3760,8 +4061,16 @@
             "Fire Damage"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Attack Speed",
+                "Debuff Inflictions",
+                "Can Proc",
+                "Per Hit"
+            ],
+            "exclude": [
+                "Equipment",
+                "Aspect"
+            ]
         }
     },
     {
@@ -3770,15 +4079,20 @@
         "type": "Aspect",
         "id": "his-reassurance",
         "description": [
-            "Heal allies within <span yellow>30m</span> for <span green>40%</span> of the holder's base damage <span yellow>4</span> times per second, drop a healing orb on death."
+            "Heal allies within <span yellow>30m</span> for <span green>40%</span> of the holder's base damage <span yellow>4</span> times per second, drop a healing orb on death.",
+            "Pairs well with amplified healing items."
         ],
         "tags": [
             "Aspect",
             "Healing"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Amplified Healing"
+            ],
+            "exclude": [
+                "Equipment"
+            ]
         }
     },
     {
@@ -3787,7 +4101,8 @@
         "type": "Aspect",
         "id": "silence-between-two-strikes",
         "description": [
-            "<span green>50%</span> of the holder's health is converted to shield, all attacks attach lightning bombs to the target which deal <span yellow>50%</span> total damage after exploding."
+            "<span green>50%</span> of the holder's health is converted to shield, all attacks attach lightning bombs to the target which deal <span yellow>50%</span> total damage after exploding.",
+            "Pairs well with attack speed, increased damage, shield, and proc chance items."
         ],
         "tags": [
             "Aspect",
@@ -3795,8 +4110,18 @@
             "Damage"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Attack Speed",
+                "Critical Strike Chance",
+                "Damage",
+                "Shield",
+                "Can Proc",
+                "Per Hit"
+            ],
+            "exclude": [
+                "Equipment",
+                "Aspect"
+            ]
         }
     },
     {
@@ -3805,7 +4130,8 @@
         "type": "Aspect",
         "id": "her-biting-embrace",
         "description": [
-            "All attacks greatly slow enemies for <span blue>1.5s</span> multiplied by the attack's proc coefficient, explode on death and freeze nearby enemies."
+            "All attacks greatly slow enemies for <span blue>1.5s</span> multiplied by the attack's proc coefficient, explode on death and freeze nearby enemies.",
+            "Pairs well with attack speed, debuff infliction, and proc chance items."
         ],
         "tags": [
             "Aspect",
@@ -3813,8 +4139,16 @@
             "Debuff Inflictions"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Attack Speed",
+                "Debuff Inflictions",
+                "Can Proc",
+                "Per Hit"
+            ],
+            "exclude": [
+                "Equipment",
+                "Aspect"
+            ]
         }
     },
     {
@@ -3823,7 +4157,8 @@
         "type": "Aspect",
         "id": "nkuhanas-retort",
         "description": [
-            "All attacks inflict the Healing Disabled debuff for <span blue>8s</span>. The holder periodically releases <span yellow>3</span>-<span yellow>4</span> malachite spikes which explode on impact and deal <span yellow>100%</span> damage, explosions leave lingering malachite spikes. Summon a Malachite Urchin on death which will shoot at nearby monsters."
+            "All attacks inflict the Healing Disabled debuff for <span blue>8s</span>. The holder periodically releases <span yellow>3</span>-<span yellow>4</span> malachite spikes which explode on impact and deal <span yellow>100%</span> damage, explosions leave lingering malachite spikes. Summon a Malachite Urchin on death which will shoot at nearby monsters.",
+            "Pairs well with attack speed, proc chance, and debuff infliction items."
         ],
         "tags": [
             "Aspect",
@@ -3831,7 +4166,12 @@
             "Debuff Inflictions"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "Attack Speed",
+                "Debuff Inflictions",
+                "Can Proc",
+                "Per Hit"
+            ],
             "exclude": []
         }
     },
@@ -3841,7 +4181,8 @@
         "type": "Aspect",
         "id": "spectral-circlet",
         "description": [
-            "Attacks greatly slow enemies, nearby allies are made invisible."
+            "Attacks greatly slow enemies, nearby allies are made invisible.",
+            "Pairs well with attack speed, proc chance, and debuff infliction items."
         ],
         "tags": [
             "Aspect",
@@ -3849,8 +4190,16 @@
             "Debuff Inflictions"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Attack Speed",
+                "Debuff Inflictions",
+                "Can Proc",
+                "Per Hit"
+            ],
+            "exclude": [
+                "Equipment",
+                "Aspect"
+            ]
         }
     },
     {
@@ -3859,7 +4208,8 @@
         "type": "Aspect",
         "id": "shared-design",
         "description": [
-            "Gain <span yellow>+30%</span> movement speed and <span green>+25%</span> max health, all health is converted to shield. Attacks inflict the Cripple debuff. Fire <span yellow>4</span> bombs every <span blue>10s</span> dealing <span yellow>30%</span> damage."
+            "Gain <span yellow>+30%</span> movement speed and <span green>+25%</span> max health, all health is converted to shield. Attacks inflict the Cripple debuff. Fire <span yellow>4</span> bombs every <span blue>10s</span> dealing <span yellow>30%</span> damage.",
+            "Pairs well with attack speed, movement speed, increased damage, debuff inflictions, shield, and increased health items."
         ],
         "tags": [
             "Aspect",
@@ -3867,8 +4217,20 @@
             "Debuff Inflictions"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Attack Speed",
+                "Critical Strike Chance",
+                "Damage",
+                "Movement Speed",
+                "Debuff Inflictions",
+                "Shield",
+                "Increased Health",
+                "Per Hit"
+            ],
+            "exclude": [
+                "Equipment",
+                "Aspect"
+            ]
         }
     }
 ]
