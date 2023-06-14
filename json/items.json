@@ -4065,6 +4065,7 @@
                 "Attack Speed",
                 "Debuff Inflictions",
                 "Can Proc",
+                "Fire Damage",
                 "Per Hit"
             ],
             "exclude": [
