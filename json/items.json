@@ -351,7 +351,7 @@
                 "On Kill",
                 "Damage Taken",
                 "Mobility",
-                "Skill"
+                "Skills"
             ]
         }
     },
@@ -681,6 +681,9 @@
                 "Can Proc",
                 "Per Hit",
                 "Missiles"
+            ],
+            "exclude": [
+                "Plasma Shrimp"
             ]
         }
     },
@@ -724,7 +727,7 @@
                 "The Crowdfunder",
                 "Volcanic Egg",
                 "Sawmerang",
-                "Skill"
+                "Skills"
             ]
         }
     },
@@ -774,7 +777,8 @@
                 "Per Hit"
             ],
             "exclude": [
-                "Skill"
+                "Skills",
+                "Polylute"
             ]
         }
     },
@@ -821,7 +825,7 @@
             "exclude": [
                 "Tri-Tip Dagger",
                 "Stun Grenade",
-                "Skill"
+                "Skills"
             ]
         }
     },
@@ -899,7 +903,6 @@
             "Pairs well with equipment cooldown reduction and equipment items."
         ],
         "tags": [
-            "Skill Cooldown Reduction",
             "Equipment Cooldown Reduction"
         ],
         "synergies": {
@@ -1055,6 +1058,9 @@
                 "Attack Speed",
                 "Debuff Inflictions",
                 "Can Proc"
+            ],
+            "exclude": [
+                "Tentabauble"
             ]
         }
     },
@@ -1123,7 +1129,7 @@
         "id": "lepton-daisy",
         "description": [
             "Heals allies within the teleporter for <span green>50%</span> of max health <span yellow>1</span> time <span gray>(+1 per stack)</span> per teleporter.",
-            "Pairs well with items activate based on Teleporter charging."
+            "Pairs well with items activate based on Teleporter charging and amplified healing items."
         ],
         "tags": [
             "Healing",
@@ -1131,7 +1137,8 @@
         ],
         "synergies": {
             "include": [
-                "Teleporter Charging"
+                "Teleporter Charging",
+                "Amplified Healing"
             ]
         }
     },
@@ -1172,7 +1179,7 @@
                 "On Kill",
                 "Mobility",
                 "Bands",
-                "Skill"
+                "Skills"
             ]
         }
     },
@@ -1366,12 +1373,13 @@
                 "Per Hit"
             ],
             "exclude": [
+                "Bundle of Fireworks",
                 "Razorwire",
                 "Shuriken",
                 "N'Kuahana's Opinion",
                 "Unstable Tesla Coil",
                 "Genesis Loop",
-                "Skill",
+                "Skills",
                 "Egocentricism",
                 "Disposable Missile Launcher",
                 "Preon Accumulator",
@@ -1416,7 +1424,7 @@
                 "Mobility",
                 "N'Kuahana's Opinion",
                 "Genesis Loop",
-                "Skill",
+                "Skills",
                 "Disposable Missile Launcher",
                 "Preon Accumulator",
                 "Royal Capacitor",
@@ -1474,7 +1482,7 @@
                 "Shuriken",
                 "N'Kuahana's Opinion",
                 "Genesis Loop",
-                "Skill",
+                "Skills",
                 "Egocentricism",
                 "Disposable Missile Launcher",
                 "Preon Accumulator",
@@ -1517,7 +1525,7 @@
                 "Mobility",
                 "Unstable Tesla Coil",
                 "Genesis Loop",
-                "Skill",
+                "Skills",
                 "Egocentricism",
                 "Disposable Missile Launcher",
                 "Preon Accumulator",
@@ -1559,7 +1567,7 @@
                 "Mobility",
                 "N'Kuahana's Opinion",
                 "Genesis Loop",
-                "Skill",
+                "Skills",
                 "Disposable Missile Launcher",
                 "Preon Accumulator",
                 "Royal Capacitor",
@@ -1682,7 +1690,7 @@
             "Pairs well with skill cooldown reduction items."
         ],
         "tags": [
-            "Skill Cooldown"
+            "Skill Cooldown Reduction"
         ],
         "synergies": {
             "include": [
@@ -1827,7 +1835,7 @@
                 "Mobility",
                 "N'Kuahana's Opinion",
                 "Genesis Loop",
-                "Skill",
+                "Skills",
                 "Egocentricism",
                 "Disposable Missile Launcher",
                 "Preon Accumulator",
@@ -1946,7 +1954,6 @@
             "Pairs well with barrier and damage reduction items."
         ],
         "tags": [
-            "Defense",
             "Barrier"
         ],
         "synergies": {
@@ -2012,6 +2019,9 @@
         "synergies": {
             "include": [
                 "Ally Summons"
+            ],
+            "exclude": [
+                "Void Items"
             ]
         }
     },
@@ -2031,6 +2041,9 @@
         "synergies": {
             "include": [
                 "Ally Summons"
+            ],
+            "exclude": [
+                "Void Items"
             ]
         }
     },
@@ -2065,7 +2078,7 @@
                 "N'Kuahana's Opinion",
                 "Unstable Tesla Coil",
                 "Genesis Loop",
-                "Skill",
+                "Skills",
                 "Egocentricism",
                 "Disposable Missile Launcher",
                 "Preon Accumulator",
@@ -2084,7 +2097,7 @@
         "id": "pearl",
         "description": [
             "Gain <span green>+10%</span> max health <span gray>(+10% per stack)</span>.",
-            "Pairs well with sheild and increased health items."
+            "Pairs well with shield and increased health items."
         ],
         "tags": [
             "Increased Health",
@@ -2160,7 +2173,7 @@
                 "Mobility",
                 "N'Kuahana's Opinion",
                 "Unstable Tesla Coil",
-                "Skill",
+                "Skills",
                 "Egocentricism",
                 "Disposable Missile Launcher",
                 "Preon Accumulator",
@@ -2293,6 +2306,9 @@
         "synergies": {
             "include": [
                 "Ally Summons"
+            ],
+            "exclude": [
+                "Void Items"
             ]
         }
     },
@@ -2339,7 +2355,8 @@
                 "Ally Summons"
             ],
             "exclude": [
-                "Forgive Me Please"
+                "Forgive Me Please",
+                "Void Items"
             ]
         }
     },
@@ -2669,7 +2686,8 @@
         "type": "Item",
         "id": "shaped-glass",
         "description": [
-            "Gain <span yellow>+100%</span> base damage <span gray>(+100% per stack)</span>, lose <span red>50%</span> max health <span gray>(+50% per stack)</span>."
+            "Gain <span yellow>+100%</span> base damage <span gray>(+100% per stack)</span>, lose <span red>50%</span> max health <span gray>(+50% per stack)</span>.",
+            "Pairs well with attack speed, increased damage, and proc chance items."
         ],
         "tags": [
             "Damage",
@@ -2677,8 +2695,20 @@
             "High Damage"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Attack Speed",
+                "Critical Strike Chance",
+                "Damage",
+                "Chance to Proc"
+            ],
+            "exclude": [
+                "Stun Grenade",
+                "Tri-Tip Dagger",
+                "57 Leaf Clover",
+                "Lost Seer's Glasses",
+                "Needletick",
+                "Tentabauble"
+            ]
         }
     },
     {
@@ -2687,7 +2717,8 @@
         "type": "Item",
         "id": "brittle-crown",
         "description": [
-            "Gain a <span yellow>30%</span> change to gain <span yellow>2</span> gold <span gray>(+2 per stack)</span> on hit. Scales with time. Lose gold when taking damage, gold loss equals <span red>100%</span> of the health lost <span gray>(+100% per stack)</span>."
+            "Gain a <span yellow>30%</span> change to gain <span yellow>2</span> gold <span gray>(+2 per stack)</span> on hit. Scales with time. Lose gold when taking damage, gold loss equals <span red>100%</span> of the health lost <span gray>(+100% per stack)</span>.",
+            "Pairs well with attack speed, increased damage, and proc chance items."
         ],
         "tags": [
             "Chance to Proc",
@@ -2695,7 +2726,11 @@
             "Money"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "Attack Speed",
+                "Damage",
+                "Can Proc"
+            ],
             "exclude": []
         }
     },
@@ -2705,7 +2740,8 @@
         "type": "Item",
         "id": "transcendence",
         "description": [
-            "Gain <span green>+50%</span> max health <span gray>(+25% per stack)</span>, converts all health into shield."
+            "Gain <span green>+50%</span> max health <span gray>(+25% per stack)</span>, converts all health into shield.",
+            "Pairs well with shield and increased health items."
         ],
         "tags": [
             "Increased Health",
@@ -2713,7 +2749,10 @@
             "Lunar"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "Shield",
+                "Increased Health"
+            ],
             "exclude": []
         }
     },
@@ -2723,14 +2762,18 @@
         "type": "Item",
         "id": "corpsebloom",
         "description": [
-            "Gain <span green>+100%</span> healing power <span gray>(+100% per stack)</span>, all healing is applied over time. Heal up to <span green>10%</span> of max health <span gray>(-50% per stack)</span> per second."
+            "Gain <span green>+100%</span> healing power <span gray>(+100% per stack)</span>, all healing is applied over time. Heal up to <span green>10%</span> of max health <span gray>(-50% per stack)</span> per second.",
+            "Pairs well with healing and amplified healing items."
         ],
         "tags": [
             "Amplified Healing",
             "Lunar"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "Healing",
+                "Amplified Healing"
+            ],
             "exclude": []
         }
     },
@@ -2740,14 +2783,18 @@
         "type": "Item",
         "id": "gesture-of-the-drowned",
         "description": [
-            "Reduce equipment cooldowns by <span yellow>50%</span> <span gray>(+15% per stack)</span>, equipment activates automatically."
+            "Reduce equipment cooldowns by <span yellow>50%</span> <span gray>(+15% per stack)</span>, equipment activates automatically.",
+            "Pairs well with equipment cooldown reduction and equipment items."
         ],
         "tags": [
             "Lunar",
             "Equipment Cooldown Reduction"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "Equipment Cooldown Reduction",
+                "Equipment"
+            ],
             "exclude": []
         }
     },
@@ -2757,18 +2804,26 @@
         "type": "Item",
         "id": "strides-of-heresy",
         "description": [
-            "Replaces Utility skill with Shadowfade. Become intangible for <span blue>3s</span> <span gray>(+3s per stack)</span>, gain <span blue>+30%</span> movement speed, heal <span green>18.2%</span> of max health <span gray>(+18.2% per stack)</span>."
+            "Replaces Utility skill with Shadowfade. Become intangible for <span blue>3s</span> <span gray>(+3s per stack)</span>, gain <span blue>+30%</span> movement speed, heal <span green>18.2%</span> of max health <span gray>(+18.2% per stack)</span>.",
+            "Pairs well with movement speed, mobility, amplified healing, and skill cooldown reduction items."
         ],
         "tags": [
             "Mobility",
             "Healing",
             "Lunar",
-            "Skill",
+            "Skills",
             "Utility Skill"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Movement Speed",
+                "Mobility",
+                "Amplified Healing",
+                "Skill Cooldown Reduction"
+            ],
+            "exclude": [
+                "Void Items"
+            ]
         }
     },
     {
@@ -2777,7 +2832,8 @@
         "type": "Item",
         "id": "visions-of-heresy",
         "description": [
-            "Replaces Primary skill with Hungering Gaze. Fires homing shards that detonate dealing <span yellow>120%</span> base damage, holds up to <span yellow>12</span> charges <span gray>(+12 per stack)</span>. <span blue>2s</span> reload <span gray>(+2s per stack)</span>."
+            "Replaces Primary skill with Hungering Gaze. Fires homing shards that detonate dealing <span yellow>120%</span> base damage, holds up to <span yellow>12</span> charges <span gray>(+12 per stack)</span>. <span blue>2s</span> reload <span gray>(+2s per stack)</span>.",
+            "Pairs well with attack speed, increased damage, and proc chance items."
         ],
         "procCoefficient": {
             "On Hit": "0.1",
@@ -2787,12 +2843,36 @@
             "Damage",
             "Can Proc",
             "Lunar",
-            "Skill",
+            "Skills",
             "Primary Skill"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Attack Speed",
+                "Critical Strike Chance",
+                "Damage",
+                "Chance to Proc",
+                "Per Hit"
+            ],
+            "exclude": [
+                "On Interaction Effects",
+                "On Kill",
+                "Bands",
+                "Razorwire",
+                "Shuriken",
+                "Mobility",
+                "N'Kuahana's Opinion",
+                "Unstable Tesla Coil",
+                "Genesis Loop",
+                "Egocentricism",
+                "Disposable Missile Launcher",
+                "Preon Accumulator",
+                "Royal Capacitor",
+                "Molotov (6-Pack)",
+                "The Crowdfunder",
+                "Volcanic Egg",
+                "Sawmerang"
+            ]
         }
     },
     {
@@ -2801,7 +2881,8 @@
         "type": "Item",
         "id": "beads-of-fealty",
         "description": [
-            "Entering a Celestial Portal and obliterating at the Obelisk with Beads of Fealty transports the player to A Moment, Whole before ending the run."
+            "Entering a Celestial Portal and obliterating at the Obelisk with Beads of Fealty transports the player to A Moment, Whole before ending the run.",
+            "No currently known item synergies."
         ],
         "tags": [
             "Lunar"
@@ -2817,14 +2898,17 @@
         "type": "Item",
         "id": "focused-convergence",
         "description": [
-            "Gain <span yellow>+30%</span> teleporter charging speed <span gray>(+30% per stack)</span>, lose <span red>50%</span> teleporter zone size <span gray>(+50% per stack)</span>. Capped at <span yellow>3</span>."
+            "Gain <span yellow>+30%</span> teleporter charging speed <span gray>(+30% per stack)</span>, lose <span red>50%</span> teleporter zone size <span gray>(+50% per stack)</span>. Capped at <span yellow>3</span>.",
+            "Pairs well with items activate based on Teleporter charging."
         ],
         "tags": [
             "Teleporter Charging",
             "Lunar"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "Teleporter Charging"
+            ],
             "exclude": []
         }
     },
@@ -2834,14 +2918,17 @@
         "type": "Item",
         "id": "defiant-gouge",
         "description": [
-            "Using a shrine summons enemies <span gray>(stronger per stack)</span> nearby. Scales with time."
+            "Using a shrine summons enemies <span gray>(stronger per stack)</span> nearby. Scales with time.",
+            "Pairs well with items that activate on interaction."
         ],
         "tags": [
             "On Interaction Effects",
             "Lunar"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "On Interaction Effects"
+            ],
             "exclude": []
         }
     },
@@ -2851,14 +2938,21 @@
         "type": "Item",
         "id": "mercurial-rachis",
         "description": [
-            "Randomly summons a totem near the player, totems grant allies and enemies within <span yellow>16m</span> <span gray>(+50% per stack)</span> <span yellow>+50%</span> attack damage."
+            "Randomly summons a totem near the player, totems grant allies and enemies within <span yellow>16m</span> <span gray>(+50% per stack)</span> <span yellow>+50%</span> attack damage.",
+            "Pairs well with attack speed, increased damage, and proc chance items."
         ],
         "tags": [
             "Lunar",
             "Damage"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "Attack Speed",
+                "Critical Strike Chance",
+                "Damage",
+                "Chance to Proc",
+                "Per Hit"
+            ],
             "exclude": []
         }
     },
@@ -2868,14 +2962,17 @@
         "type": "Item",
         "id": "purity",
         "description": [
-            "Reduce all skill cooldowns by <span blue>2s</span>, negative effects are rerolled <span yellow>+1</span> time <span gray>(+1 per stack)</span> for an unfavorable outcome."
+            "Reduce all skill cooldowns by <span blue>2s</span>, negative effects are rerolled <span yellow>+1</span> time <span gray>(+1 per stack)</span> for an unfavorable outcome.",
+            "Pairs well with skill cooldown reduction items."
         ],
         "tags": [
             "Skill Cooldown Reduction",
             "Lunar"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "Skill Cooldown Reduction"
+            ],
             "exclude": []
         }
     },
@@ -2885,7 +2982,8 @@
         "type": "Item",
         "id": "hooks-of-heresy",
         "description": [
-            "Replaces Secondary skill with Slicing Maelstrom. Charge a projectile that deals <span yellow>875%</span> damage per second and explodes after <span blue>3s</span> dealing <span yellow>700%</span> damage, inflicts enemies with the root debuff for <span blue>3s</span> <span gray>(+3s per stack)</span>. <span blue>5s</span> <span gray>(+5 per stack)</span> cooldown."
+            "Replaces Secondary skill with Slicing Maelstrom. Charge a projectile that deals <span yellow>875%</span> damage per second and explodes after <span blue>3s</span> dealing <span yellow>700%</span> damage, inflicts enemies with the root debuff for <span blue>3s</span> <span gray>(+3s per stack)</span>. <span blue>5s</span> <span gray>(+5 per stack)</span> cooldown.",
+            "Pairs well with attack speed, increased damage, proc chance, and skill cooldown reduction items."
         ],
         "procCoefficient": {
             "Maelstrom": "0.2",
@@ -2894,14 +2992,41 @@
         "tags": [
             "Lunar",
             "Damage",
-            "Skill",
+            "Skills",
             "Secondary Skill",
             "High Damage",
             "Can Proc"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Attack Speed",
+                "Critical Strike Chance",
+                "Damage",
+                "Chance to Proc",
+                "Per Hit",
+                "Skill Cooldown Reduction",
+                "Backup Magazine"
+            ],
+            "exclude": [
+                "On Interaction Effects",
+                "On Kill",
+                "Razorwire",
+                "Shuriken",
+                "Mobility",
+                "N'Kuahana's Opinion",
+                "Unstable Tesla Coil",
+                "Genesis Loop",
+                "Skills",
+                "Disposable Missile Launcher",
+                "Preon Accumulator",
+                "Royal Capacitor",
+                "Molotov (6-Pack)",
+                "The Crowdfunder",
+                "Volcanic Egg",
+                "Sawmerang",
+                "Hardlight Afterburner",
+                "Lysate Cell"
+            ]
         }
     },
     {
@@ -2910,7 +3035,8 @@
         "type": "Item",
         "id": "egocentricism",
         "description": [
-            "Gain an orbiting bomb every <span blue>3s</span> <span gray>(-50% per stack)</span>, detonates on impact for <span yellow>360%</span> damage. Capped at <span yellow>3</span> bombs <span gray>(+1 per stack)</span>. A random item is converted into another stack of Egocentricism every <span blue>60s</span>."
+            "Gain an orbiting bomb every <span blue>3s</span> <span gray>(-50% per stack)</span>, detonates on impact for <span yellow>360%</span> damage. Capped at <span yellow>3</span> bombs <span gray>(+1 per stack)</span>. A random item is converted into another stack of Egocentricism every <span blue>60s</span>.",
+            "Pairs well with increased damage and proc chance items."
         ],
         "procCoefficient": {
             "On Hit": "1.0"
@@ -2921,8 +3047,30 @@
             "High Damage"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Critical Strike Chance",
+                "Damage",
+                "Chance to Proc",
+                "Per Hit"
+            ],
+            "exclude": [
+                "On Interaction Effects",
+                "On Kill",
+                "Razorwire",
+                "Shuriken",
+                "Mobility",
+                "N'Kuahana's Opinion",
+                "Unstable Tesla Coil",
+                "Genesis Loop",
+                "Skills",
+                "Disposable Missile Launcher",
+                "Preon Accumulator",
+                "Royal Capacitor",
+                "Molotov (6-Pack)",
+                "The Crowdfunder",
+                "Volcanic Egg",
+                "Sawmerang"
+            ]
         }
     },
     {
@@ -2931,14 +3079,17 @@
         "type": "Item",
         "id": "eulogy-zero",
         "description": [
-            "Gain a <span yellow>5%</span> chance <span gray>(+5% per stack)</span> for any item on the next stage to be a lunar item instead of its previous rarity."
+            "Gain a <span yellow>5%</span> chance <span gray>(+5% per stack)</span> for any item on the next stage to be a lunar item instead of its previous rarity.",
+            "Pairs well with items that affect stage generation."
         ],
         "tags": [
             "Lunar",
             "Stage Generation"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "Stage Generation"
+            ],
             "exclude": []
         }
     },
@@ -2948,14 +3099,20 @@
         "type": "Item",
         "id": "stone-flux-pauldron",
         "description": [
-            "Gain <span green>+100%</span> max health <span gray>(+100% per stack)</span>, lose <span red>50%</span> movement speed <span gray>(+50% per stack)</span>."
+            "Gain <span green>+100%</span> max health <span gray>(+100% per stack)</span>, lose <span red>50%</span> movement speed <span gray>(+50% per stack)</span>.",
+            "Pairs well with movement speed, shield, mobility, and increased health items."
         ],
         "tags": [
             "Lunar",
             "Increased Health"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "Movement Speed",
+                "Shield",
+                "Mobility",
+                "Increased Health"
+            ],
             "exclude": []
         }
     },
@@ -2965,14 +3122,19 @@
         "type": "Item",
         "id": "light-flux-pauldron",
         "description": [
-            "Reduce all skill cooldowns by <span yellow>50%</span> <span gray>(+50% per stack)</span>, lose <span red>50%</span> attack speed <span gray>(+50% per stack)</span>."
+            "Reduce all skill cooldowns by <span yellow>50%</span> <span gray>(+50% per stack)</span>, lose <span red>50%</span> attack speed <span gray>(+50% per stack)</span>.",
+            "Pairs well with attack speed and skill cooldown reduction items."
         ],
         "tags": [
             "Lunar",
             "Skill Cooldown Reduction"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "Attack Speed",
+                "Skill Cooldown Reduction",
+                "Skills"
+            ],
             "exclude": []
         }
     },
@@ -2982,15 +3144,21 @@
         "type": "Item",
         "id": "essence-of-heresy",
         "description": [
-            "Replaces Special skill with Ruin. Dealing damage adds a stack of ruin that lasts for <span blue>10s</span> <span gray>(+10s per stack)</span>, activate the skill to detonate enemies inflicted with ruin dealing <span yellow>300%</span> + <span yellow>120%</span> damage per stack of ruin. <span blue>8s</span> <span gray>(+8s per stack)</span> cooldown."
+            "Replaces Special skill with Ruin. Dealing damage adds a stack of ruin that lasts for <span blue>10s</span> <span gray>(+10s per stack)</span>, activate the skill to detonate enemies inflicted with ruin dealing <span yellow>300%</span> + <span yellow>120%</span> damage per stack of ruin. <span blue>8s</span> <span gray>(+8s per stack)</span> cooldown.",
+            "Pairs well with attack speed, critical strike chance, and debuff infliction items."
         ],
         "tags": [
             "Lunar",
-            "Skill",
+            "Skills",
             "Special Skill"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "Attack Speed",
+                "Critical Strike Chance",
+                "Debuff Inflictions",
+                "Per Hit"
+            ],
             "exclude": []
         }
     },
@@ -3000,7 +3168,8 @@
         "type": "Equipment",
         "id": "glowing-meteorite",
         "description": [
-            "Call meteors from the sky that deal <span yellow>600%</span> damage to enemies and allies. Lasts <span blue>20s</span>, <span blue>140s</span> cooldown."
+            "Call meteors from the sky that deal <span yellow>600%</span> damage to enemies and allies. Lasts <span blue>20s</span>, <span blue>140s</span> cooldown.",
+            "Pairs well with increased damage, proc chance, and equipment cooldown reduction items."
         ],
         "procCoefficient": {
             "On Hit": "0.1"
@@ -3010,8 +3179,27 @@
             "Equipment"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Critical Strike Chance",
+                "Damage",
+                "Chance to Proc",
+                "Equipment Cooldown Reduction"
+            ],
+            "exclude": [
+                "On Interaction Effects",
+                "Will-o'-the-Wisp",
+                "Ceremonial Dagger",
+                "Frost Relic",
+                "Razorwire",
+                "Shuriken",
+                "Mobility",
+                "N'Kuahana's Opinion",
+                "Unstable Tesla Coil",
+                "Genesis Loop",
+                "Skills",
+                "Egocentricism",
+                "Equipment"
+            ]
         }
     },
     {
@@ -3020,15 +3208,23 @@
         "type": "Equipment",
         "id": "helfire-tincture",
         "description": [
-            "Ignite all enemies and allies within <span yellow>15m</span> for <span blue>12s</span> dealing <span yellow>5%</span> of max health per second as burn damage. Burn damage is <span yellow>0.5x</span> stronger toward you, <span yellow>0.25x</span> stronger toward allies, and <span yellow>25x</span> stronger toward enemies. <span blue>45s</span> cooldown."
+            "Ignite all enemies and allies within <span yellow>15m</span> for <span blue>12s</span> dealing <span yellow>5%</span> of max health per second as burn damage. Burn damage is <span yellow>0.5x</span> stronger toward you, <span yellow>0.25x</span> stronger toward allies, and <span yellow>25x</span> stronger toward enemies. <span blue>45s</span> cooldown.",
+            "Pairs well with items that activate after taking damage, debuff inflictions, and damage reduction items."
         ],
         "tags": [
             "Lunar",
             "Equipment"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Damage Taken",
+                "Debuff Inflictions",
+                "Damage Reduction",
+                "Fire Damage"
+            ],
+            "exclude": [
+                "Equipment"
+            ]
         }
     },
     {
@@ -3037,7 +3233,8 @@
         "type": "Equipment",
         "id": "effigy-of-grief",
         "description": [
-            "Places a totem at the user's cursor. Enemies and allies within the totem's radius are inflicted with cripple, slowed by <span blue>50%</span>, and have <span yellow>20</span> less armor. <span blue>15s</span> cooldown."
+            "Places a totem at the user's cursor. Enemies and allies within the totem's radius are inflicted with cripple, slowed by <span blue>50%</span>, and have <span yellow>20</span> less armor. <span blue>15s</span> cooldown.",
+            "Pairs well with attack speed, increased damage, debuff inflictions, and equipment cooldown reduction items."
         ],
         "tags": [
             "Lunar",
@@ -3045,8 +3242,15 @@
             "Debuff Inflictions"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Attack Speed",
+                "Damage",
+                "Debuff Inflictions",
+                "Equipment Cooldown Reduction"
+            ],
+            "exclude": [
+                "Equipment"
+            ]
         }
     },
     {
@@ -3055,7 +3259,8 @@
         "type": "Equipment",
         "id": "spinel-tonic",
         "description": [
-            "<span yellow>+100%</span> damage, <span yellow>+70%</span> attack speed, <span green>+20</span> armor, <span green>+50%</span> max health, <span green>+300%</span> regeneration, and <span blue>+30%</span> movement speed for <span blue>20s</span>. When Tonic wears off the user has a <span yellow>20%</span> chance to gain a stack of Tonic Affliction, which reduces all stats by <span red>5%</span> <span gray>(+5% per stack)</span> while not using by Spinel Tonic. <span blue>60s</span> cooldown."
+            "<span yellow>+100%</span> damage, <span yellow>+70%</span> attack speed, <span green>+20</span> armor, <span green>+50%</span> max health, <span green>+300%</span> regeneration, and <span blue>+30%</span> movement speed for <span blue>20s</span>. When Tonic wears off the user has a <span yellow>20%</span> chance to gain a stack of Tonic Affliction, which reduces all stats by <span red>5%</span> <span gray>(+5% per stack)</span> while not using by Spinel Tonic. <span blue>60s</span> cooldown.",
+            "Pairs well with attack speed, healing, movement speed, increased damage, and damage reduction items."
         ],
         "tags": [
             "Damage",
@@ -3068,8 +3273,17 @@
             "Equipment"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Attack Speed",
+                "Healing",
+                "Critical Strike Chance",
+                "Movement Speed",
+                "Damage",
+                "Damage Reduction"
+            ],
+            "exclude": [
+                "Equipment"
+            ]
         }
     },
     {
