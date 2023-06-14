@@ -5,7 +5,7 @@ The goal of this tool is to help new players understand the intricate details un
 #### Phase 1: Introduction **(~~Complete~~)**
 Introduced a wiki-style collection of every item in the game. Selecting an item shows its information in the display panel, item information includes: rarity, description with stats, and proc coefficients.
 
-#### Phase 2: Synergies **(WIP)**
+#### Phase 2: Synergies **(QA)**
 Will implement item synergies into the display panel. Selecting an item will show other items that pair well with it to form a well-rounded build.
 
 #### Phase 3: Survivors **(Planned)**
