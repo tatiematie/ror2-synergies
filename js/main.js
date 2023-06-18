@@ -292,8 +292,6 @@ const initializePage = async () => {
     console.log(`Verison ${appVersion}`)
 }
 
-document.addEventListener('DOMContentLoaded', async () => {
-    await initializePage()
+initializePage()
 
-    console.log(`Version ${appVersion}`)
-})
+console.log(`Version ${appVersion}`)
