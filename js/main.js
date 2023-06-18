@@ -13,7 +13,7 @@ const loadComponent = async (filepath) => {
 let itemData
 
 const initializePage = async () => {
-    const appVersion = '1.1.7.2'
+    const appVersion = '1.1.7.3'
     const itemDesc = document.querySelector('#item-description')
     const itemSelect = document.querySelector('#item-select')
     const itemSynergies = document.querySelector('#item-synergies')
@@ -292,4 +292,8 @@ const initializePage = async () => {
     console.log(`Verison ${appVersion}`)
 }
 
-document.addEventListener('DOMContentLoaded', initializePage)
+document.addEventListener('DOMContentLoaded', async () => {
+    await initializePage()
+
+    console.log(`Version ${appVersion}`)
+})
