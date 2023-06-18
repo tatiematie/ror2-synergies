@@ -1505,7 +1505,7 @@
         "id": "nkuhanas-opinion",
         "description": [
             "Store <span green>100%</span> of healing <span gray>(+100% per stack)</span> as Soul Energy, when Soul Energy hits <span green>10%</span> of max health, fire a homing skull dealing <span yellow>250%</span> of Soul Energy as damage.",
-            "Pairs well with healing, increased damage, and amplified healing items."
+            "Pairs well with healing, increased damage, proc chance, and amplified healing items."
         ],
         "procCoefficient": {
             "On Hit": "0.2"
@@ -1518,6 +1518,7 @@
                 "Healing",
                 "Critical Strike Chance",
                 "Damage",
+                "Chance to Proc",
                 "Amplified Healing",
                 "Per Hit"
             ],
