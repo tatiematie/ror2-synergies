@@ -1,3 +1,8 @@
+const appVersion = '1.1.7.4'
+const itemDesc = document.querySelector('#item-description')
+const itemSelect = document.querySelector('#item-select')
+const itemSynergies = document.querySelector('#item-synergies')
+
 const readFile = async (type, filepath) => {
     const response = await fetch(filepath)
     return type === 'json' ? response.json() : response.text()
@@ -12,266 +17,261 @@ const loadComponent = async (filepath) => {
 
 let itemData
 
-const initializePage = async () => {
-    const appVersion = '1.1.7.4'
-    const itemDesc = document.querySelector('#item-description')
-    const itemSelect = document.querySelector('#item-select')
-    const itemSynergies = document.querySelector('#item-synergies')
+const createButton = (item) => {
+    const { name, rarity, id } = item
+    const src = `assets/img/items/${id}.png`
 
-    const createButton = (item) => {
-        const { name, rarity, id } = item
-        const src = `assets/img/items/${id}.png`
+    const li = document.createElement('li'),
+        button = document.createElement('button'),
+        img = document.createElement('img')
 
-        const li = document.createElement('li'),
-            button = document.createElement('button'),
-            img = document.createElement('img')
+    li.className = 'item'
 
-        li.className = 'item'
+    button.type = 'button'
+    button.title = name
+    button.setAttribute('rarity', rarity.toLowerCase())
 
-        button.type = 'button'
-        button.title = name
-        button.setAttribute('rarity', rarity.toLowerCase())
+    img.src = src
+    img.alt = name
+    img.loading = 'lazy'
 
-        img.src = src
-        img.alt = name
-        img.loading = 'lazy'
+    button.appendChild(img)
+    li.appendChild(button)
+    itemSelect.appendChild(li)
 
-        button.appendChild(img)
-        li.appendChild(button)
-        itemSelect.appendChild(li)
+    return button
+}
 
-        return button
+const updateDisplay = (item) => {
+    const displayPane = document.querySelector('#display-pane .heading')
+    const { name, rarity, type, description, id, procCoefficient } = item
+    const src = `assets/img/items/${id}.png`
+
+    displayPane.innerHTML = ''
+
+    const itemTitle = document.createElement('h2')
+    itemTitle.innerHTML = name
+
+    const itemType = document.createElement('p')
+    itemType.innerHTML = `${rarity} ${type}`
+
+    const itemThumb = document.createElement('img'),
+        thumbWrapper = document.createElement('div'),
+        itemThumbnail = document.createElement('div')
+
+    itemThumb.src = src
+    itemThumb.title = name
+    itemThumb.alt = name
+
+    thumbWrapper.classList.add('wrapper')
+    thumbWrapper.appendChild(itemThumb)
+
+    itemThumbnail.id = 'item-thumbnail'
+    itemThumbnail.classList.add('content', 'corners')
+    itemThumbnail.setAttribute('rarity', rarity.toLowerCase())
+    itemThumbnail.appendChild(thumbWrapper)
+
+    displayPane.appendChild(itemTitle)
+    displayPane.appendChild(itemType)
+
+    displayPane.appendChild(itemThumbnail)
+
+    itemDesc.innerHTML = ''
+
+    const descriptionDetails = document.createElement('details'),
+        descriptionTitle = document.createElement('summary'),
+        descriptionTitleContent = document.createElement('span')
+    descriptionTitleContent.innerHTML = `Description:`
+    descriptionTitleContent.classList.add('title')
+
+    descriptionDetails.setAttribute('open', '')
+
+    descriptionTitle.appendChild(descriptionTitleContent)
+    descriptionDetails.appendChild(descriptionTitle)
+
+    itemDesc.appendChild(descriptionDetails)
+
+    for (const entry of description) {
+        const entryElement = document.createElement('p')
+        entryElement.innerHTML = entry
+        descriptionDetails.appendChild(entryElement)
     }
 
-    const updateDisplay = (item) => {
-        const displayPane = document.querySelector('#display-pane .heading')
-        const { name, rarity, type, description, id, procCoefficient } = item
-        const src = `assets/img/items/${id}.png`
+    const existingProcCoefficientTable = itemDesc.querySelector('.proc-coefficient-table')
+    const procTableTitle = itemDesc.querySelector('.proc.title')
+    if (existingProcCoefficientTable && procTableTitle) {
+        procTableTitle.remove()
+        existingProcCoefficientTable.remove()
+    }
 
-        displayPane.innerHTML = ''
+    if (procCoefficient !== undefined) {
+        const procCoefficientTableTitle = document.createElement('p')
+        procCoefficientTableTitle.innerHTML = 'Proc Coefficients:'
+        procCoefficientTableTitle.classList.add('proc', 'title')
+        itemDesc.appendChild(procCoefficientTableTitle)
 
-        const itemTitle = document.createElement('h2')
-        itemTitle.innerHTML = name
+        const procCoefficientTable = document.createElement('table')
+        procCoefficientTable.className = 'proc-coefficient-table'
 
-        const itemType = document.createElement('p')
-        itemType.innerHTML = `${rarity} ${type}`
+        for (const [entryName, entryValue] of Object.entries(procCoefficient)) {
+            const procCoefficientRow = document.createElement('tr')
 
-        const itemThumb = document.createElement('img'),
-            thumbWrapper = document.createElement('div'),
-            itemThumbnail = document.createElement('div')
+            const procCoefficientLabelCell = document.createElement('td')
+            procCoefficientLabelCell.innerHTML = entryName
 
-        itemThumb.src = src
-        itemThumb.title = name
-        itemThumb.alt = name
+            const procCoefficientValueCell = document.createElement('td')
+            procCoefficientValueCell.innerHTML = entryValue
 
-        thumbWrapper.classList.add('wrapper')
-        thumbWrapper.appendChild(itemThumb)
+            procCoefficientRow.appendChild(procCoefficientLabelCell)
+            procCoefficientRow.appendChild(procCoefficientValueCell)
 
-        itemThumbnail.id = 'item-thumbnail'
-        itemThumbnail.classList.add('content', 'corners')
-        itemThumbnail.setAttribute('rarity', rarity.toLowerCase())
-        itemThumbnail.appendChild(thumbWrapper)
-
-        displayPane.appendChild(itemTitle)
-        displayPane.appendChild(itemType)
-
-        displayPane.appendChild(itemThumbnail)
-
-        itemDesc.innerHTML = ''
-
-        const descriptionDetails = document.createElement('details'),
-            descriptionTitle = document.createElement('summary'),
-            descriptionTitleContent = document.createElement('span')
-        descriptionTitleContent.innerHTML = `Description:`
-        descriptionTitleContent.classList.add('title')
-
-        descriptionDetails.setAttribute('open', '')
-
-        descriptionTitle.appendChild(descriptionTitleContent)
-        descriptionDetails.appendChild(descriptionTitle)
-
-        itemDesc.appendChild(descriptionDetails)
-
-        for (const entry of description) {
-            const entryElement = document.createElement('p')
-            entryElement.innerHTML = entry
-            descriptionDetails.appendChild(entryElement)
+            procCoefficientTable.appendChild(procCoefficientRow)
         }
 
-        const existingProcCoefficientTable = itemDesc.querySelector('.proc-coefficient-table')
-        const procTableTitle = itemDesc.querySelector('.proc.title')
-        if (existingProcCoefficientTable && procTableTitle) {
-            procTableTitle.remove()
-            existingProcCoefficientTable.remove()
-        }
+        itemDesc.appendChild(procCoefficientTable)
+    }
+}
 
-        if (procCoefficient !== undefined) {
-            const procCoefficientTableTitle = document.createElement('p')
-            procCoefficientTableTitle.innerHTML = 'Proc Coefficients:'
-            procCoefficientTableTitle.classList.add('proc', 'title')
-            itemDesc.appendChild(procCoefficientTableTitle)
+const updateSynergyList = (item) => {
+    const { name } = item
+    const src = `assets/img/items/${item.id}.png`
 
-            const procCoefficientTable = document.createElement('table')
-            procCoefficientTable.className = 'proc-coefficient-table'
+    itemSynergies.innerHTML = ''
 
-            for (const [entryName, entryValue] of Object.entries(procCoefficient)) {
-                const procCoefficientRow = document.createElement('tr')
+    const itemSynergiesDetails = document.createElement('details'),
+        itemSynergiesTitle = document.createElement('summary'),
+        itemSynergiesTitleContent = document.createElement('span')
+    itemSynergiesTitleContent.classList.add('title')
+    itemSynergiesTitleContent.innerHTML = 'Synergies:'
 
-                const procCoefficientLabelCell = document.createElement('td')
-                procCoefficientLabelCell.innerHTML = entryName
+    itemSynergiesDetails.setAttribute('open', '')
 
-                const procCoefficientValueCell = document.createElement('td')
-                procCoefficientValueCell.innerHTML = entryValue
+    itemSynergiesTitle.appendChild(itemSynergiesTitleContent)
+    itemSynergiesDetails.appendChild(itemSynergiesTitle)
+    itemSynergies.appendChild(itemSynergiesDetails)
 
-                procCoefficientRow.appendChild(procCoefficientLabelCell)
-                procCoefficientRow.appendChild(procCoefficientValueCell)
+    const includeTags = Array.isArray(item.synergies.include) ? item.synergies.include : []
+    const excludeTags = Array.isArray(item.synergies.exclude) ? item.synergies.exclude : []
 
-                procCoefficientTable.appendChild(procCoefficientRow)
+    if (includeTags.length === 0) {
+        itemSynergies.style.display = 'none'
+        return
+    } else {
+        itemSynergies.style.display = 'block'
+    }
+
+    includeTags.forEach((include) => {
+        const tagListTitle = document.createElement('p')
+        tagListTitle.innerHTML = include
+        itemSynergiesDetails.appendChild(tagListTitle)
+
+        const tagList = document.createElement('ul')
+        tagList.classList.add('content')
+        itemSynergiesDetails.appendChild(tagList)
+
+        itemData.forEach((dataItem) => {
+            const { name: dataItemName, rarity, id: dataItemID, tags } = dataItem
+            const isExcluded =
+                excludeTags.includes(dataItemName) ||
+                (Array.isArray(tags) && tags.some((tag) => excludeTags.includes(tag))) ||
+                dataItemID === item.id
+
+            const isIncluded =
+                (Array.isArray(tags) && tags.includes(include)) ||
+                dataItemName === include
+
+            if (isIncluded && !isExcluded && include !== 'None') {
+                const tagListItem = document.createElement('li')
+                tagListItem.classList.add('item')
+                tagListItem.setAttribute('rarity', rarity.toLowerCase())
+
+                const img = document.createElement('img')
+                img.src = `assets/img/items/${dataItemID}.png`
+                img.alt = dataItemName
+                img.title = name
+                img.loading = 'lazy'
+
+                tagListItem.appendChild(img)
+                tagList.appendChild(tagListItem)
             }
-
-            itemDesc.appendChild(procCoefficientTable)
-        }
-    }
-
-    const updateSynergyList = (item) => {
-        const { name } = item
-        const src = `assets/img/items/${item.id}.png`
-
-        itemSynergies.innerHTML = ''
-
-        const itemSynergiesDetails = document.createElement('details'),
-            itemSynergiesTitle = document.createElement('summary'),
-            itemSynergiesTitleContent = document.createElement('span')
-        itemSynergiesTitleContent.classList.add('title')
-        itemSynergiesTitleContent.innerHTML = 'Synergies:'
-
-        itemSynergiesDetails.setAttribute('open', '')
-
-        itemSynergiesTitle.appendChild(itemSynergiesTitleContent)
-        itemSynergiesDetails.appendChild(itemSynergiesTitle)
-        itemSynergies.appendChild(itemSynergiesDetails)
-
-        const includeTags = Array.isArray(item.synergies.include) ? item.synergies.include : []
-        const excludeTags = Array.isArray(item.synergies.exclude) ? item.synergies.exclude : []
-
-        if (includeTags.length === 0) {
-            itemSynergies.style.display = 'none'
-            return
-        } else {
-            itemSynergies.style.display = 'block'
-        }
-
-        includeTags.forEach((include) => {
-            const tagListTitle = document.createElement('p')
-            tagListTitle.innerHTML = include
-            itemSynergiesDetails.appendChild(tagListTitle)
-
-            const tagList = document.createElement('ul')
-            tagList.classList.add('content')
-            itemSynergiesDetails.appendChild(tagList)
-
-            itemData.forEach((dataItem) => {
-                const { name: dataItemName, rarity, id: dataItemID, tags } = dataItem
-                const isExcluded =
-                    excludeTags.includes(dataItemName) ||
-                    (Array.isArray(tags) && tags.some((tag) => excludeTags.includes(tag))) ||
-                    dataItemID === item.id
-
-                const isIncluded =
-                    (Array.isArray(tags) && tags.includes(include)) ||
-                    dataItemName === include
-
-                if (isIncluded && !isExcluded && include !== 'None') {
-                    const tagListItem = document.createElement('li')
-                    tagListItem.classList.add('item')
-                    tagListItem.setAttribute('rarity', rarity.toLowerCase())
-
-                    const img = document.createElement('img')
-                    img.src = `assets/img/items/${dataItemID}.png`
-                    img.alt = dataItemName
-                    img.title = name
-                    img.loading = 'lazy'
-
-                    tagListItem.appendChild(img)
-                    tagList.appendChild(tagListItem)
-                }
-            })
         })
+    })
 
-        const justifySynergies = () => {
-            const synergyLists = document.querySelectorAll('#item-synergies ul')
+    const justifySynergies = () => {
+        const synergyLists = document.querySelectorAll('#item-synergies ul')
 
-            synergyLists.forEach((list) => {
-                if (list.clientHeight === 59) {
-                    list.style.justifyContent = 'start'
-                } else {
-                    list.style.justifyContent = 'space-around'
-                }
-            })
-        }
-
-        const openCollapsedDetails = () => {
-            const detailsList = document.querySelectorAll('details')
-
-            detailsList.forEach((details) => {
-                if (window.innerWidth > 750 && !details.hasAttribute('open')) {
-                    details.setAttribute('open', '')
-                }
-            })
-        }
-
-        justifySynergies()
-
-        window.addEventListener('resize', justifySynergies)
-        window.addEventListener('resize', openCollapsedDetails)
+        synergyLists.forEach((list) => {
+            if (list.clientHeight === 59) {
+                list.style.justifyContent = 'start'
+            } else {
+                list.style.justifyContent = 'space-around'
+            }
+        })
     }
 
-    const handleButtonClick = (item, button) => {
-        const isActive = button.getAttribute('active') === 'true'
+    const openCollapsedDetails = () => {
+        const detailsList = document.querySelectorAll('details')
 
-        if (!isActive) {
-            const activeButton = document.querySelector('#item-select button[active=true]')
-
-            if (activeButton) {
-                activeButton.removeAttribute('active')
+        detailsList.forEach((details) => {
+            if (window.innerWidth > 750 && !details.hasAttribute('open')) {
+                details.setAttribute('open', '')
             }
+        })
+    }
 
+    justifySynergies()
+
+    window.addEventListener('resize', justifySynergies)
+    window.addEventListener('resize', openCollapsedDetails)
+}
+
+const handleButtonClick = (item, button) => {
+    const isActive = button.getAttribute('active') === 'true'
+
+    if (!isActive) {
+        const activeButton = document.querySelector('#item-select button[active=true]')
+
+        if (activeButton) {
+            activeButton.removeAttribute('active')
+        }
+
+        button.setAttribute('active', 'true')
+        updateDisplay(item)
+        updateSynergyList(item)
+
+        const displayPane = document.querySelector('#display-pane')
+
+        if (window.innerWidth <= 750) {
+            displayPane.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
+    }
+}
+
+const attachButtonEventListeners = () => {
+    const buttons = itemSelect.querySelectorAll('button')
+    buttons.forEach((button) => {
+        const item = itemData.find((dataItem) => dataItem.name === button.title)
+        button.addEventListener('click', () => handleButtonClick(item, button))
+    })
+}
+
+const loadButtons = async () => {
+    itemData = await readFile('json', 'json/items.json')
+
+    itemData.forEach((item, index) => {
+        const button = createButton(item)
+
+        if (index === 0) {
             button.setAttribute('active', 'true')
             updateDisplay(item)
             updateSynergyList(item)
 
-            const displayPane = document.querySelector('#display-pane')
-
-            if (window.innerWidth <= 750) {
-                displayPane.scrollIntoView({ behavior: 'smooth', block: 'start' })
-            }
+            button.focus()
         }
-    }
+    })
+}
 
-    const attachButtonEventListeners = () => {
-        const buttons = itemSelect.querySelectorAll('button')
-        buttons.forEach((button) => {
-            const item = itemData.find((dataItem) => dataItem.name === button.title)
-            button.addEventListener('click', () => handleButtonClick(item, button))
-        })
-    }
-
-    const loadButtons = async () => {
-        itemData = await readFile('json', 'json/items.json')
-
-        itemData.forEach((item, index) => {
-            const button = createButton(item)
-
-            if (index === 0) {
-                button.setAttribute('active', 'true')
-                updateDisplay(item)
-                updateSynergyList(item)
-
-                button.focus()
-            }
-        })
-    }
-
+const initializePage = async () => {
     await loadButtons()
     attachButtonEventListeners()
 
@@ -293,5 +293,3 @@ const initializePage = async () => {
 }
 
 initializePage()
-
-console.log(`Version ${appVersion}`)
