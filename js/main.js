@@ -1,4 +1,4 @@
-const appVersion = '1.1.7.4'
+const appVersion = '1.1.7.5'
 const itemDesc = document.querySelector('#item-description')
 const itemSelect = document.querySelector('#item-select')
 const itemSynergies = document.querySelector('#item-synergies')
@@ -108,7 +108,7 @@ const updateDisplay = (item) => {
         const procCoefficientTableTitle = document.createElement('p')
         procCoefficientTableTitle.innerHTML = 'Proc Coefficients:'
         procCoefficientTableTitle.classList.add('proc', 'title')
-        itemDesc.appendChild(procCoefficientTableTitle)
+        descriptionDetails.appendChild(procCoefficientTableTitle)
 
         const procCoefficientTable = document.createElement('table')
         procCoefficientTable.className = 'proc-coefficient-table'
@@ -128,7 +128,7 @@ const updateDisplay = (item) => {
             procCoefficientTable.appendChild(procCoefficientRow)
         }
 
-        itemDesc.appendChild(procCoefficientTable)
+        descriptionDetails.appendChild(procCoefficientTable)
     }
 }
 
