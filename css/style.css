@@ -13,6 +13,7 @@
 * h2, * a, * p, * span {
   width: -moz-fit-content;
   width: fit-content;
+  cursor: default;
 }
 * button {
   background: none;
@@ -93,9 +94,6 @@
 }
 .pane .block details {
   position: relative;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
 }
 .pane .block details img {
   pointer-events: all;
@@ -265,6 +263,10 @@ html span[purple] {
 }
 html span[gray] {
   color: #8D94AC;
+}
+html span[invisible] {
+  color: #3E4E5B;
+  text-shadow: none;
 }
 html:focus {
   outline: none;
