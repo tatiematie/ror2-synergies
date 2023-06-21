@@ -1,4 +1,4 @@
-const appVersion = '1.2.0'
+const appVersion = '1.2.1'
 const itemDesc = document.querySelector('#item-description')
 const itemSelect = document.querySelector('#item-select')
 let selectButtons
@@ -163,9 +163,8 @@ const setActive = () => {
         previouslyActiveButton.removeAttribute('active')
     }
 
-    if (activeButton) {
-        activeButton.setAttribute('active', '')
-    }
+    activeButton.setAttribute('active', '')
+    activeButton.focus()
 }
 
 const updateSynergyList = (currentItem) => {
@@ -285,11 +284,12 @@ const loadButtons = async () => {
 
 const initializePage = async () => {
     await loadButtons()
-    // attachButtonEventListeners()
 
     selectButtons = itemSelect.querySelectorAll('.item a')
 
     updateDisplay()
+
+    setActive()
 
     window.addEventListener('popstate', updateDisplay)
 
