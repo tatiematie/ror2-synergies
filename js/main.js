@@ -1,4 +1,4 @@
-const appVersion = '1.2.1'
+const appVersion = '1.2.1.1'
 const itemDesc = document.querySelector('#item-description')
 const itemSelect = document.querySelector('#item-select')
 let selectButtons
@@ -146,10 +146,6 @@ const updateDisplay = () => {
 
         updateSynergyList(currentItem)
     }
-
-    // if (window.innerWidth <= 750) {
-    displayPane.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    // }
 }
 
 const setActive = () => {
@@ -283,6 +279,8 @@ const loadButtons = async () => {
 }
 
 const initializePage = async () => {
+    const displayPane = document.querySelector('#display-pane .heading')
+
     await loadButtons()
 
     selectButtons = itemSelect.querySelectorAll('.item a')
@@ -292,6 +290,9 @@ const initializePage = async () => {
     setActive()
 
     window.addEventListener('popstate', updateDisplay)
+    window.addEventListener('popstate', () => {
+        displayPane.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    })
 
     window.addEventListener('popstate', setActive)
 
