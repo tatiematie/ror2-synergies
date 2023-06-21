@@ -1,6 +1,7 @@
-const appVersion = '1.1.7.5'
+const appVersion = '1.2.0'
 const itemDesc = document.querySelector('#item-description')
 const itemSelect = document.querySelector('#item-select')
+let selectButtons
 const itemSynergies = document.querySelector('#item-synergies')
 
 const readFile = async (type, filepath) => {
@@ -15,24 +16,24 @@ const loadComponent = async (filepath) => {
     return template.content
 }
 
-let itemData
+let itemData, currentItem
 
 const createButton = (item) => {
     const { name, rarity, id } = item
     const src = `assets/img/items/${id}.png`
 
     const li = document.createElement('li'),
-        button = document.createElement('button'),
+        button = document.createElement('a'),
         img = document.createElement('img')
 
     li.className = 'item'
 
-    button.type = 'button'
-    button.title = name
+    button.href = `#${id}`
     button.setAttribute('rarity', rarity.toLowerCase())
 
     img.src = src
     img.alt = name
+    img.title = name
     img.loading = 'lazy'
 
     button.appendChild(img)
@@ -42,99 +43,134 @@ const createButton = (item) => {
     return button
 }
 
-const updateDisplay = (item) => {
+const updateDisplay = () => {
     const displayPane = document.querySelector('#display-pane .heading')
-    const { name, rarity, type, description, id, procCoefficient } = item
-    const src = `assets/img/items/${id}.png`
 
-    displayPane.innerHTML = ''
+    let url = window.location,
+        hash = url.hash.substring(1)
 
-    const itemTitle = document.createElement('h2')
-    itemTitle.innerHTML = name
+    currentItem = itemData.find(item => item.id === hash)
 
-    const itemType = document.createElement('p')
-    itemType.innerHTML = `${rarity} ${type}`
+    if (!currentItem) {
+        selectButtons[0].click()
+        selectButtons[0].focus()
 
-    const itemThumb = document.createElement('img'),
-        thumbWrapper = document.createElement('div'),
-        itemThumbnail = document.createElement('div')
+    } else {
+        const { name, rarity, type, id, description, procCoefficient } = currentItem
+        const src = `assets/img/items/${id}.png`
 
-    itemThumb.src = src
-    itemThumb.title = name
-    itemThumb.alt = name
+        displayPane.innerHTML = ''
 
-    thumbWrapper.classList.add('wrapper')
-    thumbWrapper.appendChild(itemThumb)
+        const itemTitle = document.createElement('h2')
+        itemTitle.innerHTML = name
 
-    itemThumbnail.id = 'item-thumbnail'
-    itemThumbnail.classList.add('content', 'corners')
-    itemThumbnail.setAttribute('rarity', rarity.toLowerCase())
-    itemThumbnail.appendChild(thumbWrapper)
+        displayPane.appendChild(itemTitle)
 
-    displayPane.appendChild(itemTitle)
-    displayPane.appendChild(itemType)
+        const itemType = document.createElement('p')
+        itemType.innerHTML = `${rarity} ${type}`
 
-    displayPane.appendChild(itemThumbnail)
+        displayPane.appendChild(itemType)
 
-    itemDesc.innerHTML = ''
+        const itemThumb = document.createElement('img'),
+            thumbWrapper = document.createElement('div'),
+            itemThumbnail = document.createElement('div')
 
-    const descriptionDetails = document.createElement('details'),
-        descriptionTitle = document.createElement('summary'),
-        descriptionTitleContent = document.createElement('span')
-    descriptionTitleContent.innerHTML = `Description:`
-    descriptionTitleContent.classList.add('title')
+        itemThumb.src = src
+        itemThumb.title = name
+        itemThumb.alt = name
 
-    descriptionDetails.setAttribute('open', '')
+        thumbWrapper.classList.add('wrapper')
+        thumbWrapper.appendChild(itemThumb)
 
-    descriptionTitle.appendChild(descriptionTitleContent)
-    descriptionDetails.appendChild(descriptionTitle)
+        itemThumbnail.id = 'item-thumbnail'
+        itemThumbnail.classList.add('content', 'corners')
+        itemThumbnail.setAttribute('rarity', rarity.toLowerCase())
+        itemThumbnail.appendChild(thumbWrapper)
 
-    itemDesc.appendChild(descriptionDetails)
+        displayPane.appendChild(itemThumbnail)
 
-    for (const entry of description) {
-        const entryElement = document.createElement('p')
-        entryElement.innerHTML = entry
-        descriptionDetails.appendChild(entryElement)
-    }
+        itemDesc.innerHTML = ''
 
-    const existingProcCoefficientTable = itemDesc.querySelector('.proc-coefficient-table')
-    const procTableTitle = itemDesc.querySelector('.proc.title')
-    if (existingProcCoefficientTable && procTableTitle) {
-        procTableTitle.remove()
-        existingProcCoefficientTable.remove()
-    }
+        const descriptionDetails = document.createElement('details'),
+            descriptionTitle = document.createElement('summary'),
+            descriptionTitleContent = document.createElement('span')
+        descriptionTitleContent.innerHTML = `Description:`
+        descriptionTitleContent.classList.add('title')
 
-    if (procCoefficient !== undefined) {
-        const procCoefficientTableTitle = document.createElement('p')
-        procCoefficientTableTitle.innerHTML = 'Proc Coefficients:'
-        procCoefficientTableTitle.classList.add('proc', 'title')
-        descriptionDetails.appendChild(procCoefficientTableTitle)
+        descriptionDetails.setAttribute('open', '')
 
-        const procCoefficientTable = document.createElement('table')
-        procCoefficientTable.className = 'proc-coefficient-table'
+        descriptionTitle.appendChild(descriptionTitleContent)
+        descriptionDetails.appendChild(descriptionTitle)
 
-        for (const [entryName, entryValue] of Object.entries(procCoefficient)) {
-            const procCoefficientRow = document.createElement('tr')
+        itemDesc.appendChild(descriptionDetails)
 
-            const procCoefficientLabelCell = document.createElement('td')
-            procCoefficientLabelCell.innerHTML = entryName
-
-            const procCoefficientValueCell = document.createElement('td')
-            procCoefficientValueCell.innerHTML = entryValue
-
-            procCoefficientRow.appendChild(procCoefficientLabelCell)
-            procCoefficientRow.appendChild(procCoefficientValueCell)
-
-            procCoefficientTable.appendChild(procCoefficientRow)
+        for (const entry of description) {
+            const entryElement = document.createElement('p')
+            entryElement.innerHTML = entry
+            descriptionDetails.appendChild(entryElement)
         }
 
-        descriptionDetails.appendChild(procCoefficientTable)
+        const existingProcCoefficientTable = itemDesc.querySelector('.proc-coefficient-table')
+        const procTableTitle = itemDesc.querySelector('.proc.title')
+        if (existingProcCoefficientTable && procTableTitle) {
+            procTableTitle.remove()
+            existingProcCoefficientTable.remove()
+        }
+
+        if (procCoefficient !== undefined) {
+            const procCoefficientTableTitle = document.createElement('p')
+            procCoefficientTableTitle.innerHTML = 'Proc Coefficients:'
+            procCoefficientTableTitle.classList.add('proc', 'title')
+            descriptionDetails.appendChild(procCoefficientTableTitle)
+
+            const procCoefficientTable = document.createElement('table')
+            procCoefficientTable.className = 'proc-coefficient-table'
+
+            for (const [entryName, entryValue] of Object.entries(procCoefficient)) {
+                const procCoefficientRow = document.createElement('tr')
+
+                const procCoefficientLabelCell = document.createElement('td')
+                procCoefficientLabelCell.innerHTML = entryName
+
+                const procCoefficientValueCell = document.createElement('td')
+                procCoefficientValueCell.innerHTML = entryValue
+
+                procCoefficientRow.appendChild(procCoefficientLabelCell)
+                procCoefficientRow.appendChild(procCoefficientValueCell)
+
+                procCoefficientTable.appendChild(procCoefficientRow)
+            }
+
+            descriptionDetails.appendChild(procCoefficientTable)
+        }
+
+        updateSynergyList(currentItem)
+    }
+
+    // if (window.innerWidth <= 750) {
+    displayPane.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    // }
+}
+
+const setActive = () => {
+    let url = window.location,
+        hash = url.hash.substring(1)
+
+    const activeButton = itemSelect.querySelector(`.item a[href="#${hash}"]`)
+
+    const previouslyActiveButton = itemSelect.querySelector('.item a[active]')
+    if (previouslyActiveButton) {
+        previouslyActiveButton.removeAttribute('active')
+    }
+
+    if (activeButton) {
+        activeButton.setAttribute('active', '')
     }
 }
 
-const updateSynergyList = (item) => {
-    const { name } = item
-    const src = `assets/img/items/${item.id}.png`
+const updateSynergyList = (currentItem) => {
+    let { name, id, synergies } = currentItem
+    const src = `assets/img/items/${currentItem.id}.png`
 
     itemSynergies.innerHTML = ''
 
@@ -150,8 +186,8 @@ const updateSynergyList = (item) => {
     itemSynergiesDetails.appendChild(itemSynergiesTitle)
     itemSynergies.appendChild(itemSynergiesDetails)
 
-    const includeTags = Array.isArray(item.synergies.include) ? item.synergies.include : []
-    const excludeTags = Array.isArray(item.synergies.exclude) ? item.synergies.exclude : []
+    const includeTags = Array.isArray(currentItem.synergies.include) ? currentItem.synergies.include : []
+    const excludeTags = Array.isArray(currentItem.synergies.exclude) ? currentItem.synergies.exclude : []
 
     if (includeTags.length === 0) {
         itemSynergies.style.display = 'none'
@@ -170,29 +206,31 @@ const updateSynergyList = (item) => {
         itemSynergiesDetails.appendChild(tagList)
 
         itemData.forEach((dataItem) => {
-            const { name: dataItemName, rarity, id: dataItemID, tags } = dataItem
-            const isExcluded =
-                excludeTags.includes(dataItemName) ||
-                (Array.isArray(tags) && tags.some((tag) => excludeTags.includes(tag))) ||
-                dataItemID === item.id
+            const { name, rarity, id, tags } = dataItem
+            const isExcluded = excludeTags.includes(name) || (Array.isArray(tags) && tags.some((tag) => excludeTags.includes(tag)))
 
             const isIncluded =
                 (Array.isArray(tags) && tags.includes(include)) ||
-                dataItemName === include
+                name === include
 
             if (isIncluded && !isExcluded && include !== 'None') {
-                const tagListItem = document.createElement('li')
-                tagListItem.classList.add('item')
-                tagListItem.setAttribute('rarity', rarity.toLowerCase())
+                const synergyListItem = document.createElement('li'),
+                    synergyListButton = document.createElement('a'),
+                    synergyListImg = document.createElement('img')
 
-                const img = document.createElement('img')
-                img.src = `assets/img/items/${dataItemID}.png`
-                img.alt = dataItemName
-                img.title = name
-                img.loading = 'lazy'
+                synergyListImg.src = `assets/img/items/${id}.png`
+                synergyListImg.alt = name
+                synergyListImg.title = name
+                synergyListImg.loading = 'lazy'
 
-                tagListItem.appendChild(img)
-                tagList.appendChild(tagListItem)
+                synergyListButton.href = `#${id}`
+                synergyListButton.setAttribute('rarity', rarity.toLowerCase())
+                synergyListButton.appendChild(synergyListImg)
+
+                synergyListItem.classList.add('item')
+                synergyListItem.appendChild(synergyListButton)
+
+                tagList.appendChild(synergyListItem)
             }
         })
     })
@@ -226,33 +264,15 @@ const updateSynergyList = (item) => {
 }
 
 const handleButtonClick = (item, button) => {
-    const isActive = button.getAttribute('active') === 'true'
-
-    if (!isActive) {
-        const activeButton = document.querySelector('#item-select button[active=true]')
-
-        if (activeButton) {
-            activeButton.removeAttribute('active')
-        }
-
-        button.setAttribute('active', 'true')
-        updateDisplay(item)
-        updateSynergyList(item)
-
-        const displayPane = document.querySelector('#display-pane')
-
-        if (window.innerWidth <= 750) {
-            displayPane.scrollIntoView({ behavior: 'smooth', block: 'start' })
-        }
+    const activeButton = itemSelect.querySelector('.item a[active]')
+    if (activeButton) {
+        activeButton.removeAttribute('active')
     }
-}
 
-const attachButtonEventListeners = () => {
-    const buttons = itemSelect.querySelectorAll('button')
-    buttons.forEach((button) => {
-        const item = itemData.find((dataItem) => dataItem.name === button.title)
-        button.addEventListener('click', () => handleButtonClick(item, button))
-    })
+    button.setAttribute('active', '')
+
+    currentItem = item
+    updateSynergyList(currentItem)
 }
 
 const loadButtons = async () => {
@@ -260,20 +280,20 @@ const loadButtons = async () => {
 
     itemData.forEach((item, index) => {
         const button = createButton(item)
-
-        if (index === 0) {
-            button.setAttribute('active', 'true')
-            updateDisplay(item)
-            updateSynergyList(item)
-
-            button.focus()
-        }
     })
 }
 
 const initializePage = async () => {
     await loadButtons()
-    attachButtonEventListeners()
+    // attachButtonEventListeners()
+
+    selectButtons = itemSelect.querySelectorAll('.item a')
+
+    updateDisplay()
+
+    window.addEventListener('popstate', updateDisplay)
+
+    window.addEventListener('popstate', setActive)
 
     const footer = document.querySelector('#footer')
 
@@ -284,7 +304,7 @@ const initializePage = async () => {
     versionTag.id = 'app-version'
     versionTag.innerHTML = `made by tatiematie, v${appVersion}`
 
-    copyrightTag.innerHTML = `not affiliated with Hopoo Games, Risk of Rain 2 &copy; ${copyrightYear} Hopoo Games`
+    copyrightTag.innerHTML = `not affiliated with Hopoo Games, Risk of Rain 2 &copy ${copyrightYear} Hopoo Games`
 
     footer.appendChild(versionTag)
     footer.appendChild(copyrightTag)
