@@ -16,7 +16,6 @@
                 "Attack Speed",
                 "Critical Strike Chance",
                 "Chance to Proc",
-                "Damage",
                 "Per Hit"
             ],
             "exclude": [
@@ -37,7 +36,8 @@
                 "The Crowdfunder",
                 "Volcanic Egg",
                 "Sawmerang",
-                "Disposable Missile Launcher"
+                "Disposable Missile Launcher",
+                "Laser Scope"
             ]
         }
     },
@@ -78,8 +78,8 @@
         ],
         "synergies": {
             "include": [
-                "On Kill",
-                "Amplified Healing"
+                "Amplified Healing",
+                "N'Kuahana's Opinion"
             ]
         }
     },
@@ -123,6 +123,10 @@
                 "Movement Speed",
                 "Mobility",
                 "Little Disciple"
+            ],
+            "exclude": [
+                "Eccentric Vase",
+                "Volcanic Egg"
             ]
         }
     },
@@ -163,6 +167,25 @@
             "include": [
                 "Critical Strike Chance",
                 "Damage"
+            ],
+            "exclude": [
+                "Laser Scope",
+                "On Interaction Effects",
+                "Will-o'-the-Wisp",
+                "Ukulele",
+                "Razorwire",
+                "Ceremonial Dagger",
+                "Frost Relic",
+                "N'Kuahana's Opinion",
+                "Unstable Tesla Coil",
+                "Sentient Meat Hook",
+                "Plasma Shrimp",
+                "Polylute",
+                "Skills",
+                "Egocentricism",
+                "Molotov (6-Pack)",
+                "The Crowdfunder",
+                "Silence Between Two Strikes"
             ]
         }
     },
@@ -277,7 +300,7 @@
         "id": "gasoline",
         "description": [
             "Killing an enemy ignites nearby enemies within <span yellow>12m</span> <span gray>(+4m per stack)</span> for <span blue>3s</span>, dealing <span yellow>150%</span> base damage. Burning enemies take <span yellow>150%</span> base damage <span gray>(+75% per stack)</span> per tick.",
-            "Pairs well with on kill and debuff infliction items."
+            "Pairs well with on kill effects and fire damage items."
         ],
         "tags": [
             "On Kill",
@@ -287,8 +310,17 @@
         "synergies": {
             "include": [
                 "On Kill",
-                "Debuff Inflictions",
                 "Fire Damage"
+            ],
+            "exclude": [
+                "Healing",
+                "Barrier",
+                "Increased Health",
+                "Movement Speed",
+                "Frost Relic",
+                "Resonance Disc",
+                "Skill Cooldown Reduction",
+                "Money"
             ]
         }
     },
@@ -327,7 +359,8 @@
             "Damage",
             "On Interaction Effects",
             "Missiles",
-            "High Damage"
+            "High Damage",
+            "Can Proc"
         ],
         "synergies": {
             "include": [
@@ -339,6 +372,9 @@
                 "Pocket I.C.B.M."
             ],
             "exclude": [
+                "Crowbar",
+                "Focus Crystal",
+                "Bands",
                 "Shuriken",
                 "N'Kuahana's Opinion",
                 "Unstable Tesla Coil",
@@ -349,11 +385,13 @@
                 "Molotov (6-Pack)",
                 "The Crowdfunder",
                 "Volcanic Egg",
+                "Egocentricism",
                 "Sawmerang",
                 "On Kill",
                 "Damage Taken",
                 "Mobility",
-                "Skills"
+                "Skills",
+                "Laser Scope"
             ]
         }
     },
@@ -421,7 +459,8 @@
                 "Can Proc"
             ],
             "exclude": [
-                "Silence Between Two Strikes"
+                "Silence Between Two Strikes",
+                "Laser Scope"
             ]
         }
     },
@@ -439,7 +478,8 @@
         ],
         "synergies": {
             "include": [
-                "Stage Generation"
+                "Stage Generation",
+                "Radar Scanner"
             ],
             "exclude": [
                 "Void Items"
@@ -463,6 +503,9 @@
                 "Attack Speed",
                 "Critical Strike Chance",
                 "Damage"
+            ],
+            "exclude": [
+                "Laser Scope"
             ]
         }
     },
@@ -481,10 +524,25 @@
         ],
         "synergies": {
             "include": [
+                "Barrier",
                 "Damage Taken",
                 "On Kill",
                 "Damage Reduction",
                 "Damage Prevention"
+            ],
+            "exclude": [
+                "Monster Tooth",
+                "Fire Damage",
+                "Will-o'-the-Wisp",
+                "Increased Health",
+                "Skill Cooldown Reduction",
+                "Money",
+                "Movement Speed",
+                "Equipment Cooldown Reduction",
+                "Interstellar Desk Plant",
+                "Ceremonial Dagger",
+                "Frost Relic",
+                "Resonance Disc"
             ]
         }
     },
@@ -505,6 +563,26 @@
                 "Attack Speed",
                 "Critical Strike Chance",
                 "Damage"
+            ],
+            "exclude": [
+                "Laser Scope",
+                "Bundle of Fireworks",
+                "AtG Missile Mk. 1",
+                "Will-o'-the-Wisp",
+                "Ukulele",
+                "Bands",
+                "Razorwire",
+                "Shuriken",
+                "Ceremonial Dagger",
+                "N'Kuahana's Opinion",
+                "Sentient Meat Hook",
+                "Molten Perforator",
+                "Charged Perforator",
+                "Polylute",
+                "Skills",
+                "Disposable Missile Launcher",
+                "Royal Capacitor",
+                "Molotov (6-Pack)"
             ]
         }
     },
@@ -515,7 +593,8 @@
         "id": "bison-steak",
         "description": [
             "Gain <span green>+25</span> max health <span gray>(+25hp per stack)</span>.",
-            "Pairs well with shield and increased health items."
+            "Pairs well with shield and increased health items.",
+            "<span invisible>Pairs even better with the Scrapper though...</span>"
         ],
         "tags": [
             "Increased Health"
@@ -567,6 +646,29 @@
                 "Movement Speed",
                 "Damage",
                 "Mobility"
+            ],
+            "exclude": [
+                "Laser Scope",
+                "Crowbar",
+                "Bundle of Fireworks",
+                "AtG Missile Mk. 1",
+                "Will-o'-the-Wisp",
+                "Bands",
+                "Razorwire",
+                "Shuriken",
+                "Ceremonial Dagger",
+                "Frost Relic",
+                "H3AD-5T v2",
+                "N'Kuahana's Opinion",
+                "Unstable Tesla Coil",
+                "Egocentricism",
+                "Disposable Missile Launcher",
+                "Preon Accumulator",
+                "Royal Capacitor",
+                "Molotov (6-Pack)",
+                "The Crowdfunder",
+                "Volcanic Egg",
+                "Eccentric Vase"
             ]
         }
     },
@@ -610,6 +712,9 @@
                 "Critical Strike Chance",
                 "Damage",
                 "Power Elixir"
+            ],
+            "exclude": [
+                "Laser Scope"
             ]
         }
     },
@@ -1409,7 +1514,8 @@
         "tags": [
             "Debuff Inflictions",
             "On Kill",
-            "Damage"
+            "Damage",
+            "Can Proc"
         ],
         "synergies": {
             "include": [
@@ -1509,7 +1615,8 @@
             "On Hit": "0.2"
         },
         "tags": [
-            "Damage"
+            "Damage",
+            "Can Proc"
         ],
         "synergies": {
             "include": [
@@ -1619,7 +1726,8 @@
         },
         "tags": [
             "Chance to Proc",
-            "Damage"
+            "Damage",
+            "Can Proc"
         ],
         "synergies": {
             "include": [
@@ -2618,7 +2726,8 @@
             "Bands",
             "Void Items",
             "High Damage",
-            "Cooldowns"
+            "Cooldowns",
+            "Can Proc"
         ],
         "synergies": {
             "include": [
