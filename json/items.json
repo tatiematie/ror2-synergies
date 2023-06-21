@@ -140,7 +140,9 @@
         ],
         "synergies": {
             "include": [
-                "Amplified Healing"
+                "Amplified Healing",
+                "N'Kuahana's Opinion",
+                "Aegis"
             ]
         }
     },
@@ -856,7 +858,7 @@
         "id": "old-war-stealthkit",
         "description": [
             "Become invisible and gain <span blue>40%</span> movement speed for <span blue>5s</span> when below <span red>25%</span> max health, <span blue>30s</span> <span gray>(-50% per stack)</span> cooldown.",
-            "Pairs well with movement speed, items that activate after taking damage, mobility, and items that activate at low health."
+            "Pairs well with movement speed, items that activate after taking damage, shields, and items that activate at low health."
         ],
         "tags": [
             "At Low Health",
@@ -866,7 +868,7 @@
             "include": [
                 "Movement Speed",
                 "Damage Taken",
-                "Mobility",
+                "Shield",
                 "At Low Health"
             ]
         }
@@ -960,18 +962,16 @@
         "id": "berzerkers-pauldron",
         "description": [
             "Killing <span yellow>4</span> enemies within <span blue>1s</span> boosts movement speed by <span blue>50%</span> and attack speed by <span yellow>100%</span> for <span blue>6s</span> <span gray>(+4s per stack)</span>.",
-            "Pairs well with attack speed, movement speed, and on kill effect items."
+            "Pairs well with attack speed and movement speed."
         ],
         "tags": [
-            "On Kill",
             "Movement Speed",
             "Attack Speed"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Movement Speed",
-                "On Kill"
+                "Movement Speed"
             ]
         }
     },
@@ -1094,9 +1094,7 @@
             "Elite enemies below <span yellow>13%</span> health <span gray>(+13% per stack)</span> die instantly.",
             "Pairs well with increased damage and items that activate after killing an elite enemy."
         ],
-        "tags": [
-            "Elite Kills"
-        ],
+        "tags": [],
         "synergies": {
             "include": [
                 "Damage",
@@ -1323,7 +1321,9 @@
         ],
         "synergies": {
             "include": [
-                "Stage Generation"
+                "Stage Generation",
+                "Money",
+                "Executive Card"
             ]
         }
     },
@@ -1444,16 +1444,14 @@
         "id": "happiest-mask",
         "description": [
             "Gain a <span yellow>7%</span> chance to spawn a ghost ally that deals <span yellow>1,500%</span> damage after killing an enemy. Lasts <span blue>30s</span> <span gray>(+30s per stack)</span>.",
-            "Pairs well with ally summons and on kill effect items."
+            "Pairs well with ally summon items."
         ],
         "tags": [
-            "Ally Summons",
-            "On Kill"
+            "Ally Summons"
         ],
         "synergies": {
             "include": [
-                "Ally Summons",
-                "On Kill"
+                "Ally Summons"
             ]
         }
     },
@@ -1681,9 +1679,19 @@
         "id": "dios-best-friend",
         "description": [
             "Grants <span green>+1</span> extra life <span gray>(+1 per stack)</span>, gain <span blue>3s</span> of invulnerability after resurrection. Consumed on use.",
-            "No currently known item synergies."
+            "Pairs well with on death effects."
         ],
-        "synergies": {}
+        "tags": [
+            "On Death"
+        ],
+        "synergies": {
+            "include": [
+                "On Death"
+            ],
+            "exclude": [
+                "Pluripotent Larva"
+            ]
+        }
     },
     {
         "name": "Hardlight Afterburner",
@@ -1711,17 +1719,15 @@
         "id": "wake-of-vultures",
         "description": [
             "Killing an elite enemy grants the player that enemy's elite ability for <span blue>8s</span> <span gray>(+5s per stack)</span>.",
-            "Pairs well with attack speed, debuff infliction, on kill effects, and items that activate after killing an elite enemy."
+            "Pairs well with attack speed, debuff infliction, and items that activate after killing an elite enemy."
         ],
         "tags": [
-            "On Kill",
             "Elite Kills"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
                 "Debuff Inflictions",
-                "On Kill",
                 "Elite Kills",
                 "Per Hit"
             ]
@@ -1734,18 +1740,17 @@
         "id": "brainstalks",
         "description": [
             "Killing an elite enemy reduces all skill cooldowns to <span blue>0.5s</span> for <span blue>4s</span> <span gray>(+4s per stack)</span>.",
-            "Pairs well with on kill effects, items that activate after killing an elite enemy, and skill cooldown reduction items."
+            "Pairs well with items that activate after killing an elite enemy and skill cooldown reduction items."
         ],
         "tags": [
-            "On Kill",
             "Elite Kills",
             "Skill Cooldown Reduction"
         ],
         "synergies": {
             "include": [
-                "On Kill",
                 "Elite Kills",
-                "Skill Cooldown Reduction"
+                "Skill Cooldown Reduction",
+                "Skills"
             ]
         }
     },
@@ -2122,7 +2127,7 @@
         "id": "irradiant-pearl",
         "description": [
             "Gain <span green>+10%</span> max health, <span green>+10%</span> regeneration, <span blue>+10%</span> movement speed, <span yellow>+10%</span> damage, <span yellow>+10%</span> attack speed, <span yellow>+10%</span> critical strike chance, and <span green>+10%</span> armor.",
-            "Pairs well with attack speed, critical strike chance, movement speed, healing, increased damage, shield, increased health, and damage reduction items."
+            "Pairs well with attack speed, critical strike chance, movement speed, healing, increased damage, shields, increased health, and damage reduction items."
         ],
         "tags": [
             "Increased Health",
@@ -2229,19 +2234,17 @@
         "id": "shatterspleen",
         "description": [
             "Gain <span yellow>+5%</span> critical strike chance. Critical strikes bleed enemies for <span yellow>240%</span> base damage, bleeding enemies explode dealing <span yellow>400%</span> damage <span gray>(+400% per stack)</span> + <span yellow>15%</span> of their max health <span gray>(+15% per stack)</span>.",
-            "Pairs well with attack speed, critical strike chance, and on kill effect items."
+            "Pairs well with attack speed and critical strike chance."
         ],
         "tags": [
             "Critical Strike Chance",
             "Debuff Inflictions",
-            "On Kill",
             "Boss"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Critical Strike Chance",
-                "On Kill"
+                "Critical Strike Chance"
             ]
         }
     },
@@ -2345,12 +2348,11 @@
         "id": "defense-nucleus",
         "description": [
             "Killing an elite monster summons an Alpha Construct that deals <span yellow>300%</span> damage and has <span green>300%</span> health. Capped at <span yellow>4</span>. <span gray>(+4 per stack)</span>",
-            "Pairs well with on kill effects, items that activate after killing an elite enemy, and ally summons."
+            "Pairs well with items that activate after killing an elite enemy, and ally summons."
         ],
         "tags": [
             "Ally Summons",
             "Elite Kills",
-            "On Kill",
             "Boss"
         ],
         "synergies": {
@@ -2499,7 +2501,7 @@
         "id": "plasma-shrimp",
         "description": [
             "Gain <span green>+10%</span> of max health as shield. Fire missiles on hit that deal <span yellow>40%</span> total damage <span gray>(+40% per stack)</span> on hit while you have shield. <span purple>Corrupts all AtG Missile Mk. 1s</span>.",
-            "Pairs well with attack speed, increased damage, shield, and proc chance items."
+            "Pairs well with attack speed, increased damage, shields, and proc chance items."
         ],
         "procCoefficient": {
             "On Hit": "0.2"
@@ -2531,12 +2533,20 @@
         "id": "pluripotent-larva",
         "description": [
             "Grants <span green>+1</span> extra life <span gray>(+1 per stack)</span>, gain <span blue>3s</span> of invulnerability after resurrection. Consumed on use. <span purple>Corrupts all Dio's Best Friends. Corrupts items that have Void counterparts on death</span>.",
-            "No currently known item synergies."
+            "Pairs well with on death effects."
         ],
         "tags": [
-            "Void Items"
+            "Void Items",
+            "On Death"
         ],
-        "synergies": {}
+        "synergies": {
+            "include": [
+                "On Death"
+            ],
+            "exclude": [
+                "Dio's Best Friend"
+            ]
+        }
     },
     {
         "name": "Polylute",
@@ -2819,14 +2829,16 @@
             "Healing",
             "Lunar",
             "Skills",
-            "Utility Skill"
+            "Utility Skill",
+            "Heresy Items"
         ],
         "synergies": {
             "include": [
                 "Movement Speed",
                 "Mobility",
                 "Amplified Healing",
-                "Skill Cooldown Reduction"
+                "Skill Cooldown Reduction",
+                "Heresy Items"
             ],
             "exclude": [
                 "Void Items"
@@ -2851,7 +2863,8 @@
             "Can Proc",
             "Lunar",
             "Skills",
-            "Primary Skill"
+            "Primary Skill",
+            "Heresy Items"
         ],
         "synergies": {
             "include": [
@@ -2859,7 +2872,8 @@
                 "Critical Strike Chance",
                 "Damage",
                 "Chance to Proc",
-                "Per Hit"
+                "Per Hit",
+                "Heresy Items"
             ],
             "exclude": [
                 "On Interaction Effects",
@@ -3002,7 +3016,8 @@
             "Skills",
             "Secondary Skill",
             "High Damage",
-            "Can Proc"
+            "Can Proc",
+            "Heresy Items"
         ],
         "synergies": {
             "include": [
@@ -3012,7 +3027,8 @@
                 "Chance to Proc",
                 "Per Hit",
                 "Skill Cooldown Reduction",
-                "Backup Magazine"
+                "Backup Magazine",
+                "Heresy Items"
             ],
             "exclude": [
                 "On Interaction Effects",
@@ -3107,7 +3123,7 @@
         "id": "stone-flux-pauldron",
         "description": [
             "Gain <span green>+100%</span> max health <span gray>(+100% per stack)</span>, lose <span red>50%</span> movement speed <span gray>(+50% per stack)</span>.",
-            "Pairs well with movement speed, shield, mobility, and increased health items."
+            "Pairs well with movement speed, shields, mobility, and increased health items."
         ],
         "tags": [
             "Lunar",
@@ -3157,14 +3173,16 @@
         "tags": [
             "Lunar",
             "Skills",
-            "Special Skill"
+            "Special Skill",
+            "Heresy Items"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
                 "Debuff Inflictions",
-                "Per Hit"
+                "Per Hit",
+                "Heresy Items"
             ],
             "exclude": []
         }
@@ -3270,7 +3288,7 @@
         "id": "spinel-tonic",
         "description": [
             "<span yellow>+100%</span> damage, <span yellow>+70%</span> attack speed, <span green>+20</span> armor, <span green>+50%</span> max health, <span green>+300%</span> regeneration, and <span blue>+30%</span> movement speed for <span blue>20s</span>. When Tonic wears off the user has a <span yellow>20%</span> chance to gain a stack of Tonic Affliction, which reduces all stats by <span red>5%</span> <span gray>(+5% per stack)</span> while not using by Spinel Tonic. <span blue>60s</span> cooldown.",
-            "Pairs well with attack speed, healing, movement speed, increased damage, and damage reduction items."
+            "Pairs well with attack speed, healing, movement speed, increased damage, damage reduction, and equipment cooldown reduction items."
         ],
         "tags": [
             "Damage",
@@ -3289,7 +3307,8 @@
                 "Critical Strike Chance",
                 "Movement Speed",
                 "Damage",
-                "Damage Reduction"
+                "Damage Reduction",
+                "Equipment Cooldown Reduction"
             ],
             "exclude": [
                 "Equipment",
@@ -3826,7 +3845,8 @@
                 "Skills",
                 "Egocentricism",
                 "Equipment",
-                "Aspect"
+                "Aspect",
+                "Gesture of the Drowned"
             ]
         }
     },
@@ -3916,7 +3936,9 @@
             "include": [
                 "Equipment Cooldown Reduction"
             ],
-            "exclude": []
+            "exclude": [
+                "Gesture of the Drowned"
+            ]
         }
     },
     {
@@ -4002,7 +4024,14 @@
                 "On Kill",
                 "Equipment Cooldown Reduction"
             ],
-            "exclude": []
+            "exclude": [
+                "Hunter's Harpoon",
+                "Frost Relic",
+                "Happiest Mask",
+                "Wake of Vultures",
+                "Brainstalks",
+                "Defense Nucleus"
+            ]
         }
     },
     {
@@ -4086,11 +4115,13 @@
         ],
         "tags": [
             "Aspect",
-            "Healing"
+            "Healing",
+            "On Death"
         ],
         "synergies": {
             "include": [
-                "Amplified Healing"
+                "Amplified Healing",
+                "On Death"
             ],
             "exclude": [
                 "Equipment"
@@ -4104,7 +4135,7 @@
         "id": "silence-between-two-strikes",
         "description": [
             "<span green>50%</span> of the holder's health is converted to shield, all attacks attach lightning bombs to the target which deal <span yellow>50%</span> total damage after exploding.",
-            "Pairs well with attack speed, increased damage, shield, and proc chance items."
+            "Pairs well with attack speed, increased damage, shields, and proc chance items."
         ],
         "tags": [
             "Aspect",
@@ -4138,14 +4169,16 @@
         "tags": [
             "Aspect",
             "Per Hit",
-            "Debuff Inflictions"
+            "Debuff Inflictions",
+            "On Death"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
                 "Debuff Inflictions",
                 "Can Proc",
-                "Per Hit"
+                "Per Hit",
+                "On Death"
             ],
             "exclude": [
                 "Equipment",
@@ -4211,7 +4244,7 @@
         "id": "shared-design",
         "description": [
             "Gain <span yellow>+30%</span> movement speed and <span green>+25%</span> max health, all health is converted to shield. Attacks inflict the Cripple debuff. Fire <span yellow>4</span> bombs every <span blue>10s</span> dealing <span yellow>30%</span> damage.",
-            "Pairs well with attack speed, movement speed, increased damage, debuff inflictions, shield, and increased health items."
+            "Pairs well with attack speed, movement speed, increased damage, debuff inflictions, shields, and increased health items."
         ],
         "tags": [
             "Aspect",
