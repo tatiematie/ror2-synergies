@@ -157,6 +157,59 @@
 .pane .block:not(:first-child) {
   margin-top: 12px;
 }
+.pane .item {
+  border: 1px solid #868686;
+  height: 47px;
+}
+.pane .item a {
+  display: block;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.pane .item a[active] {
+  outline: 2px solid #EEE287;
+  outline-offset: -1px;
+}
+.pane .item a[active]:before, .pane .item a[active]:after {
+  background-color: #FAFDC3;
+  border: 1px solid #A7954F;
+  content: "";
+  transform: rotate(45deg);
+  z-index: 10;
+}
+.pane .item a[active]::before {
+  bottom: -7px;
+  height: 10px;
+  left: calc((100% - 10px) / 2);
+  position: absolute;
+  width: 10px;
+}
+.pane .item a[active]::after {
+  bottom: -5px;
+  height: 6px;
+  left: calc((100% - 6px) / 2);
+  position: absolute;
+  width: 6px;
+}
+.pane .item a img {
+  display: block;
+  left: 5%;
+  position: relative;
+  width: 90%;
+  top: 5%;
+}
+@media (hover: hover) {
+  .pane .item a:hover:not([active]) {
+    cursor: pointer;
+    outline-offset: 3px;
+    outline: 2px solid #EEE287;
+  }
+}
+.pane .item a:focus:not([active]) {
+  outline-offset: -1px;
+  outline: 2px solid #EEE287;
+}
 
 html {
   background-color: #10051A;
@@ -274,9 +327,16 @@ html:focus {
   }
 }
 #container #display-pane {
-  scroll-margin: 10px;
   height: -moz-min-content;
   height: min-content;
+}
+#container #display-pane .heading {
+  scroll-margin: 48px;
+}
+@media (max-width: 750px) {
+  #container #display-pane .heading {
+    scroll-margin: 27px;
+  }
 }
 #container #display-pane #item-thumbnail {
   border: 4px solid #868686;
@@ -321,17 +381,6 @@ html:focus {
   justify-content: start;
   row-gap: 6px;
 }
-#container #display-pane #item-synergies ul .item {
-  border: 1px solid #868686;
-  height: 47px;
-  width: 47px;
-}
-#container #display-pane #item-synergies ul .item img {
-  height: 90%;
-  left: 5%;
-  position: relative;
-  top: 5%;
-}
 #container #display-pane #item-synergies ul:not(:last-of-type) {
   margin-bottom: 12px;
 }
@@ -354,54 +403,4 @@ html:focus {
 }
 #container #select-pane #item-select::-webkit-scrollbar {
   display: none;
-}
-#container #select-pane #item-select .item {
-  border: 1px solid #868686;
-  height: 47px;
-}
-#container #select-pane #item-select .item button {
-  height: 100%;
-  position: relative;
-}
-#container #select-pane #item-select .item button[active=true] {
-  outline: 2px solid #EEE287;
-  outline-offset: -1px;
-}
-#container #select-pane #item-select .item button[active=true]:before, #container #select-pane #item-select .item button[active=true]:after {
-  background-color: #FAFDC3;
-  border: 1px solid #A7954F;
-  content: "";
-  transform: rotate(45deg);
-  z-index: 10;
-}
-#container #select-pane #item-select .item button[active=true]::before {
-  bottom: -5px;
-  height: 10px;
-  left: calc((100% - 10px) / 2);
-  position: absolute;
-  width: 10px;
-}
-#container #select-pane #item-select .item button[active=true]::after {
-  bottom: -3px;
-  height: 6px;
-  left: calc((100% - 6px) / 2);
-  position: absolute;
-  width: 6px;
-}
-#container #select-pane #item-select .item button img {
-  display: block;
-  left: 5%;
-  position: relative;
-  width: 90%;
-}
-@media (hover: hover) {
-  #container #select-pane #item-select .item button:hover:not([active=true]) {
-    cursor: pointer;
-    outline-offset: 3px;
-    outline: 2px solid #EEE287;
-  }
-}
-#container #select-pane #item-select .item button:focus:not([active=true]) {
-  outline-offset: 3px;
-  outline: 2px solid #EEE287;
 }/*# sourceMappingURL=style.css.map */
