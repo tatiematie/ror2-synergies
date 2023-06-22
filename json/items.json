@@ -2314,7 +2314,6 @@
         },
         "tags": [
             "Debuff Inflictions",
-            "Increased Damage",
             "Can Proc",
             "Chance to Proc",
             "High Damage",
@@ -2325,6 +2324,7 @@
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
+                "Increased Damage",
                 "Debuff Inflictions",
                 "Chance to Proc",
                 "Can Proc",
