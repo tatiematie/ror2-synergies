@@ -1,5 +1,5 @@
 # ror2-synergies
-This tool aims to help new players understand the intricate details under the hood of **Risk of Rain 2**. Find it here: (https://tatiematie.github.io/ror2-synergies/).
+This tool aims to help new players understand the intricate details under the hood of **Risk of Rain 2**. Find it here: [https://tatiematie.github.io/ror2-synergies/].
 
 ## Roadmap
 **Phase 1: Introduction (~~Complete~~)**
