@@ -161,8 +161,6 @@ const setActive = () => {
     }
 
     activeButton.setAttribute('active', '')
-    activeButton.focus()
-    activeButton.blur()
 }
 
 const updateSynergyList = (currentItem) => {
@@ -295,8 +293,6 @@ const initializePage = async () => {
         canScroll = true
     }, 1);
 
-    setActive()
-
     document.addEventListener('click', (event) => {
         if (event.target.closest('.item') && canScroll) {
             displayPane.parentNode.parentNode.scrollIntoView({ behavior: 'smooth', block: 'start' })
@@ -322,6 +318,8 @@ const initializePage = async () => {
     footer.appendChild(copyrightTag)
 
     console.log(`Verison ${appVersion}`)
+
+    setActive()
 }
 
 initializePage()
