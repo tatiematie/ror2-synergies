@@ -1,4 +1,4 @@
-const appVersion = '1.2.1.1'
+const appVersion = '1.2.2'
 const itemDesc = document.querySelector('#item-description')
 const itemSelect = document.querySelector('#item-select')
 let selectButtons
@@ -157,10 +157,10 @@ const setActive = () => {
     const previouslyActiveButton = itemSelect.querySelector('.item a[active]')
     if (previouslyActiveButton) {
         previouslyActiveButton.removeAttribute('active')
+        previouslyActiveButton.blur()
     }
 
     activeButton.setAttribute('active', '')
-    activeButton.focus()
 }
 
 const updateSynergyList = (currentItem) => {
@@ -285,14 +285,21 @@ const initializePage = async () => {
 
     selectButtons = itemSelect.querySelectorAll('.item a')
 
-    updateDisplay()
+    let canScroll = false
 
-    setActive()
+    setTimeout(() => {
+        updateDisplay()
+
+        canScroll = true
+    }, 1);
+
+    document.addEventListener('click', (event) => {
+        if (event.target.closest('.item') && canScroll) {
+            displayPane.parentNode.parentNode.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
+    })
 
     window.addEventListener('popstate', updateDisplay)
-    window.addEventListener('popstate', () => {
-        displayPane.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    })
 
     window.addEventListener('popstate', setActive)
 
@@ -311,6 +318,8 @@ const initializePage = async () => {
     footer.appendChild(copyrightTag)
 
     console.log(`Verison ${appVersion}`)
+
+    setActive()
 }
 
 initializePage()
