@@ -11,9 +11,9 @@
   padding: 0;
 }
 * h2, * a, * p, * span {
+  cursor: default;
   width: -moz-fit-content;
   width: fit-content;
-  cursor: default;
 }
 * button {
   background: none;
@@ -95,6 +95,9 @@
 .pane .block details {
   position: relative;
 }
+.pane .block details p {
+  margin-bottom: 6px;
+}
 .pane .block details img {
   pointer-events: all;
 }
@@ -148,9 +151,6 @@
 .pane .block p {
   font-size: 18px;
   line-height: 24px;
-}
-.pane .block p:not(.title, :last-child, #item-synergies p) {
-  margin-bottom: 6px;
 }
 .pane .block:not(:first-child) {
   margin-top: 12px;

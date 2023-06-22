@@ -59,8 +59,8 @@ $colors: (
     padding: 0;
     
     h2, a, p, span {
+        cursor: default;
         width: fit-content;
-        cursor:default;
     }
 
     button {
@@ -160,6 +160,10 @@ $colors: (
         details {
             position: relative;
 
+            p {
+                margin-bottom: 6px;
+            }
+
             img {
                 pointer-events: all;
             }
@@ -221,10 +225,6 @@ $colors: (
         p {
             font-size: 18px;
             line-height: 24px;
-
-            &:not(.title, :last-child, #item-synergies p) {
-                margin-bottom: 6px;
-            }
         }
 
         &:not(:first-child) {
