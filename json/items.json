@@ -16,6 +16,7 @@
                 "Attack Speed",
                 "Critical Strike Chance",
                 "Chance to Proc",
+                "Increased Damage",
                 "Per Hit"
             ],
             "exclude": [
@@ -78,8 +79,10 @@
         ],
         "synergies": {
             "include": [
-                "Amplified Healing",
-                "N'Kuahana's Opinion"
+                "Amplified Healing"
+            ],
+            "exclude": [
+                "Spinel Tonic"
             ]
         }
     },
@@ -99,7 +102,9 @@
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Damage"
+                "Increased Damage",
+                "Luck",
+                "Laser Scope"
             ],
             "exclude": [
                 "Ocular HUD"
@@ -160,13 +165,13 @@
             "Pairs well with proc chance and high damage items."
         ],
         "tags": [
-            "Damage",
+            "Increased Damage",
             "High Damage"
         ],
         "synergies": {
             "include": [
                 "Critical Strike Chance",
-                "Damage"
+                "Increased Damage"
             ],
             "exclude": [
                 "Laser Scope",
@@ -206,7 +211,8 @@
             "include": [
                 "Attack Speed",
                 "Can Proc",
-                "Debuff Inflictions"
+                "Debuff Inflictions",
+                "Luck"
             ],
             "exclude": [
                 "Needletick"
@@ -310,7 +316,7 @@
         "synergies": {
             "include": [
                 "On Kill",
-                "Fire Damage"
+                "Ignition Tank"
             ],
             "exclude": [
                 "Healing",
@@ -339,7 +345,8 @@
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Can Proc"
+                "Can Proc",
+                "Luck"
             ]
         }
     },
@@ -356,7 +363,6 @@
             "On Hit": "0.2"
         },
         "tags": [
-            "Damage",
             "On Interaction Effects",
             "Missiles",
             "High Damage",
@@ -365,7 +371,6 @@
         "synergies": {
             "include": [
                 "Critical Strike Chance",
-                "Damage",
                 "Chance to Proc",
                 "Per Hit",
                 "On Interaction Effects",
@@ -448,15 +453,15 @@
             "Pairs well with attack speed, increased damage, and proc chance items."
         ],
         "tags": [
-            "Chance to Proc",
-            "Damage"
+            "Chance to Proc"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Damage",
-                "Can Proc"
+                "Increased Damage",
+                "Can Proc",
+                "Luck"
             ],
             "exclude": [
                 "Silence Between Two Strikes",
@@ -496,13 +501,13 @@
             "Pairs well with attack speed and increased damage items."
         ],
         "tags": [
-            "Damage"
+            "Increased Damage"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Damage"
+                "Increased Damage"
             ],
             "exclude": [
                 "Laser Scope"
@@ -532,7 +537,6 @@
             ],
             "exclude": [
                 "Monster Tooth",
-                "Fire Damage",
                 "Will-o'-the-Wisp",
                 "Increased Health",
                 "Skill Cooldown Reduction",
@@ -556,13 +560,12 @@
             "Pairs well with attack speed and increased damage items."
         ],
         "tags": [
-            "Damage"
+            "Increased Damage"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Critical Strike Chance",
-                "Damage"
+                "Critical Strike Chance"
             ],
             "exclude": [
                 "Laser Scope",
@@ -643,7 +646,6 @@
                 "Attack Speed",
                 "Critical Strike Chance",
                 "Movement Speed",
-                "Damage",
                 "Mobility"
             ],
             "exclude": [
@@ -703,13 +705,13 @@
             "Pairs well with attack speed and increased damage items."
         ],
         "tags": [
-            "Damage"
+            "Increased Damage"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Damage",
+                "Increased Damage",
                 "Power Elixir"
             ],
             "exclude": [
@@ -775,7 +777,6 @@
         "tags": [
             "Chance to Proc",
             "Can Proc",
-            "Damage",
             "Missiles",
             "High Damage"
         ],
@@ -783,14 +784,15 @@
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Damage",
+                "Increased Damage",
                 "Chance to Proc",
                 "Can Proc",
                 "Per Hit",
-                "Missiles"
+                "Luck"
             ],
             "exclude": [
-                "Plasma Shrimp"
+                "Plasma Shrimp",
+                "AtG Missile Mk. 1"
             ]
         }
     },
@@ -808,13 +810,12 @@
         },
         "tags": [
             "On Kill",
-            "Damage",
             "High Damage"
         ],
         "synergies": {
             "include": [
                 "Critical Strike Chance",
-                "Damage",
+                "Increased Damage",
                 "Chance to Proc",
                 "Per Hit"
             ],
@@ -871,19 +872,20 @@
         },
         "tags": [
             "Chance to Proc",
-            "Can Proc",
-            "Damage"
+            "Can Proc"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Damage",
+                "Increased Damage",
                 "Chance to Proc",
                 "Can Proc",
-                "Per Hit"
+                "Per Hit",
+                "Luck"
             ],
             "exclude": [
+                "Ukulele",
                 "Skills",
                 "Polylute"
             ]
@@ -927,7 +929,8 @@
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Can Proc"
+                "Can Proc",
+                "Laser Scope"
             ],
             "exclude": [
                 "Tri-Tip Dagger",
@@ -1110,17 +1113,17 @@
             "Pairs well with high damage items."
         ],
         "tags": [
-            "Damage",
-            "Bands",
             "High Damage",
             "Cooldowns"
         ],
         "synergies": {
             "include": [
+                "Increased Damage",
                 "High Damage"
             ],
             "exclude": [
-                "Void Items"
+                "Void Items",
+                "Bands"
             ]
         }
     },
@@ -1134,17 +1137,17 @@
             "Pairs well with high damage items."
         ],
         "tags": [
-            "Damage",
-            "Bands",
             "High Damage",
             "Cooldowns"
         ],
         "synergies": {
             "include": [
+                "Increased Damage",
                 "High Damage"
             ],
             "exclude": [
-                "Void Items"
+                "Void Items",
+                "Bands"
             ]
         }
     },
@@ -1203,7 +1206,6 @@
         "tags": [],
         "synergies": {
             "include": [
-                "Damage",
                 "Elite Kills"
             ]
         }
@@ -1262,17 +1264,16 @@
         },
         "tags": [
             "Can Proc",
-            "Damage Taken",
-            "Damage"
+            "Damage Taken"
         ],
         "synergies": {
             "include": [
                 "Critical Strike Chance",
+                "Increased Damage",
                 "Damage Taken",
-                "Damage",
                 "Chance to Proc",
-                "Can Proc",
-                "Per Hit"
+                "Per Hit",
+                "Helfire Tincture"
             ],
             "exclude": [
                 "Bundle of Fireworks",
@@ -1344,7 +1345,6 @@
         ],
         "synergies": {
             "include": [
-                "Damage",
                 "Debuff Inflictions"
             ]
         }
@@ -1379,13 +1379,11 @@
             "Pairs well with fire damage and debuff infliction items."
         ],
         "tags": [
-            "Fire Damage",
             "Debuff Inflictions"
         ],
         "synergies": {
             "include": [
-                "Fire Damage",
-                "Debuff Inflictions"
+                "Fire Damage"
             ]
         }
     },
@@ -1403,12 +1401,12 @@
         },
         "tags": [
             "Can Proc",
-            "Damage",
             "High Damage"
         ],
         "synergies": {
             "include": [
-                "Damage",
+                "Critical Strike Chance",
+                "Increased Damage",
                 "Can Proc",
                 "Chance to Proc"
             ]
@@ -1444,14 +1442,13 @@
             "Pairs well with attack speed, increased damage, and proc chance items."
         ],
         "tags": [
-            "Damage",
             "Per Hit"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Damage",
+                "Increased Damage",
                 "Per Hit"
             ]
         }
@@ -1470,13 +1467,12 @@
         },
         "tags": [
             "On Kill",
-            "Can Proc",
-            "Damage"
+            "Can Proc"
         ],
         "synergies": {
             "include": [
                 "Critical Strike Chance",
-                "Damage",
+                "Increased Damage",
                 "On Kill",
                 "Can Proc",
                 "Per Hit"
@@ -1516,13 +1512,12 @@
         "tags": [
             "Debuff Inflictions",
             "On Kill",
-            "Damage",
             "Can Proc"
         ],
         "synergies": {
             "include": [
                 "Critical Strike Chance",
-                "Damage",
+                "Increased Damage",
                 "Chance to Proc",
                 "Debuff Inflictions",
                 "On Kill"
@@ -1572,15 +1567,19 @@
             "Increases jump height, hold 'interact' to slam. Slamming creates a <span yellow>5m-100m</span> explosion dealing <span yellow>1,000%-10,000%</span> base damage, damage scales with slam distance. <span blue>10s</span> <span gray>(-50% per stack)</span> cooldown.",
             "Pairs well with movement speed, increased damage, proc chance, and mobility items."
         ],
+        "procCoefficient": {
+            "Explosion": "1.0"
+        },
         "tags": [
             "Mobility",
-            "Damage",
+            "Can Proc",
             "High Damage"
         ],
         "synergies": {
             "include": [
                 "Movement Speed",
-                "Damage",
+                "Critical Strike Chance",
+                "Increased Damage",
                 "Chance to Proc",
                 "Mobility",
                 "Per Hit"
@@ -1617,14 +1616,13 @@
             "On Hit": "0.2"
         },
         "tags": [
-            "Damage",
             "Can Proc"
         ],
         "synergies": {
             "include": [
                 "Healing",
                 "Critical Strike Chance",
-                "Damage",
+                "Increased Damage",
                 "Chance to Proc",
                 "Amplified Healing",
                 "Per Hit"
@@ -1662,12 +1660,11 @@
             "On Hit": "0.3"
         },
         "tags": [
-            "Can Proc",
-            "Damage"
+            "Can Proc"
         ],
         "synergies": {
             "include": [
-                "Damage",
+                "Increased Damage",
                 "Chance to Proc",
                 "Per Hit"
             ],
@@ -1700,8 +1697,7 @@
             "Pairs well with critical strike chance and proc chance items."
         ],
         "tags": [
-            "Chance to Proc",
-            "Can Proc"
+            "Luck"
         ],
         "synergies": {
             "include": [
@@ -1724,22 +1720,23 @@
             "Pairs well with attack speed, increased damage, and proc chance items."
         ],
         "procCoefficient": {
-            "On Hit": ".33"
+            "On Hit": "0.33"
         },
         "tags": [
             "Chance to Proc",
-            "Damage",
             "Can Proc"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Damage",
-                "Chance to Proc"
+                "Increased Damage",
+                "Chance to Proc",
+                "Luck"
             ],
             "exclude": [
                 "On Kill",
-                "Genesis Loop"
+                "Genesis Loop",
+                "Sentient Meat Hook"
             ]
         }
     },
@@ -1920,7 +1917,6 @@
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Damage",
                 "Debuff Inflictions",
                 "Per Hit"
             ]
@@ -1944,7 +1940,7 @@
         ],
         "synergies": {
             "include": [
-                "Damage",
+                "Increased Damage",
                 "Chance to Proc",
                 "On Kill"
             ],
@@ -1996,13 +1992,10 @@
             "Critical strikes deal <span yellow>+100%</span> damage <span gray>(+100% per stack)</span>.",
             "Pairs well with critical strike chance and increased damage items."
         ],
-        "tags": [
-            "Critical Strike Chance"
-        ],
+        "tags": [],
         "synergies": {
             "include": [
-                "Critical Strike Chance",
-                "Damage"
+                "Critical Strike Chance"
             ]
         }
     },
@@ -2058,7 +2051,6 @@
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Damage",
                 "Debuff Inflictions",
                 "Per Hit"
             ]
@@ -2186,7 +2178,7 @@
         "synergies": {
             "include": [
                 "Movement Speed",
-                "Damage",
+                "Increased Damage",
                 "Chance to Proc"
             ],
             "exclude": [
@@ -2243,7 +2235,6 @@
             "Increased Health",
             "Amplified Healing",
             "Movement Speed",
-            "Damage",
             "Attack Speed",
             "Critical Strike Chance",
             "Damage Reduction",
@@ -2254,12 +2245,14 @@
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
+                "Increased Damage",
                 "Movement Speed",
                 "Healing",
-                "Damage",
                 "Shield",
                 "Increased Health",
-                "Damage Reduction"
+                "Damage Reduction",
+                "Luck",
+                "Laser Scope"
             ],
             "exclude": [
                 "Ocular HUD"
@@ -2276,7 +2269,6 @@
             "Pairs well with attack speed, critical strike chance, items that activate after taking damage, increased damage, and items that activate at low health."
         ],
         "tags": [
-            "Damage",
             "At Low Health",
             "High Damage",
             "Boss"
@@ -2285,8 +2277,8 @@
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
+                "Increased Damage",
                 "Damage Taken",
-                "Damage",
                 "At Low Health"
             ],
             "exclude": [
@@ -2322,21 +2314,25 @@
         },
         "tags": [
             "Debuff Inflictions",
+            "Increased Damage",
             "Can Proc",
             "Chance to Proc",
-            "Damage",
             "High Damage",
-            "Fire Damage",
-            "Boss"
+            "Boss",
+            "Fire Damage"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Damage",
                 "Debuff Inflictions",
                 "Chance to Proc",
-                "Can Proc"
+                "Can Proc",
+                "Per Hit",
+                "Ignition Tank"
+            ],
+            "exclude": [
+                "Molten Perforator"
             ]
         }
     },
@@ -2357,7 +2353,9 @@
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Critical Strike Chance"
+                "Critical Strike Chance",
+                "Luck",
+                "Laser Scope"
             ]
         }
     },
@@ -2397,7 +2395,6 @@
         "tags": [
             "Chance to Proc",
             "Can Proc",
-            "Damage",
             "High Damage",
             "Boss"
         ],
@@ -2405,9 +2402,13 @@
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Damage",
+                "Increased Damage",
                 "Chance to Proc",
-                "Can Proc"
+                "Can Proc",
+                "Per Hit"
+            ],
+            "exclude": [
+                "Charged Perforator"
             ]
         }
     },
@@ -2532,7 +2533,8 @@
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Can Proc"
+                "Can Proc",
+                "Luck"
             ]
         }
     },
@@ -2578,7 +2580,8 @@
             "include": [
                 "Attack Speed",
                 "Debuff Inflictions",
-                "Can Proc"
+                "Can Proc",
+                "Luck"
             ],
             "exclude": [
                 "Tri-Tip Dagger"
@@ -2624,13 +2627,12 @@
             "Per Hit",
             "Can Proc",
             "Void Items",
-            "Damage",
             "Missiles"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Damage",
+                "Increased Damage",
                 "Shield",
                 "Chance to Proc"
             ],
@@ -2676,15 +2678,15 @@
         "tags": [
             "Chance to Proc",
             "Can Proc",
-            "Void Items",
-            "Damage"
+            "Void Items"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Damage",
+                "Increased Damage",
                 "Chance to Proc",
-                "Can Proc"
+                "Can Proc",
+                "Luck"
             ],
             "exclude": [
                 "Ukulele"
@@ -2727,7 +2729,6 @@
             "On Hit": "1.0"
         },
         "tags": [
-            "Damage",
             "Bands",
             "Void Items",
             "High Damage",
@@ -2736,10 +2737,12 @@
         ],
         "synergies": {
             "include": [
+                "Increased Damage",
                 "High Damage"
             ],
             "exclude": [
-                "Bands"
+                "Runald's Band",
+                "Kjaro's Band"
             ]
         }
     },
@@ -2760,7 +2763,8 @@
             "include": [
                 "Attack Speed",
                 "Debuff Inflictions",
-                "Can Proc"
+                "Can Proc",
+                "Luck"
             ]
         }
     },
@@ -2781,7 +2785,7 @@
         ],
         "synergies": {
             "include": [
-                "Damage",
+                "Increased Damage",
                 "Chance to Proc",
                 "Can Proc"
             ],
@@ -2821,15 +2825,15 @@
             "Pairs well with attack speed, increased damage, and proc chance items."
         ],
         "tags": [
-            "Damage",
             "Lunar",
+            "Increased Damage",
             "High Damage"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Damage",
+                "Increased Damage",
                 "Chance to Proc"
             ],
             "exclude": [
@@ -2859,8 +2863,9 @@
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Damage",
                 "Can Proc",
+                "Money",
+                "Luck",
                 "Executive Card"
             ],
             "exclude": []
@@ -2974,7 +2979,6 @@
             "Explosion": "1.0"
         },
         "tags": [
-            "Damage",
             "Can Proc",
             "Lunar",
             "Skills",
@@ -2985,7 +2989,7 @@
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Damage",
+                "Increased Damage",
                 "Chance to Proc",
                 "Per Hit",
                 "Heresy Items"
@@ -2996,7 +3000,7 @@
                 "Bands",
                 "Razorwire",
                 "Shuriken",
-                "Mobility",
+                "H3AD-5T v2",
                 "N'Kuahana's Opinion",
                 "Unstable Tesla Coil",
                 "Genesis Loop",
@@ -3078,14 +3082,12 @@
             "Pairs well with attack speed, increased damage, and proc chance items."
         ],
         "tags": [
-            "Lunar",
-            "Damage"
+            "Lunar"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Damage",
                 "Chance to Proc",
                 "Per Hit"
             ],
@@ -3127,7 +3129,6 @@
         },
         "tags": [
             "Lunar",
-            "Damage",
             "Skills",
             "Secondary Skill",
             "High Damage",
@@ -3138,7 +3139,7 @@
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Damage",
+                "Increased Damage",
                 "Chance to Proc",
                 "Per Hit",
                 "Skill Cooldown Reduction",
@@ -3150,11 +3151,10 @@
                 "On Kill",
                 "Razorwire",
                 "Shuriken",
-                "Mobility",
+                "H3AD-5T v2",
                 "N'Kuahana's Opinion",
                 "Unstable Tesla Coil",
                 "Genesis Loop",
-                "Skills",
                 "Disposable Missile Launcher",
                 "Preon Accumulator",
                 "Royal Capacitor",
@@ -3181,13 +3181,12 @@
         },
         "tags": [
             "Lunar",
-            "Damage",
             "High Damage"
         ],
         "synergies": {
             "include": [
                 "Critical Strike Chance",
-                "Damage",
+                "Increased Damage",
                 "Chance to Proc",
                 "Per Hit"
             ],
@@ -3321,7 +3320,7 @@
         "synergies": {
             "include": [
                 "Critical Strike Chance",
-                "Damage",
+                "Increased Damage",
                 "Chance to Proc",
                 "Equipment Cooldown Reduction"
             ],
@@ -3354,14 +3353,16 @@
         ],
         "tags": [
             "Lunar",
-            "Equipment"
+            "Equipment",
+            "Fire Damage"
         ],
         "synergies": {
             "include": [
+                "Increased Damage",
                 "Damage Taken",
                 "Debuff Inflictions",
                 "Damage Reduction",
-                "Fire Damage"
+                "Ignition Tank"
             ],
             "exclude": [
                 "Equipment",
@@ -3386,7 +3387,6 @@
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Damage",
                 "Debuff Inflictions",
                 "Equipment Cooldown Reduction"
             ],
@@ -3406,11 +3406,10 @@
             "Pairs well with attack speed, healing, movement speed, increased damage, damage reduction, and equipment cooldown reduction items."
         ],
         "tags": [
-            "Damage",
             "Attack Speed",
+            "Increased Damage",
             "Damage Reduction",
             "Increased Health",
-            "Amplified Healing",
             "Movement Speed",
             "Lunar",
             "Equipment"
@@ -3418,10 +3417,10 @@
         "synergies": {
             "include": [
                 "Attack Speed",
+                "Increased Damage",
                 "Healing",
                 "Critical Strike Chance",
                 "Movement Speed",
-                "Damage",
                 "Damage Reduction",
                 "Equipment Cooldown Reduction"
             ],
@@ -3445,7 +3444,6 @@
         },
         "tags": [
             "Equipment",
-            "Damage",
             "Can Proc",
             "Missiles",
             "High Damage"
@@ -3453,7 +3451,7 @@
         "synergies": {
             "include": [
                 "Critical Strike Chance",
-                "Damage",
+                "Increased Damage",
                 "Chance to Proc",
                 "Equipment Cooldown Reduction",
                 "Per Hit"
@@ -3533,13 +3531,15 @@
         "id": "trophy-hunters-tricorn",
         "description": [
             "Instantly kill a boss enemy and cause it to drop its repsective Boss Item. Single use, consumed on use.",
-            "No currently known item synergies."
+            "Pairs well with the Recycler."
         ],
         "tags": [
             "Equipment"
         ],
         "synergies": {
-            "include": [],
+            "include": [
+                "Recycler"
+            ],
             "exclude": []
         }
     },
@@ -3560,7 +3560,7 @@
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Damage",
+                "Increased Damage",
                 "Equipment Cooldown Reduction",
                 "Per Hit"
             ],
@@ -3608,14 +3608,13 @@
         },
         "tags": [
             "Equipment",
-            "Damage",
             "Can Proc",
             "High Damage"
         ],
         "synergies": {
             "include": [
                 "Critical Strike Chance",
-                "Damage",
+                "Increased Damage",
                 "Chance to Proc",
                 "Equipment Cooldown Reduction",
                 "Per Hit"
@@ -3704,14 +3703,13 @@
         },
         "tags": [
             "Equipment",
-            "Damage",
             "Can Proc",
             "High Damage"
         ],
         "synergies": {
             "include": [
                 "Critical Strike Chance",
-                "Damage",
+                "Increased Damage",
                 "Chance to Proc",
                 "Equipment Cooldown Reduction",
                 "Per Hit"
@@ -3757,18 +3755,18 @@
         },
         "tags": [
             "Equipment",
-            "Damage",
-            "Fire Damage",
             "Can Proc",
             "Debuff Inflictions",
-            "High Damage"
+            "High Damage",
+            "Fire Damage"
         ],
         "synergies": {
             "include": [
                 "Chance to Proc",
                 "Debuff Inflictions",
                 "Equipment Cooldown Reduction",
-                "Per Hit"
+                "Per Hit",
+                "Ignition Tank"
             ],
             "exclude": [
                 "Equipment",
@@ -3807,13 +3805,12 @@
         },
         "tags": [
             "Equipment",
-            "Damage",
             "Can Proc"
         ],
         "synergies": {
             "include": [
-                "Damage",
                 "Chance to Proc",
+                "Increased Damage",
                 "Per Hit"
             ],
             "exclude": [
@@ -3829,6 +3826,7 @@
                 "Unstable Tesla Coil",
                 "Genesis Loop",
                 "Skills",
+                "Crowbar",
                 "Egocentricism",
                 "Equipment",
                 "Aspect"
@@ -3935,7 +3933,6 @@
         },
         "tags": [
             "Equipment",
-            "Damage",
             "Can Proc",
             "High Damage",
             "Mobility"
@@ -3943,7 +3940,7 @@
         "synergies": {
             "include": [
                 "Critical Strike Chance",
-                "Damage",
+                "Increased Damage",
                 "Movement Speed",
                 "Chance to Proc",
                 "Equipment Cooldown Reduction",
@@ -4005,7 +4002,6 @@
         },
         "tags": [
             "Equipment",
-            "Damage",
             "Can Proc",
             "Debuff Inflictions",
             "High Damage"
@@ -4013,7 +4009,7 @@
         "synergies": {
             "include": [
                 "Critical Strike Chance",
-                "Damage",
+                "Increased Damage",
                 "Debuff Inflictions",
                 "Chance to Proc",
                 "Equipment Cooldown Reduction",
@@ -4051,7 +4047,8 @@
         ],
         "synergies": {
             "include": [
-                "Equipment Cooldown Reduction"
+                "Equipment Cooldown Reduction",
+                "Trophy Hunter's Tricorn"
             ],
             "exclude": [
                 "Gesture of the Drowned"
@@ -4073,7 +4070,6 @@
         "synergies": {
             "include": [
                 "Critical Strike Chance",
-                "Damage",
                 "Amplified Healing",
                 "Equipment Cooldown Reduction"
             ],
@@ -4101,7 +4097,6 @@
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Damage",
                 "Movement Speed",
                 "Chance to Proc",
                 "Equipment Cooldown Reduction",
@@ -4170,7 +4165,6 @@
         "synergies": {
             "include": [
                 "Critical Strike Chance",
-                "Damage",
                 "Chance to Proc",
                 "On Interaction Effects",
                 "Equipment Cooldown Reduction"
@@ -4212,8 +4206,8 @@
                 "Attack Speed",
                 "Debuff Inflictions",
                 "Can Proc",
-                "Fire Damage",
-                "Per Hit"
+                "Per Hit",
+                "Ignition Tank"
             ],
             "exclude": [
                 "Equipment",
@@ -4256,21 +4250,21 @@
         ],
         "tags": [
             "Aspect",
-            "Per Hit",
-            "Damage"
+            "Per Hit"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Damage",
+                "Increased Damage",
                 "Shield",
                 "Can Proc",
                 "Per Hit"
             ],
             "exclude": [
                 "Equipment",
-                "Aspect"
+                "Aspect",
+                "Crowbar"
             ]
         }
     },
@@ -4363,18 +4357,22 @@
             "Gain <span yellow>+30%</span> movement speed and <span green>+25%</span> max health, all health is converted to shield. Attacks inflict the Cripple debuff. Fire <span yellow>4</span> bombs every <span blue>10s</span> dealing <span yellow>30%</span> damage.",
             "Pairs well with attack speed, movement speed, increased damage, debuff inflictions, shields, and increased health items."
         ],
+        "procCoefficient": {
+            "Projectile": "1.0"
+        },
         "tags": [
             "Aspect",
             "Per Hit",
-            "Debuff Inflictions"
+            "Debuff Inflictions",
+            "Can Proc"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Damage",
                 "Movement Speed",
                 "Debuff Inflictions",
+                "Chance to Proc",
                 "Shield",
                 "Increased Health",
                 "Per Hit"
