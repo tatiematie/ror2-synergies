@@ -167,7 +167,7 @@
 }
 .pane .item a[active] {
   outline: 2px solid #EEE287;
-  outline-offset: -1px;
+  outline-offset: 3px;
 }
 .pane .item a[active]:before, .pane .item a[active]:after {
   background-color: #FAFDC3;
@@ -177,14 +177,14 @@
   z-index: 10;
 }
 .pane .item a[active]::before {
-  bottom: -7px;
+  bottom: -9px;
   height: 10px;
   left: calc((100% - 10px) / 2);
   position: absolute;
   width: 10px;
 }
 .pane .item a[active]::after {
-  bottom: -5px;
+  bottom: -7px;
   height: 6px;
   left: calc((100% - 6px) / 2);
   position: absolute;
@@ -200,7 +200,7 @@
 @media (hover: hover) {
   .pane .item a:hover:not([active]) {
     cursor: pointer;
-    outline-offset: 3px;
+    outline-offset: -1px;
     outline: 2px solid #EEE287;
   }
 }
@@ -331,13 +331,11 @@ html:focus {
 #container #display-pane {
   height: -moz-min-content;
   height: min-content;
-}
-#container #display-pane .heading {
   scroll-margin: 48px;
 }
 @media (max-width: 750px) {
-  #container #display-pane .heading {
-    scroll-margin: 27px;
+  #container #display-pane {
+    scroll-margin: 11px;
   }
 }
 #container #display-pane #item-thumbnail {
