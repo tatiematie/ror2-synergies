@@ -593,8 +593,7 @@
         "id": "bison-steak",
         "description": [
             "Gain <span green>+25</span> max health <span gray>(+25hp per stack)</span>.",
-            "Pairs well with shield and increased health items.",
-            "<span invisible>Pairs even better with the Scrapper though...</span>"
+            "Pairs well with shield and increased health items."
         ],
         "tags": [
             "Increased Health"
