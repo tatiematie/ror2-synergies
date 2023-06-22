@@ -755,7 +755,8 @@
                 "Damage Taken",
                 "Barrier",
                 "Damage Reduction",
-                "Money"
+                "Money",
+                "Executive Card"
             ]
         }
     },
@@ -995,7 +996,8 @@
                 "Attack Speed",
                 "Critical Strike Chance",
                 "Can Proc",
-                "Amplified Healing"
+                "Amplified Healing",
+                "Laser Scope"
             ]
         }
     },
@@ -1303,7 +1305,8 @@
         "synergies": {
             "include": [
                 "On Kill",
-                "Money"
+                "Money",
+                "Executive Card"
             ]
         }
     },
@@ -2257,6 +2260,9 @@
                 "Shield",
                 "Increased Health",
                 "Damage Reduction"
+            ],
+            "exclude": [
+                "Ocular HUD"
             ]
         }
     },
@@ -2854,7 +2860,8 @@
             "include": [
                 "Attack Speed",
                 "Damage",
-                "Can Proc"
+                "Can Proc",
+                "Executive Card"
             ],
             "exclude": []
         }
@@ -3559,7 +3566,9 @@
             ],
             "exclude": [
                 "Equipment",
-                "Aspect"
+                "Aspect",
+                "Lens Maker's Glasses",
+                "Irradiant Pearl"
             ]
         }
     },
