@@ -478,8 +478,9 @@ html {
                 background-color: map-get($colors, light_gray_blue);
                 font-size: 18px;
                 outline: 2px solid map-get($colors, border_pane);
-                padding: 6px;
                 min-width: 50%;
+                padding: 6px;
+                width: 50%;
                 text-align: start;
 
                 span {

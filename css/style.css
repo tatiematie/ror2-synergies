@@ -365,8 +365,9 @@ html:focus {
   background-color: #4D5E6E;
   font-size: 18px;
   outline: 2px solid #868686;
-  padding: 6px;
   min-width: 50%;
+  padding: 6px;
+  width: 50%;
   text-align: start;
 }
 #container #display-pane table td span {
