@@ -6,7 +6,7 @@
         "id": "soldiers-syringe",
         "description": [
             "Gain <span yellow>+15%</span> attack speed <span gray>(+15% per stack)</span>.",
-            "Pairs well with attack speed, proc chance, and increased damage items."
+            "Pairs well with attack speed, increased damage, and proc chance items."
         ],
         "tags": [
             "Attack Speed"
@@ -15,8 +15,8 @@
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Chance to Proc",
                 "Increased Damage",
+                "Chance to Proc",
                 "Per Hit"
             ],
             "exclude": [
@@ -37,8 +37,7 @@
                 "The Crowdfunder",
                 "Volcanic Egg",
                 "Sawmerang",
-                "Disposable Missile Launcher",
-                "Laser Scope"
+                "Disposable Missile Launcher"
             ]
         }
     },
@@ -71,7 +70,7 @@
         "id": "monster-tooth",
         "description": [
             "Enemies drop healing orbs that heal <span green>8hp</span> + <span green>2%</span> of max health <span gray>(+2% per stack)</span>.",
-            "Pairs well with on kill and amplified healing items."
+            "Pairs well with amplified healing items."
         ],
         "tags": [
             "Healing",
@@ -79,7 +78,8 @@
         ],
         "synergies": {
             "include": [
-                "Amplified Healing"
+                "Amplified Healing",
+                "Forgive Me Please"
             ],
             "exclude": [
                 "Spinel Tonic"
@@ -93,17 +93,19 @@
         "id": "lens-makers-glasses",
         "description": [
             "Gain <span yellow>+10%</span> chance <span gray>(+10% per stack)</span> to critically strike.",
-            "Pairs well with attack speed, increased damage, and proc chance items."
+            "Pairs well with attack speed, increased damage items."
         ],
         "tags": [
             "Critical Strike Chance"
+        ],
+        "modifiers": [
+            "Luck"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
                 "Increased Damage",
-                "Luck",
                 "Laser Scope"
             ],
             "exclude": [
@@ -149,9 +151,7 @@
         ],
         "synergies": {
             "include": [
-                "Amplified Healing",
-                "N'Kuahana's Opinion",
-                "Aegis"
+                "Amplified Healing"
             ]
         }
     },
@@ -162,7 +162,7 @@
         "id": "crowbar",
         "description": [
             "Enemies above <span yellow>90%</span> health take <span yellow>75%</span> more damage <span gray>(+75% per stack)</span>.",
-            "Pairs well with proc chance and high damage items."
+            "Pairs well with critical strike chance, increased damage, and high damage items."
         ],
         "tags": [
             "Increased Damage",
@@ -171,7 +171,8 @@
         "synergies": {
             "include": [
                 "Critical Strike Chance",
-                "Increased Damage"
+                "Increased Damage",
+                "High Damage"
             ],
             "exclude": [
                 "Laser Scope",
@@ -201,18 +202,19 @@
         "id": "tri-tip-dagger",
         "description": [
             "Gain a <span yellow>10%</span> chance <span gray>(+10% per stack)</span> to bleed enemies for <span yellow>240%</span> base damage.",
-            "Pairs well with attack speed, proc chance, and debuff infliction items."
+            "Pairs well with attack speed, proc chance items."
         ],
         "tags": [
-            "Chance to Proc",
-            "Debuff Inflictions"
+            "Chance to Proc"
+        ],
+        "modifiers": [
+            "Luck"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Can Proc",
-                "Debuff Inflictions",
-                "Luck"
+                "Can be Procced by",
+                "Death Mark"
             ],
             "exclude": [
                 "Needletick"
@@ -246,14 +248,15 @@
         "id": "cautious-slug",
         "description": [
             "Heal <span green>3hp</span> <span gray>(+3hp per stack)</span> per second while outside of danger.",
-            "Pairs well with amplified healing items."
+            "Pairs well with amplified healing and damage prevention items."
         ],
         "tags": [
             "Healing"
         ],
         "synergies": {
             "include": [
-                "Amplified Healing"
+                "Amplified Healing",
+                "Damage Prevention"
             ]
         }
     },
@@ -263,7 +266,7 @@
         "type": "Item",
         "id": "personal-shield-generator",
         "description": [
-            "Gain a shield equal to <span green>8%</span> of max health <span gray>(+8% per stack)</span>. All shield recharges in <span blue>2s</span> after <span blue>9s</span> outside of danger.",
+            "Gain shield equal to <span green>8%</span> of max health <span gray>(+8% per stack)</span>. All shield recharges in <span blue>2s</span> after <span blue>9s</span> outside of danger.",
             "Pairs well with shield and increased health items."
         ],
         "tags": [
@@ -306,11 +309,10 @@
         "id": "gasoline",
         "description": [
             "Killing an enemy ignites nearby enemies within <span yellow>12m</span> <span gray>(+4m per stack)</span> for <span blue>3s</span>, dealing <span yellow>150%</span> base damage. Burning enemies take <span yellow>150%</span> base damage <span gray>(+75% per stack)</span> per tick.",
-            "Pairs well with on kill effects and fire damage items."
+            "Pairs well with on kill effect items."
         ],
         "tags": [
             "On Kill",
-            "Debuff Inflictions",
             "Fire Damage"
         ],
         "synergies": {
@@ -342,11 +344,13 @@
         "tags": [
             "Chance to Proc"
         ],
+        "modifiers": [
+            "Luck"
+        ],
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Can Proc",
-                "Luck"
+                "Can be Procced by"
             ]
         }
     },
@@ -359,21 +363,21 @@
             "Activating an interactable launches <span yellow>8</span> fireworks <span gray>(+4 per stack)</span> that deal <span yellow>300%</span> base damage.",
             "Pairs well with increased damage, proc chance, and items that activate on interaction."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "On Hit": "0.2"
         },
         "tags": [
             "On Interaction Effects",
             "Missiles",
             "High Damage",
-            "Can Proc"
+            "Can be Procced by"
         ],
         "synergies": {
             "include": [
                 "Critical Strike Chance",
                 "Chance to Proc",
-                "Per Hit",
                 "On Interaction Effects",
+                "Per Hit",
                 "Pocket I.C.B.M."
             ],
             "exclude": [
@@ -395,8 +399,7 @@
                 "On Kill",
                 "Damage Taken",
                 "Mobility",
-                "Skills",
-                "Laser Scope"
+                "Skills"
             ]
         }
     },
@@ -439,7 +442,8 @@
             ],
             "exclude": [
                 "Special Cooldown Reduction",
-                "Equipment Cooldown Reduction"
+                "Equipment Cooldown Reduction",
+                "Hardlight Afterburner"
             ]
         }
     },
@@ -455,17 +459,18 @@
         "tags": [
             "Chance to Proc"
         ],
+        "modifiers": [
+            "Luck"
+        ],
         "synergies": {
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
                 "Increased Damage",
-                "Can Proc",
-                "Luck"
+                "Can be Procced by"
             ],
             "exclude": [
-                "Silence Between Two Strikes",
-                "Laser Scope"
+                "Silence Between Two Strikes"
             ]
         }
     },
@@ -521,7 +526,7 @@
         "id": "topaz-brooch",
         "description": [
             "Gain <span green>+15</span> temporary barrier <span gray>(+15 per stack)</span> per kill.",
-            "Pairs well with items that activate after taking damage, on kill, and damage reduction items."
+            "Pairs well with items that activate after taking damage and damage reduction items."
         ],
         "tags": [
             "Barrier",
@@ -529,9 +534,6 @@
         ],
         "synergies": {
             "include": [
-                "Barrier",
-                "Damage Taken",
-                "On Kill",
                 "Damage Reduction",
                 "Damage Prevention"
             ],
@@ -565,7 +567,8 @@
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Critical Strike Chance"
+                "Critical Strike Chance",
+                "Increased Damage"
             ],
             "exclude": [
                 "Laser Scope",
@@ -615,14 +618,13 @@
         "id": "repulsion-armor-plate",
         "description": [
             "Reduce damage taken by <span green>5</span> <span gray>(+5 per stack)</span>.",
-            "Pairs well with items that activate after taking damage and damage reduction items."
+            "Pairs well with barrier and damage reduction items."
         ],
         "tags": [
             "Damage Reduction"
         ],
         "synergies": {
             "include": [
-                "Damage Taken",
                 "Barrier",
                 "Damage Reduction"
             ]
@@ -635,7 +637,7 @@
         "id": "mocha",
         "description": [
             "Gain <span yellow>+7.5%</span> attack speed <span gray>(+7.5% per stack)</span> and <span blue>+7%</span> movement speed <span gray>(+7% per stack)</span>.",
-            "Pairs well with attack speed, movement speed, and increased damage items."
+            "Pairs well with attack speed, increased damage, and movement speed items."
         ],
         "tags": [
             "Attack Speed",
@@ -645,6 +647,7 @@
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
+                "Increased Damage",
                 "Movement Speed",
                 "Mobility"
             ],
@@ -680,7 +683,7 @@
         "id": "power-elixir",
         "description": [
             "Heal for <span green>75%</span> of max health when below <span red>25%</span> of max health, protects Delicate Watch from breaking. Consumed on use.",
-            "Pairs well with items that activate after taking damage and amplified healing."
+            "Pairs well with amplified healing and items that activate at low health."
         ],
         "tags": [
             "Healing",
@@ -688,10 +691,9 @@
         ],
         "synergies": {
             "include": [
-                "Damage Taken",
                 "Amplified Healing",
-                "Delicate Watch",
-                "At Low Health"
+                "At Low Health",
+                "Delicate Watch"
             ]
         }
     },
@@ -701,7 +703,7 @@
         "type": "Item",
         "id": "delicate-watch",
         "description": [
-            "Deal <span yellow>+20%</span> damage <span gray>(+20% per stack)</span>, consumed when below <span red>25%</span> of max health.",
+            "Deal <span yellow>+20%</span> damage <span gray>(+20% per stack)</span>, consumed when below <span red>25%</span> of max health. Protected by Power Elixir.",
             "Pairs well with attack speed and increased damage items."
         ],
         "tags": [
@@ -726,16 +728,15 @@
         "id": "oddly-shaped-opal",
         "description": [
             "Gain <span green>+100</span> armor <span gray>(+100 per stack)</span> outside of danger.",
-            "Pairs well with items that activate after taking damage and damage reduction items."
+            "Pairs well with damage reduction and damage prevention items."
         ],
         "tags": [
             "Damage Reduction"
         ],
         "synergies": {
             "include": [
-                "Damage Taken",
-                "Barrier",
-                "Damage Reduction"
+                "Damage Reduction",
+                "Damage Prevention"
             ]
         }
     },
@@ -746,7 +747,7 @@
         "id": "roll-of-pennies",
         "description": [
             "Grants <span yellow>3</span> gold <span gray>(+3 per stack)</span> after taking damage from an enemy. Scales with time.",
-            "Pairs well with items that activate after taking damage and damage reduction items."
+            "Pairs well with items that activate after taking damage, damage reduction, and money items."
         ],
         "tags": [
             "Money",
@@ -755,7 +756,6 @@
         "synergies": {
             "include": [
                 "Damage Taken",
-                "Barrier",
                 "Damage Reduction",
                 "Money",
                 "Executive Card"
@@ -771,12 +771,15 @@
             "Gain a <span yellow>10%</span> chance to fire a missile dealing <span yellow>300%</span> total damage <span gray>(+300% per stack)</span>.",
             "Pairs well with attack speed, increased damage, and proc chance items."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "On Hit": "1.0"
         },
+        "modifiers": [
+            "Luck"
+        ],
         "tags": [
             "Chance to Proc",
-            "Can Proc",
+            "Can be Procced by",
             "Missiles",
             "High Damage"
         ],
@@ -786,9 +789,8 @@
                 "Critical Strike Chance",
                 "Increased Damage",
                 "Chance to Proc",
-                "Can Proc",
-                "Per Hit",
-                "Luck"
+                "Can be Procced by",
+                "Per Hit"
             ],
             "exclude": [
                 "Plasma Shrimp",
@@ -805,12 +807,11 @@
             "Killing an enemy creates a lava pillar with a <span yellow>12m</span> <span gray>(+2.4m per stack)</span> radius, dealing <span yellow>350%</span> base damage <span gray>(+280% per stack)</span>.",
             "Pairs well with increased damage, proc chance, and on kill items."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "On Hit": "1.0"
         },
         "tags": [
-            "On Kill",
-            "High Damage"
+            "On Kill"
         ],
         "synergies": {
             "include": [
@@ -867,12 +868,15 @@
             "Gain a <span yellow>25%</span> chance to arc lightning between <span yellow>3</span> enemies <span gray>(+2 per stack)</span> within <span yellow>20m</span> <span gray>(+2m per stack)</span> of each other, dealing <span yellow>80%</span> total damage.",
             "Pairs well with attack speed, increased damage, and proc chance items."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "On Hit": "0.2"
         },
+        "modifiers": [
+            "Luck"
+        ],
         "tags": [
             "Chance to Proc",
-            "Can Proc"
+            "Can be Procced by"
         ],
         "synergies": {
             "include": [
@@ -880,9 +884,8 @@
                 "Critical Strike Chance",
                 "Increased Damage",
                 "Chance to Proc",
-                "Can Proc",
-                "Per Hit",
-                "Luck"
+                "Can be Procced by",
+                "Per Hit"
             ],
             "exclude": [
                 "Ukulele",
@@ -907,7 +910,7 @@
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Can Proc",
+                "Can be Procced by",
                 "Amplified Healing"
             ]
         }
@@ -925,14 +928,18 @@
             "Critical Strike Chance",
             "Attack Speed"
         ],
+        "modifiers": [
+            "Luck"
+        ],
         "synergies": {
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Can Proc",
+                "Increased Damage",
                 "Laser Scope"
             ],
             "exclude": [
+                "Crowbar",
                 "Tri-Tip Dagger",
                 "Stun Grenade",
                 "Skills"
@@ -994,11 +1001,14 @@
             "Critical Strike Chance",
             "Healing"
         ],
+        "modifiers": [
+            "Luck"
+        ],
         "synergies": {
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Can Proc",
+                "Can be Procced by",
                 "Amplified Healing",
                 "Laser Scope"
             ]
@@ -1161,14 +1171,12 @@
             "Pairs well with attack speed, debuff infliction, and proc chance items."
         ],
         "tags": [
-            "Per Hit",
-            "Debuff Inflictions"
+            "Per Hit"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Debuff Inflictions",
-                "Can Proc"
+                "Can be Procced by"
             ],
             "exclude": [
                 "Tentabauble"
@@ -1259,11 +1267,11 @@
             "Taking damage hits up to <span yellow>5</span> enemies <span gray>(+2 per stack)</span> within <span yellow>25m</span> <span gray>(+10m per stack)</span> for <span yellow>160%</span> damage.",
             "Pairs well with increased damage, items that activate after taking damage, and proc chance items."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "On Hit": "0.5"
         },
         "tags": [
-            "Can Proc",
+            "Can be Procced by",
             "Damage Taken"
         ],
         "synergies": {
@@ -1272,8 +1280,7 @@
                 "Increased Damage",
                 "Damage Taken",
                 "Chance to Proc",
-                "Per Hit",
-                "Helfire Tincture"
+                "Per Hit"
             ],
             "exclude": [
                 "Bundle of Fireworks",
@@ -1340,13 +1347,9 @@
             "Enemies inflicted with at least <span yellow>4</span> debuffs take <span yellow>50%</span> more damage for <span blue>7s</span> <span gray>(+7s per stack)</span>.",
             "Pairs well with increased damage and debuff infliction items."
         ],
-        "tags": [
-            "Debuff Inflictions"
-        ],
+        "tags": [],
         "synergies": {
-            "include": [
-                "Debuff Inflictions"
-            ]
+            "include": []
         }
     },
     {
@@ -1376,11 +1379,9 @@
         "id": "ignition-tank",
         "description": [
             "Burning enemies take <span yellow>+300%</span> fire damage <span gray>(+300% per stack)</span>.",
-            "Pairs well with fire damage and debuff infliction items."
+            "Pairs well with fire damage items."
         ],
-        "tags": [
-            "Debuff Inflictions"
-        ],
+        "tags": [],
         "synergies": {
             "include": [
                 "Fire Damage"
@@ -1396,18 +1397,17 @@
             "Using a Primary skill throws a shuriken dealing <span yellow>400%</span> base damage <span gray>(+400% per stack)</span>, capped at <span yellow>3</span> shurikens. <span blue>10s</span> reload.",
             "Pairs well with increased damage and proc chance."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "On Hit": "1.0"
         },
         "tags": [
-            "Can Proc",
-            "High Damage"
+            "Can be Procced by"
         ],
         "synergies": {
             "include": [
                 "Critical Strike Chance",
                 "Increased Damage",
-                "Can Proc",
+                "Can be Procced by",
                 "Chance to Proc"
             ]
         }
@@ -1442,7 +1442,8 @@
             "Pairs well with attack speed, increased damage, and proc chance items."
         ],
         "tags": [
-            "Per Hit"
+            "Per Hit",
+            "Increased Damage"
         ],
         "synergies": {
             "include": [
@@ -1462,19 +1463,19 @@
             "Killing an enemy creates <span yellow>3</span> homing daggers that deal <span yellow>150%</span> base damage <span gray>(+150% per stack)</span>.",
             "Pairs well with increased damage, proc chance, and on kill items."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "On Hit": "1.0"
         },
         "tags": [
             "On Kill",
-            "Can Proc"
+            "Can be Procced by"
         ],
         "synergies": {
             "include": [
                 "Critical Strike Chance",
                 "Increased Damage",
                 "On Kill",
-                "Can Proc",
+                "Can be Procced by",
                 "Per Hit"
             ],
             "exclude": [
@@ -1506,20 +1507,18 @@
             "Killing an enemy creates a ring around the player that deals <span yellow>1,200%</span> damage per second to nearby enemies and slows them by <span blue>80%</span> for <span blue>1.5s</span>. Damage radius grows by <span yellow>2m</span> per kill, capped at <span yellow>18m</span> <span gray>(+12m per stack)</span>.",
             "Pairs well with incrased damage, proc chance, debuff infliction, and on kill effect items."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "On Hit": "0.2"
         },
         "tags": [
-            "Debuff Inflictions",
             "On Kill",
-            "Can Proc"
+            "Can be Procced by"
         ],
         "synergies": {
             "include": [
                 "Critical Strike Chance",
                 "Increased Damage",
                 "Chance to Proc",
-                "Debuff Inflictions",
                 "On Kill"
             ],
             "exclude": [
@@ -1567,12 +1566,12 @@
             "Increases jump height, hold 'interact' to slam. Slamming creates a <span yellow>5m-100m</span> explosion dealing <span yellow>1,000%-10,000%</span> base damage, damage scales with slam distance. <span blue>10s</span> <span gray>(-50% per stack)</span> cooldown.",
             "Pairs well with movement speed, increased damage, proc chance, and mobility items."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "Explosion": "1.0"
         },
         "tags": [
             "Mobility",
-            "Can Proc",
+            "Can be Procced by",
             "High Damage"
         ],
         "synergies": {
@@ -1612,11 +1611,11 @@
             "Store <span green>100%</span> of healing <span gray>(+100% per stack)</span> as Soul Energy, when Soul Energy hits <span green>10%</span> of max health, fire a homing skull dealing <span yellow>250%</span> of Soul Energy as damage.",
             "Pairs well with healing, increased damage, proc chance, and amplified healing items."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "On Hit": "0.2"
         },
         "tags": [
-            "Can Proc"
+            "Can be Procced by"
         ],
         "synergies": {
             "include": [
@@ -1656,11 +1655,11 @@
             "Fire lightning that hits <span yellow>3</span> enemies <span gray>(+2 per stack)</span> for <span yellow>200%</span> base damage every <span blue>0.5s</span>. <span blue>10s</span> cooldown.",
             "Pairs well with increased damage, and proc chance items."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "On Hit": "0.3"
         },
         "tags": [
-            "Can Proc"
+            "Can be Procced by"
         ],
         "synergies": {
             "include": [
@@ -1703,7 +1702,7 @@
             "include": [
                 "Critical Strike Chance",
                 "Chance to Proc",
-                "Can Proc"
+                "Can be Procced by"
             ],
             "exclude": [
                 "Ocular HUD"
@@ -1719,19 +1718,21 @@
             "Gain a <span yellow>20%</span> chance <span gray>(+20% per stack)</span> on hit to fire hooks that pull up to <span yellow>10</span> enemies <span gray>(+5 per stack)</span> together, dealing <span yellow>100%</span> total damage. Hooks are fired from the target enemy.",
             "Pairs well with attack speed, increased damage, and proc chance items."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "On Hit": "0.33"
         },
+        "modifiers": [
+            "Luck"
+        ],
         "tags": [
             "Chance to Proc",
-            "Can Proc"
+            "Can be Procced by"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
                 "Increased Damage",
-                "Chance to Proc",
-                "Luck"
+                "Chance to Proc"
             ],
             "exclude": [
                 "On Kill",
@@ -1834,7 +1835,6 @@
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Debuff Inflictions",
                 "Elite Kills",
                 "Per Hit"
             ]
@@ -1911,13 +1911,11 @@
             "Pairs well with attack speed, increased damage, and debuff infliction items."
         ],
         "tags": [
-            "Per Hit",
-            "Debuff Inflictions"
+            "Per Hit"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Debuff Inflictions",
                 "Per Hit"
             ]
         }
@@ -1930,13 +1928,13 @@
         "description": [
             "Killing <span yellow>4</span> enemies in <span blue>7s</span> charges the Resonance Disc. Deals <span yellow>300%</span> base damage <span gray>(+300% per stack)</span>, pierces enemies it doesn't kill, then explodes for <span yellow>1,000%</span> base damage <span gray>(+1,000% per stack)</span>. Returns to the player and pierces enemies on the way back dealing <span yellow>300%</span> base damage <span gray>(+300% per stack)</span>."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "On Hit": "1.0",
             "Explosion": "1.0"
         },
         "tags": [
             "On Kill",
-            "Can Proc"
+            "Can be Procced by"
         ],
         "synergies": {
             "include": [
@@ -2045,13 +2043,11 @@
             "Pairs well with attack speed, increased damage, and debuff infliction items."
         ],
         "tags": [
-            "Per Hit",
-            "Debuff Inflictions"
+            "Per Hit"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Debuff Inflictions",
                 "Per Hit"
             ]
         }
@@ -2168,11 +2164,11 @@
             "Fire a homing wisp dealing <span yellow>300%</span> damage <span gray>(+300% per stack)</span> every <span blue>1.6s</span> while sprinting. Fire rate increases with movement speed.",
             "Pairs well with movement speed, increased damage, and proc chance items."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "On Hit": "1.0"
         },
         "tags": [
-            "Can Proc",
+            "Can be Procced by",
             "Boss"
         ],
         "synergies": {
@@ -2241,6 +2237,10 @@
             "Healing",
             "Boss"
         ],
+        "modifiers": [
+            "Luck",
+            "Laser Scope"
+        ],
         "synergies": {
             "include": [
                 "Attack Speed",
@@ -2250,9 +2250,7 @@
                 "Healing",
                 "Shield",
                 "Increased Health",
-                "Damage Reduction",
-                "Luck",
-                "Laser Scope"
+                "Damage Reduction"
             ],
             "exclude": [
                 "Ocular HUD"
@@ -2309,14 +2307,12 @@
             "Gain a <span yellow>10%</span> chance on hit to fire <span yellow>3</span> magma balls from the target that deal <span yellow>300%</span> damage <span gray>(+300% per stack)</span> each and ignite enemies.",
             "Pairs well with attack speed, increased damage, proc chance, and debuff inflictions."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "On Hit": "0.7"
         },
         "tags": [
-            "Debuff Inflictions",
-            "Can Proc",
+            "Can be Procced by",
             "Chance to Proc",
-            "High Damage",
             "Boss",
             "Fire Damage"
         ],
@@ -2325,9 +2321,8 @@
                 "Attack Speed",
                 "Critical Strike Chance",
                 "Increased Damage",
-                "Debuff Inflictions",
                 "Chance to Proc",
-                "Can Proc",
+                "Can be Procced by",
                 "Per Hit",
                 "Ignition Tank"
             ],
@@ -2347,14 +2342,15 @@
         ],
         "tags": [
             "Critical Strike Chance",
-            "Debuff Inflictions",
             "Boss"
+        ],
+        "modifiers": [
+            "Luck"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Luck",
                 "Laser Scope"
             ]
         }
@@ -2369,13 +2365,11 @@
             "Pairs well with debuff inflictions and amplified healing items."
         ],
         "tags": [
-            "Debuff Inflictions",
             "Healing",
             "Boss"
         ],
         "synergies": {
             "include": [
-                "Debuff Inflictions",
                 "Amplified Healing"
             ]
         }
@@ -2389,12 +2383,12 @@
             "Gain a <span yellow>10%</span> chance to strike lightning on hit dealing <span yellow>500%</span> damage <span gray>(+500% per stack)</span>.",
             "Pairs well with attack speed, increased damage, and proc chance."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "On Hit": "1.0"
         },
         "tags": [
             "Chance to Proc",
-            "Can Proc",
+            "Can be Procced by",
             "High Damage",
             "Boss"
         ],
@@ -2404,7 +2398,7 @@
                 "Critical Strike Chance",
                 "Increased Damage",
                 "Chance to Proc",
-                "Can Proc",
+                "Can be Procced by",
                 "Per Hit"
             ],
             "exclude": [
@@ -2533,8 +2527,7 @@
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Can Proc",
-                "Luck"
+                "Can be Procced by"
             ]
         }
     },
@@ -2573,15 +2566,15 @@
         ],
         "tags": [
             "Chance to Proc",
-            "Debuff Inflictions",
             "Void Items"
+        ],
+        "modifiers": [
+            "Luck"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Debuff Inflictions",
-                "Can Proc",
-                "Luck"
+                "Can be Procced by"
             ],
             "exclude": [
                 "Tri-Tip Dagger"
@@ -2619,13 +2612,13 @@
             "Gain <span green>+10%</span> of max health as shield. Fire missiles on hit that deal <span yellow>40%</span> total damage <span gray>(+40% per stack)</span> on hit while you have shield. <span purple>Corrupts all AtG Missile Mk. 1s</span>.",
             "Pairs well with attack speed, increased damage, shields, and proc chance items."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "On Hit": "0.2"
         },
         "tags": [
             "Shield",
             "Per Hit",
-            "Can Proc",
+            "Can be Procced by",
             "Void Items",
             "Missiles"
         ],
@@ -2672,12 +2665,15 @@
             "Gain a <span yellow>25%</span> chance to fire lightning at the targeted enemy on hit dealing <span yellow>60%</span> total damage, lightning hits up to <span yellow>3</span> times <span gray>(+3 per stack)</span>. <span purple>Corrupts all Ukuleles</span>.",
             "Pairs well with attack speed, increased damage, and proc chance items."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "On Hit": "0.2"
         },
+        "modifiers": [
+            "Luck"
+        ],
         "tags": [
             "Chance to Proc",
-            "Can Proc",
+            "Can be Procced by",
             "Void Items"
         ],
         "synergies": {
@@ -2685,8 +2681,7 @@
                 "Attack Speed",
                 "Increased Damage",
                 "Chance to Proc",
-                "Can Proc",
-                "Luck"
+                "Can be Procced by"
             ],
             "exclude": [
                 "Ukulele"
@@ -2725,7 +2720,7 @@
             "Hits dealing at least <span yellow>400%</span> damage creates a black hole that draws in enemies within <span blue>15m</span>. Black holes last <span blue>5s</span> before collapsing, dealing <span yellow>100%</span> total damage. <span blue>20s</span> cooldown. <span purple>Corrupts all Kjaro's Bands and Runald's Bands</span>.",
             "Pairs well with high damage items."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "On Hit": "1.0"
         },
         "tags": [
@@ -2733,7 +2728,7 @@
             "Void Items",
             "High Damage",
             "Cooldowns",
-            "Can Proc"
+            "Can be Procced by"
         ],
         "synergies": {
             "include": [
@@ -2756,15 +2751,15 @@
         ],
         "tags": [
             "Chance to Proc",
-            "Void Items",
-            "Debuff Inflictions"
+            "Void Items"
+        ],
+        "modifiers": [
+            "Luck"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Debuff Inflictions",
-                "Can Proc",
-                "Luck"
+                "Can be Procced by"
             ]
         }
     },
@@ -2777,7 +2772,7 @@
             "Hitting an enemy at full health creates a lava pillar with a <span blue>12m</span> radius <span gray>(+2.4m per stack)</span> that deals <span yellow>260%</span> base damage. <span purple>Corrupts all Will-o'-the-Wisps</span>.",
             "Pairs well with increased damage and proc chance items."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "On Hit": "1.0"
         },
         "tags": [
@@ -2787,7 +2782,7 @@
             "include": [
                 "Increased Damage",
                 "Chance to Proc",
-                "Can Proc"
+                "Can be Procced by"
             ],
             "exclude": [
                 "Will-o'-the-Wisp"
@@ -2860,12 +2855,14 @@
             "Lunar",
             "Money"
         ],
+        "modifiers": [
+            "Luck"
+        ],
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Can Proc",
+                "Can be Procced by",
                 "Money",
-                "Luck",
                 "Executive Card"
             ],
             "exclude": []
@@ -2945,6 +2942,7 @@
             "Pairs well with movement speed, mobility, amplified healing, and skill cooldown reduction items."
         ],
         "tags": [
+            "Movement Speed",
             "Mobility",
             "Healing",
             "Lunar",
@@ -2974,12 +2972,12 @@
             "Replaces Primary skill with Hungering Gaze. Fires homing shards that detonate dealing <span yellow>120%</span> base damage, holds up to <span yellow>12</span> charges <span gray>(+12 per stack)</span>. <span blue>2s</span> reload <span gray>(+2s per stack)</span>.",
             "Pairs well with attack speed, increased damage, and proc chance items."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "On Hit": "0.1",
             "Explosion": "1.0"
         },
         "tags": [
-            "Can Proc",
+            "Can be Procced by",
             "Lunar",
             "Skills",
             "Primary Skill",
@@ -3105,7 +3103,8 @@
         ],
         "tags": [
             "Skill Cooldown Reduction",
-            "Lunar"
+            "Lunar",
+            "Luck"
         ],
         "synergies": {
             "include": [
@@ -3123,7 +3122,7 @@
             "Replaces Secondary skill with Slicing Maelstrom. Charge a projectile that deals <span yellow>875%</span> damage per second and explodes after <span blue>3s</span> dealing <span yellow>700%</span> damage, inflicts enemies with the root debuff for <span blue>3s</span> <span gray>(+3s per stack)</span>. <span blue>5s</span> <span gray>(+5 per stack)</span> cooldown.",
             "Pairs well with attack speed, increased damage, proc chance, and skill cooldown reduction items."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "Maelstrom": "0.2",
             "Explosion": "1.0"
         },
@@ -3132,7 +3131,7 @@
             "Skills",
             "Secondary Skill",
             "High Damage",
-            "Can Proc",
+            "Can be Procced by",
             "Heresy Items"
         ],
         "synergies": {
@@ -3176,7 +3175,7 @@
             "Gain an orbiting bomb every <span blue>3s</span> <span gray>(-50% per stack)</span>, detonates on impact for <span yellow>360%</span> damage. Capped at <span yellow>3</span> bombs <span gray>(+1 per stack)</span>. A random item is converted into another stack of Egocentricism every <span blue>60s</span>.",
             "Pairs well with increased damage and proc chance items."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "On Hit": "1.0"
         },
         "tags": [
@@ -3294,7 +3293,6 @@
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Debuff Inflictions",
                 "Per Hit",
                 "Heresy Items"
             ],
@@ -3310,7 +3308,7 @@
             "Call meteors from the sky that deal <span yellow>600%</span> damage to enemies and allies. Lasts <span blue>20s</span>, <span blue>140s</span> cooldown.",
             "Pairs well with increased damage, proc chance, and equipment cooldown reduction items."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "On Hit": "0.1"
         },
         "tags": [
@@ -3354,13 +3352,13 @@
         "tags": [
             "Lunar",
             "Equipment",
-            "Fire Damage"
+            "Fire Damage",
+            "Damage Taken"
         ],
         "synergies": {
             "include": [
                 "Increased Damage",
                 "Damage Taken",
-                "Debuff Inflictions",
                 "Damage Reduction",
                 "Ignition Tank"
             ],
@@ -3381,13 +3379,11 @@
         ],
         "tags": [
             "Lunar",
-            "Equipment",
-            "Debuff Inflictions"
+            "Equipment"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Debuff Inflictions",
                 "Equipment Cooldown Reduction"
             ],
             "exclude": [
@@ -3402,7 +3398,7 @@
         "type": "Equipment",
         "id": "spinel-tonic",
         "description": [
-            "<span yellow>+100%</span> damage, <span yellow>+70%</span> attack speed, <span green>+20</span> armor, <span green>+50%</span> max health, <span green>+300%</span> regeneration, and <span blue>+30%</span> movement speed for <span blue>20s</span>. When Tonic wears off the user has a <span yellow>20%</span> chance to gain a stack of Tonic Affliction, which reduces all stats by <span red>5%</span> <span gray>(+5% per stack)</span> while not using by Spinel Tonic. <span blue>60s</span> cooldown.",
+            "Gain <span yellow>+100%</span> damage, <span yellow>+70%</span> attack speed, <span green>+20</span> armor, <span green>+50%</span> max health, <span green>+300%</span> regeneration, and <span blue>+30%</span> movement speed for <span blue>20s</span>. When Tonic wears off the user has a <span yellow>20%</span> chance to gain a stack of Tonic Affliction, which reduces all stats by <span red>5%</span> <span gray>(+5% per stack)</span> while not using by Spinel Tonic. <span blue>60s</span> cooldown.",
             "Pairs well with attack speed, healing, movement speed, increased damage, damage reduction, and equipment cooldown reduction items."
         ],
         "tags": [
@@ -3439,12 +3435,12 @@
             "Fire <span yellow>12</span> missiles dealing <span yellow>300%</span> damage each. <span blue>45s</span> cooldown.",
             "Pairs well with increased damage, proc chance, and equipment cooldown reduction items."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "On Hit": "1.0"
         },
         "tags": [
             "Equipment",
-            "Can Proc",
+            "Can be Procced by",
             "Missiles",
             "High Damage"
         ],
@@ -3562,7 +3558,8 @@
                 "Critical Strike Chance",
                 "Increased Damage",
                 "Equipment Cooldown Reduction",
-                "Per Hit"
+                "Per Hit",
+                "Laser Scope"
             ],
             "exclude": [
                 "Equipment",
@@ -3602,13 +3599,13 @@
             "Fire an energy ball dealing <span yellow>4,000%</span> damage, enemies within <span yellow>35m</span> are struck by energy tendrils dealing <span yellow>600%</span> damage. <span blue>140s</span> cooldown.",
             "Pairs well with increased damage, proc chance, and equipment cooldown reduction items."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "Explosion": "1.0",
             "Tendrils": "0.1"
         },
         "tags": [
             "Equipment",
-            "Can Proc",
+            "Can be Procced by",
             "High Damage"
         ],
         "synergies": {
@@ -3698,12 +3695,12 @@
             "Strike the targeted enemy with lightning dealing <span yellow>3,000%</span> damage, stun nearby enemies. <span blue>20s</span> cooldown.",
             "Pairs well with increased damage, proc chance, and equipment cooldown reduction items."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "On Hit": "1.0"
         },
         "tags": [
             "Equipment",
-            "Can Proc",
+            "Can be Procced by",
             "High Damage"
         ],
         "synergies": {
@@ -3749,21 +3746,19 @@
             "Throw <span yellow>6</span> molotovs that ignite nearby enemies for <span yellow>500%</span> base damage, each molotov leaves a burning area that deals <span yellow>200%</span> damage per second. <span blue>45s</span> cooldown.",
             "Pairs well with proc chance, debuff inflictions, and equipment cooldown reduction items"
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "On Hit": "1.0",
             "Residual": "0.5"
         },
         "tags": [
             "Equipment",
-            "Can Proc",
-            "Debuff Inflictions",
+            "Can be Procced by",
             "High Damage",
             "Fire Damage"
         ],
         "synergies": {
             "include": [
                 "Chance to Proc",
-                "Debuff Inflictions",
                 "Equipment Cooldown Reduction",
                 "Per Hit",
                 "Ignition Tank"
@@ -3800,12 +3795,12 @@
             "Fire bullets that deal <span yellow>100%</span> damage per bullet while active, each bullet costs <span yellow>1</span> gold. Cost scales with time.",
             "Pairs well with increased damage and proc chance items."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "On Hit": "1.0"
         },
         "tags": [
             "Equipment",
-            "Can Proc"
+            "Can be Procced by"
         ],
         "synergies": {
             "include": [
@@ -3886,8 +3881,7 @@
             "Pairs well with mobility and eqipment cooldown reduction items."
         ],
         "tags": [
-            "Equipment",
-            "Mobility"
+            "Equipment"
         ],
         "synergies": {
             "include": [
@@ -3928,14 +3922,13 @@
             "Turn into a fireball for <span blue>5s</span> dealing <span yellow>500%</span> damage on impact, detonate for <span yellow>800%</span> damage. Hitting an enemy in fireball form resets the <span blue>5s</span> time limit. <span blue>30s</span> cooldown.",
             "Pairs well with increased damage, movement speed, proc chance, and equipment cooldown reduction items."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "On Hit": "1.0"
         },
         "tags": [
             "Equipment",
-            "Can Proc",
-            "High Damage",
-            "Mobility"
+            "Can be Procced by",
+            "High Damage"
         ],
         "synergies": {
             "include": [
@@ -3996,21 +3989,19 @@
         "description": [
             "Throw <span yellow>3</span> Sawmerangs that deal <span yellow>400%</span> damage, pierce enemies, and inflict bleed for <span yellow>100%</span> damage per second. <span blue>45s</span> cooldown."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "On Hit": "1.0",
             "Continuous": "0.2"
         },
         "tags": [
             "Equipment",
-            "Can Proc",
-            "Debuff Inflictions",
+            "Can be Procced by",
             "High Damage"
         ],
         "synergies": {
             "include": [
                 "Critical Strike Chance",
                 "Increased Damage",
-                "Debuff Inflictions",
                 "Chance to Proc",
                 "Equipment Cooldown Reduction",
                 "Per Hit"
@@ -4155,7 +4146,7 @@
             "Call in a vending machine that lands after <span blue>5s</span> dealing <span yellow>2,000%</span> damage to nearby enemies. Interact to purchase <span yellow>3</span> soda cans which heal allies within <span yellow>25m</span> for <span green>25%</span> of max health, can be used <span yellow>12</span> times. Each purchase costs <span yellow>5</span> gold, cost scales with time. <span blue>60s</span> cooldown.",
             "Pairs well with increased damage, proc chance, items that activate on interaction, and equipment cooldown reduction."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "On Hit": "1.0"
         },
         "tags": [
@@ -4198,14 +4189,12 @@
         "tags": [
             "Aspect",
             "Per Hit",
-            "Debuff Inflictions",
             "Fire Damage"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Debuff Inflictions",
-                "Can Proc",
+                "Can be Procced by",
                 "Per Hit",
                 "Ignition Tank"
             ],
@@ -4258,7 +4247,7 @@
                 "Critical Strike Chance",
                 "Increased Damage",
                 "Shield",
-                "Can Proc",
+                "Can be Procced by",
                 "Per Hit"
             ],
             "exclude": [
@@ -4280,14 +4269,12 @@
         "tags": [
             "Aspect",
             "Per Hit",
-            "Debuff Inflictions",
             "On Death"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Debuff Inflictions",
-                "Can Proc",
+                "Can be Procced by",
                 "Per Hit",
                 "On Death"
             ],
@@ -4308,14 +4295,12 @@
         ],
         "tags": [
             "Aspect",
-            "Per Hit",
-            "Debuff Inflictions"
+            "Per Hit"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Debuff Inflictions",
-                "Can Proc",
+                "Can be Procced by",
                 "Per Hit"
             ],
             "exclude": []
@@ -4332,14 +4317,12 @@
         ],
         "tags": [
             "Aspect",
-            "Per Hit",
-            "Debuff Inflictions"
+            "Per Hit"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Debuff Inflictions",
-                "Can Proc",
+                "Can be Procced by",
                 "Per Hit"
             ],
             "exclude": [
@@ -4357,21 +4340,19 @@
             "Gain <span yellow>+30%</span> movement speed and <span green>+25%</span> max health, all health is converted to shield. Attacks inflict the Cripple debuff. Fire <span yellow>4</span> bombs every <span blue>10s</span> dealing <span yellow>30%</span> damage.",
             "Pairs well with attack speed, movement speed, increased damage, debuff inflictions, shields, and increased health items."
         ],
-        "procCoefficient": {
+        "procCoefficients": {
             "Projectile": "1.0"
         },
         "tags": [
             "Aspect",
             "Per Hit",
-            "Debuff Inflictions",
-            "Can Proc"
+            "Can be Procced by"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
                 "Movement Speed",
-                "Debuff Inflictions",
                 "Chance to Proc",
                 "Shield",
                 "Increased Health",
