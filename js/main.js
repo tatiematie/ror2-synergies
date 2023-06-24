@@ -1,4 +1,4 @@
-const appVersion = '1.2.3'
+const appVersion = '1.2.4'
 const itemDesc = document.querySelector('#item-description')
 const itemSelect = document.querySelector('#item-select')
 let selectButtons
@@ -56,7 +56,7 @@ const updateDisplay = () => {
         selectButtons[0].focus()
 
     } else {
-        const { name, rarity, type, id, description, procCoefficient } = currentItem
+        const { name, rarity, type, id, description, procCoefficients, modifiers } = currentItem
         const src = `assets/img/items/${id}.png`
 
         displayPane.innerHTML = ''
@@ -110,23 +110,23 @@ const updateDisplay = () => {
             descriptionDetails.appendChild(entryElement)
         }
 
-        const existingProcCoefficientTable = itemDesc.querySelector('.proc-coefficient-table')
+        const existingProcCoefficientTable = itemDesc.querySelector('#proc-coefficient-table')
         const procTableTitle = itemDesc.querySelector('.proc.title')
         if (existingProcCoefficientTable && procTableTitle) {
             procTableTitle.remove()
             existingProcCoefficientTable.remove()
         }
 
-        if (procCoefficient !== undefined) {
+        if (procCoefficients !== undefined) {
             const procCoefficientTableTitle = document.createElement('p')
             procCoefficientTableTitle.innerHTML = 'Proc Coefficients:'
             procCoefficientTableTitle.classList.add('proc', 'title')
             descriptionDetails.appendChild(procCoefficientTableTitle)
 
             const procCoefficientTable = document.createElement('table')
-            procCoefficientTable.className = 'proc-coefficient-table'
+            procCoefficientTable.id = 'proc-coefficient-table'
 
-            for (const [entryName, entryValue] of Object.entries(procCoefficient)) {
+            for (const [entryName, entryValue] of Object.entries(procCoefficients)) {
                 const procCoefficientRow = document.createElement('tr')
 
                 const procCoefficientLabelCell = document.createElement('td')
@@ -142,6 +142,51 @@ const updateDisplay = () => {
             }
 
             descriptionDetails.appendChild(procCoefficientTable)
+        }
+
+        const existingModifiersTable = itemDesc.querySelector('#modifiers-table')
+        const modifiersTitle = itemDesc.querySelector('.modifiers.title')
+        if (existingModifiersTable && modifiersTitle) {
+            modifiersTitle.remove()
+            existingModifiersTable.remove()
+        }
+
+        if (modifiers !== undefined) {
+            const modifiersTableTitle = document.createElement('p');
+            modifiersTableTitle.innerHTML = 'Affected by:';
+            modifiersTableTitle.classList.add('modifiers', 'title');
+            descriptionDetails.appendChild(modifiersTableTitle);
+
+            const modifiersTable = document.createElement('table');
+            modifiersTable.id = 'modifiers-table';
+
+            for (const entry of modifiers) {
+                const modifierRow = document.createElement('tr');
+
+                const modifierLabelCell = document.createElement('td');
+
+                modifierLabelCell.innerHTML = entry
+
+                const matchingItems = itemData.filter(item => item.name === entry || (item.tags && item.tags.includes(entry)));
+
+                for (const matchingItem of matchingItems) {
+                    const modifierSpan = document.createElement('span');
+                    const modifierImage = document.createElement('img');
+
+                    modifierImage.src = `assets/img/items/${matchingItem.id}.png`;
+                    modifierImage.alt = matchingItem.name;
+                    modifierImage.title = matchingItem.name;
+                    modifierImage.loading = 'lazy';
+
+                    modifierSpan.appendChild(modifierImage);
+                    modifierLabelCell.appendChild(modifierSpan);
+                }
+
+                modifierRow.appendChild(modifierLabelCell);
+                modifiersTable.appendChild(modifierRow);
+            }
+
+            descriptionDetails.appendChild(modifiersTable);
         }
 
         updateSynergyList(currentItem)
