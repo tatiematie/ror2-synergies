@@ -471,15 +471,36 @@ html {
         table {
             margin-top: 6px;
             box-shadow: 2px 2px 2px map-get($colors, text_shadow);
+            width: 100%;
+            max-width: 280px;
 
             td {
                 background-color: map-get($colors, light_gray_blue);
                 font-size: 18px;
                 outline: 2px solid map-get($colors, border_pane);
                 padding: 6px;
-                width: 96px;
+                min-width: 50%;
+                text-align: start;
+
+                span {
+                    display: inline-block;
+                    margin-left: 4px;
+                    position: relative;
+                    width: 24px;
+
+                    &:first-child {
+                        margin-left: 4px;
+                    }
+                    
+                    img {
+                        bottom: -6px;
+                        filter: drop-shadow(2px 2px 2px map-get($colors, text_shadow));
+                        height: 24px;
+                        position: absolute;
+                    }
+                }
                 
-                &:last-child {
+                &:last-child:not(:only-child) {
                     color: map-get($colors, text_gold);
                     text-align: end;
                 }
