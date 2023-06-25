@@ -59,7 +59,6 @@ $colors: (
     padding: 0;
     
     h2, a, p, span {
-        cursor: default;
         width: fit-content;
     }
 
@@ -160,23 +159,29 @@ $colors: (
         details {
             position: relative;
 
-            p {
+            p:not(:last-child, .title) {
                 margin-bottom: 6px;
             }
 
-            img {
+            img, p, span {
                 pointer-events: all;
             }
-            
-            summary::-webkit-details-marker {
-                display: none;
-            }
 
-            summary::after {
-                @include aboveBreakpoint(751px) {
+            summary {
+                user-select: none;
+
+                &::-webkit-details-marker {
                     display: none;
                 }
+                
+                &::after {
+                    @include aboveBreakpoint(751px) {
+                        display: none;
+                    }
+                }
             }
+            
+
 
             &:not(open) summary:after {
                 background-image: url(../assets/icon/expand.svg);
@@ -197,6 +202,10 @@ $colors: (
 
             @include aboveBreakpoint(751px) {
                 pointer-events: none;
+
+                *:not(summary, summary *) {
+                    // pointer-events: all;
+                }
             }
         }
 
@@ -469,10 +478,10 @@ html {
         }        
 
         table {
-            margin-top: 6px;
             box-shadow: 2px 2px 2px map-get($colors, text_shadow);
+            margin-top: 6px;
+            max-width: 270px;
             width: 100%;
-            max-width: 280px;
 
             td {
                 background-color: map-get($colors, light_gray_blue);
@@ -490,7 +499,7 @@ html {
                     width: 24px;
 
                     &:first-child {
-                        margin-left: 4px;
+                        margin-left: 8px;
                     }
                     
                     img {
@@ -536,7 +545,7 @@ html {
             grid-template-columns: repeat(auto-fit, 47px);
             max-height: 256px;
             justify-content: space-around;
-            overflow: hidden scroll;
+            overflow-y: auto;
             row-gap: 6px;
             padding: 6px;
             position: relative;
