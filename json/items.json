@@ -205,7 +205,8 @@
             "Pairs well with attack speed, proc chance items."
         ],
         "tags": [
-            "Chance to Proc"
+            "Chance to Proc",
+            "Debuffs"
         ],
         "modifiers": [
             "Luck"
@@ -313,7 +314,8 @@
         ],
         "tags": [
             "On Kill",
-            "Fire Damage"
+            "Fire Damage",
+            "Debuffs"
         ],
         "synergies": {
             "include": [
@@ -328,7 +330,8 @@
                 "Frost Relic",
                 "Resonance Disc",
                 "Skill Cooldown Reduction",
-                "Money"
+                "Money",
+                "Soulbound Catalyst"
             ]
         }
     },
@@ -369,7 +372,6 @@
         "tags": [
             "On Interaction Effects",
             "Missiles",
-            "High Damage",
             "Can be Procced by"
         ],
         "synergies": {
@@ -399,7 +401,8 @@
                 "On Kill",
                 "Damage Taken",
                 "Mobility",
-                "Skills"
+                "Skills",
+                "AtG Missile Mk. 1"
             ]
         }
     },
@@ -433,7 +436,8 @@
             "Pairs well with cooldown reduction items."
         ],
         "tags": [
-            "Secondary Skill"
+            "Secondary Skill",
+            "Extra Skill Charges"
         ],
         "synergies": {
             "include": [
@@ -492,7 +496,9 @@
                 "Radar Scanner"
             ],
             "exclude": [
-                "Void Items"
+                "Void Items",
+                "Rusted Key",
+                "Shipping Request Form"
             ]
         }
     },
@@ -535,7 +541,8 @@
         "synergies": {
             "include": [
                 "Damage Reduction",
-                "Damage Prevention"
+                "Damage Prevention",
+                "Forgive Me Please"
             ],
             "exclude": [
                 "Monster Tooth",
@@ -682,7 +689,7 @@
         "type": "Item",
         "id": "power-elixir",
         "description": [
-            "Heal for <span green>75%</span> of max health when below <span red>25%</span> of max health, protects Delicate Watch from breaking. Consumed on use.",
+            "Heal for <span green>75%</span> of max health when below <span red>25%</span> of max health. Protects Delicate Watches from breaking, consumed on use.",
             "Pairs well with amplified healing and items that activate at low health."
         ],
         "tags": [
@@ -703,7 +710,7 @@
         "type": "Item",
         "id": "delicate-watch",
         "description": [
-            "Deal <span yellow>+20%</span> damage <span gray>(+20% per stack)</span>, consumed when below <span red>25%</span> of max health. Protected by Power Elixir.",
+            "Deal <span yellow>+20%</span> damage <span gray>(+20% per stack)</span>. Breaks when below <span red>25%</span> of max health, protected by Power Elixir.",
             "Pairs well with attack speed and increased damage items."
         ],
         "tags": [
@@ -757,8 +764,7 @@
             "include": [
                 "Damage Taken",
                 "Damage Reduction",
-                "Money",
-                "Executive Card"
+                "Money"
             ]
         }
     },
@@ -794,7 +800,9 @@
             ],
             "exclude": [
                 "Plasma Shrimp",
-                "AtG Missile Mk. 1"
+                "AtG Missile Mk. 1",
+                "Disposable Missile Launcher",
+                "Bundle of Fireworks"
             ]
         }
     },
@@ -805,7 +813,7 @@
         "id": "will-o-the-wisp",
         "description": [
             "Killing an enemy creates a lava pillar with a <span yellow>12m</span> <span gray>(+2.4m per stack)</span> radius, dealing <span yellow>350%</span> base damage <span gray>(+280% per stack)</span>.",
-            "Pairs well with increased damage, proc chance, and on kill items."
+            "Pairs well with increased damage, on kill effects, and proc chance items."
         ],
         "procCoefficients": {
             "On Hit": "1.0"
@@ -817,10 +825,12 @@
             "include": [
                 "Critical Strike Chance",
                 "Increased Damage",
+                "On Kill",
                 "Chance to Proc",
                 "Per Hit"
             ],
             "exclude": [
+                "Crowbar",
                 "Bundle of Fireworks",
                 "Razorwire",
                 "Shuriken",
@@ -836,7 +846,17 @@
                 "The Crowdfunder",
                 "Volcanic Egg",
                 "Sawmerang",
-                "Skills"
+                "Skills",
+                "Monster Tooth",
+                "Topaz Brooch",
+                "Infusion",
+                "Bandolier",
+                "Ghor's Tome",
+                "Hunter's Harpoon",
+                "Frost Relic",
+                "Soulbound Catalyst",
+                "Resonance Disc",
+                "Interstellar Desk Plant"
             ]
         }
     },
@@ -856,6 +876,9 @@
             "include": [
                 "Movement Speed",
                 "Mobility"
+            ],
+            "exclude": [
+                "Strides of Heresy"
             ]
         }
     },
@@ -888,6 +911,7 @@
                 "Per Hit"
             ],
             "exclude": [
+                "Crowbar",
                 "Ukulele",
                 "Skills",
                 "Polylute"
@@ -921,8 +945,8 @@
         "type": "Item",
         "id": "predatory-instincts",
         "description": [
-            "Gain <span yellow>5%</span> critical strike chance from the first Predatory Instincts <span gray>(does not stack)</span>. Critical strikes boost attack speed by <span yellow>12%</span> <span gray>(+24% per stack)</span> for <span blue>3s</span>. Capped at <span yellow>36%</span>.",
-            "Pairs well with attack speed, critical strike chance, and proc chance items."
+            "Gain <span yellow>5%</span> critical strike chance from the first Predatory Instincts <span gray>(does not stack)</span>. Critical strikes boost attack speed by <span yellow>12%</span> for <span blue>3s</span>, capped at <span yellow>36%</span> <span gray>(+24% per stack)</span>.",
+            "Pairs well with attack speed and critical strike chance items."
         ],
         "tags": [
             "Critical Strike Chance",
@@ -935,7 +959,6 @@
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Increased Damage",
                 "Laser Scope"
             ],
             "exclude": [
@@ -995,7 +1018,7 @@
         "id": "harvesters-scythe",
         "description": [
             "Gain <span yellow>+5%</span> critical strike chance, critical strikes heal for <span green>8hp</span> <span gray>(+4hp per stack)</span>.",
-            "Pairs well with attack speed, critical strike chance, proc chance, and amplified healing items."
+            "Pairs well with attack speed, critical strike chance, and amplified healing items."
         ],
         "tags": [
             "Critical Strike Chance",
@@ -1008,7 +1031,6 @@
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Can be Procced by",
                 "Amplified Healing",
                 "Laser Scope"
             ]
@@ -1030,6 +1052,10 @@
             "include": [
                 "Equipment Cooldown Reduction",
                 "Equipment"
+            ],
+            "exclude": [
+                "Trophy Hunter's Tricorn",
+                "The Crowdfunder"
             ]
         }
     },
@@ -1051,6 +1077,17 @@
                 "Shield",
                 "Increased Health",
                 "On Kill"
+            ],
+            "exclude": [
+                "Gasoline",
+                "Will-o'-the-Wisp",
+                "Bandolier",
+                "Ghor's Tome",
+                "Hunter's Harpoon",
+                "Ceremonial Dagger",
+                "Frost Relic",
+                "Resonance Disc",
+                "Soulbound Catalyst"
             ]
         }
     },
@@ -1061,7 +1098,7 @@
         "id": "bandolier",
         "description": [
             "Enemies have an <span yellow>18%</span> chance <span gray>(+10% per stack)</span> to drop ammo packs, ammo packs reset skill cooldowns.",
-            "Pairs well with skill cooldown reduction and on kill effect items."
+            "Pairs well with skill cooldown reduction items."
         ],
         "tags": [
             "Skill Cooldown Reduction",
@@ -1069,8 +1106,9 @@
         ],
         "synergies": {
             "include": [
+                "Extra Skill Charges",
                 "Skill Cooldown Reduction",
-                "On Kill"
+                "Forgive Me Please"
             ]
         }
     },
@@ -1120,18 +1158,22 @@
         "id": "runalds-band",
         "description": [
             "Hits dealing more than <span yellow>400%</span> damage slow the target by <span blue>80%</span> for <span blue>3s</span> <span gray>(+3s per stack)</span> and deal an aditional <span yellow>250%</span> total damage <span gray>(+250% per stack)</span>. <span blue>10s</span> cooldown.",
-            "Pairs well with high damage items."
+            "Pairs well with increased damage, proc chance, and high damage items."
         ],
         "tags": [
             "High Damage",
-            "Cooldowns"
+            "Cooldowns",
+            "Debuffs"
         ],
         "synergies": {
             "include": [
                 "Increased Damage",
+                "Chance to Proc",
                 "High Damage"
             ],
             "exclude": [
+                "Tri-Tip Dagger",
+                "Stun Grenade",
                 "Void Items",
                 "Bands"
             ]
@@ -1144,7 +1186,7 @@
         "id": "kjaros-band",
         "description": [
             "Hits dealing more than <span yellow>400%</span> damage deal an aditional <span yellow>300%</span> total damage over time. <span blue>10s</span> cooldown.",
-            "Pairs well with high damage items."
+            "Pairs well with increased damage, proc chance, and high damage items."
         ],
         "tags": [
             "High Damage",
@@ -1153,9 +1195,12 @@
         "synergies": {
             "include": [
                 "Increased Damage",
+                "Chance to Proc",
                 "High Damage"
             ],
             "exclude": [
+                "Tri-Tip Dagger",
+                "Stun Grenade",
                 "Void Items",
                 "Bands"
             ]
@@ -1168,10 +1213,11 @@
         "id": "chronobauble",
         "description": [
             "Slow enemies by <span blue>60%</span> for <span blue>2s</span> <span gray>(+2s per stack)</span> on hit.",
-            "Pairs well with attack speed, debuff infliction, and proc chance items."
+            "Pairs well with attack speed and proc chance items."
         ],
         "tags": [
-            "Per Hit"
+            "Per Hit",
+            "Debuffs"
         ],
         "synergies": {
             "include": [
@@ -1209,13 +1255,11 @@
         "id": "old-guillotine",
         "description": [
             "Elite enemies below <span yellow>13%</span> health <span gray>(+13% per stack)</span> die instantly.",
-            "Pairs well with increased damage and items that activate after killing an elite enemy."
+            "No currently known item synergies."
         ],
         "tags": [],
         "synergies": {
-            "include": [
-                "Elite Kills"
-            ]
+            "include": []
         }
     },
     {
@@ -1235,6 +1279,13 @@
                 "Attack Speed",
                 "Equipment Cooldown Reduction",
                 "Equipment"
+            ],
+            "exclude": [
+                "Trophy Hunter's Tricorn",
+                "Executive Card",
+                "Gnarled Woodsprite",
+                "Volcanic Egg",
+                "Recycler"
             ]
         }
     },
@@ -1245,7 +1296,7 @@
         "id": "lepton-daisy",
         "description": [
             "Heals allies within the teleporter for <span green>50%</span> of max health <span yellow>1</span> time <span gray>(+1 per stack)</span> per teleporter.",
-            "Pairs well with items activate based on Teleporter charging and amplified healing items."
+            "Pairs well with Teleporter charging items and amplified healing items."
         ],
         "tags": [
             "Healing",
@@ -1304,7 +1355,7 @@
         "id": "ghors-tome",
         "description": [
             "Enemies have a <span yellow>4%</span> <span gray>(+4% per stack)</span> to drop treasure worth <span yellow>25</span> gold. Scales with time.",
-            "Pairs well with on kill and gold increase items."
+            "Pairs well with gold increase items."
         ],
         "tags": [
             "On Kill",
@@ -1312,9 +1363,8 @@
         ],
         "synergies": {
             "include": [
-                "On Kill",
                 "Money",
-                "Executive Card"
+                "Forgive Me Please"
             ]
         }
     },
@@ -1325,7 +1375,7 @@
         "id": "squid-polyp",
         "description": [
             "Activating an interactable summons a Squid Turret which shoots at <span yellow>100%</span> attack speed <span gray>(+100% per stack)</span>. Lasts <span blue>30s</span>.",
-            "Pairs well with items that activate on interaction and items that summon allies."
+            "Pairs well with items that activate on interaction."
         ],
         "tags": [
             "On Interaction Effects",
@@ -1334,7 +1384,7 @@
         "synergies": {
             "include": [
                 "On Interaction Effects",
-                "Ally Summons"
+                "Empathy Cores"
             ]
         }
     },
@@ -1345,11 +1395,13 @@
         "id": "death-mark",
         "description": [
             "Enemies inflicted with at least <span yellow>4</span> debuffs take <span yellow>50%</span> more damage for <span blue>7s</span> <span gray>(+7s per stack)</span>.",
-            "Pairs well with increased damage and debuff infliction items."
+            "Pairs well with debuff infliction items."
         ],
         "tags": [],
         "synergies": {
-            "include": []
+            "include": [
+                "Debuffs"
+            ]
         }
     },
     {
@@ -1359,7 +1411,7 @@
         "id": "hunters-harpoon",
         "description": [
             "Killing an enemy increases movement speed by <span blue>125%</span> for <span blue>1s</span> <span gray>(+0.5s per stack)</span>.",
-            "Pairs well with movement speed and on kill effect items."
+            "Pairs well with movement speed items."
         ],
         "tags": [
             "Movement Speed",
@@ -1368,7 +1420,7 @@
         "synergies": {
             "include": [
                 "Movement Speed",
-                "On Kill"
+                "Forgive Me Please"
             ]
         }
     },
@@ -1381,7 +1433,9 @@
             "Burning enemies take <span yellow>+300%</span> fire damage <span gray>(+300% per stack)</span>.",
             "Pairs well with fire damage items."
         ],
-        "tags": [],
+        "tags": [
+            "Debuffs"
+        ],
         "synergies": {
             "include": [
                 "Fire Damage"
@@ -1407,8 +1461,14 @@
             "include": [
                 "Critical Strike Chance",
                 "Increased Damage",
-                "Can be Procced by",
+                "High Damage",
                 "Chance to Proc"
+            ],
+            "exclude": [
+                "H3AD-5T v2",
+                "Genesis Loop",
+                "Egocentricism",
+                "Equipment"
             ]
         }
     },
@@ -1429,6 +1489,10 @@
                 "Stage Generation",
                 "Money",
                 "Executive Card"
+            ],
+            "exclude": [
+                "Rusted Key",
+                "Encrusted Key"
             ]
         }
     },
@@ -1450,6 +1514,7 @@
                 "Attack Speed",
                 "Critical Strike Chance",
                 "Increased Damage",
+                "Can be Procced by",
                 "Per Hit"
             ]
         }
@@ -1474,11 +1539,12 @@
             "include": [
                 "Critical Strike Chance",
                 "Increased Damage",
-                "On Kill",
-                "Can be Procced by",
-                "Per Hit"
+                "Chance to Proc",
+                "Per Hit",
+                "Forgive Me Please"
             ],
             "exclude": [
+                "Crowbar",
                 "Bundle of Fireworks",
                 "Razorwire",
                 "Shuriken",
@@ -1505,21 +1571,21 @@
         "id": "frost-relic",
         "description": [
             "Killing an enemy creates a ring around the player that deals <span yellow>1,200%</span> damage per second to nearby enemies and slows them by <span blue>80%</span> for <span blue>1.5s</span>. Damage radius grows by <span yellow>2m</span> per kill, capped at <span yellow>18m</span> <span gray>(+12m per stack)</span>.",
-            "Pairs well with incrased damage, proc chance, debuff infliction, and on kill effect items."
+            "Pairs well with increased damage and proc chance items."
         ],
         "procCoefficients": {
             "On Hit": "0.2"
         },
         "tags": [
             "On Kill",
-            "Can be Procced by"
+            "Can be Procced by",
+            "Debuffs"
         ],
         "synergies": {
             "include": [
                 "Critical Strike Chance",
                 "Increased Damage",
-                "Chance to Proc",
-                "On Kill"
+                "Chance to Proc"
             ],
             "exclude": [
                 "Bundle of Fireworks",
@@ -1546,14 +1612,17 @@
         "id": "happiest-mask",
         "description": [
             "Gain a <span yellow>7%</span> chance to spawn a ghost ally that deals <span yellow>1,500%</span> damage after killing an enemy. Lasts <span blue>30s</span> <span gray>(+30s per stack)</span>.",
-            "Pairs well with ally summon items."
+            "Pairs well with Empathy Cores."
         ],
         "tags": [
             "Ally Summons"
         ],
+        "modifiers": [
+            "Luck"
+        ],
         "synergies": {
             "include": [
-                "Ally Summons"
+                "Empathy Cores"
             ]
         }
     },
@@ -1663,12 +1732,14 @@
         ],
         "synergies": {
             "include": [
+                "Critical Strike Chance",
                 "Increased Damage",
                 "Chance to Proc",
                 "Per Hit"
             ],
             "exclude": [
                 "Bundle of Fireworks",
+                "Crowbar",
                 "On Kill",
                 "Razorwire",
                 "Shuriken",
@@ -1701,11 +1772,12 @@
         "synergies": {
             "include": [
                 "Critical Strike Chance",
-                "Chance to Proc",
-                "Can be Procced by"
+                "Chance to Proc"
             ],
             "exclude": [
-                "Ocular HUD"
+                "Ocular HUD",
+                "Molten Perforator",
+                "Charged Perforator"
             ]
         }
     },
@@ -1731,13 +1803,15 @@
         "synergies": {
             "include": [
                 "Attack Speed",
+                "Critical Strike Chance",
                 "Increased Damage",
                 "Chance to Proc"
             ],
             "exclude": [
                 "On Kill",
                 "Genesis Loop",
-                "Sentient Meat Hook"
+                "Sentient Meat Hook",
+                "Crowbar"
             ]
         }
     },
@@ -1755,7 +1829,13 @@
         ],
         "synergies": {
             "include": [
-                "Skill Cooldown Reduction"
+                "Extra Skill Charges",
+                "Skill Cooldown Reduction",
+                "Skills"
+            ],
+            "exclude": [
+                "Brainstalks",
+                "Visions of Heresy"
             ]
         }
     },
@@ -1766,7 +1846,7 @@
         "id": "soulbound-catalyst",
         "description": [
             "Killing an enemy reduces equipment cooldowns by <span blue>4s</span> <span gray>(+2s per stack)</span>.",
-            "Pairs well with on kill effects, equipment cooldown reduction, and equipment items."
+            "Pairs well with equipment cooldown reduction and equipment items."
         ],
         "tags": [
             "On Kill",
@@ -1774,9 +1854,13 @@
         ],
         "synergies": {
             "include": [
-                "On Kill",
                 "Equipment Cooldown Reduction",
                 "Equipment"
+            ],
+            "exclude": [
+                "Trophy Hunter's Tricorn",
+                "Executive Card",
+                "The Crowdfunder"
             ]
         }
     },
@@ -1811,7 +1895,8 @@
             "Pairs well with skill cooldown reduction items."
         ],
         "tags": [
-            "Skill Cooldown Reduction"
+            "Skill Cooldown Reduction",
+            "Extra Skill Charges"
         ],
         "synergies": {
             "include": [
@@ -1827,7 +1912,7 @@
         "id": "wake-of-vultures",
         "description": [
             "Killing an elite enemy grants the player that enemy's elite ability for <span blue>8s</span> <span gray>(+5s per stack)</span>.",
-            "Pairs well with attack speed, debuff infliction, and items that activate after killing an elite enemy."
+            "Pairs well with attack speed and items that activate after killing an elite enemy."
         ],
         "tags": [
             "Elite Kills"
@@ -1847,7 +1932,7 @@
         "id": "brainstalks",
         "description": [
             "Killing an elite enemy reduces all skill cooldowns to <span blue>0.5s</span> for <span blue>4s</span> <span gray>(+4s per stack)</span>.",
-            "Pairs well with items that activate after killing an elite enemy and skill cooldown reduction items."
+            "Pairs well with skill cooldown reduction and items that activate after killing an elite enemy items."
         ],
         "tags": [
             "Elite Kills",
@@ -1855,8 +1940,8 @@
         ],
         "synergies": {
             "include": [
-                "Elite Kills",
                 "Skill Cooldown Reduction",
+                "Elite Kills",
                 "Skills"
             ]
         }
@@ -1887,7 +1972,7 @@
         "id": "aegis",
         "description": [
             "Healing while at <span green>100%</span> of max health grants temporary barrier equal to <span green>50%</span> of the amount healed <span gray>(+50% per stack)</span>.",
-            "Pairs well with healing, barrier, damage reduction, and amplified healing items."
+            "Pairs well with healing and amplified healing items."
         ],
         "tags": [
             "Barrier"
@@ -1895,8 +1980,6 @@
         "synergies": {
             "include": [
                 "Healing",
-                "Barrier",
-                "Damage Reduction",
                 "Amplified Healing"
             ]
         }
@@ -1911,12 +1994,17 @@
             "Pairs well with attack speed, increased damage, and debuff infliction items."
         ],
         "tags": [
-            "Per Hit"
+            "Per Hit",
+            "Debuffs"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
+                "Increased Damage",
                 "Per Hit"
+            ],
+            "exclude": [
+                "Crowbar"
             ]
         }
     },
@@ -1926,7 +2014,8 @@
         "type": "Item",
         "id": "resonance-disc",
         "description": [
-            "Killing <span yellow>4</span> enemies in <span blue>7s</span> charges the Resonance Disc. Deals <span yellow>300%</span> base damage <span gray>(+300% per stack)</span>, pierces enemies it doesn't kill, then explodes for <span yellow>1,000%</span> base damage <span gray>(+1,000% per stack)</span>. Returns to the player and pierces enemies on the way back dealing <span yellow>300%</span> base damage <span gray>(+300% per stack)</span>."
+            "Killing <span yellow>4</span> enemies in <span blue>7s</span> charges the Resonance Disc. Deals <span yellow>300%</span> base damage <span gray>(+300% per stack)</span>, pierces enemies it doesn't kill, then explodes for <span yellow>1,000%</span> base damage <span gray>(+1,000% per stack)</span>. Returns to the player and pierces enemies on the way back dealing <span yellow>300%</span> base damage <span gray>(+300% per stack)</span>.",
+            "Pairs well with increased damage and proc chance items."
         ],
         "procCoefficients": {
             "On Hit": "1.0",
@@ -1938,9 +2027,10 @@
         ],
         "synergies": {
             "include": [
+                "Critical Strike Chance",
                 "Increased Damage",
                 "Chance to Proc",
-                "On Kill"
+                "Per Hit"
             ],
             "exclude": [
                 "Bundle of Fireworks",
@@ -1968,7 +2058,7 @@
         "id": "interstellar-desk-plant",
         "description": [
             "Killing an enemy drops a healing plant after <span blue>5s</span>. Plants heal allies within <span yellow>10m</span> <span gray>(+5m per stack)</span> for <span green>5%</span> of max health every <span blue>0.5s</span>. Lasts <span blue>10s</span>.",
-            "Pairs well with on kill effects and amplified healing items."
+            "Pairs well with amplified healing items."
         ],
         "tags": [
             "Healing",
@@ -1976,8 +2066,8 @@
         ],
         "synergies": {
             "include": [
-                "On Kill",
-                "Amplified Healing"
+                "Amplified Healing",
+                "Forgive Me Please"
             ]
         }
     },
@@ -1988,7 +2078,7 @@
         "id": "laser-scope",
         "description": [
             "Critical strikes deal <span yellow>+100%</span> damage <span gray>(+100% per stack)</span>.",
-            "Pairs well with critical strike chance and increased damage items."
+            "Pairs well with critical strike chance items."
         ],
         "tags": [],
         "synergies": {
@@ -2022,14 +2112,14 @@
         "id": "spare-drone-parts",
         "description": [
             "Summon <span yellow>1</span> Col. Droneman <span gray>(+1 per stack)</span>. Drones gain <span yellow>+50%</span> attack speed <span gray>(+50% per stack)</span>, <span blue>+50%</span> cooldown reduction <span gray>(+50% per stack)</span>, and <span yellow>10%</span> chance to fire a missile dealing <span yellow>300%</span> total damage. Drones gain a chain gun that fires <span yellow>6</span> bullets dealing <span yellow>100%</span> damage, bullets bounce to up to <span yellow>2</span> enemies.",
-            "Pairs well with ally summons."
+            "Pairs well with Empathy Cores."
         ],
         "tags": [
             "Ally Summons"
         ],
         "synergies": {
             "include": [
-                "Ally Summons"
+                "Empathy Cores"
             ]
         }
     },
@@ -2040,15 +2130,16 @@
         "id": "symbiotic-scorpion",
         "description": [
             "Reduce armor by <span yellow>2</span> <span gray>(+2 per stack)</span> on hit.",
-            "Pairs well with attack speed, increased damage, and debuff infliction items."
+            "Pairs well with attack speed and proc chance items."
         ],
         "tags": [
-            "Per Hit"
+            "Per Hit",
+            "Debuffs"
         ],
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Per Hit"
+                "Can be Procced by"
             ]
         }
     },
@@ -2118,7 +2209,7 @@
         "id": "queens-gland",
         "description": [
             "Summon <span yellow>1</span> Beetle Guard <span gray>(+1 per stack)</span> every <span blue>30s</span>, deals <span yellow>300%</span> damage and has <span green>100%</span> health.",
-            "Pairs well with ally summon items."
+            "Pairs well with Empathy Cores."
         ],
         "tags": [
             "Ally Summons",
@@ -2126,10 +2217,7 @@
         ],
         "synergies": {
             "include": [
-                "Ally Summons"
-            ],
-            "exclude": [
-                "Void Items"
+                "Empathy Cores"
             ]
         }
     },
@@ -2140,7 +2228,7 @@
         "id": "halcyon-seed",
         "description": [
             "Summons Aurelionite before a boss fight, deals <span yellow>100%</span> damage <span gray>(+50% per stack)</span> and has <span green>100%</span> health <span gray>(+100% per stack)</span>.",
-            "Pairs well with ally summon items."
+            "Pairs well with Empathy Cores."
         ],
         "tags": [
             "Ally Summons",
@@ -2148,10 +2236,7 @@
         ],
         "synergies": {
             "include": [
-                "Ally Summons"
-            ],
-            "exclude": [
-                "Void Items"
+                "Empathy Cores"
             ]
         }
     },
@@ -2175,7 +2260,8 @@
             "include": [
                 "Movement Speed",
                 "Increased Damage",
-                "Chance to Proc"
+                "Chance to Proc",
+                "Per Hit"
             ],
             "exclude": [
                 "Bundle of Fireworks",
@@ -2244,9 +2330,9 @@
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Increased Damage",
                 "Movement Speed",
                 "Healing",
+                "Increased Damage",
                 "Shield",
                 "Increased Health",
                 "Damage Reduction"
@@ -2263,7 +2349,7 @@
         "id": "genesis-loop",
         "description": [
             "Explode when below <span red>25%</span> max health dealing <span yellow>6,000%</span> base damage. <span blue>30</span> / <span blue>2s</span> <span gray>(+1 per stack)</span> cooldown.",
-            "Pairs well with attack speed, critical strike chance, items that activate after taking damage, increased damage, and items that activate at low health."
+            "Pairs well with attack speed, increased damage, items that activate after taking damage, and items that activate at low health."
         ],
         "tags": [
             "At Low Health",
@@ -2275,6 +2361,7 @@
                 "Attack Speed",
                 "Critical Strike Chance",
                 "Increased Damage",
+                "High Damage",
                 "Damage Taken",
                 "At Low Health"
             ],
@@ -2313,7 +2400,8 @@
             "Can be Procced by",
             "Chance to Proc",
             "Boss",
-            "Fire Damage"
+            "Fire Damage",
+            "Debuffs"
         ],
         "synergies": {
             "include": [
@@ -2337,7 +2425,7 @@
         "id": "shatterspleen",
         "description": [
             "Gain <span yellow>+5%</span> critical strike chance. Critical strikes bleed enemies for <span yellow>240%</span> base damage, bleeding enemies explode dealing <span yellow>400%</span> damage <span gray>(+400% per stack)</span> + <span yellow>15%</span> of their max health <span gray>(+15% per stack)</span>.",
-            "Pairs well with attack speed and critical strike chance."
+            "Pairs well with attack speed, critical strike chance, and increased damage items."
         ],
         "tags": [
             "Critical Strike Chance",
@@ -2350,6 +2438,7 @@
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
+                "Increased Damage",
                 "Laser Scope"
             ]
         }
@@ -2365,11 +2454,18 @@
         ],
         "tags": [
             "Healing",
+            "Debuffs",
             "Boss"
         ],
         "synergies": {
             "include": [
+                "Critical Strike Chance",
+                "Increased Damage",
                 "Amplified Healing"
+            ],
+            "exclude": [
+                "Crowbar",
+                "Brilliant Behemoth"
             ]
         }
     },
@@ -2380,7 +2476,7 @@
         "id": "charged-perforator",
         "description": [
             "Gain a <span yellow>10%</span> chance to strike lightning on hit dealing <span yellow>500%</span> damage <span gray>(+500% per stack)</span>.",
-            "Pairs well with attack speed, increased damage, and proc chance."
+            "Pairs well with attack speed, increased damage, and proc chance items."
         ],
         "procCoefficients": {
             "On Hit": "1.0"
@@ -2396,6 +2492,7 @@
                 "Attack Speed",
                 "Critical Strike Chance",
                 "Increased Damage",
+                "High Damage",
                 "Chance to Proc",
                 "Can be Procced by",
                 "Per Hit"
@@ -2455,7 +2552,7 @@
         "id": "defense-nucleus",
         "description": [
             "Killing an elite monster summons an Alpha Construct that deals <span yellow>300%</span> damage and has <span green>300%</span> health. Capped at <span yellow>4</span>. <span gray>(+4 per stack)</span>",
-            "Pairs well with items that activate after killing an elite enemy, and ally summons."
+            "Pairs well with Empathy Cores."
         ],
         "tags": [
             "Ally Summons",
@@ -2464,9 +2561,7 @@
         ],
         "synergies": {
             "include": [
-                "On Kill",
-                "Elite Kills",
-                "Ally Summons"
+                "Empathy Cores"
             ],
             "exclude": [
                 "Forgive Me Please",
@@ -2523,6 +2618,9 @@
             "Chance to Proc",
             "Void Items"
         ],
+        "modifiers": [
+            "Luck"
+        ],
         "synergies": {
             "include": [
                 "Attack Speed",
@@ -2542,7 +2640,8 @@
         "tags": [
             "Void Items",
             "Skill Cooldown Reduction",
-            "Special Cooldown Reduction"
+            "Special Cooldown Reduction",
+            "Extra Skill Charges"
         ],
         "synergies": {
             "include": [
@@ -2565,7 +2664,8 @@
         ],
         "tags": [
             "Chance to Proc",
-            "Void Items"
+            "Void Items",
+            "Debuffs"
         ],
         "modifiers": [
             "Luck"
@@ -2608,7 +2708,7 @@
         "type": "Item",
         "id": "plasma-shrimp",
         "description": [
-            "Gain <span green>+10%</span> of max health as shield. Fire missiles on hit that deal <span yellow>40%</span> total damage <span gray>(+40% per stack)</span> on hit while you have shield. <span purple>Corrupts all AtG Missile Mk. 1s</span>.",
+            "Gain shield equal to <span green>+10%</span> of max health, fire missiles on hit that deal <span yellow>40%</span> total damage <span gray>(+40% per stack)</span> on hit while you have shield. <span purple>Corrupts all AtG Missile Mk. 1s</span>.",
             "Pairs well with attack speed, increased damage, shields, and proc chance items."
         ],
         "procCoefficients": {
@@ -2732,7 +2832,8 @@
         "synergies": {
             "include": [
                 "Increased Damage",
-                "High Damage"
+                "High Damage",
+                "Chance to Proc"
             ],
             "exclude": [
                 "Runald's Band",
@@ -2750,7 +2851,8 @@
         ],
         "tags": [
             "Chance to Proc",
-            "Void Items"
+            "Void Items",
+            "Debuffs"
         ],
         "modifiers": [
             "Luck"
@@ -3131,7 +3233,8 @@
             "Secondary Skill",
             "High Damage",
             "Can be Procced by",
-            "Heresy Items"
+            "Heresy Items",
+            "Debuffs"
         ],
         "synergies": {
             "include": [
@@ -3352,7 +3455,8 @@
             "Lunar",
             "Equipment",
             "Fire Damage",
-            "Damage Taken"
+            "Damage Taken",
+            "Debuffs"
         ],
         "synergies": {
             "include": [
@@ -3378,7 +3482,8 @@
         ],
         "tags": [
             "Lunar",
-            "Equipment"
+            "Equipment",
+            "Debuffs"
         ],
         "synergies": {
             "include": [
@@ -3407,7 +3512,8 @@
             "Increased Health",
             "Movement Speed",
             "Lunar",
-            "Equipment"
+            "Equipment",
+            "High Damage"
         ],
         "synergies": {
             "include": [
@@ -3472,7 +3578,9 @@
                 "Volcanic Egg",
                 "Sawmerang",
                 "Aspect",
-                "Ocular HUD"
+                "Ocular HUD",
+                "AtG Missile Mk. 1",
+                "Plasma Shrimp"
             ]
         }
     },
@@ -3753,7 +3861,8 @@
             "Equipment",
             "Can be Procced by",
             "High Damage",
-            "Fire Damage"
+            "Fire Damage",
+            "Debuffs"
         ],
         "synergies": {
             "include": [
@@ -3995,7 +4104,8 @@
         "tags": [
             "Equipment",
             "Can be Procced by",
-            "High Damage"
+            "High Damage",
+            "Debuffs"
         ],
         "synergies": {
             "include": [
@@ -4188,7 +4298,8 @@
         "tags": [
             "Aspect",
             "Per Hit",
-            "Fire Damage"
+            "Fire Damage",
+            "Debuffs"
         ],
         "synergies": {
             "include": [
@@ -4268,7 +4379,8 @@
         "tags": [
             "Aspect",
             "Per Hit",
-            "On Death"
+            "On Death",
+            "Debuffs"
         ],
         "synergies": {
             "include": [
@@ -4294,7 +4406,8 @@
         ],
         "tags": [
             "Aspect",
-            "Per Hit"
+            "Per Hit",
+            "Debuffs"
         ],
         "synergies": {
             "include": [
@@ -4316,7 +4429,8 @@
         ],
         "tags": [
             "Aspect",
-            "Per Hit"
+            "Per Hit",
+            "Debuffs"
         ],
         "synergies": {
             "include": [
@@ -4345,7 +4459,8 @@
         "tags": [
             "Aspect",
             "Per Hit",
-            "Can be Procced by"
+            "Can be Procced by",
+            "Debuffs"
         ],
         "synergies": {
             "include": [
