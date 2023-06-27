@@ -1,4 +1,4 @@
-const appVersion = '1.2.5'
+const appVersion = '1.2.5.1'
 const itemDesc = document.querySelector('#item-description')
 const itemSelect = document.querySelector('#item-select')
 let selectButtons
@@ -16,7 +16,7 @@ const loadComponent = async (filepath) => {
     return template.content
 }
 
-let itemData, currentItem
+let itemData, currentItem, canScroll
 
 const createButton = (item) => {
     const { name, rarity, id } = item
@@ -382,6 +382,8 @@ const initializePage = async () => {
 
     setTimeout(() => {
         updateDisplay()
+
+        canScroll = true
     }, 25)
 
     window.addEventListener('popstate', updateDisplay)
@@ -400,12 +402,10 @@ const initializePage = async () => {
     setActive()
 }
 
-initializePage()
-
 document.addEventListener('click', (event) => {
     const displayPane = document.querySelector('#display-pane .heading')
 
-    if (event.target.closest('.item')) {
+    if (event.target.closest('.item') && canScroll) {
         setTimeout(() => {
             displayPane.parentNode.parentNode.scrollIntoView({ behavior: 'smooth', block: 'start' })
 
@@ -414,3 +414,5 @@ document.addEventListener('click', (event) => {
         }, 25)
     }
 })
+
+initializePage()
