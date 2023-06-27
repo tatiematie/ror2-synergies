@@ -223,31 +223,31 @@ html body {
   background-size: 40px 40px;
 }
 html [rarity=common] {
-  background: url(../assets/img/items/bg-common.png) center no-repeat;
+  background: url(../assets/img/bg-common.png) center no-repeat;
   background-size: 100%;
 }
 html [rarity=uncommon] {
-  background: url(../assets/img/items/bg-uncommon.png) center no-repeat;
+  background: url(../assets/img/bg-uncommon.png) center no-repeat;
   background-size: 100%;
 }
 html [rarity=legendary] {
-  background: url(../assets/img/items/bg-legendary.png) center no-repeat;
+  background: url(../assets/img/bg-legendary.png) center no-repeat;
   background-size: 100%;
 }
 html [rarity=boss], html [rarity=stage] {
-  background: url(../assets/img/items/bg-boss.png) center no-repeat;
+  background: url(../assets/img/bg-boss.png) center no-repeat;
   background-size: 100%;
 }
 html [rarity=void] {
-  background: url(../assets/img/items/bg-void.png) center no-repeat;
+  background: url(../assets/img/bg-void.png) center no-repeat;
   background-size: 100%;
 }
 html [rarity=lunar] {
-  background: url(../assets/img/items/bg-lunar.png) center no-repeat;
+  background: url(../assets/img/bg-lunar.png) center no-repeat;
   background-size: 100%;
 }
 html [rarity=equipment], html [rarity=elite] {
-  background: url(../assets/img/items/bg-equipment.png) center no-repeat;
+  background: url(../assets/img/bg-equipment.png) center no-repeat;
   background-size: 100%;
 }
 html span[red] {
