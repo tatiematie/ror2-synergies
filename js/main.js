@@ -1,4 +1,4 @@
-const appVersion = '1.2.5.1'
+const appVersion = '1.2.5.2'
 const itemDesc = document.querySelector('#item-description')
 const itemSelect = document.querySelector('#item-select')
 let selectButtons
@@ -145,96 +145,96 @@ const updateDisplay = () => {
         }
 
         function formatString(str) {
-            return str.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]+/g, '');
+            return str.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]+/g, '')
         }
         if (modifiers !== undefined && typeof modifiers === 'object') {
             for (const [modifierTitle, modifierValue] of Object.entries(modifiers)) {
-                const modifierTable = document.createElement('table');
-                const modifierTitleElement = document.createElement('p');
-                modifierTitleElement.innerHTML = modifierTitle;
-                modifierTitleElement.classList.add('modifiers', 'title');
+                const modifierTable = document.createElement('table')
+                const modifierTitleElement = document.createElement('p')
+                modifierTitleElement.innerHTML = modifierTitle
+                modifierTitleElement.classList.add('modifiers', 'title')
 
-                descriptionDetails.appendChild(modifierTitleElement);
-                descriptionDetails.appendChild(modifierTable);
+                descriptionDetails.appendChild(modifierTitleElement)
+                descriptionDetails.appendChild(modifierTable)
 
                 if (Array.isArray(modifierValue)) {
                     for (const entry of modifierValue) {
-                        const modifierRow = document.createElement('tr');
-                        const modifierData = document.createElement('td');
-                        modifierData.innerHTML = entry;
+                        const modifierRow = document.createElement('tr')
+                        const modifierData = document.createElement('td')
+                        modifierData.innerHTML = entry
 
                         const matchingItems = itemData.filter(
                             item => item.name === entry || (item.tags && item.tags.includes(entry))
-                        );
+                        )
 
                         if (matchingItems.length === 0) {
-                            const spanElement = document.createElement('span');
-                            const imageElement = document.createElement('img');
-                            const formattedEntry = formatString(entry);
+                            const spanElement = document.createElement('span')
+                            const imageElement = document.createElement('img')
+                            const formattedEntry = formatString(entry)
 
-                            imageElement.src = `assets/img/${formattedEntry}.png`;
-                            imageElement.alt = entry;
-                            imageElement.title = entry;
-                            imageElement.loading = 'lazy';
+                            imageElement.src = `assets/img/${formattedEntry}.png`
+                            imageElement.alt = entry
+                            imageElement.title = entry
+                            imageElement.loading = 'lazy'
 
-                            spanElement.appendChild(imageElement);
-                            modifierData.appendChild(spanElement);
+                            spanElement.appendChild(imageElement)
+                            modifierData.appendChild(spanElement)
                         } else {
                             for (const matchingItem of matchingItems) {
-                                const spanElement = document.createElement('span');
-                                const imageElement = document.createElement('img');
+                                const spanElement = document.createElement('span')
+                                const imageElement = document.createElement('img')
 
-                                imageElement.src = `assets/img/${matchingItem.id}.png`;
-                                imageElement.alt = matchingItem.name;
-                                imageElement.title = matchingItem.name;
-                                imageElement.loading = 'lazy';
+                                imageElement.src = `assets/img/${matchingItem.id}.png`
+                                imageElement.alt = matchingItem.name
+                                imageElement.title = matchingItem.name
+                                imageElement.loading = 'lazy'
 
-                                modifierData.appendChild(spanElement);
-                                spanElement.appendChild(imageElement);
+                                modifierData.appendChild(spanElement)
+                                spanElement.appendChild(imageElement)
                             }
                         }
 
-                        modifierRow.appendChild(modifierData);
-                        modifierTable.appendChild(modifierRow);
+                        modifierRow.appendChild(modifierData)
+                        modifierTable.appendChild(modifierRow)
                     }
                 } else {
-                    const modifierRow = document.createElement('tr');
-                    const modifierData = document.createElement('td');
-                    modifierData.innerHTML = modifierValue;
+                    const modifierRow = document.createElement('tr')
+                    const modifierData = document.createElement('td')
+                    modifierData.innerHTML = modifierValue
 
                     const matchingItems = itemData.filter(
                         item => item.name === modifierValue || (item.tags && item.tags.includes(modifierValue))
-                    );
+                    )
 
                     if (matchingItems.length === 0) {
-                        const spanElement = document.createElement('span');
-                        const imageElement = document.createElement('img');
-                        const formattedValue = formatString(modifierValue);
+                        const spanElement = document.createElement('span')
+                        const imageElement = document.createElement('img')
+                        const formattedValue = formatString(modifierValue)
 
-                        imageElement.src = `assets/img/${formattedValue}.png`;
-                        imageElement.alt = modifierValue;
-                        imageElement.title = modifierValue;
-                        imageElement.loading = 'lazy';
+                        imageElement.src = `assets/img/${formattedValue}.png`
+                        imageElement.alt = modifierValue
+                        imageElement.title = modifierValue
+                        imageElement.loading = 'lazy'
 
-                        spanElement.appendChild(imageElement);
-                        modifierData.appendChild(spanElement);
+                        spanElement.appendChild(imageElement)
+                        modifierData.appendChild(spanElement)
                     } else {
                         for (const matchingItem of matchingItems) {
-                            const spanElement = document.createElement('span');
-                            const imageElement = document.createElement('img');
+                            const spanElement = document.createElement('span')
+                            const imageElement = document.createElement('img')
 
-                            imageElement.src = `assets/img/${matchingItem.id}.png`;
-                            imageElement.alt = matchingItem.name;
-                            imageElement.title = matchingItem.name;
-                            imageElement.loading = 'lazy';
+                            imageElement.src = `assets/img/${matchingItem.id}.png`
+                            imageElement.alt = matchingItem.name
+                            imageElement.title = matchingItem.name
+                            imageElement.loading = 'lazy'
 
-                            modifierData.appendChild(spanElement);
-                            spanElement.appendChild(imageElement);
+                            modifierData.appendChild(spanElement)
+                            spanElement.appendChild(imageElement)
                         }
                     }
 
-                    modifierRow.appendChild(modifierData);
-                    modifierTable.appendChild(modifierRow);
+                    modifierRow.appendChild(modifierData)
+                    modifierTable.appendChild(modifierRow)
                 }
             }
         }
@@ -408,9 +408,6 @@ document.addEventListener('click', (event) => {
     if (event.target.closest('.item') && canScroll) {
         setTimeout(() => {
             displayPane.parentNode.parentNode.scrollIntoView({ behavior: 'smooth', block: 'start' })
-
-            console.log(event.target)
-
         }, 25)
     }
 })
