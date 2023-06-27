@@ -105,8 +105,8 @@
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Increased Damage",
-                "Laser Scope"
+                "On Critical Strike",
+                "Increased Damage"
             ],
             "exclude": [
                 "Ocular HUD"
@@ -144,13 +144,15 @@
         "id": "bustling-fungus",
         "description": [
             "Standing still heals allies within <span yellow>3m</span> <span gray>(+1.5m per stack)</span> for <span green>4.5%</span> of max health <span gray>(+2.25% per stack)</span>.",
-            "Pairs well with amplified healing items."
+            "Pairs well with damage reduction, damage prevention, and amplified healing items."
         ],
         "tags": [
             "Healing"
         ],
         "synergies": {
             "include": [
+                "Damage Reduction",
+                "Damage Prevention",
                 "Amplified Healing"
             ]
         }
@@ -256,7 +258,7 @@
             "Pairs well with amplified healing and damage prevention items."
         ],
         "tags": [
-            "Healing"
+            "Regeneration"
         ],
         "synergies": {
             "include": [
@@ -330,6 +332,7 @@
         "synergies": {
             "include": [
                 "On Kill",
+                "Death Mark",
                 "Ignition Tank"
             ],
             "exclude": [
@@ -507,7 +510,6 @@
             ],
             "exclude": [
                 "Void Items",
-                "Rusted Key",
                 "Shipping Request Form"
             ]
         }
@@ -813,7 +815,6 @@
             ],
             "exclude": [
                 "Plasma Shrimp",
-                "AtG Missile Mk. 1",
                 "Disposable Missile Launcher",
                 "Bundle of Fireworks"
             ]
@@ -925,7 +926,6 @@
             ],
             "exclude": [
                 "Crowbar",
-                "Ukulele",
                 "Skills",
                 "Polylute"
             ]
@@ -963,7 +963,8 @@
         ],
         "tags": [
             "Critical Strike Chance",
-            "Attack Speed"
+            "Attack Speed",
+            "On Critical Strike"
         ],
         "modifiers": {
             "Grants:": "Attack Speed on Crit",
@@ -973,7 +974,7 @@
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Laser Scope"
+                "On Critical Strike"
             ],
             "exclude": [
                 "Crowbar",
@@ -1045,7 +1046,8 @@
         ],
         "tags": [
             "Critical Strike Chance",
-            "Healing"
+            "Healing",
+            "On Critical Strike"
         ],
         "modifiers": {
             "Affected by:": "Luck"
@@ -1054,8 +1056,8 @@
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Amplified Healing",
-                "Laser Scope"
+                "On Critical Strike",
+                "Amplified Healing"
             ]
         }
     },
@@ -1265,7 +1267,6 @@
         },
         "synergies": {
             "include": [
-                "Attack Speed",
                 "Can be Procced by"
             ],
             "exclude": [
@@ -1303,7 +1304,9 @@
         ],
         "tags": [],
         "synergies": {
-            "include": []
+            "include": [
+                "Elite Kills"
+            ]
         }
     },
     {
@@ -1646,7 +1649,8 @@
             "include": [
                 "Critical Strike Chance",
                 "Increased Damage",
-                "Chance to Proc"
+                "Chance to Proc",
+                "Forgive Me Please"
             ],
             "exclude": [
                 "Bundle of Fireworks",
@@ -1673,16 +1677,17 @@
         "id": "happiest-mask",
         "description": [
             "Gain a <span yellow>7%</span> chance to spawn a ghost ally that deals <span yellow>1,500%</span> damage after killing an enemy. Lasts <span blue>30s</span> <span gray>(+30s per stack)</span>.",
-            "Pairs well with Empathy Cores."
+            "Pairs well with Interstellar Desk Plant and Empathy Cores."
         ],
         "tags": [
             "Ally Summons"
         ],
-        "modifiers": [
-            "Luck"
-        ],
+        "modifiers": {
+            "Affected by:": "Luck"
+        },
         "synergies": {
             "include": [
+                "Interstellar Desk Plant",
                 "Empathy Cores"
             ]
         }
@@ -1709,6 +1714,7 @@
                 "Movement Speed",
                 "Critical Strike Chance",
                 "Increased Damage",
+                "High Damage",
                 "Chance to Proc",
                 "Mobility",
                 "Per Hit"
@@ -1757,10 +1763,10 @@
                 "Per Hit"
             ],
             "exclude": [
+                "Crowbar",
                 "Bundle of Fireworks",
                 "Razorwire",
                 "Shuriken",
-                "On Kill",
                 "Mobility",
                 "Unstable Tesla Coil",
                 "Genesis Loop",
@@ -1836,9 +1842,7 @@
                 "Chance to Proc"
             ],
             "exclude": [
-                "Ocular HUD",
-                "Molten Perforator",
-                "Charged Perforator"
+                "Ocular HUD"
             ]
         }
     },
@@ -2028,7 +2032,8 @@
         "synergies": {
             "include": [
                 "Healing",
-                "Amplified Healing"
+                "Amplified Healing",
+                "Aegis"
             ]
         }
     },
@@ -2074,7 +2079,8 @@
             "include": [
                 "Attack Speed",
                 "Increased Damage",
-                "Per Hit"
+                "Per Hit",
+                "Death Mark"
             ],
             "exclude": [
                 "Crowbar"
@@ -2156,7 +2162,9 @@
             "Critical strikes deal <span yellow>+100%</span> damage <span gray>(+100% per stack)</span>.",
             "Pairs well with critical strike chance items."
         ],
-        "tags": [],
+        "tags": [
+            "On Critical Strike"
+        ],
         "synergies": {
             "include": [
                 "Critical Strike Chance"
@@ -2218,7 +2226,8 @@
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Can be Procced by"
+                "Can be Procced by",
+                "Death Mark"
             ]
         }
     },
@@ -2272,20 +2281,18 @@
         "type": "Item",
         "id": "titanic-knurl",
         "description": [
-            "Gain <span green>+40%</span> max health <span gray>(+40 per stack)</span> and <span green>+1.6hp</span> per second base health regeneration <span gray>(+1.6 per stack)</span>.",
-            "Pairs well with healing, increased health, and amplified healing items."
+            "Gain <span green>40%</span> max health <span gray>(+40 per stack)</span> and <span green>+1.6hp</span> per second base health regeneration <span gray>(+1.6 per stack)</span>.",
+            "Pairs well with regeneration and increased health items."
         ],
         "tags": [
             "Increased Health",
-            "Amplified Healing",
-            "Healing",
+            "Regeneration",
             "Boss"
         ],
         "synergies": {
             "include": [
-                "Healing",
-                "Increased Health",
-                "Amplified Healing"
+                "Regeneration",
+                "Increased Health"
             ]
         }
     },
@@ -2398,17 +2405,15 @@
         "id": "irradiant-pearl",
         "description": [
             "Gain <span green>+10%</span> max health, <span green>+10%</span> regeneration, <span blue>+10%</span> movement speed, <span yellow>+10%</span> damage, <span yellow>+10%</span> attack speed, <span yellow>+10%</span> critical strike chance, and <span green>+10%</span> armor.",
-            "Pairs well with attack speed, critical strike chance, movement speed, healing, increased damage, shields, increased health, and damage reduction items."
+            "Pairs well with attack speed, critical strike chance, movement speed, increased damage, shields, and increased health items."
         ],
         "tags": [
             "Increased Health",
-            "Amplified Healing",
             "Increased Damage",
             "Movement Speed",
             "Attack Speed",
             "Critical Strike Chance",
-            "Damage Reduction",
-            "Healing",
+            "Regeneration",
             "Boss"
         ],
         "modifiers": {
@@ -2419,11 +2424,9 @@
                 "Attack Speed",
                 "Critical Strike Chance",
                 "Movement Speed",
-                "Healing",
                 "Increased Damage",
                 "Shield",
-                "Increased Health",
-                "Damage Reduction"
+                "Increased Health"
             ],
             "exclude": [
                 "Ocular HUD"
@@ -2492,7 +2495,8 @@
             "Debuffs"
         ],
         "modifiers": {
-            "Inflicts:": "Burn"
+            "Inflicts:": "Burn",
+            "Affected by:": "Luck"
         },
         "synergies": {
             "include": [
@@ -2502,10 +2506,8 @@
                 "Chance to Proc",
                 "Can be Procced by",
                 "Per Hit",
+                "Death Mark",
                 "Ignition Tank"
-            ],
-            "exclude": [
-                "Molten Perforator"
             ]
         }
     },
@@ -2520,7 +2522,8 @@
         ],
         "tags": [
             "Critical Strike Chance",
-            "Boss"
+            "Boss",
+            "On Critical Strike"
         ],
         "modifiers": {
             "Inflicts:": "Bleed",
@@ -2530,8 +2533,9 @@
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
+                "On Critical Strike",
                 "Increased Damage",
-                "Laser Scope"
+                "Needletick"
             ]
         }
     },
@@ -2556,7 +2560,8 @@
             "include": [
                 "Critical Strike Chance",
                 "Increased Damage",
-                "Amplified Healing"
+                "Amplified Healing",
+                "Death Mark"
             ],
             "exclude": [
                 "Crowbar",
@@ -2582,6 +2587,9 @@
             "High Damage",
             "Boss"
         ],
+        "modifiers": {
+            "Affected by:": "Luck"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
@@ -2591,9 +2599,6 @@
                 "Chance to Proc",
                 "Can be Procced by",
                 "Per Hit"
-            ],
-            "exclude": [
-                "Charged Perforator"
             ]
         }
     },
@@ -2698,8 +2703,7 @@
             ],
             "exclude": [
                 "Rusted Key",
-                "Shipping Request Form",
-                "Encrusted Key"
+                "Shipping Request Form"
             ]
         }
     },
@@ -2891,7 +2895,6 @@
             ],
             "exclude": [
                 "Ukulele",
-                "Polylute",
                 "Crowbar"
             ]
         }
@@ -2918,6 +2921,7 @@
         },
         "synergies": {
             "include": [
+                "Damage Reduction",
                 "Blast Shower"
             ]
         }
@@ -3027,8 +3031,7 @@
             "include": [
                 "Movement Speed",
                 "Amplified Healing"
-            ],
-            "exclude": []
+            ]
         }
     },
     {
@@ -3088,8 +3091,7 @@
                 "Can be Procced by",
                 "Money",
                 "Executive Card"
-            ],
-            "exclude": []
+            ]
         }
     },
     {
@@ -3110,8 +3112,7 @@
             "include": [
                 "Shield",
                 "Increased Health"
-            ],
-            "exclude": []
+            ]
         }
     },
     {
@@ -3131,8 +3132,7 @@
             "include": [
                 "Healing",
                 "Amplified Healing"
-            ],
-            "exclude": []
+            ]
         }
     },
     {
@@ -3259,10 +3259,7 @@
         "tags": [
             "Lunar"
         ],
-        "synergies": {
-            "include": [],
-            "exclude": []
-        }
+        "synergies": {}
     },
     {
         "name": "Focused Convergence",
@@ -3280,8 +3277,7 @@
         "synergies": {
             "include": [
                 "Teleporter Charging"
-            ],
-            "exclude": []
+            ]
         }
     },
     {
@@ -3300,8 +3296,7 @@
         "synergies": {
             "include": [
                 "On Interaction Effects"
-            ],
-            "exclude": []
+            ]
         }
     },
     {
@@ -3314,7 +3309,8 @@
             "Pairs well with attack speed, increased damage, and proc chance items."
         ],
         "tags": [
-            "Lunar"
+            "Lunar",
+            "Increased Damage"
         ],
         "modifiers": {
             "Grants:": "Power Buff"
@@ -3324,8 +3320,7 @@
                 "Attack Speed",
                 "Critical Strike Chance",
                 "Increased Damage"
-            ],
-            "exclude": []
+            ]
         }
     },
     {
@@ -3345,8 +3340,7 @@
         "synergies": {
             "include": [
                 "Skill Cooldown Reduction"
-            ],
-            "exclude": []
+            ]
         }
     },
     {
@@ -3366,7 +3360,6 @@
             "Lunar",
             "Skills",
             "Secondary Skill",
-            "High Damage",
             "Can be Procced by",
             "Heresy Items",
             "Debuffs"
@@ -3467,8 +3460,7 @@
         "synergies": {
             "include": [
                 "Stage Generation"
-            ],
-            "exclude": []
+            ]
         }
     },
     {
@@ -3490,8 +3482,7 @@
                 "Shield",
                 "Mobility",
                 "Increased Health"
-            ],
-            "exclude": []
+            ]
         }
     },
     {
@@ -3513,8 +3504,7 @@
                 "Skill Cooldown Reduction",
                 "Backup Magazine",
                 "Skills"
-            ],
-            "exclude": []
+            ]
         }
     },
     {
@@ -3540,10 +3530,10 @@
                 "Attack Speed",
                 "Critical Strike Chance",
                 "Increased Damage",
+                "High Damage",
                 "Death Mark",
                 "Heresy Items"
-            ],
-            "exclude": []
+            ]
         }
     },
     {
@@ -3639,7 +3629,8 @@
                 "Attack Speed",
                 "Critical Strike Chance",
                 "Increased Damage",
-                "Equipment Cooldown Reduction"
+                "Equipment Cooldown Reduction",
+                "Death Mark"
             ],
             "exclude": [
                 "Equipment",
@@ -3668,7 +3659,8 @@
             "High Damage"
         ],
         "modifiers": {
-            "Grants:": "Tonic Buff"
+            "Grants:": "Tonic Buff",
+            "Affected by:": "Luck"
         },
         "synergies": {
             "include": [
@@ -3701,17 +3693,16 @@
         "tags": [
             "Equipment",
             "Can be Procced by",
-            "Missiles",
-            "High Damage"
+            "Missiles"
         ],
         "synergies": {
             "include": [
                 "Critical Strike Chance",
                 "Increased Damage",
-                "High Damage",
                 "Chance to Proc",
                 "Equipment Cooldown Reduction",
-                "Per Hit"
+                "Per Hit",
+                "Pocket I.C.B.M."
             ],
             "exclude": [
                 "Equipment",
@@ -3740,13 +3731,14 @@
         "id": "foreign-fruit",
         "description": [
             "Heal <span green>50%</span> of max health on use. <span blue>45s</span> cooldown.",
-            "Pairs well with amplified healing items."
+            "Pairs well with equipment cooldown reduction items and amplified healing items."
         ],
         "tags": [
             "Equipment"
         ],
         "synergies": {
             "include": [
+                "Equipment Cooldown Reduction",
                 "Amplified Healing"
             ],
             "exclude": [
@@ -3790,8 +3782,7 @@
         "synergies": {
             "include": [
                 "Recycler"
-            ],
-            "exclude": []
+            ]
         }
     },
     {
@@ -3813,16 +3804,14 @@
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Critical Strike Chance",
+                "On Critical Strike",
                 "Increased Damage",
                 "Equipment Cooldown Reduction",
-                "Per Hit",
-                "Laser Scope"
+                "Per Hit"
             ],
             "exclude": [
                 "Equipment",
-                "Aspect",
-                "Lens Maker's Glasses"
+                "Aspect"
             ]
         }
     },
@@ -3833,13 +3822,14 @@
         "id": "the-backup",
         "description": [
             "Summon <span yellow>4</span> Strike Drones that last <span blue>25s</span>. <span blue>100s</span> cooldown.",
-            "Pairs well with Spare Drone Parts and Empathy Cores."
+            "Pairs well with equipment cooldown reduction items, Spare Drone Parts and Empathy Cores."
         ],
         "tags": [
             "Equipment"
         ],
         "synergies": {
             "include": [
+                "Equipment Cooldown Reduction",
                 "Spare Drone Parts",
                 "Empathy Cores"
             ],
@@ -4031,6 +4021,7 @@
         ],
         "synergies": {
             "include": [
+                "Money",
                 "Recycler"
             ]
         }
@@ -4115,6 +4106,7 @@
         ],
         "synergies": {
             "include": [
+                "Equipment Cooldown Reduction",
                 "Stage Generation"
             ],
             "exclude": [
@@ -4161,8 +4153,7 @@
             "include": [
                 "Cooldowns",
                 "Equipment Cooldown Reduction"
-            ],
-            "exclude": []
+            ]
         }
     },
     {
@@ -4325,7 +4316,6 @@
                 "Volcanic Egg",
                 "Jade Elephant",
                 "Sawmerang",
-                "Recycler",
                 "Super Massive Leech",
                 "Gorag's Opus",
                 "Forgive Me Please",
@@ -4424,7 +4414,6 @@
             ],
             "exclude": [
                 "Hunter's Harpoon",
-                "Frost Relic",
                 "Happiest Mask",
                 "Wake of Vultures",
                 "Brainstalks",

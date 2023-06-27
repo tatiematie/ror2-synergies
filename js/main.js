@@ -1,4 +1,4 @@
-const appVersion = '1.2.5.2'
+const appVersion = '1.2.5.3'
 const itemDesc = document.querySelector('#item-description')
 const itemSelect = document.querySelector('#item-select')
 let selectButtons
@@ -303,7 +303,7 @@ const updateSynergyList = (currentItem) => {
                 (Array.isArray(tags) && tags.includes(include)) ||
                 name === include
 
-            if (isIncluded && !isExcluded && include !== 'None') {
+            if (isIncluded && !isExcluded && include !== 'None' && id !== currentItem.id) { // Exclude current item
                 const synergyListItem = document.createElement('li'),
                     synergyListButton = document.createElement('a'),
                     synergyListImg = document.createElement('img')
