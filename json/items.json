@@ -98,9 +98,9 @@
         "tags": [
             "Critical Strike Chance"
         ],
-        "modifiers": [
-            "Luck"
-        ],
+        "modifiers": {
+            "Affected by:": "Luck"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
@@ -208,9 +208,10 @@
             "Chance to Proc",
             "Debuffs"
         ],
-        "modifiers": [
-            "Luck"
-        ],
+        "modifiers": {
+            "Inflicts:": "Bleed",
+            "Affected by:": "Luck"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
@@ -235,6 +236,9 @@
             "Attack Speed",
             "Movement Speed"
         ],
+        "modifiers": {
+            "Grants:": "Warbanner Buff"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
@@ -296,6 +300,9 @@
             "Healing",
             "Damage Taken"
         ],
+        "modifiers": {
+            "Grants:": "Medkit Heal"
+        },
         "synergies": {
             "include": [
                 "Damage Taken",
@@ -317,6 +324,9 @@
             "Fire Damage",
             "Debuffs"
         ],
+        "modifiers": {
+            "Inflicts:": "Burn"
+        },
         "synergies": {
             "include": [
                 "On Kill",
@@ -347,9 +357,9 @@
         "tags": [
             "Chance to Proc"
         ],
-        "modifiers": [
-            "Luck"
-        ],
+        "modifiers": {
+            "Affected by:": "Luck"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
@@ -463,9 +473,9 @@
         "tags": [
             "Chance to Proc"
         ],
-        "modifiers": [
-            "Luck"
-        ],
+        "modifiers": {
+            "Affected by:": "Luck"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
@@ -740,6 +750,9 @@
         "tags": [
             "Damage Reduction"
         ],
+        "modifiers": {
+            "Grants:": "Opal Armor"
+        },
         "synergies": {
             "include": [
                 "Damage Reduction",
@@ -780,9 +793,9 @@
         "procCoefficients": {
             "On Hit": "1.0"
         },
-        "modifiers": [
-            "Luck"
-        ],
+        "modifiers": {
+            "Affected by:": "Luck"
+        },
         "tags": [
             "Chance to Proc",
             "Can be Procced by",
@@ -894,9 +907,9 @@
         "procCoefficients": {
             "On Hit": "0.2"
         },
-        "modifiers": [
-            "Luck"
-        ],
+        "modifiers": {
+            "Affected by:": "Luck"
+        },
         "tags": [
             "Chance to Proc",
             "Can be Procced by"
@@ -952,9 +965,10 @@
             "Critical Strike Chance",
             "Attack Speed"
         ],
-        "modifiers": [
-            "Luck"
-        ],
+        "modifiers": {
+            "Grants:": "Attack Speed on Crit",
+            "Affected by:": "Luck"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
@@ -981,6 +995,9 @@
         "tags": [
             "Movement Speed"
         ],
+        "modifiers": {
+            "Grants:": "Whip Boost"
+        },
         "synergies": {
             "include": [
                 "Movement Speed",
@@ -1002,6 +1019,12 @@
             "At Low Health",
             "Movement Speed"
         ],
+        "modifiers": {
+            "Grants:": [
+                "Cloak",
+                "Cloak Speed"
+            ]
+        },
         "synergies": {
             "include": [
                 "Movement Speed",
@@ -1024,9 +1047,9 @@
             "Critical Strike Chance",
             "Healing"
         ],
-        "modifiers": [
-            "Luck"
-        ],
+        "modifiers": {
+            "Affected by:": "Luck"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
@@ -1125,6 +1148,9 @@
             "Movement Speed",
             "Attack Speed"
         ],
+        "modifiers": {
+            "Grants:": "War Cry"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
@@ -1165,11 +1191,19 @@
             "Cooldowns",
             "Debuffs"
         ],
+        "modifiers": {
+            "Inflicts:": "80% Slow",
+            "Grants:": [
+                "Element Rings Ready",
+                "Elemental Rings Cooldown"
+            ]
+        },
         "synergies": {
             "include": [
                 "Increased Damage",
                 "Chance to Proc",
-                "High Damage"
+                "High Damage",
+                "Blast Shower"
             ],
             "exclude": [
                 "Tri-Tip Dagger",
@@ -1192,11 +1226,18 @@
             "High Damage",
             "Cooldowns"
         ],
+        "modifiers": {
+            "Grants:": [
+                "Element Rings Ready",
+                "Elemental Rings Cooldown"
+            ]
+        },
         "synergies": {
             "include": [
                 "Increased Damage",
                 "Chance to Proc",
-                "High Damage"
+                "High Damage",
+                "Blast Shower"
             ],
             "exclude": [
                 "Tri-Tip Dagger",
@@ -1219,6 +1260,9 @@
             "Per Hit",
             "Debuffs"
         ],
+        "modifiers": {
+            "Inflicts:": "60% Slow"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
@@ -1274,6 +1318,9 @@
         "tags": [
             "Attack Speed"
         ],
+        "modifiers": {
+            "Grants:": "Energized"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
@@ -1397,7 +1444,9 @@
             "Enemies inflicted with at least <span yellow>4</span> debuffs take <span yellow>50%</span> more damage for <span blue>7s</span> <span gray>(+7s per stack)</span>.",
             "Pairs well with debuff infliction items."
         ],
-        "tags": [],
+        "modifiers": {
+            "Inflicts:": "Death Mark Boost"
+        },
         "synergies": {
             "include": [
                 "Debuffs"
@@ -1417,6 +1466,9 @@
             "Movement Speed",
             "On Kill"
         ],
+        "modifiers": {
+            "Grants:": "Kill Move Speed"
+        },
         "synergies": {
             "include": [
                 "Movement Speed",
@@ -1436,6 +1488,9 @@
         "tags": [
             "Debuffs"
         ],
+        "modifiers": {
+            "Inflicts:": "Stronger Burn"
+        },
         "synergies": {
             "include": [
                 "Fire Damage"
@@ -1457,6 +1512,9 @@
         "tags": [
             "Can be Procced by"
         ],
+        "modifiers": {
+            "Grants:": "Shuriken Count"
+        },
         "synergies": {
             "include": [
                 "Critical Strike Chance",
@@ -1581,6 +1639,9 @@
             "Can be Procced by",
             "Debuffs"
         ],
+        "modifiers": {
+            "Inflicts:": "80% Slow"
+        },
         "synergies": {
             "include": [
                 "Critical Strike Chance",
@@ -1793,9 +1854,9 @@
         "procCoefficients": {
             "On Hit": "0.33"
         },
-        "modifiers": [
-            "Luck"
-        ],
+        "modifiers": {
+            "Affected by:": "Luck"
+        },
         "tags": [
             "Chance to Proc",
             "Can be Procced by"
@@ -1876,6 +1937,9 @@
         "tags": [
             "On Death"
         ],
+        "modifiers": {
+            "Grants:": "Immune"
+        },
         "synergies": {
             "include": [
                 "On Death"
@@ -1938,6 +2002,9 @@
             "Elite Kills",
             "Skill Cooldown Reduction"
         ],
+        "modifiers": {
+            "Grants:": "No Cooldowns"
+        },
         "synergies": {
             "include": [
                 "Skill Cooldown Reduction",
@@ -1997,6 +2064,12 @@
             "Per Hit",
             "Debuffs"
         ],
+        "modifiers": {
+            "Inflicts:": [
+                "Pulverize Buildup",
+                "Pulverized"
+            ]
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
@@ -2025,6 +2098,9 @@
             "On Kill",
             "Can be Procced by"
         ],
+        "modifiers": {
+            "Grants:": "Resonance Disc Kill Charge"
+        },
         "synergies": {
             "include": [
                 "Critical Strike Chance",
@@ -2136,6 +2212,9 @@
             "Per Hit",
             "Debuffs"
         ],
+        "modifiers": {
+            "Inflicts:": "Permanent Armor Reduction"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
@@ -2153,12 +2232,20 @@
             "Pairs well with barrier and damage reduction items."
         ],
         "tags": [
-            "Barrier"
+            "Barrier",
+            "Cooldowns"
         ],
+        "modifiers": {
+            "Grants:": [
+                "Immune to Debuffs",
+                "Immune to Debuffs Cooldown"
+            ]
+        },
         "synergies": {
             "include": [
                 "Barrier",
-                "Damage Reduction"
+                "Damage Reduction",
+                "Blast Shower"
             ]
         }
     },
@@ -2316,6 +2403,7 @@
         "tags": [
             "Increased Health",
             "Amplified Healing",
+            "Increased Damage",
             "Movement Speed",
             "Attack Speed",
             "Critical Strike Chance",
@@ -2323,9 +2411,9 @@
             "Healing",
             "Boss"
         ],
-        "modifiers": [
-            "Luck"
-        ],
+        "modifiers": {
+            "Affected by:": "Luck"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
@@ -2403,6 +2491,9 @@
             "Fire Damage",
             "Debuffs"
         ],
+        "modifiers": {
+            "Inflicts:": "Burn"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
@@ -2431,9 +2522,10 @@
             "Critical Strike Chance",
             "Boss"
         ],
-        "modifiers": [
-            "Luck"
-        ],
+        "modifiers": {
+            "Inflicts:": "Bleed",
+            "Affected by:": "Luck"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
@@ -2457,6 +2549,9 @@
             "Debuffs",
             "Boss"
         ],
+        "modifiers": {
+            "Inflicts:": "Tar"
+        },
         "synergies": {
             "include": [
                 "Critical Strike Chance",
@@ -2598,10 +2693,13 @@
         ],
         "synergies": {
             "include": [
-                "Stage Generation"
+                "Stage Generation",
+                "Radar Scanner"
             ],
             "exclude": [
-                "Rusted Key"
+                "Rusted Key",
+                "Shipping Request Form",
+                "Encrusted Key"
             ]
         }
     },
@@ -2618,9 +2716,9 @@
             "Chance to Proc",
             "Void Items"
         ],
-        "modifiers": [
-            "Luck"
-        ],
+        "modifiers": {
+            "Affected by:": "Luck"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
@@ -2649,7 +2747,8 @@
                 "Special Skill"
             ],
             "exclude": [
-                "Fuel Cell"
+                "Fuel Cell",
+                "Hardlight Afterburner"
             ]
         }
     },
@@ -2660,20 +2759,22 @@
         "id": "needletick",
         "description": [
             "Gain <span yellow>+10%</span> chance <span gray>(+10% per stack)</span> to inflict an enemy with Collapse, dealing <span yellow400%</span> damage. <span purple>Corrupts all Tri-Tip Daggers</span>.",
-            "Pairs well with attack speed, proc chance, and debuff infliction items."
+            "Pairs well with attack speed, and proc chance items."
         ],
         "tags": [
             "Chance to Proc",
             "Void Items",
             "Debuffs"
         ],
-        "modifiers": [
-            "Luck"
-        ],
+        "modifiers": {
+            "Inflicts:": "Collapse",
+            "Affected by:": "Luck"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Can be Procced by"
+                "Can be Procced by",
+                "Death Mark"
             ],
             "exclude": [
                 "Tri-Tip Dagger"
@@ -2724,12 +2825,15 @@
         "synergies": {
             "include": [
                 "Attack Speed",
+                "Critical Strike Chance",
                 "Increased Damage",
                 "Shield",
-                "Chance to Proc"
+                "Chance to Proc",
+                "Per Hit"
             ],
             "exclude": [
-                "AtG Missile Mk. 1"
+                "AtG Missile Mk. 1",
+                "Crowbar"
             ]
         }
     },
@@ -2739,13 +2843,16 @@
         "type": "Item",
         "id": "pluripotent-larva",
         "description": [
-            "Grants <span green>+1</span> extra life <span gray>(+1 per stack)</span>, gain <span blue>3s</span> of invulnerability after resurrection. Consumed on use. <span purple>Corrupts all Dio's Best Friends. Corrupts items that have Void counterparts on death</span>.",
+            "Grants <span green>+1</span> extra life <span gray>(+1 per stack)</span>, gain <span blue>3s</span> of invulnerability after resurrection. Consumed on use. <span purple>Corrupts all Dio's Best Friends</span>. <span purple>Corrupts items that have Void counterparts on death</span>.",
             "Pairs well with on death effects."
         ],
         "tags": [
             "Void Items",
             "On Death"
         ],
+        "modifiers": {
+            "Grants:": "Immune"
+        },
         "synergies": {
             "include": [
                 "On Death"
@@ -2767,9 +2874,9 @@
         "procCoefficients": {
             "On Hit": "0.2"
         },
-        "modifiers": [
-            "Luck"
-        ],
+        "modifiers": {
+            "Affected by:": "Luck"
+        },
         "tags": [
             "Chance to Proc",
             "Can be Procced by",
@@ -2783,7 +2890,9 @@
                 "Can be Procced by"
             ],
             "exclude": [
-                "Ukulele"
+                "Ukulele",
+                "Polylute",
+                "Crowbar"
             ]
         }
     },
@@ -2794,19 +2903,22 @@
         "id": "safer-spaces",
         "description": [
             "Blocks the next source of incoming damage. <span blue>15s</span> cooldown <span gray>(-10% per stack)</span>. <span purple>Corrupts all Tougher Times</span>.",
-            "No currently known item synergies."
+            "Pairs well with Blast Shower."
         ],
         "tags": [
             "Damage Prevention",
             "Void Items",
             "Cooldowns"
         ],
+        "modifiers": {
+            "Grants:": [
+                "Safer Spaces Ready",
+                "Safer Spaces Cooldown"
+            ]
+        },
         "synergies": {
             "include": [
-                "Damage Reduction"
-            ],
-            "exclude": [
-                "Tougher Times"
+                "Blast Shower"
             ]
         }
     },
@@ -2831,9 +2943,11 @@
         ],
         "synergies": {
             "include": [
+                "Critical Strike Chance",
                 "Increased Damage",
                 "High Damage",
-                "Chance to Proc"
+                "Chance to Proc",
+                "Per Hit"
             ],
             "exclude": [
                 "Runald's Band",
@@ -2847,20 +2961,23 @@
         "type": "Item",
         "id": "tentabauble",
         "description": [
-            "Gain a <span yellow>5%</span> chance <span gray> (+5% per stack)</span> to root enemies on hit for <span blue>1s</span>. <span purple>Corrupts all Chronobaubles</span>."
+            "Gain a <span yellow>5%</span> chance <span gray> (+5% per stack)</span> to root enemies on hit for <span blue>1s</span>. <span purple>Corrupts all Chronobaubles</span>.",
+            "Pairs well with attack speed and proc chance items."
         ],
         "tags": [
             "Chance to Proc",
             "Void Items",
             "Debuffs"
         ],
-        "modifiers": [
-            "Luck"
-        ],
+        "modifiers": {
+            "Inflicts:": "Nullified",
+            "Affected by:": "Luck"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Can be Procced by"
+                "Can be Procced by",
+                "Death Mark"
             ]
         }
     },
@@ -2883,7 +3000,7 @@
             "include": [
                 "Increased Damage",
                 "Chance to Proc",
-                "Can be Procced by"
+                "Per Hit"
             ],
             "exclude": [
                 "Will-o'-the-Wisp"
@@ -2903,6 +3020,9 @@
             "Healing",
             "Void Items"
         ],
+        "modifiers": {
+            "Grants:": "Weeping Fungus Regeneration"
+        },
         "synergies": {
             "include": [
                 "Movement Speed",
@@ -2930,6 +3050,7 @@
                 "Attack Speed",
                 "Critical Strike Chance",
                 "Increased Damage",
+                "High Damage",
                 "Chance to Proc"
             ],
             "exclude": [
@@ -2956,12 +3077,14 @@
             "Lunar",
             "Money"
         ],
-        "modifiers": [
-            "Luck"
-        ],
+        "modifiers": {
+            "Affected by:": "Luck"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
+                "Critical Strike Chance",
+                "Increased Damage",
                 "Can be Procced by",
                 "Money",
                 "Executive Card"
@@ -3030,7 +3153,17 @@
                 "Equipment Cooldown Reduction",
                 "Equipment"
             ],
-            "exclude": []
+            "exclude": [
+                "Effigy of Grief",
+                "Volcanic Egg",
+                "Milky Chrysalis",
+                "Trophy Hunter's Tricorn",
+                "Executive Card",
+                "The Crowdfunder",
+                "Gnarled Woodsprite",
+                "Eccentric Vase",
+                "Recycler"
+            ]
         }
     },
     {
@@ -3183,12 +3316,14 @@
         "tags": [
             "Lunar"
         ],
+        "modifiers": {
+            "Grants:": "Power Buff"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Chance to Proc",
-                "Per Hit"
+                "Increased Damage"
             ],
             "exclude": []
         }
@@ -3236,6 +3371,9 @@
             "Heresy Items",
             "Debuffs"
         ],
+        "modifiers": {
+            "Inflicts:": "Lunar Root"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
@@ -3245,6 +3383,7 @@
                 "Per Hit",
                 "Skill Cooldown Reduction",
                 "Backup Magazine",
+                "Death Mark",
                 "Heresy Items"
             ],
             "exclude": [
@@ -3288,6 +3427,7 @@
             "include": [
                 "Critical Strike Chance",
                 "Increased Damage",
+                "High Damage",
                 "Chance to Proc",
                 "Per Hit"
             ],
@@ -3371,6 +3511,7 @@
             "include": [
                 "Attack Speed",
                 "Skill Cooldown Reduction",
+                "Backup Magazine",
                 "Skills"
             ],
             "exclude": []
@@ -3383,7 +3524,7 @@
         "id": "essence-of-heresy",
         "description": [
             "Replaces Special skill with Ruin. Dealing damage adds a stack of ruin that lasts for <span blue>10s</span> <span gray>(+10s per stack)</span>, activate the skill to detonate enemies inflicted with ruin dealing <span yellow>300%</span> + <span yellow>120%</span> damage per stack of ruin. <span blue>8s</span> <span gray>(+8s per stack)</span> cooldown.",
-            "Pairs well with attack speed, critical strike chance, and debuff infliction items."
+            "Pairs well with attack speed and increased damage items."
         ],
         "tags": [
             "Lunar",
@@ -3391,11 +3532,15 @@
             "Special Skill",
             "Heresy Items"
         ],
+        "modifiers": {
+            "Inflicts:": "Ruin"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Per Hit",
+                "Increased Damage",
+                "Death Mark",
                 "Heresy Items"
             ],
             "exclude": []
@@ -3421,6 +3566,7 @@
             "include": [
                 "Critical Strike Chance",
                 "Increased Damage",
+                "High Damage",
                 "Chance to Proc",
                 "Equipment Cooldown Reduction"
             ],
@@ -3449,21 +3595,21 @@
         "id": "helfire-tincture",
         "description": [
             "Ignite all enemies and allies within <span yellow>15m</span> for <span blue>12s</span> dealing <span yellow>5%</span> of max health per second as burn damage. Burn damage is <span yellow>0.5x</span> stronger toward you, <span yellow>0.25x</span> stronger toward allies, and <span yellow>25x</span> stronger toward enemies. <span blue>45s</span> cooldown.",
-            "Pairs well with items that activate after taking damage, debuff inflictions, and damage reduction items."
+            "Pairs well with items that activate after taking damage, and damage reduction items."
         ],
         "tags": [
             "Lunar",
             "Equipment",
-            "Fire Damage",
             "Damage Taken",
             "Debuffs"
         ],
+        "modifiers": {
+            "Inflicts:": "Helfire Tincture"
+        },
         "synergies": {
             "include": [
-                "Increased Damage",
                 "Damage Taken",
-                "Damage Reduction",
-                "Ignition Tank"
+                "Damage Reduction"
             ],
             "exclude": [
                 "Equipment",
@@ -3478,21 +3624,27 @@
         "id": "effigy-of-grief",
         "description": [
             "Places a totem at the user's cursor. Enemies and allies within the totem's radius are inflicted with cripple, slowed by <span blue>50%</span>, and have <span yellow>20</span> less armor. <span blue>15s</span> cooldown.",
-            "Pairs well with attack speed, increased damage, debuff inflictions, and equipment cooldown reduction items."
+            "Pairs well with attack speed, increased damage, and equipment cooldown reduction items."
         ],
         "tags": [
             "Lunar",
             "Equipment",
             "Debuffs"
         ],
+        "modifiers": {
+            "Inflicts:": "Cripple"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
+                "Critical Strike Chance",
+                "Increased Damage",
                 "Equipment Cooldown Reduction"
             ],
             "exclude": [
                 "Equipment",
-                "Aspect"
+                "Aspect",
+                "Gesture of the Drowned"
             ]
         }
     },
@@ -3515,13 +3667,16 @@
             "Equipment",
             "High Damage"
         ],
+        "modifiers": {
+            "Grants:": "Tonic Buff"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Increased Damage",
                 "Healing",
                 "Critical Strike Chance",
                 "Movement Speed",
+                "Increased Damage",
                 "Damage Reduction",
                 "Equipment Cooldown Reduction"
             ],
@@ -3553,11 +3708,13 @@
             "include": [
                 "Critical Strike Chance",
                 "Increased Damage",
+                "High Damage",
                 "Chance to Proc",
                 "Equipment Cooldown Reduction",
                 "Per Hit"
             ],
             "exclude": [
+                "Equipment",
                 "Bundle of Fireworks",
                 "Will-o'-the-Wisp",
                 "Razorwire",
@@ -3570,15 +3727,7 @@
                 "Genesis Loop",
                 "Skills",
                 "Egocentricism",
-                "Spinel Tonic",
-                "Preon Accumulator",
-                "Royal Capacitor",
-                "Molotov (6-Pack)",
-                "The Crowdfunder",
-                "Volcanic Egg",
-                "Sawmerang",
                 "Aspect",
-                "Ocular HUD",
                 "AtG Missile Mk. 1",
                 "Plasma Shrimp"
             ]
@@ -3612,14 +3761,13 @@
         "id": "primordial-cube",
         "description": [
             "Create a blackhole that draws in enemies within <span yellow>30m</span> for <span blue>10s</span>. <span blue>60s</span> cooldown.",
-            "Pairs well with on kill effects and equipment cooldown reduction items."
+            "Pairs well with equipment cooldown reduction items."
         ],
         "tags": [
             "Equipment"
         ],
         "synergies": {
             "include": [
-                "On Kill",
                 "Equipment Cooldown Reduction"
             ],
             "exclude": [
@@ -3659,6 +3807,9 @@
             "Equipment",
             "Critical Strike Chance"
         ],
+        "modifiers": {
+            "Grants:": "Full Crit"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
@@ -3671,8 +3822,7 @@
             "exclude": [
                 "Equipment",
                 "Aspect",
-                "Lens Maker's Glasses",
-                "Irradiant Pearl"
+                "Lens Maker's Glasses"
             ]
         }
     },
@@ -3683,14 +3833,15 @@
         "id": "the-backup",
         "description": [
             "Summon <span yellow>4</span> Strike Drones that last <span blue>25s</span>. <span blue>100s</span> cooldown.",
-            "Pairs well with ally summons and equipment cooldown reduction items."
+            "Pairs well with Spare Drone Parts and Empathy Cores."
         ],
         "tags": [
             "Equipment"
         ],
         "synergies": {
             "include": [
-                "Ally Summons"
+                "Spare Drone Parts",
+                "Empathy Cores"
             ],
             "exclude": [
                 "Equipment"
@@ -3719,6 +3870,7 @@
             "include": [
                 "Critical Strike Chance",
                 "Increased Damage",
+                "High Damage",
                 "Chance to Proc",
                 "Equipment Cooldown Reduction",
                 "Per Hit"
@@ -3736,15 +3888,7 @@
                 "Genesis Loop",
                 "Skills",
                 "Egocentricism",
-                "Spinel Tonic",
-                "Disposable Missile Launcher",
-                "Preon Accumulator",
-                "Royal Capacitor",
-                "Molotov (6-Pack)",
-                "Ocular HUD",
-                "The Crowdfunder",
-                "Volcanic Egg",
-                "Sawmerang",
+                "Equipment",
                 "Aspect"
             ]
         }
@@ -3756,7 +3900,7 @@
         "id": "goobo-jr",
         "description": [
             "Summon a gummy clone with <span green>300%</span> health and <span yellow>300%</span> damage. Lasts <span blue>30s</span>, <span blue>100s</span> cooldown.",
-            "Pairs well with ally summons and equipment cooldown reduction items."
+            "Pairs well with Empathy Cores."
         ],
         "tags": [
             "Equipment"
@@ -3765,8 +3909,7 @@
             "include": [
                 "Ally Summons",
                 "Equipment Cooldown Reduction"
-            ],
-            "exclude": []
+            ]
         }
     },
     {
@@ -3786,9 +3929,11 @@
         "synergies": {
             "include": [
                 "Movement Speed",
-                "Mobility"
+                "Mobility",
+                "Equipment Cooldown Reduction"
             ],
             "exclude": [
+                "Gesture of the Drowned",
                 "Equipment"
             ]
         }
@@ -3814,6 +3959,7 @@
             "include": [
                 "Critical Strike Chance",
                 "Increased Damage",
+                "High Damage",
                 "Chance to Proc",
                 "Equipment Cooldown Reduction",
                 "Per Hit"
@@ -3831,16 +3977,7 @@
                 "Genesis Loop",
                 "Skills",
                 "Egocentricism",
-                "Spinel Tonic",
-                "Preon Accumulator",
-                "Royal Capacitor",
-                "Molotov (6-Pack)",
-                "The Crowdfunder",
-                "Volcanic Egg",
-                "Sawmerang",
-                "Aspect",
-                "Ocular HUD",
-                "Disposable Missile Launcher"
+                "Equipment"
             ]
         }
     },
@@ -3851,7 +3988,7 @@
         "id": "molotov-6-pack",
         "description": [
             "Throw <span yellow>6</span> molotovs that ignite nearby enemies for <span yellow>500%</span> base damage, each molotov leaves a burning area that deals <span yellow>200%</span> damage per second. <span blue>45s</span> cooldown.",
-            "Pairs well with proc chance, debuff inflictions, and equipment cooldown reduction items"
+            "Pairs well with proc chance, and equipment cooldown reduction items"
         ],
         "procCoefficients": {
             "On Hit": "1.0",
@@ -3864,6 +4001,9 @@
             "Fire Damage",
             "Debuffs"
         ],
+        "modifiers": {
+            "Inflicts:": "Burn"
+        },
         "synergies": {
             "include": [
                 "Chance to Proc",
@@ -3884,14 +4024,15 @@
         "id": "executive-card",
         "description": [
             "Get <span yellow>10%</span> off all purchases made useing gold, all multishop contents become available for purchase. <span blue>0.1s</span> cooldown.",
-            "No currently known item synergies."
+            "Pairs well with the Recycler."
         ],
         "tags": [
             "Equipment"
         ],
         "synergies": {
-            "include": [],
-            "exclude": []
+            "include": [
+                "Recycler"
+            ]
         }
     },
     {
@@ -3917,6 +4058,7 @@
                 "Per Hit"
             ],
             "exclude": [
+                "Focus Crystal",
                 "Bundle of Fireworks",
                 "Razorwire",
                 "Shuriken",
@@ -3954,7 +4096,8 @@
                 "Equipment Cooldown Reduction"
             ],
             "exclude": [
-                "Equipment"
+                "Equipment",
+                "Gesture of the Drowned"
             ]
         }
     },
@@ -3986,7 +4129,7 @@
         "id": "eccentric-vase",
         "description": [
             "Create a quantum tunnel at your cursor up to <span yellow>1,000m</span> away. Lasts for <span blue>30s</span>, <span blue>45s</span> cooldown.",
-            "Pairs well with mobility and eqipment cooldown reduction items."
+            "Pairs well with mobility and equipment cooldown reduction items."
         ],
         "tags": [
             "Equipment"
@@ -3997,7 +4140,8 @@
                 "Equipment Cooldown Reduction"
             ],
             "exclude": [
-                "Equipment"
+                "Equipment",
+                "Gesture of the Drowned"
             ]
         }
     },
@@ -4042,6 +4186,7 @@
             "include": [
                 "Critical Strike Chance",
                 "Increased Damage",
+                "High Damage",
                 "Movement Speed",
                 "Chance to Proc",
                 "Equipment Cooldown Reduction",
@@ -4078,6 +4223,9 @@
             "Equipment",
             "Damage Reduction"
         ],
+        "modifiers": {
+            "Grants:": "Armor Boost"
+        },
         "synergies": {
             "include": [
                 "Damage Taken",
@@ -4095,7 +4243,8 @@
         "type": "Item",
         "id": "sawmerang",
         "description": [
-            "Throw <span yellow>3</span> Sawmerangs that deal <span yellow>400%</span> damage, pierce enemies, and inflict bleed for <span yellow>100%</span> damage per second. <span blue>45s</span> cooldown."
+            "Throw <span yellow>3</span> Sawmerangs that deal <span yellow>400%</span> damage, pierce enemies, and inflict bleed for <span yellow>100%</span> damage per second. <span blue>45s</span> cooldown.",
+            "Pairs well with increased damage, proc chance, and equipment cooldown reduction items."
         ],
         "procCoefficients": {
             "On Hit": "1.0",
@@ -4107,6 +4256,9 @@
             "High Damage",
             "Debuffs"
         ],
+        "modifiers": {
+            "Inflicts:": "Bleed"
+        },
         "synergies": {
             "include": [
                 "Critical Strike Chance",
@@ -4148,10 +4300,36 @@
         "synergies": {
             "include": [
                 "Equipment Cooldown Reduction",
-                "Trophy Hunter's Tricorn"
+                "Equipment"
             ],
             "exclude": [
-                "Gesture of the Drowned"
+                "Gesture of the Drowned",
+                "Glowing Meteorite",
+                "Helfire Tincture",
+                "Effigy of Grief",
+                "Spinel Tonic",
+                "Disposable Missile Launcher",
+                "Foreign Fruit",
+                "Primordial Cube",
+                "Ocular HUD",
+                "The Backup",
+                "Preon Accumulator",
+                "Goobo Jr.",
+                "Milky Chrysalis",
+                "Royal Capacitor",
+                "Molotov (6-Pack)",
+                "The Crowdfunder",
+                "Gnarled Woodsprite",
+                "Eccentric Vase",
+                "Blast Shower",
+                "Volcanic Egg",
+                "Jade Elephant",
+                "Sawmerang",
+                "Recycler",
+                "Super Massive Leech",
+                "Gorag's Opus",
+                "Forgive Me Please",
+                "Remote Caffeinator"
             ]
         }
     },
@@ -4167,9 +4345,14 @@
         "tags": [
             "Equipment"
         ],
+        "modifiers": {
+            "Grants:": "Life Steal"
+        },
         "synergies": {
             "include": [
                 "Critical Strike Chance",
+                "Increased Damage",
+                "High Damage",
                 "Amplified Healing",
                 "Equipment Cooldown Reduction"
             ],
@@ -4193,6 +4376,9 @@
             "Attack Speed",
             "Movement Speed"
         ],
+        "modifiers": {
+            "Grants:": "War Cry"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
@@ -4253,7 +4439,7 @@
         "id": "remote-caffeinator",
         "description": [
             "Call in a vending machine that lands after <span blue>5s</span> dealing <span yellow>2,000%</span> damage to nearby enemies. Interact to purchase <span yellow>3</span> soda cans which heal allies within <span yellow>25m</span> for <span green>25%</span> of max health, can be used <span yellow>12</span> times. Each purchase costs <span yellow>5</span> gold, cost scales with time. <span blue>60s</span> cooldown.",
-            "Pairs well with increased damage, proc chance, items that activate on interaction, and equipment cooldown reduction."
+            "Pairs well with items that activate on interaction and equipment cooldown reduction."
         ],
         "procCoefficients": {
             "On Hit": "1.0"
@@ -4264,8 +4450,6 @@
         ],
         "synergies": {
             "include": [
-                "Critical Strike Chance",
-                "Chance to Proc",
                 "On Interaction Effects",
                 "Equipment Cooldown Reduction"
             ],
@@ -4301,12 +4485,16 @@
             "Fire Damage",
             "Debuffs"
         ],
+        "modifiers": {
+            "Grants:": "Blazing",
+            "Inflicts:": "Burn"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
                 "Can be Procced by",
-                "Per Hit",
-                "Ignition Tank"
+                "Ignition Tank",
+                "Death Mark"
             ],
             "exclude": [
                 "Equipment",
@@ -4321,20 +4509,23 @@
         "id": "his-reassurance",
         "description": [
             "Heal allies within <span yellow>30m</span> for <span green>40%</span> of the holder's base damage <span yellow>4</span> times per second, drop a healing orb on death.",
-            "Pairs well with amplified healing items."
+            "Pairs well with on death effect items."
         ],
         "tags": [
             "Aspect",
             "Healing",
             "On Death"
         ],
+        "modifiers": {
+            "Grants:": "Mending"
+        },
         "synergies": {
             "include": [
-                "Amplified Healing",
                 "On Death"
             ],
             "exclude": [
-                "Equipment"
+                "Equipment",
+                "Aspect"
             ]
         }
     },
@@ -4351,6 +4542,9 @@
             "Aspect",
             "Per Hit"
         ],
+        "modifiers": {
+            "Grants:": "Overloading"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
@@ -4374,7 +4568,7 @@
         "id": "her-biting-embrace",
         "description": [
             "All attacks greatly slow enemies for <span blue>1.5s</span> multiplied by the attack's proc coefficient, explode on death and freeze nearby enemies.",
-            "Pairs well with attack speed, debuff infliction, and proc chance items."
+            "Pairs well with attack speed and proc chance items."
         ],
         "tags": [
             "Aspect",
@@ -4382,12 +4576,16 @@
             "On Death",
             "Debuffs"
         ],
+        "modifiers": {
+            "Grants:": "Glacial",
+            "Inflicts:": "80% Slow"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
                 "Can be Procced by",
-                "Per Hit",
-                "On Death"
+                "On Death",
+                "Death Mark"
             ],
             "exclude": [
                 "Equipment",
@@ -4402,20 +4600,27 @@
         "id": "nkuhanas-retort",
         "description": [
             "All attacks inflict the Healing Disabled debuff for <span blue>8s</span>. The holder periodically releases <span yellow>3</span>-<span yellow>4</span> malachite spikes which explode on impact and deal <span yellow>100%</span> damage, explosions leave lingering malachite spikes. Summon a Malachite Urchin on death which will shoot at nearby monsters.",
-            "Pairs well with attack speed, proc chance, and debuff infliction items."
+            "Pairs well with attack speed and proc chance items."
         ],
         "tags": [
             "Aspect",
             "Per Hit",
             "Debuffs"
         ],
+        "modifiers": {
+            "Grants:": "Malachite",
+            "Inflicts:": "Healing Disabled"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
                 "Can be Procced by",
-                "Per Hit"
+                "Death Mark"
             ],
-            "exclude": []
+            "exclude": [
+                "Equipment",
+                "Aspect"
+            ]
         }
     },
     {
@@ -4425,18 +4630,22 @@
         "id": "spectral-circlet",
         "description": [
             "Attacks greatly slow enemies, nearby allies are made invisible.",
-            "Pairs well with attack speed, proc chance, and debuff infliction items."
+            "Pairs well with attack speed, proc chance, items."
         ],
         "tags": [
             "Aspect",
             "Per Hit",
             "Debuffs"
         ],
+        "modifiers": {
+            "Grants:": "Celestine",
+            "Inflicts:": "80% Slow"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
                 "Can be Procced by",
-                "Per Hit"
+                "Death Mark"
             ],
             "exclude": [
                 "Equipment",
@@ -4451,7 +4660,7 @@
         "id": "shared-design",
         "description": [
             "Gain <span yellow>+30%</span> movement speed and <span green>+25%</span> max health, all health is converted to shield. Attacks inflict the Cripple debuff. Fire <span yellow>4</span> bombs every <span blue>10s</span> dealing <span yellow>30%</span> damage.",
-            "Pairs well with attack speed, movement speed, increased damage, debuff inflictions, shields, and increased health items."
+            "Pairs well with attack speed, movement speed, increased damage, shields, and increased health items."
         ],
         "procCoefficients": {
             "Projectile": "1.0"
@@ -4462,15 +4671,20 @@
             "Can be Procced by",
             "Debuffs"
         ],
+        "modifiers": {
+            "Grants:": "Perfected",
+            "Inflicts:": "Cripple"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Critical Strike Chance",
                 "Movement Speed",
+                "Critical Strike Chance",
                 "Chance to Proc",
                 "Shield",
                 "Increased Health",
-                "Per Hit"
+                "Per Hit",
+                "Death Mark"
             ],
             "exclude": [
                 "Equipment",
