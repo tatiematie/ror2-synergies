@@ -1,4 +1,4 @@
-const appVersion = '1.2.4.1'
+const appVersion = '1.2.5'
 const itemDesc = document.querySelector('#item-description')
 const itemSelect = document.querySelector('#item-select')
 let selectButtons
@@ -20,7 +20,7 @@ let itemData, currentItem
 
 const createButton = (item) => {
     const { name, rarity, id } = item
-    const src = `assets/img/items/${id}.png`
+    const src = `assets/img/${id}.png`
 
     const li = document.createElement('li'),
         button = document.createElement('a'),
@@ -57,7 +57,7 @@ const updateDisplay = () => {
 
     } else {
         const { name, rarity, type, id, description, procCoefficients, modifiers } = currentItem
-        const src = `assets/img/items/${id}.png`
+        const src = `assets/img/${id}.png`
 
         displayPane.innerHTML = ''
 
@@ -144,49 +144,99 @@ const updateDisplay = () => {
             descriptionDetails.appendChild(procCoefficientTable)
         }
 
-        const existingModifiersTable = itemDesc.querySelector('#modifiers-table')
-        const modifiersTitle = itemDesc.querySelector('.modifiers.title')
-        if (existingModifiersTable && modifiersTitle) {
-            modifiersTitle.remove()
-            existingModifiersTable.remove()
+        function formatString(str) {
+            return str.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]+/g, '');
         }
+        if (modifiers !== undefined && typeof modifiers === 'object') {
+            for (const [modifierTitle, modifierValue] of Object.entries(modifiers)) {
+                const modifierTable = document.createElement('table');
+                const modifierTitleElement = document.createElement('p');
+                modifierTitleElement.innerHTML = modifierTitle;
+                modifierTitleElement.classList.add('modifiers', 'title');
 
-        if (modifiers !== undefined) {
-            const modifiersTableTitle = document.createElement('p');
-            modifiersTableTitle.innerHTML = 'Affected by:';
-            modifiersTableTitle.classList.add('modifiers', 'title');
-            descriptionDetails.appendChild(modifiersTableTitle);
+                descriptionDetails.appendChild(modifierTitleElement);
+                descriptionDetails.appendChild(modifierTable);
 
-            const modifiersTable = document.createElement('table');
-            modifiersTable.id = 'modifiers-table';
+                if (Array.isArray(modifierValue)) {
+                    for (const entry of modifierValue) {
+                        const modifierRow = document.createElement('tr');
+                        const modifierData = document.createElement('td');
+                        modifierData.innerHTML = entry;
 
-            for (const entry of modifiers) {
-                const modifierRow = document.createElement('tr');
+                        const matchingItems = itemData.filter(
+                            item => item.name === entry || (item.tags && item.tags.includes(entry))
+                        );
 
-                const modifierLabelCell = document.createElement('td');
+                        if (matchingItems.length === 0) {
+                            const spanElement = document.createElement('span');
+                            const imageElement = document.createElement('img');
+                            const formattedEntry = formatString(entry);
 
-                modifierLabelCell.innerHTML = entry
+                            imageElement.src = `assets/img/${formattedEntry}.png`;
+                            imageElement.alt = entry;
+                            imageElement.title = entry;
+                            imageElement.loading = 'lazy';
 
-                const matchingItems = itemData.filter(item => item.name === entry || (item.tags && item.tags.includes(entry)));
+                            spanElement.appendChild(imageElement);
+                            modifierData.appendChild(spanElement);
+                        } else {
+                            for (const matchingItem of matchingItems) {
+                                const spanElement = document.createElement('span');
+                                const imageElement = document.createElement('img');
 
-                for (const matchingItem of matchingItems) {
-                    const modifierSpan = document.createElement('span');
-                    const modifierImage = document.createElement('img');
+                                imageElement.src = `assets/img/${matchingItem.id}.png`;
+                                imageElement.alt = matchingItem.name;
+                                imageElement.title = matchingItem.name;
+                                imageElement.loading = 'lazy';
 
-                    modifierImage.src = `assets/img/items/${matchingItem.id}.png`;
-                    modifierImage.alt = matchingItem.name;
-                    modifierImage.title = matchingItem.name;
-                    modifierImage.loading = 'lazy';
+                                modifierData.appendChild(spanElement);
+                                spanElement.appendChild(imageElement);
+                            }
+                        }
 
-                    modifierSpan.appendChild(modifierImage);
-                    modifierLabelCell.appendChild(modifierSpan);
+                        modifierRow.appendChild(modifierData);
+                        modifierTable.appendChild(modifierRow);
+                    }
+                } else {
+                    const modifierRow = document.createElement('tr');
+                    const modifierData = document.createElement('td');
+                    modifierData.innerHTML = modifierValue;
+
+                    const matchingItems = itemData.filter(
+                        item => item.name === modifierValue || (item.tags && item.tags.includes(modifierValue))
+                    );
+
+                    if (matchingItems.length === 0) {
+                        const spanElement = document.createElement('span');
+                        const imageElement = document.createElement('img');
+                        const formattedValue = formatString(modifierValue);
+
+                        imageElement.src = `assets/img/${formattedValue}.png`;
+                        imageElement.alt = modifierValue;
+                        imageElement.title = modifierValue;
+                        imageElement.loading = 'lazy';
+
+                        spanElement.appendChild(imageElement);
+                        modifierData.appendChild(spanElement);
+                    } else {
+                        for (const matchingItem of matchingItems) {
+                            const spanElement = document.createElement('span');
+                            const imageElement = document.createElement('img');
+
+                            imageElement.src = `assets/img/${matchingItem.id}.png`;
+                            imageElement.alt = matchingItem.name;
+                            imageElement.title = matchingItem.name;
+                            imageElement.loading = 'lazy';
+
+                            modifierData.appendChild(spanElement);
+                            spanElement.appendChild(imageElement);
+                        }
+                    }
+
+                    modifierRow.appendChild(modifierData);
+                    modifierTable.appendChild(modifierRow);
                 }
-
-                modifierRow.appendChild(modifierLabelCell);
-                modifiersTable.appendChild(modifierRow);
             }
-
-            descriptionDetails.appendChild(modifiersTable);
         }
 
         updateSynergyList(currentItem)
@@ -210,7 +260,7 @@ const setActive = () => {
 
 const updateSynergyList = (currentItem) => {
     let { name, id, synergies } = currentItem
-    const src = `assets/img/items/${currentItem.id}.png`
+    const src = `assets/img/${currentItem.id}.png`
 
     itemSynergies.innerHTML = ''
 
@@ -258,7 +308,7 @@ const updateSynergyList = (currentItem) => {
                     synergyListButton = document.createElement('a'),
                     synergyListImg = document.createElement('img')
 
-                synergyListImg.src = `assets/img/items/${id}.png`
+                synergyListImg.src = `assets/img/${id}.png`
                 synergyListImg.alt = name
                 synergyListImg.title = name
                 synergyListImg.loading = 'lazy'
@@ -330,37 +380,20 @@ const initializePage = async () => {
 
     selectButtons = itemSelect.querySelectorAll('.item a')
 
-    let canScroll = false
-
     setTimeout(() => {
         updateDisplay()
-
-        canScroll = true
-    }, 1);
-
-    document.addEventListener('click', (event) => {
-        if (event.target.closest('.item') && canScroll) {
-            displayPane.parentNode.parentNode.scrollIntoView({ behavior: 'smooth', block: 'start' })
-        }
-    })
+    }, 25)
 
     window.addEventListener('popstate', updateDisplay)
 
     window.addEventListener('popstate', setActive)
 
-    const footer = document.querySelector('#footer')
+    const footer = document.querySelector('#footer'),
+        versionTag = footer.querySelector('#version'),
+        copyrightTag = footer.querySelector('#copyrightYear')
 
-    let versionTag = document.createElement('p'),
-        copyrightTag = document.createElement('p')
-    const copyrightYear = new Date().getFullYear()
-
-    versionTag.id = 'app-version'
-    versionTag.innerHTML = `made by tatiematie, v${appVersion}`
-
-    copyrightTag.innerHTML = `not affiliated with Hopoo Games, Risk of Rain 2 &copy ${copyrightYear} Hopoo Games`
-
-    footer.appendChild(versionTag)
-    footer.appendChild(copyrightTag)
+    versionTag.innerHTML = `${appVersion}`
+    copyrightTag.innerHTML = new Date().getFullYear()
 
     console.log(`Verison ${appVersion}`)
 
@@ -368,3 +401,16 @@ const initializePage = async () => {
 }
 
 initializePage()
+
+document.addEventListener('click', (event) => {
+    const displayPane = document.querySelector('#display-pane .heading')
+
+    if (event.target.closest('.item')) {
+        setTimeout(() => {
+            displayPane.parentNode.parentNode.scrollIntoView({ behavior: 'smooth', block: 'start' })
+
+            console.log(event.target)
+
+        }, 25)
+    }
+})
