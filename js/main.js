@@ -1,4 +1,4 @@
-const appVersion = '1.2.5.3'
+const appVersion = '1.2.5.4'
 const itemDesc = document.querySelector('#item-description')
 const itemSelect = document.querySelector('#item-select')
 let selectButtons

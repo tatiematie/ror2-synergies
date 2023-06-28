@@ -3457,6 +3457,9 @@
             "Lunar",
             "Stage Generation"
         ],
+        "modifiers": {
+            "Affected by:": "Luck"
+        },
         "synergies": {
             "include": [
                 "Stage Generation"
