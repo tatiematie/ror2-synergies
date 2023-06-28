@@ -1547,9 +1547,7 @@
         ],
         "synergies": {
             "include": [
-                "Stage Generation",
-                "Money",
-                "Executive Card"
+                "Stage Generation"
             ],
             "exclude": [
                 "Rusted Key",
@@ -1875,7 +1873,6 @@
             "exclude": [
                 "On Kill",
                 "Genesis Loop",
-                "Sentient Meat Hook",
                 "Crowbar"
             ]
         }
