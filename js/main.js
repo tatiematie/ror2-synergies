@@ -1,4 +1,4 @@
-const appVersion = '1.2.6'
+const appVersion = '1.2.6.1'
 const itemDesc = document.querySelector('#item-description'),
     itemSelect = document.querySelector('#item-select'),
     itemSynergies = document.querySelector('#item-synergies'),
@@ -471,7 +471,5 @@ document.addEventListener('click', (event) => {
         }, 25)
     }
 })
-
-
 
 initializePage()

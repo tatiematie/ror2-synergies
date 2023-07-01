@@ -177,6 +177,7 @@
 .pane .item a[active] {
   outline: 2px solid #EEE287;
   outline-offset: 3px;
+  z-index: 100;
 }
 .pane .item a[active]:before, .pane .item a[active]:after {
   background-color: #FAFDC3;

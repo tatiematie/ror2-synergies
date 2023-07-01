@@ -261,6 +261,7 @@ $colors: (
             &[active] {
                 outline: 2px solid map-get($colors, dark_yellow);
                 outline-offset: 3px;
+                z-index: 100;
     
                 &:before, &:after {
                     background-color: map-get($colors, light_yellow);
