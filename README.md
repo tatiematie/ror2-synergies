@@ -34,4 +34,4 @@ Implemented item synergies into the display panel. Selecting an item will show o
 Will implement survivor-item synergies into the display panel. Selecting an item will show survivors and skills that use it well.
 
 ## Feedback
-Questions, comments, and suggestions are always welcome. Join [the Discord](https://discord.gg/gWURk7sknk) and share your thoughts.
+Questions, comments, and suggestions are always welcome. Join the [Discord](https://discord.gg/gWURk7sknk) and share your thoughts.
