@@ -1,4 +1,4 @@
-const appVersion = '1.2.6.1'
+const appVersion = '1.2.6.2'
 const itemDesc = document.querySelector('#item-description'),
     itemSelect = document.querySelector('#item-select'),
     itemSynergies = document.querySelector('#item-synergies'),
@@ -370,7 +370,7 @@ const handleButtonClick = (item, button) => {
 const handleSearchInput = (event) => {
     if (document.activeElement === itemSearch) {
         const input = itemSearch.value
-        const sanitizedInput = input.replace(/[^A-Za-z0-9-' ]/g, '').replace(/\s{2,}/g, ' ')
+        const sanitizedInput = input.replace(/[^a-z0-9-.()'\s]+/g, '').replace(/\s{2,}/g, ' ');
 
         itemSearch.value = sanitizedInput
 
@@ -446,7 +446,6 @@ const initializePage = async () => {
     window.addEventListener('popstate', setActive)
 
     itemSearch.value = ''
-    itemSearch.focus()
 
     itemSearch.addEventListener('input', handleSearchInput)
 
@@ -463,12 +462,23 @@ const initializePage = async () => {
 }
 
 document.addEventListener('click', (event) => {
-    const displayPane = document.querySelector('#display-pane .heading')
+    const displayPane = document.querySelector('#display-pane .heading'),
+        buttons = itemSelect.querySelectorAll('.item'),
+        resultCount = document.querySelector('#result-count')
 
-    if (event.target.closest('.item') && canScroll) {
-        setTimeout(() => {
-            displayPane.parentNode.parentNode.scrollIntoView({ behavior: 'smooth', block: 'start' })
-        }, 25)
+    if (event.target.closest('.item')) {
+        if (canScroll) {
+            setTimeout(() => {
+                displayPane.parentNode.parentNode.scrollIntoView({ behavior: 'smooth', block: 'start' })
+            }, 25)
+        }
+
+        itemSearch.value = ''
+        resultCount.innerHTML = ''
+        itemSelect.removeAttribute('style')
+        buttons.forEach((button) => {
+            button.removeAttribute('style')
+        })
     }
 })
 
