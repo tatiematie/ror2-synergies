@@ -255,15 +255,15 @@
         "id": "cautious-slug",
         "description": [
             "Heal <span green>3hp</span> <span gray>(+3hp per stack)</span> per second while outside of danger.",
-            "Pairs well with amplified healing and damage prevention items."
+            "Pairs well with damage prevention and regeneration items."
         ],
         "tags": [
             "Regeneration"
         ],
         "synergies": {
             "include": [
-                "Amplified Healing",
-                "Damage Prevention"
+                "Damage Prevention",
+                "Regeneration"
             ]
         }
     },
@@ -1256,7 +1256,7 @@
         "id": "chronobauble",
         "description": [
             "Slow enemies by <span blue>60%</span> for <span blue>2s</span> <span gray>(+2s per stack)</span> on hit.",
-            "Pairs well with attack speed and proc chance items."
+            "Pairs well with proc chance items."
         ],
         "tags": [
             "Per Hit",
@@ -1366,7 +1366,7 @@
         "id": "razorwire",
         "description": [
             "Taking damage hits up to <span yellow>5</span> enemies <span gray>(+2 per stack)</span> within <span yellow>25m</span> <span gray>(+10m per stack)</span> for <span yellow>160%</span> damage.",
-            "Pairs well with increased damage, items that activate after taking damage, and proc chance items."
+            "Pairs well with increased damage, proc chance, damage reduction, and items that activate after taking damage items."
         ],
         "procCoefficients": {
             "On Hit": "0.5"
@@ -1379,8 +1379,9 @@
             "include": [
                 "Critical Strike Chance",
                 "Increased Damage",
-                "Damage Taken",
                 "Chance to Proc",
+                "Damage Reduction",
+                "Damage Taken",
                 "Per Hit"
             ],
             "exclude": [
@@ -1411,6 +1412,9 @@
             "On Kill",
             "Money"
         ],
+        "modifiers": {
+            "Affected by:": "Luck"
+        },
         "synergies": {
             "include": [
                 "Money",
@@ -2402,7 +2406,7 @@
         "id": "irradiant-pearl",
         "description": [
             "Gain <span green>+10%</span> max health, <span green>+10%</span> regeneration, <span blue>+10%</span> movement speed, <span yellow>+10%</span> damage, <span yellow>+10%</span> attack speed, <span yellow>+10%</span> critical strike chance, and <span green>+10%</span> armor.",
-            "Pairs well with attack speed, critical strike chance, movement speed, increased damage, shields, and increased health items."
+            "Pairs well with attack speed, critical strike chance, movement speed, increased damage, regeneration, shields, and increased health items."
         ],
         "tags": [
             "Increased Health",
@@ -2422,6 +2426,7 @@
                 "Critical Strike Chance",
                 "Movement Speed",
                 "Increased Damage",
+                "Regeneration",
                 "Shield",
                 "Increased Health"
             ],
@@ -3646,7 +3651,7 @@
         "id": "spinel-tonic",
         "description": [
             "Gain <span yellow>+100%</span> damage, <span yellow>+70%</span> attack speed, <span green>+20</span> armor, <span green>+50%</span> max health, <span green>+300%</span> regeneration, and <span blue>+30%</span> movement speed for <span blue>20s</span>. When Tonic wears off the user has a <span yellow>20%</span> chance to gain a stack of Tonic Affliction, which reduces all stats by <span red>5%</span> <span gray>(+5% per stack)</span> while not using by Spinel Tonic. <span blue>60s</span> cooldown.",
-            "Pairs well with attack speed, healing, movement speed, increased damage, damage reduction, and equipment cooldown reduction items."
+            "Pairs well with attack speed, movement speed, increased damage, regeneration, damage reduction, and equipment cooldown reduction items."
         ],
         "tags": [
             "Attack Speed",
@@ -3654,6 +3659,7 @@
             "Damage Reduction",
             "Increased Health",
             "Movement Speed",
+            "Regeneration",
             "Lunar",
             "Equipment",
             "High Damage"
@@ -3665,11 +3671,11 @@
         "synergies": {
             "include": [
                 "Attack Speed",
-                "Healing",
                 "Critical Strike Chance",
                 "Movement Speed",
                 "Increased Damage",
                 "Damage Reduction",
+                "Regeneration",
                 "Equipment Cooldown Reduction"
             ],
             "exclude": [
