@@ -1,8 +1,10 @@
-const appVersion = '1.2.5.4'
-const itemDesc = document.querySelector('#item-description')
-const itemSelect = document.querySelector('#item-select')
+const appVersion = '1.2.6'
+const itemDesc = document.querySelector('#item-description'),
+    itemSelect = document.querySelector('#item-select'),
+    itemSynergies = document.querySelector('#item-synergies'),
+    itemSearch = document.querySelector('#item-search')
+
 let selectButtons
-const itemSynergies = document.querySelector('#item-synergies')
 
 const readFile = async (type, filepath) => {
     const response = await fetch(filepath)
@@ -19,7 +21,7 @@ const loadComponent = async (filepath) => {
 let itemData, currentItem, canScroll
 
 const createButton = (item) => {
-    const { name, rarity, id } = item
+    const { name, rarity, id, tags } = item
     const src = `assets/img/${id}.png`
 
     const li = document.createElement('li'),
@@ -365,6 +367,59 @@ const handleButtonClick = (item, button) => {
     updateSynergyList(currentItem)
 }
 
+const handleSearchInput = (event) => {
+    if (document.activeElement === itemSearch) {
+        const input = itemSearch.value
+        const sanitizedInput = input.replace(/[^A-Za-z0-9-' ]/g, '').replace(/\s{2,}/g, ' ')
+
+        itemSearch.value = sanitizedInput
+
+        if (sanitizedInput.trim() !== '') {
+            const searchTerm = sanitizedInput.toLowerCase()
+            let resultCount = 0
+
+            for (const item of itemData) {
+                const button = itemSelect.querySelector(`.item a[href="#${item.id}"]`)
+                const shouldDisplay = item.name.toLowerCase().includes(searchTerm) ||
+                    (item.tags && item.tags.some(tag => tag.toLowerCase().includes(searchTerm))) ||
+                    (item.rarity && item.rarity.toLowerCase().includes(searchTerm))
+                button.parentNode.style.display = shouldDisplay ? 'block' : 'none'
+
+                if (shouldDisplay) {
+                    resultCount++
+                }
+            }
+
+            const resultCountElement = document.querySelector('#result-count')
+            resultCountElement.textContent = resultCount > 0 ? `${resultCount} result${resultCount === 1 ? '' : 's'}` : ''
+
+            const noResultsElement = document.querySelector('#no-results')
+            noResultsElement.style.display = resultCount > 0 ? 'none' : 'block'
+        } else {
+            const buttons = itemSelect.querySelectorAll('.item a')
+            buttons.forEach((button) => {
+                button.parentNode.style.display = 'block'
+            })
+
+            const resultCountElement = document.querySelector('#result-count')
+            resultCountElement.textContent = ''
+
+            const noResultsElement = document.querySelector('#no-results')
+            noResultsElement.style.display = 'none'
+        }
+    }
+
+    const itemSelectList = document.querySelector('#item-select')
+
+    if (itemSelectList.clientHeight === 59) {
+        itemSelectList.style.justifyContent = 'start'
+        itemSelectList.style.overflow = 'visible'
+    } else {
+        itemSelectList.style.justifyContent = 'space-around'
+        itemSelectList.style.overflow = 'scroll'
+    }
+}
+
 const loadButtons = async () => {
     itemData = await readFile('json', 'json/items.json')
 
@@ -390,6 +445,11 @@ const initializePage = async () => {
 
     window.addEventListener('popstate', setActive)
 
+    itemSearch.value = ''
+    itemSearch.focus()
+
+    itemSearch.addEventListener('input', handleSearchInput)
+
     const footer = document.querySelector('#footer'),
         versionTag = footer.querySelector('#version'),
         copyrightTag = footer.querySelector('#copyrightYear')
@@ -411,5 +471,7 @@ document.addEventListener('click', (event) => {
         }, 25)
     }
 })
+
+
 
 initializePage()
