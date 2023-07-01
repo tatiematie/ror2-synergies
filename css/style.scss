@@ -135,6 +135,10 @@ $colors: (
         p {
             color: map-get($colors, text_light_gray);
             font-size: 18px;
+
+            &:not(#result-count) {
+                margin-bottom: 6px;
+            }
         }
     }
 
@@ -196,22 +200,25 @@ $colors: (
                 width: 22px;
             }
 
-            &[open] summary::after {
-                background-image: url(../assets/icon/collapse.svg);
+            &[open] {
+                summary::after {
+                    background-image: url(../assets/icon/collapse.svg);
+                }
+
+                .title {
+                    margin-bottom: 8px;
+                }
             }
+
+
 
             @include aboveBreakpoint(751px) {
                 pointer-events: none;
-
-                *:not(summary, summary *) {
-                    // pointer-events: all;
-                }
             }
         }
 
         .title {
             display: block;
-            margin-bottom: 8px;
             position: relative;
             font-size: 20px;
 
@@ -259,15 +266,14 @@ $colors: (
                     background-color: map-get($colors, light_yellow);
                     border: 1px solid map-get($colors, darker_yellow);
                     content: '';
+                    position: absolute;
                     transform: rotate(45deg);
-                    z-index: 10;
                 }
     
                 &::before {
                     bottom: -9px;
                     height: 10px;
                     left: calc((100% - 10px) / 2);
-                    position: absolute;
                     width: 10px;
                 }
             
@@ -275,7 +281,6 @@ $colors: (
                     bottom: -7px;
                     height: 6px;
                     left: calc((100% - 6px) / 2);
-                    position: absolute;
                     width: 6px;
                 }
             }
@@ -460,7 +465,7 @@ html {
         #item-thumbnail {
             border: 4px solid map-get($colors, border_pane);
             height: 118px;
-            margin: 12px 0 24px;
+            margin-bottom: 24px;
             width: 118px;
             position: relative;
 
@@ -539,21 +544,60 @@ html {
     #select-pane {    
         height: min-content;
 
+        #search-wrapper {
+            align-items: center;
+            background-color: map-get($colors, dark_gray_blue);
+            border: 4px solid map-get($colors, darker_gray_blue);
+            display: flex;
+       
+            #item-search {
+                background-color: transparent;
+                border: none;
+                color: map-get($colors, border_pane);
+                flex: 1;
+                font-size: 18px;
+                padding: 4px 8px;
+                text-shadow: 2px 2px 2px map-get($colors, text_shadow);
+    
+                &::placeholder {
+                    color: map-get($colors, border_pane);
+                }
+            }
+
+            #result-count {
+                font-size: 18px;
+                padding-right: 8px;
+            }
+        }
+
+        
         #item-select {
             column-gap: 6px;
             display: grid;
             grid-template-columns: repeat(auto-fit, 47px);
-            max-height: 256px;
             justify-content: space-around;
-            overflow-y: auto;
-            row-gap: 6px;
+            max-height: 256px;
+            min-height: 59px;
+            overflow-y: scroll;
             padding: 6px;
             position: relative;
+            row-gap: 6px;
             scrollbar-width: none;
 
             &::-webkit-scrollbar {
                 display: none;
             }
+        }
+
+        #no-results {
+            color: map-get($colors, border_pane);
+            display: none;
+            left: 50%;
+            position: absolute;
+            text-shadow: 2px 2px 2px map-get($colors, text_shadow);
+            transform: translate(-50%, -50%);
+            top: 50%;
+            font-size: 18px;
         }
     }
 }
