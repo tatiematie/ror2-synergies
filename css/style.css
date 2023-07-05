@@ -316,7 +316,9 @@ html:focus {
 #container #display-pane {
   height: -moz-min-content;
   height: min-content;
-  scroll-margin: 48px;
+}
+#container #display-pane .heading {
+  scroll-margin: 28px;
 }
 @media (max-width: 750px) {
   #container #display-pane {

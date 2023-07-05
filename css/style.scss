@@ -435,7 +435,10 @@ html {
 
     #display-pane {
         height: min-content;
-        scroll-margin: 48px;
+
+        .heading {
+            scroll-margin: 28px;
+        }
 
             @include atBreakpoint(750px) {
                 scroll-margin: 11px;
