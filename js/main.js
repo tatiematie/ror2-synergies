@@ -1,4 +1,4 @@
-const appVersion = '1.2.6.3'
+const appVersion = '1.2.6.4'
 const itemDesc = document.querySelector('#item-description'),
     itemSelect = document.querySelector('#item-select'),
     itemSynergies = document.querySelector('#item-synergies'),
@@ -463,7 +463,8 @@ document.addEventListener('click', (event) => {
     if (event.target.closest('.item')) {
         if (canScroll) {
             setTimeout(() => {
-                displayPane.parentNode.parentNode.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                displayPane.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                console.log(event.target)
             }, 25)
         }
 
