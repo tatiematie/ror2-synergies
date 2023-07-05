@@ -82,10 +82,10 @@ $colors: (
 
     .corners, &.corners {
         &::after {
-            background-image: url(/assets/icon/corners.svg), 
-                url(/assets/icon/corners.svg), 
-                url(/assets/icon/corners.svg), 
-                url(/assets/icon/corners.svg);
+            background-image: url(../assets/icon/corners.svg), 
+                url(../assets/icon/corners.svg), 
+                url(../assets/icon/corners.svg), 
+                url(../assets/icon/corners.svg);
             background-position: -16px -16px,
                 calc(100% + 16px) -16px,
                 calc(100% + 16px) calc(100% + 16px),
