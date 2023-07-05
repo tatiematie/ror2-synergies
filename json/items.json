@@ -414,8 +414,7 @@
                 "On Kill",
                 "Damage Taken",
                 "Mobility",
-                "Skills",
-                "AtG Missile Mk. 1"
+                "Skills"
             ]
         }
     },
@@ -812,11 +811,6 @@
                 "Chance to Proc",
                 "Can be Procced by",
                 "Per Hit"
-            ],
-            "exclude": [
-                "Plasma Shrimp",
-                "Disposable Missile Launcher",
-                "Bundle of Fireworks"
             ]
         }
     },
@@ -1195,10 +1189,8 @@
         ],
         "modifiers": {
             "Inflicts:": "80% Slow",
-            "Grants:": [
-                "Element Rings Ready",
-                "Elemental Rings Cooldown"
-            ]
+            "Grants:": "Element Rings Ready",
+            "Cooldown:": "Elemental Rings Cooldown"
         },
         "synergies": {
             "include": [
@@ -1229,10 +1221,8 @@
             "Cooldowns"
         ],
         "modifiers": {
-            "Grants:": [
-                "Element Rings Ready",
-                "Elemental Rings Cooldown"
-            ]
+            "Grants:": "Element Rings Ready",
+            "Cooldown:": "Elemental Rings Cooldown"
         },
         "synergies": {
             "include": [
@@ -1578,8 +1568,7 @@
                 "Attack Speed",
                 "Critical Strike Chance",
                 "Increased Damage",
-                "Can be Procced by",
-                "Per Hit"
+                "Can be Procced by"
             ]
         }
     },
@@ -1800,6 +1789,9 @@
         "tags": [
             "Can be Procced by"
         ],
+        "modifiers": {
+            "Grants:": "Tesla Field"
+        },
         "synergies": {
             "include": [
                 "Critical Strike Chance",
@@ -2247,10 +2239,8 @@
             "Cooldowns"
         ],
         "modifiers": {
-            "Grants:": [
-                "Immune to Debuffs",
-                "Immune to Debuffs Cooldown"
-            ]
+            "Grants:": "Immune to Debuffs",
+            "Cooldown:": "Immune to Debuffs Cooldown"
         },
         "synergies": {
             "include": [
@@ -2836,10 +2826,10 @@
                 "Increased Damage",
                 "Shield",
                 "Chance to Proc",
+                "Can be Procced by",
                 "Per Hit"
             ],
             "exclude": [
-                "AtG Missile Mk. 1",
                 "Crowbar"
             ]
         }
@@ -2917,10 +2907,8 @@
             "Cooldowns"
         ],
         "modifiers": {
-            "Grants:": [
-                "Safer Spaces Ready",
-                "Safer Spaces Cooldown"
-            ]
+            "Grants:": "Safer Spaces Ready",
+            "Cooldown:": "Safer Spaces Cooldown"
         },
         "synergies": {
             "include": [
@@ -2948,6 +2936,10 @@
             "Cooldowns",
             "Can be Procced by"
         ],
+        "modifiers": {
+            "Grants:": "Singularity Band Ready",
+            "Cooldown:": "Singularity Band Cooldown"
+        },
         "synergies": {
             "include": [
                 "Critical Strike Chance",
@@ -3597,15 +3589,17 @@
             "Lunar",
             "Equipment",
             "Damage Taken",
-            "Debuffs"
+            "Debuffs",
+            "Fire Damage"
         ],
         "modifiers": {
-            "Inflicts:": "Helfire Tincture"
+            "Inflicts:": "Burn"
         },
         "synergies": {
             "include": [
                 "Damage Taken",
-                "Damage Reduction"
+                "Damage Reduction",
+                "Ignition Tank"
             ],
             "exclude": [
                 "Equipment",
@@ -3725,9 +3719,7 @@
                 "Genesis Loop",
                 "Skills",
                 "Egocentricism",
-                "Aspect",
-                "AtG Missile Mk. 1",
-                "Plasma Shrimp"
+                "Aspect"
             ]
         }
     },
@@ -4473,7 +4465,7 @@
         "id": "ifrits-distinction",
         "description": [
             "All attacks ignite enemies dealing <span yellow>50%</span> total damage, the holder leaves a trail of fire.",
-            "Pairs well with attack speed, debuff infliction, and proc chance items."
+            "Pairs well with attack speed and proc chance items."
         ],
         "tags": [
             "Aspect",
@@ -4532,7 +4524,7 @@
         "id": "silence-between-two-strikes",
         "description": [
             "<span green>50%</span> of the holder's health is converted to shield, all attacks attach lightning bombs to the target which deal <span yellow>50%</span> total damage after exploding.",
-            "Pairs well with attack speed, increased damage, shields, and proc chance items."
+            "Pairs well with attack speed, increased damage, and proc chance items."
         ],
         "tags": [
             "Aspect",
@@ -4546,7 +4538,6 @@
                 "Attack Speed",
                 "Critical Strike Chance",
                 "Increased Damage",
-                "Shield",
                 "Can be Procced by",
                 "Per Hit"
             ],
@@ -4601,7 +4592,8 @@
         "tags": [
             "Aspect",
             "Per Hit",
-            "Debuffs"
+            "Debuffs",
+            "On Death"
         ],
         "modifiers": {
             "Grants:": "Malachite",
@@ -4611,6 +4603,7 @@
             "include": [
                 "Attack Speed",
                 "Can be Procced by",
+                "On Death",
                 "Death Mark"
             ],
             "exclude": [
@@ -4626,7 +4619,7 @@
         "id": "spectral-circlet",
         "description": [
             "Attacks greatly slow enemies, nearby allies are made invisible.",
-            "Pairs well with attack speed, proc chance, items."
+            "Pairs well with attack speed and proc chance items."
         ],
         "tags": [
             "Aspect",
@@ -4656,7 +4649,7 @@
         "id": "shared-design",
         "description": [
             "Gain <span yellow>+30%</span> movement speed and <span green>+25%</span> max health, all health is converted to shield. Attacks inflict the Cripple debuff. Fire <span yellow>4</span> bombs every <span blue>10s</span> dealing <span yellow>30%</span> damage.",
-            "Pairs well with attack speed, movement speed, increased damage, shields, and increased health items."
+            "Pairs well with attack speed, movement speed, and increased damage items."
         ],
         "procCoefficients": {
             "Projectile": "1.0"
@@ -4677,8 +4670,7 @@
                 "Movement Speed",
                 "Critical Strike Chance",
                 "Chance to Proc",
-                "Shield",
-                "Increased Health",
+                "Can be Procced by",
                 "Per Hit",
                 "Death Mark"
             ],
