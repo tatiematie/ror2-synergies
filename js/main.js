@@ -1,4 +1,4 @@
-const appVersion = '1.2.6.2'
+const appVersion = '1.2.6.3'
 const itemDesc = document.querySelector('#item-description'),
     itemSelect = document.querySelector('#item-select'),
     itemSynergies = document.querySelector('#item-synergies'),
@@ -74,21 +74,17 @@ const updateDisplay = () => {
         displayPane.appendChild(itemType)
 
         const itemThumb = document.createElement('img'),
-            thumbWrapper = document.createElement('div'),
             itemThumbnail = document.createElement('div')
 
         itemThumb.src = src
         itemThumb.title = name
         itemThumb.alt = name
 
-        thumbWrapper.classList.add('wrapper')
-        thumbWrapper.appendChild(itemThumb)
-
         itemThumbnail.id = 'item-thumbnail'
         itemThumbnail.classList.add('content', 'corners')
         itemThumbnail.setAttribute('rarity', rarity.toLowerCase())
-        itemThumbnail.appendChild(thumbWrapper)
 
+        itemThumbnail.appendChild(itemThumb)
         displayPane.appendChild(itemThumbnail)
 
         itemDesc.innerHTML = ''
@@ -114,6 +110,7 @@ const updateDisplay = () => {
 
         const existingProcCoefficientTable = itemDesc.querySelector('#proc-coefficient-table')
         const procTableTitle = itemDesc.querySelector('.proc.title')
+
         if (existingProcCoefficientTable && procTableTitle) {
             procTableTitle.remove()
             existingProcCoefficientTable.remove()
@@ -370,12 +367,9 @@ const handleButtonClick = (item, button) => {
 const handleSearchInput = (event) => {
     if (document.activeElement === itemSearch) {
         const input = itemSearch.value
-        const sanitizedInput = input.replace(/[^a-z0-9-.()'\s]+/g, '').replace(/\s{2,}/g, ' ');
 
-        itemSearch.value = sanitizedInput
-
-        if (sanitizedInput.trim() !== '') {
-            const searchTerm = sanitizedInput.toLowerCase()
+        if (input.trim() !== '') {
+            const searchTerm = input.toLowerCase()
             let resultCount = 0
 
             for (const item of itemData) {
