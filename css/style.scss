@@ -81,45 +81,23 @@ $colors: (
     position: relative;
 
     .corners, &.corners {
-        &::before, &::after {
-            background-color: map-get($colors, text_white);
+        &::after {
+            background-image: url(/assets/icon/corners.svg), 
+                url(/assets/icon/corners.svg), 
+                url(/assets/icon/corners.svg), 
+                url(/assets/icon/corners.svg);
+            background-position: -16px -16px,
+                calc(100% + 16px) -16px,
+                calc(100% + 16px) calc(100% + 16px),
+                -16px calc(100% + 16px);
+            background-repeat: no-repeat;
             content: '';
-            clip-path: polygon(0 0, 100% 0, 75% 25%, 25% 25%, 25% 75%, 0 100%);
-            height: 16px;
+            height: calc(100% + 8px);
+            left: -4px;
+            pointer-events: none;
             position: absolute;
             top: -4px;
-            width: 16px;
-        }
-    
-        &::before {
-            left: -4px;
-        }
-    
-        &::after {
-            right: -4px;
-            transform: rotate(90deg);
-        }
-    
-        .wrapper {
-            &::before, &::after {
-                background-color: map-get($colors, text_white);
-                bottom: -4px;
-                content: '';
-                clip-path: polygon(0 0, 100% 0, 75% 25%, 25% 25%, 25% 75%, 0 100%);
-                height: 16px;
-                position: absolute;
-                width: 16px;
-            }
-        
-            &::before {
-                left: -4px;
-                transform: rotate(270deg);
-            }
-        
-            &::after {
-                right: -4px;
-                transform: rotate(180deg);
-            }
+            width: calc(100% + 8px);
         }
     }
 
@@ -497,6 +475,13 @@ html {
                 padding: 6px;
                 width: 50%;
                 text-align: start;
+
+                &:last-child {
+                    p {
+                        text-align: end;
+                        width: 100%;
+                    }
+                }
 
                 span {
                     display: inline-block;
