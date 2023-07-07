@@ -373,6 +373,10 @@ html {
     &:focus {
         outline: none;
     }
+
+    @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+        -webkit-text-size-adjust: 100%;
+    }
 }
 
 // application styles
@@ -435,9 +439,9 @@ html {
 
     #display-pane {
         height: min-content;
+        scroll-margin: 24px;
 
         .heading {
-            scroll-margin: 28px;
         }
 
             @include atBreakpoint(750px) {
