@@ -3889,14 +3889,14 @@
         "id": "goobo-jr",
         "description": [
             "Summon a gummy clone with <span green>300%</span> health and <span yellow>300%</span> damage. Lasts <span blue>30s</span>, <span blue>100s</span> cooldown.",
-            "Pairs well with Empathy Cores."
+            "Pairs well with Empathy Cores and cooldown reduction items."
         ],
         "tags": [
             "Equipment"
         ],
         "synergies": {
             "include": [
-                "Ally Summons",
+                "Empathy Cores",
                 "Equipment Cooldown Reduction"
             ]
         }
@@ -4021,6 +4021,7 @@
         "synergies": {
             "include": [
                 "Money",
+                "Shipping Request Form",
                 "Recycler"
             ]
         }
