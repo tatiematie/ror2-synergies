@@ -700,18 +700,20 @@
         "type": "Item",
         "id": "power-elixir",
         "description": [
-            "Heal for <span green>75%</span> of max health when below <span red>25%</span> of max health. Protects Delicate Watches from breaking, consumed on use.",
+            "Heal for <span green>75%</span> of max health when below <span red>25%</span> of max health. Consumed on use.",
             "Pairs well with amplified healing and items that activate at low health."
         ],
         "tags": [
             "Healing",
             "Low Health"
         ],
+        "modifiers": {
+            "Protects:": "Delicate Watch"
+        },
         "synergies": {
             "include": [
                 "Amplified Healing",
-                "At Low Health",
-                "Delicate Watch"
+                "At Low Health"
             ]
         }
     },
@@ -721,18 +723,20 @@
         "type": "Item",
         "id": "delicate-watch",
         "description": [
-            "Deal <span yellow>+20%</span> damage <span gray>(+20% per stack)</span>. Breaks when below <span red>25%</span> of max health, protected by Power Elixir.",
+            "Deal <span yellow>+20%</span> damage <span gray>(+20% per stack)</span>. Breaks when below <span red>25%</span> of max health.",
             "Pairs well with attack speed and increased damage items."
         ],
         "tags": [
             "Increased Damage"
         ],
+        "modifiers": {
+            "Protected by:": "Power Elixir"
+        },
         "synergies": {
             "include": [
                 "Attack Speed",
                 "Critical Strike Chance",
-                "Increased Damage",
-                "Power Elixir"
+                "Increased Damage"
             ],
             "exclude": [
                 "Laser Scope"
