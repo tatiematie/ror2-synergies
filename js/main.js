@@ -1,8 +1,9 @@
-const appVersion = '1.2.6.4'
+const appVersion = '1.2.6.5'
 const itemDesc = document.querySelector('#item-description'),
     itemSelect = document.querySelector('#item-select'),
     itemSynergies = document.querySelector('#item-synergies'),
-    itemSearch = document.querySelector('#item-search')
+    itemSearch = document.querySelector('#item-search'),
+    pageTitle = document.querySelector('title')
 
 let selectButtons
 
@@ -60,6 +61,8 @@ const updateDisplay = () => {
     } else {
         const { name, rarity, type, id, description, procCoefficients, modifiers } = currentItem
         const src = `assets/img/${id}.png`
+
+        pageTitle.innerHTML = `Risk of Rain 2 Synergies | ${name}`
 
         displayPane.innerHTML = ''
 
@@ -362,12 +365,13 @@ const handleButtonClick = (item, button) => {
 
     currentItem = item
     updateSynergyList(currentItem)
+
 }
 
 const handleSearchInput = (event) => {
-    if (document.activeElement === itemSearch) {
-        const input = itemSearch.value
+    const input = itemSearch.value
 
+    if (document.activeElement === itemSearch) {
         if (input.trim() !== '') {
             const searchTerm = input.toLowerCase()
             let resultCount = 0
@@ -436,11 +440,9 @@ const initializePage = async () => {
     }, 25)
 
     window.addEventListener('popstate', updateDisplay)
-
     window.addEventListener('popstate', setActive)
 
     itemSearch.value = ''
-
     itemSearch.addEventListener('input', handleSearchInput)
 
     const footer = document.querySelector('#footer'),
@@ -456,7 +458,7 @@ const initializePage = async () => {
 }
 
 document.addEventListener('click', (event) => {
-    const displayPane = document.querySelector('#display-pane .heading'),
+    const displayPane = document.querySelector('#display-pane'),
         buttons = itemSelect.querySelectorAll('.item'),
         resultCount = document.querySelector('#result-count')
 
@@ -464,13 +466,13 @@ document.addEventListener('click', (event) => {
         if (canScroll) {
             setTimeout(() => {
                 displayPane.scrollIntoView({ behavior: 'smooth', block: 'start' })
-                console.log(event.target)
             }, 25)
         }
 
         itemSearch.value = ''
         resultCount.innerHTML = ''
         itemSelect.removeAttribute('style')
+
         buttons.forEach((button) => {
             button.removeAttribute('style')
         })
