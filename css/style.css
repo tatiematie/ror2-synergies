@@ -331,7 +331,6 @@ html:focus {
 #container #display-pane #item-thumbnail {
   border: 4px solid #868686;
   height: 118px;
-  margin-bottom: 24px;
   width: 118px;
   position: relative;
 }
