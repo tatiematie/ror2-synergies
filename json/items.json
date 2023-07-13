@@ -273,7 +273,7 @@
         "type": "Item",
         "id": "personal-shield-generator",
         "description": [
-            "Gain shield equal to <span green>8%</span> of max health <span gray>(+8% per stack)</span>. All shield recharges in <span blue>2s</span> after <span blue>9s</span> outside of danger.",
+            "Gain shield equal to <span green>8%</span> of max health <span gray>(+8% per stack)</span>.",
             "Pairs well with shield and increased health items."
         ],
         "tags": [
@@ -815,6 +815,10 @@
                 "Chance to Proc",
                 "Can be Procced by",
                 "Per Hit"
+            ],
+            "exclude": [
+                "Bandolier",
+                "Ghor's Tome"
             ]
         }
     },
@@ -924,6 +928,8 @@
             ],
             "exclude": [
                 "Crowbar",
+                "Ghor's Tome",
+                "Bandolier",
                 "Skills",
                 "Polylute"
             ]
@@ -1125,7 +1131,8 @@
         ],
         "tags": [
             "Skill Cooldown Reduction",
-            "On Kill"
+            "On Kill",
+            "Chance to Proc"
         ],
         "synergies": {
             "include": [
@@ -1404,7 +1411,8 @@
         ],
         "tags": [
             "On Kill",
-            "Money"
+            "Money",
+            "Chance to Proc"
         ],
         "modifiers": {
             "Affected by:": "Luck"
@@ -1527,7 +1535,9 @@
                 "H3AD-5T v2",
                 "Genesis Loop",
                 "Egocentricism",
-                "Equipment"
+                "Equipment",
+                "Ghor's Tome",
+                "Bandolier"
             ]
         }
     },
@@ -1617,7 +1627,9 @@
                 "The Crowdfunder",
                 "Volcanic Egg",
                 "Sawmerang",
-                "Bands"
+                "Bands",
+                "Bandolier",
+                "Ghor's Tome"
             ]
         }
     },
@@ -1662,7 +1674,9 @@
                 "Molotov (6-Pack)",
                 "The Crowdfunder",
                 "Volcanic Egg",
-                "Sawmerang"
+                "Sawmerang",
+                "Ghor's Tome",
+                "Bandolier"
             ]
         }
     },
@@ -1730,7 +1744,9 @@
                 "The Crowdfunder",
                 "Sawmerang",
                 "Ceremonial Dagger",
-                "Will-o'-the-Wisp"
+                "Will-o'-the-Wisp",
+                "Bandolier",
+                "Ghor's Tome"
             ]
         }
     },
@@ -1774,7 +1790,9 @@
                 "Molotov (6-Pack)",
                 "The Crowdfunder",
                 "Volcanic Egg",
-                "Sawmerang"
+                "Sawmerang",
+                "Bandolier",
+                "Ghor's Tome"
             ]
         }
     },
@@ -2061,7 +2079,7 @@
         "id": "shattering-justice",
         "description": [
             "Reduce enemy armor by <span yellow>60</span> for <span blue>8s</span> <span gray>(+8s per stack)</span> after hitting them <span yellow>5</span> times.",
-            "Pairs well with attack speed, increased damage, and debuff infliction items."
+            "Pairs well with attack speed, increased damage, and proc chance items."
         ],
         "tags": [
             "Per Hit",
@@ -2077,7 +2095,7 @@
             "include": [
                 "Attack Speed",
                 "Increased Damage",
-                "Per Hit",
+                "Can be Procced by",
                 "Death Mark"
             ],
             "exclude": [
@@ -2127,7 +2145,9 @@
                 "Molotov (6-Pack)",
                 "The Crowdfunder",
                 "Volcanic Egg",
-                "Sawmerang"
+                "Sawmerang",
+                "Ghor's Tome",
+                "Bandolier"
             ]
         }
     },
@@ -2505,6 +2525,10 @@
                 "Per Hit",
                 "Death Mark",
                 "Ignition Tank"
+            ],
+            "exclude": [
+                "Ghor's Tome",
+                "Bandolier"
             ]
         }
     },
@@ -2596,6 +2620,10 @@
                 "Chance to Proc",
                 "Can be Procced by",
                 "Per Hit"
+            ],
+            "exclude": [
+                "Ghor's Tome",
+                "Bandolier"
             ]
         }
     },
@@ -2686,7 +2714,7 @@
         "type": "Item",
         "id": "encrusted-key",
         "description": [
-            "A hidden cache will appear somewhere on the next stage allowing the player to select from <span yellow>3</span> items, cache contents have a <span yellow>41.66%</span> chance to be Common, <span yellow>41.66%</span> to be Uncommon, and a <span yellow>16.66%</span> chance to be Legendary. Consumed on use, <span purple>corrupts all Rusted Keys</span>.",
+            "A hidden cache will appear somewhere on the next stage allowing the player to select from <span yellow>3</span> items, cache contents have a <span yellow>42%</span> chance to be Common, <span yellow>51%</span> to be Uncommon, and a <span yellow>7%</span> chance to be Legendary. Consumed on use, <span purple>corrupts all Rusted Keys</span>.",
             "Pairs well with items that affect stage generation."
         ],
         "tags": [
@@ -2834,7 +2862,9 @@
                 "Per Hit"
             ],
             "exclude": [
-                "Crowbar"
+                "Crowbar",
+                "Ghor's Tome",
+                "Bandolier"
             ]
         }
     },
@@ -2892,7 +2922,9 @@
             ],
             "exclude": [
                 "Ukulele",
-                "Crowbar"
+                "Crowbar",
+                "Ghor's Tome",
+                "Bandolier"
             ]
         }
     },
@@ -3006,7 +3038,9 @@
                 "Per Hit"
             ],
             "exclude": [
-                "Will-o'-the-Wisp"
+                "Will-o'-the-Wisp",
+                "Ghor's Tome",
+                "Bandolier"
             ]
         }
     },
@@ -3576,7 +3610,9 @@
                 "Skills",
                 "Egocentricism",
                 "Equipment",
-                "Aspect"
+                "Aspect",
+                "Ghor's Tome",
+                "Bandolier"
             ]
         }
     },
@@ -3649,7 +3685,7 @@
         "type": "Equipment",
         "id": "spinel-tonic",
         "description": [
-            "Gain <span yellow>+100%</span> damage, <span yellow>+70%</span> attack speed, <span green>+20</span> armor, <span green>+50%</span> max health, <span green>+300%</span> regeneration, and <span blue>+30%</span> movement speed for <span blue>20s</span>. When Tonic wears off the user has a <span yellow>20%</span> chance to gain a stack of Tonic Affliction, which reduces all stats by <span red>5%</span> <span gray>(+5% per stack)</span> while not using by Spinel Tonic. <span blue>60s</span> cooldown.",
+            "Gain <span yellow>+100%</span> damage, <span yellow>+70%</span> attack speed, <span green>+20</span> armor, <span green>+50%</span> max health, <span green>+300%</span> regeneration, and <span blue>+30%</span> movement speed for <span blue>20s</span>. When the Tonic Buff wears off the user has a <span yellow>20%</span> chance to gain a stack of Tonic Affliction, which reduces all stats by <span red>5%</span> <span gray>(+5% per stack)</span> while Spinel Tonic is not active. <span blue>60s</span> cooldown.",
             "Pairs well with attack speed, movement speed, increased damage, regeneration, damage reduction, and equipment cooldown reduction items."
         ],
         "tags": [
@@ -3723,7 +3759,9 @@
                 "Genesis Loop",
                 "Skills",
                 "Egocentricism",
-                "Aspect"
+                "Aspect",
+                "Ghor's Tome",
+                "Bandolier"
             ]
         }
     },
@@ -3882,7 +3920,9 @@
                 "Skills",
                 "Egocentricism",
                 "Equipment",
-                "Aspect"
+                "Aspect",
+                "Ghor's Tome",
+                "Bandolier"
             ]
         }
     },
@@ -3970,7 +4010,9 @@
                 "Genesis Loop",
                 "Skills",
                 "Egocentricism",
-                "Equipment"
+                "Equipment",
+                "Ghor's Tome",
+                "Bandolier"
             ]
         }
     },
@@ -4069,7 +4111,9 @@
                 "Crowbar",
                 "Egocentricism",
                 "Equipment",
-                "Aspect"
+                "Aspect",
+                "Ghor's Tome",
+                "Bandolier"
             ]
         }
     },
@@ -4201,7 +4245,9 @@
                 "Egocentricism",
                 "Equipment",
                 "Aspect",
-                "Gesture of the Drowned"
+                "Gesture of the Drowned",
+                "Ghor's Tome",
+                "Bandolier"
             ]
         }
     },
@@ -4276,7 +4322,9 @@
                 "Skills",
                 "Egocentricism",
                 "Equipment",
-                "Aspect"
+                "Aspect",
+                "Ghor's Tome",
+                "Bandolier"
             ]
         }
     },
