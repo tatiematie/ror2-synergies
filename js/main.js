@@ -1,4 +1,4 @@
-const appVersion = '1.2.6.8'
+const appVersion = '1.2.6.9'
 const itemDesc = document.querySelector('#item-description'),
     itemSelect = document.querySelector('#item-select'),
     itemSynergies = document.querySelector('#item-synergies'),
@@ -52,7 +52,7 @@ const updateDisplay = () => {
     let url = window.location,
         hash = url.hash.substring(1)
 
-    let previousHash = null
+    let previousHash = itemData[0].id
     if (currentItem) {
         previousHash = currentItem.id
     }
@@ -60,16 +60,10 @@ const updateDisplay = () => {
     currentItem = itemData.find(item => item.id === hash)
 
     if (!currentItem) {
-        if (hash == '') {
-            selectButtons[0].click()
-        }
+        url.hash = `#${previousHash}`
 
-        if (previousHash) {
-            url.hash = `#${previousHash}`
-
-            const updatedItem = document.querySelector(`.item a[href="#${previousHash}"]`)
-            updatedItem.click()
-        }
+        const updatedItem = document.querySelector(`.item a[href="#${previousHash}"]`)
+        updatedItem.click()
     } else {
         const { name, rarity, type, id, description, procCoefficients, modifiers } = currentItem
         const src = `assets/img/${id}.png`
