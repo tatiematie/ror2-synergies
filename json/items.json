@@ -239,7 +239,7 @@
             "Movement Speed"
         ],
         "modifiers": {
-            "Grants:": "Warbanner Buff"
+            "Grants:": "Warbanner Boost"
         },
         "synergies": {
             "include": [
@@ -552,8 +552,7 @@
         "synergies": {
             "include": [
                 "Damage Reduction",
-                "Damage Prevention",
-                "Forgive Me Please"
+                "Damage Prevention"
             ],
             "exclude": [
                 "Monster Tooth",
@@ -705,7 +704,8 @@
         ],
         "tags": [
             "Healing",
-            "Low Health"
+            "Low Health",
+            "Power Elixir"
         ],
         "modifiers": {
             "Protects:": "Delicate Watch"
@@ -727,7 +727,8 @@
             "Pairs well with attack speed and increased damage items."
         ],
         "tags": [
-            "Increased Damage"
+            "Increased Damage",
+            "Delicate Watch"
         ],
         "modifiers": {
             "Protected by:": "Power Elixir"
@@ -814,11 +815,13 @@
                 "Increased Damage",
                 "Chance to Proc",
                 "Can be Procced by",
-                "Per Hit"
+                "Per Hit",
+                "Pocket I.C.B.M."
             ],
             "exclude": [
                 "Bandolier",
-                "Ghor's Tome"
+                "Ghor's Tome",
+                "Plasma Shrimp"
             ]
         }
     },
@@ -967,7 +970,6 @@
         ],
         "tags": [
             "Critical Strike Chance",
-            "Attack Speed",
             "On Critical Strike"
         ],
         "modifiers": {
@@ -1134,11 +1136,17 @@
             "On Kill",
             "Chance to Proc"
         ],
+        "modifiers": {
+            "Affected by:": "Luck"
+        },
         "synergies": {
             "include": [
                 "Extra Skill Charges",
                 "Skill Cooldown Reduction",
                 "Forgive Me Please"
+            ],
+            "exclude": [
+                "Purity"
             ]
         }
     },
@@ -1151,12 +1159,9 @@
             "Killing <span yellow>4</span> enemies within <span blue>1s</span> boosts movement speed by <span blue>50%</span> and attack speed by <span yellow>100%</span> for <span blue>6s</span> <span gray>(+4s per stack)</span>.",
             "Pairs well with attack speed and movement speed."
         ],
-        "tags": [
-            "Movement Speed",
-            "Attack Speed"
-        ],
+        "tags": [],
         "modifiers": {
-            "Grants:": "War Cry"
+            "Grants:": "War Cry Buff"
         },
         "synergies": {
             "include": [
@@ -1268,7 +1273,8 @@
         },
         "synergies": {
             "include": [
-                "Can be Procced by"
+                "Can be Procced by",
+                "Death Mark"
             ],
             "exclude": [
                 "Tentabauble"
@@ -1319,15 +1325,11 @@
             "Activating an equipment boosts attack speed by <span yellow>70%</span> for <span blue>8s</span> <span gray>(+4s per stack)</span>.",
             "Pairs well with attack speed, equipment cooldown reduction, and equipment items."
         ],
-        "tags": [
-            "Attack Speed"
-        ],
         "modifiers": {
             "Grants:": "Energized"
         },
         "synergies": {
             "include": [
-                "Attack Speed",
                 "Equipment Cooldown Reduction",
                 "Equipment"
             ],
@@ -1502,7 +1504,8 @@
         },
         "synergies": {
             "include": [
-                "Fire Damage"
+                "Fire Damage",
+                "Death Mark"
             ]
         }
     },
@@ -1658,6 +1661,7 @@
                 "Critical Strike Chance",
                 "Increased Damage",
                 "Chance to Proc",
+                "Death Mark",
                 "Forgive Me Please"
             ],
             "exclude": [
@@ -1712,7 +1716,7 @@
             "Pairs well with movement speed, increased damage, proc chance, and mobility items."
         ],
         "procCoefficients": {
-            "Explosion": "1.0"
+            "On Hit": "1.0"
         },
         "tags": [
             "Mobility",
@@ -2263,8 +2267,8 @@
             "Cooldowns"
         ],
         "modifiers": {
-            "Grants:": "Immune to Debuffs",
-            "Cooldown:": "Immune to Debuffs Cooldown"
+            "Grants:": "Debuff Immunity",
+            "Cooldown:": "Debuff Immunity Cooldown"
         },
         "synergies": {
             "include": [
@@ -2556,6 +2560,7 @@
                 "Critical Strike Chance",
                 "On Critical Strike",
                 "Increased Damage",
+                "Death Mark",
                 "Needletick"
             ]
         }
@@ -2787,7 +2792,7 @@
         "type": "Item",
         "id": "needletick",
         "description": [
-            "Gain <span yellow>+10%</span> chance <span gray>(+10% per stack)</span> to inflict an enemy with Collapse, dealing <span yellow400%</span> damage. <span purple>Corrupts all Tri-Tip Daggers</span>.",
+            "Gain <span yellow>+10%</span> chance <span gray>(+10% per stack)</span> to inflict an enemy with Collapse, dealing <span yellow>400%</span> damage per stack after <span blue>3s</span>. <span purple>Corrupts all Tri-Tip Daggers</span>.",
             "Pairs well with attack speed, and proc chance items."
         ],
         "tags": [
@@ -2859,12 +2864,14 @@
                 "Shield",
                 "Chance to Proc",
                 "Can be Procced by",
-                "Per Hit"
+                "Per Hit",
+                "Pocket I.C.B.M."
             ],
             "exclude": [
                 "Crowbar",
                 "Ghor's Tome",
-                "Bandolier"
+                "Bandolier",
+                "AtG Missile Mk. 1"
             ]
         }
     },
@@ -3051,7 +3058,7 @@
         "id": "weeping-fungus",
         "description": [
             "Heal <span green>2%</span> of max health <span gray>(+2% per stack)</span> per second while sprinting. <span purple>Corrupts all Bustling Fungi</span>.",
-            "Pairs well with movement speed and amplified healing items."
+            "Pairs well with amplified healing items."
         ],
         "tags": [
             "Healing",
@@ -3062,7 +3069,6 @@
         },
         "synergies": {
             "include": [
-                "Movement Speed",
                 "Amplified Healing"
             ]
         }
@@ -3373,6 +3379,9 @@
         "synergies": {
             "include": [
                 "Skill Cooldown Reduction"
+            ],
+            "exclude": [
+                "Bandolier"
             ]
         }
     },
@@ -3638,6 +3647,7 @@
             "include": [
                 "Damage Taken",
                 "Damage Reduction",
+                "Death Mark",
                 "Ignition Tank"
             ],
             "exclude": [
@@ -3653,7 +3663,7 @@
         "id": "effigy-of-grief",
         "description": [
             "Places a totem at the user's cursor. Enemies and allies within the totem's radius are inflicted with cripple, slowed by <span blue>50%</span>, and have <span yellow>20</span> less armor. <span blue>15s</span> cooldown.",
-            "Pairs well with attack speed, increased damage, and equipment cooldown reduction items."
+            "Pairs well with increased damage and equipment cooldown reduction items."
         ],
         "tags": [
             "Lunar",
@@ -3665,7 +3675,6 @@
         },
         "synergies": {
             "include": [
-                "Attack Speed",
                 "Critical Strike Chance",
                 "Increased Damage",
                 "Equipment Cooldown Reduction",
@@ -4057,7 +4066,7 @@
         "type": "Item",
         "id": "executive-card",
         "description": [
-            "Get <span yellow>10%</span> off all purchases made useing gold, all multishop contents become available for purchase. <span blue>0.1s</span> cooldown.",
+            "Get <span yellow>10%</span> off all purchases made using gold, all multishop contents become available for purchase. <span blue>0.1s</span> cooldown.",
             "Pairs well with the Recycler."
         ],
         "tags": [
@@ -4264,7 +4273,7 @@
             "Damage Reduction"
         ],
         "modifiers": {
-            "Grants:": "Armor Boost"
+            "Grants:": "Elephant Armor Boost"
         },
         "synergies": {
             "include": [
@@ -4418,7 +4427,7 @@
             "Movement Speed"
         ],
         "modifiers": {
-            "Grants:": "War Cry"
+            "Grants:": "Team War Cry"
         },
         "synergies": {
             "include": [
@@ -4609,6 +4618,9 @@
             "All attacks greatly slow enemies for <span blue>1.5s</span> multiplied by the attack's proc coefficient, explode on death and freeze nearby enemies.",
             "Pairs well with attack speed and proc chance items."
         ],
+        "procCoefficients": {
+            "Freeze Blast": "0.75"
+        },
         "tags": [
             "Aspect",
             "Per Hit",
@@ -4641,6 +4653,9 @@
             "All attacks inflict the Healing Disabled debuff for <span blue>8s</span>. The holder periodically releases <span yellow>3</span>-<span yellow>4</span> malachite spikes which explode on impact and deal <span yellow>100%</span> damage, explosions leave lingering malachite spikes. Summon a Malachite Urchin on death which will shoot at nearby monsters.",
             "Pairs well with attack speed and proc chance items."
         ],
+        "procCoefficients": {
+            "Spikes": "1.0"
+        },
         "tags": [
             "Aspect",
             "Per Hit",
@@ -4679,7 +4694,10 @@
             "Debuffs"
         ],
         "modifiers": {
-            "Grants:": "Celestine",
+            "Grants:": [
+                "Celestine",
+                "Celestine Cloak"
+            ],
             "Inflicts:": "80% Slow"
         },
         "synergies": {
@@ -4701,7 +4719,7 @@
         "id": "shared-design",
         "description": [
             "Gain <span yellow>+30%</span> movement speed and <span green>+25%</span> max health, all health is converted to shield. Attacks inflict the Cripple debuff. Fire <span yellow>4</span> bombs every <span blue>10s</span> dealing <span yellow>30%</span> damage.",
-            "Pairs well with attack speed, movement speed, and increased damage items."
+            "Pairs well with attack speed, movement speed, and proc chance items."
         ],
         "procCoefficients": {
             "Projectile": "1.0"
@@ -4720,7 +4738,6 @@
             "include": [
                 "Attack Speed",
                 "Movement Speed",
-                "Critical Strike Chance",
                 "Chance to Proc",
                 "Can be Procced by",
                 "Per Hit",
