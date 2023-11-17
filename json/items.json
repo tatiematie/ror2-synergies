@@ -3007,7 +3007,7 @@
         "type": "Item",
         "id": "tentabauble",
         "description": [
-            "Gain a <span yellow>5%</span> chance <span gray> (+5% per stack)</span> to root enemies on hit for <span blue>1s</span> <span gray>(1s per stack)</span>. <span purple>Corrupts all Chronobaubles</span>.",
+            "Gain a <span yellow>5%</span> chance <span gray> (+5% per stack)</span> to root enemies on hit for <span blue>1s</span> <span gray>(+1s per stack)</span>. <span purple>Corrupts all Chronobaubles</span>.",
             "Pairs well with attack speed and proc chance items."
         ],
         "tags": [
