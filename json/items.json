@@ -1047,7 +1047,7 @@
         "type": "Item",
         "id": "harvesters-scythe",
         "description": [
-            "Gain <span yellow>+5%</span> critical strike chance, critical strikes heal for <span green>8hp</span> <span gray>(+4hp per stack)</span>.",
+            "Gain <span yellow>+5%</span> critical strike chance <span gray>(does not stack)</span>, critical strikes heal for <span green>8hp</span> <span gray>(+4hp per stack)</span>.",
             "Pairs well with attack speed, critical strike chance, and amplified healing items."
         ],
         "tags": [
@@ -2464,6 +2464,9 @@
             "Explode when below <span red>25%</span> max health dealing <span yellow>6,000%</span> base damage. <span blue>30</span> / <span blue>2s</span> <span gray>(+1 per stack)</span> cooldown.",
             "Pairs well with attack speed, increased damage, items that activate after taking damage, and items that activate at low health."
         ],
+        "procCoefficients": {
+            "On Hit": "1.0"
+        },
         "tags": [
             "At Low Health",
             "High Damage",
@@ -2543,7 +2546,7 @@
         "type": "Item",
         "id": "shatterspleen",
         "description": [
-            "Gain <span yellow>+5%</span> critical strike chance. Critical strikes bleed enemies for <span yellow>240%</span> base damage, bleeding enemies explode dealing <span yellow>400%</span> damage <span gray>(+400% per stack)</span> + <span yellow>15%</span> of their max health <span gray>(+15% per stack)</span>.",
+            "Gain <span yellow>+5%</span> critical strike chance <span gray>(does not stack)</span>. Critical strikes bleed enemies for <span yellow>240%</span> base damage, bleeding enemies explode dealing <span yellow>400%</span> damage <span gray>(+400% per stack)</span> + <span yellow>15%</span> of their max health <span gray>(+15% per stack)</span>.",
             "Pairs well with attack speed, critical strike chance, and increased damage items."
         ],
         "tags": [
